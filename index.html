@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Annunci immobili in zona</title>
+
+  <style>
+    html, body { margin:0; padding:0; height:100%; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    #top {
+      position: absolute; z-index: 10; left: 12px; right: 12px; top: 12px;
+      background: rgba(255,255,255,.95); border: 1px solid #eee; border-radius: 14px;
+      padding: 10px; display: grid; gap: 8px;
+    }
+    .row { display:flex; gap:8px; flex-wrap:wrap; }
+    input { flex:1; padding:10px 12px; border:1px solid #ddd; border-radius: 12px; }
+    button { padding:10px 12px; border:1px solid #ddd; background:#fff; border-radius: 12px; cursor:pointer; }
+    button.primary { background:#111; color:#fff; border-color:#111; }
+    #status { color:#666; font-size:13px; }
+    #results {
+      max-height: 34vh; overflow:auto; border-top:1px solid #eee; padding-top:8px;
+    }
+    .res {
+      border:1px solid #eee; border-radius: 12px; padding:10px; margin-top:8px;
+    }
+    .res a { font-weight: 700; }
+    .tag { display:inline-block; padding: 3px 8px; border:1px solid #eee; border-radius: 999px; font-size: 12px; color:#444; margin-left:6px; }
+    #map { width:100%; height:100%; }
+  </style>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=LA_TUA_MAPS_KEY&callback=initMap&libraries=places"
+    async defer></script>
+</head>
+
+<body>
+  <div id="top">
+    <div class="row">
+      <input id="strategy" placeholder="Keyword strategy (es: 'in vendita trilocale')" />
+      <button id="btnGeo">📍 Vicino a me</button>
+    </div>
+    <div class="row">
+      <input id="address" placeholder="Inserisci città/indirizzo (es: Milano, Via Torino 10)" />
+      <button class="primary" id="btnSearch">Cerca annunci</button>
+    </div>
+    <div id="status">Pronto.</div>
+    <div id="results"></div>
+  </div>
+
+  <div id="map"></div>
+
+  <script>
+    let map, marker;
+    const statusEl = document.getElementById("status");
+    const resultsEl = document.getElementById("results");
+    const addressEl = document.getElementById("address");
+    const strategyEl = document.getElementById("strategy");
+
+    // 👉 metti qui l'URL del tuo Worker
+    const WORKER_SEARCH_ENDPOINT = "https://TUO-WORKER.example.workers.dev/api/search";
+
+    function setStatus(msg){ statusEl.textContent = msg; }
+    function clearResults(){ resultsEl.innerHTML = ""; }
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: { lat: 41.9028, lng: 12.4964 },
+        disableDefaultUI: true
+      });
+
+      // Autocomplete indirizzi (Places)
+      const ac = new google.maps.places.Autocomplete(addressEl, { types: ["geocode"] });
+      ac.addListener("place_changed", () => {
+        const place = ac.getPlace();
+        if (!place.geometry) return;
+        setPoint(place.geometry.location.lat(), place.geometry.location.lng(), "Indirizzo selezionato");
+      });
+
+      document.getElementById("btnGeo").addEventListener("click", geoLocate);
+      document.getElementById("btnSearch").addEventListener("click", runSearch);
+    }
+
+    function setPoint(lat, lng, label) {
+      const pos = { lat, lng };
+      map.setCenter(pos);
+      if (marker) marker.setMap(null);
+      marker = new google.maps.Marker({ position: pos, map, title: label || "" });
+    }
+
+    function geoLocate() {
+      setStatus("Sto geolocalizzando…");
+      if (!navigator.geolocation) { setStatus("Geolocalizzazione non supportata."); return; }
+
+      navigator.geolocation.getCurrentPosition((pos) => {
+        setPoint(pos.coords.latitude, pos.coords.longitude, "Sei qui");
+        setStatus("Posizione rilevata. Ora puoi cercare annunci.");
+      }, (err) => {
+        setStatus("Permesso negato o errore posizione: " + err.message);
+      }, { enableHighAccuracy:true, timeout:15000, maximumAge:0 });
+    }
+
+    async function geocodeAddress(text) {
+      // geocoding via Maps JS API
+      const geocoder = new google.maps.Geocoder();
+      return new Promise((resolve, reject) => {
+        geocoder.geocode({ address: text }, (results, status) => {
+          if (status === "OK" && results[0]) {
+            const loc = results[0].geometry.location;
+            resolve({ lat: loc.lat(), lng: loc.lng(), formatted: results[0].formatted_address });
+          } else {
+            reject(new Error("Indirizzo non trovato"));
+          }
+        });
+      });
+    }
+
+    function buildQuery(strategy, addressText) {
+      // Esempio: "in vendita trilocale Milano Via Torino 10"
+      // puoi aggiungere keyword extra tipo "annuncio" o "immobiliare"
+      const parts = [strategy, addressText].map(s => (s || "").trim()).filter(Boolean);
+      return parts.join(" ");
+    }
+
+    async function runSearch() {
+      clearResults();
+
+      const strategy = strategyEl.value.trim();
+      const addressText = addressEl.value.trim();
+
+      if (!strategy) { setStatus("Inserisci una keyword strategy (es: 'in vendita bilocale')."); return; }
+      if (!addressText) { setStatus("Inserisci città/indirizzo (oppure usa 'Vicino a me')."); return; }
+
+      setStatus("Sto geocodificando l'indirizzo…");
+      let geo;
+      try {
+        geo = await geocodeAddress(addressText);
+      } catch (e) {
+        setStatus(e.message);
+        return;
+      }
+
+      setPoint(geo.lat, geo.lng, geo.formatted);
+
+      const q = buildQuery(strategy, geo.formatted);
+      setStatus("Cerco su Google (tramite API)…");
+
+      try {
+        const url = new URL(WORKER_SEARCH_ENDPOINT);
+        url.searchParams.set("q", q);
+
+        const res = await fetch(url.toString());
+        if (!res.ok) throw new Error("Errore ricerca: " + res.status);
+        const data = await res.json();
+
+        renderResults(data);
+        setStatus(`Trovati ${data.items?.length || 0} risultati.`);
+      } catch (e) {
+        setStatus("Errore: " + e.message);
+      }
+    }
+
+    function portalTag(link) {
+      try {
+        const host = new URL(link).hostname.replace("www.","");
+        return host;
+      } catch { return ""; }
+    }
+
+    function renderResults(data) {
+      clearResults();
+      const items = data.items || [];
+      if (!items.length) {
+        resultsEl.innerHTML = "<div style='color:#666;font-size:13px'>Nessun risultato.</div>";
+        return;
+      }
+
+      for (const it of items) {
+        const div = document.createElement("div");
+        div.className = "res";
+        const host = portalTag(it.link);
+        div.innerHTML = `
+          <div><a href="${it.link}" target="_blank" rel="noopener">${it.title}</a>
+          ${host ? `<span class="tag">${host}</span>` : ""}</div>
+          <div style="color:#666;font-size:13px;margin-top:6px">${it.snippet || ""}</div>
+        `;
+        resultsEl.appendChild(div);
+      }
+    }
+  </script>
+</body>
+</html>
