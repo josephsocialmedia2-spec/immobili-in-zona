@@ -1,9 +1,9 @@
-    <!doctype html>
+<!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ricerca immobili (gratis)</title>
+  <title>Ricerca annunci per via + città (gratis)</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
@@ -18,7 +18,7 @@
     button{ padding:10px 12px; border:1px solid #ddd; background:#fff; border-radius:12px; cursor:pointer; }
     button.primary{ background:#111; color:#fff; border-color:#111; }
     #status{ font-size:13px; color:#666; }
-    #links{ display:grid; gap:8px; max-height:40vh; overflow:auto; }
+    #links{ display:grid; gap:8px; max-height:42vh; overflow:auto; }
     .portal{
       border:1px solid #eee; border-radius:12px; padding:10px;
       display:flex; justify-content:space-between; align-items:center; gap:10px;
@@ -32,16 +32,16 @@
 <body>
   <div id="panel">
     <div class="row">
-      <input id="strategy" placeholder="Keyword (es: in vendita trilocale)" />
       <button id="geo">📍 Vicino a me</button>
+      <button id="clear">Pulisci</button>
     </div>
 
     <div class="row">
-      <input id="address" placeholder="Città o indirizzo (senza civico va benissimo)" />
-      <button class="primary" id="build">Crea ricerche</button>
+      <input id="address" placeholder="Scrivi VIA + CITTÀ (es: Via Roma Milano)" />
+      <button class="primary" id="build">Cerca sui portali</button>
     </div>
 
-    <div id="status">Pronto.</div>
+    <div id="status">Inserisci una via e una città, oppure premi “Vicino a me”.</div>
     <div id="links"></div>
   </div>
 
@@ -51,10 +51,9 @@
   <script>
     const statusEl = document.getElementById("status");
     const linksEl = document.getElementById("links");
-    const strategyEl = document.getElementById("strategy");
     const addressEl = document.getElementById("address");
 
-    // Portali: link = "Apri Google con site:dominio"
+    // Portali: qui puoi aggiungere/togliere domini
     const PORTALS = [
       { name: "Immobiliare.it", domain: "immobiliare.it" },
       { name: "Idealista", domain: "idealista.it" },
@@ -64,7 +63,7 @@
     ];
 
     // Mappa gratis
-    const map = L.map("map").setView([41.9028, 12.4964], 12);
+    const map = L.map("map").setView([41.9028, 12.4964], 12); // fallback Roma
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "© OpenStreetMap"
     }).addTo(map);
@@ -79,6 +78,7 @@
       map.setView([lat, lng], 14);
     }
 
+    // Geocoding gratis via Nominatim
     async function geocode(query){
       const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(query)}`;
       const r = await fetch(url);
@@ -87,6 +87,7 @@
       return { lat: +d[0].lat, lng: +d[0].lon, label: d[0].display_name };
     }
 
+    // Reverse geocoding gratis (lat/lng -> indirizzo)
     async function reverseGeocode(lat, lng){
       const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
       const r = await fetch(url);
@@ -94,24 +95,41 @@
       return d?.display_name || "";
     }
 
-    // ✅ Pulizia: NO civico, NO CAP — prendiamo via + città
+    // ✅ Pulizia: NO civico, NO CAP — teniamo VIA + CITTÀ
     function cleanLocation(text){
       if (!text) return "";
 
       let s = text;
 
-      // via Roma 12 -> via Roma
-      s = s.replace(/\b\d+[A-Za-z]?\b/g, "");
-
-      // rimuovi CAP 5 cifre
+      // togli CAP (5 cifre)
       s = s.replace(/\b\d{5}\b/g, "");
+
+      // togli numeri civici tipo 12, 12A
+      s = s.replace(/\b\d+[A-Za-z]?\b/g, "");
 
       // pulizia spazi e virgole
       s = s.replace(/\s+/g, " ").replace(/\s*,\s*/g, ",").trim();
 
-      // prendi solo le prime 2 parti (via + città)
+      // teniamo solo le prime 2 parti: VIA + CITTÀ
       const parts = s.split(",").map(p => p.trim()).filter(Boolean);
       return parts.slice(0, 2).join(" ");
+    }
+
+    // Query Google: incrocio indirizzo + città, con quote sulla via
+    function buildQueryFromClean(cleanText){
+      // se cleanText = "Via Roma Milano"
+      // vogliamo:  "Via Roma" Milano
+      const bits = cleanText.split(" ").filter(Boolean);
+      if (bits.length < 2) return cleanText;
+
+      // mettiamo tra virgolette i primi 2-4 token come "via nome"
+      const street = bits.slice(0, Math.min(4, bits.length - 1)).join(" ");
+      const city = bits.slice(Math.min(4, bits.length - 1)).join(" ");
+
+      // Se city resta vuota, ritorna solo street
+      if (!city) return `"${street}"`;
+
+      return `"${street}" ${city}`;
     }
 
     function googleAllSitesLink(query){
@@ -126,22 +144,22 @@
       return u.toString();
     }
 
-    function renderLinks(finalQuery){
+    function renderLinks(query){
       linksEl.innerHTML = "";
 
-      // 🔥 Link "TUTTI i siti" (massimo numero risultati)
+      // (Opzionale ma utile) Google senza filtro: massima copertura
       const all = document.createElement("div");
       all.className = "portal";
       all.innerHTML = `
         <div>
           <strong>Google (tutti i siti)</strong><br>
-          <small>nessun filtro site:</small>
+          <small>ricerca generale</small>
         </div>
-        <a href="${googleAllSitesLink(finalQuery)}" target="_blank" rel="noopener">Apri</a>
+        <a href="${googleAllSitesLink(query)}" target="_blank" rel="noopener">Apri</a>
       `;
       linksEl.appendChild(all);
 
-      // Portali
+      // Portali con site:
       PORTALS.forEach(p => {
         const div = document.createElement("div");
         div.className = "portal";
@@ -150,32 +168,35 @@
             <strong>${p.name}</strong><br>
             <small>site:${p.domain}</small>
           </div>
-          <a href="${googleSiteLink(p.domain, finalQuery)}" target="_blank" rel="noopener">Apri</a>
+          <a href="${googleSiteLink(p.domain, query)}" target="_blank" rel="noopener">Apri</a>
         `;
         linksEl.appendChild(div);
       });
     }
 
     async function buildSearches(){
-      const strategy = strategyEl.value.trim();
-      const address = addressEl.value.trim();
+      linksEl.innerHTML = "";
+      const input = addressEl.value.trim();
 
-      if (!strategy) { setStatus("Scrivi la keyword (es: in vendita bilocale)."); return; }
-      if (!address) { setStatus("Scrivi città/indirizzo (senza civico va benissimo)."); return; }
+      if (!input) { setStatus("Scrivi VIA + CITTÀ (es: Via Roma Milano)."); return; }
 
-      setStatus("Sto cercando l'indirizzo…");
-      const geo = await geocode(address);
-      if (!geo) { setStatus("Indirizzo non trovato. Prova con 'Via + Città'."); return; }
+      setStatus("Sto interpretando l'indirizzo…");
+      const geo = await geocode(input);
 
-      setMarker(geo.lat, geo.lng, geo.label);
+      // Se geocode fallisce, usiamo comunque l’input dell’utente per la query
+      let labelToUse = input;
 
-      const cleanAddress = cleanLocation(geo.label);
-      const finalQuery = `${strategy} ${cleanAddress}`.trim();
+      if (geo) {
+        setMarker(geo.lat, geo.lng, geo.label);
+        labelToUse = geo.label;
+      }
 
-      // ✅ NON cataloghiamo nulla: solo link che aprono TUTTI i risultati
-      renderLinks(finalQuery);
+      const clean = cleanLocation(labelToUse);
+      const query = buildQueryFromClean(clean);
 
-      setStatus("Fatto ✅ Ora clicca 'Apri' per vedere TUTTI gli immobili trovati.");
+      renderLinks(query);
+
+      setStatus("Fatto ✅ Ora clicca 'Apri' per vedere TUTTI gli annunci trovati.");
     }
 
     document.getElementById("build").onclick = buildSearches;
@@ -187,18 +208,29 @@
       navigator.geolocation.getCurrentPosition(async p => {
         const lat = p.coords.latitude;
         const lng = p.coords.longitude;
-
         setMarker(lat, lng, "Sei qui");
 
         try {
           const label = await reverseGeocode(lat, lng);
+          // Riempio il campo (verrà pulito al click su "Cerca sui portali")
           addressEl.value = label || "";
         } catch {}
 
-        setStatus("Posizione trovata ✅ Premi 'Crea ricerche'.");
+        setStatus("Posizione trovata ✅ Premi 'Cerca sui portali'.");
       }, e => setStatus("Errore posizione: " + (e.message || "")),
       { enableHighAccuracy:true, timeout:15000, maximumAge:0 });
     };
+
+    document.getElementById("clear").onclick = () => {
+      addressEl.value = "";
+      linksEl.innerHTML = "";
+      setStatus("Pulito. Scrivi VIA + CITTÀ oppure premi 'Vicino a me'.");
+    };
+
+    // Enter per cercare
+    addressEl.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") buildSearches();
+    });
   </script>
 </body>
 </html>
