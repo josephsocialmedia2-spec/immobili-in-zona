@@ -3,60 +3,64 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Estrai annunci (copia/incolla → CSV)</title>
+  <title>Estrai annunci (a video)</title>
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:#f5f6f8;color:#111}
-    .wrap{max-width:900px;margin:0 auto;padding:18px 14px 60px}
+    .wrap{max-width:980px;margin:0 auto;padding:18px 14px 60px}
     .card{background:#fff;border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-    textarea{width:100%;min-height:240px;padding:12px;border:1px solid #ddd;border-radius:12px;font-size:14px;line-height:1.35}
-    button{padding:12px 14px;border-radius:12px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:700}
+    h2{margin:0}
+    .muted{color:#666;font-size:13px;margin-top:10px;line-height:1.45}
+    textarea{width:100%;min-height:220px;padding:12px;border:1px solid #ddd;border-radius:12px;font-size:14px;line-height:1.35;margin-top:12px}
+    button{padding:12px 14px;border-radius:12px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:750}
     button.primary{background:#111;color:#fff;border-color:#111}
-    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .muted{color:#666;font-size:13px;margin-top:10px}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;align-items:center}
+    .pill{display:inline-block;border:1px solid #eee;border-radius:999px;padding:4px 10px;font-size:12px;color:#666}
     table{width:100%;border-collapse:collapse;margin-top:12px}
     th,td{border-bottom:1px solid #eee;padding:10px;text-align:left;font-size:13px;vertical-align:top}
-    th{font-size:12px;color:#666}
-    .pill{display:inline-block;border:1px solid #eee;border-radius:999px;padding:2px 8px;font-size:12px;color:#666}
+    th{font-size:12px;color:#666;white-space:nowrap}
+    .topActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    input[type="search"]{flex:1;min-width:220px;padding:12px;border:1px solid #ddd;border-radius:12px}
+    .empty{margin-top:12px;color:#666;font-size:13px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
-      <h2 style="margin:0">Estrai annunci (manuale-assistito)</h2>
+      <h2>Estrai annunci (solo a video)</h2>
       <div class="muted">
-        Apri una pagina “contenitore” (Idealista/Immobiliare ecc.), seleziona e copia il testo della lista annunci,
-        incollalo qui e premi “Estrai”. Poi scarica il CSV.
+        1) Apri la pagina “contenitore” del portale (es: “case in vendita a …”).<br>
+        2) Seleziona e copia un blocco di risultati (anche 20–50 alla volta).<br>
+        3) Incolla qui e premi <b>Estrai</b>.<br>
+        <i>Non facciamo scraping: usiamo solo testo che copi tu.</i>
       </div>
 
-      <div style="margin-top:12px">
-        <textarea id="input" placeholder="Incolla qui il testo copiato dalla lista annunci..."></textarea>
-      </div>
+      <textarea id="input" placeholder="Incolla qui il testo copiato dalla lista annunci..."></textarea>
 
       <div class="row">
         <button class="primary" id="btnExtract">Estrai</button>
-        <button id="btnCSV">Scarica CSV</button>
         <button id="btnClear">Pulisci</button>
-        <span class="pill" id="count">0 righe</span>
+        <span class="pill" id="count">0 annunci</span>
+        <span class="pill" id="status">Pronto.</span>
       </div>
 
-      <div id="status" class="muted"></div>
+      <div class="topActions">
+        <input id="filter" type="search" placeholder="Filtra risultati (es: Trieste, 165.000, mansarda...)" />
+        <button id="btnResetFilter">Reset filtro</button>
+      </div>
 
-      <table id="tbl" style="display:none">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Tipologia</th>
-            <th>Indirizzo/Zona</th>
-            <th>Prezzo</th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
+      <div id="out"></div>
     </div>
   </div>
 
 <script>
   let rows = [];
+  let filtered = [];
+
+  const inputEl = document.getElementById("input");
+  const outEl = document.getElementById("out");
+  const countEl = document.getElementById("count");
+  const statusEl = document.getElementById("status");
+  const filterEl = document.getElementById("filter");
 
   function normalize(s){
     return (s || "")
@@ -66,97 +70,71 @@
   }
 
   function extractPrice(line){
-    // Es: "€ 165.000" / "165.000 €" / "€165.000"
+    // € 165.000 / €165.000 / 165.000 €
     const m = line.match(/€\s*\d[\d\.\s]*|\d[\d\.\s]*\s*€/);
     return m ? normalize(m[0]).replace(/\s+/g," ") : "";
   }
 
   function guessType(line){
-    // tipologie comuni
-    const types = ["Appartamento","Attico","Mansarda","Villa","Casa indipendente","Casa","Rustico","Bilocale","Trilocale","Quadrilocale","Loft","Monolocale","Terratetto","Porzione","Ufficio","Negozio"];
+    const types = [
+      "Appartamento","Attico","Mansarda","Villa","Villino","Casa indipendente","Casa","Rustico",
+      "Loft","Monolocale","Bilocale","Trilocale","Quadrilocale","Terratetto","Porzione","Ufficio","Negozio","Locale"
+    ];
+    const low = line.toLowerCase();
     for (const t of types) {
-      if (line.toLowerCase().includes(t.toLowerCase())) return t;
+      if (low.includes(t.toLowerCase())) return t;
     }
     return "";
   }
 
   function guessAddress(line){
-    // prova: prende tutto prima del prezzo, se presente
+    // Togli prezzo e “pulisci”
     const price = extractPrice(line);
     let s = line;
-    if (price) s = line.replace(price, "");
+    if (price) s = s.replace(price, "");
     s = normalize(s);
 
-    // se contiene "via", "viale", "piazza", "corso", "largo", ecc. tendiamo a tenerla
-    const tokens = ["via","viale","piazza","corso","largo","vicolo","strada","lungo","piazzale"];
+    // Heuristica: se contiene parole “strada”, “via”, “viale”, ecc. è probabilmente un indirizzo
+    const tokens = ["via","viale","piazza","corso","largo","vicolo","strada","piazzale","lungo"];
     const low = s.toLowerCase();
-    const hasStreet = tokens.some(t => low.includes(t+" "));
-    if (hasStreet) return s;
-
-    // altrimenti restituiamo comunque una zona breve
-    return s;
+    const hasStreet = tokens.some(t => low.includes(t + " "));
+    return hasStreet ? s : s; // comunque ritorna qualcosa di leggibile
   }
 
-  function splitIntoCandidateLines(text){
-    // Spezza per newline, ma anche “compatta” righe vuote
-    const lines = text.split(/\r?\n/).map(normalize).filter(Boolean);
-    return lines;
+  function splitLines(text){
+    return text
+      .split(/\r?\n/)
+      .map(normalize)
+      .filter(Boolean);
   }
 
   function extractRows(text){
-    // Heuristica semplice:
-    // prende righe che contengono un prezzo in €
-    // e usa quella riga come “record”
-    const lines = splitIntoCandidateLines(text);
+    // Prendiamo righe che contengono un prezzo: spesso ogni annuncio ha una riga con €.
+    const lines = splitLines(text);
+
     const out = [];
+    const seen = new Set(); // per dedup (stessa riga copi/incollo)
     for (const ln of lines) {
       const price = extractPrice(ln);
       if (!price) continue;
 
-      const type = guessType(ln);
-      const addr = guessAddress(ln);
+      // evita righe troppo corte tipo solo "€ 165.000"
+      if (ln.length < 8) continue;
 
-      out.push({
-        type: type || "Immobile",
-        address: addr,
-        price
-      });
+      const key = ln.toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      const type = guessType(ln) || "Immobile";
+      const address = guessAddress(ln);
+
+      out.push({ type, address, price, raw: ln });
     }
     return out;
   }
 
-  function render(){
-    const countEl = document.getElementById("count");
-    const tbody = document.getElementById("tbody");
-    const tbl = document.getElementById("tbl");
-    const status = document.getElementById("status");
-
-    countEl.textContent = `${rows.length} righe`;
-    tbody.innerHTML = "";
-
-    if (!rows.length) {
-      tbl.style.display = "none";
-      status.textContent = "Nessun annuncio estratto. Prova a copiare una porzione che includa i prezzi (con €).";
-      return;
-    }
-
-    tbl.style.display = "";
-    status.textContent = "Estratto! Controlla velocemente e poi scarica il CSV.";
-
-    rows.forEach((r, i) => {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td>${i+1}</td>
-        <td>${escapeHtml(r.type)}</td>
-        <td>${escapeHtml(r.address)}</td>
-        <td>${escapeHtml(r.price)}</td>
-      `;
-      tbody.appendChild(tr);
-    });
-  }
-
   function escapeHtml(s){
-    return String(s||"")
+    return String(s || "")
       .replaceAll("&","&amp;")
       .replaceAll("<","&lt;")
       .replaceAll(">","&gt;")
@@ -164,43 +142,83 @@
       .replaceAll("'","&#039;");
   }
 
-  function toCSV(rows){
-    const header = ["Tipologia","Indirizzo/Zona","Prezzo"];
-    const lines = [header.join(",")];
-    for (const r of rows) {
-      const vals = [r.type, r.address, r.price].map(v => `"${String(v||"").replaceAll('"','""')}"`);
-      lines.push(vals.join(","));
+  function renderTable(list){
+    outEl.innerHTML = "";
+
+    if (!list.length) {
+      outEl.innerHTML = `<div class="empty">Nessun risultato da mostrare. Prova a copiare un blocco che includa i prezzi con “€” (es. 165.000 €).</div>`;
+      return;
     }
-    return lines.join("\n");
+
+    const table = document.createElement("table");
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tipologia</th>
+          <th>Indirizzo / Zona</th>
+          <th>Prezzo</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${list.map((r, i) => `
+          <tr>
+            <td>${i+1}</td>
+            <td>${escapeHtml(r.type)}</td>
+            <td>${escapeHtml(r.address)}</td>
+            <td>${escapeHtml(r.price)}</td>
+          </tr>
+        `).join("")}
+      </tbody>
+    `;
+    outEl.appendChild(table);
+  }
+
+  function updateStats(total, shown){
+    countEl.textContent = `${shown} / ${total} annunci`;
+  }
+
+  function applyFilter(){
+    const q = normalize(filterEl.value).toLowerCase();
+    if (!q) {
+      filtered = rows.slice();
+      renderTable(filtered);
+      updateStats(rows.length, filtered.length);
+      return;
+    }
+    filtered = rows.filter(r =>
+      (r.type + " " + r.address + " " + r.price + " " + r.raw).toLowerCase().includes(q)
+    );
+    renderTable(filtered);
+    updateStats(rows.length, filtered.length);
   }
 
   document.getElementById("btnExtract").addEventListener("click", () => {
-    const text = document.getElementById("input").value;
+    const text = inputEl.value;
     rows = extractRows(text);
-    render();
-  });
-
-  document.getElementById("btnCSV").addEventListener("click", () => {
-    if (!rows.length) return;
-    const csv = toCSV(rows);
-    const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "annunci.csv";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
+    filtered = rows.slice();
+    statusEl.textContent = rows.length ? "Estratto ✅" : "Non ho trovato prezzi con €.";
+    renderTable(filtered);
+    updateStats(rows.length, filtered.length);
   });
 
   document.getElementById("btnClear").addEventListener("click", () => {
-    document.getElementById("input").value = "";
+    inputEl.value = "";
+    filterEl.value = "";
     rows = [];
-    render();
+    filtered = [];
+    statusEl.textContent = "Pulito.";
+    outEl.innerHTML = "";
+    updateStats(0, 0);
   });
 
-  render();
+  filterEl.addEventListener("input", applyFilter);
+  document.getElementById("btnResetFilter").addEventListener("click", () => {
+    filterEl.value = "";
+    applyFilter();
+  });
+
+  updateStats(0, 0);
 </script>
 </body>
 </html>
