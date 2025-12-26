@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modalità Scout – Immobili</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:#f5f6f8;
+      color:#111;
+    }
+    .wrap{
+      max-width:980px;
+      margin:auto;
+      padding:20px 14px 80px;
+    }
+    .card{
+      background:#fff;
+      border-radius:16px;
+      padding:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      margin-top:14px;
+    }
+    h1{margin:0;font-size:22px}
+    p{color:#555;line-height:1.45}
+    label{font-weight:700;font-size:13px;margin-top:12px;display:block}
+    input,textarea{
+      width:100%;
+      padding:12px;
+      border-radius:12px;
+      border:1px solid #ddd;
+      font-size:14px;
+      margin-top:6px;
+    }
+    textarea{min-height:70px}
+    button{
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid #ddd;
+      background:#fff;
+      cursor:pointer;
+      font-weight:700;
+    }
+    button.primary{
+      background:#111;
+      color:#fff;
+      border-color:#111;
+    }
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+    }
+    th,td{
+      border-bottom:1px solid #eee;
+      padding:10px;
+      font-size:13px;
+      vertical-align:top;
+    }
+    th{color:#666;font-size:12px}
+    a{color:#111;font-weight:700}
+    .actions{display:flex;gap:8px}
+    .pill{
+      display:inline-block;
+      padding:3px 10px;
+      border-radius:999px;
+      border:1px solid #eee;
+      font-size:12px;
+      color:#666;
+    }
+    .muted{color:#666;font-size:13px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>🧭 Modalità Scout – Immobili</h1>
+    <p>
+      Salva immobili interessanti mentre navighi sui portali.
+      Nessun scraping. Solo link + analisi.
+    </p>
+
+    <div class="card">
+      <label>Link annuncio</label>
+      <input id="link" placeholder="Incolla qui il link dell’annuncio">
+
+      <label>Zona / Via</label>
+      <input id="zone" placeholder="Es: Via Trieste / Centro">
+
+      <label>Prezzo</label>
+      <input id="price" placeholder="Es: 165.000 €">
+
+      <label>Nota scout (perché è interessante)</label>
+      <textarea id="note" placeholder="Es: annuncio fermo, foto scarse, prezzo alto, privato…"></textarea>
+
+      <div class="row">
+        <button class="primary" onclick="add()">Salva immobile</button>
+        <button onclick="clearAll()">Svuota lista</button>
+        <span class="pill" id="count">0 immobili</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0;font-size:18px">Immobili segnalati</h2>
+      <div class="muted">Questa lista resta nel browser (localStorage).</div>
+
+      <table id="table" style="display:none">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Zona</th>
+            <th>Prezzo</th>
+            <th>Nota</th>
+            <th>Link</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+
+      <div id="empty" class="muted" style="margin-top:12px">
+        Nessun immobile salvato.
+      </div>
+    </div>
+  </div>
+
+<script>
+  let items = JSON.parse(localStorage.getItem("scout_items") || "[]");
+
+  function save(){
+    localStorage.setItem("scout_items", JSON.stringify(items));
+    render();
+  }
+
+  function add(){
+    const link = document.getElementById("link").value.trim();
+    if(!link) return alert("Inserisci il link dell’annuncio");
+
+    items.push({
+      link,
+      zone: document.getElementById("zone").value.trim(),
+      price: document.getElementById("price").value.trim(),
+      note: document.getElementById("note").value.trim(),
+      ts: Date.now()
+    });
+
+    document.getElementById("link").value="";
+    document.getElementById("zone").value="";
+    document.getElementById("price").value="";
+    document.getElementById("note").value="";
+
+    save();
+  }
+
+  function remove(i){
+    if(!confirm("Rimuovere questo immobile?")) return;
+    items.splice(i,1);
+    save();
+  }
+
+  function clearAll(){
+    if(!confirm("Svuotare tutta la lista?")) return;
+    items=[];
+    save();
+  }
+
+  function render(){
+    const tbody = document.getElementById("tbody");
+    const table = document.getElementById("table");
+    const empty = document.getElementById("empty");
+    const count = document.getElementById("count");
+
+    count.textContent = items.length + " immobili";
+    tbody.innerHTML="";
+
+    if(!items.length){
+      table.style.display="none";
+      empty.style.display="";
+      return;
+    }
+
+    table.style.display="";
+    empty.style.display="none";
+
+    items.forEach((it,i)=>{
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${i+1}</td>
+        <td>${it.zone || "-"}</td>
+        <td>${it.price || "-"}</td>
+        <td>${it.note || "-"}</td>
+        <td><a href="${it.link}" target="_blank">Apri</a></td>
+        <td><button onclick="remove(${i})">✕</button></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  render();
+</script>
+</body>
+</html>
