@@ -3,214 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hub ricerche “città in vendita” (ampio)</title>
+  <title>Immobili – Hub / Estrai / Scout</title>
   <style>
-    body{ margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial; background:#f5f6f8; color:#111; }
-    .wrap{ max-width: 760px; margin: 0 auto; padding: 20px 14px 70px; }
-    .card{ background:#fff; border-radius: 16px; padding: 18px; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
-    h1{ margin:0; font-size:22px; }
-    p{ color:#555; line-height:1.45; }
-    .row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
-    input{
-      flex:1; min-width: 220px; padding: 14px 14px; border: 1px solid #ddd;
-      border-radius: 14px; font-size: 16px; outline: none; background:#fff;
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#f5f6f8;color:#111}
+    .wrap{max-width:760px;margin:0 auto;padding:22px 14px 60px}
+    .card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    h1{margin:0;font-size:22px}
+    p{color:#555;line-height:1.45}
+    .grid{display:grid;gap:12px;margin-top:14px}
+    a.btn{
+      display:block;text-decoration:none;text-align:center;
+      padding:14px;border-radius:14px;border:1px solid #ddd;background:#fff;
+      font-weight:800;color:#111;
     }
-    button{
-      padding: 14px 14px; border-radius: 14px; border: 1px solid #ddd; background:#fff;
-      cursor:pointer; font-size: 15px;
-    }
-    button.primary{ background:#111; border-color:#111; color:#fff; font-weight:650; }
-    .muted{ color:#666; font-size: 13px; margin-top:10px; }
-    .list{ margin-top: 14px; display:grid; gap:10px; }
-    .item{
-      display:flex; justify-content:space-between; align-items:center; gap:12px;
-      padding: 12px; border: 1px solid #eee; border-radius: 14px; background:#fff;
-    }
-    .left{ display:grid; gap:2px; }
-    .name{ font-weight: 750; }
-    .desc{ color:#666; font-size: 12px; }
-    .pill{
-      display:inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px;
-      border: 1px solid #eee; color:#666; width: fit-content; margin-top: 2px;
-    }
-    .actions{ display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
-    a.open{
-      text-decoration:none; padding: 10px 12px; border-radius: 12px; border: 1px solid #ddd;
-      color:#111; font-weight: 700; background:#fff; white-space: nowrap;
-    }
-    .mini{
-      padding: 10px 12px; border-radius: 12px; border: 1px solid #ddd; background:#fff;
-      cursor:pointer; font-weight:700;
-    }
-    .footer{ margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
+    a.primary{background:#111;color:#fff;border-color:#111}
+    .note{margin-top:10px;color:#666;font-size:13px}
   </style>
 </head>
-
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Hub ricerche “città in vendita”</h1>
-      <p>
-        Inserisci una città/paese e apri le ricerche più ampie per trovare le pagine “contenitore”
-        con tutti gli annunci (come: “56 case in vendita a…”).
-      </p>
+      <h1>Strumenti immobili</h1>
+      <p>Scegli cosa vuoi fare.</p>
 
-      <div class="row">
-        <input id="city" placeholder="Es: Sant'Ambrogio di Torino" />
-        <button class="primary" id="btn">Cerca</button>
-        <button id="btnAll">Apri tutti</button>
+      <div class="grid">
+        <a class="btn primary" href="./hub.html">🔎 Hub “città in vendita”</a>
+        <a class="btn" href="./estrai.html">📋 Estrai (manuale-assistito, a video)</a>
+        <a class="btn" href="./scout.html">🧭 Scout (lista immobili salvati)</a>
       </div>
 
-      <div class="muted" id="status">Pronto.</div>
-      <div class="list" id="list"></div>
-
-      <div class="footer">
-        <button id="btnCopyQuery">Copia query Google</button>
-        <button id="btnClear">Pulisci</button>
+      <div class="note">
+        Se un tasto dà “404”, significa che quel file non esiste nel repository.
       </div>
     </div>
   </div>
-
-<script>
-  const cityEl = document.getElementById("city");
-  const listEl = document.getElementById("list");
-  const statusEl = document.getElementById("status");
-
-  // ✅ Portali principali (pulito e veloce)
-  const PORTALS = [
-    { name: "Immobiliare.it", domain: "immobiliare.it" },
-    { name: "Idealista", domain: "idealista.it" },
-    { name: "Casa.it", domain: "casa.it" },
-    { name: "Subito", domain: "subito.it" }
-  ];
-
-  function googleSearchUrl(q){
-    const u = new URL("https://www.google.com/search");
-    u.searchParams.set("q", q);
-    return u.toString();
-  }
-
-  function baseQuery(city){
-    // La tua logica: CITTÀ + "in vendita"
-    // (ampia, funziona bene per trovare i "contenitori")
-    return `${city} in vendita`;
-  }
-
-  function portalQuery(city, domain){
-    // Ampia ma mirata al portale:
-    return `site:${domain} ${city} in vendita`;
-  }
-
-  async function copyText(text){
-    try {
-      await navigator.clipboard.writeText(text);
-      return true;
-    } catch {
-      return false;
-    }
-  }
-
-  function render(city){
-    listEl.innerHTML = "";
-
-    const qBase = baseQuery(city);
-
-    const items = [];
-    items.push({
-      name: "Google (tutti i siti)",
-      desc: qBase,
-      pill: "query ampia",
-      url: googleSearchUrl(qBase),
-      raw: qBase
-    });
-
-    for (const p of PORTALS) {
-      const q = portalQuery(city, p.domain);
-      items.push({
-        name: p.name,
-        desc: q,
-        pill: `site:${p.domain}`,
-        url: googleSearchUrl(q),
-        raw: q
-      });
-    }
-
-    for (const it of items) {
-      const row = document.createElement("div");
-      row.className = "item";
-
-      const left = document.createElement("div");
-      left.className = "left";
-      left.innerHTML = `
-        <div class="name">${it.name}</div>
-        <div class="desc">${it.desc}</div>
-        <div class="pill">${it.pill}</div>
-      `;
-
-      const actions = document.createElement("div");
-      actions.className = "actions";
-
-      const open = document.createElement("a");
-      open.className = "open";
-      open.href = it.url;
-      open.target = "_blank";
-      open.rel = "noopener";
-      open.textContent = "Apri";
-
-      const copyLinkBtn = document.createElement("button");
-      copyLinkBtn.className = "mini";
-      copyLinkBtn.textContent = "Copia link";
-      copyLinkBtn.addEventListener("click", async () => {
-        const ok = await copyText(it.url);
-        statusEl.textContent = ok ? "Link copiato ✅" : "Non riesco a copiare (browser).";
-      });
-
-      actions.appendChild(open);
-      actions.appendChild(copyLinkBtn);
-
-      row.appendChild(left);
-      row.appendChild(actions);
-      listEl.appendChild(row);
-    }
-
-    statusEl.textContent = `Creati ${items.length} link per: ${city}`;
-    window.__LAST_QUERY__ = qBase;
-    window.__LAST_URLS__ = items.map(x => x.url);
-  }
-
-  function run(){
-    const city = (cityEl.value || "").trim();
-    if (!city) { statusEl.textContent = "Scrivi una città/paese."; return; }
-    render(city);
-  }
-
-  document.getElementById("btn").addEventListener("click", run);
-  cityEl.addEventListener("keydown", (e) => { if (e.key === "Enter") run(); });
-
-  document.getElementById("btnAll").addEventListener("click", () => {
-    if (!window.__LAST_URLS__?.length) { statusEl.textContent = "Prima clicca 'Cerca'."; return; }
-    let opened = 0;
-    for (const url of window.__LAST_URLS__) {
-      const w = window.open(url, "_blank", "noopener,noreferrer");
-      if (w) opened++;
-    }
-    statusEl.textContent = `Ho provato ad aprire ${window.__LAST_URLS__.length} schede (aperte: ${opened}).`;
-  });
-
-  document.getElementById("btnCopyQuery").addEventListener("click", async () => {
-    const q = window.__LAST_QUERY__;
-    if (!q) { statusEl.textContent = "Prima clicca 'Cerca'."; return; }
-    const ok = await copyText(q);
-    statusEl.textContent = ok ? `Copiata query: ${q}` : "Non riesco a copiare (browser).";
-  });
-
-  document.getElementById("btnClear").addEventListener("click", () => {
-    cityEl.value = "";
-    listEl.innerHTML = "";
-    statusEl.textContent = "Pulito.";
-    window.__LAST_QUERY__ = null;
-    window.__LAST_URLS__ = null;
-  });
-</script>
 </body>
 </html>
