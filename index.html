@@ -5,253 +5,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ricerca immobili (gratis)</title>
 
-  <!-- Leaflet + OpenStreetMap (GRATIS) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    html, body { height:100%; margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    #panel{
+      position: fixed; top:12px; left:12px; right:12px; z-index:1000;
+      background: rgba(255,255,255,.96); border:1px solid #eee; border-radius:14px;
+      padding:10px; display:grid; gap:8px;
     }
-
-    #panel {
-      position: fixed;
-      top: 12px;
-      left: 12px;
-      right: 12px;
-      z-index: 1000;
-      background: rgba(255,255,255,0.96);
-      border: 1px solid #eee;
-      border-radius: 14px;
-      padding: 10px;
-      display: grid;
-      gap: 8px;
+    .row{ display:flex; gap:8px; flex-wrap:wrap; }
+    input{ flex:1; padding:10px 12px; border:1px solid #ddd; border-radius:12px; }
+    button{ padding:10px 12px; border:1px solid #ddd; background:#fff; border-radius:12px; cursor:pointer; }
+    button.primary{ background:#111; color:#fff; border-color:#111; }
+    #status{ font-size:13px; color:#666; }
+    #links{ display:grid; gap:8px; max-height:40vh; overflow:auto; }
+    .portal{
+      border:1px solid #eee; border-radius:12px; padding:10px;
+      display:flex; justify-content:space-between; align-items:center; gap:10px;
     }
-
-    .row {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    input {
-      flex: 1;
-      padding: 10px 12px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-    }
-
-    button {
-      padding: 10px 12px;
-      border: 1px solid #ddd;
-      background: #fff;
-      border-radius: 12px;
-      cursor: pointer;
-    }
-
-    button.primary {
-      background: #111;
-      color: #fff;
-      border-color: #111;
-    }
-
-    #status {
-      font-size: 13px;
-      color: #666;
-    }
-
-    #links {
-      display: grid;
-      gap: 8px;
-      max-height: 35vh;
-      overflow: auto;
-    }
-
-    .portal {
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .portal small {
-      color: #666;
-      font-size: 12px;
-    }
-
-    #map {
-      height: 100%;
-      width: 100%;
-    }
+    .portal small{ color:#666; font-size:12px; }
+    .portal a{ font-weight:700; }
+    #map{ height:100%; width:100%; }
   </style>
 </head>
 
 <body>
+  <div id="panel">
+    <div class="row">
+      <input id="strategy" placeholder="Keyword (es: in vendita trilocale)" />
+      <button id="geo">📍 Vicino a me</button>
+    </div>
 
-<div id="panel">
-  <div class="row">
-    <input id="strategy" placeholder="Keyword (es: in vendita trilocale)" />
-    <button id="geo">📍 Vicino a me</button>
+    <div class="row">
+      <input id="address" placeholder="Città o indirizzo (senza civico va benissimo)" />
+      <button class="primary" id="build">Crea ricerche</button>
+    </div>
+
+    <div id="status">Pronto.</div>
+    <div id="links"></div>
   </div>
 
-  <div class="row">
-    <input id="address" placeholder="Città o indirizzo (senza civico va benissimo)" />
-    <button class="primary" id="build">Crea ricerche</button>
-  </div>
+  <div id="map"></div>
 
-  <div id="status">Pronto.</div>
-  <div id="links"></div>
-</div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const statusEl = document.getElementById("status");
+    const linksEl = document.getElementById("links");
+    const strategyEl = document.getElementById("strategy");
+    const addressEl = document.getElementById("address");
 
-<div id="map"></div>
+    // Portali: link = "Apri Google con site:dominio"
+    const PORTALS = [
+      { name: "Immobiliare.it", domain: "immobiliare.it" },
+      { name: "Idealista", domain: "idealista.it" },
+      { name: "Casa.it", domain: "casa.it" },
+      { name: "Wikicasa", domain: "wikicasa.it" },
+      { name: "Subito", domain: "subito.it" }
+    ];
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-  const statusEl = document.getElementById("status");
-  const linksEl = document.getElementById("links");
-  const strategyEl = document.getElementById("strategy");
-  const addressEl = document.getElementById("address");
+    // Mappa gratis
+    const map = L.map("map").setView([41.9028, 12.4964], 12);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "© OpenStreetMap"
+    }).addTo(map);
 
-  // ✅ Portali: aggiungi/togli domini qui
-  const PORTALS = [
-    { name: "Immobiliare.it", domain: "immobiliare.it" },
-    { name: "Idealista", domain: "idealista.it" },
-    { name: "Casa.it", domain: "casa.it" },
-    { name: "Wikicasa", domain: "wikicasa.it" },
-    { name: "Subito", domain: "subito.it" }
-  ];
+    let marker;
 
-  // ✅ Mappa gratis (OpenStreetMap)
-  const map = L.map("map").setView([41.9028, 12.4964], 12); // fallback Roma
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "© OpenStreetMap"
-  }).addTo(map);
+    function setStatus(msg){ statusEl.textContent = msg; }
 
-  let marker;
-
-  function setStatus(msg) {
-    statusEl.textContent = msg;
-  }
-
-  function setMarker(lat, lng, text) {
-    if (marker) map.removeLayer(marker);
-    marker = L.marker([lat, lng]).addTo(map).bindPopup(text).openPopup();
-    map.setView([lat, lng], 14);
-  }
-
-  // ✅ Geocoding gratis via Nominatim
-  async function geocode(query) {
-    const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(query)}`;
-    const r = await fetch(url);
-    const d = await r.json();
-    if (!d.length) return null;
-    return { lat: +d[0].lat, lng: +d[0].lon, label: d[0].display_name };
-  }
-
-  // ✅ Reverse geocoding gratis (lat/lng -> indirizzo)
-  async function reverseGeocode(lat, lng) {
-    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
-    const r = await fetch(url);
-    const d = await r.json();
-    return d?.display_name || "";
-  }
-
-  // ✅ PULIZIA: solo indirizzo + città, NO civico, NO CAP
-  function cleanLocation(text) {
-    if (!text) return "";
-
-    // 1) togli CAP (5 numeri)
-    let s = text.replace(/\b\d{5}\b/g, "");
-
-    // 2) togli numeri civici (numeri con eventuale lettera)
-    s = s.replace(/\b\d+[A-Za-z]?\b/g, "");
-
-    // 3) pulizia spazi e virgole
-    s = s.replace(/\s+/g, " ").replace(/\s*,\s*/g, ",").trim();
-
-    // 4) prendi solo le prime 2 parti (di solito: via + città)
-    const parts = s.split(",").map(p => p.trim()).filter(Boolean);
-
-    // Se Nominatim restituisce tipo: "Via Roma, Milano, Lombardia, Italia"
-    // noi vogliamo: "Via Roma Milano"
-    return parts.slice(0, 2).join(" ");
-  }
-
-  function buildGoogleLink(domain, query) {
-    const q = `site:${domain} ${query}`;
-    return `https://www.google.com/search?q=${encodeURIComponent(q)}`;
-  }
-
-  function renderLinks(query) {
-    linksEl.innerHTML = "";
-    PORTALS.forEach(p => {
-      const div = document.createElement("div");
-      div.className = "portal";
-      div.innerHTML = `
-        <div>
-          <strong>${p.name}</strong><br>
-          <small>site:${p.domain}</small>
-        </div>
-        <a href="${buildGoogleLink(p.domain, query)}" target="_blank" rel="noopener">Apri</a>
-      `;
-      linksEl.appendChild(div);
-    });
-  }
-
-  async function buildSearches() {
-    const strategy = strategyEl.value.trim();
-    const address = addressEl.value.trim();
-
-    if (!strategy) { setStatus("Scrivi la keyword (es: in vendita bilocale)."); return; }
-    if (!address) { setStatus("Scrivi città/indirizzo (senza civico va benissimo)."); return; }
-
-    setStatus("Sto cercando l'indirizzo…");
-    const geo = await geocode(address);
-
-    if (!geo) {
-      setStatus("Indirizzo non trovato. Prova con 'Via + Città'.");
-      return;
+    function setMarker(lat, lng, text){
+      if (marker) map.removeLayer(marker);
+      marker = L.marker([lat, lng]).addTo(map).bindPopup(text).openPopup();
+      map.setView([lat, lng], 14);
     }
 
-    setMarker(geo.lat, geo.lng, geo.label);
+    async function geocode(query){
+      const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(query)}`;
+      const r = await fetch(url);
+      const d = await r.json();
+      if (!d.length) return null;
+      return { lat: +d[0].lat, lng: +d[0].lon, label: d[0].display_name };
+    }
 
-    // ✅ qui facciamo la pulizia: niente civico, niente CAP
-    const cleanAddress = cleanLocation(geo.label);
+    async function reverseGeocode(lat, lng){
+      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
+      const r = await fetch(url);
+      const d = await r.json();
+      return d?.display_name || "";
+    }
 
-    // Query finale: keyword + (via + città)
-    const finalQuery = `${strategy} ${cleanAddress}`.trim();
+    // ✅ Pulizia: NO civico, NO CAP — prendiamo via + città
+    function cleanLocation(text){
+      if (!text) return "";
 
-    renderLinks(finalQuery);
-    setStatus("Link pronti ✅ (senza civico e senza CAP)");
-  }
+      let s = text;
 
-  document.getElementById("build").onclick = buildSearches;
+      // via Roma 12 -> via Roma
+      s = s.replace(/\b\d+[A-Za-z]?\b/g, "");
 
-  document.getElementById("geo").onclick = () => {
-    setStatus("Geolocalizzazione…");
-    if (!navigator.geolocation) { setStatus("Geolocalizzazione non supportata."); return; }
+      // rimuovi CAP 5 cifre
+      s = s.replace(/\b\d{5}\b/g, "");
 
-    navigator.geolocation.getCurrentPosition(async p => {
-      const lat = p.coords.latitude;
-      const lng = p.coords.longitude;
+      // pulizia spazi e virgole
+      s = s.replace(/\s+/g, " ").replace(/\s*,\s*/g, ",").trim();
 
-      setMarker(lat, lng, "Sei qui");
+      // prendi solo le prime 2 parti (via + città)
+      const parts = s.split(",").map(p => p.trim()).filter(Boolean);
+      return parts.slice(0, 2).join(" ");
+    }
 
-      // riempiamo il campo indirizzo con la via+città trovata (poi verrà ripulita)
-      try {
-        const label = await reverseGeocode(lat, lng);
-        addressEl.value = label || "";
-      } catch {}
+    function googleAllSitesLink(query){
+      const u = new URL("https://www.google.com/search");
+      u.searchParams.set("q", query);
+      return u.toString();
+    }
 
-      setStatus("Posizione trovata ✅ Ora premi 'Crea ricerche'.");
-    }, e => setStatus("Errore posizione: " + (e.message || "")),
-    { enableHighAccuracy:true, timeout:15000, maximumAge:0 });
-  };
-</script>
+    function googleSiteLink(domain, query){
+      const u = new URL("https://www.google.com/search");
+      u.searchParams.set("q", `site:${domain} ${query}`);
+      return u.toString();
+    }
 
+    function renderLinks(finalQuery){
+      linksEl.innerHTML = "";
+
+      // 🔥 Link "TUTTI i siti" (massimo numero risultati)
+      const all = document.createElement("div");
+      all.className = "portal";
+      all.innerHTML = `
+        <div>
+          <strong>Google (tutti i siti)</strong><br>
+          <small>nessun filtro site:</small>
+        </div>
+        <a href="${googleAllSitesLink(finalQuery)}" target="_blank" rel="noopener">Apri</a>
+      `;
+      linksEl.appendChild(all);
+
+      // Portali
+      PORTALS.forEach(p => {
+        const div = document.createElement("div");
+        div.className = "portal";
+        div.innerHTML = `
+          <div>
+            <strong>${p.name}</strong><br>
+            <small>site:${p.domain}</small>
+          </div>
+          <a href="${googleSiteLink(p.domain, finalQuery)}" target="_blank" rel="noopener">Apri</a>
+        `;
+        linksEl.appendChild(div);
+      });
+    }
+
+    async function buildSearches(){
+      const strategy = strategyEl.value.trim();
+      const address = addressEl.value.trim();
+
+      if (!strategy) { setStatus("Scrivi la keyword (es: in vendita bilocale)."); return; }
+      if (!address) { setStatus("Scrivi città/indirizzo (senza civico va benissimo)."); return; }
+
+      setStatus("Sto cercando l'indirizzo…");
+      const geo = await geocode(address);
+      if (!geo) { setStatus("Indirizzo non trovato. Prova con 'Via + Città'."); return; }
+
+      setMarker(geo.lat, geo.lng, geo.label);
+
+      const cleanAddress = cleanLocation(geo.label);
+      const finalQuery = `${strategy} ${cleanAddress}`.trim();
+
+      // ✅ NON cataloghiamo nulla: solo link che aprono TUTTI i risultati
+      renderLinks(finalQuery);
+
+      setStatus("Fatto ✅ Ora clicca 'Apri' per vedere TUTTI gli immobili trovati.");
+    }
+
+    document.getElementById("build").onclick = buildSearches;
+
+    document.getElementById("geo").onclick = () => {
+      setStatus("Geolocalizzazione…");
+      if (!navigator.geolocation) { setStatus("Geolocalizzazione non supportata."); return; }
+
+      navigator.geolocation.getCurrentPosition(async p => {
+        const lat = p.coords.latitude;
+        const lng = p.coords.longitude;
+
+        setMarker(lat, lng, "Sei qui");
+
+        try {
+          const label = await reverseGeocode(lat, lng);
+          addressEl.value = label || "";
+        } catch {}
+
+        setStatus("Posizione trovata ✅ Premi 'Crea ricerche'.");
+      }, e => setStatus("Errore posizione: " + (e.message || "")),
+      { enableHighAccuracy:true, timeout:15000, maximumAge:0 });
+    };
+  </script>
 </body>
 </html>
