@@ -12,24 +12,26 @@
     p{color:#555;line-height:1.45}
     .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
     input[type="file"]{border:1px solid #ddd;border-radius:12px;padding:10px;background:#fff}
-    button{padding:12px 14px;border-radius:12px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:800}
+    button{padding:12px 14px;border-radius:12px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:900}
     button.primary{background:#111;color:#fff;border-color:#111}
-    .muted{color:#666;font-size:13px;margin-top:10px}
+    .muted{color:#666;font-size:13px;margin-top:10px;line-height:1.45}
     #preview{max-width:100%;border-radius:12px;border:1px solid #eee;margin-top:12px}
     textarea{width:100%;min-height:140px;padding:12px;border:1px solid #ddd;border-radius:12px;font-size:13px;line-height:1.35;margin-top:12px}
     table{width:100%;border-collapse:collapse;margin-top:12px}
     th,td{border-bottom:1px solid #eee;padding:10px;text-align:left;font-size:13px;vertical-align:top}
     th{color:#666;font-size:12px;white-space:nowrap}
     .pill{display:inline-block;border:1px solid #eee;border-radius:999px;padding:4px 10px;font-size:12px;color:#666}
-    a{color:#111;font-weight:800}
+    a{color:#111;font-weight:900;text-decoration:none;border:1px solid #ddd;border-radius:12px;padding:10px 12px;background:#fff}
+    .hint{background:#f0f2f5;border:1px solid #e6e8ec;border-radius:12px;padding:10px;margin-top:10px;font-size:13px;color:#444}
+    .kbd{display:inline-block;border:1px solid #ddd;background:#fff;border-radius:8px;padding:2px 6px;font-weight:800;font-size:12px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>📸 OCR immobili (screenshot → dati a video)</h1>
     <p>
-      Carica uno screenshot della lista annunci (o del singolo annuncio).
-      Il browser legge il testo (OCR) e prova a estrarre prezzo/tipologia/indirizzo.
+      Carica uno screenshot (meglio “zoomato”) e il browser prova a leggere testo e prezzi.
+      Poi puoi aggiungere i dati in <b>Scout</b> con un click.
     </p>
 
     <div class="card">
@@ -37,22 +39,31 @@
         <input id="file" type="file" accept="image/*">
         <button class="primary" id="run">Esegui OCR</button>
         <button id="clear">Pulisci</button>
+
         <span class="pill" id="status">Pronto.</span>
-        <a href="./scout.html" target="_blank">Apri Scout</a>
+        <span class="pill" id="plink">Link: (nessuno)</span>
+
+        <a href="./scout.html" target="_blank" rel="noopener">🧭 Apri Scout</a>
       </div>
 
-      <div class="muted">
-        Suggerimento: fai screenshot “zoomato” su 5–15 annunci per volta (testo grande = OCR migliore).
+      <div class="hint">
+        <b>Come fare screenshot “buono”:</b><br>
+        • meglio 1 annuncio (pagina dettaglio) oppure 5–15 annunci in lista<br>
+        • testo grande e nitido (zoom se serve)<br>
+        • se possibile da PC: <span class="kbd">Win</span>+<span class="kbd">Shift</span>+<span class="kbd">S</span> / <span class="kbd">Cmd</span>+<span class="kbd">Shift</span>+<span class="kbd">4</span>
       </div>
 
       <img id="preview" alt="preview" style="display:none" />
+
+      <div class="muted"><b>Testo letto (OCR):</b></div>
       <textarea id="raw" placeholder="Qui comparirà il testo letto dall’immagine…" readonly></textarea>
 
+      <div class="muted"><b>Risultati estratti:</b></div>
       <div id="out"></div>
     </div>
   </div>
 
-  <!-- Tesseract.js (OCR in browser) -->
+  <!-- OCR in browser -->
   <script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
 
   <script>
@@ -61,10 +72,17 @@
     const rawEl = document.getElementById("raw");
     const outEl = document.getElementById("out");
     const statusEl = document.getElementById("status");
+    const plinkEl = document.getElementById("plink");
 
     let lastItems = [];
 
     function setStatus(s){ statusEl.textContent = s; }
+
+    // 🔗 Mostra se c'è un link annuncio agganciato da Scout
+    function refreshPendingLinkBadge(){
+      const pending = localStorage.getItem("ocr_pending_link") || "";
+      plinkEl.textContent = pending ? "Link: agganciato ✅" : "Link: (nessuno)";
+    }
 
     function normalize(s){
       return (s || "")
@@ -74,32 +92,46 @@
     }
 
     function extractPrice(line){
-      // € 165.000 / 165.000 € / €165.000
+      // € 165.000 / €165.000 / 165.000 €
       const m = line.match(/€\s*\d[\d\.\s]*|\d[\d\.\s]*\s*€/);
       return m ? normalize(m[0]).replace(/\s+/g," ") : "";
     }
 
     function guessType(line){
-      const types = ["Appartamento","Attico","Mansarda","Villa","Casa indipendente","Casa","Rustico","Loft","Monolocale","Bilocale","Trilocale","Quadrilocale","Terratetto","Porzione","Ufficio","Negozio","Locale"];
+      const types = [
+        "Appartamento","Attico","Mansarda","Villa","Villino","Casa indipendente","Casa","Rustico",
+        "Loft","Monolocale","Bilocale","Trilocale","Quadrilocale","Terratetto","Porzione",
+        "Ufficio","Negozio","Locale"
+      ];
       const low = line.toLowerCase();
       for (const t of types) if (low.includes(t.toLowerCase())) return t;
       return "Immobile";
     }
 
     function guessAddress(line){
-      // prende la parte “più descrittiva” togliendo il prezzo
+      // prova a rimuovere il prezzo e lasciare la parte descrittiva
       const price = extractPrice(line);
       let s = line;
       if (price) s = s.replace(price, "");
-      return normalize(s);
+      s = normalize(s);
+
+      // se troviamo parole “via/viale/corso…”, lo consideriamo indirizzo/zona
+      const tokens = ["via","viale","piazza","corso","largo","vicolo","strada","piazzale","lungo"];
+      const low = s.toLowerCase();
+      const hasStreet = tokens.some(t => low.includes(t + " "));
+      return hasStreet ? s : s;
     }
 
     function splitLines(text){
-      return text.split(/\r?\n/).map(normalize).filter(Boolean);
+      return (text || "")
+        .split(/\r?\n/)
+        .map(normalize)
+        .filter(Boolean);
     }
 
     function extractItems(text){
-      // Heuristica: ogni riga con € è un possibile annuncio
+      // Heuristica: ogni riga che contiene un prezzo è un candidato annuncio.
+      // Funziona bene con screenshot “dettaglio annuncio” e con liste dove ogni card contiene il prezzo.
       const lines = splitLines(text);
       const items = [];
       const seen = new Set();
@@ -137,7 +169,7 @@
       lastItems = items;
 
       if (!items.length) {
-        outEl.innerHTML = `<div class="muted">Non ho trovato prezzi con “€”. Prova uno screenshot più zoomato e nitido.</div>`;
+        outEl.innerHTML = `<div class="muted">Non ho trovato prezzi con “€”. Prova uno screenshot più zoomato/nitido.</div>`;
         return;
       }
 
@@ -149,7 +181,7 @@
             <th>Tipologia</th>
             <th>Indirizzo / Zona (da OCR)</th>
             <th>Prezzo</th>
-            <th>Invia a Scout</th>
+            <th>Scout</th>
           </tr>
         </thead>
         <tbody>
@@ -166,15 +198,17 @@
       `;
       outEl.appendChild(table);
 
-      // Pulsanti “Aggiungi” -> salva in Scout (localStorage condiviso sullo stesso dominio)
+      // “Aggiungi” -> salva in Scout (stesso dominio GitHub Pages)
       table.querySelectorAll("button[data-i]").forEach(btn => {
         btn.addEventListener("click", () => {
           const idx = +btn.getAttribute("data-i");
           const it = lastItems[idx];
 
+          const pendingLink = localStorage.getItem("ocr_pending_link") || "";
+
           const itemsScout = JSON.parse(localStorage.getItem("scout_items") || "[]");
           itemsScout.push({
-            link: "",                 // qui il link puoi metterlo a mano dopo
+            link: pendingLink,                 // ✅ link agganciato da Scout
             zone: it.address || "",
             price: it.price || "",
             note: `OCR: ${it.type}`,
@@ -202,7 +236,7 @@
       const f = fileEl.files?.[0];
       if (!f) { setStatus("Carica prima un'immagine."); return; }
 
-      setStatus("OCR in corso… (può richiedere un po')");
+      setStatus("OCR in corso…");
       try {
         const { data } = await Tesseract.recognize(f, "ita", {
           logger: m => {
@@ -232,6 +266,11 @@
       setStatus("Pulito.");
       lastItems = [];
     });
+
+    // init
+    refreshPendingLinkBadge();
+    window.addEventListener("focus", refreshPendingLinkBadge);
+    window.addEventListener("storage", refreshPendingLinkBadge);
   </script>
 </body>
 </html>
