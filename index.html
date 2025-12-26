@@ -1,107 +1,244 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Immobili in vendita – Tutti i portali</title>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hub ricerche “città in vendita”</title>
   <style>
     body{
+      margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
       background:#f5f6f8;
-      margin:0;
-      padding:20px;
+      color:#111;
     }
-    .box{
-      max-width:520px;
-      margin:auto;
+    .wrap{
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 14px 70px;
+    }
+    .card{
       background:#fff;
-      padding:20px;
-      border-radius:16px;
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
     }
-    h1{ font-size:22px; }
+    h1{ margin:0; font-size:22px; }
+    p{ color:#555; line-height:1.45; }
+    .row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
     input{
-      width:100%;
-      padding:14px;
-      border-radius:12px;
-      border:1px solid #ddd;
-      font-size:16px;
-      margin-top:10px;
+      flex:1;
+      min-width: 220px;
+      padding: 14px 14px;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      font-size: 16px;
+      outline: none;
+      background:#fff;
     }
     button{
-      width:100%;
-      margin-top:14px;
-      padding:14px;
-      border-radius:12px;
-      border:none;
-      background:#111;
-      color:#fff;
-      font-size:16px;
+      padding: 14px 14px;
+      border-radius: 14px;
+      border: 1px solid #ddd;
+      background:#fff;
       cursor:pointer;
+      font-size: 15px;
     }
-    .links{
-      margin-top:20px;
-      display:grid;
-      gap:10px;
+    button.primary{
+      background:#111;
+      border-color:#111;
+      color:#fff;
+      font-weight: 650;
     }
-    a{
-      display:block;
-      padding:14px;
-      background:#f0f2f5;
-      border-radius:12px;
+    button.ghost{ background:#fff; }
+    .muted{ color:#666; font-size: 13px; margin-top:10px; }
+    .list{ margin-top: 14px; display:grid; gap:10px; }
+    .item{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      padding: 12px 12px;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      background:#fff;
+    }
+    .left{ display:grid; gap:2px; }
+    .name{ font-weight: 750; }
+    .desc{ color:#666; font-size: 12px; }
+    a.open{
       text-decoration:none;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
       color:#111;
-      font-weight:600;
-      text-align:center;
+      font-weight: 700;
+      background:#fff;
+      white-space: nowrap;
+    }
+    .pill{
+      display:inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid #eee;
+      color:#666;
+      width: fit-content;
+      margin-top: 2px;
+    }
+    .footer{
+      margin-top: 14px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-    <h1>Trova TUTTI gli immobili in vendita</h1>
-    <p>Inserisci una città. Apriremo le ricerche ufficiali di ogni portale.</p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Hub ricerche “città in vendita”</h1>
+      <p>
+        Scrivi una città/paese e apri le pagine dei portali con tutti gli immobili in vendita.
+        Nessuna API, nessun costo: solo ricerche “madre”.
+      </p>
 
-    <input id="city" placeholder="Es. Milano">
-    <button onclick="search()">Cerca immobili</button>
+      <div class="row">
+        <input id="city" placeholder="Es: Sant'Ambrogio di Torino" />
+        <button class="primary" id="btn">Cerca</button>
+        <button class="ghost" id="btnAll">Apri tutti</button>
+      </div>
 
-    <div class="links" id="links"></div>
+      <div class="muted" id="status">Pronto.</div>
+      <div class="list" id="list"></div>
+
+      <div class="footer">
+        <button id="btnCopy">Copia query Google</button>
+        <button id="btnClear">Pulisci</button>
+      </div>
+    </div>
   </div>
 
 <script>
-function slug(s){
-  return s.toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
-    .replace(/[^a-z0-9\s-]/g,"")
-    .trim()
-    .replace(/\s+/g,"-");
-}
+  const cityEl = document.getElementById("city");
+  const listEl = document.getElementById("list");
+  const statusEl = document.getElementById("status");
 
-function search(){
-  const city = document.getElementById("city").value.trim();
-  if(!city) return;
-
-  const c = slug(city);
-  const links = document.getElementById("links");
-  links.innerHTML = "";
-
-  const portals = [
-    { name:"Immobiliare.it", url:`https://www.immobiliare.it/vendita-case/${c}/` },
-    { name:"Idealista", url:`https://www.idealista.it/vendita-case/${c}/` },
-    { name:"Casa.it", url:`https://www.casa.it/vendita/residenziale/${c}/` },
-    { name:"Wikicasa", url:`https://www.wikicasa.it/vendita-case/${c}/` },
-    { name:"Subito", url:`https://www.subito.it/annunci-italia/vendita/immobili/${c}/` }
+  // Portali: qui puoi aggiungere/togliere domini
+  const PORTALS = [
+    { name: "Immobiliare.it", domain: "immobiliare.it", note: "indice città (spesso più completo di Google)" },
+    { name: "Idealista", domain: "idealista.it", note: "indice città" },
+    { name: "Casa.it", domain: "casa.it", note: "indice città" },
+    { name: "Subito", domain: "subito.it", note: "spesso aggrega annunci" },
+    { name: "Trovacasa", domain: "trovacasa.it", note: "aggregatore" },
+    { name: "RE/MAX", domain: "remax.it", note: "indice città" },
+    { name: "Tecnocasa", domain: "tecnocasa.it", note: "annunci per zona" },
+    { name: "Tempocasa", domain: "tempocasa.it", note: "annunci per città" },
+    { name: "Tecnorete", domain: "tecnorete.it", note: "annunci per zona/città" }
   ];
 
-  portals.forEach(p=>{
-    const a=document.createElement("a");
-    a.href=p.url;
-    a.target="_blank";
-    a.textContent=p.name+" – "+city;
-    links.appendChild(a);
+  function googleSearchUrl(q){
+    const u = new URL("https://www.google.com/search");
+    u.searchParams.set("q", q);
+    return u.toString();
+  }
+
+  function buildBaseQuery(city){
+    // La stessa logica che hai usato tu:
+    // "santambrogio in vendita" -> per essere più robusti:
+    // usiamo la città completa + "in vendita"
+    return `${city} in vendita`;
+  }
+
+  function buildPortalQuery(city, domain){
+    // Per tirare fuori la pagina “contenitore” del portale:
+    // site:domain "città" ("in vendita" OR "case in vendita")
+    // Qui teniamo semplice e largo
+    return `site:${domain} ${city} in vendita`;
+  }
+
+  function render(city){
+    listEl.innerHTML = "";
+    const baseQuery = buildBaseQuery(city);
+
+    const items = [];
+
+    // 1) Google generale (massima copertura)
+    items.push({
+      name: "Google (tutti i siti)",
+      desc: baseQuery,
+      pill: "query larga",
+      url: googleSearchUrl(baseQuery)
+    });
+
+    // 2) Google per portale (aiuta a trovare le pagine indice)
+    for (const p of PORTALS) {
+      const q = buildPortalQuery(city, p.domain);
+      items.push({
+        name: p.name,
+        desc: q,
+        pill: `site:${p.domain}`,
+        url: googleSearchUrl(q)
+      });
+    }
+
+    for (const it of items) {
+      const row = document.createElement("div");
+      row.className = "item";
+      row.innerHTML = `
+        <div class="left">
+          <div class="name">${it.name}</div>
+          <div class="desc">${it.desc}</div>
+          <div class="pill">${it.pill}</div>
+        </div>
+        <a class="open" href="${it.url}" target="_blank" rel="noopener">Apri</a>
+      `;
+      listEl.appendChild(row);
+    }
+
+    statusEl.textContent = `Creati ${items.length} link per: ${city}`;
+    window.__LAST_BASE_QUERY__ = baseQuery;
+    window.__LAST_URLS__ = items.map(x => x.url);
+  }
+
+  function run(){
+    const city = (cityEl.value || "").trim();
+    if (!city) { statusEl.textContent = "Scrivi una città/paese."; return; }
+    render(city);
+  }
+
+  document.getElementById("btn").addEventListener("click", run);
+  cityEl.addEventListener("keydown", (e) => { if (e.key === "Enter") run(); });
+
+  document.getElementById("btnAll").addEventListener("click", () => {
+    if (!window.__LAST_URLS__?.length) { statusEl.textContent = "Prima clicca 'Cerca'."; return; }
+    // Alcuni browser bloccano popup multipli: è normale.
+    let opened = 0;
+    for (const url of window.__LAST_URLS__) {
+      const w = window.open(url, "_blank", "noopener,noreferrer");
+      if (w) opened++;
+    }
+    statusEl.textContent = `Ho provato ad aprire ${window.__LAST_URLS__.length} schede (aperte: ${opened}).`;
   });
-}
+
+  document.getElementById("btnCopy").addEventListener("click", async () => {
+    const q = window.__LAST_BASE_QUERY__;
+    if (!q) { statusEl.textContent = "Prima clicca 'Cerca'."; return; }
+    try {
+      await navigator.clipboard.writeText(q);
+      statusEl.textContent = `Copiata query: ${q}`;
+    } catch {
+      statusEl.textContent = "Impossibile copiare (browser). Seleziona e copia manualmente.";
+    }
+  });
+
+  document.getElementById("btnClear").addEventListener("click", () => {
+    cityEl.value = "";
+    listEl.innerHTML = "";
+    statusEl.textContent = "Pulito.";
+    window.__LAST_BASE_QUERY__ = null;
+    window.__LAST_URLS__ = null;
+  });
 </script>
 </body>
 </html>
