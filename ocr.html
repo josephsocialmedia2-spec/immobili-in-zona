@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8" />
@@ -30,8 +30,8 @@
   <div class="wrap">
     <h1>📸 OCR immobili (screenshot → dati a video)</h1>
     <p>
-      Carica uno screenshot (meglio “zoomato”) e il browser prova a leggere testo e prezzi.
-      Poi puoi aggiungere i dati in <b>Scout</b> con un click.
+      Carica uno screenshot (oppure invialo con l’estensione Chrome) e il browser prova a leggere testo e prezzi.
+      Poi puoi aggiungere i dati in <b>Scout</b>.
     </p>
 
     <div class="card">
@@ -47,10 +47,10 @@
       </div>
 
       <div class="hint">
-        <b>Come fare screenshot “buono”:</b><br>
+        <b>Screenshot “buono”:</b><br>
         • meglio 1 annuncio (pagina dettaglio) oppure 5–15 annunci in lista<br>
         • testo grande e nitido (zoom se serve)<br>
-        • se possibile da PC: <span class="kbd">Win</span>+<span class="kbd">Shift</span>+<span class="kbd">S</span> / <span class="kbd">Cmd</span>+<span class="kbd">Shift</span>+<span class="kbd">4</span>
+        • PC: <span class="kbd">Win</span>+<span class="kbd">Shift</span>+<span class="kbd">S</span> / <span class="kbd">Cmd</span>+<span class="kbd">Shift</span>+<span class="kbd">4</span>
       </div>
 
       <img id="preview" alt="preview" style="display:none" />
@@ -78,7 +78,7 @@
 
     function setStatus(s){ statusEl.textContent = s; }
 
-    // 🔗 Mostra se c'è un link annuncio agganciato da Scout
+    // 🔗 Badge: link agganciato da Scout
     function refreshPendingLinkBadge(){
       const pending = localStorage.getItem("ocr_pending_link") || "";
       plinkEl.textContent = pending ? "Link: agganciato ✅" : "Link: (nessuno)";
@@ -109,13 +109,11 @@
     }
 
     function guessAddress(line){
-      // prova a rimuovere il prezzo e lasciare la parte descrittiva
       const price = extractPrice(line);
       let s = line;
       if (price) s = s.replace(price, "");
       s = normalize(s);
 
-      // se troviamo parole “via/viale/corso…”, lo consideriamo indirizzo/zona
       const tokens = ["via","viale","piazza","corso","largo","vicolo","strada","piazzale","lungo"];
       const low = s.toLowerCase();
       const hasStreet = tokens.some(t => low.includes(t + " "));
@@ -130,8 +128,6 @@
     }
 
     function extractItems(text){
-      // Heuristica: ogni riga che contiene un prezzo è un candidato annuncio.
-      // Funziona bene con screenshot “dettaglio annuncio” e con liste dove ogni card contiene il prezzo.
       const lines = splitLines(text);
       const items = [];
       const seen = new Set();
@@ -198,7 +194,6 @@
       `;
       outEl.appendChild(table);
 
-      // “Aggiungi” -> salva in Scout (stesso dominio GitHub Pages)
       table.querySelectorAll("button[data-i]").forEach(btn => {
         btn.addEventListener("click", () => {
           const idx = +btn.getAttribute("data-i");
@@ -208,7 +203,7 @@
 
           const itemsScout = JSON.parse(localStorage.getItem("scout_items") || "[]");
           itemsScout.push({
-            link: pendingLink,                 // ✅ link agganciato da Scout
+            link: pendingLink,
             zone: it.address || "",
             price: it.price || "",
             note: `OCR: ${it.type}`,
@@ -221,6 +216,24 @@
       });
     }
 
+    async function runOCRFromImage(inputForTesseract){
+      setStatus("OCR in corso…");
+      const { data } = await Tesseract.recognize(inputForTesseract, "ita", {
+        logger: m => {
+          if (m.status === "recognizing text") {
+            const pct = Math.round((m.progress || 0) * 100);
+            setStatus(`OCR… ${pct}%`);
+          }
+        }
+      });
+
+      rawEl.value = (data.text || "").trim();
+      const items = extractItems(data.text || "");
+      render(items);
+      setStatus(`Fatto ✅ Estratti: ${items.length}`);
+    }
+
+    // ✅ Upload manuale
     fileEl.addEventListener("change", () => {
       const f = fileEl.files?.[0];
       if (!f) return;
@@ -235,22 +248,8 @@
     document.getElementById("run").addEventListener("click", async () => {
       const f = fileEl.files?.[0];
       if (!f) { setStatus("Carica prima un'immagine."); return; }
-
-      setStatus("OCR in corso…");
       try {
-        const { data } = await Tesseract.recognize(f, "ita", {
-          logger: m => {
-            if (m.status === "recognizing text") {
-              const pct = Math.round((m.progress || 0) * 100);
-              setStatus(`OCR… ${pct}%`);
-            }
-          }
-        });
-
-        rawEl.value = (data.text || "").trim();
-        const items = extractItems(data.text || "");
-        render(items);
-        setStatus(`Fatto ✅ Estratti: ${items.length}`);
+        await runOCRFromImage(f);
       } catch (e) {
         console.error(e);
         setStatus("Errore OCR. Prova con un'immagine più chiara.");
@@ -267,6 +266,25 @@
       lastItems = [];
     });
 
+    // ✅ Ricezione AUTOMATICA da estensione (screenshot)
+    window.addEventListener("message", async (event) => {
+      const msg = event.data;
+      if (!msg || msg.type !== "OCR_IMAGE" || !msg.dataUrl) return;
+
+      try {
+        previewEl.src = msg.dataUrl;
+        previewEl.style.display = "";
+        rawEl.value = "";
+        outEl.innerHTML = "";
+        setStatus("Screenshot ricevuto ✅ Avvio OCR…");
+
+        await runOCRFromImage(msg.dataUrl);
+      } catch (e) {
+        console.error(e);
+        setStatus("Errore OCR da screenshot. Prova a zoomare di più prima di catturare.");
+      }
+    });
+
     // init
     refreshPendingLinkBadge();
     window.addEventListener("focus", refreshPendingLinkBadge);
@@ -274,3 +292,4 @@
   </script>
 </body>
 </html>
+
