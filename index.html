@@ -1,235 +1,140 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ricerca annunci per via + città (gratis)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valutazione immobiliare gratuita</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
-    html, body { height:100%; margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
-    #panel{
-      position: fixed; top:12px; left:12px; right:12px; z-index:1000;
-      background: rgba(255,255,255,.96); border:1px solid #eee; border-radius:14px;
-      padding:10px; display:grid; gap:8px;
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: #f6f7f9;
+      color: #111;
     }
-    .row{ display:flex; gap:8px; flex-wrap:wrap; }
-    input{ flex:1; padding:10px 12px; border:1px solid #ddd; border-radius:12px; }
-    button{ padding:10px 12px; border:1px solid #ddd; background:#fff; border-radius:12px; cursor:pointer; }
-    button.primary{ background:#111; color:#fff; border-color:#111; }
-    #status{ font-size:13px; color:#666; }
-    #links{ display:grid; gap:8px; max-height:42vh; overflow:auto; }
-    .portal{
-      border:1px solid #eee; border-radius:12px; padding:10px;
-      display:flex; justify-content:space-between; align-items:center; gap:10px;
+    .wrap {
+      max-width: 720px;
+      margin: auto;
+      padding: 24px 16px 80px;
     }
-    .portal small{ color:#666; font-size:12px; }
-    .portal a{ font-weight:700; }
-    #map{ height:100%; width:100%; }
+    h1 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    p {
+      color: #555;
+      line-height: 1.5;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 14px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      margin-top: 6px;
+      font-size: 16px;
+    }
+    .checkbox {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      font-size: 13px;
+      color: #444;
+    }
+    .checkbox input {
+      width: auto;
+      margin-top: 3px;
+    }
+    button {
+      width: 100%;
+      margin-top: 18px;
+      padding: 14px;
+      border-radius: 14px;
+      border: none;
+      background: #111;
+      color: #fff;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    .whatsapp {
+      display: block;
+      margin-top: 16px;
+      text-align: center;
+      padding: 14px;
+      border-radius: 14px;
+      background: #25D366;
+      color: #fff;
+      font-size: 17px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 12px;
+    }
   </style>
 </head>
 
 <body>
-  <div id="panel">
-    <div class="row">
-      <button id="geo">📍 Vicino a me</button>
-      <button id="clear">Pulisci</button>
-    </div>
+  <div class="wrap">
+    <h1>Vuoi sapere quanto vale la tua casa?</h1>
+    <p>
+      Analisi gratuita e senza impegno per immobili nella tua zona.
+      Risposta rapida, dati reali di mercato.
+    </p>
 
-    <div class="row">
-      <input id="address" placeholder="Scrivi VIA + CITTÀ (es: Via Roma Milano)" />
-      <button class="primary" id="build">Cerca sui portali</button>
-    </div>
+    <div class="card">
+      <form id="leadForm">
+        <label>Nome</label>
+        <input required placeholder="Il tuo nome">
 
-    <div id="status">Inserisci una via e una città, oppure premi “Vicino a me”.</div>
-    <div id="links"></div>
+        <label>Telefono</label>
+        <input required type="tel" placeholder="Es. 3331234567">
+
+        <label>Città / Zona</label>
+        <input required placeholder="Es. Milano, Navigli">
+
+        <div class="checkbox">
+          <input type="checkbox" required>
+          <span>
+            Acconsento al trattamento dei miei dati per essere ricontattato
+            (art. 13 GDPR).
+          </span>
+        </div>
+
+        <button type="submit">Richiedi valutazione gratuita</button>
+      </form>
+
+      <a class="whatsapp"
+         href="https://wa.me/TUO_NUMERO_WHATSAPP?text=Salve%2C%20vorrei%20una%20valutazione%20gratuita%20per%20il%20mio%20immobile"
+         target="_blank">
+        Scrivici su WhatsApp
+      </a>
+
+      <div class="note">
+        Nessuno spam. I tuoi dati non saranno ceduti a terzi senza consenso.
+      </div>
+    </div>
   </div>
 
-  <div id="map"></div>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-    const statusEl = document.getElementById("status");
-    const linksEl = document.getElementById("links");
-    const addressEl = document.getElementById("address");
-
-    // Portali: qui puoi aggiungere/togliere domini
-    const PORTALS = [
-      { name: "Immobiliare.it", domain: "immobiliare.it" },
-      { name: "Idealista", domain: "idealista.it" },
-      { name: "Casa.it", domain: "casa.it" },
-      { name: "Wikicasa", domain: "wikicasa.it" },
-      { name: "Subito", domain: "subito.it" }
-    ];
-
-    // Mappa gratis
-    const map = L.map("map").setView([41.9028, 12.4964], 12); // fallback Roma
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "© OpenStreetMap"
-    }).addTo(map);
-
-    let marker;
-
-    function setStatus(msg){ statusEl.textContent = msg; }
-
-    function setMarker(lat, lng, text){
-      if (marker) map.removeLayer(marker);
-      marker = L.marker([lat, lng]).addTo(map).bindPopup(text).openPopup();
-      map.setView([lat, lng], 14);
-    }
-
-    // Geocoding gratis via Nominatim
-    async function geocode(query){
-      const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(query)}`;
-      const r = await fetch(url);
-      const d = await r.json();
-      if (!d.length) return null;
-      return { lat: +d[0].lat, lng: +d[0].lon, label: d[0].display_name };
-    }
-
-    // Reverse geocoding gratis (lat/lng -> indirizzo)
-    async function reverseGeocode(lat, lng){
-      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
-      const r = await fetch(url);
-      const d = await r.json();
-      return d?.display_name || "";
-    }
-
-    // ✅ Pulizia: NO civico, NO CAP — teniamo VIA + CITTÀ
-    function cleanLocation(text){
-      if (!text) return "";
-
-      let s = text;
-
-      // togli CAP (5 cifre)
-      s = s.replace(/\b\d{5}\b/g, "");
-
-      // togli numeri civici tipo 12, 12A
-      s = s.replace(/\b\d+[A-Za-z]?\b/g, "");
-
-      // pulizia spazi e virgole
-      s = s.replace(/\s+/g, " ").replace(/\s*,\s*/g, ",").trim();
-
-      // teniamo solo le prime 2 parti: VIA + CITTÀ
-      const parts = s.split(",").map(p => p.trim()).filter(Boolean);
-      return parts.slice(0, 2).join(" ");
-    }
-
-    // Query Google: incrocio indirizzo + città, con quote sulla via
-    function buildQueryFromClean(cleanText){
-      // se cleanText = "Via Roma Milano"
-      // vogliamo:  "Via Roma" Milano
-      const bits = cleanText.split(" ").filter(Boolean);
-      if (bits.length < 2) return cleanText;
-
-      // mettiamo tra virgolette i primi 2-4 token come "via nome"
-      const street = bits.slice(0, Math.min(4, bits.length - 1)).join(" ");
-      const city = bits.slice(Math.min(4, bits.length - 1)).join(" ");
-
-      // Se city resta vuota, ritorna solo street
-      if (!city) return `"${street}"`;
-
-      return `"${street}" ${city}`;
-    }
-
-    function googleAllSitesLink(query){
-      const u = new URL("https://www.google.com/search");
-      u.searchParams.set("q", query);
-      return u.toString();
-    }
-
-    function googleSiteLink(domain, query){
-      const u = new URL("https://www.google.com/search");
-      u.searchParams.set("q", `site:${domain} ${query}`);
-      return u.toString();
-    }
-
-    function renderLinks(query){
-      linksEl.innerHTML = "";
-
-      // (Opzionale ma utile) Google senza filtro: massima copertura
-      const all = document.createElement("div");
-      all.className = "portal";
-      all.innerHTML = `
-        <div>
-          <strong>Google (tutti i siti)</strong><br>
-          <small>ricerca generale</small>
-        </div>
-        <a href="${googleAllSitesLink(query)}" target="_blank" rel="noopener">Apri</a>
-      `;
-      linksEl.appendChild(all);
-
-      // Portali con site:
-      PORTALS.forEach(p => {
-        const div = document.createElement("div");
-        div.className = "portal";
-        div.innerHTML = `
-          <div>
-            <strong>${p.name}</strong><br>
-            <small>site:${p.domain}</small>
-          </div>
-          <a href="${googleSiteLink(p.domain, query)}" target="_blank" rel="noopener">Apri</a>
-        `;
-        linksEl.appendChild(div);
-      });
-    }
-
-    async function buildSearches(){
-      linksEl.innerHTML = "";
-      const input = addressEl.value.trim();
-
-      if (!input) { setStatus("Scrivi VIA + CITTÀ (es: Via Roma Milano)."); return; }
-
-      setStatus("Sto interpretando l'indirizzo…");
-      const geo = await geocode(input);
-
-      // Se geocode fallisce, usiamo comunque l’input dell’utente per la query
-      let labelToUse = input;
-
-      if (geo) {
-        setMarker(geo.lat, geo.lng, geo.label);
-        labelToUse = geo.label;
-      }
-
-      const clean = cleanLocation(labelToUse);
-      const query = buildQueryFromClean(clean);
-
-      renderLinks(query);
-
-      setStatus("Fatto ✅ Ora clicca 'Apri' per vedere TUTTI gli annunci trovati.");
-    }
-
-    document.getElementById("build").onclick = buildSearches;
-
-    document.getElementById("geo").onclick = () => {
-      setStatus("Geolocalizzazione…");
-      if (!navigator.geolocation) { setStatus("Geolocalizzazione non supportata."); return; }
-
-      navigator.geolocation.getCurrentPosition(async p => {
-        const lat = p.coords.latitude;
-        const lng = p.coords.longitude;
-        setMarker(lat, lng, "Sei qui");
-
-        try {
-          const label = await reverseGeocode(lat, lng);
-          // Riempio il campo (verrà pulito al click su "Cerca sui portali")
-          addressEl.value = label || "";
-        } catch {}
-
-        setStatus("Posizione trovata ✅ Premi 'Cerca sui portali'.");
-      }, e => setStatus("Errore posizione: " + (e.message || "")),
-      { enableHighAccuracy:true, timeout:15000, maximumAge:0 });
-    };
-
-    document.getElementById("clear").onclick = () => {
-      addressEl.value = "";
-      linksEl.innerHTML = "";
-      setStatus("Pulito. Scrivi VIA + CITTÀ oppure premi 'Vicino a me'.");
-    };
-
-    // Enter per cercare
-    addressEl.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") buildSearches();
+    document.getElementById("leadForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Grazie! Verrai ricontattato al più presto.");
+      // In futuro: invio dati a Google Form / email / CRM
     });
   </script>
 </body>
