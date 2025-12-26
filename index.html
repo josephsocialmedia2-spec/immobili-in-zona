@@ -3,139 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Valutazione immobiliare gratuita</title>
+  <title>Immobili in vendita – Tutti i portali</title>
 
   <style>
-    body {
-      margin: 0;
+    body{
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background: #f6f7f9;
-      color: #111;
+      background:#f5f6f8;
+      margin:0;
+      padding:20px;
     }
-    .wrap {
-      max-width: 720px;
-      margin: auto;
-      padding: 24px 16px 80px;
+    .box{
+      max-width:520px;
+      margin:auto;
+      background:#fff;
+      padding:20px;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
     }
-    h1 {
-      font-size: 28px;
-      line-height: 1.2;
+    h1{ font-size:22px; }
+    input{
+      width:100%;
+      padding:14px;
+      border-radius:12px;
+      border:1px solid #ddd;
+      font-size:16px;
+      margin-top:10px;
     }
-    p {
-      color: #555;
-      line-height: 1.5;
+    button{
+      width:100%;
+      margin-top:14px;
+      padding:14px;
+      border-radius:12px;
+      border:none;
+      background:#111;
+      color:#fff;
+      font-size:16px;
+      cursor:pointer;
     }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
-      margin-top: 20px;
+    .links{
+      margin-top:20px;
+      display:grid;
+      gap:10px;
     }
-    label {
-      display: block;
-      margin-top: 14px;
-      font-size: 14px;
-      font-weight: 600;
-    }
-    input {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 12px;
-      border: 1px solid #ddd;
-      margin-top: 6px;
-      font-size: 16px;
-    }
-    .checkbox {
-      display: flex;
-      gap: 10px;
-      margin-top: 14px;
-      font-size: 13px;
-      color: #444;
-    }
-    .checkbox input {
-      width: auto;
-      margin-top: 3px;
-    }
-    button {
-      width: 100%;
-      margin-top: 18px;
-      padding: 14px;
-      border-radius: 14px;
-      border: none;
-      background: #111;
-      color: #fff;
-      font-size: 17px;
-      cursor: pointer;
-    }
-    .whatsapp {
-      display: block;
-      margin-top: 16px;
-      text-align: center;
-      padding: 14px;
-      border-radius: 14px;
-      background: #25D366;
-      color: #fff;
-      font-size: 17px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .note {
-      font-size: 12px;
-      color: #666;
-      margin-top: 12px;
+    a{
+      display:block;
+      padding:14px;
+      background:#f0f2f5;
+      border-radius:12px;
+      text-decoration:none;
+      color:#111;
+      font-weight:600;
+      text-align:center;
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <h1>Vuoi sapere quanto vale la tua casa?</h1>
-    <p>
-      Analisi gratuita e senza impegno per immobili nella tua zona.
-      Risposta rapida, dati reali di mercato.
-    </p>
+  <div class="box">
+    <h1>Trova TUTTI gli immobili in vendita</h1>
+    <p>Inserisci una città. Apriremo le ricerche ufficiali di ogni portale.</p>
 
-    <div class="card">
-      <form id="leadForm">
-        <label>Nome</label>
-        <input required placeholder="Il tuo nome">
+    <input id="city" placeholder="Es. Milano">
+    <button onclick="search()">Cerca immobili</button>
 
-        <label>Telefono</label>
-        <input required type="tel" placeholder="Es. 3331234567">
-
-        <label>Città / Zona</label>
-        <input required placeholder="Es. Milano, Navigli">
-
-        <div class="checkbox">
-          <input type="checkbox" required>
-          <span>
-            Acconsento al trattamento dei miei dati per essere ricontattato
-            (art. 13 GDPR).
-          </span>
-        </div>
-
-        <button type="submit">Richiedi valutazione gratuita</button>
-      </form>
-
-      <a class="whatsapp"
-         href="https://wa.me/TUO_NUMERO_WHATSAPP?text=Salve%2C%20vorrei%20una%20valutazione%20gratuita%20per%20il%20mio%20immobile"
-         target="_blank">
-        Scrivici su WhatsApp
-      </a>
-
-      <div class="note">
-        Nessuno spam. I tuoi dati non saranno ceduti a terzi senza consenso.
-      </div>
-    </div>
+    <div class="links" id="links"></div>
   </div>
 
-  <script>
-    document.getElementById("leadForm").addEventListener("submit", function(e){
-      e.preventDefault();
-      alert("Grazie! Verrai ricontattato al più presto.");
-      // In futuro: invio dati a Google Form / email / CRM
-    });
-  </script>
+<script>
+function slug(s){
+  return s.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9\s-]/g,"")
+    .trim()
+    .replace(/\s+/g,"-");
+}
+
+function search(){
+  const city = document.getElementById("city").value.trim();
+  if(!city) return;
+
+  const c = slug(city);
+  const links = document.getElementById("links");
+  links.innerHTML = "";
+
+  const portals = [
+    { name:"Immobiliare.it", url:`https://www.immobiliare.it/vendita-case/${c}/` },
+    { name:"Idealista", url:`https://www.idealista.it/vendita-case/${c}/` },
+    { name:"Casa.it", url:`https://www.casa.it/vendita/residenziale/${c}/` },
+    { name:"Wikicasa", url:`https://www.wikicasa.it/vendita-case/${c}/` },
+    { name:"Subito", url:`https://www.subito.it/annunci-italia/vendita/immobili/${c}/` }
+  ];
+
+  portals.forEach(p=>{
+    const a=document.createElement("a");
+    a.href=p.url;
+    a.target="_blank";
+    a.textContent=p.name+" – "+city;
+    links.appendChild(a);
+  });
+}
+</script>
 </body>
 </html>
