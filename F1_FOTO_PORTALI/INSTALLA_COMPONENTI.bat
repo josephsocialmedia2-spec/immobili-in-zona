@@ -31,7 +31,7 @@ if not defined PYEXE (
 )
 
 %PYEXE% -m pip install --upgrade pip
-%PYEXE% -m pip install --upgrade requests websocket-client pillow
+%PYEXE% -m pip install --upgrade pillow selenium
 
 if errorlevel 1 (
     echo.
