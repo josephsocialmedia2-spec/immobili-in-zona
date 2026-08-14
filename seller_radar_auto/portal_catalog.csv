@@ -1,0 +1,20 @@
+enabled,label,domain,path_regex,private_intent,query_template,max_results
+1,Immobiliare.it,www.immobiliare.it,^/annunci/[0-9]+/?$,0,"site:immobiliare.it/annunci/ ""{comune}"" vendita (casa OR appartamento OR villa)",12
+1,Idealista,www.idealista.it,^/immobile/[0-9]+/?$,0,"site:idealista.it/immobile/ ""{comune}"" vendita (casa OR appartamento OR villa)",12
+1,Casa.it,www.casa.it,^/immobili/[0-9]+/?$,0,"site:casa.it/immobili/ ""{comune}"" vendita (casa OR appartamento OR villa)",12
+1,TrovaCasa privati,www.trovacasa.it,^/annunci/[^/?#]+/?$,1,"site:trovacasa.it/annunci/ ""{comune}"" (""da privato"" OR ""no agenzie"" OR ""privato vende"")",12
+1,Wikicasa,www.wikicasa.it,^/.*$,0,"site:wikicasa.it ""{comune}"" vendita (casa OR appartamento OR villa)",10
+1,Subito privati,www.subito.it,^/.*$,1,"site:subito.it ""{comune}"" vendita (appartamento OR casa OR villa) (privato OR ""da privati"")",12
+1,Bakeca privati,*.bakeca.it,^/annunci/.*$,1,"site:bakeca.it/annunci/vendita-case/ ""{comune}"" (privato OR ""vendo"")",10
+1,Trovit,www.trovit.it,^/.*$,0,"site:trovit.it ""{comune}"" vendita (casa OR appartamento OR villa)",10
+1,Nestoria,www.nestoria.it,^/.*$,0,"site:nestoria.it ""{comune}"" vendita (casa OR appartamento OR villa)",10
+1,Gate-away,www.gate-away.com,^/.*$,0,"site:gate-away.com ""{comune}"" property sale house",8
+1,VendereCasa,www.venderecasa.com,^/.*$,1,"site:venderecasa.com ""{comune}"" vendita (casa OR appartamento OR villa)",10
+1,TuttoCasa,www.tuttocasa.it,^/.*$,1,"site:tuttocasa.it ""{comune}"" vendita (casa OR appartamento OR villa)",10
+1,Tecnocasa,www.tecnocasa.it,^/vendita/.*[0-9]+\.html$,0,"site:tecnocasa.it/vendita/ ""{comune}"" vendita",10
+1,Tecnorete,www.tecnorete.it,^/.*$,0,"site:tecnorete.it ""{comune}"" ""in vendita""",10
+1,Tempocasa,tempocasa.it,^/it/vendita/.*/[0-9]+/?$,0,"site:tempocasa.it/it/vendita/ ""{comune}"" vendita",10
+1,Facebook Marketplace,www.facebook.com,^/marketplace/item/[0-9]+/?$,1,"site:facebook.com/marketplace/item/ ""{comune}"" (casa OR appartamento OR villa) vendita",8
+1,Gruppi Facebook locali,www.facebook.com,^/groups/.*$,1,"site:facebook.com/groups/ ""{comune}"" (""vendo casa"" OR ""privato vende"" OR ""no agenzie"")",8
+1,Web generale,,,1,"""{comune}"" (""privato vende"" OR ""no agenzie"") (casa OR appartamento OR villa) vendita",12
+1,Bacheche locali,,,1,"""{comune}"" (""annuncio privato"" OR ""vendo appartamento"" OR ""vendo casa"") -immobiliare.it -idealista.it -casa.it",10
