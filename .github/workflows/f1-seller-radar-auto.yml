@@ -2,6 +2,11 @@ name: F1 Seller Radar AUTO
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "seller_radar_auto/cloud_radar.py"
+      - "seller_radar_auto/sources.csv"
+      - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
     - cron: "17 */3 * * *"
 
