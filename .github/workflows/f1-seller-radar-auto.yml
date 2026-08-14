@@ -8,7 +8,9 @@ on:
       - "seller_radar_auto/search_queries.csv"
       - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
-    - cron: "17 */3 * * *"
+    # Copre ora legale e ora solare italiana.
+    # Il gate locale sotto esegue davvero il radar solo alle 08:30 e 18:30 Europe/Rome.
+    - cron: "30 6,7,16,17 * * *"
 
 permissions:
   contents: write
@@ -23,13 +25,35 @@ jobs:
     timeout-minutes: 12
 
     steps:
+      - name: Verifica orario italiano
+        id: gate
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
+          LOCAL_TIME=$(TZ=Europe/Rome date +%H:%M)
+          echo "Ora italiana rilevata: $LOCAL_TIME"
+
+          if [ "$LOCAL_HOUR" = "08" ] || [ "$LOCAL_HOUR" = "18" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout
+        if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
       - name: Run radar
+        if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/cloud_radar.py
 
       - name: Persist public market data
+        if: steps.gate.outputs.run == 'true'
         shell: bash
         run: |
           git config user.name "f1-seller-radar-bot"
