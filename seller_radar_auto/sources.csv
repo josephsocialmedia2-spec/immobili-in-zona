@@ -1,0 +1,10 @@
+enabled,comune,fonte,seed_url,allowed_host,link_regex,check_hours,max_links,max_detail_checks
+1,Avigliana,Casa.it,https://www.casa.it/vendita/residenziale/avigliana/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Almese,Casa.it,https://www.casa.it/vendita/residenziale/almese/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Susa,Casa.it,https://www.casa.it/vendita/residenziale/susa/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Rivoli,Casa.it,https://www.casa.it/vendita/residenziale/rivoli/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Collegno,Casa.it,https://www.casa.it/vendita/residenziale/collegno/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Condove,Casa.it,https://www.casa.it/vendita/residenziale/condove/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Buttigliera Alta,Casa.it,https://www.casa.it/vendita/residenziale/buttigliera-alta/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Rosta,Casa.it,https://www.casa.it/vendita/residenziale/rosta/,www.casa.it,/immobili/[0-9]+/,6,40,15
+1,Villar Dora,Casa.it,https://www.casa.it/vendita/residenziale/villar-dora/,www.casa.it,/immobili/[0-9]+/,6,40,15
