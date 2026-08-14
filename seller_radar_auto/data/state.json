@@ -1,141 +1,2087 @@
 {
-  "updated_at": "2026-08-14T01:08:35.451932+00:00",
-  "items": {},
-  "sources": {
-    "a823ee913a94bd217d98": {
-      "enabled": "1",
+  "updated_at": "2026-08-14T01:13:40.383973+00:00",
+  "items": {
+    "ac6cd3d58a5d954247b6": {
+      "id": "ac6cd3d58a5d954247b6",
       "comune": "Avigliana",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/avigliana/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:34.376530+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build thriving communities, responsibly. To be eligible for a Creator Award, creators need to meet the eligibility criteria and must follow our policies.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.023970+00:00",
+      "last_seen": "2026-08-14T01:13:20.023983+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "d5931b51663045d5cd07": {
-      "enabled": "1",
+    "1d3d670f63dfeca6a362": {
+      "id": "1d3d670f63dfeca6a362",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "title": "YouTube TV Help - Google Help",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked questions.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024082+00:00",
+      "last_seen": "2026-08-14T01:13:20.024086+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "4dd8ed963ac2c3a2219f": {
+      "id": "4dd8ed963ac2c3a2219f",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶。 只需确保登录时的网络环境符合相关服务的要求。 四、 为什么我们非要一个 Google 账号不可？ 在 2026 年，Google 账号早已不只是一个邮箱：",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024166+00:00",
+      "last_seen": "2026-08-14T01:13:20.024169+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "68754b57e3078ec6ff28": {
+      "id": "68754b57e3078ec6ff28",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的视频？ - 知乎",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博主 Jeff Su 的这条 支持 4K 分辨率并配有字幕，我们可以点击查看详情。 这位博主可能是华裔，他贴心地提供了英文字幕和中文字幕。",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024231+00:00",
+      "last_seen": "2026-08-14T01:13:20.024234+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "8747990d0568889ef91f": {
+      "id": "8747990d0568889ef91f",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "title": "Правила сообщества YouTube",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем было комфортно, мы разработали правила, о которых рассказывается ниже.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024311+00:00",
+      "last_seen": "2026-08-14T01:13:20.024313+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "63c6e6408382e3bae741": {
+      "id": "63c6e6408382e3bae741",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtube/answer/16475192?hl=en",
+      "title": "Join YouTube Premium - Google Help",
+      "snippet": "We offer several YouTube paid memberships to help amplify your experience on YouTube. Click through the links below to learn more about our paid membership offerings.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024381+00:00",
+      "last_seen": "2026-08-14T01:13:20.024383+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "f5049439e718dce07df4": {
+      "id": "f5049439e718dce07df4",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "title": "YouTube ความช่วยเหลือ - Google Help",
+      "snippet": "ขอรับความช่วยเหลือเกี่ยวกับโปรแกรมพาร์ทเนอร์ YouTube ดูข้อมูลอัปเดตล่าสุดบน YouTube รับความช่วยเหลือเกี่ยวกับ YouTube",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024448+00:00",
+      "last_seen": "2026-08-14T01:13:20.024450+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "19c37f4fada32cd6a109": {
+      "id": "19c37f4fada32cd6a109",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtube/?hl=pt",
+      "title": "YouTube Ajuda - Google Help",
+      "snippet": "Saiba mais sobre o YouTube Vídeos de ajuda do YouTube Navegue na nossa biblioteca de vídeos para obter sugestões úteis, descrições gerais de funcionalidades e tutoriais passo-a-passo. YouTube Problemas conhecidos Obtenha informações acerca de problemas técnicos comunicados ou de serviços de manutenção programados.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024539+00:00",
+      "last_seen": "2026-08-14T01:13:20.024541+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "744a27b80621c85f8242": {
+      "id": "744a27b80621c85f8242",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtube/answer/174084?hl=vi&co=GENIE.Platform%3DDesktop",
+      "title": "Bật hoặc tắt Chế độ hạn chế trên YouTube",
+      "snippet": "Chế độ hạn chế là chế độ cài đặt không bắt buộc trên YouTube. Chế độ này có thể giúp lọc ra nội dung có khả năng là dành cho người trưởng thành mà bạn không muốn xem hoặc không muốn người khác xem khi sử dụng thiết bị của bạn.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024843+00:00",
+      "last_seen": "2026-08-14T01:13:20.024848+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "2552d7d1231327a98f22": {
+      "id": "2552d7d1231327a98f22",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://support.google.com/youtube/?hl=sv",
+      "title": "YouTube Hjälp - Google Help",
+      "snippet": "Officiellt hjälpcenter för YouTube. Här hittar du tips om produkten och vägledning för hur du använder den. Här finns även svar på andra vanliga frågor.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:20.024924+00:00",
+      "last_seen": "2026-08-14T01:13:20.024927+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "429e04d0a8b43acee0ef": {
+      "id": "429e04d0a8b43acee0ef",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://www.vendoo.co/",
+      "title": "#1 Cross Listing Platform | Crosslist with Vendoo Today!",
+      "snippet": "Start crosslisting your inventory in seconds and supercharge your sales with automation, bulk tools, and powerful analytics. Sign up to Vendoo today!",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.194717+00:00",
+      "last_seen": "2026-08-14T01:13:39.382814+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "ce00b921916538da3b03": {
+      "id": "ce00b921916538da3b03",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://vendoservices.com/",
+      "title": "Payment Processing - Vendo",
+      "snippet": "An intelligent payment processing gateway for merchants in high risk industries. Improve transaction rates and optimize revenue.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.194818+00:00",
+      "last_seen": "2026-08-14T01:13:39.382943+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "8a261de4dbb3bfaab1d8": {
+      "id": "8a261de4dbb3bfaab1d8",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://secure.vend-o.com/customers/profile/login/",
+      "title": "Vendo Services",
+      "snippet": "Welcome to Vendo Support Vendo offers you access to the best software and digital content.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.194879+00:00",
+      "last_seen": "2026-08-14T01:13:39.383026+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "81431b8699fce6c4a4f7": {
+      "id": "81431b8699fce6c4a4f7",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://vendohub.app/",
+      "title": "Home | Vendo",
+      "snippet": "Vendo is the marketplace for independent sellers and confident buyers. Products across every category, secure checkout, cards or crypto.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.194931+00:00",
+      "last_seen": "2026-08-14T01:13:39.383097+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "91cb03c30c1e22e626e6": {
+      "id": "91cb03c30c1e22e626e6",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://www.getvendo.com/",
+      "title": "Vendo - the team behind Spree Commerce",
+      "snippet": "We'll help you get started, start selling and keep growing with Spree Commerce - giving time back to your team so they may focus on customers and selling.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.194997+00:00",
+      "last_seen": "2026-08-14T01:13:39.383164+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "863430ae26a606170565": {
+      "id": "863430ae26a606170565",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://www.vendobw.com/",
+      "title": "Vendo",
+      "snippet": "Vendo is a local marketplace for buying, selling, renting, and discovering products and services.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.195040+00:00",
+      "last_seen": "2026-08-14T01:13:39.383208+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "0c0bb31401df4ea54c30": {
+      "id": "0c0bb31401df4ea54c30",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://info.paradigmvendo.com/",
+      "title": "Paradigm Vendo™ Contractor Estimating Software",
+      "snippet": "Paradigm Vendo™ contractor estimating and sales software streamlines the in-home selling process so you can close more deals.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.195104+00:00",
+      "last_seen": "2026-08-14T01:13:39.383273+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "7b9d6eb6f4697fd31cba": {
+      "id": "7b9d6eb6f4697fd31cba",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://www.linkedin.com/company/pltfrmcompanies",
+      "title": "VENDO – A PLTFRM Company | LinkedIn",
+      "snippet": "VENDO – A PLTFRM Company | 9,743 followers on LinkedIn. VENDO is now part of PLTFRM, a connected commerce platform uniting industry-leading digital, retail, and omnichannel capabilities under ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.195181+00:00",
+      "last_seen": "2026-08-14T01:13:39.383349+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "a6c167190db92bf1cf99": {
+      "id": "a6c167190db92bf1cf99",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://en.m.wikipedia.org/wiki/Vendo",
+      "title": "Vendo - Wikipedia",
+      "snippet": "The Vendo Company is a large manufacturer of cold beverage vending machines. Since its founding in 1937, Vendo has come out with many innovations that now exist in nearly every beverage and snack vending machine in use today.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.195252+00:00",
+      "last_seen": "2026-08-14T01:13:39.383411+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "504db517d7e734f5e111": {
+      "id": "504db517d7e734f5e111",
+      "comune": "Avigliana",
+      "fonte": "Bing RSS · Segnale privato web",
+      "url": "https://www.vendoco.com/",
+      "title": "SandenVendo America - Vending Food Service Equipment Supplier",
+      "snippet": "Manufacturer in the foodservice industry, providing Foodservice & Vending Equipment, and Innovative Technology. SandenVendo America, the US branch of Sanden Co.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:21.195315+00:00",
+      "last_seen": "2026-08-14T01:13:39.383473+00:00",
+      "checks": 9,
+      "lifecycle": "TRACKED",
+      "intent_query": true,
+      "score": 30,
+      "score_reasons": [
+        "query ad intento vendita"
+      ]
+    },
+    "daf9137b3a7062875b6c": {
+      "id": "daf9137b3a7062875b6c",
       "comune": "Almese",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/almese/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:34.592971+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/31199698",
+      "title": "朝阳区在北京市是一种什么样的存在？ - 知乎",
+      "snippet": "朝阳区（110105）是北京整个市的一个缩影。在朝阳区，你可以看到老城、商务区、工业区（遗址）、别墅区、农村等多种多样 ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364283+00:00",
+      "last_seen": "2026-08-14T01:13:22.364293+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "f578095131b8303fe004": {
-      "enabled": "1",
+    "1e0fd612b4b4c2cf999a": {
+      "id": "1e0fd612b4b4c2cf999a",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/21000020",
+      "title": "朝阳区跟张朝阳的“朝”到底是读“zhāo”还是“cháo”？ - 知乎",
+      "snippet": "朝阳区来由是位于 朝阳门 外，而明代取朝阳门名时参见 《文选》 晋朝潘安仁 《籍田賦》 “若湛露之晞朝zhao阳,似群星之拱北辰也 ” chao念法也是有一定意义的，朝阳门是北京城位于东边的门，朝东即朝阳 语言主体是人来说的，而不是用来研磨。",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364357+00:00",
+      "last_seen": "2026-08-14T01:13:22.364360+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "6a3713e01041784757d8": {
+      "id": "6a3713e01041784757d8",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/263776287",
+      "title": "北京朝阳区东城区附近哪个好的图书馆/自习室？ - 知乎",
+      "snippet": "小庄朝阳图书馆 旧馆，9点开门，9点一刻以前到有座。 以上均是全天开放，厕所，空调，热水，wifi齐备的。 朝阳图书馆 团结湖分馆，9-12，1-5开放，座位不多，但是人也不多，热水，厕所，空调，wifi均有。 东城区 我就知道北新桥22中附近的 东城区图书馆。",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364417+00:00",
+      "last_seen": "2026-08-14T01:13:22.364419+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "11653a5a5031ac87cf1e": {
+      "id": "11653a5a5031ac87cf1e",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/42118387",
+      "title": "北京哪家医院做公务员入职体检比较好？ - 知乎",
+      "snippet": "快速预约： 【中国航天科工集团七三一医院体检中心】体检预约 套餐价格：公务员体检￥502.74 医院等级：公立医院； 医院地址：北京市丰台区云岗镇云岗路云岗南里3号院； 预约时间：该医院需在体检前1个工作日15:00前预订； 体检时间：周一至周五08:10-09:30； 交通路线：乘321、339、715、744支线 ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364478+00:00",
+      "last_seen": "2026-08-14T01:13:22.364480+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "320ac77d748ba963667b": {
+      "id": "320ac77d748ba963667b",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/533424647",
+      "title": "北京市朝阳区人民法院22年民事案件需要多久才能开庭？",
+      "snippet": "朝阳法院 就和蜗牛一样慢。你不要指望它很快 因为它巨慢。一年以内开庭基本没戏。 我去年九月的案子 （2022.9） 现在还没开庭呢。（2023.7 ） 下辈子去开朝阳的庭了 哈哈哈哈",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364530+00:00",
+      "last_seen": "2026-08-14T01:13:22.364532+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "df6e3eceb9727ecec39f": {
+      "id": "df6e3eceb9727ecec39f",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/532399275",
+      "title": "北京朝阳区法院微信立案审核通过后，已经1个月，没有任何 ...",
+      "snippet": "着急的话可以拨打12368申诉，或直接去朝阳法院本院区咨询，分配承办法官后也可以在电子诉讼平台留言。 管辖选在朝阳就别太着急，着急的话就别选在朝阳。 从2022年1月1日到我写回答这会朝阳法院一共收案74191件，结案47494件，正在审理26697件。",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364580+00:00",
+      "last_seen": "2026-08-14T01:13:22.364582+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "945afa9cad71b5882599": {
+      "id": "945afa9cad71b5882599",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/topic/19642068/hot",
+      "title": "朝阳区 - 知乎",
+      "snippet": "朝阳区位于北京市的东部，西与东城区、丰台区、海淀区相毗邻，北连昌平区、顺义区，东与通州区接壤，南与大兴区相邻，幅员面积470.8平方公里，平均海拔34米，是北京市城近郊区中面积最大的一个区。2008年末，全区常住人口308.3万，其中户籍人口208.5万，外来人口99.8万。区现行行政区划，有23个 ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364634+00:00",
+      "last_seen": "2026-08-14T01:13:22.364636+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "48a1f10b96d9a7516926": {
+      "id": "48a1f10b96d9a7516926",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/23261824",
+      "title": "首都机场地处顺义区，为什么由朝阳区管辖？ - 知乎",
+      "snippet": "首都机场虽说领土属于朝阳区，但是你只要走出机场，就踏入了北京市顺义区领土，而且机场周边大面积地域都属于顺义区。 因此人们常说“首都机场是朝阳区在顺义区的一块飞地。 ” 首都机场领土属于朝阳指的只是首都机场的T1和T2航站楼。",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364720+00:00",
+      "last_seen": "2026-08-14T01:13:22.364724+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "998db6da938351c48685": {
+      "id": "998db6da938351c48685",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/60595063",
+      "title": "北京朝阳公园北1门西南角新盖的神秘的三栋楼是什么楼盘？",
+      "snippet": "北京朝阳公园北1门西南角新盖的神秘的三栋楼是什么楼盘？ 在北京朝阳公园北一门西南角有块奇怪的楼盘，基本已经盖完封顶，可是网上查不到相关这个楼盘的任何信息，倒是有不少在问这个楼盘信息的提问，也没看上去可信的回… 显示全部 关注者 17",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364782+00:00",
+      "last_seen": "2026-08-14T01:13:22.364787+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "c1642974cfcc3af1f647": {
+      "id": "c1642974cfcc3af1f647",
+      "comune": "Almese",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.zhihu.com/question/376576928",
+      "title": "朝阳区bot换人了吗？ - 知乎",
+      "snippet": "现在新的朝阳区皮下也被扒出来把账号挂了40万在卖号网站上，也公然开始接广告赚钱，被扒出来1.5万一条广告 同时也有其他眼红的人开了，朝阳区2号，新朝阳区等等试图也从这股捞金狂流中赚一笔 除了朝阳区bot这两个皮下衍生的故事，其他的黑子也有自己的想法",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:22.364845+00:00",
+      "last_seen": "2026-08-14T01:13:22.364847+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "f2dae1735298ac36c04d": {
+      "id": "f2dae1735298ac36c04d",
       "comune": "Susa",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/susa/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:34.781157+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://en.m.wikipedia.org/wiki/Susa",
+      "title": "Susa - Wikipedia",
+      "snippet": "Susa was one of the most important cities of the Ancient Near East. In historic literature, Susa appears in the very earliest Sumerian records: for example, it is described as one of the places obedient to Inanna, patron deity of Uruk, in Enmerkar and the Lord of Aratta.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628210+00:00",
+      "last_seen": "2026-08-14T01:13:24.628221+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "75c72693b49f3dbb9e7e": {
-      "enabled": "1",
+    "28f2a44716473b9d16e4": {
+      "id": "28f2a44716473b9d16e4",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.britannica.com/place/Susa",
+      "title": "Susa | Achaemenid, Elamite, Persian Empire | Britannica",
+      "snippet": "Susa, capital of Elam (Susiana) and administrative capital of the Achaemenian king Darius I and his successors from 522 bce. It was located at the foot of the Zagros Mountains near the bank of the Karkheh Kūr (Choaspes) River in the Khuzistan region of Iran.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628323+00:00",
+      "last_seen": "2026-08-14T01:13:24.628326+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "3050d4a44d6884145031": {
+      "id": "3050d4a44d6884145031",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.worldhistory.org/susa/",
+      "title": "Susa - World History Encyclopedia",
+      "snippet": "Susa was a principal city of the Elamite, Achaemenid Persian, and Parthian empires and was originally known to the Elamites as 'Susan' or 'Susun'. The Greek name for the city was Sousa and the Hebrew, Shushan.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628395+00:00",
+      "last_seen": "2026-08-14T01:13:24.628398+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "a99d2bbd9581713b690b": {
+      "id": "a99d2bbd9581713b690b",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://whc.unesco.org/en/list/1455",
+      "title": "Susa - UNESCO World Heritage Centre",
+      "snippet": "Susa contains several layers of superimposed urban settlements in a continuous succession from the late 5 th millennium BCE until the 13 th century CE. The site bears exceptional testimony to the Elamite, Persian and Parthian cultural traditions, which have largely disappeared.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628472+00:00",
+      "last_seen": "2026-08-14T01:13:24.628474+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "30e233e5a74390efc863": {
+      "id": "30e233e5a74390efc863",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://worldhistoryedu.com/the-ancient-city-of-susa/",
+      "title": "The Ancient City of Susa - World History Edu",
+      "snippet": "Susa, an illustrious ancient city nestled in the lower Zagros Mountains of present-day Iran, stands as a monumental testament to the civilizations that flourished in the Ancient Near East.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628535+00:00",
+      "last_seen": "2026-08-14T01:13:24.628537+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "a10eee6768ece3a79bda": {
+      "id": "a10eee6768ece3a79bda",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://mapcarta.com/25721590",
+      "title": "Susa Map - Archaeological site - Khuzestan, Iran - Mapcarta",
+      "snippet": "Susa was an ancient city in the lower Zagros Mountains about 250 km east of the Tigris, between the Karkheh and Dez Rivers in Iran. It represents the current city of Shush, located on the site of ancient Susa.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628606+00:00",
+      "last_seen": "2026-08-14T01:13:24.628608+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "bf71b423c151d2d60de7": {
+      "id": "bf71b423c151d2d60de7",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://surfiran.com/mag/susa/",
+      "title": "Susa: Exploring Persia's Royal Ancient Capital - SURFIRAN Mag",
+      "snippet": "Susa, or Shoush, stands as a testament to the profound depths of human civilization. Located in what is now modern-day Shush in Khuzestan, Iran, this ancient city has been a central hub of culture, politics, and commerce through various epochs.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628701+00:00",
+      "last_seen": "2026-08-14T01:13:24.628704+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "db166fe805301bb1f15c": {
+      "id": "db166fe805301bb1f15c",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-near-eastern-world/ancient-persian-capital-susa/",
+      "title": "Site-Seeing: Surprising Susa - Biblical Archaeology Society",
+      "snippet": "But the Biblical action all happened at Susa. A swing to the west, through the beautiful Zagros Mountains, brings you to the city known so well to Nehemiah, Daniel, and most especially, Esther and Mordecai.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628775+00:00",
+      "last_seen": "2026-08-14T01:13:24.628777+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "548306f8668539ac271b": {
+      "id": "548306f8668539ac271b",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.ancienttravel.org/destinations/susa/",
+      "title": "Susa, Iran: History, Ruins, and Visitor Guide",
+      "snippet": "Explore Susa in Iran, an ancient capital of Elam, Persia, and Parthia with royal ruins, archaeology, and deep Near Eastern history. Use one of these itineraries to connect Susa with nearby ancient sites instead of planning from scratch.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628844+00:00",
+      "last_seen": "2026-08-14T01:13:24.628846+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "74dbd982b8d58ddabd83": {
+      "id": "74dbd982b8d58ddabd83",
+      "comune": "Susa",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.italia-italy.org/en/turismo-val_di_susa",
+      "title": "Susa Valley: what to see, what to do, and when to go, including ...",
+      "snippet": "A complete guide to the Susa Valley: what to see, what to do, and when to go, including Sacra di San Michele, Roman Susa, the Avigliana lakes, natural parks, and ski resorts. Ideas for summer and winter vacations, events, traditional food and wine, and tips for authentic experiences.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:24.628932+00:00",
+      "last_seen": "2026-08-14T01:13:24.628934+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "d57ca5bd3d922fe6c96d": {
+      "id": "d57ca5bd3d922fe6c96d",
       "comune": "Rivoli",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/rivoli/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:34.812381+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.rivoli.net/",
+      "title": "Rivoli Theatre - La Crosse, WI",
+      "snippet": "Independent movie theatre in La Crosse, WI. Special events, cult movie nights, double features, and kids movie parties just to name a few special features. Opened in September 19, 1920.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.872568+00:00",
+      "last_seen": "2026-08-14T01:13:26.872578+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "88c96ea305fe80a6abbb": {
-      "enabled": "1",
+    "881d917db0c78e33c17a": {
+      "id": "881d917db0c78e33c17a",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.rivoli.net/coming-soon/",
+      "title": "Coming Soon - Rivoli Theatre - La Crosse, WI",
+      "snippet": "Come celebrate the season with The Rivoli! DOORS OPEN 30 MINUTES BEFORE EACH SHOW. TICKETS AVAILABLE FOR PURCHASE ONLINE VIA LINKS BELOW OR AT THE THEATRE. IF PURCHASED ONLINE, PLEASE PRESENT YOUR CONFIRMATION NUMBER WHEN YOU ARRIVE.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.872690+00:00",
+      "last_seen": "2026-08-14T01:13:26.872694+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "f04131057b047fee3b3a": {
+      "id": "f04131057b047fee3b3a",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://en.wikipedia.org/wiki/Rivoli,_Piedmont",
+      "title": "Rivoli, Piedmont - Wikipedia",
+      "snippet": "Rivoli (Italian pronunciation: [ˈriːvoli]; Piedmontese: Rìvole [ˈriʋʊle] ⓘ) is a comune (municipality) established around the 1st century CE, in the Metropolitan City of Turin in the Italian region Piedmont, about 14 kilometres (9 mi) west of Turin. As of January 2017, it had a population of 48,798. [3]",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.872797+00:00",
+      "last_seen": "2026-08-14T01:13:26.872800+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "b9a05eee77df4179b5ca": {
+      "id": "b9a05eee77df4179b5ca",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://tickets.rivoli.net/websales/pages/list.aspx?epguid=860d7874-6e0b-4967-89c5-bd2947a38ea3",
+      "title": "Rivoli Theatre - FILMS",
+      "snippet": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.872908+00:00",
+      "last_seen": "2026-08-14T01:13:26.872911+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "8c0842b2b7b0d33ff12c": {
+      "id": "8c0842b2b7b0d33ff12c",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.comune.rivoli.to.it/",
+      "title": "Città di Rivoli",
+      "snippet": "Le sue attività ed iniziative nascono come risposta ai bisogni di tipo musicale del territorio e degli utenti e sono realizzate per conto della Città di Rivoli.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.872974+00:00",
+      "last_seen": "2026-08-14T01:13:26.872976+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "169d863cfcd4c29e14d2": {
+      "id": "169d863cfcd4c29e14d2",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.facebook.com/RivoliTheatrePizzeria/",
+      "title": "Rivoli Theatre and Pizzeria - Facebook",
+      "snippet": "Rivoli Theatre and Pizzeria is at Rivoli Theatre and Pizzeria. Wet Hot American Summer is coming back to The Rivoli for one week only playing 8/14 - 8/20!",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.873036+00:00",
+      "last_seen": "2026-08-14T01:13:26.873038+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "cc5de95f7e8df115fed1": {
+      "id": "cc5de95f7e8df115fed1",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.rivolishop.com/en-qa/rivoli/cms/index.zul",
+      "title": "www.rivolishop.com",
+      "snippet": "INTRODUCING THE HOUSE OF EVACO - CONTINENTAL, EVERSWISS, CRUISER & LORDSON . SHOP NOW & SAVE NOW . NOW OR NEVER. LIMITED TIME SWISS OFFERS . DON'T MISS DEALS ON WATCHES - UP TO 50% OFF . FREE SHIPPING ACROSS UAE, QATAR, OMAN & BAHRAIN . CLICK AND COLLECT .",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.873112+00:00",
+      "last_seen": "2026-08-14T01:13:26.873114+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "91fff924d2700fa6b0f0": {
+      "id": "91fff924d2700fa6b0f0",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://tickets.rivoli.net/websales/pages/list.aspx?cp1404=Yes&epguid=ede1d7b6-59fe-438b-acc4-d87fc3880065&view=detailed",
+      "title": "Rivoli Theatre - SPECIAL EVENTS",
+      "snippet": "During a local fishing contest in Hayward, Wisconsin, people are being mysteriously dragged into the lake and killed by a giant fish hook. After a sufficient number of deaths, the killer is finally revealed.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.873194+00:00",
+      "last_seen": "2026-08-14T01:13:26.873197+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "d91055f4e41b6f6036da": {
+      "id": "d91055f4e41b6f6036da",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.rivolishop.com/en-ae/rivoli/cms/index.zul",
+      "title": "www.rivolishop.com",
+      "snippet": "FASHION JEWELLERY DEALS YOU'LL LOVE - UP TO 50% OFF ON SELECT STYLES .",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.873239+00:00",
+      "last_seen": "2026-08-14T01:13:26.873241+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "9ae1c4ef6663a2b58310": {
+      "id": "9ae1c4ef6663a2b58310",
+      "comune": "Rivoli",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://rivoli-parfums.com/",
+      "title": "Rivoli Parfums",
+      "snippet": "Rooted in the heart of Paris, Rivoli Parfums invites you to discover a world where fragrances tell stories and redefine the meaning of indulgence. At Rivoli Parfums, we are more than a fragrance house—we are artisans of emotions and creators of timeless elegance.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:26.873320+00:00",
+      "last_seen": "2026-08-14T01:13:26.873322+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "8b62cb60491a459a95a1": {
+      "id": "8b62cb60491a459a95a1",
       "comune": "Collegno",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/collegno/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:35.001845+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://weather.com/en/weather/radar/interactive/l/Seattle+Washington?placeId=cef9b6214284b3f4dcac1420f605ace56b0c84a4694ee1531e14dd2684a1855c",
+      "title": "Seattle, Washington Radar Map - The Weather Channel",
+      "snippet": "Interactive weather map allows you to pan and zoom to get unmatched weather details in your local neighborhood or half a world away from The Weather Channel and Weather.com",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.119918+00:00",
+      "last_seen": "2026-08-14T01:13:29.119928+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "0d28603fe984284ae028": {
-      "enabled": "1",
+    "b0454d8797df3460bc37": {
+      "id": "b0454d8797df3460bc37",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.accuweather.com/en/us/seattle/98104/weather-radar/351409",
+      "title": "Seattle, WA Weather Radar | AccuWeather",
+      "snippet": "Track storms, and stay in-the-know and prepared for what's coming. Easy to use weather radar at your fingertips!",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.119988+00:00",
+      "last_seen": "2026-08-14T01:13:29.119991+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "4a48d0c256591be35eba": {
+      "id": "4a48d0c256591be35eba",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.weatherforyou.com/maps/seattle-wa-interactive",
+      "title": "Seattle, WA Interactive Weather Map | Live Radar & Satellite",
+      "snippet": "Explore Seattle live interactive weather map with real-time radar and satellite imagery to stay updated on local weather patterns.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120061+00:00",
+      "last_seen": "2026-08-14T01:13:29.120063+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "34628883725a5901e3a4": {
+      "id": "34628883725a5901e3a4",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://weather.com/us/washington/city/seattle/radar",
+      "title": "Interactive Radar for Seattle, Washington | weather.com",
+      "snippet": "Interactive weather radar for Seattle, Washington from The Weather Channel and weather.com",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120110+00:00",
+      "last_seen": "2026-08-14T01:13:29.120112+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "9f0d8756aa3c4de5db40": {
+      "id": "9f0d8756aa3c4de5db40",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://weather.com/en-CM/weather/radar/interactive/l/Seattle+Washington+United+States?canonicalCityId=1138ce33fd1be51ab7db675c0da0a27c",
+      "title": "Seattle, Washington, United States RADAR MAP - The Weather Channel",
+      "snippet": "Interactive weather map allows you to pan and zoom to get unmatched weather details in your local neighborhood or half a world away from The Weather Channel and Weather.com",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120202+00:00",
+      "last_seen": "2026-08-14T01:13:29.120205+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "5ce840da69b77721d78e": {
+      "id": "5ce840da69b77721d78e",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.weatherbug.com/maps/seattle-wa-98104?layerId=radar",
+      "title": "Seattle, WA Weather Radar | WeatherBug",
+      "snippet": "View Weather Radar in Seattle, WA with our animated weather map, spanning 1 hour past, current, and 1 hour future. Track precipitation areas, types (rain, mixed, snow), and intensity to monitor local conditions effectively.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120285+00:00",
+      "last_seen": "2026-08-14T01:13:29.120289+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "d8a792d7dc8144a813cc": {
+      "id": "d8a792d7dc8144a813cc",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.foxweather.com/local-weather/washington/seattle/radar",
+      "title": "Local Weather Radar - Seattle, WA",
+      "snippet": "Track the radar for Seattle with FOX Weather local weather radar maps. Explore our interactive Doppler radar map for Seattle WA and discover areas of rain, snow and sunshine in your area.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120350+00:00",
+      "last_seen": "2026-08-14T01:13:29.120352+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "03baf09a00746009cf3c": {
+      "id": "03baf09a00746009cf3c",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://forecast.weather.gov/MapClick.php?lat=47.6218&lon=-122.3503",
+      "title": "National Weather Service",
+      "snippet": "Sunny, with a high near 80. Northwest wind 3 to 5 mph. Mostly clear, with a low around 60. North wind around 6 mph becoming calm in the evening. Sunny, with a high near 80. Light and variable wind becoming south southwest around 5 mph. Partly cloudy, with a low around 60. Northwest wind around 5 mph becoming calm in the evening.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120448+00:00",
+      "last_seen": "2026-08-14T01:13:29.120450+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "527e2efa366877268d62": {
+      "id": "527e2efa366877268d62",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://zoom.earth/places/united-states/seattle/",
+      "title": "Seattle, Washington, United States | Weather Satellite & Radar Map ...",
+      "snippet": "Weather forecasts, rain radar, and LIVE satellite images of Seattle, Washington, United States. View interactive maps of precipitation, wind speed, temperature and more.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120515+00:00",
+      "last_seen": "2026-08-14T01:13:29.120517+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "6be0badfb283ff85bc6f": {
+      "id": "6be0badfb283ff85bc6f",
+      "comune": "Collegno",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.accuweather.com/en/us/seattle/98104/satellite/351409",
+      "title": "Seattle, WA Satellite Weather Map | AccuWeather",
+      "snippet": "See a real view of Earth from space, providing a detailed view of clouds, weather systems, smoke, dust, and fog. This interactive map provides a visual representation of wind speed and...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:29.120578+00:00",
+      "last_seen": "2026-08-14T01:13:29.120580+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "1fe6752e78c9679a85da": {
+      "id": "1fe6752e78c9679a85da",
       "comune": "Condove",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/condove/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:35.205202+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/selena-gomez-sued-fraud-over-193938945.html",
+      "title": "Selena Gomez sued for fraud over mental health startup Wondermind - Yahoo",
+      "snippet": "Selena Gomez and mom Mandy Teefey are being sued for fraud and breach of contract by investors in their mental health startup, Wondermind Global.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.391411+00:00",
+      "last_seen": "2026-08-14T01:13:31.391420+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "13f645e7e7036bead1f6": {
-      "enabled": "1",
+    "a52318e861dade7a018c": {
+      "id": "a52318e861dade7a018c",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://economictimes.indiatimes.com/news/international/global-trends/selena-gomez-accused-of-fraud-sued-by-investors-over-collapse-of-mental-health-startup-wondermind/articleshow/133222086.cms",
+      "title": "Selena Gomez accused of fraud, sued by investors over collapse of ...",
+      "snippet": "Selena Gomez is facing a lawsuit from investors who allege that the pop star and co-founders of her mental-health startup Wondermind misrepresented the company's prospects and failed to deliver on promises made while raising millions of dollars, according to a Bloomberg News report. Five investors ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.391570+00:00",
+      "last_seen": "2026-08-14T01:13:31.391575+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "d35ecf18b80b9a010999": {
+      "id": "d35ecf18b80b9a010999",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://edition.cnn.com/2026/08/13/business/selena-gomez-fraud-mental-health-startup-lawsuit",
+      "title": "Selena Gomez and her mental health startup accused of fraud",
+      "snippet": "Several investors in Selena Gomez’s mental health startup Wondermind sued the popstar Thursday, claiming they were misled about the startup’s success and her involvement in it.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.391688+00:00",
+      "last_seen": "2026-08-14T01:13:31.391692+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "daadc356b39285a41dc9": {
+      "id": "daadc356b39285a41dc9",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://techcrunch.com/2026/08/13/investors-sue-selena-gomez-alleging-fraud-tied-to-her-mental-health-startup/",
+      "title": "Investors sue Selena Gomez alleging fraud tied to her mental health startup",
+      "snippet": "Singer and actress Selena Gomez and her mother are being sued over their mental health startup, Wondermind. The plaintiffs in the lawsuit say they invested nearly $1.2 million in the startup, and ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.391773+00:00",
+      "last_seen": "2026-08-14T01:13:31.391775+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "f7bae351774b386ac659": {
+      "id": "f7bae351774b386ac659",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.cbc.ca/news/entertainment/investors-sue-selena-gomez-9.7306501",
+      "title": "Investors sue Selena Gomez for alleged fraud over mental health startup ...",
+      "snippet": "Selena Gomez was sued on Thursday by investors who say the singer and actor committed fraud by failing to fulfil duties to build and promote her mental health startup.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.391841+00:00",
+      "last_seen": "2026-08-14T01:13:31.391843+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "b176dcfaa3f6c0831bcf": {
+      "id": "b176dcfaa3f6c0831bcf",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.forbes.com/sites/conormurray/2026/08/13/selena-gomez-and-wondermind-startup-sued-for-allegedly-defrauding-investors/",
+      "title": "Selena Gomez Sued For Allegedly Defrauding Investors With Mental Health ...",
+      "snippet": "A lawsuit filed in federal court Thursday accuses Gomez, her mother and their Wondermind mental health startup co-founder of misrepresenting the financial health of the company to investors as it ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.391916+00:00",
+      "last_seen": "2026-08-14T01:13:31.391919+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "d8212a0684d4029be2a7": {
+      "id": "d8212a0684d4029be2a7",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.complex.com/music/a/will-lavin/selena-gomez-wondermind-securities-fraud-lawsuit",
+      "title": "Selena Gomez and Mother Sued Over Failed Mental Health Startup",
+      "snippet": "Investors are suing Selena Gomez and her mother, Mandy Teefey, for securities fraud, claiming they misrepresented Wondermind’s leadership, infrastructure, and growth plans to secure over $1 ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.391988+00:00",
+      "last_seen": "2026-08-14T01:13:31.391990+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "08940fcfadca5a2e3c90": {
+      "id": "08940fcfadca5a2e3c90",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.newsnationnow.com/entertainment-news/selena-gomez-sued-mental-health-wondermind/",
+      "title": "Selena Gomez sued over mental health startup - NewsNation",
+      "snippet": "LOS ANGELES (Reuters) – Singer and actor Selena Gomez was sued on Thursday by investors who say the “Only Murders in the Building” star committed fraud by failing to fulfill duties to build and promote her mental health startup. The plaintiffs invested nearly $1.2 million in Wondermind ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.392079+00:00",
+      "last_seen": "2026-08-14T01:13:31.392082+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "88369a411004881036db": {
+      "id": "88369a411004881036db",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.billboard.com/pro/selena-gomez-mental-health-startup-investor-fraud-lawsuit/",
+      "title": "Selena Gomez & Her Mental Health Startup Face Investor Fraud Lawsuit",
+      "snippet": "A group of investors in Selena Gomez ’s troubled mental health startup Wondermind are suing the star and her company for fraud. The lawsuit, filed on Thursday (Aug. 13) and obtained by Billboard ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.392158+00:00",
+      "last_seen": "2026-08-14T01:13:31.392160+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "840a64a118c89b8ed0a8": {
+      "id": "840a64a118c89b8ed0a8",
+      "comune": "Condove",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.usnews.com/news/top-news/articles/2026-08-13/investors-sue-selena-gomez-for-alleged-fraud-over-mental-health-start-up",
+      "title": "Investors Sue Selena Gomez for Alleged Fraud Over Mental-Health Start ...",
+      "snippet": "The ⁠plaintiffs invested nearly $1.2 million in Wondermind Global, which was launched in 2021 to help users strengthen their \"mental fitness,\" according to the lawsuit filed in federal court in ...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:31.392234+00:00",
+      "last_seen": "2026-08-14T01:13:31.392237+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "53ef3186c99ca6fa395a": {
+      "id": "53ef3186c99ca6fa395a",
       "comune": "Buttigliera Alta",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/buttigliera-alta/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:35.232037+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/feedthebeast/comments/1bqz4va/my_concern_about_essential_mod/",
+      "title": "My concern about Essential mod : r/feedthebeast - Reddit",
+      "snippet": "Since 6 months ago I've heard of people of using the Essential mod of Minecraft. It allows you to play minecraft with your friends for free. It acts sort of like the steam overlay where you can contact friends, buy cool skin artifacts and emotes, and most importantly: sharing your local world allowing your friends to join.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646220+00:00",
+      "last_seen": "2026-08-14T01:13:33.646230+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "cdafb15538993fee5fd7": {
-      "enabled": "1",
+    "c915790ff493de5b022d": {
+      "id": "c915790ff493de5b022d",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/feedthebeast/comments/11ajx9l/opinions_on_the_essential_mod/",
+      "title": "Opinions on the Essential Mod? : r/feedthebeast - Reddit",
+      "snippet": "The subreddit for all things related to Modded Minecraft for Minecraft Java Edition --- This subreddit was originally created for discussion around the FTB launcher and its modpacks but has since grown to encompass all aspects of modding the Java edition of Minecraft. The /r/feedthebeast subreddit is not affiliated or associated with the Feed the Beast company. MembersOnline • Nomporu ADMIN MOD",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646353+00:00",
+      "last_seen": "2026-08-14T01:13:33.646356+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "9bce73e5417b2f74d444": {
+      "id": "9bce73e5417b2f74d444",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/feedthebeast/comments/17yfvcr/is_essential_safe/",
+      "title": "is essential safe? : r/feedthebeast - Reddit",
+      "snippet": "Is Essential safe? I have no idea, but I don't have a reason to suspect it of being malicious. I mostly just think the mod is unnecessary as it is 'solving' something that already has better alternatives, and itself adds pointless bloat and heavily uses monetization practices that are clearly against the updated Minecraft Usage Guidelines.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646448+00:00",
+      "last_seen": "2026-08-14T01:13:33.646450+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "bd6ab2a7a3c5b5951156": {
+      "id": "bd6ab2a7a3c5b5951156",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/feedthebeast/comments/xwk7gq/is_the_essential_mod_compatible_with_any_modpack/",
+      "title": "Is the Essential mod compatible with any modpack? - Reddit",
+      "snippet": "Recently found out about the essential mod, which allows multiplayer play with no lan or anything required and looks extremely useful, how well is the multiplayer on it with any modpack form ftb/cursed forge?",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646517+00:00",
+      "last_seen": "2026-08-14T01:13:33.646519+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "38294669dd5bca1ba902": {
+      "id": "38294669dd5bca1ba902",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/Minecraft/comments/18sqn2p/so_i_installed_the_a_mod_called_essentials_and_i/",
+      "title": "so i installed the a mod called Essentials and i want to know ... - Reddit",
+      "snippet": "so i installed the a mod called Essentials and i want to know how to get the Essenital coins Help 1 37 Sort by:",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646577+00:00",
+      "last_seen": "2026-08-14T01:13:33.646579+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "a18119c282c416302052": {
+      "id": "a18119c282c416302052",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/feedthebeast/comments/1b61ld7/so_about_the_essentials_mod_how_does_it_actually/",
+      "title": "So about the essentials mod. How does it actually work",
+      "snippet": "Discussion on how the Essentials mod works, including its functionality and user experiences, within the FeedTheBeast community.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646635+00:00",
+      "last_seen": "2026-08-14T01:13:33.646637+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "aa26903e107a4c968bc1": {
+      "id": "aa26903e107a4c968bc1",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/feedthebeast/comments/rhy84k/does_anyone_have_info_on_the_essential_mod/",
+      "title": "Does anyone have info on the \"essential\" mod? - Reddit",
+      "snippet": "This mod supposedly allows clients to connect to each other without a server, sort of like a lan world but without needing to be on the same connection. However the website gives little to no info, doesn't explain how it works, and looks sort of sketchy. Does anyone have info on if this thing is safe and how it works?",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646748+00:00",
+      "last_seen": "2026-08-14T01:13:33.646751+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "988b4b54268e76a50c12": {
+      "id": "988b4b54268e76a50c12",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/Minecraft/comments/xk896o/how_does_essential_mod_work/",
+      "title": "How does essential mod work? : r/Minecraft - Reddit",
+      "snippet": "Does anyone know how does essential mod actually work? I know you can play in friends' worlds with it, but how does it work? Is your computer working as a server or is your world connected to external server to which then players connect? Archived post. New comments cannot be posted and votes cannot be cast.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646836+00:00",
+      "last_seen": "2026-08-14T01:13:33.646838+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "fb02a01684320a988afe": {
+      "id": "fb02a01684320a988afe",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/skyrimmods/comments/16f53dj/updated_essential_mods_list/",
+      "title": "Updated Essential Mods List! : r/skyrimmods - Reddit",
+      "snippet": "I don't actually play on console). r/skyrimmods Essential Mod List for XBOX And the maybe slightly sad but not forgotten, PS I also have yet to build the \"frequently recommended mods\" which is where our alternate start mods, combat mods, perk mods, 3DNPCs, etc will live. Still, it is a MASSIVE improvement over what we had before.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.646922+00:00",
+      "last_seen": "2026-08-14T01:13:33.646924+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "9f20cdd24c3cff37f6b1": {
+      "id": "9f20cdd24c3cff37f6b1",
+      "comune": "Buttigliera Alta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.reddit.com/r/feedthebeast/comments/10a9cgh/how_safe_is_the_essential_mod/",
+      "title": "How safe is the \"Essential\" mod? : r/feedthebeast - Reddit",
+      "snippet": "Essential is safe. I haven't had any problems with it, though i have usually also been the one to host the world, as i have the most powerful pc of the friend group who doesn't have access to dedicated server machines (my other friend group just hosts servers on spare computers). It is a closed source mod, that's true.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:33.647009+00:00",
+      "last_seen": "2026-08-14T01:13:33.647011+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "554205ed9c5f25915221": {
+      "id": "554205ed9c5f25915221",
       "comune": "Rosta",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/rosta/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:35.262641+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://en.wikipedia.org/wiki/Helen_Zughaib",
+      "title": "Helen Zughaib - Wikipedia",
+      "snippet": "Similar to the first installation of this exhibit, Eat the News Again is an installation in which Helen used enamel paint and newspaper on ceramic plates to force viewers to consume what happened in the Syrian civil war.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.908480+00:00",
+      "last_seen": "2026-08-14T01:13:35.908489+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
     },
-    "8c2e51c3042c1f38486c": {
-      "enabled": "1",
+    "4742cedf868d88a9270f": {
+      "id": "4742cedf868d88a9270f",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.notablepeopleproject.org/helen_zughaib",
+      "title": "Helen Zughaib - Notable People",
+      "snippet": "Eat the News and its successor Eat the News Again involved hand-painting ceramic plates with enamel and newspaper clippings about the war, literally presenting the grim headlines as something to be consumed. This work challenged the desensitization that comes from media overload.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.908573+00:00",
+      "last_seen": "2026-08-14T01:13:35.908575+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "99ed243567eed49921c7": {
+      "id": "99ed243567eed49921c7",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://everything.explained.today/Helen_Zughaib/",
+      "title": "Helen Zughaib Explained",
+      "snippet": "Eat the News is an installation in which Helen used enamel paint and newspaper on ceramic plates to force viewers to consume what happened in the Syrian civil war.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.908631+00:00",
+      "last_seen": "2026-08-14T01:13:35.908633+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "6b49c46f8e4a5bfbb060": {
+      "id": "6b49c46f8e4a5bfbb060",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.wikiwand.com/en/articles/Helen_Zughaib",
+      "title": "Helen Zughaib - Wikiwand",
+      "snippet": "Eat the News is an installation in which Helen used enamel paint and newspaper on ceramic plates to force viewers to consume what happened in the Syrian civil war.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.908743+00:00",
+      "last_seen": "2026-08-14T01:13:35.908747+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "628451f66af19d2c1107": {
+      "id": "628451f66af19d2c1107",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://hzughaib.com/helen-zughaibs-published-works/",
+      "title": "Helen Zughaib’s Published Works | Helen Zughaib - Quality Approved",
+      "snippet": "You can find Helen Zughaib’s published works in different newspapers, blogs, and more. She’s known for her pieces that depict social and political issues.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.908835+00:00",
+      "last_seen": "2026-08-14T01:13:35.908838+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "e1637f2dc97904934d0f": {
+      "id": "e1637f2dc97904934d0f",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://blogs.worldbank.org/en/voices/arab-spring-unfinished-journeys",
+      "title": "The Arab Spring – Unfinished Journeys - World Bank Blogs",
+      "snippet": "In one of her works, Eat the News, Helen juxtaposes the act of eating, with the act of consuming information. A physical dinner table with plates, utensils, and even decor for ambiance, has been created.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.908914+00:00",
+      "last_seen": "2026-08-14T01:13:35.908916+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "2250c62f50e5e2121123": {
+      "id": "2250c62f50e5e2121123",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.georgetown.edu/news/georgetown-galleries-exhibit-explores-conversations-around-the-dining-table/",
+      "title": "Georgetown Galleries’ Exhibit Explores Conversations Around the Dining ...",
+      "snippet": "Nearby, a round table is set with glass plates peppered with torn newspaper clippings of wars and crises in Gaza, Haiti, Sudan and Ukraine. One plate is empty, a cultural practice in Arab communities to welcome an unexpected guest.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.908997+00:00",
+      "last_seen": "2026-08-14T01:13:35.909000+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "cea100528fb89729085c": {
+      "id": "cea100528fb89729085c",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://grokipedia.com/page/helen_zughaib",
+      "title": "Helen Zughaib - grokipedia.com",
+      "snippet": "Helen Zughaib (born 1959 in Beirut, Lebanon) is a Lebanese-American painter and multimedia artist residing and working in Washington, D.C., recognized for her vibrant gouache and ink paintings on board and canvas, as well as mixed-media installations incorporating wood, shoes, and cloth.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.909074+00:00",
+      "last_seen": "2026-08-14T01:13:35.909076+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "1c9999806ee5a53aac1e": {
+      "id": "1c9999806ee5a53aac1e",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://emergeast.com/exclusive-interview-helen-zughaib/",
+      "title": "Exclusive Interview with Helen Zughaib! - EMERGEAST",
+      "snippet": "We sat down with the prolific Lebanese-American artist Helen Zughaib! Read all about how Zughaib's identity has shaped her unique work and the moment President Obama gifted her art...",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.909136+00:00",
+      "last_seen": "2026-08-14T01:13:35.909138+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "8c8cb716d49d213bafc7": {
+      "id": "8c8cb716d49d213bafc7",
+      "comune": "Rosta",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://emergeast.com/artists/helen-zughaib/",
+      "title": "Helen Zughaib - EMERGEAST",
+      "snippet": "As an Arab American, Helen feels that her background allows her to approach experiences as an observer of both Arab and American cultures. She paints primarily in gouache, ink on board, and canvas. Her work has been widely exhibited in galleries and museums in the United States, Europe and Lebanon.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:35.909213+00:00",
+      "last_seen": "2026-08-14T01:13:35.909215+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "908b3ed315547f625ea2": {
+      "id": "908b3ed315547f625ea2",
       "comune": "Villar Dora",
-      "fonte": "Casa.it",
-      "seed_url": "https://www.casa.it/vendita/residenziale/villar-dora/",
-      "allowed_host": "www.casa.it",
-      "link_regex": "/immobili/[0-9]+/",
-      "check_hours": "6",
-      "max_links": "40",
-      "max_detail_checks": "15",
-      "last_check": "2026-08-14T01:08:35.451916+00:00",
-      "status": "ERROR",
-      "message": "HTTP Error 403: Forbidden",
-      "discovered": 0
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://finance.yahoo.com/quote/TSLA/",
+      "title": "Tesla, Inc. (TSLA) Stock Price, News, Quote & History - Yahoo Finance",
+      "snippet": "Find the latest Tesla, Inc. (TSLA) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.164573+00:00",
+      "last_seen": "2026-08-14T01:13:38.164583+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "2b88c3a37db240e7f2ea": {
+      "id": "2b88c3a37db240e7f2ea",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.google.com/finance/quote/TSLA:NASDAQ",
+      "title": "Tesla Inc (TSLA) Stock Price & News - Google Finance",
+      "snippet": "Get real-time stock quotes, news, financial details, and analytics for Tesla Inc from Google Finance.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.164687+00:00",
+      "last_seen": "2026-08-14T01:13:38.164691+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "2e22c7a675f3651dbd74": {
+      "id": "2e22c7a675f3651dbd74",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/TSLA/news/",
+      "title": "TSLA News Today | Why did Tesla stock go up today? - MarketBeat",
+      "snippet": "Tesla, Inc. (NASDAQ: TSLA) shares have increased as investors weigh several supportive developments against persistent concerns about valuation, margins and execution.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.164760+00:00",
+      "last_seen": "2026-08-14T01:13:38.164763+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "84ae45ee3a258b119484": {
+      "id": "84ae45ee3a258b119484",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.investing.com/equities/tesla-motors",
+      "title": "Tesla Stock Price Today | NASDAQ: TSLA Live - Investing.com",
+      "snippet": "Tesla Inc stock price live, this page displays NASDAQ TSLA stock exchange data. View the TSLA premarket stock price ahead of the market session or assess the after hours quote.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.164832+00:00",
+      "last_seen": "2026-08-14T01:13:38.164834+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "3504d4bca31ab255a8e9": {
+      "id": "3504d4bca31ab255a8e9",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.marketwatch.com/investing/stock/tsla",
+      "title": "TSLA Stock Price | Tesla Inc. Stock Quote (U.S.: Nasdaq) | MarketWatch",
+      "snippet": "View real-time stock prices and stock quotes for a full financial overview.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.164883+00:00",
+      "last_seen": "2026-08-14T01:13:38.164885+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "89602b70084e37d7d563": {
+      "id": "89602b70084e37d7d563",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.marketwatch.com/investing/Stock/TSLA/charts",
+      "title": "TSLA | Tesla Inc. Advanced Charts | MarketWatch",
+      "snippet": "Tesla Inc. advanced stock charts by MarketWatch. View TSLA historial stock data and compare to other stocks and exchanges.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.164935+00:00",
+      "last_seen": "2026-08-14T01:13:38.164937+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "1683e58491c7317beed0": {
+      "id": "1683e58491c7317beed0",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.fool.com/investing/2025/09/25/why-tesla-stock-dropped-today/",
+      "title": "Why Tesla Stock Dropped Today - The Motley Fool",
+      "snippet": "Tesla (TSLA +3.80%) stock has been on a big run, but it lost some steam today. Shares of the electric vehicle (EV) maker slid as much as 5.4% in Thursday trading.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.164999+00:00",
+      "last_seen": "2026-08-14T01:13:38.165001+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "8851ed04f26a99eaaee9": {
+      "id": "8851ed04f26a99eaaee9",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://finance.yahoo.com/quote/TSLA/chart/",
+      "title": "Tesla, Inc. (TSLA) Interactive Stock Chart - Yahoo Finance",
+      "snippet": "Interactive Chart for Tesla, Inc. (TSLA), analyze all the data with a huge range of indicators.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.165049+00:00",
+      "last_seen": "2026-08-14T01:13:38.165053+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "732c8a012260178433ef": {
+      "id": "732c8a012260178433ef",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/TSLA/",
+      "title": "Tesla (TSLA) Stock Price, News & Analysis - MarketBeat",
+      "snippet": "Should You Buy or Sell Tesla Stock? Get The Latest TSLA Stock Analysis, Price Target, Earnings Estimates, Headlines, and Short Interest at MarketBeat.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.165109+00:00",
+      "last_seen": "2026-08-14T01:13:38.165111+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "90210c04ed780a44681f": {
+      "id": "90210c04ed780a44681f",
+      "comune": "Villar Dora",
+      "fonte": "Bing RSS · Portali indicizzati",
+      "url": "https://in.investing.com/equities/tesla-motors",
+      "title": "Tesla Share Price Today | NASDAQ: TSLA - Investing.com IN",
+      "snippet": "The Tesla share price today is 339.96, view NASDAQ TSLA stock exchange data. Track the latest Tesla share price with real-time updates on TSLA stock performance including market cap, day range, 52-week range and dividend yield.",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "first_seen": "2026-08-14T01:13:38.165179+00:00",
+      "last_seen": "2026-08-14T01:13:38.165181+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "intent_query": false,
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    }
+  },
+  "sources": {
+    "search:d9eba18ccb95dfa93fdd": {
+      "fonte": "Bing RSS",
+      "comune": "Avigliana",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:20.024930+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Avigliana%22+vendita&format=rss&count=15"
+    },
+    "search:42b2ea431d86fdbe5d99": {
+      "fonte": "Bing RSS",
+      "comune": "Avigliana",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:21.195320+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Avigliana%22+privato&format=rss&count=15"
+    },
+    "search:5e063d5d077b053e9c39": {
+      "fonte": "Bing RSS",
+      "comune": "Almese",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:22.364850+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Almese%22+vendita&format=rss&count=15"
+    },
+    "search:500d0c6b2d9d7ebdf7ca": {
+      "fonte": "Bing RSS",
+      "comune": "Almese",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:23.504900+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Almese%22+privato&format=rss&count=15"
+    },
+    "search:2431c72b1305fd5b3f5b": {
+      "fonte": "Bing RSS",
+      "comune": "Susa",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:24.628937+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Susa%22+vendita&format=rss&count=15"
+    },
+    "search:5e94ca6dbeaae7926300": {
+      "fonte": "Bing RSS",
+      "comune": "Susa",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:25.750397+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Susa%22+privato&format=rss&count=15"
+    },
+    "search:8814425828203dc07f0b": {
+      "fonte": "Bing RSS",
+      "comune": "Rivoli",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:26.873325+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Rivoli%22+vendita&format=rss&count=15"
+    },
+    "search:83ee918b08dd43402176": {
+      "fonte": "Bing RSS",
+      "comune": "Rivoli",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:27.986320+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Rivoli%22+privato&format=rss&count=15"
+    },
+    "search:60d12631ace2b360da2e": {
+      "fonte": "Bing RSS",
+      "comune": "Collegno",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:29.120583+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Collegno%22+vendita&format=rss&count=15"
+    },
+    "search:b4a1d3b9d9b1473371ad": {
+      "fonte": "Bing RSS",
+      "comune": "Collegno",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:30.253408+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Collegno%22+privato&format=rss&count=15"
+    },
+    "search:64b1b7951b3586429645": {
+      "fonte": "Bing RSS",
+      "comune": "Condove",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:31.392239+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Condove%22+vendita&format=rss&count=15"
+    },
+    "search:c42c0378ca0ea13b303c": {
+      "fonte": "Bing RSS",
+      "comune": "Condove",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:32.512820+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Condove%22+privato&format=rss&count=15"
+    },
+    "search:2f21105353a653a4fa91": {
+      "fonte": "Bing RSS",
+      "comune": "Buttigliera Alta",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:33.647013+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Buttigliera+Alta%22+vendita&format=rss&count=15"
+    },
+    "search:4aca0549eb5793056c46": {
+      "fonte": "Bing RSS",
+      "comune": "Buttigliera Alta",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:34.770090+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Buttigliera+Alta%22+privato&format=rss&count=15"
+    },
+    "search:328e0ac234276ac4c637": {
+      "fonte": "Bing RSS",
+      "comune": "Rosta",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:35.909217+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Rosta%22+vendita&format=rss&count=15"
+    },
+    "search:dc82e18b2916d5190f34": {
+      "fonte": "Bing RSS",
+      "comune": "Rosta",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:37.043079+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Rosta%22+privato&format=rss&count=15"
+    },
+    "search:d0df79bfb49f77e00b87": {
+      "fonte": "Bing RSS",
+      "comune": "Villar Dora",
+      "label": "Portali indicizzati",
+      "last_check": "2026-08-14T01:13:38.165183+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Villar+Dora%22+vendita&format=rss&count=15"
+    },
+    "search:fad7cc70cee232e5bc79": {
+      "fonte": "Bing RSS",
+      "comune": "Villar Dora",
+      "label": "Segnale privato web",
+      "last_check": "2026-08-14T01:13:39.383478+00:00",
+      "status": "OK",
+      "message": "",
+      "discovered": 10,
+      "seed_url": "https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Villar+Dora%22+privato&format=rss&count=15"
     }
   }
 }

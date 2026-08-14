@@ -1,10 +1,19 @@
 ﻿FONTE,COMUNE,STATO,ULTIMO_CONTROLLO,LINK_SCOPERTI,MESSAGGIO,URL_SORGENTE
-Casa.it,Avigliana,ERROR,2026-08-14T01:08:34.376530+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/avigliana/
-Casa.it,Almese,ERROR,2026-08-14T01:08:34.592971+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/almese/
-Casa.it,Susa,ERROR,2026-08-14T01:08:34.781157+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/susa/
-Casa.it,Rivoli,ERROR,2026-08-14T01:08:34.812381+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/rivoli/
-Casa.it,Collegno,ERROR,2026-08-14T01:08:35.001845+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/collegno/
-Casa.it,Condove,ERROR,2026-08-14T01:08:35.205202+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/condove/
-Casa.it,Buttigliera Alta,ERROR,2026-08-14T01:08:35.232037+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/buttigliera-alta/
-Casa.it,Rosta,ERROR,2026-08-14T01:08:35.262641+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/rosta/
-Casa.it,Villar Dora,ERROR,2026-08-14T01:08:35.451916+00:00,0,HTTP Error 403: Forbidden,https://www.casa.it/vendita/residenziale/villar-dora/
+Bing RSS,Avigliana,OK,2026-08-14T01:13:20.024930+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Avigliana%22+vendita&format=rss&count=15
+Bing RSS,Avigliana,OK,2026-08-14T01:13:21.195320+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Avigliana%22+privato&format=rss&count=15
+Bing RSS,Almese,OK,2026-08-14T01:13:22.364850+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Almese%22+vendita&format=rss&count=15
+Bing RSS,Almese,OK,2026-08-14T01:13:23.504900+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Almese%22+privato&format=rss&count=15
+Bing RSS,Susa,OK,2026-08-14T01:13:24.628937+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Susa%22+vendita&format=rss&count=15
+Bing RSS,Susa,OK,2026-08-14T01:13:25.750397+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Susa%22+privato&format=rss&count=15
+Bing RSS,Rivoli,OK,2026-08-14T01:13:26.873325+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Rivoli%22+vendita&format=rss&count=15
+Bing RSS,Rivoli,OK,2026-08-14T01:13:27.986320+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Rivoli%22+privato&format=rss&count=15
+Bing RSS,Collegno,OK,2026-08-14T01:13:29.120583+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Collegno%22+vendita&format=rss&count=15
+Bing RSS,Collegno,OK,2026-08-14T01:13:30.253408+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Collegno%22+privato&format=rss&count=15
+Bing RSS,Condove,OK,2026-08-14T01:13:31.392239+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Condove%22+vendita&format=rss&count=15
+Bing RSS,Condove,OK,2026-08-14T01:13:32.512820+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Condove%22+privato&format=rss&count=15
+Bing RSS,Buttigliera Alta,OK,2026-08-14T01:13:33.647013+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Buttigliera+Alta%22+vendita&format=rss&count=15
+Bing RSS,Buttigliera Alta,OK,2026-08-14T01:13:34.770090+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Buttigliera+Alta%22+privato&format=rss&count=15
+Bing RSS,Rosta,OK,2026-08-14T01:13:35.909217+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Rosta%22+vendita&format=rss&count=15
+Bing RSS,Rosta,OK,2026-08-14T01:13:37.043079+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Rosta%22+privato&format=rss&count=15
+Bing RSS,Villar Dora,OK,2026-08-14T01:13:38.165183+00:00,10,,https://www.bing.com/search?q=%28site%3Acasa.it%2Fimmobili%2F+OR+site%3Aidealista.it%2Fimmobile%2F+OR+site%3Aimmobiliare.it%2Fannunci%2F%29+%22Villar+Dora%22+vendita&format=rss&count=15
+Bing RSS,Villar Dora,OK,2026-08-14T01:13:39.383478+00:00,10,,https://www.bing.com/search?q=%28%22vendo+casa%22+OR+%22vendesi%22+OR+%22vendo+appartamento%22%29+%22Villar+Dora%22+privato&format=rss&count=15
