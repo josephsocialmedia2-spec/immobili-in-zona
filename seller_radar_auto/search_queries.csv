@@ -1,19 +1,37 @@
-enabled,comune,label,query,check_hours,max_results
-1,Avigliana,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Avigliana"" vendita",6,15
-1,Avigliana,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Avigliana"" privato",6,15
-1,Almese,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Almese"" vendita",6,15
-1,Almese,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Almese"" privato",6,15
-1,Susa,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Susa"" vendita",6,15
-1,Susa,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Susa"" privato",6,15
-1,Rivoli,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Rivoli"" vendita",6,15
-1,Rivoli,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Rivoli"" privato",6,15
-1,Collegno,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Collegno"" vendita",6,15
-1,Collegno,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Collegno"" privato",6,15
-1,Condove,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Condove"" vendita",6,15
-1,Condove,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Condove"" privato",6,15
-1,Buttigliera Alta,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Buttigliera Alta"" vendita",6,15
-1,Buttigliera Alta,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Buttigliera Alta"" privato",6,15
-1,Rosta,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Rosta"" vendita",6,15
-1,Rosta,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Rosta"" privato",6,15
-1,Villar Dora,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Villar Dora"" vendita",6,15
-1,Villar Dora,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Villar Dora"" privato",6,15
+enabled,comune,label,query,allowed_host,path_regex,private_intent,check_hours,max_results
+1,Avigliana,Casa.it privati,"site:casa.it/immobili/ ""Avigliana"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Avigliana,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Avigliana"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Avigliana,Idealista annunci,"site:idealista.it/immobile/ ""Avigliana"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Avigliana,Casa.it annunci,"site:casa.it/immobili/ ""Avigliana"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Almese,Casa.it privati,"site:casa.it/immobili/ ""Almese"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Almese,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Almese"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Almese,Idealista annunci,"site:idealista.it/immobile/ ""Almese"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Almese,Casa.it annunci,"site:casa.it/immobili/ ""Almese"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Susa,Casa.it privati,"site:casa.it/immobili/ ""Susa"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Susa,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Susa"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Susa,Idealista annunci,"site:idealista.it/immobile/ ""Susa"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Susa,Casa.it annunci,"site:casa.it/immobili/ ""Susa"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Rivoli,Casa.it privati,"site:casa.it/immobili/ ""Rivoli"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Rivoli,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Rivoli"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Rivoli,Idealista annunci,"site:idealista.it/immobile/ ""Rivoli"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Rivoli,Casa.it annunci,"site:casa.it/immobili/ ""Rivoli"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Collegno,Casa.it privati,"site:casa.it/immobili/ ""Collegno"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Collegno,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Collegno"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Collegno,Idealista annunci,"site:idealista.it/immobile/ ""Collegno"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Collegno,Casa.it annunci,"site:casa.it/immobili/ ""Collegno"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Condove,Casa.it privati,"site:casa.it/immobili/ ""Condove"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Condove,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Condove"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Condove,Idealista annunci,"site:idealista.it/immobile/ ""Condove"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Condove,Casa.it annunci,"site:casa.it/immobili/ ""Condove"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Buttigliera Alta,Casa.it privati,"site:casa.it/immobili/ ""Buttigliera Alta"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Buttigliera Alta,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Buttigliera Alta"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Buttigliera Alta,Idealista annunci,"site:idealista.it/immobile/ ""Buttigliera Alta"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Buttigliera Alta,Casa.it annunci,"site:casa.it/immobili/ ""Buttigliera Alta"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Rosta,Casa.it privati,"site:casa.it/immobili/ ""Rosta"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Rosta,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Rosta"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Rosta,Idealista annunci,"site:idealista.it/immobile/ ""Rosta"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Rosta,Casa.it annunci,"site:casa.it/immobili/ ""Rosta"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
+1,Villar Dora,Casa.it privati,"site:casa.it/immobili/ ""Villar Dora"" ""Privato vende""",www.casa.it,^/immobili/[0-9]+/?$,1,6,15
+1,Villar Dora,Immobiliare.it annunci,"site:immobiliare.it/annunci/ ""Villar Dora"" vendita",www.immobiliare.it,^/annunci/[0-9]+/?$,0,6,15
+1,Villar Dora,Idealista annunci,"site:idealista.it/immobile/ ""Villar Dora"" vendita",www.idealista.it,^/immobile/[0-9]+/?$,0,6,15
+1,Villar Dora,Casa.it annunci,"site:casa.it/immobili/ ""Villar Dora"" vendita",www.casa.it,^/immobili/[0-9]+/?$,0,6,15
