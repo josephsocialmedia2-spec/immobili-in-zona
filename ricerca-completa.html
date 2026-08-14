@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F1 Seller Radar — Ricerca completa</title>
+<style>
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0c0f0d;color:#eee}
+.wrap{max-width:1050px;margin:auto;padding:24px 16px 60px}
+.card{background:#151a17;border:1px solid #2c3630;border-radius:14px;padding:18px;margin-bottom:16px}
+h1{margin:0 0 8px;font-size:25px}.muted{color:#aeb8b0;font-size:13px}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+input{flex:1;min-width:260px;background:#0f1310;color:#fff;border:1px solid #39443d;border-radius:10px;padding:13px;font-size:16px}
+button,a.btn{background:#78e08f;color:#0b0e0c;border:0;border-radius:10px;padding:12px 14px;font-weight:800;text-decoration:none;cursor:pointer}
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:18px}
+.item{background:#111512;border:1px solid #29332d;border-radius:12px;padding:13px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.name{font-weight:800}.desc{font-size:11px;color:#9faa9f;margin-top:4px;word-break:break-word}.open{white-space:nowrap;color:#78e08f;font-weight:800;text-decoration:none}
+.note{border-left:4px solid #78e08f;padding:12px;background:#171b18;margin-top:14px;font-size:13px}
+</style>
+</head>
+<body><div class="wrap">
+<div class="card">
+<h1>F1 SELLER RADAR — RICERCA COMPLETA</h1>
+<div class="muted">Ricerca manuale sulle fonti configurate nel radar. PagineBianche escluso.</div>
+<div class="row">
+<input id="city" list="territori" placeholder="Scrivi il paese, es. Avigliana">
+<datalist id="territori">
+<option>Avigliana</option><option>Almese</option><option>Buttigliera Alta</option><option>Bussoleno</option><option>Susa</option><option>Rosta</option><option>Condove</option><option>Sant'Antonino di Susa</option><option>Alpignano</option><option>Rivoli</option><option>Villar Dora</option><option>Caprie</option><option>Novaretto</option><option>Chiusa di San Michele</option><option>Vaie</option><option>Sant'Ambrogio di Torino</option>
+</datalist>
+<button id="go">CREA RICERCHE</button>
+<a class="btn" href="./agenzie.html">TORNA AL RADAR</a>
+</div>
+<div class="note">Le ricerche aprono Google con query mirate per fonte e territorio. Per ogni risultato verificare sempre annuncio, prezzo, inserzionista e contatto direttamente sulla fonte.</div>
+</div>
+<div class="card"><div id="list" class="list"></div></div>
+</div>
+<script>
+const sources=[
+['Immobiliare.it','site:immobiliare.it/annunci/ "{c}" vendita (casa OR appartamento OR villa)'],
+['Idealista','site:idealista.it/immobile/ "{c}" vendita (casa OR appartamento OR villa)'],
+['Casa.it','site:casa.it/immobili/ "{c}" vendita (casa OR appartamento OR villa)'],
+['TrovaCasa privati','site:trovacasa.it/annunci/ "{c}" ("da privato" OR "no agenzie" OR "privato vende")'],
+['Wikicasa','site:wikicasa.it "{c}" vendita (casa OR appartamento OR villa)'],
+['Subito privati','site:subito.it "{c}" vendita (appartamento OR casa OR villa) (privato OR "da privati")'],
+['Bakeca privati','site:bakeca.it/annunci/vendita-case/ "{c}" (privato OR vendo)'],
+['Trovit','site:trovit.it "{c}" vendita (casa OR appartamento OR villa)'],
+['Nestoria','site:nestoria.it "{c}" vendita (casa OR appartamento OR villa)'],
+['Gate-away','site:gate-away.com "{c}" property sale house'],
+['VendereCasa','site:venderecasa.com "{c}" vendita (casa OR appartamento OR villa)'],
+['TuttoCasa','site:tuttocasa.it "{c}" vendita (casa OR appartamento OR villa)'],
+['Tecnocasa','site:tecnocasa.it/vendita/ "{c}" vendita'],
+['Tecnorete','site:tecnorete.it "{c}" "in vendita"'],
+['Tempocasa','site:tempocasa.it/it/vendita/ "{c}" vendita'],
+['Facebook Marketplace','site:facebook.com/marketplace/item/ "{c}" (casa OR appartamento OR villa) vendita'],
+['Gruppi Facebook locali','site:facebook.com/groups/ "{c}" ("vendo casa" OR "privato vende" OR "no agenzie")'],
+['Web generale','"{c}" ("privato vende" OR "no agenzie") (casa OR appartamento OR villa) vendita'],
+['Bacheche locali','"{c}" ("annuncio privato" OR "vendo appartamento" OR "vendo casa") -immobiliare.it -idealista.it -casa.it']
+];
+function g(q){const u=new URL('https://www.google.com/search');u.searchParams.set('q',q);return u.toString()}
+function render(){const c=document.getElementById('city').value.trim();if(!c)return;const list=document.getElementById('list');list.innerHTML='';for(const [name,tpl] of sources){const q=tpl.replaceAll('{c}',c);const row=document.createElement('div');row.className='item';row.innerHTML=`<div><div class="name">${name}</div><div class="desc">${q}</div></div><a class="open" target="_blank" rel="noopener" href="${g(q)}">APRI</a>`;list.appendChild(row)}}
+document.getElementById('go').onclick=render;document.getElementById('city').addEventListener('keydown',e=>{if(e.key==='Enter')render()});
+</script>
+</body></html>
