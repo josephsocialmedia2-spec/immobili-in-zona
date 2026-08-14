@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "seller_radar_auto/cloud_radar.py"
-      - "seller_radar_auto/search_queries.csv"
+      - "seller_radar_auto/cloud_radar_v4.py"
+      - "seller_radar_auto/municipalities.csv"
+      - "seller_radar_auto/portal_catalog.csv"
       - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
     # Copre ora legale e ora solare italiana.
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   radar:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
 
     steps:
       - name: Verifica orario italiano
@@ -48,9 +49,9 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
-      - name: Run radar
+      - name: Run radar v4
         if: steps.gate.outputs.run == 'true'
-        run: python seller_radar_auto/cloud_radar.py
+        run: python seller_radar_auto/cloud_radar_v4.py
 
       - name: Persist public market data
         if: steps.gate.outputs.run == 'true'
