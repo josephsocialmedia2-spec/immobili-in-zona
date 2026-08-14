@@ -1,0 +1,19 @@
+enabled,comune,label,query,check_hours,max_results
+1,Avigliana,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Avigliana"" vendita",6,15
+1,Avigliana,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Avigliana"" privato",6,15
+1,Almese,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Almese"" vendita",6,15
+1,Almese,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Almese"" privato",6,15
+1,Susa,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Susa"" vendita",6,15
+1,Susa,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Susa"" privato",6,15
+1,Rivoli,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Rivoli"" vendita",6,15
+1,Rivoli,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Rivoli"" privato",6,15
+1,Collegno,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Collegno"" vendita",6,15
+1,Collegno,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Collegno"" privato",6,15
+1,Condove,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Condove"" vendita",6,15
+1,Condove,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Condove"" privato",6,15
+1,Buttigliera Alta,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Buttigliera Alta"" vendita",6,15
+1,Buttigliera Alta,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Buttigliera Alta"" privato",6,15
+1,Rosta,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Rosta"" vendita",6,15
+1,Rosta,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Rosta"" privato",6,15
+1,Villar Dora,Portali indicizzati,"(site:casa.it/immobili/ OR site:idealista.it/immobile/ OR site:immobiliare.it/annunci/) ""Villar Dora"" vendita",6,15
+1,Villar Dora,Segnale privato web,"(""vendo casa"" OR ""vendesi"" OR ""vendo appartamento"") ""Villar Dora"" privato",6,15
