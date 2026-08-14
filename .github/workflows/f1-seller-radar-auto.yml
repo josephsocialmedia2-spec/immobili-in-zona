@@ -6,6 +6,7 @@ on:
     paths:
       - "seller_radar_auto/cloud_radar.py"
       - "seller_radar_auto/sources.csv"
+      - "seller_radar_auto/search_queries.csv"
       - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
     - cron: "17 */3 * * *"
