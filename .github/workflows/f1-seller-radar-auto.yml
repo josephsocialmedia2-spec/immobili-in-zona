@@ -5,7 +5,6 @@ on:
   push:
     paths:
       - "seller_radar_auto/cloud_radar.py"
-      - "seller_radar_auto/sources.csv"
       - "seller_radar_auto/search_queries.csv"
       - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
@@ -16,7 +15,7 @@ permissions:
 
 concurrency:
   group: f1-seller-radar-auto
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   radar:
@@ -43,5 +42,6 @@ jobs:
             echo "Nessuna modifica da salvare."
           else
             git commit -m "radar: aggiornamento automatico"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
