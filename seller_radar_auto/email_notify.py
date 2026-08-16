@@ -12,10 +12,10 @@ SMTP_HOST = os.getenv("F1_EMAIL_SMTP_HOST", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("F1_EMAIL_SMTP_PORT", "465"))
 EMAIL_USER = os.getenv("F1_EMAIL_USER", "").strip()
 EMAIL_PASS = os.getenv("F1_EMAIL_APP_PASSWORD", "").strip()
-EMAIL_TO = os.getenv("F1_EMAIL_TO", "").strip()
+EMAIL_TO = "agenzia.realmediapro@gmail.com"
 
-if not (EMAIL_USER and EMAIL_PASS and EMAIL_TO):
-    print("Email non configurata: mancano F1_EMAIL_USER / F1_EMAIL_APP_PASSWORD / F1_EMAIL_TO")
+if not (EMAIL_USER and EMAIL_PASS):
+    print("Email non configurata: mancano F1_EMAIL_USER / F1_EMAIL_APP_PASSWORD")
     raise SystemExit(0)
 
 sent = set()
