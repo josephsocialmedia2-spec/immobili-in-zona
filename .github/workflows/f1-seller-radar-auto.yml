@@ -7,6 +7,8 @@ on:
       - "seller_radar_auto/cloud_radar_v4.py"
       - "seller_radar_auto/municipalities.csv"
       - "seller_radar_auto/portal_catalog.csv"
+      - "seller_radar_auto/whatsapp_notify.py"
+      - "seller_radar_auto/whatsapp_routes.csv"
       - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
     # Copre ora legale e ora solare italiana.
@@ -53,6 +55,17 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/cloud_radar_v4.py
 
+      - name: Invia nuove pubblicazioni su WhatsApp
+        if: steps.gate.outputs.run == 'true'
+        env:
+          WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
+          WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
+          WHATSAPP_API_VERSION: ${{ secrets.WHATSAPP_API_VERSION }}
+          F1_WA_MAIN: ${{ secrets.F1_WA_MAIN }}
+          F1_WA_MOUNTAIN: ${{ secrets.F1_WA_MOUNTAIN }}
+          F1_WA_TORINO: ${{ secrets.F1_WA_TORINO }}
+        run: python seller_radar_auto/whatsapp_notify.py
+
       - name: Persist public market data
         if: steps.gate.outputs.run == 'true'
         shell: bash
@@ -62,6 +75,7 @@ jobs:
           git add seller_radar_auto/data/state.json \
                   seller_radar_auto/data/work_queue.csv \
                   seller_radar_auto/data/source_status.csv \
+                  seller_radar_auto/data/whatsapp_sent.json \
                   seller_radar_auto/dashboard.html
           if git diff --cached --quiet; then
             echo "Nessuna modifica da salvare."
