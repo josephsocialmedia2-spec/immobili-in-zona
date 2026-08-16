@@ -9,6 +9,7 @@ on:
       - "seller_radar_auto/portal_catalog.csv"
       - "seller_radar_auto/whatsapp_notify.py"
       - "seller_radar_auto/whatsapp_routes.csv"
+      - "seller_radar_auto/email_notify.py"
       - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
     # Copre ora legale e ora solare italiana.
@@ -55,6 +56,16 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/cloud_radar_v4.py
 
+      - name: Invia nuove pubblicazioni via email
+        if: steps.gate.outputs.run == 'true'
+        env:
+          F1_EMAIL_USER: ${{ secrets.F1_EMAIL_USER }}
+          F1_EMAIL_APP_PASSWORD: ${{ secrets.F1_EMAIL_APP_PASSWORD }}
+          F1_EMAIL_TO: ${{ secrets.F1_EMAIL_TO }}
+          F1_EMAIL_SMTP_HOST: smtp.gmail.com
+          F1_EMAIL_SMTP_PORT: "465"
+        run: python seller_radar_auto/email_notify.py
+
       - name: Invia nuove pubblicazioni su WhatsApp
         if: steps.gate.outputs.run == 'true'
         env:
@@ -75,6 +86,7 @@ jobs:
           git add seller_radar_auto/data/state.json \
                   seller_radar_auto/data/work_queue.csv \
                   seller_radar_auto/data/source_status.csv \
+                  seller_radar_auto/data/email_sent.json \
                   seller_radar_auto/data/whatsapp_sent.json \
                   seller_radar_auto/dashboard.html
           if git diff --cached --quiet; then
