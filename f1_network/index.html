@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F1 Network Territoriale</title>
+<style>
+:root{--bg:#0b0d10;--panel:#14181d;--panel2:#1b2027;--line:#2a313a;--text:#f4f6f8;--muted:#9da8b5;--accent:#f3c51c;--danger:#ff5a5f;--ok:#4ad295;--blue:#4ea1ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{max-width:1450px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;flex-wrap:wrap}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.12em;color:var(--accent)}h1{font-size:clamp(28px,4vw,48px);margin:5px 0 8px;line-height:1}.lead{max-width:900px;color:var(--muted);margin:0;font-size:15px;line-height:1.55}.rule{margin-top:18px;border:1px solid var(--danger);background:#271316;border-radius:14px;padding:14px 16px;font-weight:800}.rule b{color:#ff9397}.stats{display:grid;grid-template-columns:repeat(5,minmax(130px,1fr));gap:10px;margin:18px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}.stat strong{display:block;font-size:25px}.stat span{font-size:12px;color:var(--muted)}.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr auto auto;gap:10px;background:var(--panel);border:1px solid var(--line);padding:12px;border-radius:16px;position:sticky;top:8px;z-index:20}.toolbar select,.toolbar input,.btn,textarea{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:11px 12px;font:inherit}.btn{cursor:pointer;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px}.btn.primary{background:var(--accent);color:#111;border-color:var(--accent)}.btn.danger{border-color:#6b3437}.btn:hover{filter:brightness(1.1)}.section{margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}.section h2{margin:0 0 12px;font-size:19px}.coverage{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.cov{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px;display:flex;justify-content:space-between;gap:8px;font-size:12px}.cov.missing{border-color:#684b1d}.cov .tag{font-weight:900}.cov .count{color:var(--ok)}.cov.missing .count{color:var(--accent)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:15px}.card.verify{border-color:#70551d}.card h3{margin:3px 0 4px;font-size:17px}.meta{font-size:12px;color:var(--muted);line-height:1.45;min-height:34px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0}.chip{font-size:10px;border:1px solid var(--line);padding:4px 7px;border-radius:999px;font-weight:800}.chip.high{border-color:var(--accent);color:var(--accent)}.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0}.actions a{font-size:12px;padding:9px}.status{width:100%;margin-top:3px;border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:10px;border-radius:10px}.note{width:100%;min-height:58px;margin-top:8px;resize:vertical}.empty{padding:32px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.protocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.box{background:var(--panel2);border:1px solid var(--line);padding:14px;border-radius:12px}.box h3{margin:0 0 8px;font-size:15px}.box ol,.box ul{margin:0;padding-left:20px;color:#d9dee4;font-size:13px;line-height:1.6}.script{white-space:pre-wrap;background:#0c0f13;border:1px solid var(--line);padding:13px;border-radius:10px;color:#e9edf2;font-size:13px;line-height:1.5}.footer{color:var(--muted);font-size:11px;text-align:center;margin:24px 0}.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal.show{display:flex}.modalbox{width:min(720px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid2 input,.grid2 select{width:100%;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:11px}.modalactions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}.toast{position:fixed;right:18px;bottom:18px;background:#222a31;border:1px solid var(--line);padding:12px 16px;border-radius:10px;display:none;z-index:200}.toast.show{display:block}
+@media(max-width:1000px){.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.cards{grid-template-columns:repeat(2,1fr)}.coverage{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.wrap{padding:14px}.toolbar{position:static;grid-template-columns:1fr}.cards,.protocol,.grid2{grid-template-columns:1fr}.coverage{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.actions{grid-template-columns:1fr 1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="eyebrow">F1 IMMOBILIARE · NETWORK TERRITORIALE</div>
+      <h1>Il lunedì costruiamo la rete locale.</h1>
+      <p class="lead">Circa 30 anni di esperienza maturata nel territorio valsusino e nella prima cintura di Torino. Il progetto mette in relazione F1 con professionisti realmente radicati nel singolo paese, per creare una rete di collaborazione reciproca e un mercato immobiliare locale più strutturato.</p>
+    </div>
+  </div>
+
+  <div class="rule"><b>REGOLA VINCOLANTE:</b> Comune/località dell'immobile = Comune/località del professionista. Condove → professionisti di Condove. Bussoleno → professionisti di Bussoleno. Nessun fallback automatico verso paesi vicini o Torino.</div>
+
+  <div class="stats">
+    <div class="stat"><strong id="stTerr">–</strong><span>territori F1 attivi</span></div>
+    <div class="stat"><strong id="stContacts">–</strong><span>professionisti censiti</span></div>
+    <div class="stat"><strong id="stTodo">–</strong><span>da contattare</span></div>
+    <div class="stat"><strong id="stAppt">–</strong><span>appuntamenti</span></div>
+    <div class="stat"><strong id="stNet">–</strong><span>rete F1 attiva</span></div>
+  </div>
+
+  <div class="toolbar">
+    <select id="territorio"><option value="">Tutti i territori</option></select>
+    <select id="categoria"><option value="">Tutte le categorie</option></select>
+    <select id="statoFiltro"><option value="">Tutti gli stati</option><option>DA_CONTATTARE</option><option>DA_VERIFICARE</option><option>CONTATTATO</option><option>DA_RICHIAMARE</option><option>APPUNTAMENTO</option><option>INCONTRATO</option><option>PARTNER_POTENZIALE</option><option>RETE_F1</option><option>NON_INTERESSATO</option></select>
+    <button class="btn primary" id="nextBtn">▶ Prossimo</button>
+    <button class="btn" id="addBtn">＋ Aggiungi</button>
+  </div>
+
+  <div class="section">
+    <h2>Copertura professionale del territorio selezionato</h2>
+    <div id="coverage" class="coverage"></div>
+  </div>
+
+  <div class="section">
+    <h2>Protocollo del lunedì</h2>
+    <div class="protocol">
+      <div class="box"><h3>Sequenza operativa</h3><ol><li>Scegliere il paese da lavorare.</li><li>Completare le categorie marcate “DA RICERCARE”.</li><li>Verificare telefono, attività e sede effettivamente nel paese.</li><li>Chiamare i contatti “DA_CONTATTARE”.</li><li>Obiettivo della telefonata: fissare un incontro, non chiedere subito referral.</li><li>Dopo ogni chiamata aggiornare stato e note.</li><li>Preparare gli appuntamenti fissati.</li><li>A fine sessione esportare il CSV di sicurezza.</li></ol></div>
+      <div class="box"><h3>Obiettivo dell'incontro</h3><ul><li>Presentare l'esperienza F1 maturata in circa 30 anni sul territorio.</li><li>Spiegare il modello di rete locale, paese per paese.</li><li>Chiarire che ogni professionista mantiene la propria competenza.</li><li>Creare collaborazione reciproca: F1 indirizza esigenze tecniche/fiscali/legali; il professionista può presentare a F1 proprietari con esigenze immobiliari.</li><li>Nessuna richiesta aggressiva di clienti e nessuna sostituzione automatica con professionisti di altri comuni.</li></ul></div>
+    </div>
+    <div style="margin-top:12px" class="box">
+      <h3>Traccia telefonica</h3>
+      <div id="script" class="script"></div>
+      <button class="btn" id="copyScript" style="margin-top:8px">Copia traccia</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap"><h2 style="margin:0">Coda professionisti</h2><button class="btn" id="exportBtn">Esporta CSV aggiornato</button></div>
+    <div id="cards" class="cards"></div>
+  </div>
+
+  <div class="footer">F1 Network Territoriale · dati pubblici da verificare prima del contatto · stato operativo salvato nel browser</div>
+</div>
+
+<div class="modal" id="modal"><div class="modalbox"><h2>Aggiungi professionista locale</h2><div class="grid2">
+<select id="aComune"></select><select id="aCategoria"></select><input id="aNome" placeholder="Nome / Studio"><input id="aTelefono" placeholder="Telefono"><input id="aEmail" placeholder="Email"><input id="aIndirizzo" placeholder="Indirizzo"><input id="aSito" placeholder="Sito"><select id="aStato"><option>DA_CONTATTARE</option><option>DA_VERIFICARE</option><option>CONTATTATO</option><option>APPUNTAMENTO</option><option>RETE_F1</option></select></div><div class="modalactions"><button class="btn" id="cancelAdd">Annulla</button><button class="btn primary" id="saveAdd">Salva</button></div></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const CATS=['Geometra','Architetto','Amministratore condominio','Notaio','Avvocato','Commercialista','Consulente credito / finanziario','Impresa edile'];
+const STATES=['DA_CONTATTARE','DA_VERIFICARE','CONTATTATO','DA_RICHIAMARE','APPUNTAMENTO','INCONTRATO','PARTNER_POTENZIALE','RETE_F1','NON_INTERESSATO'];
+let territories=[], base=[], custom=[];
+const $=s=>document.querySelector(s); const esc=s=>(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function parseCSV(txt){return txt.trim().split(/\r?\n/).slice(1).map(line=>{let v=line.split(',');return {id:v[0],comune:v[1],categoria:v[2],nome:v[3],telefono:v[4],email:v[5],indirizzo:v[6],sito:v[7],fonte:v[8],stato:v[9],priorita:v[10],note:v.slice(11).join(',')}})}
+function saved(id,key,def=''){return localStorage.getItem('f1n:'+id+':'+key)??def}
+function all(){custom=JSON.parse(localStorage.getItem('f1n:custom')||'[]');return [...base,...custom].map(x=>({...x,stato:saved(x.id,'stato',x.stato),note:saved(x.id,'note',x.note||'')}))}
+function normalizePhone(p){return (p||'').replace(/[^0-9+]/g,'').replace(/^\+/, '')}
+function filters(){return {t:$('#territorio').value,c:$('#categoria').value,s:$('#statoFiltro').value}}
+function filtered(){let f=filters();return all().filter(x=>(!f.t||x.comune===f.t)&&(!f.c||x.categoria===f.c)&&(!f.s||x.stato===f.s))}
+function toast(t){$('#toast').textContent=t;$('#toast').classList.add('show');setTimeout(()=>$('#toast').classList.remove('show'),1800)}
+function renderStats(){let a=all();$('#stTerr').textContent=territories.length;$('#stContacts').textContent=a.length;$('#stTodo').textContent=a.filter(x=>x.stato==='DA_CONTATTARE'||x.stato==='DA_VERIFICARE').length;$('#stAppt').textContent=a.filter(x=>x.stato==='APPUNTAMENTO').length;$('#stNet').textContent=a.filter(x=>x.stato==='RETE_F1').length}
+function currentTown(){return $('#territorio').value||'il territorio selezionato'}
+function renderScript(){let c=currentTown();$('#script').textContent=`Buongiorno, sono Joseph/Francesca di F1 Immobiliare. Operiamo da circa 30 anni nel territorio valsusino e nella prima cintura di Torino.\n\nStiamo strutturando a ${c} una rete locale di professionisti di riferimento collegata al settore immobiliare. Non la contatto per venderle un servizio e non le sto chiedendo clienti al telefono: vorremmo conoscerla e capire se ci sono le basi per una collaborazione reciproca sul territorio.\n\nL'idea è molto semplice: quando un immobile è a ${c}, vogliamo lavorare con professionisti di ${c}. Possiamo fissare un breve incontro di conoscenza?`;}
+function renderCoverage(){let t=$('#territorio').value,a=all();let el=$('#coverage');if(!t){el.innerHTML='<div class="empty" style="grid-column:1/-1">Seleziona un territorio per verificare quali figure professionali sono già presenti e quali devono ancora essere cercate.</div>';return}el.innerHTML=CATS.map(c=>{let n=a.filter(x=>x.comune===t&&x.categoria===c).length;if(n)return `<div class="cov"><span class="tag">${esc(c)}</span><span class="count">${n} censit${n===1?'o':'i'}</span></div>`;let q=encodeURIComponent(`${c} ${t} Torino`);return `<div class="cov missing"><span class="tag">${esc(c)}</span><a class="count" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${q}">DA RICERCARE ↗</a></div>`}).join('')}
+function statusOptions(cur){return STATES.map(s=>`<option ${s===cur?'selected':''}>${s}</option>`).join('')}
+function renderCards(){let a=filtered(),el=$('#cards');if(!a.length){el.innerHTML='<div class="empty" style="grid-column:1/-1">Nessun professionista corrisponde ai filtri. Se il territorio è selezionato, usa “DA RICERCARE” nella copertura per trovare solo professionisti di quel paese.</div>';return}el.innerHTML=a.map(x=>{let tel=normalizePhone(x.telefono);let maps=encodeURIComponent(`${x.nome} ${x.indirizzo}`);return `<article class="card ${x.stato==='DA_VERIFICARE'?'verify':''}" data-id="${esc(x.id)}"><div class="chips"><span class="chip">${esc(x.comune)}</span><span class="chip">${esc(x.categoria)}</span>${x.priorita==='ALTA'?'<span class="chip high">PRIORITÀ ALTA</span>':''}</div><h3>${esc(x.nome)}</h3><div class="meta">${esc(x.indirizzo)}<br>${x.telefono?esc(x.telefono):'<b>Telefono da integrare</b>'}</div><div class="actions">${x.telefono?`<a class="btn" href="tel:${esc(x.telefono)}">Chiama</a><a class="btn" target="_blank" href="https://wa.me/${tel}">WhatsApp</a>`:'<span></span><span></span>'}<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=${maps}">Mappa</a></div><select class="status" data-id="${esc(x.id)}">${statusOptions(x.stato)}</select><textarea class="note" data-id="${esc(x.id)}" placeholder="Esito chiamata, nome referente, giorno appuntamento...">${esc(x.note||'')}</textarea></article>`}).join('');document.querySelectorAll('.status').forEach(s=>s.onchange=e=>{localStorage.setItem('f1n:'+e.target.dataset.id+':stato',e.target.value);renderStats()});document.querySelectorAll('.note').forEach(n=>n.onchange=e=>localStorage.setItem('f1n:'+e.target.dataset.id+':note',e.target.value))}
+function render(){renderStats();renderCoverage();renderCards();renderScript()}
+function nextContact(){let a=filtered().filter(x=>x.stato==='DA_CONTATTARE'||x.stato==='DA_VERIFICARE');if(!a.length){toast('Nessun contatto da lavorare con questi filtri');return}let x=a[0],card=document.querySelector(`[data-id="${CSS.escape(x.id)}"]`);if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.style.outline='2px solid var(--accent)';setTimeout(()=>card.style.outline='',2200)}if(x.telefono)toast('Prossimo: '+x.nome);}
+function exportCSV(){let h=['id','comune','categoria','nome','telefono','email','indirizzo','sito','fonte','stato','priorita','note'];let rows=all().map(x=>h.map(k=>'"'+String(x[k]||'').replaceAll('"','""')+'"').join(','));let blob=new Blob([h.join(',')+'\n'+rows.join('\n')],{type:'text/csv;charset=utf-8'});let u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='F1_Network_Territoriale_'+new Date().toISOString().slice(0,10)+'.csv';a.click();URL.revokeObjectURL(u)}
+function populate(){let ts=territories.map(t=>`<option>${esc(t)}</option>`).join('');$('#territorio').insertAdjacentHTML('beforeend',ts);$('#aComune').innerHTML=ts;let cs=CATS.map(c=>`<option>${esc(c)}</option>`).join('');$('#categoria').insertAdjacentHTML('beforeend',cs);$('#aCategoria').innerHTML=cs}
+function openAdd(){$('#modal').classList.add('show');if($('#territorio').value)$('#aComune').value=$('#territorio').value}
+function saveAdd(){let nome=$('#aNome').value.trim(),comune=$('#aComune').value;if(!nome||!comune){toast('Inserisci almeno nome e comune');return}custom=JSON.parse(localStorage.getItem('f1n:custom')||'[]');custom.push({id:'manual-'+Date.now(),comune,categoria:$('#aCategoria').value,nome,telefono:$('#aTelefono').value.trim(),email:$('#aEmail').value.trim(),indirizzo:$('#aIndirizzo').value.trim(),sito:$('#aSito').value.trim(),fonte:'Inserimento manuale',stato:$('#aStato').value,priorita:'NORMALE',note:''});localStorage.setItem('f1n:custom',JSON.stringify(custom));$('#modal').classList.remove('show');['#aNome','#aTelefono','#aEmail','#aIndirizzo','#aSito'].forEach(i=>$(i).value='');render();toast('Professionista aggiunto')}
+async function init(){let [m,c]=await Promise.all([fetch('../seller_radar_auto/municipalities.csv?v=20260816'),fetch('data/professionisti.csv?v=20260816')]);let mt=await m.text();territories=mt.trim().split(/\r?\n/).slice(1).map(r=>r.split(',')).filter(r=>r[0]==='1').map(r=>r.slice(1).join(',').trim());base=parseCSV(await c.text());populate();render()}
+$('#territorio').onchange=render;$('#categoria').onchange=renderCards;$('#statoFiltro').onchange=renderCards;$('#nextBtn').onclick=nextContact;$('#exportBtn').onclick=exportCSV;$('#addBtn').onclick=openAdd;$('#cancelAdd').onclick=()=>$('#modal').classList.remove('show');$('#saveAdd').onclick=saveAdd;$('#copyScript').onclick=()=>navigator.clipboard.writeText($('#script').textContent).then(()=>toast('Traccia copiata'));
+init().catch(e=>{console.error(e);$('#cards').innerHTML='<div class="empty">Errore nel caricamento dati. Ricaricare la pagina.</div>'});
+</script>
+</body>
+</html>
