@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-08-17T16:24:17.286705+00:00",
+  "updated_at": "2026-08-17T16:30:23.693804+00:00",
   "items": {
-    "095eb93a50b08f8fc6b3": {
-      "id": "095eb93a50b08f8fc6b3",
-      "comune": "Avigliana",
-      "fonte": "Casa.it",
-      "url": "https://www.casa.it/immobili/54211838/",
-      "title": "Villa in Vendita in Via Ceresole 2 a Avigliana - 245mq - Casa.it",
+    "9a8e6bc5c6aaedd0ee05": {
+      "id": "9a8e6bc5c6aaedd0ee05",
+      "comune": "Almese",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/36069783/",
+      "title": "Villa in vendita in Via Rubiana, 142 /2, Almese - idealista",
       "snippet": "",
       "price_history": [],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
-      "first_seen": "2026-08-17T16:14:44.408383+00:00",
-      "last_seen": "2026-08-17T16:14:44.408391+00:00",
+      "first_seen": "2026-08-17T16:30:23.634178+00:00",
+      "last_seen": "2026-08-17T16:30:23.634194+00:00",
       "checks": 1,
       "lifecycle": "NEW",
-      "domain_rule": "www.casa.it",
-      "path_rule": "^/immobili/[0-9]+/?$",
-      "discovery_engine": "DUCKDUCKGO_HTML_V2",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:24:17.365574+00:00",
+        "checked_at": "2026-08-17T16:30:39.109638+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -31,36 +31,590 @@
           "error": "HTTP Error 403: Forbidden"
         },
         "address_hints": [
-          "Via Ceresole 2 a"
+          "Via Rubiana 142"
         ],
         "seller_name": "",
         "cross_matches": [],
+        "cross_match_count": 0,
         "public_contacts": [],
-        "review_candidates": [],
-        "queries": [
-          "\"Villa in Vendita in Via Ceresole 2 a Avigliana - 245mq - Casa.it\" \"Avigliana\"",
-          "\"Via Ceresole 2 a\" \"Avigliana\" (vendita OR appartamento OR casa OR villa)"
-        ],
         "contact_ready": false,
         "contact_ready_count": 0,
-        "cross_match_count": 0
+        "queries": [
+          {
+            "q": "\"Villa in vendita in Via Rubiana, 142 /2, Almese - idealista\" \"Almese\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via Rubiana\" \"Almese\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
       },
       "area_radar": {
         "reference_addresses": [
-          "Via Ceresole 2 a"
+          "Via Rubiana 142"
         ],
-        "street": "Via Ceresole",
+        "street": "Via Rubiana",
         "nearby_public_addresses": [
-          "Via Ceresole 2 a"
+          "Via Rubiana 142",
+          "via Rubiana 100"
         ],
         "actions": [
           {
             "azione": "VAI_IN_ZONA",
-            "target": "Via Ceresole 2 a",
+            "target": "Via Rubiana 142",
+            "telefono": "",
+            "stato": "PRONTO"
+          },
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "via Rubiana 100",
             "telefono": "",
             "stato": "PRONTO"
           }
         ]
+      }
+    },
+    "bf60f35b150fb65b89e1": {
+      "id": "bf60f35b150fb65b89e1",
+      "comune": "Rosta",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/35863658/",
+      "title": "Villetta bifamiliare in vendita in Via Piave, 53, Rosta - idealista",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634202+00:00",
+      "last_seen": "2026-08-17T16:30:23.634204+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:40.929175+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Piave 53"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villetta bifamiliare in vendita in Via Piave, 53, Rosta - idealista\" \"Rosta\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via Piave\" \"Rosta\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Piave 53"
+        ],
+        "street": "Via Piave",
+        "nearby_public_addresses": [
+          "Via Piave 53"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Piave 53",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "3c1c1b71281980cd14b9": {
+      "id": "3c1c1b71281980cd14b9",
+      "comune": "Rosta",
+      "fonte": "Tempocasa",
+      "url": "https://tempocasa.it/it/vendita/torino/rosta/villa-unifamiliare/1780932",
+      "title": "Villa unifamiliare in Vendita a Rosta | Euro 330.000 | Mq 190",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634210+00:00",
+      "last_seen": "2026-08-17T16:30:23.634212+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "tempocasa.it",
+      "path_rule": "^/it/vendita/.*/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:38.854158+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 200,
+          "error": "verifica umana / anti-bot"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villa unifamiliare in Vendita a Rosta | Euro 330.000 | Mq 190\" \"Rosta\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "07dbbaf94a4528802364": {
+      "id": "07dbbaf94a4528802364",
+      "comune": "Sant'Antonino di Susa",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/131644636/",
+      "title": "Vendita Villa unifamiliare in via Medagli 55 Sant'Antonino di Susa ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634216+00:00",
+      "last_seen": "2026-08-17T16:30:23.634217+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:39.812635+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Medagli 55"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Vendita Villa unifamiliare in via Medagli 55 Sant'Antonino di Susa ...\" \"Sant'Antonino di Susa\"",
+            "error": ""
+          },
+          {
+            "q": "\"via Medagli\" \"Sant'Antonino di Susa\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Medagli 55"
+        ],
+        "street": "via Medagli",
+        "nearby_public_addresses": [
+          "via Medagli 55"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "via Medagli 55",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "14e172d2c96512dfa79e": {
+      "id": "14e172d2c96512dfa79e",
+      "comune": "Vaie",
+      "fonte": "Casa.it",
+      "url": "https://www.casa.it/immobili/50035067/",
+      "title": "Villa in Vendita in Via Peirolero 28 a Vaie - 250mq - Casa.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634223+00:00",
+      "last_seen": "2026-08-17T16:30:23.634225+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.casa.it",
+      "path_rule": "^/immobili/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:40.297835+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Peirolero 28"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villa in Vendita in Via Peirolero 28 a Vaie - 250mq - Casa.it\" \"Vaie\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via Peirolero\" \"Vaie\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Peirolero 28"
+        ],
+        "street": "Via Peirolero",
+        "nearby_public_addresses": [
+          "Via Peirolero 28"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Peirolero 28",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "7907ca91e2689613c6a8": {
+      "id": "7907ca91e2689613c6a8",
+      "comune": "Vaie",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/34422440/",
+      "title": "Trilocale in vendita in Vicolo Superiore, 19, Vaie - idealista",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634228+00:00",
+      "last_seen": "2026-08-17T16:30:23.634230+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:40.361933+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Vicolo Superiore 19"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Trilocale in vendita in Vicolo Superiore, 19, Vaie - idealista\" \"Vaie\"",
+            "error": ""
+          },
+          {
+            "q": "\"Vicolo Superiore\" \"Vaie\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Vicolo Superiore 19"
+        ],
+        "street": "Vicolo Superiore",
+        "nearby_public_addresses": [
+          "Vicolo Superiore 19"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Vicolo Superiore 19",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "d48aa39affeee332a566": {
+      "id": "d48aa39affeee332a566",
+      "comune": "Villar Dora",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/34771243/",
+      "title": "Trilocale in vendita in Via Celle, 64, Villar Dora - idealista",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634233+00:00",
+      "last_seen": "2026-08-17T16:30:23.634234+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:39.069217+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Celle 64"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Trilocale in vendita in Via Celle, 64, Villar Dora - idealista\" \"Villar Dora\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via Celle\" \"Villar Dora\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Celle 64"
+        ],
+        "street": "Via Celle",
+        "nearby_public_addresses": [
+          "Via Celle 64",
+          "via Celle 67"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Celle 64",
+            "telefono": "",
+            "stato": "PRONTO"
+          },
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "via Celle 67",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "dbef35302110ff49fa5f": {
+      "id": "dbef35302110ff49fa5f",
+      "comune": "Villar Focchiardo",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/36499500/",
+      "title": "Villa in vendita in Via Chiesali s.n.c, Villar Focchiardo - idealista",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634238+00:00",
+      "last_seen": "2026-08-17T16:30:23.634239+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:33.946012+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villa in vendita in Via Chiesali s.n.c, Villar Focchiardo - idealista\" \"Villar Focchiardo\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "ea1945e63b68c89a787b": {
+      "id": "ea1945e63b68c89a787b",
+      "comune": "Villar Focchiardo",
+      "fonte": "Casa.it",
+      "url": "https://www.casa.it/immobili/54578481/",
+      "title": "Villa in Vendita in Via Chiesali a Villar Focchiardo - Casa.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634242+00:00",
+      "last_seen": "2026-08-17T16:30:23.634244+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.casa.it",
+      "path_rule": "^/immobili/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:33.699941+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villa in Vendita in Via Chiesali a Villar Focchiardo - Casa.it\" \"Villar Focchiardo\"",
+            "error": "verifica umana / rate limit"
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "02b748d1ac35892159e6": {
+      "id": "02b748d1ac35892159e6",
+      "comune": "Villar Focchiardo",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/131750298/",
+      "title": "Vendita Villa unifamiliare in via Chiesali Villar Focchiardo. Posto ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:30:23.634247+00:00",
+      "last_seen": "2026-08-17T16:30:23.634248+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:30:36.285827+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Vendita Villa unifamiliare in via Chiesali Villar Focchiardo. Posto ...\" \"Villar Focchiardo\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
       }
     }
   },
@@ -3677,5 +4231,6 @@
     }
   },
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
-  "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00"
+  "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
+  "matrix_discovery_updated_at": "2026-08-17T16:30:23.634250+00:00"
 }
