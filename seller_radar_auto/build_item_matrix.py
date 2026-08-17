@@ -17,4 +17,5 @@ for path in sorted(INPUT.rglob("*.json")) if INPUT.exists() else []:
         i=key(url)
         if i not in seen:
             seen.add(i); ids.append(i)
-print(json.dumps({"item_id":ids[:80]},separators=(",",":")))
+# Una sentinella evita matrix dinamiche senza combinazioni; il worker la salta.
+print(json.dumps({"item_id":ids[:80] or ["__NONE__"]},separators=(",",":")))
