@@ -1,54 +1,77 @@
 #!/usr/bin/env python3
-import csv, html, re, xml.etree.ElementTree as ET
+import csv, html, re
+from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlencode, urlparse
+from urllib.parse import parse_qs, unquote, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parent
 PORTALS = ROOT / "portal_catalog.csv"
-UA = "F1RadarDiagnostic/1.0"
-PROPERTY_WORDS = ("casa","appartamento","villa","villetta","trilocale","bilocale","quadrilocale","immobile","terratetto","monolocale","rustico","attico","alloggio","vendita","vendesi","house","property")
-SALE_WORDS = ("vendita","vendesi","vende","in vendita","€","euro","for sale")
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/151 Safari/537.36"
 
-def clean(s):
-    s = re.sub(r"<[^>]+>", " ", s or "")
-    return re.sub(r"\s+", " ", html.unescape(s)).strip()
+class LinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__(); self.links=[]; self._href=None; self._attrs={}; self._text=[]
+    def handle_starttag(self, tag, attrs):
+        if tag.lower()=="a":
+            self._attrs=dict(attrs); self._href=self._attrs.get("href"); self._text=[]
+    def handle_data(self, data):
+        if self._href is not None: self._text.append(data)
+    def handle_endtag(self, tag):
+        if tag.lower()=="a" and self._href is not None:
+            self.links.append((self._href, re.sub(r"\s+"," ",html.unescape("".join(self._text))).strip(), self._attrs))
+            self._href=None; self._text=[]; self._attrs={}
 
-def fold(s): return clean(s).casefold()
+def get(url, data=None):
+    req=Request(url, data=data, headers={"User-Agent":UA,"Accept":"text/html,application/xhtml+xml","Accept-Language":"it-IT,it;q=0.9,en;q=0.5"})
+    with urlopen(req,timeout=20) as r:
+        return r.read(1_500_000).decode(r.headers.get_content_charset() or "utf-8",errors="replace")
 
-def host_matches(host, expected):
-    host=(host or "").lower().split(":")[0]; expected=(expected or "").lower().strip()
-    if not expected: return True
-    if expected.startswith("*."): return host.endswith(expected[1:])
-    return host == expected or host.removeprefix("www.") == expected.removeprefix("www.")
+def unwrap_ddg(href):
+    if href.startswith("//"): href="https:"+href
+    p=urlparse(href)
+    if "duckduckgo.com" in p.netloc and p.path.startswith("/l/"):
+        qs=parse_qs(p.query)
+        if qs.get("uddg"): return unquote(qs["uddg"][0])
+    return href
 
-def reasons(url,title,desc,comune,domain,path_regex):
-    out=[]; p=urlparse(url); t=fold(f"{title} {desc}"); c=fold(comune)
-    if not host_matches(p.netloc,domain): out.append(f"DOMAIN({p.netloc}!={domain})")
-    if path_regex and not re.search(path_regex,p.path,re.I): out.append(f"PATH({p.path}!~{path_regex})")
-    if c and c not in t and c.replace(" ","-") not in url.casefold(): out.append("COMUNE")
-    if not any(w in t for w in PROPERTY_WORDS): out.append("PROPERTY_WORD")
-    if not any(w in t for w in SALE_WORDS): out.append("SALE_WORD")
-    return out or ["ACCEPT"]
+def engine_links(engine, query):
+    if engine=="bing_html":
+        body=get("https://www.bing.com/search?"+urlencode({"q":query,"count":"10","setlang":"it-IT"}))
+        p=LinkParser(); p.feed(body)
+        out=[]
+        for href,text,attrs in p.links:
+            if not href.startswith("http"): continue
+            h=urlparse(href).netloc.lower()
+            if "bing.com" in h or "microsoft.com" in h: continue
+            if text and (href,text) not in [(x[0],x[1]) for x in out]: out.append((href,text))
+        return out[:10]
+    if engine=="ddg_html":
+        data=urlencode({"q":query,"kl":"it-it"}).encode("utf-8")
+        body=get("https://html.duckduckgo.com/html/",data=data)
+        p=LinkParser(); p.feed(body)
+        out=[]
+        for href,text,attrs in p.links:
+            cls=attrs.get("class","")
+            if "result__a" not in cls: continue
+            href=unwrap_ddg(href)
+            if href.startswith("http"): out.append((href,text))
+        return out[:10]
+    return []
 
 rows=[]
-with PORTALS.open(encoding="utf-8-sig", newline="") as f:
-    rows=list(csv.DictReader(f))
-
-wanted={"Immobiliare.it","Idealista","Casa.it","Web generale","Tecnocasa"}
+with PORTALS.open(encoding="utf-8-sig", newline="") as f: rows=list(csv.DictReader(f))
+wanted={"Immobiliare.it","Idealista","Casa.it","Tecnocasa"}
 for portal in rows:
     if portal.get("label") not in wanted: continue
-    comune="Vaie"
-    q=(portal.get("query_template") or "").replace("{comune}",comune)
-    url="https://www.bing.com/search?"+urlencode({"q":q,"format":"rss","count":"10"})
-    req=Request(url,headers={"User-Agent":UA,"Accept":"application/rss+xml,application/xml,text/xml,*/*","Accept-Language":"it-IT,it;q=0.9"})
-    with urlopen(req,timeout=20) as r:
-        body=r.read(900000).decode(r.headers.get_content_charset() or "utf-8",errors="replace")
-    root=ET.fromstring(body)
+    q=(portal.get("query_template") or "").replace("{comune}","Vaie")
     print("\n###",portal.get("label"),"QUERY:",q)
-    for i,n in enumerate(root.findall(".//item")[:5],1):
-        title=clean(n.findtext("title") or "")
-        link=(n.findtext("link") or "").strip()
-        desc=clean(n.findtext("description") or "")
-        rs=reasons(link,title,desc,comune,(portal.get("domain") or "").strip(),(portal.get("path_regex") or "").strip())
-        print(f"[{i}] {rs} | {title[:120]} | {link}")
+    for engine in ("bing_html","ddg_html"):
+        print("--",engine)
+        try:
+            links=engine_links(engine,q)
+        except Exception as e:
+            print("ERROR",type(e).__name__,str(e)); continue
+        if not links: print("NO_RESULTS")
+        for i,(u,t) in enumerate(links[:5],1):
+            print(f"[{i}] {urlparse(u).netloc} | {t[:100]} | {u}")
