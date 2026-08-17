@@ -31,9 +31,23 @@ DA_CONTATTARE -> CONTATTATO -> DA_RICHIAMARE -> APPUNTAMENTO -> INCONTRATO -> PA
 
 Sono disponibili anche DA_VERIFICARE e NON_INTERESSATO.
 
+## Ciclo mensile
+
+Il primo lunedì di ogni mese viene lavorata la coda dei professionisti che non hanno ancora aderito alla rete.
+
+Regole:
+- invio/contatto solo verso recapiti pubblici verificati;
+- contatto via email e WhatsApp quando entrambi disponibili;
+- chi passa a `RETE_F1` viene escluso automaticamente dal ciclo mensile di acquisizione;
+- `NON_INTERESSATO` viene escluso;
+- i partner aderenti vengono gestiti separatamente con comunicazioni dedicate alla collaborazione;
+- la pagina operativa è `mensile.html`.
+
 ## Dati
 
-`data/professionisti.csv` contiene il primo censimento pubblico del 16/08/2026. Prima di ogni contatto vanno verificati attività, recapito e sede effettiva nel territorio indicato.
+`data/professionisti.csv` contiene il primo censimento pubblico del 16/08/2026.
+
+`data/contatti_verificati.csv` contiene recapiti pubblici verificati e correzioni territoriali. Prima di ogni contatto vanno verificati attività, recapito e sede effettiva nel territorio indicato.
 
 I territori vengono letti direttamente da `../seller_radar_auto/municipalities.csv`, così il Network segue la stessa lista operativa del radar F1.
 
