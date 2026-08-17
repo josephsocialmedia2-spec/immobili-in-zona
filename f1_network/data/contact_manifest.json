@@ -1,8 +1,9 @@
 {
-  "version": 2,
+  "version": 3,
   "files": [
     "contatti_verificati.csv",
-    "contatti_batch2.csv"
+    "contatti_batch2.csv",
+    "contatti_batch3.csv"
   ],
   "territory_aliases": {
     "Novaretto": "Caprie",
