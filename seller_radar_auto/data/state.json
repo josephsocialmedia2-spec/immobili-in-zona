@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T16:15:55.416429+00:00",
+  "updated_at": "2026-08-17T16:18:51.432284+00:00",
   "items": {
     "8ea27ac2188aa7571e12": {
       "id": "8ea27ac2188aa7571e12",
@@ -12,15 +12,14 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-17T16:14:44.407665+00:00",
-      "last_seen": "2026-08-17T16:14:44.407687+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-17T16:17:28.618325+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DUCKDUCKGO_HTML_V2",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
@@ -60,40 +59,12 @@
         ],
         "street": "Borgata Girba",
         "nearby_public_addresses": [
-          "Borgata Girba 5",
-          "Viale dei Tigli - Primavera 6",
-          "Via Fratelli Cervi - Centro Storico 3",
-          "Via Nicol - Centro 3",
-          "Via Primo maggio - Stazione 4"
+          "Borgata Girba 5"
         ],
         "actions": [
           {
             "azione": "VAI_IN_ZONA",
             "target": "Borgata Girba 5",
-            "telefono": "",
-            "stato": "PRONTO"
-          },
-          {
-            "azione": "VAI_IN_ZONA",
-            "target": "Viale dei Tigli - Primavera 6",
-            "telefono": "",
-            "stato": "PRONTO"
-          },
-          {
-            "azione": "VAI_IN_ZONA",
-            "target": "Via Fratelli Cervi - Centro Storico 3",
-            "telefono": "",
-            "stato": "PRONTO"
-          },
-          {
-            "azione": "VAI_IN_ZONA",
-            "target": "Via Nicol - Centro 3",
-            "telefono": "",
-            "stato": "PRONTO"
-          },
-          {
-            "azione": "VAI_IN_ZONA",
-            "target": "Via Primo maggio - Stazione 4",
             "telefono": "",
             "stato": "PRONTO"
           }
@@ -122,7 +93,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:15:55.499768+00:00",
+        "checked_at": "2026-08-17T16:18:52.672469+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -170,7 +141,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:15:56.909169+00:00",
+        "checked_at": "2026-08-17T16:18:54.271134+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -208,6 +179,103 @@
             "stato": "PRONTO"
           }
         ]
+      }
+    },
+    "8f22c021026161b1ab09": {
+      "id": "8f22c021026161b1ab09",
+      "comune": "Avigliana",
+      "fonte": "Subito privati",
+      "url": "https://www.subito.it/annunci-piemonte/vendita/immobili/torino/avigliana/",
+      "title": "Case in vendita Avigliana - Immobili - Subito.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": true,
+      "first_seen": "2026-08-17T16:17:28.618479+00:00",
+      "last_seen": "2026-08-17T16:17:28.618483+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.subito.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DUCKDUCKGO_HTML_V2",
+      "score": 42,
+      "score_reasons": [
+        "nuova rilevazione",
+        "fonte/query orientata ai privati"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:18:51.509610+00:00",
+        "private_candidate": true,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "public_contacts": [],
+        "review_candidates": [],
+        "queries": [
+          "\"Case in vendita Avigliana - Immobili - Subito.it\" \"Avigliana\""
+        ],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "76a6a0e0186415ba9a3d": {
+      "id": "76a6a0e0186415ba9a3d",
+      "comune": "Avigliana",
+      "fonte": "Web generale",
+      "url": "https://www.nuroa.it/vendita-immobili/avigliana-vista-lago",
+      "title": "Avigliana Vista Lago - 10 case in vendita in Avigliana de Nuroa.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:17:28.618647+00:00",
+      "last_seen": "2026-08-17T16:17:28.618651+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DUCKDUCKGO_HTML_V2",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:18:55.902414+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": true,
+          "status": 200,
+          "error": ""
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "public_contacts": [],
+        "review_candidates": [],
+        "queries": [
+          "\"Avigliana Vista Lago - 10 case in vendita in Avigliana de Nuroa.it\" \"Avigliana\""
+        ],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
       }
     }
   },
@@ -3823,6 +3891,6 @@
       "seed_url": "https://www.bing.com/search?q=%22Borgone+Susa%22+%28%22annuncio+privato%22+OR+%22vendo+appartamento%22+OR+%22vendo+casa%22%29+-immobiliare.it+-idealista.it+-casa.it&format=rss&count=10"
     }
   },
-  "enrichment_updated_at": "2026-08-17T16:16:01.855686+00:00",
-  "ddg_updated_at": "2026-08-17T16:15:55.359312+00:00"
+  "enrichment_updated_at": "2026-08-17T16:18:58.317838+00:00",
+  "ddg_updated_at": "2026-08-17T16:18:51.377529+00:00"
 }
