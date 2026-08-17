@@ -6,7 +6,7 @@ on:
     paths:
       - "seller_radar_auto/search_engine.py"
       - "seller_radar_auto/ddg_discovery_v2.py"
-      - "seller_radar_auto/cloud_radar_v4.py"
+      - "seller_radar_auto/radar_postprocess.py"
       - "seller_radar_auto/public_enrichment_v2.py"
       - "seller_radar_auto/area_radar.py"
       - "seller_radar_auto/area_radar_selftest.py"
@@ -64,9 +64,9 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/ddg_discovery_v2.py
 
-      - name: Run radar v4 — scoring e dashboard
+      - name: Scoring, coda e dashboard
         if: steps.gate.outputs.run == 'true'
-        run: python seller_radar_auto/cloud_radar_v4.py
+        run: python seller_radar_auto/radar_postprocess.py
 
       - name: Cross-match e ricerca contatti pubblici — v2
         if: steps.gate.outputs.run == 'true'
