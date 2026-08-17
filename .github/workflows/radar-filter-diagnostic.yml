@@ -1,0 +1,17 @@
+name: F1 Radar Filter Diagnostic
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "seller_radar_auto/radar_diagnostic.py"
+      - ".github/workflows/radar-filter-diagnostic.yml"
+
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Diagnostica filtri Vaie
+        run: python seller_radar_auto/radar_diagnostic.py
