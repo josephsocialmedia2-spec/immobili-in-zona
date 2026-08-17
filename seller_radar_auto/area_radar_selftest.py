@@ -7,11 +7,6 @@ ADDRESS_RE = re.compile(
     r"[A-Za-zÀ-ÿ0-9'’.\-\s]{2,80}?\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?\b",
     re.I,
 )
-STREET_RE = re.compile(
-    r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
-    r"[A-Za-zÀ-ÿ0-9'’.\-\s]{2,80}?",
-    re.I,
-)
 
 def address_list(text):
     vals=[]
@@ -21,10 +16,10 @@ def address_list(text):
     return vals
 
 def street_of(address):
-    m=STREET_RE.search(address or "")
-    if not m: return ""
-    s=re.sub(r"\s+"," ",m.group(0)).strip(" ,.;")
-    return re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?$","",s).strip()
+    s=re.sub(r"\s+"," ",(address or "")).strip(" ,.;")
+    if not re.match(r"^(via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\b", s, re.I):
+        return ""
+    return re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?$","",s).strip(" ,.;")
 
 def norm_phone(v):
     d=re.sub(r"\D","",v or "")
@@ -34,6 +29,7 @@ sample = "Vendesi appartamento in Via Roma 10, Vaie. Altri riferimenti: Via Roma
 addrs = address_list(sample)
 assert any("Via Roma 10" in a for a in addrs), addrs
 assert street_of("Via Roma 10") == "Via Roma", street_of("Via Roma 10")
+assert street_of("Via Roma 14/B") == "Via Roma", street_of("Via Roma 14/B")
 assert norm_phone("+39 333 123 4567") == "3331234567"
 
 rpo_ok = {"3331234567"}
