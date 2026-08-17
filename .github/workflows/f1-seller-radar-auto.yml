@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "seller_radar_auto/cloud_radar_v4.py"
+      - "seller_radar_auto/public_enrichment.py"
       - "seller_radar_auto/municipalities.csv"
       - "seller_radar_auto/portal_catalog.csv"
       - "seller_radar_auto/whatsapp_notify.py"
@@ -56,6 +57,14 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/cloud_radar_v4.py
 
+      - name: Cross-match e ricerca contatti pubblici
+        if: steps.gate.outputs.run == 'true'
+        env:
+          F1_ENRICH_MAX: "35"
+          F1_ENRICH_RESULTS: "8"
+          F1_ENRICH_MIN_SCORE: "45"
+        run: python seller_radar_auto/public_enrichment.py
+
       - name: Invia nuove pubblicazioni via email
         if: steps.gate.outputs.run == 'true'
         env:
@@ -86,6 +95,7 @@ jobs:
           git add seller_radar_auto/data/state.json \
                   seller_radar_auto/data/work_queue.csv \
                   seller_radar_auto/data/source_status.csv \
+                  seller_radar_auto/data/public_enrichment.csv \
                   seller_radar_auto/data/email_sent.json \
                   seller_radar_auto/data/whatsapp_sent.json \
                   seller_radar_auto/dashboard.html
