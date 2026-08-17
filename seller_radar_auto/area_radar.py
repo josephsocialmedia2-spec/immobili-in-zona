@@ -3,7 +3,7 @@
 
 Per ogni annuncio, anche di agenzia:
 - ricava la via/civico dalle evidenze pubbliche già raccolte;
-- cerca altri indirizzi pubblicamente indicizzati sulla stessa via;
+- cerca altri indirizzi pubblicamente indicizzati sulla STESSA via;
 - produce azioni VAI_IN_ZONA;
 - produce CHIAMA solo per numeri già presenti tra i contatti pubblici dell'annuncio
   e presenti nell'eventuale lista rpo_approved.csv.
@@ -55,6 +55,9 @@ def street_of(address):
     s = re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?\s*$", "", s).strip()
     return s
 
+def same_street(address, street):
+    return bool(address and street and street_of(address).casefold() == street.casefold())
+
 def load_rpo():
     approved = set()
     if not RPO.exists():
@@ -85,7 +88,7 @@ for item_id, x in items.items():
         q = f'"{(x.get("title") or "")[:120]}" "{comune}"'
         for r in search(q, 8):
             hints += address_list(f"{r['title']} {r.get('snippet','')}")
-    hints = list(dict.fromkeys(hints))[:5]
+    hints = list(dict.fromkeys(hints))[:8]
 
     area = {
         "reference_addresses": hints,
@@ -97,14 +100,16 @@ for item_id, x in items.items():
     if hints:
         street = street_of(hints[0])
         area["street"] = street
+        # Un radar = una via. Scarta eventuali altri indirizzi presenti in pagine aggregate di agenzia.
+        same_hints = [a for a in hints if same_street(a, street)]
         found = []
         if street:
             q = f'"{street}" "{comune}"'
             for r in search(q, 20):
                 for a in address_list(f"{r['title']} {r.get('snippet','')}"):
-                    if street.casefold() in a.casefold() and a.casefold() not in {z.casefold() for z in found}:
+                    if same_street(a, street) and a.casefold() not in {z.casefold() for z in found}:
                         found.append(a)
-        all_addresses = list(dict.fromkeys(hints + found))[:20]
+        all_addresses = list(dict.fromkeys(same_hints + found))[:20]
         area["nearby_public_addresses"] = all_addresses
         for a in all_addresses:
             area["actions"].append({"azione": "VAI_IN_ZONA", "target": a, "telefono": "", "stato": "PRONTO"})
