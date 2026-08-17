@@ -1,6 +1,6 @@
-id,comune,categoria,nome_studio,telefono_studio,email_studio,sito,indirizzo,azione,verificato_il,fonte,note
+id,comune,categoria,nome,telefono,email,sito,indirizzo,azione,verificato_il,fonte,note
 villarfocchiardo-geo-001,Villar Focchiardo,Geometra,Studio Tecnico Denis Versino,+39 011 9646818,,,Via Umberto I 72 - 10050 Villar Focchiardo TO,AGGIUNGI,2026-08-17,Directory imprese pubblica,Studio tecnico locale
 villarfocchiardo-geo-002,Villar Focchiardo,Geometra,Studio Tecnico Ilio Miletto,+39 011 9646378,,,Via Comba 13 - 10050 Villar Focchiardo TO,AGGIUNGI,2026-08-17,Directory imprese pubblica,Studio tecnico locale
-villarfocchiardo-tec-001,Villar Focchiardo,Studio tecnico,Studio Tecnico Roberto Fiore,+39 011 9645051,,,Via di Mezzo 14 - 10050 Villar Focchiardo TO,AGGIUNGI,2026-08-17,Directory imprese pubblica,Verificare qualifica professionale al primo contatto
+villarfocchiardo-tec-001,Villar Focchiardo,Geometra / Studio tecnico,Studio Tecnico Roberto Fiore,+39 011 9645051,,,Via di Mezzo 14 - 10050 Villar Focchiardo TO,AGGIUNGI,2026-08-17,Directory imprese pubblica,Verificare qualifica professionale al primo contatto
 santantonino-geo-002,Sant'Antonino di Susa,Geometra,Studio Tecnico Geometra Mangiardi,+39 011 5366051,,,Via Torino 144 - 10050 Sant'Antonino di Susa TO,AGGIUNGI,2026-08-17,Directory imprese pubblica,Studio geometra locale
 santantonino-geo-003,Sant'Antonino di Susa,Geometra,Studio Geom. Giorgio Perino Fontana,+39 011 9649494,,,Via Torino 94 - 10050 Sant'Antonino di Susa TO,AGGIUNGI,2026-08-17,Directory imprese pubblica,Studio geometra locale
