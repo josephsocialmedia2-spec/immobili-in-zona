@@ -2,53 +2,58 @@
 
 Programma operativo del lunedì per costruire una rete locale di professionisti collegata a F1 Immobiliare.
 
-## Regola vincolante
+## Regola territoriale
 
-Comune/località dell'immobile = Comune/località del professionista. Non viene usato alcun fallback automatico verso comuni vicini.
+Comune dell'immobile = Comune del professionista. Nessun fallback automatico verso comuni vicini.
 
 Esempi:
 - immobile a Condove -> professionisti di Condove;
 - immobile a Bussoleno -> professionisti di Bussoleno.
 
+Eccezioni amministrative registrate nel manifest:
+- Novaretto -> Comune di Caprie;
+- San Valeriano -> Comune di Borgone Susa.
+
+Le frazioni restano visibili come territori F1, ma la rete professionale viene ricercata nel Comune amministrativo di appartenenza.
+
 ## Posizionamento
 
-F1 Immobiliare valorizza circa 30 anni di esperienza maturata nel territorio valsusino e nella prima cintura di Torino. Il primo contatto non chiede referral: serve a fissare un incontro di conoscenza e valutare una collaborazione reciproca.
-
-## Categorie
-
-- Geometra
-- Architetto
-- Amministratore condominio
-- Notaio
-- Avvocato
-- Commercialista
-- Consulente credito / finanziario
-- Impresa edile
+F1 Immobiliare valorizza circa 30 anni di esperienza maturata nel territorio valsusino e nella prima cintura di Torino. Il primo contatto serve a fissare un incontro di conoscenza e valutare una collaborazione reciproca; non viene presentato come richiesta immediata di referral.
 
 ## Pipeline
 
-DA_CONTATTARE -> CONTATTATO -> DA_RICHIAMARE -> APPUNTAMENTO -> INCONTRATO -> PARTNER_POTENZIALE -> RETE_F1
+DA_CONTATTARE -> CONTATTATO -> DA_RICHIAMARE -> APPUNTAMENTO -> INCONTRATO -> PARTNER_POTENZIALE -> RETE_F1 / ADERITO
 
 Sono disponibili anche DA_VERIFICARE e NON_INTERESSATO.
 
+## Regole di contatto
+
+Il fatto che un recapito sia pubblicato online non abilita automaticamente comunicazioni promozionali.
+
+La dashboard registra separatamente:
+- stato commerciale;
+- verifica del canale telefonico (`DA_VERIFICARE`, `RPO_OK`, `CONSENSO_TELEFONO`, `NON_CONTATTABILE`);
+- consenso al follow-up digitale (`NO_CONSENSO`, `CONSENSO_DIGITALE`).
+
+WhatsApp ed email di follow-up vengono abilitati solo quando è registrato `CONSENSO_DIGITALE`.
+
 ## Ciclo mensile
 
-Il primo lunedì di ogni mese viene lavorata la coda dei professionisti che non hanno ancora aderito alla rete.
+Il primo lunedì di ogni mese si lavora la coda di follow-up autorizzata.
 
-Regole:
-- invio/contatto solo verso recapiti pubblici verificati;
-- contatto via email e WhatsApp quando entrambi disponibili;
-- chi passa a `RETE_F1` viene escluso automaticamente dal ciclo mensile di acquisizione;
-- `NON_INTERESSATO` viene escluso;
-- i partner aderenti vengono gestiti separatamente con comunicazioni dedicate alla collaborazione;
-- la pagina operativa è `mensile.html`.
+Sono inclusi solo contatti con `CONSENSO_DIGITALE` e sono esclusi automaticamente:
+- RETE_F1;
+- ADERITO;
+- NON_INTERESSATO.
 
-## Dati
+La pagina operativa è `mensile.html`.
 
-`data/professionisti.csv` contiene il primo censimento pubblico del 16/08/2026.
+## Dati e manifest
 
-`data/contatti_verificati.csv` contiene recapiti pubblici verificati e correzioni territoriali. Prima di ogni contatto vanno verificati attività, recapito e sede effettiva nel territorio indicato.
+`data/professionisti.csv` contiene il censimento iniziale.
 
-I territori vengono letti direttamente da `../seller_radar_auto/municipalities.csv`, così il Network segue la stessa lista operativa del radar F1.
+I recapiti verificati e le successive integrazioni sono divisi in batch CSV. `data/contact_manifest.json` elenca i batch caricati dalla dashboard e contiene anche gli alias territoriali. In questo modo nuovi blocchi di contatti possono essere aggiunti senza riscrivere il programma.
 
-Gli aggiornamenti di stato e le note effettuati dalla pagina sono salvati nel browser. A fine sessione usare `Esporta CSV aggiornato` come copia operativa.
+I territori F1 vengono letti da `../seller_radar_auto/municipalities.csv`.
+
+Gli stati operativi, le note, la verifica telefonica e il consenso digitale sono salvati nel browser. A fine sessione usare `Esporta CSV` come copia operativa.
