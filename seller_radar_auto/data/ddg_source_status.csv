@@ -1,4 +1,4 @@
-﻿FONTE,COMUNE,STATO,ULTIMO_CONTROLLO,RISULTATI_GREZZI,ACCETTATI,MESSAGGIO,URL_SORGENTE
+﻿FONTE,COMUNE,STATO,ULTIMO_CONTROLLO,RISULTATI_GREZZI,ACCETTATI,MESSAGGIO,QUERY
 Web generale,Avigliana,OK,2026-08-17T16:14:44.408398+00:00,9,3,,"""Avigliana"" (vendita OR ""in vendita"") (casa OR appartamento OR villa)"
 Web privati,Avigliana,OK,2026-08-17T16:14:45.553423+00:00,0,0,,"""Avigliana"" (""privato vende"" OR ""no agenzie"" OR ""da privato"") (casa OR appartamento OR villa)"
 Immobiliare.it,Avigliana,ERROR,2026-08-17T16:14:45.906500+00:00,0,0,verifica umana / rate limit,"site:immobiliare.it/annunci/ ""Avigliana"" vendita (casa OR appartamento OR villa)"
