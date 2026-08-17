@@ -6,6 +6,9 @@ on:
     paths:
       - "seller_radar_auto/cloud_radar_v4.py"
       - "seller_radar_auto/public_enrichment.py"
+      - "seller_radar_auto/area_radar.py"
+      - "seller_radar_auto/area_radar_selftest.py"
+      - "seller_radar_auto/rpo_approved.csv"
       - "seller_radar_auto/municipalities.csv"
       - "seller_radar_auto/portal_catalog.csv"
       - "seller_radar_auto/whatsapp_notify.py"
@@ -13,8 +16,6 @@ on:
       - "seller_radar_auto/email_notify.py"
       - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
-    # Copre ora legale e ora solare italiana.
-    # Il gate locale sotto esegue davvero il radar solo alle 08:30 e 18:30 Europe/Rome.
     - cron: "30 6,7,16,17 * * *"
 
 permissions:
@@ -53,6 +54,10 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
+      - name: Self-test Area Radar
+        if: steps.gate.outputs.run == 'true'
+        run: python seller_radar_auto/area_radar_selftest.py
+
       - name: Run radar v4
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/cloud_radar_v4.py
@@ -64,6 +69,10 @@ jobs:
           F1_ENRICH_RESULTS: "8"
           F1_ENRICH_MIN_SCORE: "45"
         run: python seller_radar_auto/public_enrichment.py
+
+      - name: Area Radar — CHIAMA / VAI IN ZONA
+        if: steps.gate.outputs.run == 'true'
+        run: python seller_radar_auto/area_radar.py
 
       - name: Invia nuove pubblicazioni via email
         if: steps.gate.outputs.run == 'true'
