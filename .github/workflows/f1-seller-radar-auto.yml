@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - "seller_radar_auto/search_engine.py"
-      - "seller_radar_auto/ddg_discovery.py"
+      - "seller_radar_auto/ddg_discovery_v2.py"
       - "seller_radar_auto/cloud_radar_v4.py"
       - "seller_radar_auto/public_enrichment_v2.py"
       - "seller_radar_auto/area_radar.py"
@@ -60,9 +60,9 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/area_radar_selftest.py
 
-      - name: Discovery annunci — DuckDuckGo HTML
+      - name: Discovery annunci — DuckDuckGo HTML v2
         if: steps.gate.outputs.run == 'true'
-        run: python seller_radar_auto/ddg_discovery.py
+        run: python seller_radar_auto/ddg_discovery_v2.py
 
       - name: Run radar v4 — scoring e dashboard
         if: steps.gate.outputs.run == 'true'
