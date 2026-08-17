@@ -48,6 +48,12 @@ for r in new_rows:
             prezzo = f"€ {int(float(prezzo)):,}".replace(",", ".")
         except Exception:
             pass
+
+    contatti = (r.get("CONTATTI_PUBBLICI") or "").strip() or "nessun contatto pubblico verificabile rilevato"
+    fonte_contatto = (r.get("FONTE_CONTATTO") or "").strip() or "—"
+    nome = (r.get("NOME_INSERZIONISTA") or "").strip() or "—"
+    cross = (r.get("CROSS_MATCH") or "0").strip()
+
     lines.extend([
         f"COMUNE: {r.get('COMUNE','')}",
         f"FONTE: {r.get('FONTE','')}",
@@ -56,8 +62,14 @@ for r in new_rows:
         f"SCORE: {r.get('SCORE','')}/100",
         f"PRIORITÀ: {r.get('PRIORITA','')}",
         f"INDIZIO: {r.get('INDIZIO_INSERZIONISTA','')}",
+        f"NOME INSERZIONISTA: {nome}",
+        f"CROSS-MATCH STESSO IMMOBILE: {cross}",
+        f"CONTATTO PUBBLICO: {contatti}",
+        f"FONTE CONTATTO: {fonte_contatto}",
         f"MOTIVI: {r.get('MOTIVI','')}",
         f"LINK: {r.get('URL','')}",
+        "",
+        "Nota: i risultati da directory pubbliche non confermati restano esclusi dal contatto operativo fino a verifica manuale.",
         "",
         "------------------------------",
         "",
