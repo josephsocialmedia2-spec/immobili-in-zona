@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "files": [
+    "contatti_verificati.csv",
+    "contatti_batch2.csv"
+  ],
+  "territory_aliases": {
+    "Novaretto": "Caprie",
+    "San Valeriano": "Borgone Susa"
+  }
+}
