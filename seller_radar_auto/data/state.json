@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T16:30:23.693804+00:00",
+  "updated_at": "2026-08-17T16:57:24.011912+00:00",
   "items": {
     "9a8e6bc5c6aaedd0ee05": {
       "id": "9a8e6bc5c6aaedd0ee05",
@@ -86,18 +86,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634202+00:00",
-      "last_seen": "2026-08-17T16:30:23.634204+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-17T16:57:23.953009+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:40.929175+00:00",
+        "checked_at": "2026-08-17T16:57:40.887529+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -270,18 +270,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634223+00:00",
-      "last_seen": "2026-08-17T16:30:23.634225+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-17T16:57:23.953046+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:40.297835+00:00",
+        "checked_at": "2026-08-17T16:57:40.368293+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -337,18 +337,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634228+00:00",
-      "last_seen": "2026-08-17T16:30:23.634230+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-17T16:57:23.953053+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:40.361933+00:00",
+        "checked_at": "2026-08-17T16:57:42.309861+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -404,18 +404,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634233+00:00",
-      "last_seen": "2026-08-17T16:30:23.634234+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-17T16:57:23.953059+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:39.069217+00:00",
+        "checked_at": "2026-08-17T16:57:40.450093+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -615,6 +615,73 @@
         "street": "",
         "nearby_public_addresses": [],
         "actions": []
+      }
+    },
+    "10687f9dcb0e59a3c489": {
+      "id": "10687f9dcb0e59a3c489",
+      "comune": "Rosta",
+      "fonte": "Casa.it",
+      "url": "https://www.casa.it/immobili/54099496/",
+      "title": "Casa bifamiliare in Vendita in Via Piave 53 a Rosta",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-17T16:57:23.953038+00:00",
+      "last_seen": "2026-08-17T16:57:23.953041+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.casa.it",
+      "path_rule": "^/immobili/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-17T16:57:38.500127+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Piave 53"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Casa bifamiliare in Vendita in Via Piave 53 a Rosta\" \"Rosta\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via Piave\" \"Rosta\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Piave 53"
+        ],
+        "street": "Via Piave",
+        "nearby_public_addresses": [
+          "Via Piave 53"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Piave 53",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
       }
     }
   },
@@ -4232,5 +4299,5 @@
   },
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
-  "matrix_discovery_updated_at": "2026-08-17T16:30:23.634250+00:00"
+  "matrix_discovery_updated_at": "2026-08-17T16:57:23.953062+00:00"
 }
