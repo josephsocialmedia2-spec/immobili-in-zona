@@ -23,17 +23,12 @@ STATE = DATA / "state.json"
 QUEUE = DATA / "work_queue.csv"
 OUT = DATA / "area_radar.csv"
 RPO = ROOT / "rpo_approved.csv"
-UA = "F1AreaRadar/1.0"
+UA = "F1AreaRadar/1.1"
 TIMEOUT = 18
 
 ADDRESS_RE = re.compile(
     r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
     r"[A-Za-zÀ-ÿ0-9'’.\-\s]{2,80}?\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?\b",
-    re.I,
-)
-STREET_RE = re.compile(
-    r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
-    r"[A-Za-zÀ-ÿ0-9'’.\-\s]{2,80}?",
     re.I,
 )
 
@@ -76,14 +71,10 @@ def address_list(text):
     return vals
 
 def street_of(address):
-    if not address:
+    s = clean(address).strip(" ,.;")
+    if not re.match(r"^(via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\b", s, re.I):
         return ""
-    m = STREET_RE.search(address)
-    if not m:
-        return ""
-    street = re.sub(r"\s+", " ", m.group(0)).strip(" ,.;")
-    street = re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?$", "", street).strip()
-    return street
+    return re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?$", "", s).strip(" ,.;")
 
 def load_rpo():
     approved = set()
@@ -111,19 +102,13 @@ for item_id, x in items.items():
     comune = (x.get("comune") or "").strip()
     hints = list(e.get("address_hints") or [])
 
-    # Se manca l'indirizzo, tenta una ricerca mirata dall'annuncio.
     if not hints:
         q = f'"{(x.get("title") or "")[:120]}" "{comune}"'
         for r in search(q, 8):
             hints += address_list(f"{r['title']} {r['snippet']}")
     hints = list(dict.fromkeys(hints))[:5]
 
-    area = {
-        "reference_addresses": hints,
-        "street": "",
-        "nearby_public_addresses": [],
-        "actions": [],
-    }
+    area = {"reference_addresses": hints, "street": "", "nearby_public_addresses": [], "actions": []}
 
     if hints:
         street = street_of(hints[0])
@@ -139,19 +124,8 @@ for item_id, x in items.items():
         area["nearby_public_addresses"] = all_addresses
         for a in all_addresses:
             area["actions"].append({"azione": "VAI_IN_ZONA", "target": a, "telefono": "", "stato": "PRONTO"})
-            rows.append({
-                "ITEM_ID": item_id,
-                "COMUNE": comune,
-                "TIPO_ANNUNCIO": x.get("seller_hint", "NON_DETERMINATO"),
-                "VIA_RADAR": street,
-                "AZIONE": "VAI_IN_ZONA",
-                "TARGET": a,
-                "TELEFONO": "",
-                "STATO": "PRONTO",
-                "FONTE": x.get("url", ""),
-            })
+            rows.append({"ITEM_ID":item_id,"COMUNE":comune,"TIPO_ANNUNCIO":x.get("seller_hint","NON_DETERMINATO"),"VIA_RADAR":street,"AZIONE":"VAI_IN_ZONA","TARGET":a,"TELEFONO":"","STATO":"PRONTO","FONTE":x.get("url","")})
 
-    # Chiamata solo su recapiti pubblici già collegati all'annuncio e già verificati RPO.
     for c in e.get("public_contacts") or []:
         if c.get("type") != "PHONE" or c.get("confidence") not in {"HIGH", "MEDIUM"}:
             continue
@@ -160,17 +134,7 @@ for item_id, x in items.items():
         azione = "CHIAMA" if approved else "VERIFICA_RPO"
         stato = "PRONTO" if approved else "BLOCCATO_FINCHÉ_NON_VERIFICATO"
         area["actions"].append({"azione": azione, "target": e.get("seller_name") or "inserzionista", "telefono": c.get("value", ""), "stato": stato})
-        rows.append({
-            "ITEM_ID": item_id,
-            "COMUNE": comune,
-            "TIPO_ANNUNCIO": x.get("seller_hint", "NON_DETERMINATO"),
-            "VIA_RADAR": area.get("street", ""),
-            "AZIONE": azione,
-            "TARGET": e.get("seller_name") or "inserzionista",
-            "TELEFONO": c.get("value", ""),
-            "STATO": stato,
-            "FONTE": c.get("source_url", ""),
-        })
+        rows.append({"ITEM_ID":item_id,"COMUNE":comune,"TIPO_ANNUNCIO":x.get("seller_hint","NON_DETERMINATO"),"VIA_RADAR":area.get("street",""),"AZIONE":azione,"TARGET":e.get("seller_name") or "inserzionista","TELEFONO":c.get("value", ""),"STATO":stato,"FONTE":c.get("source_url","")})
 
     x["area_radar"] = area
 
@@ -181,7 +145,6 @@ fields = ["ITEM_ID","COMUNE","TIPO_ANNUNCIO","VIA_RADAR","AZIONE","TARGET","TELE
 with OUT.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
 
-# Porta il riepilogo nel work_queue per dashboard/email.
 if QUEUE.exists():
     with QUEUE.open(encoding="utf-8-sig", newline="") as f:
         qrows = list(csv.DictReader(f))
