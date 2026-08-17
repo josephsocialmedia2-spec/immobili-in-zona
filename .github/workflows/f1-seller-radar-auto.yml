@@ -4,9 +4,10 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - "seller_radar_auto/search_engine.py"
       - "seller_radar_auto/ddg_discovery.py"
       - "seller_radar_auto/cloud_radar_v4.py"
-      - "seller_radar_auto/public_enrichment.py"
+      - "seller_radar_auto/public_enrichment_v2.py"
       - "seller_radar_auto/area_radar.py"
       - "seller_radar_auto/area_radar_selftest.py"
       - "seller_radar_auto/rpo_approved.csv"
@@ -67,13 +68,12 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/cloud_radar_v4.py
 
-      - name: Cross-match e ricerca contatti pubblici
+      - name: Cross-match e ricerca contatti pubblici — v2
         if: steps.gate.outputs.run == 'true'
         env:
           F1_ENRICH_MAX: "35"
-          F1_ENRICH_RESULTS: "8"
           F1_ENRICH_MIN_SCORE: "45"
-        run: python seller_radar_auto/public_enrichment.py
+        run: python seller_radar_auto/public_enrichment_v2.py
 
       - name: Area Radar — CHIAMA / VAI IN ZONA
         if: steps.gate.outputs.run == 'true'
