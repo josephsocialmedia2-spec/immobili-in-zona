@@ -1,0 +1,16 @@
+id,comune,categoria,nome,telefono,email,sito,indirizzo,azione,verificato_il,fonte,note
+bussoleno-avv-001,Bussoleno,Avvocato,Avv. Roberta Miello,+39 0122 641603,r.miello@studiomiello.it,,Piazza del Moro 2 - 10053 Bussoleno TO,AGGIUNGI,2026-08-17,ReteImprese + directory professionale,Sede telefono ed email pubblici; follow-up digitale solo con consenso
+bussoleno-avv-002,Bussoleno,Avvocato,Avv. Enzo Miriello,+39 0122 640640,,,Via Traforo 17 - 10053 Bussoleno TO,AGGIUNGI,2026-08-17,MisterImprese + Impresa Italia,Sede e telefono pubblico
+bussoleno-comm-002,Bussoleno,Commercialista,Dott. Raffaele De Marzo,+39 0122 641049,,,Piazza del Moro 6 - 10053 Bussoleno TO,AGGIUNGI,2026-08-17,MisterImprese + Impresa Italia,Disponibile anche 0122 641051
+bussoleno-amm-001,Bussoleno,Amministratore condominio,Studio Habitat,+39 0122 400464,,,Via Traforo 24 - 10053 Bussoleno TO,AGGIUNGI,2026-08-17,ReteImprese,Attivita censita come amministrazioni immobiliari; verificare al primo contatto l'attuale operativita
+bussoleno-fin-001,Bussoleno,Consulente credito / finanziario,Rag. Bruno Pichierri,+39 0122 49295,,,Via Cesare Battisti 4 - 10053 Bussoleno TO,AGGIUNGI,2026-08-17,Opendi,Censito come consulente finanziario; verificare operativita specifica su mutui immobiliari
+susa-not-001,Susa,Notaio,Notaio Alfredo Annese,+39 0122 622209,aannese@notariato.it,,Corso Inghilterra 2 - 10059 Susa TO,AGGIUNGI,2026-08-17,Notai.it + Notaioa,Sede notarile a Susa; recapiti pubblici; email non usare per primo marketing senza consenso
+susa-avv-001,Susa,Avvocato,Avv. Gianfrancesco Torre,+39 0122 641826,info@studiolegaletorre.net,,Via Roma 80 - 10059 Susa TO,AGGIUNGI,2026-08-17,Directory pubblica aggiornata,Sede telefono ed email pubblici; altro repertorio riporta Via Roma 33 e 0122 623940 quindi verificare prima del contatto
+susa-avv-002,Susa,Avvocato,Avv. Roberto Chiariglione,+39 339 1529290,roby.ug@aliceposta.it,,Via Rolando 5 - 10059 Susa TO,AGGIUNGI,2026-08-17,Firmania + directory professionale,Profilo professionale indica civile condominio proprieta locazioni e successioni
+rosta-geo-001,Rosta,Geometra / Studio tecnico,Antonio Grasso,+39 011 9542846,,,Corso Moncenisio 63/2 - 10090 Rosta TO,AGGIUNGI,2026-08-17,ProntoImprese,Studio tecnico locale con telefono pubblico
+rosta-geo-002,Rosta,Geometra,Anna Versino,+39 011 9540048,,,Via Stazione 90 - 10090 Rosta TO,AGGIUNGI,2026-08-17,Impresa Italia,Geometra con sede locale e telefono pubblico
+rosta-geo-003,Rosta,Geometra,Alberto Inglese,+39 011 9567664,,,Via Collodi 22 - 10090 Rosta TO,AGGIUNGI,2026-08-17,Impresa Italia,Geometra con sede locale e telefono pubblico
+villardora-geo-002,Villar Dora,Geometra,Giorgio Baratta,+39 011 9351845,,,Via Almese 23 - 10040 Villar Dora TO,AGGIUNGI,2026-08-17,PagineGialle + Impresa Italia,Studio tecnico locale
+villardora-geo-003,Villar Dora,Geometra,Giovanni Condo,+39 011 9350274,,,Piazza San Rocco 3 - 10040 Villar Dora TO,AGGIUNGI,2026-08-17,PagineGialle + Impresa Italia,Studio tecnico locale
+villardora-geo-004,Villar Dora,Geometra,Vincenzo Tota,+39 011 9350630,,,Via Almese 23 - 10040 Villar Dora TO,AGGIUNGI,2026-08-17,PagineGialle + Overplace,Studio tecnico locale
+villardora-geo-005,Villar Dora,Geometra,Giancarlo Forli,+39 011 9359166,,,Piazza Donatori di Sangue 10 - 10040 Villar Dora TO,AGGIUNGI,2026-08-17,Overplace + Impresa Italia,Studio tecnico locale
