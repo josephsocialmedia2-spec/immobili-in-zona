@@ -11,11 +11,8 @@ Per ogni annuncio, anche di agenzia:
 Non associa numeri a residenti/vicini per cognome o sola prossimità geografica.
 """
 import csv, html, json, re
-import xml.etree.ElementTree as ET
 from pathlib import Path
-from urllib.parse import urlencode
-from urllib.request import Request, urlopen
-from urllib.error import HTTPError, URLError
+from search_engine import search as web_search
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -23,8 +20,6 @@ STATE = DATA / "state.json"
 QUEUE = DATA / "work_queue.csv"
 OUT = DATA / "area_radar.csv"
 RPO = ROOT / "rpo_approved.csv"
-UA = "F1AreaRadar/1.1"
-TIMEOUT = 18
 
 ADDRESS_RE = re.compile(
     r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
@@ -41,25 +36,8 @@ def norm_phone(v):
     return d[2:] if d.startswith("39") and len(d) > 10 else d
 
 def search(q, count=12):
-    url = "https://www.bing.com/search?" + urlencode({"q": q, "format": "rss", "count": str(count)})
-    req = Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml,application/xml,text/xml,*/*"})
-    try:
-        with urlopen(req, timeout=TIMEOUT) as r:
-            body = r.read(700000).decode(r.headers.get_content_charset() or "utf-8", errors="replace")
-    except (HTTPError, URLError, TimeoutError, OSError):
-        return []
-    try:
-        root = ET.fromstring(body)
-    except ET.ParseError:
-        return []
-    out = []
-    for n in root.findall(".//item")[:count]:
-        out.append({
-            "title": clean(n.findtext("title") or ""),
-            "snippet": clean(n.findtext("description") or ""),
-            "url": (n.findtext("link") or "").strip(),
-        })
-    return out
+    results, _error = web_search(q, count)
+    return results
 
 def address_list(text):
     vals, seen = [], set()
@@ -71,10 +49,11 @@ def address_list(text):
     return vals
 
 def street_of(address):
-    s = clean(address).strip(" ,.;")
-    if not re.match(r"^(via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\b", s, re.I):
+    if not address:
         return ""
-    return re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?$", "", s).strip(" ,.;")
+    s = re.sub(r"\s+", " ", clean(address)).strip(" ,.;")
+    s = re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?\s*$", "", s).strip()
+    return s
 
 def load_rpo():
     approved = set()
@@ -105,10 +84,15 @@ for item_id, x in items.items():
     if not hints:
         q = f'"{(x.get("title") or "")[:120]}" "{comune}"'
         for r in search(q, 8):
-            hints += address_list(f"{r['title']} {r['snippet']}")
+            hints += address_list(f"{r['title']} {r.get('snippet','')}")
     hints = list(dict.fromkeys(hints))[:5]
 
-    area = {"reference_addresses": hints, "street": "", "nearby_public_addresses": [], "actions": []}
+    area = {
+        "reference_addresses": hints,
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": [],
+    }
 
     if hints:
         street = street_of(hints[0])
@@ -117,14 +101,24 @@ for item_id, x in items.items():
         if street:
             q = f'"{street}" "{comune}"'
             for r in search(q, 20):
-                for a in address_list(f"{r['title']} {r['snippet']}"):
+                for a in address_list(f"{r['title']} {r.get('snippet','')}"):
                     if street.casefold() in a.casefold() and a.casefold() not in {z.casefold() for z in found}:
                         found.append(a)
         all_addresses = list(dict.fromkeys(hints + found))[:20]
         area["nearby_public_addresses"] = all_addresses
         for a in all_addresses:
             area["actions"].append({"azione": "VAI_IN_ZONA", "target": a, "telefono": "", "stato": "PRONTO"})
-            rows.append({"ITEM_ID":item_id,"COMUNE":comune,"TIPO_ANNUNCIO":x.get("seller_hint","NON_DETERMINATO"),"VIA_RADAR":street,"AZIONE":"VAI_IN_ZONA","TARGET":a,"TELEFONO":"","STATO":"PRONTO","FONTE":x.get("url","")})
+            rows.append({
+                "ITEM_ID": item_id,
+                "COMUNE": comune,
+                "TIPO_ANNUNCIO": x.get("seller_hint", "NON_DETERMINATO"),
+                "VIA_RADAR": street,
+                "AZIONE": "VAI_IN_ZONA",
+                "TARGET": a,
+                "TELEFONO": "",
+                "STATO": "PRONTO",
+                "FONTE": x.get("url", ""),
+            })
 
     for c in e.get("public_contacts") or []:
         if c.get("type") != "PHONE" or c.get("confidence") not in {"HIGH", "MEDIUM"}:
@@ -134,7 +128,17 @@ for item_id, x in items.items():
         azione = "CHIAMA" if approved else "VERIFICA_RPO"
         stato = "PRONTO" if approved else "BLOCCATO_FINCHÉ_NON_VERIFICATO"
         area["actions"].append({"azione": azione, "target": e.get("seller_name") or "inserzionista", "telefono": c.get("value", ""), "stato": stato})
-        rows.append({"ITEM_ID":item_id,"COMUNE":comune,"TIPO_ANNUNCIO":x.get("seller_hint","NON_DETERMINATO"),"VIA_RADAR":area.get("street",""),"AZIONE":azione,"TARGET":e.get("seller_name") or "inserzionista","TELEFONO":c.get("value", ""),"STATO":stato,"FONTE":c.get("source_url","")})
+        rows.append({
+            "ITEM_ID": item_id,
+            "COMUNE": comune,
+            "TIPO_ANNUNCIO": x.get("seller_hint", "NON_DETERMINATO"),
+            "VIA_RADAR": area.get("street", ""),
+            "AZIONE": azione,
+            "TARGET": e.get("seller_name") or "inserzionista",
+            "TELEFONO": c.get("value", ""),
+            "STATO": stato,
+            "FONTE": c.get("source_url", ""),
+        })
 
     x["area_radar"] = area
 
