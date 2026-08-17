@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - "seller_radar_auto/ddg_discovery.py"
       - "seller_radar_auto/cloud_radar_v4.py"
-      - "seller_radar_auto/radar_diagnostic.py"
       - "seller_radar_auto/public_enrichment.py"
       - "seller_radar_auto/area_radar.py"
       - "seller_radar_auto/area_radar_selftest.py"
@@ -59,11 +59,11 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/area_radar_selftest.py
 
-      - name: Diagnostica filtri Vaie
+      - name: Discovery annunci — DuckDuckGo HTML
         if: steps.gate.outputs.run == 'true'
-        run: python seller_radar_auto/radar_diagnostic.py
+        run: python seller_radar_auto/ddg_discovery.py
 
-      - name: Run radar v4
+      - name: Run radar v4 — scoring e dashboard
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/cloud_radar_v4.py
 
