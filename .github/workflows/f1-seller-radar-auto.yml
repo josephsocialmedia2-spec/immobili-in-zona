@@ -5,10 +5,13 @@ on:
   push:
     paths:
       - "seller_radar_auto/search_engine.py"
-      - "seller_radar_auto/ddg_discovery_v2.py"
+      - "seller_radar_auto/discovery_one.py"
+      - "seller_radar_auto/merge_discovery.py"
+      - "seller_radar_auto/build_municipality_matrix.py"
+      - "seller_radar_auto/build_item_matrix.py"
+      - "seller_radar_auto/item_worker.py"
+      - "seller_radar_auto/merge_item_results.py"
       - "seller_radar_auto/radar_postprocess.py"
-      - "seller_radar_auto/public_enrichment_v2.py"
-      - "seller_radar_auto/area_radar.py"
       - "seller_radar_auto/area_radar_selftest.py"
       - "seller_radar_auto/rpo_approved.csv"
       - "seller_radar_auto/municipalities.csv"
@@ -28,59 +31,171 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  radar:
+  gate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-
+    timeout-minutes: 3
+    outputs:
+      run: ${{ steps.time_gate.outputs.run }}
+      municipality_matrix: ${{ steps.matrix.outputs.matrix }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Verifica orario italiano
-        id: gate
+        id: time_gate
         shell: bash
         run: |
           if [ "${{ github.event_name }}" != "schedule" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-
           LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
           LOCAL_TIME=$(TZ=Europe/Rome date +%H:%M)
           echo "Ora italiana rilevata: $LOCAL_TIME"
-
           if [ "$LOCAL_HOUR" = "08" ] || [ "$LOCAL_HOUR" = "18" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Genera matrix comuni
+        id: matrix
+        shell: bash
+        run: |
+          MATRIX=$(python seller_radar_auto/build_municipality_matrix.py)
+          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+
+  discover:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix: ${{ fromJson(needs.gate.outputs.municipality_matrix) }}
+    steps:
       - name: Checkout
-        if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
-      - name: Self-test Area Radar
-        if: steps.gate.outputs.run == 'true'
-        run: python seller_radar_auto/area_radar_selftest.py
+      - name: Discovery ${{ matrix.comune }}
+        env:
+          F1_COMUNE: ${{ matrix.comune }}
+          F1_DISCOVERY_OUT: seller_radar_auto/data/discovery_one.json
+          F1_SEARCH_INTERVAL: "5"
+        run: python seller_radar_auto/discovery_one.py
 
-      - name: Discovery annunci — DuckDuckGo HTML v2
-        if: steps.gate.outputs.run == 'true'
-        run: python seller_radar_auto/ddg_discovery_v2.py
+      - name: Salva discovery ${{ matrix.comune }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-${{ matrix.comune }}
+          path: seller_radar_auto/data/discovery_one.json
+          if-no-files-found: error
+          retention-days: 1
+
+  merge:
+    needs: [gate, discover]
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      item_matrix: ${{ steps.item_matrix.outputs.matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Scarica discovery comuni
+        uses: actions/download-artifact@v4
+        with:
+          pattern: discovery-*
+          path: seller_radar_auto/discovery_results
+
+      - name: Unisci discovery
+        run: python seller_radar_auto/merge_discovery.py
 
       - name: Scoring, coda e dashboard
-        if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/radar_postprocess.py
 
-      - name: Cross-match e ricerca contatti pubblici — v2
-        if: steps.gate.outputs.run == 'true'
-        env:
-          F1_ENRICH_MAX: "35"
-          F1_ENRICH_MIN_SCORE: "45"
-        run: python seller_radar_auto/public_enrichment_v2.py
+      - name: Genera matrix annunci
+        id: item_matrix
+        shell: bash
+        run: |
+          MATRIX=$(python seller_radar_auto/build_item_matrix.py)
+          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+          echo "$MATRIX"
 
-      - name: Area Radar — CHIAMA / VAI IN ZONA
-        if: steps.gate.outputs.run == 'true'
-        run: python seller_radar_auto/area_radar.py
+      - name: Salva runtime radar
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-runtime
+          path: |
+            seller_radar_auto/data
+            seller_radar_auto/dashboard.html
+          if-no-files-found: error
+          retention-days: 1
+
+  worker:
+    needs: [gate, merge]
+    if: needs.gate.outputs.run == 'true' && needs.merge.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix: ${{ fromJson(needs.merge.outputs.item_matrix) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Scarica runtime radar
+        uses: actions/download-artifact@v4
+        with:
+          name: radar-runtime
+          path: seller_radar_auto
+
+      - name: Cross-match e Area Radar ${{ matrix.item_id }}
+        if: matrix.item_id != '__NONE__'
+        env:
+          F1_ITEM_ID: ${{ matrix.item_id }}
+          F1_ITEM_OUT: seller_radar_auto/data/item_result.json
+          F1_SEARCH_INTERVAL: "5"
+        run: python seller_radar_auto/item_worker.py
+
+      - name: Salva risultato annuncio
+        if: matrix.item_id != '__NONE__'
+        uses: actions/upload-artifact@v4
+        with:
+          name: item-${{ matrix.item_id }}
+          path: seller_radar_auto/data/item_result.json
+          if-no-files-found: error
+          retention-days: 1
+
+  final:
+    needs: [gate, merge, worker]
+    if: always() && needs.gate.outputs.run == 'true' && needs.merge.result == 'success' && (needs.worker.result == 'success' || needs.worker.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Scarica runtime radar
+        uses: actions/download-artifact@v4
+        with:
+          name: radar-runtime
+          path: seller_radar_auto
+
+      - name: Scarica risultati per-annuncio
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: item-*
+          path: seller_radar_auto/item_results
+
+      - name: Unisci cross-match e Area Radar
+        run: python seller_radar_auto/merge_item_results.py
 
       - name: Invia nuove pubblicazioni via email
-        if: steps.gate.outputs.run == 'true'
         env:
           F1_EMAIL_USER: ${{ secrets.F1_EMAIL_USER }}
           F1_EMAIL_APP_PASSWORD: ${{ secrets.F1_EMAIL_APP_PASSWORD }}
@@ -90,7 +205,6 @@ jobs:
         run: python seller_radar_auto/email_notify.py
 
       - name: Invia nuove pubblicazioni su WhatsApp
-        if: steps.gate.outputs.run == 'true'
         env:
           WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
           WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
@@ -101,7 +215,6 @@ jobs:
         run: python seller_radar_auto/whatsapp_notify.py
 
       - name: Persist public market data
-        if: steps.gate.outputs.run == 'true'
         shell: bash
         run: |
           git config user.name "f1-seller-radar-bot"
