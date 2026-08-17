@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """Motore di ricerca pubblico condiviso F1 Seller Radar."""
-import html, re
+import html, os, re, time
 from html.parser import HTMLParser
+from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, unquote, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/151 Safari/537.36"
 TIMEOUT = 20
+MIN_INTERVAL = float(os.getenv("F1_SEARCH_INTERVAL", "5"))
+RATE_FILE = Path("/tmp/f1_seller_radar_search_rate.txt")
 
 class _Parser(HTMLParser):
     def __init__(self):
@@ -31,8 +34,18 @@ def _unwrap(href):
         if qs.get("uddg"): return unquote(qs["uddg"][0])
     return href
 
+def _rate_limit():
+    last=0.0
+    try: last=float(RATE_FILE.read_text(encoding="utf-8").strip() or "0")
+    except Exception: pass
+    wait=MIN_INTERVAL-(time.time()-last)
+    if wait>0: time.sleep(wait)
+    try: RATE_FILE.write_text(str(time.time()),encoding="utf-8")
+    except Exception: pass
+
 def search(query, count=10):
     """Restituisce (results, error). results: [{title,url,snippet}]."""
+    _rate_limit()
     data=urlencode({"q":query,"kl":"it-it"}).encode("utf-8")
     req=Request("https://html.duckduckgo.com/html/",data=data,headers={
         "User-Agent":UA,
