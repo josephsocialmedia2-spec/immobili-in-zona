@@ -20,7 +20,7 @@ CONTACTS = {
     "email": "f1immobiliaresusa@outlook.it",
     "site": "https://f1immobiliare.com/",
 }
-QR_TARGET = "https://f1immobiliare.com/"
+QR_TARGET = "https://f1immobiliare.com/pages/contatti"
 
 
 def clean_street(value: str) -> str:
