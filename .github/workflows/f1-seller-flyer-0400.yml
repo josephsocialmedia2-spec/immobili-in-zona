@@ -1,0 +1,59 @@
+name: F1 Seller Flyer 04:00
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Europe/Rome: 04:00 locale corrisponde a 02:00 UTC in ora legale e 03:00 UTC in ora solare.
+    # Entrambi i trigger sono protetti dal time gate locale qui sotto.
+    - cron: "0 2,3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-seller-flyer-0400
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verifica 04:00 Europe/Rome
+        id: gate
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
+          LOCAL_TIME=$(TZ=Europe/Rome date +%H:%M)
+          echo "Ora italiana rilevata: $LOCAL_TIME"
+          if [ "$LOCAL_HOUR" = "04" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Prepara direttive A6 da Seller Signal
+        if: steps.gate.outputs.run == 'true'
+        run: python seller_radar_auto/flyer_pipeline/prepare_daily_briefs.py
+
+      - name: Salva coda GitHub
+        if: steps.gate.outputs.run == 'true'
+        shell: bash
+        run: |
+          git config user.name "f1-seller-flyer-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A seller_radar_auto/flyer_pipeline/queue seller_radar_auto/flyer_pipeline/ready
+          if git diff --cached --quiet; then
+            echo "Nessuna nuova direttiva da salvare."
+          else
+            git commit -m "flyer: direttive giornaliere A6"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
