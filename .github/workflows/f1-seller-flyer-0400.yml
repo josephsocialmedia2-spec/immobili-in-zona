@@ -2,9 +2,14 @@ name: F1 Seller Flyer 04:00
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "seller_radar_auto/flyer_pipeline/render_ready.py"
+      - "seller_radar_auto/flyer_pipeline/signals/**"
+      - "seller_radar_auto/flyer_pipeline/assets/**"
+      - ".github/workflows/f1-seller-flyer-0400.yml"
   schedule:
     # Europe/Rome: 04:00 locale corrisponde a 02:00 UTC in ora legale e 03:00 UTC in ora solare.
-    # Entrambi i trigger sono protetti dal time gate locale qui sotto.
     - cron: "0 2,3 * * *"
 
 permissions:
@@ -17,7 +22,7 @@ concurrency:
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,11 +44,19 @@ jobs:
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Installa renderer grafico
+        if: steps.gate.outputs.run == 'true'
+        run: python -m pip install --disable-pip-version-check pillow qrcode
+
       - name: Prepara direttive A6 da Seller Signal
         if: steps.gate.outputs.run == 'true'
         run: python seller_radar_auto/flyer_pipeline/prepare_daily_briefs.py
 
-      - name: Salva coda GitHub
+      - name: Genera PNG e PDF A6 finali
+        if: steps.gate.outputs.run == 'true'
+        run: python seller_radar_auto/flyer_pipeline/render_ready.py
+
+      - name: Salva grafiche finali in GitHub ready
         if: steps.gate.outputs.run == 'true'
         shell: bash
         run: |
@@ -51,9 +64,9 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add -A seller_radar_auto/flyer_pipeline/queue seller_radar_auto/flyer_pipeline/ready
           if git diff --cached --quiet; then
-            echo "Nessuna nuova direttiva da salvare."
+            echo "Nessuna nuova grafica da salvare."
           else
-            git commit -m "flyer: direttive giornaliere A6"
+            git commit -m "flyer: grafiche A6 Seller Signal pronte"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
