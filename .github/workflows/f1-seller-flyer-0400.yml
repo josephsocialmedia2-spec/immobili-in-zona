@@ -9,8 +9,10 @@ on:
       - "seller_radar_auto/flyer_pipeline/assets/**"
       - ".github/workflows/f1-seller-flyer-0400.yml"
   schedule:
-    # Europe/Rome: 04:00 locale corrisponde a 02:00 UTC in ora legale e 03:00 UTC in ora solare.
+    # Produzione ordinaria 04:00 Europe/Rome.
     - cron: "0 2,3 * * *"
+    # Avvio straordinario una tantum per completare i Seller Signal del 18/08/2026.
+    - cron: "10 6 18 8 *"
 
 permissions:
   contents: write
@@ -27,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verifica 04:00 Europe/Rome
+      - name: Verifica finestra operativa
         id: gate
         shell: bash
         run: |
@@ -36,9 +38,10 @@ jobs:
             exit 0
           fi
           LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
+          LOCAL_DATE=$(TZ=Europe/Rome date +%F)
           LOCAL_TIME=$(TZ=Europe/Rome date +%H:%M)
-          echo "Ora italiana rilevata: $LOCAL_TIME"
-          if [ "$LOCAL_HOUR" = "04" ]; then
+          echo "Ora italiana rilevata: $LOCAL_DATE $LOCAL_TIME"
+          if [ "$LOCAL_HOUR" = "04" ] || { [ "$LOCAL_DATE" = "2026-08-18" ] && [ "$LOCAL_HOUR" = "08" ]; }; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
