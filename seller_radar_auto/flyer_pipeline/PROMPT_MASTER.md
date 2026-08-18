@@ -45,14 +45,13 @@ Esempio vietato: `La casa di Via Maisonetta 114 è scesa da 110.000 € a 95.000
 
 ## QR CODE OBBLIGATORIO
 Ogni volantino deve contenere un QR code funzionante.
-- Destinazione predefinita: `https://f1immobiliare.com/`
+- Destinazione: `https://f1immobiliare.com/pages/contatti`
 - Testo vicino al QR: `SCANSIONA PER RICHIEDERE LA VALUTAZIONE GRATUITA`
 - Posizione: parte bassa del volantino, ben visibile e separata dai contatti.
 - QR nero su fondo bianco, con margine libero attorno.
 - Dimensione minima consigliata: **22 × 22 mm**.
 - Il QR non deve coprire logo, foto team, numeri di telefono o CTA.
 - Prima di considerare il volantino pronto, verificare che il QR sia realmente scansionabile.
-- Se in futuro viene definita una landing page dedicata alla valutazione, sostituire la destinazione mantenendo invariata la presenza obbligatoria del QR.
 
 ## Gerarchia del volantino
 Il volantino è diviso in due zone.
@@ -151,7 +150,7 @@ Generare sempre:
 5. `testo_piccolo` — analisi + obiettivo + brand + contatti;
 6. `specifiche_grafiche` — A6 verticale, sfondo bianco, gerarchia 60/40;
 7. `asset_da_usare` — immagini ufficiali F1;
-8. `qr` — QR obbligatorio verso `https://f1immobiliare.com/` con label valutazione gratuita;
+8. `qr` — QR obbligatorio verso `https://f1immobiliare.com/pages/contatti` con label valutazione gratuita;
 9. `nome_file` — `F1_SellerSignal_[Comune]_[Via]_[TipoSegnale]_[YYYY-MM-DD]`.
 
 ## Flusso GitHub
@@ -166,4 +165,4 @@ Generare sempre:
 9. Joseph scarica al mattino i file pronti.
 
 ## Comando operativo finale
-Ogni mattina alle 04:00 Europe/Rome, prendi i Seller Signal disponibili e trasformali in direttive per volantini F1 Immobiliare A6 verticali con sfondo bianco. Il Seller Signal è solo l'innesco commerciale territoriale: il destinatario è il proprietario che abita nella stessa via o microzona e potrebbe valutare di vendere. La prima parte del volantino deve essere grande e ad alto impatto; la seconda più piccola e informativa. Inserisci sempre i riferimenti ufficiali F1, un QR code funzionante verso `https://f1immobiliare.com/` e usa esclusivamente immagini F1 approvate. Deposita le direttive su GitHub, attendi che le grafiche vengano preparate e caricate nella cartella `ready`, quindi rendile disponibili per il Download mattutino.
+Ogni mattina alle 04:00 Europe/Rome, prendi i Seller Signal disponibili e trasformali in direttive per volantini F1 Immobiliare A6 verticali con sfondo bianco. Il Seller Signal è solo l'innesco commerciale territoriale: il destinatario è il proprietario che abita nella stessa via o microzona e potrebbe valutare di vendere. La prima parte del volantino deve essere grande e ad alto impatto; la seconda più piccola e informativa. Inserisci sempre i riferimenti ufficiali F1, un QR code funzionante verso `https://f1immobiliare.com/pages/contatti` e usa esclusivamente immagini F1 approvate. Deposita le direttive su GitHub, attendi che le grafiche vengano preparate e caricate nella cartella `ready`, quindi rendile disponibili per il Download mattutino.
