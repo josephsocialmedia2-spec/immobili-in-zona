@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T16:57:24.011912+00:00",
+  "updated_at": "2026-08-18T16:59:29.578917+00:00",
   "items": {
     "9a8e6bc5c6aaedd0ee05": {
       "id": "9a8e6bc5c6aaedd0ee05",
@@ -12,18 +12,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634178+00:00",
-      "last_seen": "2026-08-17T16:30:23.634194+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-18T16:59:29.535119+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:39.109638+00:00",
+        "checked_at": "2026-08-18T16:59:46.286266+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -86,8 +86,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634202+00:00",
-      "last_seen": "2026-08-17T16:57:23.953009+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-18T16:59:29.535139+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -97,7 +97,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:57:40.887529+00:00",
+        "checked_at": "2026-08-18T16:59:47.805110+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -270,8 +270,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634223+00:00",
-      "last_seen": "2026-08-17T16:57:23.953046+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-18T16:59:29.535145+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
@@ -281,7 +281,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:57:40.368293+00:00",
+        "checked_at": "2026-08-18T16:59:43.714782+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -337,8 +337,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634228+00:00",
-      "last_seen": "2026-08-17T16:57:23.953053+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-18T16:59:29.535149+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -348,7 +348,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:57:42.309861+00:00",
+        "checked_at": "2026-08-18T16:59:47.018923+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -404,8 +404,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634233+00:00",
-      "last_seen": "2026-08-17T16:57:23.953059+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-18T16:59:29.535153+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -415,7 +415,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:57:40.450093+00:00",
+        "checked_at": "2026-08-18T16:59:46.082157+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -448,19 +448,12 @@
         ],
         "street": "Via Celle",
         "nearby_public_addresses": [
-          "Via Celle 64",
-          "via Celle 67"
+          "Via Celle 64"
         ],
         "actions": [
           {
             "azione": "VAI_IN_ZONA",
             "target": "Via Celle 64",
-            "telefono": "",
-            "stato": "PRONTO"
-          },
-          {
-            "azione": "VAI_IN_ZONA",
-            "target": "via Celle 67",
             "telefono": "",
             "stato": "PRONTO"
           }
@@ -478,18 +471,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634238+00:00",
-      "last_seen": "2026-08-17T16:30:23.634239+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-18T16:59:29.535155+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:33.946012+00:00",
+        "checked_at": "2026-08-18T16:59:41.550654+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -528,18 +521,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634242+00:00",
-      "last_seen": "2026-08-17T16:30:23.634244+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-18T16:59:29.535158+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:33.699941+00:00",
+        "checked_at": "2026-08-18T16:59:40.887037+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -556,7 +549,7 @@
         "queries": [
           {
             "q": "\"Villa in Vendita in Via Chiesali a Villar Focchiardo - Casa.it\" \"Villar Focchiardo\"",
-            "error": "verifica umana / rate limit"
+            "error": ""
           }
         ]
       },
@@ -578,18 +571,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634247+00:00",
-      "last_seen": "2026-08-17T16:30:23.634248+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-18T16:59:29.535161+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.immobiliare.it",
       "path_rule": "^/annunci/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:36.285827+00:00",
+        "checked_at": "2026-08-18T16:59:39.691258+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4299,5 +4292,5 @@
   },
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
-  "matrix_discovery_updated_at": "2026-08-17T16:57:23.953062+00:00"
+  "matrix_discovery_updated_at": "2026-08-18T16:59:29.535164+00:00"
 }
