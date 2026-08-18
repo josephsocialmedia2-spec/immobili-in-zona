@@ -1,0 +1,50 @@
+[
+  {
+    "comune": "Sant'Antonino di Susa",
+    "via": "Via Maisonetta",
+    "segnale": "Ribasso",
+    "signal_label": "RIBASSO DEL 13,6%",
+    "problema": "Un prezzo iniziale non corretto può portare a ribassi e tempi di vendita più lunghi.",
+    "filename_slug": "Sant_Antonino_di_Susa_Via_Maisonetta_Ribasso"
+  },
+  {
+    "comune": "Condove",
+    "via": "Via Achille Grandi",
+    "segnale": "Nuovo_Privato",
+    "signal_label": "NUOVO SEGNALE DI VENDITA DIRETTA NELLA ZONA",
+    "problema": "Prezzo, presentazione e strategia iniziale possono fare la differenza fin dai primi giorni.",
+    "filename_slug": "Condove_Via_Achille_Grandi_Nuovo_Privato"
+  },
+  {
+    "comune": "Borgone Susa",
+    "via": "Via Condove",
+    "segnale": "Privato",
+    "signal_label": "VENDITA DIRETTA RILEVATA NELLA ZONA",
+    "problema": "Vendere senza un corretto posizionamento può ridurre interesse e forza nella trattativa.",
+    "filename_slug": "Borgone_Susa_Via_Condove_Privato"
+  },
+  {
+    "comune": "Vaie",
+    "via": "Piazza del Priore",
+    "segnale": "Privato",
+    "signal_label": "VENDITA DIRETTA RILEVATA NELLA ZONA",
+    "problema": "Vendere senza un corretto posizionamento può ridurre interesse e forza nella trattativa.",
+    "filename_slug": "Vaie_Piazza_del_Priore_Privato"
+  },
+  {
+    "comune": "Chiusa di San Michele",
+    "via": "Via Generale Antonio Cantore",
+    "segnale": "Privato",
+    "signal_label": "VENDITA DIRETTA RILEVATA NELLA ZONA",
+    "problema": "Vendere senza un corretto posizionamento può ridurre interesse e forza nella trattativa.",
+    "filename_slug": "Chiusa_di_San_Michele_Via_Generale_Antonio_Cantore_Privato"
+  },
+  {
+    "comune": "Villar Focchiardo",
+    "via": "Via Limbo",
+    "segnale": "Privato",
+    "signal_label": "VENDITA DIRETTA RILEVATA NELLA ZONA",
+    "problema": "Vendere senza un corretto posizionamento può ridurre interesse e forza nella trattativa.",
+    "filename_slug": "Villar_Focchiardo_Via_Limbo_Privato"
+  }
+]
