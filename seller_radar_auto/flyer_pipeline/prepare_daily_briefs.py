@@ -20,13 +20,13 @@ CONTACTS = {
     "email": "f1immobiliaresusa@outlook.it",
     "site": "https://f1immobiliare.com/",
 }
+QR_TARGET = "https://f1immobiliare.com/"
 
 
 def clean_street(value: str) -> str:
     value = (value or "").strip()
     if not value:
         return ""
-    # Elimina il civico finale e forme s.n.c./snc senza alterare il nome della via.
     value = re.sub(r"\s+(?:\d+[A-Za-z]?(?:[/\-]\d+[A-Za-z]?)?|s\.?n\.?c\.?)\s*$", "", value, flags=re.I)
     return value.strip(" ,-")
 
@@ -148,6 +148,13 @@ def main() -> None:
                 "cta": "Richiedi gratuitamente la tua prima analisi immobiliare.",
             },
             "contacts": CONTACTS,
+            "qr": {
+                "required": True,
+                "target": QR_TARGET,
+                "label": "SCANSIONA PER RICHIEDERE LA VALUTAZIONE GRATUITA",
+                "placement": "parte bassa, ben visibile, senza coprire logo o contatti",
+                "style": "QR nero su fondo bianco con margine libero; dimensione minima consigliata 22x22 mm",
+            },
             "assets_rule": "Usare esclusivamente logo/foto team/immagini F1 approvate; mai la foto dell'immobile segnalato.",
             "privacy_rule": "Mai civico, prezzo preciso, nome proprietario/inserzionista, link annuncio o altri dati identificativi nel volantino pubblico.",
             "source_internal": {
@@ -169,6 +176,8 @@ def main() -> None:
         "queue": briefs,
         "ready_folder": f"seller_radar_auto/flyer_pipeline/ready/{today}/",
         "prompt": "seller_radar_auto/flyer_pipeline/PROMPT_MASTER.md",
+        "qr_required": True,
+        "qr_target": QR_TARGET,
     }
     (out_dir / "INDEX.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(index, ensure_ascii=False))
