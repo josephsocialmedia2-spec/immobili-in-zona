@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>F1 Immobiliare — Volantini pronti</title>
+  <style>
+    :root{font-family:Arial,Helvetica,sans-serif;color:#111;background:#f4f4f4}
+    *{box-sizing:border-box}
+    body{margin:0;padding:28px}
+    .wrap{max-width:900px;margin:auto}
+    .head,.card{background:#fff;border:1px solid #ddd;border-radius:14px;padding:20px;margin-bottom:16px}
+    h1{margin:0 0 8px;font-size:28px}
+    p{line-height:1.5}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:end}
+    label{font-weight:700;display:grid;gap:6px}
+    input,button,a.btn{font:inherit;border-radius:9px;padding:10px 14px}
+    input{border:1px solid #bbb;background:#fff}
+    button,a.btn{border:0;background:#111;color:#fff;text-decoration:none;cursor:pointer;display:inline-block}
+    .file{display:flex;justify-content:space-between;gap:14px;align-items:center;border-top:1px solid #eee;padding:14px 0}
+    .file:first-child{border-top:0}
+    .muted{color:#666;font-size:14px}
+    .empty{padding:18px 0;color:#666}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <section class="head">
+    <h1>F1 Immobiliare — Volantini Seller Signal</h1>
+    <p>File A6 pronti per il download mattutino. I file vengono mostrati quando sono stati caricati nella cartella <strong>ready</strong> di GitHub.</p>
+    <div class="controls">
+      <label>Data
+        <input id="date" type="date" />
+      </label>
+      <button id="load">Aggiorna elenco</button>
+    </div>
+  </section>
+  <section class="card">
+    <div id="status" class="muted"></div>
+    <div id="files"></div>
+  </section>
+</div>
+<script>
+const owner='josephsocialmedia2-spec';
+const repo='immobili-in-zona';
+const branch='main';
+const dateInput=document.getElementById('date');
+const status=document.getElementById('status');
+const files=document.getElementById('files');
+const today=new Date();
+const local=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+dateInput.value=local;
+
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+async function loadFiles(){
+  const day=dateInput.value;
+  const path=`seller_radar_auto/flyer_pipeline/ready/${day}`;
+  const api=`https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
+  status.textContent=`Ricerca file pronti per ${day}…`;
+  files.innerHTML='';
+  try{
+    const r=await fetch(api,{headers:{Accept:'application/vnd.github+json'}});
+    if(r.status===404){
+      status.textContent=`Nessuna grafica pronta per ${day}.`;
+      files.innerHTML='<div class="empty">La cartella del giorno è ancora vuota oppure non è stata caricata.</div>';
+      return;
+    }
+    if(!r.ok) throw new Error(`GitHub API ${r.status}`);
+    const data=await r.json();
+    const allowed=(Array.isArray(data)?data:[]).filter(f=>f.type==='file' && /\.(pdf|png|jpe?g)$/i.test(f.name));
+    status.textContent=`${allowed.length} file pronto/i per ${day}.`;
+    if(!allowed.length){
+      files.innerHTML='<div class="empty">Le direttive possono essere pronte, ma non risultano ancora grafiche PDF/PNG/JPG caricate.</div>';
+      return;
+    }
+    for(const f of allowed){
+      const row=document.createElement('div');
+      row.className='file';
+      row.innerHTML=`<div><strong>${esc(f.name)}</strong><div class="muted">${Math.max(1,Math.round(f.size/1024))} KB</div></div><a class="btn" href="${f.download_url}" download>DOWNLOAD</a>`;
+      files.appendChild(row);
+    }
+  }catch(e){
+    status.textContent='Impossibile leggere GitHub in questo momento.';
+    files.innerHTML=`<div class="empty">${esc(e.message)}</div>`;
+  }
+}
+document.getElementById('load').addEventListener('click',loadFiles);
+loadFiles();
+</script>
+</body>
+</html>
