@@ -1,0 +1,42 @@
+{
+  "data": "2026-08-18",
+  "nota": "Stime orientative operative; non compaiono sui volantini.",
+  "seller_signals": [
+    {
+      "file": "SantAntonino_di_Susa_Via_Maisonetta_Ribasso_20260818",
+      "localizzazione": "SANT’ANTONINO DI SUSA — VIA MAISONETTA E ZONA LIMITROFA",
+      "unita_abitative_stimate": "20–35",
+      "volantini_consigliati": "30–45"
+    },
+    {
+      "file": "Condove_Via_Achille_Grandi_Nuovo_Privato_20260818",
+      "localizzazione": "CONDOVE — VIA ACHILLE GRANDI E ZONA LIMITROFA",
+      "unita_abitative_stimate": "35–55",
+      "volantini_consigliati": "45–70"
+    },
+    {
+      "file": "Borgone_Susa_Via_Condove_Privato_20260818",
+      "localizzazione": "BORGONE SUSA — VIA CONDOVE E ZONA LIMITROFA",
+      "unita_abitative_stimate": "30–50",
+      "volantini_consigliati": "40–65"
+    },
+    {
+      "file": "Vaie_Piazza_del_Priore_Privato_20260818",
+      "localizzazione": "VAIE — PIAZZA DEL PRIORE E ZONA LIMITROFA",
+      "unita_abitative_stimate": "15–25",
+      "volantini_consigliati": "20–35"
+    },
+    {
+      "file": "Chiusa_di_San_Michele_Via_Generale_Antonio_Cantore_Privato_20260818",
+      "localizzazione": "CHIUSA DI SAN MICHELE — VIA GENERALE ANTONIO CANTORE E ZONA LIMITROFA",
+      "unita_abitative_stimate": "40–65",
+      "volantini_consigliati": "50–80"
+    },
+    {
+      "file": "Villar_Focchiardo_Via_Limbo_Privato_20260818",
+      "localizzazione": "VILLAR FOCCHIARDO — VIA LIMBO E ZONA LIMITROFA",
+      "unita_abitative_stimate": "10–20",
+      "volantini_consigliati": "15–25"
+    }
+  ]
+}
