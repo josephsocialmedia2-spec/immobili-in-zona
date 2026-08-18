@@ -5,7 +5,8 @@
     "segnale": "Ribasso",
     "signal_label": "RIBASSO DEL 13,6%",
     "problema": "Un prezzo iniziale non corretto può portare a ribassi e tempi di vendita più lunghi.",
-    "filename_slug": "Sant_Antonino_di_Susa_Via_Maisonetta_Ribasso"
+    "filename_slug": "Sant_Antonino_di_Susa_Via_Maisonetta_Ribasso",
+    "produci_ora": true
   },
   {
     "comune": "Condove",
