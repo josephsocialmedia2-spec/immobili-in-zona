@@ -34,21 +34,23 @@ if QUEUE.exists():
 def row_id(r):
     return (r.get("URL") or "").strip()
 
+def euro(v):
+    if not v: return "PREZZO DA VERIFICARE"
+    try: return f"€ {int(float(v)):,}".replace(",", ".")
+    except Exception: return str(v)
+
 new_rows = [r for r in rows if r.get("STATO") == "NEW" and row_id(r) and row_id(r) not in sent]
 
 if not new_rows:
     print("Nessuna nuova pubblicazione da inviare via email.")
     raise SystemExit(0)
 
-lines = ["F1 IMMOBILIARE — NUOVE PUBBLICAZIONI RADAR", ""]
+lines = ["F1 IMMOBILIARE — GIRO ACQUISIZIONE", ""]
 for r in new_rows:
-    prezzo = r.get("PREZZO") or "—"
-    if prezzo != "—":
-        try:
-            prezzo = f"€ {int(float(prezzo)):,}".replace(",", ".")
-        except Exception:
-            pass
-
+    prezzo = euro(r.get("PREZZO_OPERATIVO") or r.get("PREZZO"))
+    dove = (r.get("DOVE_ANDRE") or "INDIRIZZO DA VERIFICARE").strip()
+    cosa = (r.get("COSA_CERCO") or r.get("TITOLO") or "IMMOBILE DA VERIFICARE").strip()
+    istruzione = (r.get("ISTRUZIONE_OPERATIVA") or "APRI FONTE E VERIFICA INDIRIZZO").strip()
     contatti = (r.get("CONTATTI_PUBBLICI") or "").strip() or "nessun contatto pubblico verificabile rilevato"
     fonte_contatto = (r.get("FONTE_CONTATTO") or "").strip() or "—"
     nome = (r.get("NOME_INSERZIONISTA") or "").strip() or "—"
@@ -56,21 +58,20 @@ for r in new_rows:
 
     lines.extend([
         f"COMUNE: {r.get('COMUNE','')}",
-        f"FONTE: {r.get('FONTE','')}",
-        f"TITOLO: {r.get('TITOLO','')}",
+        f"DOVE ANDARE: {dove}",
+        f"COSA CERCO: {cosa}",
         f"PREZZO: {prezzo}",
-        f"SCORE: {r.get('SCORE','')}/100",
-        f"PRIORITÀ: {r.get('PRIORITA','')}",
+        f"AZIONE: {istruzione}",
+        f"FONTE: {r.get('FONTE','')}",
+        f"SCORE: {r.get('SCORE','')}/100 — PRIORITÀ: {r.get('PRIORITA','')}",
         f"INDIZIO: {r.get('INDIZIO_INSERZIONISTA','')}",
         f"NOME INSERZIONISTA: {nome}",
         f"CROSS-MATCH STESSO IMMOBILE: {cross}",
         f"CONTATTO PUBBLICO: {contatti}",
         f"FONTE CONTATTO: {fonte_contatto}",
-        f"MOTIVI: {r.get('MOTIVI','')}",
         f"LINK: {r.get('URL','')}",
         "",
-        "Nota: i risultati da directory pubbliche non confermati restano esclusi dal contatto operativo fino a verifica manuale.",
-        "",
+        "APRI FONTE E VERIFICA CONTATTO.",
         "------------------------------",
         "",
     ])
@@ -78,7 +79,7 @@ for r in new_rows:
 msg = EmailMessage()
 msg["From"] = EMAIL_USER
 msg["To"] = EMAIL_TO
-msg["Subject"] = f"F1 Radar — {len(new_rows)} nuova/e pubblicazione/i"
+msg["Subject"] = f"F1 Giro acquisizione — {len(new_rows)} nuova/e opportunità"
 msg.set_content("\n".join(lines))
 
 with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, timeout=30) as smtp:
