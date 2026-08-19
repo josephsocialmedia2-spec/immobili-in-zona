@@ -12,6 +12,7 @@ on:
       - "seller_radar_auto/item_worker.py"
       - "seller_radar_auto/merge_item_results.py"
       - "seller_radar_auto/radar_postprocess.py"
+      - "seller_radar_auto/prepare_acquisition_route.py"
       - "seller_radar_auto/area_radar_selftest.py"
       - "seller_radar_auto/rpo_approved.csv"
       - "seller_radar_auto/municipalities.csv"
@@ -194,6 +195,9 @@ jobs:
 
       - name: Unisci cross-match e Area Radar
         run: python seller_radar_auto/merge_item_results.py
+
+      - name: Prepara giro acquisizione
+        run: python seller_radar_auto/prepare_acquisition_route.py
 
       - name: Invia nuove pubblicazioni via email
         env:
