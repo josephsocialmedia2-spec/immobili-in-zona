@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T16:59:29.578917+00:00",
+  "updated_at": "2026-08-19T14:35:19.821066+00:00",
   "items": {
     "9a8e6bc5c6aaedd0ee05": {
       "id": "9a8e6bc5c6aaedd0ee05",
@@ -12,8 +12,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634178+00:00",
-      "last_seen": "2026-08-18T16:59:29.535119+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-19T14:35:19.760255+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -23,7 +23,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:46.286266+00:00",
+        "checked_at": "2026-08-19T14:35:35.664399+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -86,8 +86,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634202+00:00",
-      "last_seen": "2026-08-18T16:59:29.535139+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T14:35:19.760287+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -97,7 +97,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:47.805110+00:00",
+        "checked_at": "2026-08-19T14:35:38.573965+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -149,22 +149,27 @@
       "url": "https://tempocasa.it/it/vendita/torino/rosta/villa-unifamiliare/1780932",
       "title": "Villa unifamiliare in Vendita a Rosta | Euro 330.000 | Mq 190",
       "snippet": "",
-      "price_history": [],
+      "price_history": [
+        {
+          "at": "2026-08-19T14:35:19.760298+00:00",
+          "price": 330000
+        }
+      ],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634210+00:00",
-      "last_seen": "2026-08-17T16:30:23.634212+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-19T14:35:19.760293+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "tempocasa.it",
       "path_rule": "^/it/vendita/.*/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione"
+        "prezzo rilevato"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:38.854158+00:00",
+        "checked_at": "2026-08-19T14:35:30.076246+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -203,18 +208,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634216+00:00",
-      "last_seen": "2026-08-17T16:30:23.634217+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-19T14:35:19.760309+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.immobiliare.it",
       "path_rule": "^/annunci/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:30:39.812635+00:00",
+        "checked_at": "2026-08-19T14:35:33.289778+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -270,8 +275,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634223+00:00",
-      "last_seen": "2026-08-18T16:59:29.535145+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T14:35:19.760313+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
@@ -281,7 +286,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:43.714782+00:00",
+        "checked_at": "2026-08-19T14:35:35.245120+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -337,8 +342,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634228+00:00",
-      "last_seen": "2026-08-18T16:59:29.535149+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T14:35:19.760317+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -348,7 +353,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:47.018923+00:00",
+        "checked_at": "2026-08-19T14:35:34.686099+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -404,8 +409,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634233+00:00",
-      "last_seen": "2026-08-18T16:59:29.535153+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T14:35:19.760321+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -415,7 +420,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:46.082157+00:00",
+        "checked_at": "2026-08-19T14:35:36.598656+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -471,8 +476,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634238+00:00",
-      "last_seen": "2026-08-18T16:59:29.535155+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-19T14:35:19.760324+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -482,7 +487,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:41.550654+00:00",
+        "checked_at": "2026-08-19T14:35:30.254104+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -521,8 +526,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634242+00:00",
-      "last_seen": "2026-08-18T16:59:29.535158+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-19T14:35:19.760328+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
@@ -532,7 +537,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:40.887037+00:00",
+        "checked_at": "2026-08-19T14:35:40.737592+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -571,8 +576,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634247+00:00",
-      "last_seen": "2026-08-18T16:59:29.535161+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-19T14:35:19.760332+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.immobiliare.it",
       "path_rule": "^/annunci/[0-9]+/?$",
@@ -582,7 +587,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-18T16:59:39.691258+00:00",
+        "checked_at": "2026-08-19T14:35:40.061049+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -621,18 +626,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:57:23.953038+00:00",
-      "last_seen": "2026-08-17T16:57:23.953041+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-19T14:35:19.760304+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-17T16:57:38.500127+00:00",
+        "checked_at": "2026-08-19T14:35:34.765556+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -671,6 +676,80 @@
           {
             "azione": "VAI_IN_ZONA",
             "target": "Via Piave 53",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "81ad12948dc002c416d4": {
+      "id": "81ad12948dc002c416d4",
+      "comune": "Buttigliera Alta",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/33719415/",
+      "title": "Villa in vendita in Via Conti Carron, 4, Buttigliera Alta - idealista",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-19T14:35:19.760278+00:00",
+      "last_seen": "2026-08-19T14:35:19.760281+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-19T14:35:33.873806+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Conti Carron 4"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villa in vendita in Via Conti Carron, 4, Buttigliera Alta - idealista\" \"Buttigliera Alta\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via Conti Carron\" \"Buttigliera Alta\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Conti Carron 4"
+        ],
+        "street": "Via Conti Carron",
+        "nearby_public_addresses": [
+          "Via Conti Carron 4",
+          "Via Conti Carron 57"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Conti Carron 4",
+            "telefono": "",
+            "stato": "PRONTO"
+          },
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Conti Carron 57",
             "telefono": "",
             "stato": "PRONTO"
           }
@@ -4292,5 +4371,5 @@
   },
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
-  "matrix_discovery_updated_at": "2026-08-18T16:59:29.535164+00:00"
+  "matrix_discovery_updated_at": "2026-08-19T14:35:19.760334+00:00"
 }
