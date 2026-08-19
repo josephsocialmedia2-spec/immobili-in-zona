@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T14:35:19.821066+00:00",
+  "updated_at": "2026-08-19T16:57:29.691867+00:00",
   "items": {
     "9a8e6bc5c6aaedd0ee05": {
       "id": "9a8e6bc5c6aaedd0ee05",
@@ -12,8 +12,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634178+00:00",
-      "last_seen": "2026-08-19T14:35:19.760255+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T16:57:29.634977+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -23,7 +23,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:35.664399+00:00",
+        "checked_at": "2026-08-19T16:57:46.223712+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -86,8 +86,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634202+00:00",
-      "last_seen": "2026-08-19T14:35:19.760287+00:00",
-      "checks": 4,
+      "last_seen": "2026-08-19T16:57:29.635012+00:00",
+      "checks": 5,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -97,7 +97,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:38.573965+00:00",
+        "checked_at": "2026-08-19T16:57:45.785294+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -158,8 +158,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634210+00:00",
-      "last_seen": "2026-08-19T14:35:19.760293+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-19T16:57:29.635018+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "tempocasa.it",
       "path_rule": "^/it/vendita/.*/[0-9]+/?$",
@@ -169,7 +169,7 @@
         "prezzo rilevato"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:30.076246+00:00",
+        "checked_at": "2026-08-19T16:57:44.770202+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -208,8 +208,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634216+00:00",
-      "last_seen": "2026-08-19T14:35:19.760309+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-19T16:57:29.635028+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.immobiliare.it",
       "path_rule": "^/annunci/[0-9]+/?$",
@@ -219,7 +219,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:33.289778+00:00",
+        "checked_at": "2026-08-19T16:57:44.189167+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -275,8 +275,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634223+00:00",
-      "last_seen": "2026-08-19T14:35:19.760313+00:00",
-      "checks": 4,
+      "last_seen": "2026-08-19T16:57:29.635032+00:00",
+      "checks": 5,
       "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
@@ -286,7 +286,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:35.245120+00:00",
+        "checked_at": "2026-08-19T16:57:47.063852+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -342,8 +342,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634228+00:00",
-      "last_seen": "2026-08-19T14:35:19.760317+00:00",
-      "checks": 4,
+      "last_seen": "2026-08-19T16:57:29.635035+00:00",
+      "checks": 5,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -353,7 +353,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:34.686099+00:00",
+        "checked_at": "2026-08-19T16:57:45.761247+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -409,8 +409,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634233+00:00",
-      "last_seen": "2026-08-19T14:35:19.760321+00:00",
-      "checks": 4,
+      "last_seen": "2026-08-19T16:57:29.635039+00:00",
+      "checks": 5,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -420,7 +420,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:36.598656+00:00",
+        "checked_at": "2026-08-19T16:57:48.101221+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -476,8 +476,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634238+00:00",
-      "last_seen": "2026-08-19T14:35:19.760324+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T16:57:29.635043+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -487,7 +487,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:30.254104+00:00",
+        "checked_at": "2026-08-19T16:57:56.379572+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -526,8 +526,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634242+00:00",
-      "last_seen": "2026-08-19T14:35:19.760328+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T16:57:29.635046+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
@@ -537,7 +537,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:40.737592+00:00",
+        "checked_at": "2026-08-19T16:57:54.494735+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -576,8 +576,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634247+00:00",
-      "last_seen": "2026-08-19T14:35:19.760332+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-19T16:57:29.635050+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.immobiliare.it",
       "path_rule": "^/annunci/[0-9]+/?$",
@@ -587,7 +587,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:40.061049+00:00",
+        "checked_at": "2026-08-19T16:57:56.532697+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -604,7 +604,7 @@
         "queries": [
           {
             "q": "\"Vendita Villa unifamiliare in via Chiesali Villar Focchiardo. Posto ...\" \"Villar Focchiardo\"",
-            "error": ""
+            "error": "verifica umana / rate limit"
           }
         ]
       },
@@ -626,8 +626,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:57:23.953038+00:00",
-      "last_seen": "2026-08-19T14:35:19.760304+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-19T16:57:29.635024+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
@@ -637,7 +637,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:34.765556+00:00",
+        "checked_at": "2026-08-19T16:57:47.420137+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -693,18 +693,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-19T14:35:19.760278+00:00",
-      "last_seen": "2026-08-19T14:35:19.760281+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-19T16:57:29.635006+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T14:35:33.873806+00:00",
+        "checked_at": "2026-08-19T16:57:46.674188+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -750,6 +750,73 @@
           {
             "azione": "VAI_IN_ZONA",
             "target": "Via Conti Carron 57",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "3cb21c58d0c3d50430d6": {
+      "id": "3cb21c58d0c3d50430d6",
+      "comune": "Avigliana",
+      "fonte": "Web generale",
+      "url": "https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana",
+      "title": "Esclusiva villa di 223 mq in vendita VIA MONTE CUNEO, 6, Avigliana ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-19T16:57:29.634998+00:00",
+      "last_seen": "2026-08-19T16:57:29.635000+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-19T16:57:45.114133+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 200,
+          "error": "verifica umana / anti-bot"
+        },
+        "address_hints": [
+          "VIA MONTE CUNEO 6"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Esclusiva villa di 223 mq in vendita VIA MONTE CUNEO, 6, Avigliana ...\" \"Avigliana\"",
+            "error": ""
+          },
+          {
+            "q": "\"VIA MONTE CUNEO\" \"Avigliana\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "VIA MONTE CUNEO 6"
+        ],
+        "street": "VIA MONTE CUNEO",
+        "nearby_public_addresses": [
+          "VIA MONTE CUNEO 6"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "VIA MONTE CUNEO 6",
             "telefono": "",
             "stato": "PRONTO"
           }
@@ -4371,5 +4438,5 @@
   },
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
-  "matrix_discovery_updated_at": "2026-08-19T14:35:19.760334+00:00"
+  "matrix_discovery_updated_at": "2026-08-19T16:57:29.635052+00:00"
 }
