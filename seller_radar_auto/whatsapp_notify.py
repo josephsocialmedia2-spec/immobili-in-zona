@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import csv, json, os
+import csv, json, os, re
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -13,6 +13,12 @@ TOKEN = os.getenv("WHATSAPP_ACCESS_TOKEN", "").strip()
 PHONE_ID = os.getenv("WHATSAPP_PHONE_NUMBER_ID", "").strip()
 API_VERSION = os.getenv("WHATSAPP_API_VERSION", "").strip()
 DRY_RUN = os.getenv("WHATSAPP_DRY_RUN", "0").strip() == "1"
+
+ADDRESS_RE = re.compile(
+    r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
+    r"[A-Za-zÀ-ÿ0-9'’.\-\s,]{2,80}?[,\s]+\d{1,4}(?:/[A-Za-z0-9]+|[A-Za-z])?\b",
+    re.I,
+)
 
 def load_json(path, default):
     if not path.exists(): return default
@@ -32,9 +38,21 @@ def load_routes():
     return routes
 
 def euro(v):
-    if not v: return "prezzo non rilevato"
+    if not v: return "PREZZO DA VERIFICARE"
     try: return f"€{int(v):,}".replace(",", ".")
     except Exception: return str(v)
+
+def operational_address(x):
+    area = x.get("area_radar") or {}
+    for a in area.get("reference_addresses") or []:
+        a = re.sub(r"\s+", " ", str(a or "")).strip(" ,.;")
+        if ADDRESS_RE.search(a): return a
+    title = re.sub(r"\s+", " ", str(x.get("title") or "")).strip()
+    m = ADDRESS_RE.search(title)
+    if m: return re.sub(r"\s+", " ", m.group(0)).strip(" ,.;")
+    street = str(area.get("street") or "").strip()
+    if street: return f"{street} — CIVICO DA VERIFICARE"
+    return "INDIRIZZO DA VERIFICARE"
 
 def contact_summary(x):
     e = x.get("enrichment") or {}
@@ -47,7 +65,7 @@ def contact_summary(x):
     return "Contatto pubblico: " + " | ".join(vals)
 
 def build_message(group, rows):
-    lines = [f"F1 IMMOBILIARE — NUOVE PUBBLICAZIONI | {group}", ""]
+    lines = [f"F1 IMMOBILIARE — GIRO ACQUISIZIONE | {group}", ""]
     for r in rows:
         x = r["item"]
         hist = x.get("price_history") or []
@@ -55,17 +73,23 @@ def build_message(group, rows):
         hint = x.get("seller_hint", "NON_DETERMINATO")
         seller = "PRIVATO / NO AGENZIE" if hint == "INDIZIO_PRIVATO" else "NUOVO"
         e = x.get("enrichment") or {}
+        dove = operational_address(x)
+        cosa = (x.get("title") or "IMMOBILE DA VERIFICARE").strip()
+        azione = "VAI IN ZONA" if "DA VERIFICARE" not in dove else "APRI FONTE E VERIFICA INDIRIZZO"
         lines.extend([
             f"{x.get('comune','')} — {seller}",
-            f"{x.get('title','').strip()}",
-            f"Prezzo: {euro(price)} | Score: {x.get('score','—')}/100 | Fonte: {x.get('fonte','')}",
+            f"DOVE ANDARE: {dove}",
+            f"COSA CERCO: {cosa}",
+            f"PREZZO: {euro(price)}",
+            f"AZIONE: {azione}",
+            f"Score: {x.get('score','—')}/100 | Fonte: {x.get('fonte','')}",
             f"Cross-match stesso immobile: {int(e.get('cross_match_count') or 0)}",
             f"Inserzionista: {(e.get('seller_name') or '').strip() or 'non identificato'}",
             contact_summary(x),
             x.get("url", ""),
             "",
         ])
-    lines.append("APRIRE LA FONTE E VERIFICARE IL CONTATTO PRIMA DELL'USO COMMERCIALE.")
+    lines.append("APRI FONTE E VERIFICA CONTATTO PRIMA DELL'USO COMMERCIALE.")
     return "\n".join(lines).strip()
 
 def send_text(to, body):
