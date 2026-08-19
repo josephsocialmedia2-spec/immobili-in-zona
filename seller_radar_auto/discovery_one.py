@@ -12,7 +12,7 @@ OUT=Path(os.getenv("F1_DISCOVERY_OUT", str(ROOT/"data"/"discovery_one.json")))
 COMUNE=os.getenv("F1_COMUNE","").strip()
 TRACK={"gclid","fbclid","msclkid","ref","source"}
 PROPERTY_WORDS=("casa","appartamento","villa","villetta","trilocale","bilocale","quadrilocale","immobile","terratetto","monolocale","rustico","attico","alloggio","vendita","vendesi","house","property")
-SALE_WORDS=("vendita","vendesi","vende","in vendita","€","euro","for sale")
+SALE_WORDS=("vendita","vendesi","vende","in vendita","€","euro","eur","for sale")
 STREET_RE=re.compile(r"\b(via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\b",re.I)
 BROAD_PATHS={"","^/.*$"}
 
@@ -36,8 +36,8 @@ def portal_for_url(url,portals):
         d=(p.get("domain") or "").strip()
         if d and host_matches(h,d): return p
     return None
-def relevant(url,title,comune,portal=None):
-    t=fold(title); c=fold(comune); p=urlparse(url); street=bool(STREET_RE.search(title or ""))
+def relevant(url,text,comune,portal=None):
+    t=fold(text); c=fold(comune); p=urlparse(url); street=bool(STREET_RE.search(text or ""))
     if portal:
         path_regex=(portal.get("path_regex") or "").strip()
         if path_regex and not re.search(path_regex,p.path,re.I): return False
@@ -49,7 +49,11 @@ def relevant(url,title,comune,portal=None):
     if not any(w in t for w in SALE_WORDS): return False
     return True
 def price(text):
-    for pat in [r"€\s*([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})",r"([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})\s*€"]:
+    pats=[
+        r"(?:€|eur(?:o)?)\s*([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})",
+        r"([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})\s*(?:€|eur(?:o)?)",
+    ]
+    for pat in pats:
         m=re.search(pat,text,re.I)
         if m:
             n=int(re.sub(r"\D","",m.group(1)))
@@ -72,15 +76,15 @@ accepted=[]; statuses=[]; seen=set()
 for label,query,count,private_query in plans:
     results,error=search(query,count); n=0
     for r in results:
-        url=norm(r.get("url","")); title=clean(r.get("title","")); portal=portal_for_url(url,portals)
-        if not relevant(url,title,COMUNE,portal): continue
+        url=norm(r.get("url","")); title=clean(r.get("title","")); snippet=clean(r.get("snippet","")); evidence=f"{title} {snippet}".strip(); portal=portal_for_url(url,portals)
+        if not relevant(url,evidence,COMUNE,portal): continue
         if url in seen: continue
         seen.add(url); n+=1
         accepted.append({
             "comune":COMUNE,"fonte":(portal.get("label") or "").strip() if portal else label,
-            "url":url,"title":title[:220],"private_intent":bool(private_query or (portal and portal.get("private_intent")=="1")),
+            "url":url,"title":title[:220],"snippet":snippet[:500],"private_intent":bool(private_query or (portal and portal.get("private_intent")=="1")),
             "domain_rule":(portal.get("domain") or "") if portal else "","path_rule":(portal.get("path_regex") or "") if portal else "",
-            "seller_hint":seller_hint(title),"price":price(title),"discovery_engine":"DDG_MATRIX_V1"
+            "seller_hint":seller_hint(evidence),"price":price(evidence),"discovery_engine":"DDG_MATRIX_V1"
         })
     statuses.append({"FONTE":label,"COMUNE":COMUNE,"STATO":"OK" if not error else "ERROR","ULTIMO_CONTROLLO":now(),"RISULTATI_GREZZI":len(results),"ACCETTATI":n,"MESSAGGIO":error,"QUERY":query})
 OUT.parent.mkdir(parents=True,exist_ok=True)
