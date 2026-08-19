@@ -11,9 +11,13 @@ OUT = DATA / "giro_acquisizione.csv"
 
 ADDRESS_RE = re.compile(
     r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
-    r"[A-Za-zÀ-ÿ0-9'’.\-\s,]{2,80}?[,\s]+\d{1,4}(?:/[A-Za-z0-9]+|[A-Za-z])?\b",
+    r"[A-Za-zÀ-ÿ0-9'’.\-\s,]{2,80}?[,\s]+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|[A-Za-z])?\b",
     re.I,
 )
+PRICE_PATTERNS = [
+    re.compile(r"(?:€|eur(?:o)?)\s*([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})", re.I),
+    re.compile(r"([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})\s*(?:€|eur(?:o)?)", re.I),
+]
 
 
 def load_state():
@@ -32,23 +36,39 @@ def exact_address(x):
     refs = area.get("reference_addresses") or []
     for a in refs:
         a = clean(a)
-        if ADDRESS_RE.search(a):
-            return a
+        m = ADDRESS_RE.search(a)
+        if m:
+            return clean(m.group(0)).replace(" /", "/").replace("/ ", "/")
     title = clean(x.get("title"))
     m = ADDRESS_RE.search(title)
     if m:
-        return clean(m.group(0))
+        return clean(m.group(0)).replace(" /", "/").replace("/ ", "/")
     street = clean(area.get("street"))
     if street:
         return f"{street} — CIVICO DA VERIFICARE"
     return "INDIRIZZO DA VERIFICARE"
 
 
+def price_from_text(text):
+    text = clean(text)
+    for pat in PRICE_PATTERNS:
+        m = pat.search(text)
+        if not m:
+            continue
+        n = int(re.sub(r"\D", "", m.group(1)))
+        if 5000 <= n <= 20000000:
+            return str(n)
+    return ""
+
+
 def current_price(x, fallback=""):
     hist = x.get("price_history") or []
     if hist and hist[-1].get("price"):
         return str(hist[-1].get("price"))
-    return str(fallback or "")
+    if str(fallback or "").strip():
+        return str(fallback).strip()
+    inferred = price_from_text(f"{x.get('title','')} {x.get('snippet','')}")
+    return inferred or "PREZZO DA VERIFICARE"
 
 
 def action_for(address):
