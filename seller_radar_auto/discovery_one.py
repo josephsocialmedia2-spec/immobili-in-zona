@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Discovery isolata: un comune per job GitHub Actions."""
+"""Discovery isolata: un comune per job GitHub Actions.
+
+Esegue sia le query generiche sia le query delle fonti abilitate in
+portal_catalog.csv. Un annuncio valido non viene scartato soltanto perché
+l'indirizzo/civico non è già presente nel risultato di ricerca: il livello
+operativo successivo lo marca come DA VERIFICARE.
+"""
 import csv, html, json, os, re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -37,16 +43,18 @@ def portal_for_url(url,portals):
         if d and host_matches(h,d): return p
     return None
 def relevant(url,text,comune,portal=None):
-    t=fold(text); c=fold(comune); p=urlparse(url); street=bool(STREET_RE.search(text or ""))
+    t=fold(text); c=fold(comune); p=urlparse(url)
     if portal:
+        domain=(portal.get("domain") or "").strip()
+        if domain and not host_matches(p.netloc,domain): return False
         path_regex=(portal.get("path_regex") or "").strip()
-        if path_regex and not re.search(path_regex,p.path,re.I): return False
-        if path_regex in BROAD_PATHS and not street: return False
-    elif not street:
-        return False
+        if path_regex and path_regex not in BROAD_PATHS and not re.search(path_regex,p.path,re.I):
+            return False
     if c and c not in t and c.replace(" ","-") not in url.casefold(): return False
     if not any(w in t for w in PROPERTY_WORDS): return False
     if not any(w in t for w in SALE_WORDS): return False
+    # La via completa aumenta la qualità ma non è un requisito di ingresso.
+    # prepare_acquisition_route.py gestisce INDIRIZZO/CIVICO DA VERIFICARE.
     return True
 def price(text):
     pats=[
@@ -67,26 +75,57 @@ def seller_hint(text):
 
 if not COMUNE:
     raise SystemExit("F1_COMUNE mancante")
+
 portals=[r for r in load_csv(PORTALS) if r.get("enabled")=="1"]
+
+# Prima due query ad ampia copertura, poi tutte le fonti configurate.
 plans=[
-    ("Web generale",f'"{COMUNE}" (vendita OR "in vendita") (casa OR appartamento OR villa)',30,False),
-    ("Web privati",f'"{COMUNE}" ("privato vende" OR "no agenzie" OR "da privato" OR "da privati") (casa OR appartamento OR villa)',20,True),
+    {"label":"Mercato generale","query":f'"{COMUNE}" (vendita OR "in vendita") (casa OR appartamento OR villa)',"count":30,"private":False,"portal":None},
+    {"label":"Privati generico","query":f'"{COMUNE}" ("privato vende" OR "no agenzie" OR "da privato" OR "da privati") (casa OR appartamento OR villa)',"count":20,"private":True,"portal":None},
 ]
+for p in portals:
+    template=(p.get("query_template") or "").strip()
+    if not template: continue
+    try: count=max(1,min(30,int(p.get("max_results") or 10)))
+    except Exception: count=10
+    plans.append({
+        "label":(p.get("label") or "Fonte configurata").strip(),
+        "query":template.replace("{comune}",COMUNE),
+        "count":count,
+        "private":p.get("private_intent")=="1",
+        "portal":p,
+    })
+
 accepted=[]; statuses=[]; seen=set()
-for label,query,count,private_query in plans:
-    results,error=search(query,count); n=0
+for plan in plans:
+    results,error=search(plan["query"],plan["count"]); n=0
     for r in results:
-        url=norm(r.get("url","")); title=clean(r.get("title","")); snippet=clean(r.get("snippet","")); evidence=f"{title} {snippet}".strip(); portal=portal_for_url(url,portals)
+        url=norm(r.get("url","")); title=clean(r.get("title","")); snippet=clean(r.get("snippet","")); evidence=f"{title} {snippet}".strip()
+        detected=portal_for_url(url,portals)
+        expected=plan.get("portal")
+        # Nelle query site-specific la fonte attesa è vincolante; nelle query generiche
+        # usiamo la fonte rilevata dall'URL, quando nota.
+        portal=expected or detected
         if not relevant(url,evidence,COMUNE,portal): continue
         if url in seen: continue
         seen.add(url); n+=1
+        source=(detected or expected or {}).get("label") or plan["label"]
+        private_intent=bool(plan["private"] or ((detected or expected) and (detected or expected).get("private_intent")=="1"))
         accepted.append({
-            "comune":COMUNE,"fonte":(portal.get("label") or "").strip() if portal else label,
-            "url":url,"title":title[:220],"snippet":snippet[:500],"private_intent":bool(private_query or (portal and portal.get("private_intent")=="1")),
-            "domain_rule":(portal.get("domain") or "") if portal else "","path_rule":(portal.get("path_regex") or "") if portal else "",
-            "seller_hint":seller_hint(evidence),"price":price(evidence),"discovery_engine":"DDG_MATRIX_V1"
+            "comune":COMUNE,"fonte":source.strip(),
+            "url":url,"title":title[:220],"snippet":snippet[:700],"private_intent":private_intent,
+            "domain_rule":((detected or expected) or {}).get("domain","") or "",
+            "path_rule":((detected or expected) or {}).get("path_regex","") or "",
+            "seller_hint":seller_hint(evidence),"price":price(evidence),
+            "has_street_hint":bool(STREET_RE.search(evidence)),
+            "discovery_engine":"PUBLIC_SEARCH_MATRIX_V2"
         })
-    statuses.append({"FONTE":label,"COMUNE":COMUNE,"STATO":"OK" if not error else "ERROR","ULTIMO_CONTROLLO":now(),"RISULTATI_GREZZI":len(results),"ACCETTATI":n,"MESSAGGIO":error,"QUERY":query})
+    statuses.append({
+        "FONTE":plan["label"],"COMUNE":COMUNE,"STATO":"OK" if not error else "ERROR",
+        "ULTIMO_CONTROLLO":now(),"RISULTATI_GREZZI":len(results),"ACCETTATI":n,
+        "MESSAGGIO":error,"QUERY":plan["query"]
+    })
+
 OUT.parent.mkdir(parents=True,exist_ok=True)
 OUT.write_text(json.dumps({"comune":COMUNE,"results":accepted,"status":statuses},ensure_ascii=False,indent=2),encoding="utf-8")
-print(f"DISCOVERY {COMUNE}: {len(accepted)} accettati; " + ", ".join(f"{s['FONTE']}={s['STATO']}:{s['RISULTATI_GREZZI']}" for s in statuses))
+print(f"DISCOVERY {COMUNE}: {len(accepted)} accettati su {len(plans)} query; " + ", ".join(f"{s['FONTE']}={s['STATO']}:{s['ACCETTATI']}/{s['RISULTATI_GREZZI']}" for s in statuses))
