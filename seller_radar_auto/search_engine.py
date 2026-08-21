@@ -118,12 +118,13 @@ def search(query, count=10):
     _rate_limit()
     ddg, ddg_error=_ddg_search(query,count)
     if ddg:
-        return ddg, ddg_error
+        return ddg, ""
 
     # Fallback soltanto se DDG non produce risultati: evita doppie richieste inutili.
     _rate_limit()
     bing, bing_error=_bing_rss_search(query,count)
     if bing:
-        return bing, ddg_error
+        # Il fallback ha prodotto risultati validi: la sorgente è operativa.
+        return bing, ""
     err="; ".join(x for x in (ddg_error,bing_error) if x)
     return [], err
