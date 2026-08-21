@@ -1,0 +1,53 @@
+name: Radar Coverage QA
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  coverage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python syntax
+        run: |
+          python -m py_compile seller_radar_auto/search_engine.py seller_radar_auto/discovery_one.py seller_radar_auto/radar_postprocess.py seller_radar_auto/prepare_acquisition_route.py
+      - name: Configuration coverage
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          root=Path('seller_radar_auto')
+          with (root/'municipalities.csv').open(encoding='utf-8-sig',newline='') as f:
+              rows=list(csv.DictReader(f))
+          enabled=[r['comune'] for r in rows if r.get('enabled')=='1']
+          assert len(enabled) >= 40, len(enabled)
+          assert "Sant'Ambrogio di Torino" not in enabled
+          with (root/'portal_catalog.csv').open(encoding='utf-8-sig',newline='') as f:
+              portals=[r for r in csv.DictReader(f) if r.get('enabled')=='1' and r.get('query_template')]
+          assert len(portals) >= 19, len(portals)
+          print('Enabled territories:',len(enabled))
+          print('Configured query sources:',len(portals))
+          PY
+      - name: Real public-search smoke Avigliana
+        env:
+          F1_COMUNE: Avigliana
+          F1_DISCOVERY_OUT: /tmp/f1-discovery-qa.json
+          F1_SEARCH_INTERVAL: "1"
+        run: |
+          python seller_radar_auto/discovery_one.py
+          python - <<'PY'
+          import json
+          p='/tmp/f1-discovery-qa.json'
+          d=json.load(open(p,encoding='utf-8'))
+          statuses=d.get('status') or []
+          results=d.get('results') or []
+          assert len(statuses) >= 20, len(statuses)
+          ok=sum(1 for x in statuses if x.get('STATO')=='OK')
+          raw=sum(int(x.get('RISULTATI_GREZZI') or 0) for x in statuses)
+          accepted=sum(int(x.get('ACCETTATI') or 0) for x in statuses)
+          assert ok > 0, 'nessuna query pubblica riuscita'
+          print('QA queries:',len(statuses),'OK:',ok,'raw:',raw,'accepted:',accepted,'unique:',len(results))
+          PY
