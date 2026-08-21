@@ -70,10 +70,10 @@ jobs:
     needs: gate
     if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 7
     strategy:
       fail-fast: false
-      max-parallel: 10
+      max-parallel: 4
       matrix: ${{ fromJson(needs.gate.outputs.municipality_matrix) }}
     steps:
       - name: Checkout
@@ -83,7 +83,7 @@ jobs:
         env:
           F1_COMUNE: ${{ matrix.comune }}
           F1_DISCOVERY_OUT: seller_radar_auto/data/discovery_one.json
-          F1_SEARCH_INTERVAL: "5"
+          F1_SEARCH_INTERVAL: "3"
         run: python seller_radar_auto/discovery_one.py
 
       - name: Salva discovery ${{ matrix.comune }}
