@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
-"""Motore di ricerca pubblico condiviso F1 Seller Radar."""
+"""Motore di ricerca pubblico condiviso F1 Seller Radar.
+
+Usa DuckDuckGo HTML come motore primario e Bing RSS come fallback quando
+DuckDuckGo non restituisce risultati utilizzabili. Non effettua scraping diretto
+dei portali e non raccoglie contatti personali.
+"""
 import html, os, re, time
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -43,9 +49,7 @@ def _rate_limit():
     try: RATE_FILE.write_text(str(time.time()),encoding="utf-8")
     except Exception: pass
 
-def search(query, count=10):
-    """Restituisce (results, error). results: [{title,url,snippet}]."""
-    _rate_limit()
+def _ddg_search(query, count):
     data=urlencode({"q":query,"kl":"it-it"}).encode("utf-8")
     req=Request("https://html.duckduckgo.com/html/",data=data,headers={
         "User-Agent":UA,
@@ -61,15 +65,65 @@ def search(query, count=10):
         return [], str(e)
     if re.search(r"captcha|verify you are human|anomaly|rate limit",body,re.I):
         return [], "verifica umana / rate limit"
+
     p=_Parser(); p.feed(body)
-    results=[]; seen=set()
+    results=[]; by_url={}; current=None
     for href,text,attrs in p.links:
-        if "result__a" not in attrs.get("class",""): continue
-        url=_unwrap(href)
-        if not url.startswith(("http://","https://")): continue
-        if "duckduckgo.com/y.js" in url: continue
-        if url in seen: continue
-        seen.add(url)
-        results.append({"title":text,"url":url,"snippet":""})
-        if len(results)>=count: break
-    return results, ""
+        cls=attrs.get("class","")
+        url=_unwrap(href or "")
+        if not url.startswith(("http://","https://")) or "duckduckgo.com/y.js" in url:
+            continue
+        if "result__a" in cls:
+            if url in by_url:
+                current=by_url[url]
+                continue
+            current={"title":text,"url":url,"snippet":""}
+            by_url[url]=current; results.append(current)
+        elif "result__snippet" in cls and results:
+            target=by_url.get(url) or current
+            if target and text and not target.get("snippet"):
+                target["snippet"]=text
+    return results[:count], ""
+
+def _bing_rss_search(query, count):
+    url="https://www.bing.com/search?"+urlencode({"q":query,"format":"rss","count":str(count)})
+    req=Request(url,headers={
+        "User-Agent":UA,
+        "Accept":"application/rss+xml,application/xml,text/xml,*/*",
+        "Accept-Language":"it-IT,it;q=0.9",
+    })
+    try:
+        with urlopen(req,timeout=TIMEOUT) as r:
+            body=r.read(900_000)
+        root=ET.fromstring(body)
+    except HTTPError as e:
+        return [], f"Bing HTTP {e.code}"
+    except (URLError,TimeoutError,OSError,ET.ParseError) as e:
+        return [], f"Bing {e}"
+    out=[]; seen=set()
+    for n in root.findall(".//item"):
+        u=(n.findtext("link") or "").strip()
+        if not u.startswith(("http://","https://")) or u in seen:
+            continue
+        seen.add(u)
+        title=re.sub(r"\s+"," ",html.unescape(n.findtext("title") or "")).strip()
+        snippet=re.sub(r"<[^>]+>"," ",n.findtext("description") or "")
+        snippet=re.sub(r"\s+"," ",html.unescape(snippet)).strip()
+        out.append({"title":title,"url":u,"snippet":snippet})
+        if len(out)>=count: break
+    return out, ""
+
+def search(query, count=10):
+    """Restituisce (results, error), con risultati deduplicati e snippet."""
+    _rate_limit()
+    ddg, ddg_error=_ddg_search(query,count)
+    if ddg:
+        return ddg, ddg_error
+
+    # Fallback soltanto se DDG non produce risultati: evita doppie richieste inutili.
+    _rate_limit()
+    bing, bing_error=_bing_rss_search(query,count)
+    if bing:
+        return bing, ddg_error
+    err="; ".join(x for x in (ddg_error,bing_error) if x)
+    return [], err
