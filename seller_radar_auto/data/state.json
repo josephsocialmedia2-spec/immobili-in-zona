@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T12:20:59.602624+00:00",
+  "updated_at": "2026-08-22T17:17:15.569229+00:00",
   "items": {
     "9a8e6bc5c6aaedd0ee05": {
       "id": "9a8e6bc5c6aaedd0ee05",
@@ -12,8 +12,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634178+00:00",
-      "last_seen": "2026-08-21T12:20:59.475183+00:00",
-      "checks": 5,
+      "last_seen": "2026-08-22T17:17:15.502377+00:00",
+      "checks": 6,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -23,7 +23,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:21.125535+00:00",
+        "checked_at": "2026-08-22T17:17:37.821196+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -208,8 +208,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634216+00:00",
-      "last_seen": "2026-08-21T12:20:59.475884+00:00",
-      "checks": 4,
+      "last_seen": "2026-08-22T17:17:15.502827+00:00",
+      "checks": 5,
       "lifecycle": "TRACKED",
       "domain_rule": "www.immobiliare.it",
       "path_rule": "^/annunci/[0-9]+/?$",
@@ -275,8 +275,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634223+00:00",
-      "last_seen": "2026-08-21T12:20:59.475930+00:00",
-      "checks": 6,
+      "last_seen": "2026-08-22T17:17:15.502919+00:00",
+      "checks": 7,
       "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
@@ -342,8 +342,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634228+00:00",
-      "last_seen": "2026-08-21T12:20:59.475934+00:00",
-      "checks": 6,
+      "last_seen": "2026-08-22T17:17:15.502916+00:00",
+      "checks": 7,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -409,8 +409,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-17T16:30:23.634233+00:00",
-      "last_seen": "2026-08-21T12:20:59.475972+00:00",
-      "checks": 6,
+      "last_seen": "2026-08-22T17:17:15.502952+00:00",
+      "checks": 7,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -693,8 +693,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-19T14:35:19.760278+00:00",
-      "last_seen": "2026-08-21T12:20:59.475341+00:00",
-      "checks": 3,
+      "last_seen": "2026-08-22T17:17:15.502480+00:00",
+      "checks": 4,
       "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
@@ -704,7 +704,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:48.579963+00:00",
+        "checked_at": "2026-08-22T17:18:00.873292+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -738,19 +738,12 @@
         "street": "Via Conti Carron",
         "nearby_public_addresses": [
           "Via Conti Carron 4",
-          "via Conti Carron 30",
           "Via Conti Carron 57"
         ],
         "actions": [
           {
             "azione": "VAI_IN_ZONA",
             "target": "Via Conti Carron 4",
-            "telefono": "",
-            "stato": "PRONTO"
-          },
-          {
-            "azione": "VAI_IN_ZONA",
-            "target": "via Conti Carron 30",
             "telefono": "",
             "stato": "PRONTO"
           },
@@ -774,8 +767,8 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-19T16:57:29.634998+00:00",
-      "last_seen": "2026-08-21T12:20:59.475270+00:00",
-      "checks": 2,
+      "last_seen": "2026-08-22T17:17:15.502422+00:00",
+      "checks": 3,
       "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
@@ -785,7 +778,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:31.971846+00:00",
+        "checked_at": "2026-08-22T17:17:33.661703+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -846,19 +839,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475157+00:00",
-      "last_seen": "2026-08-21T12:20:59.475171+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502385+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:11.654193+00:00",
+        "checked_at": "2026-08-22T17:17:28.207151+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -897,19 +889,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475192+00:00",
-      "last_seen": "2026-08-21T12:20:59.475194+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502352+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:10.733791+00:00",
+        "checked_at": "2026-08-22T17:17:25.519305+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -948,18 +939,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475199+00:00",
-      "last_seen": "2026-08-21T12:20:59.475201+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502392+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:12.675370+00:00",
+        "checked_at": "2026-08-22T17:17:25.308847+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1456,19 +1447,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475246+00:00",
-      "last_seen": "2026-08-21T12:20:59.475248+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502409+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:28.266395+00:00",
+        "checked_at": "2026-08-22T17:17:32.590052+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -1545,18 +1535,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475251+00:00",
-      "last_seen": "2026-08-21T12:20:59.475253+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502405+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:27.776217+00:00",
+        "checked_at": "2026-08-22T17:17:30.452907+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1600,19 +1590,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475257+00:00",
-      "last_seen": "2026-08-21T12:20:59.475258+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502417+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:23.935376+00:00",
+        "checked_at": "2026-08-22T17:17:28.209005+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1651,19 +1640,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475265+00:00",
-      "last_seen": "2026-08-21T12:20:59.475267+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502413+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.tecnorete.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:32.791369+00:00",
+        "checked_at": "2026-08-22T17:17:34.998952+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -1713,8 +1701,7 @@
           "Corso Laghi 208",
           "Corso Laghi 3",
           "corso Laghi 238",
-          "corso Laghi 165",
-          "Corso Laghi 27"
+          "corso Laghi 165"
         ],
         "actions": [
           {
@@ -1740,12 +1727,6 @@
             "target": "corso Laghi 165",
             "telefono": "",
             "stato": "PRONTO"
-          },
-          {
-            "azione": "VAI_IN_ZONA",
-            "target": "Corso Laghi 27",
-            "telefono": "",
-            "stato": "PRONTO"
           }
         ]
       }
@@ -1761,19 +1742,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475278+00:00",
-      "last_seen": "2026-08-21T12:20:59.475280+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502426+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:35.521143+00:00",
+        "checked_at": "2026-08-22T17:17:46.350477+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -1890,19 +1870,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475291+00:00",
-      "last_seen": "2026-08-21T12:20:59.475292+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502443+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "*.bakeca.it",
       "path_rule": "^/annunci/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:26.170531+00:00",
+        "checked_at": "2026-08-22T17:17:39.615648+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -1941,19 +1920,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475298+00:00",
-      "last_seen": "2026-08-21T12:20:59.475300+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502447+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:36.250517+00:00",
+        "checked_at": "2026-08-22T17:17:45.129573+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1992,19 +1970,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475304+00:00",
-      "last_seen": "2026-08-21T12:20:59.475305+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502451+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.tecnorete.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:41.771763+00:00",
+        "checked_at": "2026-08-22T17:17:53.186466+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -2068,18 +2045,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475309+00:00",
-      "last_seen": "2026-08-21T12:20:59.475311+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502455+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:36.940993+00:00",
+        "checked_at": "2026-08-22T17:17:46.337736+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2118,18 +2095,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475314+00:00",
-      "last_seen": "2026-08-21T12:20:59.475316+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502459+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:40.641800+00:00",
+        "checked_at": "2026-08-22T17:17:50.351787+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2235,19 +2212,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475325+00:00",
-      "last_seen": "2026-08-21T12:20:59.475326+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502468+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:41.227162+00:00",
+        "checked_at": "2026-08-22T17:17:50.254753+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -2280,24 +2256,24 @@
       "comune": "Bussoleno",
       "fonte": "Nestoria",
       "url": "https://www.nestoria.it/immobiliare/vendita/bussoleno",
-      "title": "3.497 immobili in vendita a Bussoleno - Nestoria",
+      "title": "3.508 immobili in vendita a Bussoleno - Nestoria",
       "snippet": "",
       "price_history": [],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475330+00:00",
-      "last_seen": "2026-08-21T12:20:59.475332+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502472+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:46.395300+00:00",
+        "checked_at": "2026-08-22T17:17:55.755141+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2313,7 +2289,7 @@
         "contact_ready_count": 0,
         "queries": [
           {
-            "q": "\"3.497 immobili in vendita a Bussoleno - Nestoria\" \"Bussoleno\"",
+            "q": "\"3.508 immobili in vendita a Bussoleno - Nestoria\" \"Bussoleno\"",
             "error": ""
           }
         ]
@@ -2336,19 +2312,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475335+00:00",
-      "last_seen": "2026-08-21T12:20:59.475337+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502476+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:43.221607+00:00",
+        "checked_at": "2026-08-22T17:17:52.809315+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -2392,19 +2367,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475347+00:00",
-      "last_seen": "2026-08-21T12:20:59.475349+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502488+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:45.655838+00:00",
+        "checked_at": "2026-08-22T17:17:56.630213+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2443,19 +2417,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475356+00:00",
-      "last_seen": "2026-08-21T12:20:59.475357+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502484+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:47.101081+00:00",
+        "checked_at": "2026-08-22T17:17:58.265976+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -2494,18 +2467,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475363+00:00",
-      "last_seen": "2026-08-21T12:20:59.475365+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502497+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:53.748384+00:00",
+        "checked_at": "2026-08-22T17:18:03.888143+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2544,18 +2517,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475368+00:00",
-      "last_seen": "2026-08-21T12:20:59.475370+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502501+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:48.653898+00:00",
+        "checked_at": "2026-08-22T17:18:00.257140+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2700,19 +2673,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475387+00:00",
-      "last_seen": "2026-08-21T12:20:59.475388+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502504+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:55.882366+00:00",
+        "checked_at": "2026-08-22T17:17:59.138751+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -2751,19 +2723,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475393+00:00",
-      "last_seen": "2026-08-21T12:20:59.475394+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502508+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:03.064033+00:00",
+        "checked_at": "2026-08-22T17:18:07.923634+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -2825,18 +2796,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475398+00:00",
-      "last_seen": "2026-08-21T12:20:59.475399+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502512+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.immobiliare.it",
       "path_rule": "^/annunci/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:57.925531+00:00",
+        "checked_at": "2026-08-22T17:18:01.601619+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2875,18 +2846,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475403+00:00",
-      "last_seen": "2026-08-21T12:20:59.475404+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502531+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:58.029865+00:00",
+        "checked_at": "2026-08-22T17:18:07.652107+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2925,19 +2896,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475408+00:00",
-      "last_seen": "2026-08-21T12:20:59.475412+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502535+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:57.390009+00:00",
+        "checked_at": "2026-08-22T17:18:07.830178+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -2976,18 +2946,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475416+00:00",
-      "last_seen": "2026-08-21T12:20:59.475417+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502538+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:58.716357+00:00",
+        "checked_at": "2026-08-22T17:18:10.639512+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -3026,19 +2996,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475423+00:00",
-      "last_seen": "2026-08-21T12:20:59.475425+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502542+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:56.851375+00:00",
+        "checked_at": "2026-08-22T17:18:10.742428+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -3077,18 +3046,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475428+00:00",
-      "last_seen": "2026-08-21T12:20:59.475430+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502552+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:01.332673+00:00",
+        "checked_at": "2026-08-22T17:18:11.516488+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -3127,18 +3096,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475434+00:00",
-      "last_seen": "2026-08-21T12:20:59.475435+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502556+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:05.204609+00:00",
+        "checked_at": "2026-08-22T17:18:13.554885+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -3233,19 +3202,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475446+00:00",
-      "last_seen": "2026-08-21T12:20:59.475448+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502560+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:05.978654+00:00",
+        "checked_at": "2026-08-22T17:18:12.262372+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -3334,18 +3302,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475457+00:00",
-      "last_seen": "2026-08-21T12:20:59.475458+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502564+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:09.158453+00:00",
+        "checked_at": "2026-08-22T17:18:15.882513+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -3384,20 +3352,19 @@
       "seller_hint": "INDIZIO_PRIVATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475462+00:00",
-      "last_seen": "2026-08-21T12:20:59.475463+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502567+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovacasa.it",
       "path_rule": "^/annunci/[^/?#]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 70,
+      "score": 55,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati",
         "indizio privato/no agenzie"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:09.588044+00:00",
+        "checked_at": "2026-08-22T17:18:16.229040+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -3436,18 +3403,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475467+00:00",
-      "last_seen": "2026-08-21T12:20:59.475468+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502577+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:26.428292+00:00",
+        "checked_at": "2026-08-22T17:18:31.770109+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -3455,10 +3422,10 @@
           "error": ""
         },
         "address_hints": [
-          "via giorcelli 6",
-          "via Freinetto 50",
-          "via frainetto gio 4",
           "via delle fabbriche 36",
+          "via Freinetto 50",
+          "via giorcelli 6",
+          "via frainetto gio 4",
           "via Giacomo Matteotti 14"
         ],
         "seller_name": "Fondocasa TORINO FILADELFIA STADIO OLIMPICO",
@@ -3473,27 +3440,27 @@
             "error": ""
           },
           {
-            "q": "\"via giorcelli\" \"Coazze\" (vendita OR casa OR appartamento OR immobile)",
+            "q": "\"via delle fabbriche\" \"Coazze\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
         ]
       },
       "area_radar": {
         "reference_addresses": [
-          "via giorcelli 6",
-          "via Freinetto 50",
-          "via frainetto gio 4",
           "via delle fabbriche 36",
+          "via Freinetto 50",
+          "via giorcelli 6",
+          "via frainetto gio 4",
           "via Giacomo Matteotti 14"
         ],
-        "street": "via giorcelli",
+        "street": "via delle fabbriche",
         "nearby_public_addresses": [
-          "via giorcelli 6"
+          "via delle fabbriche 36"
         ],
         "actions": [
           {
             "azione": "VAI_IN_ZONA",
-            "target": "via giorcelli 6",
+            "target": "via delle fabbriche 36",
             "telefono": "",
             "stato": "PRONTO"
           }
@@ -3567,19 +3534,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475481+00:00",
-      "last_seen": "2026-08-21T12:20:59.475483+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502580+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:13.858021+00:00",
+        "checked_at": "2026-08-22T17:18:19.387874+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -3674,18 +3640,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475494+00:00",
-      "last_seen": "2026-08-21T12:20:59.475495+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502591+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:13.548778+00:00",
+        "checked_at": "2026-08-22T17:18:20.063902+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -3913,19 +3879,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475516+00:00",
-      "last_seen": "2026-08-21T12:20:59.475518+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502602+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:21.859695+00:00",
+        "checked_at": "2026-08-22T17:18:24.895949+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -3964,19 +3929,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475523+00:00",
-      "last_seen": "2026-08-21T12:20:59.475525+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502607+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:30.797880+00:00",
+        "checked_at": "2026-08-22T17:18:32.211022+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4082,19 +4046,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475534+00:00",
-      "last_seen": "2026-08-21T12:20:59.475536+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502616+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:20.684979+00:00",
+        "checked_at": "2026-08-22T17:18:24.202309+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -4133,19 +4096,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475542+00:00",
-      "last_seen": "2026-08-21T12:20:59.475543+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502620+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:23.271302+00:00",
+        "checked_at": "2026-08-22T17:18:31.341679+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4184,19 +4146,18 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475547+00:00",
-      "last_seen": "2026-08-21T12:20:59.475551+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502636+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:34.351542+00:00",
+        "checked_at": "2026-08-22T17:18:37.486529+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -4258,18 +4219,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475554+00:00",
-      "last_seen": "2026-08-21T12:20:59.475556+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502640+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:24.634190+00:00",
+        "checked_at": "2026-08-22T17:18:32.752469+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4308,18 +4269,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475559+00:00",
-      "last_seen": "2026-08-21T12:20:59.475561+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502648+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:39.734516+00:00",
+        "checked_at": "2026-08-22T17:18:43.498911+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": true,
@@ -4385,18 +4346,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475564+00:00",
-      "last_seen": "2026-08-21T12:20:59.475566+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502644+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:29.637919+00:00",
+        "checked_at": "2026-08-22T17:18:33.757087+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4435,19 +4396,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475569+00:00",
-      "last_seen": "2026-08-21T12:20:59.475571+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502652+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:29.743839+00:00",
+        "checked_at": "2026-08-22T17:18:41.068226+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -4670,19 +4630,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475590+00:00",
-      "last_seen": "2026-08-21T12:20:59.475592+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502656+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:38.137522+00:00",
+        "checked_at": "2026-08-22T17:18:41.814669+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -4721,19 +4680,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475598+00:00",
-      "last_seen": "2026-08-21T12:20:59.475599+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502660+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovacasa.it",
       "path_rule": "^/annunci/[^/?#]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:43.202036+00:00",
+        "checked_at": "2026-08-22T17:18:46.929596+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -4789,18 +4747,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475603+00:00",
-      "last_seen": "2026-08-21T12:20:59.475604+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502664+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:42.379298+00:00",
+        "checked_at": "2026-08-22T17:18:44.596983+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4839,18 +4797,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475608+00:00",
-      "last_seen": "2026-08-21T12:20:59.475610+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502668+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.idealista.it",
       "path_rule": "^/immobile/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:42.887365+00:00",
+        "checked_at": "2026-08-22T17:18:47.729849+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4889,19 +4847,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475614+00:00",
-      "last_seen": "2026-08-21T12:20:59.475615+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502671+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:41.410795+00:00",
+        "checked_at": "2026-08-22T17:18:45.069442+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -4940,18 +4897,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475619+00:00",
-      "last_seen": "2026-08-21T12:20:59.475620+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502675+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:41.786802+00:00",
+        "checked_at": "2026-08-22T17:18:45.486921+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4990,19 +4947,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475624+00:00",
-      "last_seen": "2026-08-21T12:20:59.475626+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502679+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:45.730221+00:00",
+        "checked_at": "2026-08-22T17:18:45.155994+00:00",
         "private_candidate": true,
         "listing_fetch": {
           "ok": false,
@@ -5041,18 +4997,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475632+00:00",
-      "last_seen": "2026-08-21T12:20:59.475633+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502688+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:55.258436+00:00",
+        "checked_at": "2026-08-22T17:19:00.162814+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -5085,12 +5041,19 @@
         ],
         "street": "Frazione San Giuseppe",
         "nearby_public_addresses": [
-          "Frazione San Giuseppe 21"
+          "Frazione San Giuseppe 21",
+          "frazione San Giuseppe 21/d"
         ],
         "actions": [
           {
             "azione": "VAI_IN_ZONA",
             "target": "Frazione San Giuseppe 21",
+            "telefono": "",
+            "stato": "PRONTO"
+          },
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "frazione San Giuseppe 21/d",
             "telefono": "",
             "stato": "PRONTO"
           }
@@ -5170,19 +5133,18 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475648+00:00",
-      "last_seen": "2026-08-21T12:20:59.475649+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502692+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:22:51.913310+00:00",
+        "checked_at": "2026-08-22T17:18:51.806871+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -5272,17 +5234,75 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475663+00:00",
-      "last_seen": "2026-08-21T12:20:59.475664+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502696+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:59.093721+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": true,
+          "status": 200,
+          "error": ""
+        },
+        "address_hints": [
+          "vicolo Bouchard 6",
+          "Via Bardonecchia 20",
+          "Via XXV Aprile 110",
+          "via roma 33",
+          "Corso Frejus 61",
+          "frazione San Marco 19",
+          "corso Torino 148",
+          "Via XXV Aprile 119"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Immobili in vendita a Oulx | Gabetti\" \"Oulx\"",
+            "error": ""
+          },
+          {
+            "q": "\"vicolo Bouchard\" \"Oulx\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "vicolo Bouchard 6",
+          "Via Bardonecchia 20",
+          "Via XXV Aprile 110",
+          "via roma 33",
+          "Corso Frejus 61",
+          "frazione San Marco 19",
+          "corso Torino 148",
+          "Via XXV Aprile 119"
+        ],
+        "street": "vicolo Bouchard",
+        "nearby_public_addresses": [
+          "vicolo Bouchard 6"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "vicolo Bouchard 6",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
     },
     "8907623c4941afd120ec": {
       "id": "8907623c4941afd120ec",
@@ -5613,16 +5633,44 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475770+00:00",
-      "last_seen": "2026-08-21T12:20:59.475771+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502713+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
-      ]
+        "monitoraggio base"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:53.307853+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Case e appartamenti a Reano. Immobili in vendita a Reano - Nestoria\" \"Reano\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
     },
     "f073bf97e2a0894b0f8a": {
       "id": "f073bf97e2a0894b0f8a",
@@ -5635,17 +5683,44 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475775+00:00",
-      "last_seen": "2026-08-21T12:20:59.475777+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502725+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:54.168110+00:00",
+        "private_candidate": true,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Case in vendita Reano - Immobili - Subito.it\" \"Reano\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
     },
     "180fd3b192de1a3ccffe": {
       "id": "180fd3b192de1a3ccffe",
@@ -5658,17 +5733,44 @@
       "seller_hint": "INDIZIO_AGENZIA",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475780+00:00",
-      "last_seen": "2026-08-21T12:20:59.475782+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502729+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 18,
+      "score": 3,
       "score_reasons": [
-        "nuova rilevazione",
         "indizio agenzia"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:54.547987+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"61 Rustici in vendita a Reano - Mitula Case\" \"Reano\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
     },
     "75bea38c2e641daa5e3e": {
       "id": "75bea38c2e641daa5e3e",
@@ -5686,17 +5788,44 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475785+00:00",
-      "last_seen": "2026-08-21T12:20:59.475787+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502750+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:19:03.008778+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"57 immobili villa collina in vendita a Rivoli - Trovit\" \"Rivoli\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
     },
     "033e4c5815c3ce197d27": {
       "id": "033e4c5815c3ce197d27",
@@ -5732,16 +5861,44 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475801+00:00",
-      "last_seen": "2026-08-21T12:20:59.475803+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502741+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
-      ]
+        "monitoraggio base"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:57.827728+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Case e appartamenti a Rivoli Torino. Immobili in vendita a Rivoli ...\" \"Rivoli\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
     },
     "bd05e95bca9a1c8fdb5d": {
       "id": "bd05e95bca9a1c8fdb5d",
@@ -5759,15 +5916,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475811+00:00",
-      "last_seen": "2026-08-21T12:20:59.475813+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502760+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "*.bakeca.it",
       "path_rule": "^/annunci/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 47,
+      "score": 32,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati",
         "prezzo rilevato"
       ]
@@ -5788,15 +5944,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475820+00:00",
-      "last_seen": "2026-08-21T12:20:59.475821+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502769+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ]
     },
@@ -5811,15 +5966,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475827+00:00",
-      "last_seen": "2026-08-21T12:20:59.475829+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502773+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -5856,15 +6010,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475838+00:00",
-      "last_seen": "2026-08-21T12:20:59.475840+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502782+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "78a40ead67d790da4b21": {
@@ -5878,15 +6032,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475844+00:00",
-      "last_seen": "2026-08-21T12:20:59.475845+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502794+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -5906,15 +6059,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475849+00:00",
-      "last_seen": "2026-08-21T12:20:59.475851+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502803+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ]
     },
@@ -5929,15 +6081,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475857+00:00",
-      "last_seen": "2026-08-21T12:20:59.475859+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502807+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -5975,15 +6126,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475872+00:00",
-      "last_seen": "2026-08-21T12:20:59.475874+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502811+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "3444bb3f22989d4a87cb": {
@@ -5991,7 +6142,7 @@
       "comune": "Sant'Antonino di Susa",
       "fonte": "Trovit",
       "url": "https://case.trovit.it/sant-antonino-susa",
-      "title": "42 immobili in vendita a Sant'Antonino di Susa - Trovit",
+      "title": "41 immobili in vendita a Sant'Antonino di Susa - Trovit",
       "snippet": "",
       "price_history": [
         {
@@ -6002,15 +6153,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475878+00:00",
-      "last_seen": "2026-08-21T12:20:59.475879+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502814+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ]
     },
@@ -6025,15 +6175,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475889+00:00",
-      "last_seen": "2026-08-21T12:20:59.475891+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502818+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "9d980b4eaccd23c79a1b": {
@@ -6052,15 +6202,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475894+00:00",
-      "last_seen": "2026-08-21T12:20:59.475896+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502830+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ]
     },
@@ -6119,15 +6268,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475912+00:00",
-      "last_seen": "2026-08-21T12:20:59.475914+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502858+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "09a6daabc96537c3d798": {
@@ -6141,15 +6290,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475920+00:00",
-      "last_seen": "2026-08-21T12:20:59.475921+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502853+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "021b9fd9d5d81cfe9731": {
@@ -6186,15 +6335,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475939+00:00",
-      "last_seen": "2026-08-21T12:20:59.475941+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502928+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -6231,15 +6379,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475953+00:00",
-      "last_seen": "2026-08-21T12:20:59.475954+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502932+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "fc85710dfca4473b9da7": {
@@ -6253,15 +6401,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475958+00:00",
-      "last_seen": "2026-08-21T12:20:59.475959+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502940+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -6276,15 +6423,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475963+00:00",
-      "last_seen": "2026-08-21T12:20:59.475964+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502949+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.casa.it",
       "path_rule": "^/immobili/[0-9]+/?$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "e54fb59cd15056e1c29f": {
@@ -6298,15 +6445,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475968+00:00",
-      "last_seen": "2026-08-21T12:20:59.475969+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502956+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -6321,15 +6467,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475977+00:00",
-      "last_seen": "2026-08-21T12:20:59.475979+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502960+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.nestoria.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "2066b977f1eb3a9601a7": {
@@ -6343,15 +6489,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475982+00:00",
-      "last_seen": "2026-08-21T12:20:59.475984+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502963+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "829d769851b3f5f63e15": {
@@ -6365,15 +6511,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.475988+00:00",
-      "last_seen": "2026-08-21T12:20:59.475989+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502967+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -6388,15 +6533,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475993+00:00",
-      "last_seen": "2026-08-21T12:20:59.475994+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502970+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "aa2a7977de1fbef1ad7d": {
@@ -6410,15 +6555,15 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475998+00:00",
-      "last_seen": "2026-08-21T12:20:59.475999+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502974+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "",
       "path_rule": "",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 30,
+      "score": 15,
       "score_reasons": [
-        "nuova rilevazione"
+        "monitoraggio base"
       ]
     },
     "551bcebb029a786437d0": {
@@ -6437,15 +6582,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.476005+00:00",
-      "last_seen": "2026-08-21T12:20:59.476007+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502977+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.wikicasa.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ]
     },
@@ -6465,15 +6609,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.476013+00:00",
-      "last_seen": "2026-08-21T12:20:59.476014+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502985+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.trovit.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 35,
+      "score": 20,
       "score_reasons": [
-        "nuova rilevazione",
         "prezzo rilevato"
       ]
     },
@@ -6488,15 +6631,14 @@
       "seller_hint": "NON_DETERMINATO",
       "private_intent": true,
       "first_seen": "2026-08-21T12:20:59.476020+00:00",
-      "last_seen": "2026-08-21T12:20:59.476023+00:00",
-      "checks": 1,
-      "lifecycle": "NEW",
+      "last_seen": "2026-08-22T17:17:15.502981+00:00",
+      "checks": 2,
+      "lifecycle": "TRACKED",
       "domain_rule": "www.subito.it",
       "path_rule": "^/.*$",
       "discovery_engine": "DDG_MATRIX_V1",
-      "score": 42,
+      "score": 27,
       "score_reasons": [
-        "nuova rilevazione",
         "fonte/query orientata ai privati"
       ]
     },
@@ -6512,6 +6654,1584 @@
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.476028+00:00",
       "last_seen": "2026-08-21T12:20:59.476029+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "1da3198f8f2f5ee6137c": {
+      "id": "1da3198f8f2f5ee6137c",
+      "comune": "Almese",
+      "fonte": "Tecnorete",
+      "url": "https://almese1.tecnorete.it/immobili-in-vendita",
+      "title": "Immobili in Vendita | Agenzia Tecnorete di Almese",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "INDIZIO_AGENZIA",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502399+00:00",
+      "last_seen": "2026-08-22T17:17:15.502400+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.tecnorete.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 18,
+      "score_reasons": [
+        "nuova rilevazione",
+        "indizio agenzia"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:17:39.693435+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": true,
+          "status": 200,
+          "error": ""
+        },
+        "address_hints": [
+          "Via IV Novembre 4",
+          "Borgata Carello inferiore - Mompellato 4",
+          "Borgata Giorda superiore 4",
+          "Via Celle - Bert 5",
+          "Borgata Balma 3",
+          "Borgata Gabaira 3",
+          "Via roma 2",
+          "Via sonetto 3"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Immobili in Vendita | Agenzia Tecnorete di Almese\" \"Almese\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via IV Novembre\" \"Almese\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via IV Novembre 4",
+          "Borgata Carello inferiore - Mompellato 4",
+          "Borgata Giorda superiore 4",
+          "Via Celle - Bert 5",
+          "Borgata Balma 3",
+          "Borgata Gabaira 3",
+          "Via roma 2",
+          "Via sonetto 3"
+        ],
+        "street": "Via IV Novembre",
+        "nearby_public_addresses": [
+          "Via IV Novembre 4"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via IV Novembre 4",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "e28163f4853d4f9313e1": {
+      "id": "e28163f4853d4f9313e1",
+      "comune": "Bardonecchia",
+      "fonte": "Nestoria",
+      "url": "https://www.nestoria.it/immobiliare/vendita/bardonecchia",
+      "title": "Case e appartamenti a Bardonecchia. Immobili in vendita a ... - Nestoria",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502432+00:00",
+      "last_seen": "2026-08-22T17:17:15.502433+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.nestoria.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:17:40.178499+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Case e appartamenti a Bardonecchia. Immobili in vendita a ... - Nestoria\" \"Bardonecchia\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "072b1c2eb7b838a219e4": {
+      "id": "072b1c2eb7b838a219e4",
+      "comune": "Bardonecchia",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/36094722/",
+      "title": "Quadrilocale in vendita in Via Pollicino, 10, Bardonecchia — idealista ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502438+00:00",
+      "last_seen": "2026-08-22T17:17:15.502439+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:17:46.551155+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Pollicino 10"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Quadrilocale in vendita in Via Pollicino, 10, Bardonecchia — idealista ...\" \"Bardonecchia\"",
+            "error": ""
+          },
+          {
+            "q": "\"Via Pollicino\" \"Bardonecchia\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Pollicino 10"
+        ],
+        "street": "Via Pollicino",
+        "nearby_public_addresses": [
+          "Via Pollicino 10"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Pollicino 10",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "fb8e03d8101b8a9cea31": {
+      "id": "fb8e03d8101b8a9cea31",
+      "comune": "Bruzolo",
+      "fonte": "Wikicasa",
+      "url": "https://www.wikicasa.it/annuncio/30661366",
+      "title": "Casa indipendente in vendita, Bruzolo, Ristrutturato con box, 190 mq ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502464+00:00",
+      "last_seen": "2026-08-22T17:17:15.502465+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.wikicasa.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:17:50.401724+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Casa indipendente in vendita, Bruzolo, Ristrutturato con box, 190 mq ...\" \"Bruzolo\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "8adf11bd6d953dc9431c": {
+      "id": "8adf11bd6d953dc9431c",
+      "comune": "Buttigliera Alta",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/131629064/",
+      "title": "Vendita Villa unifamiliare in via Allende 13 Buttigliera Alta. Buono ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502493+00:00",
+      "last_seen": "2026-08-22T17:17:15.502494+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:00.007215+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Allende 13"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Vendita Villa unifamiliare in via Allende 13 Buttigliera Alta. Buono ...\" \"Buttigliera Alta\"",
+            "error": ""
+          },
+          {
+            "q": "\"via Allende\" \"Buttigliera Alta\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Allende 13"
+        ],
+        "street": "via Allende",
+        "nearby_public_addresses": [
+          "via Allende 13"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "via Allende 13",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "6bc10338cc7790c5c3c5": {
+      "id": "6bc10338cc7790c5c3c5",
+      "comune": "Caselette",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/130528404/",
+      "title": "Vendita Villa a schiera in via San Giovanni Bosco Caselette. Buono ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "INDIZIO_AGENZIA",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502516+00:00",
+      "last_seen": "2026-08-22T17:17:15.502518+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 18,
+      "score_reasons": [
+        "nuova rilevazione",
+        "indizio agenzia"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:05.729031+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Vendita Villa a schiera in via San Giovanni Bosco Caselette. Buono ...\" \"Caselette\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "76e1b14153cf314d0f57": {
+      "id": "76e1b14153cf314d0f57",
+      "comune": "Caselette",
+      "fonte": "Tempocasa",
+      "url": "https://tempocasa.it/it/vendita/torino/caselette/quadrilocale/6578215",
+      "title": "Quadrilocale in Vendita a Caselette | Euro 258.000 | Mq 200",
+      "snippet": "",
+      "price_history": [
+        {
+          "at": "2026-08-22T17:17:15.502527+00:00",
+          "price": 258000
+        }
+      ],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502523+00:00",
+      "last_seen": "2026-08-22T17:17:15.502525+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "tempocasa.it",
+      "path_rule": "^/it/vendita/.*/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione",
+        "prezzo rilevato"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:05.319610+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 200,
+          "error": "verifica umana / anti-bot"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Quadrilocale in Vendita a Caselette | Euro 258.000 | Mq 200\" \"Caselette\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "40542bd5412bf2e16b41": {
+      "id": "40542bd5412bf2e16b41",
+      "comune": "Chianocco",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/36203356/",
+      "title": "Villetta bifamiliare in vendita a Chianocco - idealista",
+      "snippet": "",
+      "price_history": [
+        {
+          "at": "2026-08-22T17:17:15.502549+00:00",
+          "price": 53000
+        }
+      ],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502546+00:00",
+      "last_seen": "2026-08-22T17:17:15.502547+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione",
+        "prezzo rilevato"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:13.129953+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villetta bifamiliare in vendita a Chianocco - idealista\" \"Chianocco\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "8a27392532f5e00f6e2d": {
+      "id": "8a27392532f5e00f6e2d",
+      "comune": "Chiusa di San Michele",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/127844320/",
+      "title": "Vendita Terratetto plurifamiliare in vicolo G. Pietro Riva 13 Chiusa di ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502572+00:00",
+      "last_seen": "2026-08-22T17:17:15.502573+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:21.738645+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "vicolo G. Pietro Riva 13"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Vendita Terratetto plurifamiliare in vicolo G. Pietro Riva 13 Chiusa di ...\" \"Chiusa di San Michele\"",
+            "error": ""
+          },
+          {
+            "q": "\"vicolo G. Pietro Riva\" \"Chiusa di San Michele\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "vicolo G. Pietro Riva 13"
+        ],
+        "street": "vicolo G. Pietro Riva",
+        "nearby_public_addresses": [
+          "vicolo G. Pietro Riva 13"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "vicolo G. Pietro Riva 13",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "369c8faa870279f34cf4": {
+      "id": "369c8faa870279f34cf4",
+      "comune": "Coazze",
+      "fonte": "Trovit",
+      "url": "https://case.trovit.it/casa-coazze",
+      "title": "110 casas in vendita a Coazze - Trovit",
+      "snippet": "",
+      "price_history": [
+        {
+          "at": "2026-08-22T17:17:15.502588+00:00",
+          "price": 20000
+        }
+      ],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502584+00:00",
+      "last_seen": "2026-08-22T17:17:15.502586+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.trovit.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione",
+        "prezzo rilevato"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:22.401315+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"110 casas in vendita a Coazze - Trovit\" \"Coazze\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "7cda5f3339f0283e1b6b": {
+      "id": "7cda5f3339f0283e1b6b",
+      "comune": "Collegno",
+      "fonte": "Trovit",
+      "url": "https://case.trovit.it/leumann",
+      "title": "63 immobili in vendita a Leumann, Collegno - Trovit",
+      "snippet": "",
+      "price_history": [
+        {
+          "at": "2026-08-22T17:17:15.502599+00:00",
+          "price": 95000
+        }
+      ],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502596+00:00",
+      "last_seen": "2026-08-22T17:17:15.502597+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.trovit.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione",
+        "prezzo rilevato"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:20.594759+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"63 immobili in vendita a Leumann, Collegno - Trovit\" \"Collegno\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "46a26260a54e88462f74": {
+      "id": "46a26260a54e88462f74",
+      "comune": "Condove",
+      "fonte": "Mercato generale",
+      "url": "https://www.fcimmobiliare.it/i-672094-vendita-casa-singola-condove/",
+      "title": "Casa singola in vendita a Condove Cod. BELLAFUGERA",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502611+00:00",
+      "last_seen": "2026-08-22T17:17:15.502613+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:26.409755+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 200,
+          "error": "verifica umana / anti-bot"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Casa singola in vendita a Condove Cod. BELLAFUGERA\" \"Condove\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "a1de59aa4dc36eee7c23": {
+      "id": "a1de59aa4dc36eee7c23",
+      "comune": "Giaveno",
+      "fonte": "Trovit",
+      "url": "https://case.trovit.it/giaveno",
+      "title": "581 immobili in vendita a Giaveno - Trovit",
+      "snippet": "",
+      "price_history": [
+        {
+          "at": "2026-08-22T17:17:15.502628+00:00",
+          "price": 20000
+        }
+      ],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502625+00:00",
+      "last_seen": "2026-08-22T17:17:15.502626+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.trovit.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione",
+        "prezzo rilevato"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:34.609395+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP Error 401: Unauthorized"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"581 immobili in vendita a Giaveno - Trovit\" \"Giaveno\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "3d481b8732ec62135ccb": {
+      "id": "3d481b8732ec62135ccb",
+      "comune": "Giaveno",
+      "fonte": "Mercato generale",
+      "url": "https://www.immobiliaregiavenese.it/",
+      "title": "Immobiliare Giavenese",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502632+00:00",
+      "last_seen": "2026-08-22T17:17:15.502633+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:36.025672+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 200,
+          "error": "verifica umana / anti-bot"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Immobiliare Giavenese\" \"Giaveno\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "dcca0694688746bd4182": {
+      "id": "dcca0694688746bd4182",
+      "comune": "Mompantero",
+      "fonte": "Mercato generale",
+      "url": "https://www.fcimmobiliare.it/i-672129-vendita-villa-singola-mompantero-urbiano/",
+      "title": "Villa singola in vendita a Mompantero - Urbiano Cod. SUSA143",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502684+00:00",
+      "last_seen": "2026-08-22T17:17:15.502685+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:45.741149+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 200,
+          "error": "verifica umana / anti-bot"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Villa singola in vendita a Mompantero - Urbiano Cod. SUSA143\" \"Mompantero\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "060aaceda5469d778f19": {
+      "id": "060aaceda5469d778f19",
+      "comune": "Reano",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/122985494/",
+      "title": "Casa colonica via Principe della Cisterna 63, Reano",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502718+00:00",
+      "last_seen": "2026-08-22T17:17:15.502720+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:19:00.456550+00:00",
+        "private_candidate": false,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Principe della Cisterna 63"
+        ],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Casa colonica via Principe della Cisterna 63, Reano\" \"Reano\"",
+            "error": ""
+          },
+          {
+            "q": "\"via Principe della Cisterna\" \"Reano\" (vendita OR casa OR appartamento OR immobile)",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Principe della Cisterna 63"
+        ],
+        "street": "via Principe della Cisterna",
+        "nearby_public_addresses": [
+          "via Principe della Cisterna 63",
+          "Via Principe della Cisterna 5"
+        ],
+        "actions": [
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "via Principe della Cisterna 63",
+            "telefono": "",
+            "stato": "PRONTO"
+          },
+          {
+            "azione": "VAI_IN_ZONA",
+            "target": "Via Principe della Cisterna 5",
+            "telefono": "",
+            "stato": "PRONTO"
+          }
+        ]
+      }
+    },
+    "c3fe52a9f68dbc39e13a": {
+      "id": "c3fe52a9f68dbc39e13a",
+      "comune": "Rivoli",
+      "fonte": "Bakeca privati",
+      "url": "https://torino.bakeca.it/annunci/vendita-case/luogo/Rivoli/",
+      "title": "Annunci di case in vendita a Rivoli centro città - Bakeca",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": true,
+      "first_seen": "2026-08-22T17:17:15.502735+00:00",
+      "last_seen": "2026-08-22T17:17:15.502737+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "*.bakeca.it",
+      "path_rule": "^/annunci/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 42,
+      "score_reasons": [
+        "nuova rilevazione",
+        "fonte/query orientata ai privati"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:58.749623+00:00",
+        "private_candidate": true,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Annunci di case in vendita a Rivoli centro città - Bakeca\" \"Rivoli\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "889e6d621b6e64a5d38c": {
+      "id": "889e6d621b6e64a5d38c",
+      "comune": "Rivoli",
+      "fonte": "Subito privati",
+      "url": "https://www.subito.it/annunci-italia/vendita/immobili/?q=rivoli",
+      "title": "Rivoli - Vendita case - Subito.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": true,
+      "first_seen": "2026-08-22T17:17:15.502745+00:00",
+      "last_seen": "2026-08-22T17:17:15.502747+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.subito.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 42,
+      "score_reasons": [
+        "nuova rilevazione",
+        "fonte/query orientata ai privati"
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-22T17:18:55.522867+00:00",
+        "private_candidate": true,
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "cross_matches": [],
+        "cross_match_count": 0,
+        "public_contacts": [],
+        "contact_ready": false,
+        "contact_ready_count": 0,
+        "queries": [
+          {
+            "q": "\"Rivoli - Vendita case - Subito.it\" \"Rivoli\"",
+            "error": ""
+          }
+        ]
+      },
+      "area_radar": {
+        "reference_addresses": [],
+        "street": "",
+        "nearby_public_addresses": [],
+        "actions": []
+      }
+    },
+    "041892b6563d1bcfafa2": {
+      "id": "041892b6563d1bcfafa2",
+      "comune": "Rosta",
+      "fonte": "Mercato generale",
+      "url": "https://caseinvenditainaffitto.it/case-in-vendita/rosta-torino-ovest",
+      "title": "Case in vendita a Rosta, Torino Ovest",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502755+00:00",
+      "last_seen": "2026-08-22T17:17:15.502757+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "3f6bd9d29253fb02279a": {
+      "id": "3f6bd9d29253fb02279a",
+      "comune": "Rosta",
+      "fonte": "Subito privati",
+      "url": "https://www.subito.it/annunci-piemonte/vendita/immobili/torino/rosta/",
+      "title": "Case in vendita Rosta - Immobili - Subito.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": true,
+      "first_seen": "2026-08-22T17:17:15.502765+00:00",
+      "last_seen": "2026-08-22T17:17:15.502766+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.subito.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 42,
+      "score_reasons": [
+        "nuova rilevazione",
+        "fonte/query orientata ai privati"
+      ]
+    },
+    "ffaae4d8e4906bedb534": {
+      "id": "ffaae4d8e4906bedb534",
+      "comune": "Rubiana",
+      "fonte": "Mercato generale",
+      "url": "https://www.pcase.it/immobili/quadrilocale-vendita-rubiana-sc9698461/",
+      "title": "Appartamento in vendita a Rubiana, 4 locali, 95 mq | PCase.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502778+00:00",
+      "last_seen": "2026-08-22T17:17:15.502779+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "917eabe8753380f22db1": {
+      "id": "917eabe8753380f22db1",
+      "comune": "San Giorio",
+      "fonte": "Idealista",
+      "url": "https://www.idealista.it/immobile/36448252/",
+      "title": "Villetta bifamiliare in vendita a San Giorio di Susa",
+      "snippet": "",
+      "price_history": [
+        {
+          "at": "2026-08-22T17:17:15.502790+00:00",
+          "price": 34500
+        }
+      ],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502787+00:00",
+      "last_seen": "2026-08-22T17:17:15.502788+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.idealista.it",
+      "path_rule": "^/immobile/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 35,
+      "score_reasons": [
+        "nuova rilevazione",
+        "prezzo rilevato"
+      ]
+    },
+    "efee920c4187a9b0c4c0": {
+      "id": "efee920c4187a9b0c4c0",
+      "comune": "San Giorio",
+      "fonte": "Trovit",
+      "url": "https://case.trovit.it/malpasso",
+      "title": "1 immobili in vendita a Malpasso, San Giorio di Susa - Trovit",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502798+00:00",
+      "last_seen": "2026-08-22T17:17:15.502800+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.trovit.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "3e4ee9b8411e76f28ea2": {
+      "id": "3e4ee9b8411e76f28ea2",
+      "comune": "Sant'Antonino di Susa",
+      "fonte": "Subito privati",
+      "url": "https://www.subito.it/annunci-piemonte/vendita/immobili/torino/sant-antonino-di-susa/",
+      "title": "Case in vendita Sant'Antonino di Susa - Immobili - Subito.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": true,
+      "first_seen": "2026-08-22T17:17:15.502823+00:00",
+      "last_seen": "2026-08-22T17:17:15.502824+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.subito.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 42,
+      "score_reasons": [
+        "nuova rilevazione",
+        "fonte/query orientata ai privati"
+      ]
+    },
+    "f8de2593abe626c0d539": {
+      "id": "f8de2593abe626c0d539",
+      "comune": "Susa",
+      "fonte": "Mercato generale",
+      "url": "https://caseinvenditainaffitto.it/case-in-vendita/susa-valli-susa-sangone",
+      "title": "Case in vendita a Susa, Valli Susa, Sangone",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502835+00:00",
+      "last_seen": "2026-08-22T17:17:15.502836+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "109f6f12102b36ee5655": {
+      "id": "109f6f12102b36ee5655",
+      "comune": "Susa",
+      "fonte": "Mercato generale",
+      "url": "https://www.casadaprivato.it/annunci-vendita/immobili/torino-susa",
+      "title": "Case in vendita da Privati a Susa - CasaDaPrivato.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502840+00:00",
+      "last_seen": "2026-08-22T17:17:15.502842+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "e20df286bfce7076ef6a": {
+      "id": "e20df286bfce7076ef6a",
+      "comune": "Susa",
+      "fonte": "Subito privati",
+      "url": "https://www.subito.it/annunci-piemonte/vendita/immobili/torino/susa/",
+      "title": "Case in vendita Susa - Immobili - Subito.it",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": true,
+      "first_seen": "2026-08-22T17:17:15.502847+00:00",
+      "last_seen": "2026-08-22T17:17:15.502848+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.subito.it",
+      "path_rule": "^/.*$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 42,
+      "score_reasons": [
+        "nuova rilevazione",
+        "fonte/query orientata ai privati"
+      ]
+    },
+    "93665adc2504e2dce758": {
+      "id": "93665adc2504e2dce758",
+      "comune": "Trana",
+      "fonte": "Mercato generale",
+      "url": "https://www.caasa.it/torino/trana-zona-moranda/villa/in-vendita.html",
+      "title": "Più di dieci ville in vendita a Trana Moranda. - Caasa",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502862+00:00",
+      "last_seen": "2026-08-22T17:17:15.502863+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "2943863c590b7a04aafa": {
+      "id": "2943863c590b7a04aafa",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/125972107/",
+      "title": "Vendita Villa unifamiliare in via Vercelli, 3 Trana. Buono stato, posto ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502867+00:00",
+      "last_seen": "2026-08-22T17:17:15.502868+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "abbdc16c95bb0bff148c": {
+      "id": "abbdc16c95bb0bff148c",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/129944460/",
+      "title": "Vendita Appartamento in via Raffaello Sanzio 9. Trana. Buono stato ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502871+00:00",
+      "last_seen": "2026-08-22T17:17:15.502873+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "5bd181ac626990e7c0fd": {
+      "id": "5bd181ac626990e7c0fd",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/130956906/",
+      "title": "Vendita Villa bifamiliare in via alessandria 32 Trana. Ottimo stato ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502876+00:00",
+      "last_seen": "2026-08-22T17:17:15.502877+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "f89f1d65a10514261b7d": {
+      "id": "f89f1d65a10514261b7d",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/130836570/",
+      "title": "Vendita Appartamento Trana. Trilocale in via Roma 38. Ottimo stato ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "INDIZIO_AGENZIA",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502881+00:00",
+      "last_seen": "2026-08-22T17:17:15.502884+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 18,
+      "score_reasons": [
+        "nuova rilevazione",
+        "indizio agenzia"
+      ]
+    },
+    "e778ef9cb7bfa1d9f735": {
+      "id": "e778ef9cb7bfa1d9f735",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/123141747/",
+      "title": "Vendita Terratetto unifamiliare in Borgata Cordero 34 Trana. Posto auto ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502887+00:00",
+      "last_seen": "2026-08-22T17:17:15.502889+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "300aa43f23d471f77658": {
+      "id": "300aa43f23d471f77658",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/131255564/",
+      "title": "Vendita Mansarda in Strada Avigliana 016 Trana. Buono stato, posto auto ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502892+00:00",
+      "last_seen": "2026-08-22T17:17:15.502893+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "4019f03abc45bdc03197": {
+      "id": "4019f03abc45bdc03197",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/128140996/",
+      "title": "Vendita Rustico in via 20 Settembre Trana. Ottimo stato, posto auto ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502896+00:00",
+      "last_seen": "2026-08-22T17:17:15.502898+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "69494dae9793442ae2ef": {
+      "id": "69494dae9793442ae2ef",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/125751817/",
+      "title": "Vendita Terratetto unifamiliare in Borgata Udritto 38 Trana. Ottimo ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502901+00:00",
+      "last_seen": "2026-08-22T17:17:15.502902+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "3f543dd49044a7999488": {
+      "id": "3f543dd49044a7999488",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/124206771/",
+      "title": "Vendita Mansarda in via Dante Alighieri 31 Trana. Con terrazza, rif ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502907+00:00",
+      "last_seen": "2026-08-22T17:17:15.502908+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "5d0bfef01432bf4855c2": {
+      "id": "5d0bfef01432bf4855c2",
+      "comune": "Trana",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/128419586/",
+      "title": "Vendita Villa unifamiliare in via Piave 5 Trana. Buono stato, 83 m² ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502912+00:00",
+      "last_seen": "2026-08-22T17:17:15.502913+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "58324867d15f72bd852e": {
+      "id": "58324867d15f72bd852e",
+      "comune": "Val della Torre",
+      "fonte": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/annunci/126465625/",
+      "title": "Vendita Villa unifamiliare Val della Torre. Buono stato, posto auto ...",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502924+00:00",
+      "last_seen": "2026-08-22T17:17:15.502925+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.immobiliare.it",
+      "path_rule": "^/annunci/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "4741658ffc88337a2f7d": {
+      "id": "4741658ffc88337a2f7d",
+      "comune": "Valgioie",
+      "fonte": "Casa.it",
+      "url": "https://www.casa.it/immobili/51384296/",
+      "title": "Casa bifamiliare in Vendita in Borgata Chiappero 6 a Valgioie",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502936+00:00",
+      "last_seen": "2026-08-22T17:17:15.502937+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "www.casa.it",
+      "path_rule": "^/immobili/[0-9]+/?$",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "d289c9f4223e046d30bc": {
+      "id": "d289c9f4223e046d30bc",
+      "comune": "Venaus",
+      "fonte": "Mercato generale",
+      "url": "https://immobiliare.mitula.it/venaus",
+      "title": "288 Immobili in vendita a Venaus - Mitula Case",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502944+00:00",
+      "last_seen": "2026-08-22T17:17:15.502946+00:00",
+      "checks": 1,
+      "lifecycle": "NEW",
+      "domain_rule": "",
+      "path_rule": "",
+      "discovery_engine": "DDG_MATRIX_V1",
+      "score": 30,
+      "score_reasons": [
+        "nuova rilevazione"
+      ]
+    },
+    "7508b733beefa70e7c85": {
+      "id": "7508b733beefa70e7c85",
+      "comune": "Villarbasse",
+      "fonte": "Mercato generale",
+      "url": "https://www.yescasa.it/vendita-ville/villarbasse/",
+      "title": "Vendita Ville a Villarbasse: Annunci Immobiliari | YesCasa",
+      "snippet": "",
+      "price_history": [],
+      "seller_hint": "NON_DETERMINATO",
+      "private_intent": false,
+      "first_seen": "2026-08-22T17:17:15.502989+00:00",
+      "last_seen": "2026-08-22T17:17:15.502990+00:00",
       "checks": 1,
       "lifecycle": "NEW",
       "domain_rule": "",
@@ -10137,5 +11857,5 @@
   },
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
-  "matrix_discovery_updated_at": "2026-08-21T12:20:59.476031+00:00"
+  "matrix_discovery_updated_at": "2026-08-22T17:17:15.502993+00:00"
 }
