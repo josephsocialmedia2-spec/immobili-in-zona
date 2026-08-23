@@ -23,7 +23,7 @@ f203f95c72721cdc179e,Alpignano,INDIZIO_AGENZIA,Via Della costa,VAI_IN_ZONA,Via D
 f203f95c72721cdc179e,Alpignano,INDIZIO_AGENZIA,Via Della costa,VAI_IN_ZONA,via della Costa 71,,PRONTO,https://www.gabetti.it/vendita/alpignano
 8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 208,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
 8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 3,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
-8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,corso Laghi 238,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
+8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 115,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
 8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
 8b565539856bab5ada39,Bardonecchia,INDIZIO_AGENZIA,Via Sommeiller,VAI_IN_ZONA,Via Sommeiller 8,,PRONTO,https://www.gabetti.it/vendita/bardonecchia
 318b0b8cf624873620cf,Borgone Susa,INDIZIO_AGENZIA,Via Bruno Mosconi,VAI_IN_ZONA,Via Bruno Mosconi 4,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/borgone-susa.html
@@ -33,9 +33,7 @@ f203f95c72721cdc179e,Alpignano,INDIZIO_AGENZIA,Via Della costa,VAI_IN_ZONA,via d
 7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,Via Freinetto 22,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
 7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,Via Freinetto 16,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
 7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,via freinetto 51,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
-7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,Via Freinetto 43,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
 f44ad5fa03f6ed2409e9,Collegno,INDIZIO_PRIVATO,viale XXIV Maggio,VAI_IN_ZONA,viale XXIV Maggio 54,,PRONTO,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html
-f44ad5fa03f6ed2409e9,Collegno,INDIZIO_PRIVATO,viale XXIV Maggio,VAI_IN_ZONA,Viale XXIV Maggio 20,,PRONTO,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html
 d0285dc04def4380e9a9,Condove,INDIZIO_AGENZIA,Via Moncenisio,VAI_IN_ZONA,Via Moncenisio 72,,PRONTO,https://www.idealista.it/immobile/33250712/
 2a8284bab567393d4b8d,Giaveno,INDIZIO_AGENZIA,Borgata Selvaggio Sotto,VAI_IN_ZONA,Borgata Selvaggio Sotto 31,,PRONTO,https://www.gabetti.it/vendita/giaveno
 ff1296c4ecfce1a16b2e,Gravere,NON_DETERMINATO,Via Nazionale,VAI_IN_ZONA,Via Nazionale 45,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-gravere
@@ -62,3 +60,13 @@ b2177e0b60eb038d86c0,Mattie,NON_DETERMINATO,via Mattie,VAI_IN_ZONA,Via Mattie 2/
 83d2f90615a15e19f07d,Rivoli,NON_DETERMINATO,Via Pullino,VAI_IN_ZONA,Via Pullino 14,,PRONTO,https://www.idealista.it/immobile/35768952/
 83d2f90615a15e19f07d,Rivoli,NON_DETERMINATO,Via Pullino,VAI_IN_ZONA,Via Pullino 21,,PRONTO,https://www.idealista.it/immobile/35768952/
 2ff1931d152ab7c05285,Rivoli,NON_DETERMINATO,via Rossini,VAI_IN_ZONA,via Rossini 8,,PRONTO,https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm
+372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 208,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
+372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 3,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
+372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 115,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
+372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
+d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Corso Superga,VAI_IN_ZONA,Corso Superga 8,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
+d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Corso Superga,VAI_IN_ZONA,Corso Superga 57/4,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
+d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Corso Superga,VAI_IN_ZONA,Corso Superga 31,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
+c20b4e08b8a9430e80eb,Condove,NON_DETERMINATO,Borgata Borlera,VAI_IN_ZONA,Borgata Borlera 12,,PRONTO,https://www.idealista.it/immobile/36228538/
+c20b4e08b8a9430e80eb,Condove,NON_DETERMINATO,Borgata Borlera,VAI_IN_ZONA,Borgata Borlera 21,,PRONTO,https://www.idealista.it/immobile/36228538/
+22c9c81c30cacb3c02ee,Gravere,NON_DETERMINATO,Via Terzo Reggimento Alpini,VAI_IN_ZONA,Via Terzo Reggimento Alpini 9,,PRONTO,https://www.idealista.it/immobile/30296520/
