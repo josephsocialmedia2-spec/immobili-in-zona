@@ -25,6 +25,12 @@ def norm_phone(v):
     d=re.sub(r"\D","",v or "")
     return d[2:] if d.startswith("39") and len(d)>10 else d
 
+def opportunity_type(seller_hint):
+    hint=(seller_hint or "NON_DETERMINATO").strip().upper()
+    if hint == "INDIZIO_PRIVATO": return "LEAD_DIRETTO"
+    if hint == "INDIZIO_AGENZIA": return "AREA_OPPORTUNITY"
+    return "AREA_DA_VERIFICARE"
+
 sample = "Vendesi appartamento in Via Roma 10, Vaie. Altri riferimenti: Via Roma 12 e Via Roma 14/B."
 addrs = address_list(sample)
 assert any("Via Roma 10" in a for a in addrs), addrs
@@ -36,4 +42,8 @@ rpo_ok = {"3331234567"}
 assert norm_phone("+39 333 123 4567") in rpo_ok
 assert norm_phone("011 1234567") not in rpo_ok
 
-print("SELFTEST OK: indirizzi, via, normalizzazione telefono e gate RPO funzionano.")
+assert opportunity_type("INDIZIO_PRIVATO") == "LEAD_DIRETTO"
+assert opportunity_type("INDIZIO_AGENZIA") == "AREA_OPPORTUNITY"
+assert opportunity_type("NON_DETERMINATO") == "AREA_DA_VERIFICARE"
+
+print("SELFTEST OK: indirizzi, via, telefono, gate RPO e classificazione opportunita funzionano.")
