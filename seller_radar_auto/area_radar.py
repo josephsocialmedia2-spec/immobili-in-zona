@@ -1,14 +1,23 @@
 #!/usr/bin/env python3
 """F1 Seller Radar — radar di via / zona.
 
+Principio operativo a due binari:
+- LEAD_DIRETTO: annuncio con indizio privato. Puo generare VAI_IN_ZONA e,
+  solo se il contatto e gia pubblico nell'annuncio e approvato RPO, CHIAMA.
+- AREA_OPPORTUNITY: annuncio con indizio agenzia. Non viene scartato: se
+  l'indirizzo e utile genera VAI_IN_ZONA per presidio territoriale, ma non
+  usa il telefono dell'agenzia come contatto del proprietario.
+- AREA_DA_VERIFICARE: inserzionista non determinato. Si usa per il giro in
+  zona finche la natura dell'annuncio non e verificata.
+
 Per ogni annuncio, anche di agenzia:
-- ricava la via/civico dalle evidenze pubbliche già raccolte;
+- ricava la via/civico dalle evidenze pubbliche gia raccolte;
 - cerca altri indirizzi pubblicamente indicizzati sulla STESSA via;
 - produce azioni VAI_IN_ZONA;
-- produce CHIAMA solo per numeri già presenti tra i contatti pubblici dell'annuncio
-  e presenti nell'eventuale lista rpo_approved.csv.
+- produce CHIAMA solo per LEAD_DIRETTO, per numeri gia presenti tra i
+  contatti pubblici dell'annuncio e presenti in rpo_approved.csv.
 
-Non associa numeri a residenti/vicini per cognome o sola prossimità geografica.
+Non associa numeri a residenti/vicini per cognome o sola prossimita geografica.
 """
 import csv, html, json, re
 from pathlib import Path
@@ -58,6 +67,21 @@ def street_of(address):
 def same_street(address, street):
     return bool(address and street and street_of(address).casefold() == street.casefold())
 
+def opportunity_type(seller_hint):
+    hint = (seller_hint or "NON_DETERMINATO").strip().upper()
+    if hint == "INDIZIO_PRIVATO":
+        return "LEAD_DIRETTO"
+    if hint == "INDIZIO_AGENZIA":
+        return "AREA_OPPORTUNITY"
+    return "AREA_DA_VERIFICARE"
+
+def opportunity_reason(kind):
+    if kind == "LEAD_DIRETTO":
+        return "PRIVATO: possibile contatto diretto dopo verifica fonte/RPO"
+    if kind == "AREA_OPPORTUNITY":
+        return "AGENZIA: immobile attivo usato come segnale territoriale; presidia via/stabile"
+    return "INSERZIONISTA DA VERIFICARE: usa indirizzo come segnale territoriale"
+
 def load_rpo():
     approved = set()
     if not RPO.exists():
@@ -82,6 +106,8 @@ rows = []
 for item_id, x in items.items():
     e = x.get("enrichment") or {}
     comune = (x.get("comune") or "").strip()
+    kind = opportunity_type(x.get("seller_hint"))
+    reason = opportunity_reason(kind)
     hints = list(e.get("address_hints") or [])
 
     if not hints:
@@ -91,6 +117,8 @@ for item_id, x in items.items():
     hints = list(dict.fromkeys(hints))[:8]
 
     area = {
+        "opportunity_type": kind,
+        "opportunity_reason": reason,
         "reference_addresses": hints,
         "street": "",
         "nearby_public_addresses": [],
@@ -100,7 +128,7 @@ for item_id, x in items.items():
     if hints:
         street = street_of(hints[0])
         area["street"] = street
-        # Un radar = una via. Scarta eventuali altri indirizzi presenti in pagine aggregate di agenzia.
+        # Un radar = una via. Scarta eventuali altri indirizzi presenti in pagine aggregate.
         same_hints = [a for a in hints if same_street(a, street)]
         found = []
         if street:
@@ -112,11 +140,19 @@ for item_id, x in items.items():
         all_addresses = list(dict.fromkeys(same_hints + found))[:20]
         area["nearby_public_addresses"] = all_addresses
         for a in all_addresses:
-            area["actions"].append({"azione": "VAI_IN_ZONA", "target": a, "telefono": "", "stato": "PRONTO"})
+            area["actions"].append({
+                "azione": "VAI_IN_ZONA",
+                "target": a,
+                "telefono": "",
+                "stato": "PRONTO",
+                "tipo_opportunita": kind,
+            })
             rows.append({
                 "ITEM_ID": item_id,
                 "COMUNE": comune,
                 "TIPO_ANNUNCIO": x.get("seller_hint", "NON_DETERMINATO"),
+                "TIPO_OPPORTUNITA": kind,
+                "MOTIVO": reason,
                 "VIA_RADAR": street,
                 "AZIONE": "VAI_IN_ZONA",
                 "TARGET": a,
@@ -125,32 +161,47 @@ for item_id, x in items.items():
                 "FONTE": x.get("url", ""),
             })
 
-    for c in e.get("public_contacts") or []:
-        if c.get("type") != "PHONE" or c.get("confidence") not in {"HIGH", "MEDIUM"}:
-            continue
-        p = norm_phone(c.get("value") or "")
-        approved = p in rpo_ok
-        azione = "CHIAMA" if approved else "VERIFICA_RPO"
-        stato = "PRONTO" if approved else "BLOCCATO_FINCHÉ_NON_VERIFICATO"
-        area["actions"].append({"azione": azione, "target": e.get("seller_name") or "inserzionista", "telefono": c.get("value", ""), "stato": stato})
-        rows.append({
-            "ITEM_ID": item_id,
-            "COMUNE": comune,
-            "TIPO_ANNUNCIO": x.get("seller_hint", "NON_DETERMINATO"),
-            "VIA_RADAR": area.get("street", ""),
-            "AZIONE": azione,
-            "TARGET": e.get("seller_name") or "inserzionista",
-            "TELEFONO": c.get("value", ""),
-            "STATO": stato,
-            "FONTE": c.get("source_url", ""),
-        })
+    # I contatti pubblici possono diventare azione CHIAMA solo per LEAD_DIRETTO.
+    # Per AREA_OPPORTUNITY non si usa il recapito dell'agenzia come recapito del proprietario.
+    if kind == "LEAD_DIRETTO":
+        for c in e.get("public_contacts") or []:
+            if c.get("type") != "PHONE" or c.get("confidence") not in {"HIGH", "MEDIUM"}:
+                continue
+            p = norm_phone(c.get("value") or "")
+            approved = p in rpo_ok
+            azione = "CHIAMA" if approved else "VERIFICA_RPO"
+            stato = "PRONTO" if approved else "BLOCCATO_FINCHE_NON_VERIFICATO"
+            area["actions"].append({
+                "azione": azione,
+                "target": e.get("seller_name") or "inserzionista",
+                "telefono": c.get("value", ""),
+                "stato": stato,
+                "tipo_opportunita": kind,
+            })
+            rows.append({
+                "ITEM_ID": item_id,
+                "COMUNE": comune,
+                "TIPO_ANNUNCIO": x.get("seller_hint", "NON_DETERMINATO"),
+                "TIPO_OPPORTUNITA": kind,
+                "MOTIVO": reason,
+                "VIA_RADAR": area.get("street", ""),
+                "AZIONE": azione,
+                "TARGET": e.get("seller_name") or "inserzionista",
+                "TELEFONO": c.get("value", ""),
+                "STATO": stato,
+                "FONTE": c.get("source_url", ""),
+            })
 
     x["area_radar"] = area
+    x["opportunity_type"] = kind
 
 state["items"] = items
 STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
-fields = ["ITEM_ID","COMUNE","TIPO_ANNUNCIO","VIA_RADAR","AZIONE","TARGET","TELEFONO","STATO","FONTE"]
+fields = [
+    "ITEM_ID","COMUNE","TIPO_ANNUNCIO","TIPO_OPPORTUNITA","MOTIVO",
+    "VIA_RADAR","AZIONE","TARGET","TELEFONO","STATO","FONTE"
+]
 with OUT.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
 
@@ -158,12 +209,14 @@ if QUEUE.exists():
     with QUEUE.open(encoding="utf-8-sig", newline="") as f:
         qrows = list(csv.DictReader(f))
         qfields = list(qrows[0].keys()) if qrows else []
-    extra = ["VIA_RADAR","INDIRIZZI_ZONA","AZIONE_ZONA"]
+    extra = ["TIPO_OPPORTUNITA","MOTIVO_AREA","VIA_RADAR","INDIRIZZI_ZONA","AZIONE_ZONA"]
     qfields += [k for k in extra if k not in qfields]
     by_url = {(x.get("url") or "").strip(): x for x in items.values()}
     for r in qrows:
         item = by_url.get((r.get("URL") or "").strip(), {})
         area = item.get("area_radar") or {}
+        r["TIPO_OPPORTUNITA"] = area.get("opportunity_type", opportunity_type(item.get("seller_hint")))
+        r["MOTIVO_AREA"] = area.get("opportunity_reason", opportunity_reason(r["TIPO_OPPORTUNITA"]))
         r["VIA_RADAR"] = area.get("street", "")
         r["INDIRIZZI_ZONA"] = " | ".join((area.get("nearby_public_addresses") or [])[:8])
         acts = area.get("actions") or []
@@ -175,4 +228,9 @@ if QUEUE.exists():
     with QUEUE.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=qfields); w.writeheader(); w.writerows(qrows)
 
-print(f"Area Radar: {len(rows)} azioni generate su {len(items)} annunci.")
+lead_direct = sum(1 for x in items.values() if opportunity_type(x.get("seller_hint")) == "LEAD_DIRETTO")
+area_opp = sum(1 for x in items.values() if opportunity_type(x.get("seller_hint")) == "AREA_OPPORTUNITY")
+print(
+    f"Area Radar: {len(rows)} azioni generate su {len(items)} annunci. "
+    f"LEAD_DIRETTO={lead_direct}; AREA_OPPORTUNITY={area_opp}."
+)
