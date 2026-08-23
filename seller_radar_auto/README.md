@@ -11,8 +11,12 @@ Da questo momento ogni risultato operativo destinato al giro di acquisizione dev
 3. NUMERO CIVICO
 4. COSA CERCARE SUL POSTO
 5. PREZZO ATTUALE
-6. SEGNALE COMMERCIALE, quando disponibile: PRIVATO / NUOVO / RIBASSO / INVENDUTO / TRATTABILE / DA RISTRUTTURARE
-7. FONTE E LINK DELL'ANNUNCIO, quando disponibili
+6. EVENTUALE PREZZO PRECEDENTE E VARIAZIONE
+7. SELLER SIGNAL
+8. SCORE 0-100
+9. FONTE / DOMAIN
+10. URL
+11. AZIONE: VAI IN ZONA oppure APRI FONTE E VERIFICA INDIRIZZO
 
 Formato minimo obbligatorio:
 
@@ -21,7 +25,10 @@ INDIRIZZO: [via] [numero civico]
 COSA CERCARE: [tipo immobile / cartello / stabile / riferimento utile]
 PREZZO: [euro]
 SEGNALE: [se disponibile]
-FONTE: [portale/link]
+SCORE: [0-100]
+FONTE: [portale/domain]
+URL: [link]
+AZIONE: [VAI IN ZONA / APRI FONTE E VERIFICA INDIRIZZO]
 
 Regole:
 - Non inventare mai il numero civico. Se non è pubblicato, scrivere: CIVICO DA VERIFICARE.
@@ -29,6 +36,29 @@ Regole:
 - Dare priorità ai risultati con indirizzo completo e verificabile.
 - L'output deve essere immediatamente utilizzabile sul territorio: deve rispondere alla domanda **DOVE VADO, COSA CERCO, QUANTO COSTA**.
 - Ordinare i risultati per priorità commerciale e, quando possibile, per percorso geografico efficiente.
+- Applicare retention mobile di 365 giorni.
+- Evitare duplicati tra portali.
+- Non aggirare CAPTCHA, login, verifiche umane o protezioni anti-bot.
+
+## QUALITY GATE CSV
+
+Il file `validate_radar_csv.py` deve essere usato per ripulire gli export del radar prima dell'import nel CRM.
+
+Controlli principali:
+- scarta pagine categoria/ricerca e mantiene separati gli annunci dettaglio;
+- marca gli annunci di agenzia per evitare falsi `PRIVATO`;
+- scarta risultati fuori territorio, aste e risultati non operativi;
+- normalizza i prezzi legacy espressi in migliaia;
+- pulisce il campo indirizzo quando contiene testo estraneo;
+- valida esclusivamente telefoni già presenti nell'export, senza eseguire scraping di nuovi contatti;
+- scarta la P.IVA di Subito `05526340962` / `5526340962`, che può essere erroneamente catturata dal footer come se fosse un telefono;
+- marca come sospetti i numeri ripetuti su molti risultati non correlati.
+
+Esempio:
+
+`python validate_radar_csv.py radar_SUSA.csv -o radar_SUSA_PULITO.csv`
+
+Il quality gate non raccoglie nuovi dati personali, non interroga endpoint nascosti e non aggira protezioni dei portali.
 
 ## OUTPUT GENERATI
 
