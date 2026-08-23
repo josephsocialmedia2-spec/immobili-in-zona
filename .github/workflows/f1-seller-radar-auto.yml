@@ -3,7 +3,8 @@ name: F1 Seller Radar AUTO
 on:
   workflow_dispatch:
   schedule:
-    # Le due ore UTC coprono le 02:00 italiane sia con ora solare sia con ora legale.\n    - cron: "0 0,1 * * *"
+    # Le due ore UTC coprono le 02:00 italiane sia con ora solare sia con ora legale.
+    - cron: "0 0,1 * * *"
 
 permissions:
   contents: write
