@@ -80,9 +80,9 @@ Il quality gate non raccoglie nuovi dati personali, non interroga endpoint nasco
 
 ## AUTOMAZIONE
 
-GitHub Actions esegue il radar alle **08:30** e **18:30** ora italiana e può essere avviato manualmente.
+GitHub Actions esegue il radar ogni giorno alle **02:00 ora italiana** e può essere avviato manualmente. Al termine invia a `f1immobiliaresusa@gmail.com` un file Excel `.xlsx` completo, con priorità, indirizzi, prezzi, ribassi, contatti pubblici già presenti nei risultati e link cliccabili.
 
-Flusso: discovery per comune → merge → scoring → cross-match per annuncio → Area Radar → giro acquisizione → email/WhatsApp → salvataggio storico.
+Flusso: discovery per comune → merge → scoring → cross-match per annuncio → Area Radar → giro acquisizione → report Excel → email/WhatsApp → salvataggio storico.
 
 Le notifiche operative riportano in testa: **DOVE ANDARE → COSA CERCO → PREZZO → AZIONE**.
 
