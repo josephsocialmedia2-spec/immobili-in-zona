@@ -184,7 +184,7 @@ jobs:
         env:
           F1_EMAIL_USER: ${{ secrets.F1_EMAIL_USER }}
           F1_EMAIL_APP_PASSWORD: ${{ secrets.F1_EMAIL_APP_PASSWORD }}
-          F1_EMAIL_TO: ${{ secrets.F1_EMAIL_TO }}
+          F1_EMAIL_TO: f1immobiliaresusa@gmail.com
           F1_EMAIL_SMTP_HOST: smtp.gmail.com
           F1_EMAIL_SMTP_PORT: "465"
         run: python seller_radar_auto/email_notify.py
