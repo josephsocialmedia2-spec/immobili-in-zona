@@ -1,7 +1,7 @@
 import json
 import shutil
 import sqlite3
-from contextlib import contextmanager
+from contextlib import closing, contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -203,7 +203,7 @@ class Database:
         if not self.path.exists():
             return True
         try:
-            with sqlite3.connect(self.path) as connection:
+            with closing(sqlite3.connect(self.path)) as connection:
                 return connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
         except sqlite3.DatabaseError:
             return False
@@ -211,14 +211,14 @@ class Database:
     def backup(self) -> Path:
         stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
         target = self.backups_dir / f"f1-ir-backup-{stamp}.sqlite3"
-        with self.connect() as source, sqlite3.connect(target) as destination:
+        with self.connect() as source, closing(sqlite3.connect(target)) as destination:
             source.backup(destination)
         return target
 
     def restore_latest_backup(self) -> Path | None:
         for candidate in sorted(self.backups_dir.glob("f1-ir-backup-*.sqlite3"), reverse=True):
             try:
-                with sqlite3.connect(candidate) as connection:
+                with closing(sqlite3.connect(candidate)) as connection:
                     valid = connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
             except sqlite3.DatabaseError:
                 valid = False
