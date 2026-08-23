@@ -1,7 +1,9 @@
 ﻿ITEM_ID,COMUNE,TIPO_ANNUNCIO,VIA_RADAR,AZIONE,TARGET,TELEFONO,STATO,FONTE
 9a8e6bc5c6aaedd0ee05,Almese,NON_DETERMINATO,Via Rubiana,VAI_IN_ZONA,Via Rubiana 142,,PRONTO,https://www.idealista.it/immobile/36069783/
+9a8e6bc5c6aaedd0ee05,Almese,NON_DETERMINATO,Via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.idealista.it/immobile/36069783/
 9a8e6bc5c6aaedd0ee05,Almese,NON_DETERMINATO,Via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.idealista.it/immobile/36069783/
 bf60f35b150fb65b89e1,Rosta,NON_DETERMINATO,Via Piave,VAI_IN_ZONA,Via Piave 53,,PRONTO,https://www.idealista.it/immobile/35863658/
+bf60f35b150fb65b89e1,Rosta,NON_DETERMINATO,Via Piave,VAI_IN_ZONA,via piave 33,,PRONTO,https://www.idealista.it/immobile/35863658/
 07dbbaf94a4528802364,Sant'Antonino di Susa,NON_DETERMINATO,via Medagli,VAI_IN_ZONA,via Medagli 55,,PRONTO,https://www.immobiliare.it/annunci/131644636/
 14e172d2c96512dfa79e,Vaie,NON_DETERMINATO,Via Peirolero,VAI_IN_ZONA,Via Peirolero 28,,PRONTO,https://www.casa.it/immobili/50035067/
 7907ca91e2689613c6a8,Vaie,NON_DETERMINATO,Vicolo Superiore,VAI_IN_ZONA,Vicolo Superiore 19,,PRONTO,https://www.idealista.it/immobile/34422440/
@@ -27,20 +29,36 @@ f203f95c72721cdc179e,Alpignano,INDIZIO_AGENZIA,Via Della costa,VAI_IN_ZONA,via d
 318b0b8cf624873620cf,Borgone Susa,INDIZIO_AGENZIA,Via Bruno Mosconi,VAI_IN_ZONA,Via Bruno Mosconi 4,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/borgone-susa.html
 4f5cf204b69e8b17d71a,Bruzolo,NON_DETERMINATO,Via dei Mille,VAI_IN_ZONA,Via dei Mille 19,,PRONTO,https://www.casa.it/immobili/53531383/
 7eb7633fa452b0c25637,Caselette,INDIZIO_AGENZIA,Via Ciriè,VAI_IN_ZONA,Via Ciriè 15,,PRONTO,https://www.gabetti.it/vendita/caselette
-7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via delle fabbriche,VAI_IN_ZONA,via delle fabbriche 36,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
+7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,via Freinetto 50,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
+7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,Via Freinetto 22,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
+7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,Via Freinetto 16,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
+7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,via freinetto 51,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
+7b44780d0bc664387b4a,Coazze,NON_DETERMINATO,via Freinetto,VAI_IN_ZONA,Via Freinetto 43,,PRONTO,https://www.caasa.it/torino/coazze/villa/in-vendita.html
 f44ad5fa03f6ed2409e9,Collegno,INDIZIO_PRIVATO,viale XXIV Maggio,VAI_IN_ZONA,viale XXIV Maggio 54,,PRONTO,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html
 f44ad5fa03f6ed2409e9,Collegno,INDIZIO_PRIVATO,viale XXIV Maggio,VAI_IN_ZONA,Viale XXIV Maggio 20,,PRONTO,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html
 d0285dc04def4380e9a9,Condove,INDIZIO_AGENZIA,Via Moncenisio,VAI_IN_ZONA,Via Moncenisio 72,,PRONTO,https://www.idealista.it/immobile/33250712/
 2a8284bab567393d4b8d,Giaveno,INDIZIO_AGENZIA,Borgata Selvaggio Sotto,VAI_IN_ZONA,Borgata Selvaggio Sotto 31,,PRONTO,https://www.gabetti.it/vendita/giaveno
 ff1296c4ecfce1a16b2e,Gravere,NON_DETERMINATO,Via Nazionale,VAI_IN_ZONA,Via Nazionale 45,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-gravere
 6e6a47b7eec5e05ab25f,Grugliasco,NON_DETERMINATO,Viale Gramsci,VAI_IN_ZONA,Viale Gramsci 58,,PRONTO,https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco
+6e6a47b7eec5e05ab25f,Grugliasco,NON_DETERMINATO,Viale Gramsci,VAI_IN_ZONA,Viale Gramsci 66,,PRONTO,https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco
 5b91c89651162afbc2c9,Mattie,NON_DETERMINATO,via giordani,VAI_IN_ZONA,via giordani 3,,PRONTO,https://www.trovacasa.it/annunci/to-tc-64869-72779648
 1daa8e373daef9d76013,Mompantero,NON_DETERMINATO,Frazione San Giuseppe,VAI_IN_ZONA,Frazione San Giuseppe 21,,PRONTO,https://www.casa.it/immobili/54595196/
 1daa8e373daef9d76013,Mompantero,NON_DETERMINATO,Frazione San Giuseppe,VAI_IN_ZONA,frazione San Giuseppe 21/d,,PRONTO,https://www.casa.it/immobili/54595196/
 0b923c7493e1ebef4dfc,Oulx,INDIZIO_AGENZIA,vicolo Bouchard,VAI_IN_ZONA,vicolo Bouchard 6,,PRONTO,https://www.gabetti.it/vendita/oulx
+798bc20d7bafed18cabb,Pianezza,INDIZIO_AGENZIA,Via Calvino,VAI_IN_ZONA,Via Calvino 0,,PRONTO,https://www.gabetti.it/vendita/pianezza
 1da3198f8f2f5ee6137c,Almese,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,Via IV Novembre 4,,PRONTO,https://almese1.tecnorete.it/immobili-in-vendita
 072b1c2eb7b838a219e4,Bardonecchia,NON_DETERMINATO,Via Pollicino,VAI_IN_ZONA,Via Pollicino 10,,PRONTO,https://www.idealista.it/immobile/36094722/
 8adf11bd6d953dc9431c,Buttigliera Alta,NON_DETERMINATO,via Allende,VAI_IN_ZONA,via Allende 13,,PRONTO,https://www.immobiliare.it/annunci/131629064/
 8a27392532f5e00f6e2d,Chiusa di San Michele,NON_DETERMINATO,vicolo G. Pietro Riva,VAI_IN_ZONA,vicolo G. Pietro Riva 13,,PRONTO,https://www.immobiliare.it/annunci/127844320/
 060aaceda5469d778f19,Reano,NON_DETERMINATO,via Principe della Cisterna,VAI_IN_ZONA,via Principe della Cisterna 63,,PRONTO,https://www.immobiliare.it/annunci/122985494/
 060aaceda5469d778f19,Reano,NON_DETERMINATO,via Principe della Cisterna,VAI_IN_ZONA,Via Principe della Cisterna 5,,PRONTO,https://www.immobiliare.it/annunci/122985494/
+060aaceda5469d778f19,Reano,NON_DETERMINATO,via Principe della Cisterna,VAI_IN_ZONA,via Principe Della Cisterna 3,,PRONTO,https://www.immobiliare.it/annunci/122985494/
+9278e80e6cbc35917400,Bussoleno,NON_DETERMINATO,"Viale Lungo Dora, Bussoleno",VAI_IN_ZONA,"Viale Lungo Dora, Bussoleno 160",,PRONTO,https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno
+9decd940042d59e0ad55,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,Via IV Novembre 5,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html
+9decd940042d59e0ad55,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,Via IV Novembre 27,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html
+0b6a36d807b20e72186e,Gravere,NON_DETERMINATO,via San Lorenzo,VAI_IN_ZONA,via San Lorenzo 1,,PRONTO,https://www.immobiliare.it/annunci/126652927/
+b2177e0b60eb038d86c0,Mattie,NON_DETERMINATO,via Mattie,VAI_IN_ZONA,via Mattie 21,,PRONTO,https://www.immobiliare.it/annunci/130850322/
+b2177e0b60eb038d86c0,Mattie,NON_DETERMINATO,via Mattie,VAI_IN_ZONA,Via Mattie 2/B,,PRONTO,https://www.immobiliare.it/annunci/130850322/
+83d2f90615a15e19f07d,Rivoli,NON_DETERMINATO,Via Pullino,VAI_IN_ZONA,Via Pullino 14,,PRONTO,https://www.idealista.it/immobile/35768952/
+83d2f90615a15e19f07d,Rivoli,NON_DETERMINATO,Via Pullino,VAI_IN_ZONA,Via Pullino 21,,PRONTO,https://www.idealista.it/immobile/35768952/
+2ff1931d152ab7c05285,Rivoli,NON_DETERMINATO,via Rossini,VAI_IN_ZONA,via Rossini 8,,PRONTO,https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm
