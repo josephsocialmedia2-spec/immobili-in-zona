@@ -2,27 +2,8 @@ name: F1 Seller Radar AUTO
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "seller_radar_auto/search_engine.py"
-      - "seller_radar_auto/discovery_one.py"
-      - "seller_radar_auto/merge_discovery.py"
-      - "seller_radar_auto/build_municipality_matrix.py"
-      - "seller_radar_auto/build_item_matrix.py"
-      - "seller_radar_auto/item_worker.py"
-      - "seller_radar_auto/merge_item_results.py"
-      - "seller_radar_auto/radar_postprocess.py"
-      - "seller_radar_auto/prepare_acquisition_route.py"
-      - "seller_radar_auto/area_radar_selftest.py"
-      - "seller_radar_auto/rpo_approved.csv"
-      - "seller_radar_auto/municipalities.csv"
-      - "seller_radar_auto/portal_catalog.csv"
-      - "seller_radar_auto/whatsapp_notify.py"
-      - "seller_radar_auto/whatsapp_routes.csv"
-      - "seller_radar_auto/email_notify.py"
-      - ".github/workflows/f1-seller-radar-auto.yml"
   schedule:
-    - cron: "30 6,7,16,17 * * *"
+    # Le due ore UTC coprono le 02:00 italiane sia con ora solare sia con ora legale.\n    - cron: "0 0,1 * * *"
 
 permissions:
   contents: write
@@ -53,7 +34,7 @@ jobs:
           LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
           LOCAL_TIME=$(TZ=Europe/Rome date +%H:%M)
           echo "Ora italiana rilevata: $LOCAL_TIME"
-          if [ "$LOCAL_HOUR" = "08" ] || [ "$LOCAL_HOUR" = "18" ]; then
+          if [ "$LOCAL_HOUR" = "02" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
