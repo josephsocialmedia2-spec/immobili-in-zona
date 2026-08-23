@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f1-indirizzo-remoto"
+version = "1.0.0"
+description = "Gestione locale e verificabile di pratiche immobiliari da indirizzo noto"
+requires-python = ">=3.12"
+dependencies = [
+  "Flask>=3.1,<4",
+  "pypdf>=6,<7",
+  "reportlab>=4.4,<5",
+  "qrcode[pil]>=8.2,<9",
+]
+
+[project.scripts]
+f1-indirizzo-remoto = "f1_indirizzo_remoto.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+f1_indirizzo_remoto = ["templates/*.html", "static/*.css", "static/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -3,6 +3,8 @@
 import csv, json, re
 from pathlib import Path
 
+from f1_remote_bridge import build_import_url
+
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 STATE = DATA / "state.json"
@@ -88,7 +90,7 @@ if QUEUE.exists():
         rows = list(csv.DictReader(f))
         fields = list(rows[0].keys()) if rows else []
 
-extras = ["DOVE_ANDRE", "COSA_CERCO", "PREZZO_OPERATIVO", "ISTRUZIONE_OPERATIVA"]
+extras = ["DOVE_ANDRE", "COSA_CERCO", "PREZZO_OPERATIVO", "ISTRUZIONE_OPERATIVA", "F1_INDIRIZZO_REMOTO_URL"]
 fields += [k for k in extras if k not in fields]
 
 route_rows = []
@@ -103,6 +105,7 @@ for r in rows:
     r["COSA_CERCO"] = thing
     r["PREZZO_OPERATIVO"] = price
     r["ISTRUZIONE_OPERATIVA"] = action
+    r["F1_INDIRIZZO_REMOTO_URL"] = build_import_url(r)
 
     route_rows.append({
         "PRIORITA": r.get("PRIORITA", ""),
@@ -115,6 +118,7 @@ for r in rows:
         "SELLER_SIGNAL": r.get("INDIZIO_INSERZIONISTA", ""),
         "AZIONE": action,
         "URL": r.get("URL", ""),
+        "F1_INDIRIZZO_REMOTO_URL": r["F1_INDIRIZZO_REMOTO_URL"],
     })
 
 if rows:
@@ -123,7 +127,7 @@ if rows:
         w.writeheader()
         w.writerows(rows)
 
-route_fields = ["PRIORITA", "SCORE", "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO", "FONTE", "SELLER_SIGNAL", "AZIONE", "URL"]
+route_fields = ["PRIORITA", "SCORE", "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO", "FONTE", "SELLER_SIGNAL", "AZIONE", "URL", "F1_INDIRIZZO_REMOTO_URL"]
 route_rows.sort(key=lambda r: int(r.get("SCORE") or 0), reverse=True)
 with OUT.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=route_fields)

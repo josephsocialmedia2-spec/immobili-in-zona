@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - F1 Indirizzo Remoto{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="eyebrow">OPERATIVITA DA REMOTO</p>
+    <h1>Da un indirizzo a una pratica verificabile</h1>
+    <p>INDIRIZZO -> VERIFICA -> IMMOBILE -> TITOLARITA -> CONTATTO LECITO -> AZIONE -> CRM</p>
+  </div>
+</section>
+
+<section class="main-actions">
+  <a class="action-card primary" href="{{ url_for('new_practice') }}"><b>NUOVO INDIRIZZO</b><span>Inserisci Comune, via e civico</span></a>
+  <a class="action-card" href="{{ url_for('practices', stato='') }}"><b>PRATICHE DA COMPLETARE</b><span>{{ stats.pending }} pratiche operative</span></a>
+  <a class="action-card" href="{{ url_for('practices', stato='LETTERA DA GENERARE') }}"><b>LETTERE DA SPEDIRE</b><span>{{ stats.letters }} da lavorare</span></a>
+  <a class="action-card" href="{{ url_for('crm_xlsx') }}"><b>CRM / RISULTATI</b><span>Scarica Excel con link cliccabili</span></a>
+</section>
+
+<section class="export-actions" aria-label="Esportazioni CRM">
+  <a class="btn ghost" href="{{ url_for('crm_csv') }}">CSV</a>
+  <a class="btn ghost" href="{{ url_for('crm_xlsx') }}">EXCEL</a>
+  <a class="btn ghost" href="{{ url_for('crm_pdf') }}">PDF</a>
+  <a class="btn ghost" href="{{ url_for('crm_json') }}">JSON</a>
+</section>
+
+<section class="stats-grid">
+  <div class="stat"><b>{{ stats.total }}</b><span>Pratiche totali</span></div>
+  <div class="stat"><b>{{ stats.usable }}</b><span>Contatti utilizzabili</span></div>
+  <div class="stat"><b>{{ stats.pending }}</b><span>Da completare</span></div>
+</section>
+
+{% if recent %}
+<section class="panel">
+  <div class="panel-title"><h2>Ultime pratiche</h2><a href="{{ url_for('practices') }}">VEDI TUTTE</a></div>
+  <div class="cards-list">
+    {% for p in recent %}
+      <a class="practice-card" href="{{ url_for('practice_detail', practice_id=p.id) }}">
+        <span class="badge">{{ p.status }}</span>
+        <b>{{ p.comune }} - {{ p.via }} {{ p.civico }}</b>
+        <small>{{ p.next_action or 'PROSSIMA AZIONE DA DEFINIRE' }}</small>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}

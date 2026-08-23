@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Pratiche - F1{% endblock %}
+{% block content %}
+<div class="page-head"><div><p class="eyebrow">CRM OPERATIVO</p><h1>Pratiche</h1></div><a class="btn primary" href="{{ url_for('new_practice') }}">NUOVO INDIRIZZO</a></div>
+<form method="get" class="filters panel">
+  <input name="q" placeholder="Cerca ID, Comune, via..." value="{{ query }}">
+  <select name="stato"><option value="">Tutti gli stati</option>{% for state in practice_states %}<option {% if selected_status==state %}selected{% endif %}>{{ state }}</option>{% endfor %}</select>
+  <button class="btn" type="submit">FILTRA</button>
+</form>
+<div class="cards-list">
+{% for p in practices %}
+  <a class="practice-card" href="{{ url_for('practice_detail', practice_id=p.id) }}">
+    <span class="badge">{{ p.status }}</span>
+    <b>{{ p.comune }} - {{ p.via }} {{ p.civico }}</b>
+    <small>{{ p.id }}</small>
+    <span><strong>Ultimo esito:</strong> {{ p.last_outcome or 'da registrare' }}</span>
+    <span><strong>Prossima azione:</strong> {{ p.next_action or 'da definire' }} {{ p.next_action_date }}</span>
+  </a>
+{% else %}
+  <div class="empty">Nessuna pratica trovata.</div>
+{% endfor %}
+</div>
+{% endblock %}

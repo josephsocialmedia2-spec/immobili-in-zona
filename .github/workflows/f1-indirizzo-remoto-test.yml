@@ -1,0 +1,71 @@
+name: F1 Indirizzo Remoto - Test
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "f1-indirizzo-remoto/**"
+      - ".github/workflows/f1-indirizzo-remoto-*.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Installa dipendenze
+        working-directory: f1-indirizzo-remoto
+        run: python -m pip install --disable-pip-version-check -r requirements.txt -r requirements-dev.txt
+      - name: Test automatici
+        working-directory: f1-indirizzo-remoto
+        run: python -m pytest -q
+      - name: Self-test applicazione
+        working-directory: f1-indirizzo-remoto
+        env:
+          PYTHONPATH: src
+        run: python -m f1_indirizzo_remoto.app --self-test
+      - name: Installazione pulita, icona e seconda istanza
+        working-directory: f1-indirizzo-remoto
+        shell: pwsh
+        run: |
+          $env:F1_IR_NONINTERACTIVE = "1"
+          cmd /c installer\INSTALLA.bat
+          if ($LASTEXITCODE -ne 0) { throw "INSTALLA.bat non riuscito" }
+          $shortcut = Join-Path ([Environment]::GetFolderPath("Desktop")) "F1 INDIRIZZO REMOTO.lnk"
+          if (-not (Test-Path $shortcut)) { throw "Icona Desktop non creata" }
+          $base = Join-Path $env:LOCALAPPDATA "F1IndirizzoRemoto"
+          $python = Join-Path $base "venv\Scripts\python.exe"
+          $env:PYTHONPATH = Join-Path $base "app\src"
+          $env:F1_IR_HOME = $base
+          $env:F1_IR_NO_BROWSER = "1"
+          $server = Start-Process $python -ArgumentList @("-m", "f1_indirizzo_remoto.app") -PassThru
+          try {
+            $ready = $false
+            1..30 | ForEach-Object {
+              if (-not $ready) {
+                try { $ready = (Invoke-RestMethod "http://127.0.0.1:8765/health").ok } catch { Start-Sleep -Milliseconds 500 }
+              }
+            }
+            if (-not $ready) { throw "Server locale non avviato" }
+            $second = Start-Process $python -ArgumentList @("-m", "f1_indirizzo_remoto.app") -PassThru -Wait
+            if ($second.ExitCode -ne 0) { throw "La seconda istanza non e stata gestita correttamente" }
+          } finally {
+            if (-not $server.HasExited) { Stop-Process -Id $server.Id -Force }
+          }
+          $database = Join-Path $base "data\f1_indirizzo_remoto.sqlite3"
+          if (-not (Test-Path $database)) { throw "Database locale non inizializzato" }
+          cmd /c installer\DISINSTALLA.bat
+          if ($LASTEXITCODE -ne 0) { throw "DISINSTALLA.bat non riuscito" }
+          if (Test-Path (Join-Path $base "app")) { throw "Programma non rimosso" }
+          if (-not (Test-Path $database)) { throw "La disinstallazione ha cancellato il database" }
+      - name: Verifica assenza dati vietati
+        shell: pwsh
+        run: |
+          $bad = Get-ChildItem f1-indirizzo-remoto -Recurse -File | Where-Object { $_.Name -match '\.(db|sqlite|sqlite3|env)$' -or $_.FullName -match '\\(data|uploads|exports|letters)\\' }
+          if ($bad) { $bad.FullName; throw "Dati locali trovati nel repository" }

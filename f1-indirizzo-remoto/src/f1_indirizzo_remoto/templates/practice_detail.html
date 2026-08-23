@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}{{ practice.id }} - F1{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><p class="eyebrow">{{ practice.id }}</p><h1>{{ practice.comune }} - {{ practice.via }} {{ practice.civico }}</h1><p>{{ practice.normalized_address }}</p></div>
+  <span class="status-large">{{ practice.status }}</span>
+</div>
+
+{% if practice.privacy_status == 'NON CONTATTARE' %}<div class="stop-banner">NON CONTATTARE - ogni azione commerciale e bloccata.</div>{% endif %}
+
+<section class="next-action">
+  <span>ULTIMO ESITO</span><b>{{ practice.last_outcome or 'DA REGISTRARE' }}</b>
+  <span>PROSSIMA AZIONE</span><b>{{ practice.next_action or 'DA DEFINIRE' }}{% if practice.next_action_date %} - {{ practice.next_action_date }}{% endif %}</b>
+</section>
+
+<details open class="panel"><summary>1. VERIFICA INDIRIZZO E RICERCHE</summary>
+  <p class="rule">Salva URL, query, data e conferma. Non memorizzare fotografie protette.</p>
+  <div class="query-grid" id="query-grid">
+    {% for q in queries %}<a class="query-link" href="{{ q.url }}" target="_blank" rel="noopener" data-search-link><b>{{ q.fonte }}</b><span>{{ q.query }}</span></a>{% endfor %}
+  </div>
+  <button class="btn ghost" type="button" data-open-searches>APRI / RIPROVA RICERCHE PRINCIPALI</button>
+  <form method="post" action="{{ url_for('add_source', practice_id=practice.id) }}" class="form-grid compact">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <label>Fonte<input name="source_name" required></label><label>Stato<select name="state">{% for s in source_states %}<option>{{ s }}</option>{% endfor %}</select></label>
+    <label class="span-2">URL esatto<input type="url" name="url" required></label><label class="span-2">Query esatta<input name="query_text"></label>
+    <label class="span-2">Titolo pagina<input name="page_title"></label><label class="span-2">Testo utile confermato<textarea name="useful_text"></textarea></label>
+    <label class="check span-2"><input type="checkbox" name="operator_confirmed"> Confermo che il risultato e pertinente</label>
+    <button class="btn" type="submit">SALVA FONTE</button>
+  </form>
+  {% if practice.sources %}<div class="data-list">{% for s in practice.sources %}<div><span class="badge">{{ s.state }}</span><b>{{ s.source_name }}</b><a href="{{ s.url }}" target="_blank" rel="noopener">APRI FONTE</a><small>{{ s.acquired_at }}</small></div>{% endfor %}</div>{% endif %}
+</details>
+
+<details class="panel"><summary>2. IMMOBILE, VISURA E TITOLARITA</summary>
+  <div class="warning-box"><b>VISURA CATASTALE = indicazione catastale</b><br><b>ISPEZIONE IPOTECARIA / TITOLO = verifica della titolarita</b><br>L'intestatario catastale non e automaticamente il proprietario verificato.</div>
+  <form method="post" action="{{ url_for('update_practice', practice_id=practice.id) }}" class="form-grid compact">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <label>Comune catastale<input name="cadastral_municipality" value="{{ practice.cadastral_municipality }}"></label><label>Sezione<input name="section" value="{{ practice.section }}"></label>
+    <label>Foglio<input name="sheet" value="{{ practice.sheet }}"></label><label>Particella<input name="parcel" value="{{ practice.parcel }}"></label>
+    <label>Subalterno<input name="subaltern" value="{{ practice.subaltern }}"></label><label>Categoria<input name="category" value="{{ practice.category }}"></label>
+    <label>Classe<input name="class" value="{{ practice.class }}"></label><label>Consistenza<input name="consistency" value="{{ practice.consistency }}"></label>
+    <label>Superficie catastale<input name="cadastral_area" value="{{ practice.cadastral_area }}"></label><label>Rendita<input name="cadastral_income" value="{{ practice.cadastral_income }}"></label>
+    <label class="span-2">Intestatario catastale<input name="cadastral_holder" value="{{ practice.cadastral_holder }}"></label>
+    <label>Quota / diritto<input name="holder_share" value="{{ practice.holder_share }}"></label>
+    <label class="span-2">Titolare verificato<input name="verified_owner" value="{{ practice.verified_owner }}"></label>
+    <label>Verifica titolo<select name="title_verification_status"><option>DA CONFERMARE</option><option {% if practice.title_verification_status=='VERIFICATA' %}selected{% endif %}>VERIFICATA</option></select></label>
+    <input type="hidden" name="status" value="{{ practice.status }}"><input type="hidden" name="privacy_status" value="{{ practice.privacy_status }}">
+    <button class="btn" type="submit">SALVA DATI CONFERMATI</button>
+  </form>
+  <h3>Carica documento locale</h3>
+  <form method="post" enctype="multipart/form-data" action="{{ url_for('upload_document', practice_id=practice.id) }}" class="inline-form">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}"><select name="document_type"><option>VISURA CATASTALE</option><option>ISPEZIONE IPOTECARIA</option><option>TITOLO</option><option>SCREENSHOT FONTE</option><option>ALTRO</option></select><input type="file" name="document" accept=".pdf,.jpg,.jpeg,.png" required><button class="btn" type="submit">CARICA E LEGGI</button>
+  </form>
+  {% if practice.documents %}<div class="data-list">{% for d in practice.documents %}<div><span class="badge">{{ d.verification_status }}</span><b>{{ d.document_type }} - {{ d.original_name }}</b><small>Hash {{ d.sha256[:12] }}...</small>{% if not d.operator_confirmed %}<form method="post" action="{{ url_for('confirm_document', practice_id=practice.id, document_id=d.id) }}" class="form-grid compact"><input type="hidden" name="csrf_token" value="{{ csrf_token }}">{% if d.proposed_fields %}{% for field, value in d.proposed_fields.items() %}<label class="check"><input type="checkbox" name="confirm_{{ field }}"> Conferma {{ field|replace('_proposed','')|replace('_',' ') }}</label><label>Valore proposto<input name="value_{{ field }}" value="{{ value }}"></label>{% endfor %}{% else %}<p class="span-2 rule">Nessun campo estratto automaticamente: inserisci i dati manualmente e conferma il documento.</p>{% endif %}<button class="btn small" type="submit">CONFERMA CAMPI SELEZIONATI</button></form>{% endif %}</div>{% endfor %}</div>{% endif %}
+  <h3>Unita presenti nello stesso civico</h3>
+  <form method="post" action="{{ url_for('add_unit', practice_id=practice.id) }}" class="inline-form"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input name="sheet" placeholder="Foglio"><input name="parcel" placeholder="Particella"><input name="subaltern" placeholder="Subalterno"><input name="category" placeholder="Categoria"><input name="floor" placeholder="Piano"><input name="interior" placeholder="Interno"><button class="btn" type="submit">AGGIUNGI UNITA</button></form>
+  {% if practice.units %}<div class="data-list">{% for u in practice.units %}<div><b>Foglio {{ u.sheet }} - Particella {{ u.parcel }} - Sub {{ u.subaltern }}</b><span>{{ u.category }} | {{ u.verification_status }}</span></div>{% endfor %}</div>{% endif %}
+</details>
+
+<details class="panel"><summary>3. CONTATTI PUBBLICI E PRIVACY</summary>
+  <p class="rule">Prima la fonte, poi il contatto. Un prefisso corretto non prova la corrispondenza con l'immobile.</p>
+  <form method="post" action="{{ url_for('add_contact', practice_id=practice.id) }}" class="form-grid compact">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <label>Recapito<input name="value" required></label><label>Tipo dichiarato<select name="contact_type"><option>FISSO</option><option>MOBILE</option><option>EMAIL</option><option>PEC</option><option>WHATSAPP</option><option>MODULO</option></select></label>
+    <label>Soggetto associato<input name="subject_name" required></label><label>Indirizzo mostrato dalla fonte<input name="source_address"></label>
+    <label class="span-2">URL fonte esatto<input type="url" name="source_url" required></label><label>Nome fonte<input name="source_name" required></label><label>Data acquisizione<input type="datetime-local" name="acquired_at" required></label>
+    <label>Attendibilita<select name="reliability">{% for r in reliability_levels %}<option>{{ r }}</option>{% endfor %}</select></label><label>Stato indirizzo fonte<select name="address_match"><option>CORRISPONDE</option><option>DA VERIFICARE</option><option>ALTRA VIA</option></select></label>
+    <label class="span-2">Motivo della corrispondenza<textarea name="match_reason" required></textarea></label><label class="span-2">Condizione d'uso / nota privacy<textarea name="use_condition" required></textarea></label>
+    <label class="span-2">Testo di contesto<textarea name="context_text"></textarea></label><label class="check span-2"><input type="checkbox" name="operator_confirmed"> Confermo manualmente soggetto, fonte e corrispondenza</label>
+    <button class="btn" type="submit">REGISTRA CONTATTO</button>
+  </form>
+  {% if practice.contacts %}<div class="data-list contacts">{% for c in practice.contacts %}{% set permission=contact_permissions[c.id] %}<div><span class="badge">{{ c.reliability }}</span><b>{{ c.contact_type }}: {{ c.value }}</b><span>{{ c.subject_name }} - {{ c.source_address }}</span><a href="{{ c.source_url }}" target="_blank" rel="noopener">FONTE</a>{% if permission[0] %}<span class="allowed">AZIONE MANUALE CONSENTITA</span>{% else %}<span class="blocked">BLOCCATO: {{ permission[1]|join('; ') }}</span>{% endif %}<form method="post" action="{{ url_for('contact_outcome', practice_id=practice.id, contact_id=c.id) }}" class="inline-form"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><select name="contact_status"><option>CONTATTATO</option><option>NESSUNA RISPOSTA</option><option>APPUNTAMENTO</option><option>NON CONTATTARE</option><option>SCARTATO</option></select><input name="last_outcome" placeholder="Esito"><button class="btn small" type="submit">REGISTRA ESITO</button></form></div>{% endfor %}</div>{% endif %}
+</details>
+
+<details class="panel"><summary>4. LETTERA ALTERNATIVA</summary>
+  <p>Se non esiste un recapito pubblico utilizzabile, genera una lettera indirizzata all'immobile.</p>
+  <form method="post" action="{{ url_for('create_letter', practice_id=practice.id) }}" class="inline-form"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input name="confirmed_name" placeholder="Nominativo solo se titolarita verificata"><button class="btn primary" type="submit">GENERA PDF</button></form>
+  {% if practice.letter_generated %}<p><a class="btn ghost" href="{{ url_for('download_letter', practice_id=practice.id) }}" target="_blank">APRI / STAMPA PDF</a></p><form method="post" action="{{ url_for('mark_letter_sent', practice_id=practice.id) }}" class="inline-form"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input type="date" name="letter_sent_at" required><input type="date" name="next_action_date" required><button class="btn" type="submit">SEGNA SPEDITA E PROGRAMMA VERIFICA</button></form>{% endif %}
+</details>
+
+<details class="panel"><summary>5. STATO, ESITO E PROSSIMA AZIONE</summary>
+  <form method="post" action="{{ url_for('update_practice', practice_id=practice.id) }}" class="form-grid compact">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <label>Funzionario<input name="operator" value="{{ practice.operator }}"></label><label>Stato pratica<select name="status">{% for s in practice_states %}<option {% if practice.status==s %}selected{% endif %}>{{ s }}</option>{% endfor %}</select></label>
+    <label>Stato indirizzo<select name="address_status"><option {% if practice.address_status=='DA VERIFICARE' %}selected{% endif %}>DA VERIFICARE</option><option {% if practice.address_status=='VERIFICATO' %}selected{% endif %}>VERIFICATO</option><option>AMBIGUO</option><option>NON IDENTIFICATO</option></select></label>
+    <label>Privacy<select name="privacy_status"><option {% if practice.privacy_status=='ATTIVO' %}selected{% endif %}>ATTIVO</option><option {% if practice.privacy_status=='NON CONTATTARE' %}selected{% endif %}>NON CONTATTARE</option></select></label>
+    <label class="span-2">Ultimo esito<textarea name="last_outcome" required>{{ practice.last_outcome }}</textarea></label><label class="span-2">Prossima azione<input name="next_action" required value="{{ practice.next_action }}"></label><label>Data prossima azione<input type="date" name="next_action_date" required value="{{ practice.next_action_date }}"></label>
+    <label class="span-2">Note<textarea name="notes">{{ practice.notes }}</textarea></label><button class="btn primary" type="submit">SALVA PRATICA</button>
+  </form>
+</details>
+{% endblock %}

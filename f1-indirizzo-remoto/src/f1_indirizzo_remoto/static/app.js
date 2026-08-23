@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-open-searches]').forEach(button=>button.addEventListener('click',()=>{const links=[...document.querySelectorAll('[data-search-link]')].slice(0,7);links.forEach((link,index)=>setTimeout(()=>window.open(link.href,'_blank','noopener'),index*250));}));
