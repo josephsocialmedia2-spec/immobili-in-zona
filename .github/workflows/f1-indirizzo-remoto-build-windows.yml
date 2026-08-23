@@ -1,0 +1,30 @@
+name: F1 Indirizzo Remoto - Build Windows
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "f1-indirizzo-remoto/**"
+      - ".github/workflows/f1-indirizzo-remoto-build-windows.yml"
+  push:
+    tags:
+      - "f1-ir-v*"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crea pacchetto Windows
+        shell: pwsh
+        run: ./f1-indirizzo-remoto/installer/build_windows.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: F1_INDIRIZZO_REMOTO_WINDOWS
+          path: f1-indirizzo-remoto/dist/F1_INDIRIZZO_REMOTO_WINDOWS.zip
+          if-no-files-found: error
+          retention-days: 14

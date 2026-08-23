@@ -181,6 +181,9 @@ jobs:
       - name: Prepara giro acquisizione
         run: python seller_radar_auto/prepare_acquisition_route.py
 
+      - name: Aggiorna dashboard con F1 Indirizzo Remoto
+        run: python seller_radar_auto/refresh_dashboard.py
+
       - name: Invia nuove pubblicazioni via email
         env:
           F1_EMAIL_USER: ${{ secrets.F1_EMAIL_USER }}

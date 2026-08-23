@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Nuovo indirizzo - F1{% endblock %}
+{% block content %}
+<div class="page-head"><div><p class="eyebrow">PASSO 1</p><h1>Nuovo indirizzo</h1><p>Comune, provincia, via e civico sono obbligatori. Il testo originale viene conservato.</p></div></div>
+<form method="post" class="panel form-grid">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+  <input type="hidden" name="canonical_external_id" value="{{ prefill.get('canonical_id','') }}">
+  <label>Comune *<input name="comune" required value="{{ prefill.get('comune','') }}" autocomplete="address-level2"></label>
+  <label>Provincia *<input name="provincia" required maxlength="2" value="{{ prefill.get('provincia','TO') }}"></label>
+  <label class="span-2">Via / Piazza / Corso *<input name="via" required value="{{ prefill.get('via','') }}" autocomplete="address-line1"></label>
+  <label>Numero civico *<input name="civico" required value="{{ prefill.get('civico','') }}"></label>
+  <label>CAP<input name="cap" inputmode="numeric" maxlength="5" value="{{ prefill.get('cap','') }}"></label>
+  <label>Frazione / localita<input name="frazione" value="{{ prefill.get('frazione','') }}"></label>
+  <label>Nome immobile / condominio<input name="nome_immobile" value="{{ prefill.get('nome_immobile','') }}"></label>
+  <label>Scala<input name="scala" value="{{ prefill.get('scala','') }}"></label>
+  <label>Piano<input name="piano" value="{{ prefill.get('piano','') }}"></label>
+  <label>Interno<input name="interno" value="{{ prefill.get('interno','') }}"></label>
+  <label>Funzionario<input name="funzionario" value="{{ prefill.get('funzionario','Joseph') }}"></label>
+  <label class="span-2">Fonte iniziale<input name="fonte_iniziale" value="{{ prefill.get('fonte','') }}"></label>
+  <label class="span-2">Link iniziale<input type="url" name="link_iniziale" value="{{ prefill.get('url','') }}"></label>
+  <label class="span-2">Motivo della ricerca<input name="motivo" value="{{ prefill.get('motivo','Approfondimento remoto indirizzo') }}"></label>
+  <label class="span-2">Nota operatore<textarea name="nota" rows="4">{{ prefill.get('titolo','') }} {{ prefill.get('segnale','') }}</textarea></label>
+  <div class="span-2 form-actions"><button class="btn primary" type="submit">AVVIA VERIFICA</button><a class="btn ghost" href="{{ url_for('dashboard') }}">ANNULLA</a></div>
+</form>
+{% endblock %}
