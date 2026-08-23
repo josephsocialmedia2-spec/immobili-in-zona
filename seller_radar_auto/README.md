@@ -40,6 +40,16 @@ Regole:
 - Evitare duplicati tra portali.
 - Non aggirare CAPTCHA, login, verifiche umane o protezioni anti-bot.
 
+## DUE BINARI OPERATIVI
+
+Gli annunci non vengono più scartati solo perché pubblicati da un'agenzia.
+
+- `LEAD_DIRETTO` = annuncio con indizio privato. Può generare `VAI IN ZONA` e, solo dopo verifica della fonte e del gate RPO, anche `CHIAMA`.
+- `AREA_OPPORTUNITY` = annuncio con indizio agenzia. Non è un privato e non va contato come tale, ma se contiene un indirizzo utile genera `VAI IN ZONA` per presidiare via/stabile e cercare ulteriori seller signal territoriali.
+- `AREA_DA_VERIFICARE` = natura dell'inserzionista non determinata. L'indirizzo può essere usato come segnale territoriale finché la fonte non viene verificata.
+
+Regola fondamentale: il telefono di Tecnocasa, Gabetti, Tempocasa o di qualunque altra agenzia non deve essere trattato come telefono del proprietario. Un annuncio di agenzia vale come **segnale di zona**, non come contatto diretto del venditore.
+
 ## QUALITY GATE CSV
 
 Il file `validate_radar_csv.py` deve essere usato per ripulire gli export del radar prima dell'import nel CRM.
@@ -62,9 +72,9 @@ Il quality gate non raccoglie nuovi dati personali, non interroga endpoint nasco
 
 ## OUTPUT GENERATI
 
-- `data/work_queue.csv` — coda completa del radar, arricchita con `DOVE_ANDRE`, `COSA_CERCO`, `PREZZO_OPERATIVO`, `ISTRUZIONE_OPERATIVA`.
+- `data/work_queue.csv` — coda completa del radar, arricchita con `TIPO_OPPORTUNITA`, `MOTIVO_AREA`, `VIA_RADAR`, `INDIRIZZI_ZONA`, `AZIONE_ZONA`.
 - `data/giro_acquisizione.csv` — lista operativa ordinata per score.
-- `data/area_radar.csv` — indirizzi pubblicamente rilevati e azioni territoriali.
+- `data/area_radar.csv` — indirizzi pubblicamente rilevati, tipo opportunità e azioni territoriali.
 - `data/state.json` — storico degli annunci monitorati.
 - `dashboard.html` — dashboard pubblica.
 
