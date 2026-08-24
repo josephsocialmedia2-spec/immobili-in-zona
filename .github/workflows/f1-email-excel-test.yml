@@ -1,0 +1,33 @@
+name: F1 Email Excel - Test immediato
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/f1-email-excel-test.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  invia-excel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Scarica il progetto
+        uses: actions/checkout@v4
+
+      - name: Invia Excel di prova a Outlook
+        env:
+          F1_EMAIL_USER: ${{ secrets.F1_EMAIL_USER }}
+          F1_EMAIL_APP_PASSWORD: ${{ secrets.F1_EMAIL_APP_PASSWORD }}
+          F1_EMAIL_TO: f1immobiliaresusa@outlook.it
+          F1_EMAIL_SMTP_HOST: smtp.gmail.com
+          F1_EMAIL_SMTP_PORT: "465"
+        run: |
+          test -n "$F1_EMAIL_USER" || { echo "F1_EMAIL_USER non configurato"; exit 1; }
+          test -n "$F1_EMAIL_APP_PASSWORD" || { echo "F1_EMAIL_APP_PASSWORD non configurata"; exit 1; }
+          python seller_radar_auto/email_notify.py
+
