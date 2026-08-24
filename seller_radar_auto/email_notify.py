@@ -19,7 +19,7 @@ SMTP_HOST = os.getenv("F1_EMAIL_SMTP_HOST", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("F1_EMAIL_SMTP_PORT", "465"))
 EMAIL_USER = os.getenv("F1_EMAIL_USER", "").strip()
 EMAIL_PASS = os.getenv("F1_EMAIL_APP_PASSWORD", "").strip()
-EMAIL_TO = (os.getenv("F1_EMAIL_TO") or "f1immobiliaresusa@gmail.com").strip()
+EMAIL_TO = (os.getenv("F1_EMAIL_TO") or "f1immobiliaresusa@outlook.it").strip()
 
 HEADERS = [
     "PRIORITA", "SCORE", "COMUNE", "VIA / CIVICO", "IMMOBILE",
