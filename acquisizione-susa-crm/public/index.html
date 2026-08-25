@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12261f">
+  <title>ACQUISIZIONE SUSA CRM</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="login" class="login hidden" role="dialog" aria-modal="true">
+    <form id="login-form" class="login-card">
+      <div class="brand-mark">F1</div>
+      <p class="eyebrow">F1 Immobiliare</p>
+      <h1>Acquisizione Susa CRM</h1>
+      <p>Inserisci il PIN locale per accedere ai dati.</p>
+      <label>PIN<input id="login-pin" type="password" autocomplete="current-password" required></label>
+      <button class="button primary wide" type="submit">Accedi</button>
+      <p id="login-error" class="error-text"></p>
+    </form>
+  </div>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">F1</div><div><strong>ACQUISIZIONE</strong><span>SUSA CRM</span></div></div>
+      <nav aria-label="Navigazione principale">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> Oggi</button>
+        <button class="nav-item" data-view="leads"><span>◎</span> Contatti</button>
+        <button class="nav-item" data-view="reminders"><span>◷</span> Richiami</button>
+        <button class="nav-item" data-view="import"><span>＋</span> Importa dati</button>
+        <button class="nav-item" data-view="assistant"><span>✦</span> Assistente</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> Impostazioni</button>
+      </nav>
+      <div class="sidebar-foot"><span id="connection-dot" class="status-dot"></span><span id="connection-label">Ollama da verificare</span></div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button id="mobile-menu" class="icon-button mobile-only" aria-label="Apri menu">☰</button>
+        <div class="global-search"><span>⌕</span><input id="global-search" type="search" placeholder="Cerca nome, telefono, via, civico o nota…"></div>
+        <button id="new-lead" class="button primary">＋ Nuova scheda</button>
+      </header>
+
+      <main>
+        <section id="view-dashboard" class="view active">
+          <div id="monday-banner" class="monday-banner hidden">
+            <div><span class="eyebrow">È lunedì</span><strong>Prepara i contenuti F1 della settimana</strong><small>Il collegamento si apre in una nuova scheda.</small></div>
+            <a id="monday-link" class="button light" target="_blank" rel="noopener">Apri Contenuti F1 ↗</a>
+          </div>
+          <div class="page-heading"><div><p class="eyebrow">Cruscotto operativo</p><h1>Buongiorno, Joseph</h1><p id="today-label" class="muted"></p></div><button class="button secondary" data-view-jump="import">Importa nuovi dati</button></div>
+          <div id="dashboard-cards" class="metric-grid"></div>
+          <div class="dashboard-grid">
+            <article class="panel"><div class="panel-head"><div><p class="eyebrow">Priorità</p><h2>Da fare adesso</h2></div><button class="text-button" data-view-jump="reminders">Vedi tutti</button></div><div id="today-reminders" class="stack-list"></div></article>
+            <article class="panel"><div class="panel-head"><div><p class="eyebrow">Controllo qualità</p><h2>Informazioni mancanti</h2></div></div><div id="quality-list" class="quality-list"></div></article>
+          </div>
+        </section>
+
+        <section id="view-leads" class="view">
+          <div class="page-heading"><div><p class="eyebrow">Archivio CRM</p><h1>Contatti e immobili</h1><p class="muted">Ricerca da qualsiasi dato già inserito.</p></div><div class="filters"><select id="lead-status-filter"><option value="">Tutti gli stati</option></select><button class="button primary" id="new-lead-2">＋ Nuova scheda</button></div></div>
+          <article class="panel table-panel"><div id="lead-count" class="table-meta"></div><div class="table-wrap"><table><thead><tr><th>Contatto / immobile</th><th>Indirizzo</th><th>Stato</th><th>Prossima azione</th><th>Priorità</th></tr></thead><tbody id="leads-body"></tbody></table></div><div id="lead-cards" class="lead-cards"></div></article>
+        </section>
+
+        <section id="view-reminders" class="view">
+          <div class="page-heading"><div><p class="eyebrow">Agenda</p><h1>Richiami e attività</h1><p class="muted">Scadenze ordinate, senza contatti dimenticati.</p></div><button id="new-reminder" class="button primary">＋ Promemoria</button></div>
+          <div class="reminder-columns"><article class="panel"><h2>Scaduti</h2><div id="reminders-overdue" class="stack-list"></div></article><article class="panel"><h2>Oggi</h2><div id="reminders-today" class="stack-list"></div></article><article class="panel"><h2>Prossimi</h2><div id="reminders-upcoming" class="stack-list"></div></article></div>
+        </section>
+
+        <section id="view-import" class="view">
+          <div class="page-heading"><div><p class="eyebrow">Acquisizione assistita</p><h1>Importa nuovi dati</h1><p class="muted">Nessun dato viene inserito nel CRM prima della tua conferma.</p></div></div>
+          <div class="import-grid">
+            <article class="panel import-box">
+              <div class="drop-icon">⇧</div><h2>File, foto e cartelle</h2><p>JPG, PNG, CSV, XLSX, TXT, MD, PDF, DOCX, JSON e HTML.</p>
+              <label class="button primary file-button">Scegli file<input id="file-input" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.csv,.tsv,.xlsx,.txt,.md,.pdf,.docx,.json,.html,.htm"></label>
+              <div id="file-list" class="file-list"></div>
+            </article>
+            <article class="panel">
+              <h2>Incolla testo o chat</h2><textarea id="paste-text" rows="9" placeholder="Incolla qui una nota telefonica, un messaggio WhatsApp, un elenco di annunci o una chat esportata…"></textarea>
+              <label class="check"><input id="use-ollama-import" type="checkbox"> Analizza anche con Ollama locale</label>
+              <button id="analyze-paste" class="button secondary wide">Analizza il testo</button>
+            </article>
+          </div>
+          <div id="import-preview"></div>
+          <article class="panel history-panel"><div class="panel-head"><div><p class="eyebrow">Registro</p><h2>Storico importazioni</h2></div></div><div id="import-history" class="stack-list"></div></article>
+        </section>
+
+        <section id="view-assistant" class="view">
+          <div class="page-heading"><div><p class="eyebrow">Intelligenza locale</p><h1>Assistente Ollama</h1><p class="muted">Interroga chat e documenti conservati sul PC. Le risposte indicano le fonti usate.</p></div></div>
+          <div class="assistant-layout"><article class="panel assistant-panel"><div id="chat-log" class="chat-log"><div class="assistant-message"><strong>Assistente F1</strong><p>Puoi chiedermi: “Quali clienti devo richiamare?”, “Che cosa è stato detto su Via Fratelli Vallero?” oppure “Quali note mancano?”.</p></div></div><form id="assistant-form" class="chat-form"><textarea id="assistant-question" rows="2" placeholder="Scrivi una domanda…" required></textarea><button class="button primary" type="submit">Chiedi</button></form></article><aside class="panel source-panel"><h2>Fonti usate</h2><div id="assistant-sources" class="stack-list"><p class="empty">Le fonti compariranno qui.</p></div></aside></div>
+        </section>
+
+        <section id="view-settings" class="view">
+          <div class="page-heading"><div><p class="eyebrow">Configurazione</p><h1>Impostazioni</h1><p class="muted">Ollama lavora in locale; Supabase riceve solo dati strutturati confermati.</p></div></div>
+          <div class="settings-grid">
+            <article class="panel"><div class="panel-head"><div><p class="eyebrow">IA locale</p><h2>Ollama</h2></div><span id="ollama-badge" class="badge neutral">Da verificare</span></div><p id="ollama-message" class="muted">Connessione: http://127.0.0.1:11434</p><label>Modello<select id="ollama-model"><option value="">Rileva i modelli installati</option></select></label><div class="button-row"><button id="retry-ollama" class="button secondary">Riprova collegamento</button><button id="save-settings" class="button primary">Salva modello</button></div></article>
+            <article class="panel"><div class="panel-head"><div><p class="eyebrow">Database online</p><h2>Supabase</h2></div><span id="supabase-badge" class="badge neutral">Non configurato</span></div><p class="muted">Configura le credenziali nel file <code>.env</code>. La sincronizzazione non include file originali.</p><button id="sync-supabase" class="button secondary">Sincronizza dati confermati</button></article>
+            <article class="panel"><p class="eyebrow">Sicurezza</p><h2>Backup locale</h2><p class="muted">Scarica una copia con data e ora nel nome.</p><div class="button-row wrap"><a class="button secondary" href="/api/export?format=json" download>JSON</a><a class="button secondary" href="/api/export?format=csv" download>CSV</a><a class="button secondary" href="/api/export?format=excel" download>Excel</a></div></article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card"><button id="modal-close" class="modal-close" aria-label="Chiudi">×</button><div id="modal-content"></div></div></div>
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
