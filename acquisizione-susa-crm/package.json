@@ -1,0 +1,17 @@
+{
+  "name": "acquisizione-susa-crm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CRM locale-first per l'acquisizione immobiliare F1 a Susa, con Ollama e sincronizzazione Supabase opzionale.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "node --watch src/server.mjs",
+    "test": "node --test",
+    "check": "node --check src/server.mjs && node --check public/app.js"
+  },
+  "license": "UNLICENSED"
+}
