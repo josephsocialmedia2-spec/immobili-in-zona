@@ -36,8 +36,6 @@ jobs:
           LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
           LOCAL_TIME=$(TZ=Europe/Rome date +%H:%M)
           echo "Ora italiana rilevata: $LOCAL_TIME"
-          # GitHub Actions può partire con qualche minuto di ritardo: accettiamo
-          # l'esecuzione schedulata che cade nell'ora 00 e scartiamo l'altro slot UTC.
           if [ "$LOCAL_HOUR" = "00" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
@@ -187,8 +185,8 @@ jobs:
       - name: Aggiorna dashboard con F1 Indirizzo Remoto
         run: python seller_radar_auto/refresh_dashboard.py
 
-      - name: Genera Market Intelligence e KPI
-        run: python seller_radar_auto/market_intelligence.py
+      - name: Genera Market Intelligence e KPI filtrati
+        run: python seller_radar_auto/market_intelligence_v2.py
 
       - name: Invia nuove pubblicazioni via email
         env:
