@@ -1,0 +1,22 @@
+name: F1 Microzone Engine QA
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "seller_radar_auto/microzone_engine.py"
+      - "seller_radar_auto/f1_microzone_config.json"
+      - ".github/workflows/f1-microzone-engine-qa.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python syntax
+        run: python -m py_compile seller_radar_auto/microzone_engine.py
+      - name: Config JSON
+        run: python -m json.tool seller_radar_auto/f1_microzone_config.json > /dev/null
