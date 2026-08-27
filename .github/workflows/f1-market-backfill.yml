@@ -1,0 +1,94 @@
+name: F1 Market Backfill
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "seller_radar_auto/.market_backfill_trigger"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-market-backfill
+  cancel-in-progress: true
+
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      items: ${{ steps.m.outputs.items }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        shell: bash
+        run: |
+          X=$(python seller_radar_auto/build_market_backfill_matrix.py)
+          echo "items=$X" >> "$GITHUB_OUTPUT"
+          echo "$X"
+
+  worker:
+    needs: matrix
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix: ${{ fromJson(needs.matrix.outputs.items) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Arricchisci annuncio
+        if: matrix.item_id != '__NONE__'
+        env:
+          F1_ITEM_ID: ${{ matrix.item_id }}
+          F1_ITEM_OUT: seller_radar_auto/data/item_result.json
+          F1_SEARCH_INTERVAL: "4"
+        run: python seller_radar_auto/item_worker.py
+      - name: Carica risultato
+        if: matrix.item_id != '__NONE__'
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-backfill-${{ matrix.item_id }}
+          path: seller_radar_auto/data/item_result.json
+          retention-days: 1
+
+  merge:
+    needs: [matrix, worker]
+    if: always() && needs.matrix.result == 'success' && (needs.worker.result == 'success' || needs.worker.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Scarica risultati
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: market-backfill-*
+          path: seller_radar_auto/market_backfill_results
+      - name: Unisci prezzo agenzia indirizzo
+        run: python seller_radar_auto/merge_market_backfill.py
+      - name: Applica storico prezzi verificati
+        run: python seller_radar_auto/apply_market_enrichment.py
+      - name: Rigenera KPI
+        run: python seller_radar_auto/market_intelligence.py
+      - name: Collega repository
+        run: python seller_radar_auto/cross_repo_ingest.py
+      - name: Rigenera Brief
+        run: python seller_radar_auto/appointment_brief.py
+      - name: Salva aggiornamenti
+        shell: bash
+        run: |
+          git config user.name "f1-market-backfill-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add seller_radar_auto/data/state.json seller_radar_auto/data/intelligence seller_radar_auto/intelligence_dashboard.html seller_radar_auto/appointment_brief.html
+          if git diff --cached --quiet; then
+            echo "Nessun dato nuovo da salvare."
+          else
+            git commit -m "market: backfill prezzi agenzie indirizzi"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
