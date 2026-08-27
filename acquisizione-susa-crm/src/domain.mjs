@@ -89,10 +89,17 @@ export function parseCsv(text, delimiter) {
 }
 
 export function extractContacts(text = '') {
-  const phones = [...new Set(String(text).match(/(?:\+39[\s.-]?)?(?:3\d{2}|0\d{1,3})[\s.-]?\d{3}[\s.-]?\d{3,4}/g) || [])];
-  const emails = [...new Set(String(text).match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || [])];
-  const prices = [...new Set(String(text).match(/(?:€\s?|euro\s?)\d{1,3}(?:[.\s]\d{3})*(?:,\d{2})?/gi) || [])];
-  const urls = [...new Set(String(text).match(/https?:\/\/[^\s)>\]]+/gi) || [])];
+  const source = String(text);
+  const phoneCandidates = source.match(/(?:\+39|0039)?[\s./-]?(?:3\d{2}|0\d{1,3})(?:[\s./-]?\d{2,4}){2,3}/g) || [];
+  const phones = [...new Set(phoneCandidates.map(value => value.trim()).filter(value => {
+    let digits = value.replace(/\D/g, '');
+    if (digits.startsWith('0039')) digits = digits.slice(4);
+    else if (digits.startsWith('39') && digits.length > 10) digits = digits.slice(2);
+    return /^(?:3\d{8,9}|0\d{7,10})$/.test(digits);
+  }))];
+  const emails = [...new Set(source.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || [])];
+  const prices = [...new Set(source.match(/(?:€\s?|euro\s?)\d{1,3}(?:[.\s]\d{3})*(?:,\d{2})?/gi) || [])];
+  const urls = [...new Set(source.match(/https?:\/\/[^\s)>\]]+/gi) || [])];
   return { phones, emails, prices, urls };
 }
 
