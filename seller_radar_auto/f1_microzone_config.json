@@ -14,6 +14,10 @@
   ],
   "nearby_streets_per_target": 4,
   "osm_cache_days": 7,
-  "overpass_url": "https://overpass-api.de/api/interpreter",
-  "user_agent": "F1Immobiliare-Microzone/1.0 (market intelligence; contact: f1immobiliaresusa@outlook.it)"
+  "overpass_urls": [
+    "https://lz4.overpass-api.de/api/interpreter",
+    "https://z.overpass-api.de/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+  ],
+  "user_agent": "F1Immobiliare-Microzone/1.1 (market intelligence; contact: f1immobiliaresusa@outlook.it)"
 }
