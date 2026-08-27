@@ -64,32 +64,97 @@ function leadFromRow(row = {}) {
   const pick = (...keys) => keys.map(key => normalized[key]).find(value => value !== undefined && value !== '') || '';
   const firstName = pick('nome', 'first_name');
   const lastName = pick('cognome', 'last_name');
-  const street = pick('via', 'indirizzo', 'street');
-  const civic = pick('civico', 'numero_civico', 'civic');
+  const street = pick('via', 'indirizzo', 'strada', 'street');
+  const civic = pick('civico', 'numero_civico', 'n_civico', 'civic');
   const currentPrice = String(pick('prezzo', 'prezzo_attuale', 'current_price')).replace(/[^\d,.-]/g, '').replace(/\./g, '').replace(',', '.');
   return {
     first_name: firstName, last_name: lastName, company: pick('azienda', 'societa', 'company'),
-    phone: pick('telefono', 'cellulare', 'phone'), email: pick('email', 'e_mail'), comune: pick('comune', 'citta', 'city') || 'Susa',
+    phone: pick('telefono', 'telefono_1', 'tel', 'cellulare', 'cell', 'mobile', 'numero', 'numero_telefono', 'recapito', 'phone', 'phone_number'),
+    email: pick('email', 'e_mail', 'mail', 'posta_elettronica'), comune: pick('comune', 'citta', 'city') || 'Susa',
     cap: pick('cap'), street, civic, full_address: pick('indirizzo_completo', 'full_address') || [street, civic, pick('comune', 'citta') || 'Susa'].filter(Boolean).join(', '),
     property_type: pick('tipologia', 'tipo_immobile', 'property_type'), sqm: Number(pick('mq', 'metri_quadri', 'sqm')) || null,
     rooms: pick('locali', 'rooms'), features: pick('caratteristiche', 'features'), current_price: Number(currentPrice) || null,
-    source: pick('fonte', 'source'), source_url: pick('url', 'link', 'source_url'), seller_signal: pick('seller_signal', 'segnale'),
+    source: pick('fonte', 'source'), source_url: pick('url', 'link', 'link_annuncio', 'source_url'), seller_signal: pick('seller_signal', 'segnale'),
     seller_type: pick('tipo_venditore', 'seller_type'), priority: pick('priorita', 'priority') || 'Media',
     contact_status: pick('stato_contatto', 'contact_status', 'esito') || 'Da contattare', next_action: pick('prossima_azione', 'next_action'),
     callback_at: pick('richiamo', 'data_richiamo', 'callback_at') || null, original_note: pick('note', 'nota', 'original_note')
   };
 }
 
+function proposalKey(record = {}) {
+  const phone = String(record.phone || '').replace(/\D/g, '');
+  const email = String(record.email || '').trim().toLowerCase();
+  const address = String(record.full_address || '').trim().toLowerCase();
+  return phone ? `p:${phone}` : email ? `e:${email}` : address ? `a:${address}` : '';
+}
+
+function makeTextProposal({ phone = '', email = '', found = {}, note = '' } = {}) {
+  return {
+    first_name: '', last_name: '', phone, email, comune: 'Susa',
+    full_address: '', property_type: '', current_price: found.prices?.[0] ? Number(found.prices[0].replace(/[^\d]/g, '')) : null,
+    source: 'Importazione locale', source_url: found.urls?.[0] || '', contact_status: 'Da contattare', next_action: '',
+    priority: 'Media', confidence: 0.35, original_note: note.slice(0, 12000)
+  };
+}
+
 function heuristicProposals(extracted) {
   if (extracted.rows?.length) return extracted.rows.slice(0, 1000).map(leadFromRow);
-  const found = extractContacts(extracted.text);
-  if (!extracted.text.trim()) return [];
-  return [{
-    first_name: '', last_name: '', phone: found.phones[0] || '', email: found.emails[0] || '', comune: 'Susa',
-    full_address: '', property_type: '', current_price: found.prices[0] ? Number(found.prices[0].replace(/[^\d]/g, '')) : null,
-    source: 'Importazione locale', source_url: found.urls[0] || '', contact_status: 'Da contattare', next_action: '',
-    priority: 'Media', confidence: 0.35, original_note: extracted.text.slice(0, 12000)
-  }];
+  const text = String(extracted.text || '').trim();
+  if (!text) return [];
+
+  const lines = text.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  const proposals = [];
+  const seen = new Set();
+
+  for (let index = 0; index < lines.length && proposals.length < 1000; index += 1) {
+    const found = extractContacts(lines[index]);
+    const count = Math.max(found.phones.length, found.emails.length);
+    if (!count) continue;
+    const context = lines.slice(Math.max(0, index - 1), Math.min(lines.length, index + 2)).join('\n');
+    for (let item = 0; item < count && proposals.length < 1000; item += 1) {
+      const proposal = makeTextProposal({
+        phone: found.phones[item] || '',
+        email: found.emails[item] || (item === 0 ? found.emails[0] || '' : ''),
+        found,
+        note: context
+      });
+      const key = proposalKey(proposal) || `line:${index}:${item}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      proposals.push(proposal);
+    }
+  }
+
+  if (proposals.length) return proposals;
+
+  const found = extractContacts(text);
+  const count = Math.max(found.phones.length, found.emails.length, 1);
+  return Array.from({ length: Math.min(count, 1000) }, (_, index) => makeTextProposal({
+    phone: found.phones[index] || '',
+    email: found.emails[index] || (index === 0 ? found.emails[0] || '' : ''),
+    found,
+    note: text
+  }));
+}
+
+function mergeProposals(base = [], aiRecords = []) {
+  const merged = [];
+  const positions = new Map();
+  for (const record of [...base, ...(aiRecords || [])]) {
+    if (!record || typeof record !== 'object') continue;
+    const key = proposalKey(record);
+    if (key && positions.has(key)) {
+      const position = positions.get(key);
+      const current = merged[position];
+      merged[position] = Object.fromEntries(Object.keys({ ...current, ...record }).map(field => [field, record[field] !== undefined && record[field] !== '' && record[field] !== null ? record[field] : current[field]]));
+      continue;
+    }
+    const next = { ...record };
+    if (key) positions.set(key, merged.length);
+    merged.push(next);
+    if (merged.length >= 1000) break;
+  }
+  return merged;
 }
 
 function csvEscape(value) {
@@ -189,7 +254,6 @@ async function handleApi(req, res, url) {
     if (!buffer.length) return error(res, 400, 'Il file o il testo è vuoto.');
     const saved = saveOriginal(config.dataDir, filename, buffer);
     const previous = store.db.prepare('SELECT * FROM imports WHERE sha256=?').get(saved.hash);
-    if (previous) return json(res, 200, { ...store.getImport(previous.id), duplicate: true });
     const extracted = await extractFile({ filename, mimeType: body.mime_type || '', buffer, savedPath: saved.target, projectRoot });
     let proposals = heuristicProposals(extracted);
     let model = '';
@@ -197,12 +261,15 @@ async function handleApi(req, res, url) {
       model = body.model || store.getSetting('ollama_model', config.ollamaModel);
       const images = extracted.type === 'image' ? [buffer.toString('base64')] : [];
       const ai = await ollama.extract(extracted.text || `Analizza l'immagine ${filename}`, model, images);
-      proposals = ai.records;
+      proposals = mergeProposals(proposals, ai.records);
       extracted.warnings.push(...(ai.warnings || []));
     }
-    const result = store.createImport({ filename, mime_type: extracted.type, sha256: saved.hash, local_path: saved.target, extracted_text: extracted.text, proposals, model, report: { rows: extracted.rows.length, warnings: extracted.warnings, contacts: extracted.contacts } });
-    if (extracted.text) store.addKnowledgeChunks(result.id, filename, chunkText(extracted.text));
-    return json(res, 201, { ...result, extracted });
+    const report = { rows: extracted.rows.length, warnings: extracted.warnings, contacts: extracted.contacts };
+    const result = previous
+      ? { ...store.getImport(previous.id), status: 'Da confermare', extracted_text: extracted.text, proposals, model, report, duplicate: false, reanalyzed: true }
+      : store.createImport({ filename, mime_type: extracted.type, sha256: saved.hash, local_path: saved.target, extracted_text: extracted.text, proposals, model, report });
+    if (extracted.text && !previous) store.addKnowledgeChunks(result.id, filename, chunkText(extracted.text));
+    return json(res, previous ? 200 : 201, { ...result, extracted });
   }
   const importMatch = url.pathname.match(/^\/api\/imports\/([^/]+)$/);
   if (importMatch && method === 'GET') {
