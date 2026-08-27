@@ -31,7 +31,7 @@ jobs:
   worker:
     needs: matrix
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     strategy:
       fail-fast: false
       max-parallel: 10
@@ -45,6 +45,13 @@ jobs:
           F1_ITEM_OUT: seller_radar_auto/data/item_result.json
           F1_SEARCH_INTERVAL: "4"
         run: python seller_radar_auto/item_worker.py
+      - name: Fallback Dork prezzo e agenzia
+        if: matrix.item_id != '__NONE__'
+        env:
+          F1_ITEM_ID: ${{ matrix.item_id }}
+          F1_ITEM_OUT: seller_radar_auto/data/item_result.json
+          F1_SEARCH_INTERVAL: "4"
+        run: python seller_radar_auto/search_market_fallback.py
       - name: Carica risultato
         if: matrix.item_id != '__NONE__'
         uses: actions/upload-artifact@v4
@@ -73,8 +80,8 @@ jobs:
         run: python seller_radar_auto/merge_market_backfill.py
       - name: Applica storico prezzi verificati
         run: python seller_radar_auto/apply_market_enrichment.py
-      - name: Rigenera KPI
-        run: python seller_radar_auto/market_intelligence.py
+      - name: Rigenera KPI filtrati
+        run: python seller_radar_auto/market_intelligence_v2.py
       - name: Collega repository
         run: python seller_radar_auto/cross_repo_ingest.py
       - name: Rigenera Brief
