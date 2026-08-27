@@ -127,23 +127,39 @@ def overpass_roads(comune: str, cfg):
         except Exception:
             pass
 
-    # Una query mirata per comune: tutte le strade nominate nell'area amministrativa.
-    q = f'''[out:json][timeout:40];
+    q = f'''[out:json][timeout:35];
 area["boundary"="administrative"]["name"="{comune}"]->.a;
 way(area.a)["highway"]["name"];
 out body geom;'''
     data = urllib.parse.urlencode({"data": q}).encode("utf-8")
-    req = urllib.request.Request(
-        cfg.get("overpass_url", "https://overpass-api.de/api/interpreter"),
-        data=data,
-        headers={
-            "User-Agent": cfg.get("user_agent", "F1Immobiliare-Microzone/1.0"),
-            "Accept": "application/json",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=55) as res:
-        obj = json.loads(res.read().decode("utf-8"))
+    urls = cfg.get("overpass_urls") or [cfg.get("overpass_url", "https://overpass-api.de/api/interpreter")]
+    last_error = None
+    obj = None
+    for endpoint in urls:
+        for attempt in range(2):
+            try:
+                req = urllib.request.Request(
+                    endpoint,
+                    data=data,
+                    headers={
+                        "User-Agent": cfg.get("user_agent", "F1Immobiliare-Microzone/1.1"),
+                        "Accept": "application/json",
+                    },
+                    method="POST",
+                )
+                with urllib.request.urlopen(req, timeout=45) as res:
+                    obj = json.loads(res.read().decode("utf-8"))
+                if obj is not None:
+                    break
+            except Exception as e:
+                last_error = e
+                wait = 4 + attempt * 4
+                print(f"[WARN] Overpass {endpoint} {comune} tentativo {attempt+1}: {e}; retry in {wait}s")
+                time.sleep(wait)
+        if obj is not None:
+            break
+    if obj is None:
+        raise RuntimeError(f"Tutte le istanze Overpass fallite per {comune}: {last_error}")
 
     roads = []
     for e in obj.get("elements", []):
@@ -173,7 +189,6 @@ def hav(a, b):
 def min_geom_distance(ga, gb):
     if not ga or not gb:
         return 10**9
-    # Campionamento per evitare O(n^2) enorme su vie molto lunghe.
     def sample(g):
         if len(g) <= 18:
             return g
@@ -198,7 +213,6 @@ def nearest_streets(target: str, roads, limit: int):
     tk = norm(target)
     t = grouped.get(tk)
     if not t:
-        # Match tollerante per abbreviazioni / apostrofi / maiuscole.
         matches = [(k,v) for k,v in grouped.items() if tk in k or k in tk]
         if matches:
             matches.sort(key=lambda kv: abs(len(kv[0])-len(tk)))
@@ -212,7 +226,6 @@ def nearest_streets(target: str, roads, limit: int):
             continue
         intersects = bool(t["nodes"] & v["nodes"])
         dist = 0.0 if intersects else min_geom_distance(t["geometry"], v["geometry"])
-        # Prima le vie che incrociano davvero la target; poi le più vicine.
         ranked.append((0 if intersects else 1, dist, v["name"]))
     ranked.sort(key=lambda x: (x[0], x[1], norm(x[2])))
 
@@ -241,7 +254,9 @@ def main():
 
     rows = []
     summary = {"generated_at": datetime.now(timezone.utc).isoformat(), "main_towns": cfg["main_towns"], "microzones": []}
-    for comune, items in sorted(by_city.items()):
+    for city_index, (comune, items) in enumerate(sorted(by_city.items())):
+        if city_index:
+            time.sleep(2.5)
         try:
             roads = overpass_roads(comune, cfg)
             osm_status = "OK"
