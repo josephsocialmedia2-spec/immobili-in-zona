@@ -1,0 +1,45 @@
+name: F1 Telefonate PC
+
+on:
+  workflow_run:
+    workflows: ["F1 Seller Radar AUTO"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: f1-telefonate-pc
+  cancel-in-progress: true
+
+jobs:
+  telefonate:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: [self-hosted, Windows, X64, f1-desktop]
+    timeout-minutes: 180
+    steps:
+      - name: Checkout Radar Valle di Susa
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Verifica Python
+        shell: powershell
+        run: |
+          py --version
+
+      - name: Radar -> numeri -> telefonate
+        shell: powershell
+        run: |
+          powershell -NoProfile -ExecutionPolicy Bypass -File windows_valle_susa/run_telefonate.ps1
+
+      - name: Stato locale
+        if: always()
+        shell: powershell
+        run: |
+          $report = Join-Path $HOME 'Documents\F1_Directory_Microzone\LISTA_MATTINO.html'
+          $log = Join-Path $HOME 'Documents\F1_Directory_Microzone\motore.log'
+          if (Test-Path $report) { Write-Host 'LISTA_MATTINO pronta sul PC.' }
+          if (Test-Path $log) { Get-Content $log -Tail 20 }
+          Write-Host 'Nessun nome o telefono viene caricato come artifact GitHub.'
