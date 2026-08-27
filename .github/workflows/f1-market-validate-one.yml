@@ -1,0 +1,86 @@
+name: F1 Market Validate ONE
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "seller_radar_auto/market_validation_target.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-market-validate-one
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Leggi target
+        id: target
+        shell: bash
+        run: |
+          ID=$(tr -d '\r\n ' < seller_radar_auto/market_validation_target.txt)
+          echo "id=$ID" >> "$GITHUB_OUTPUT"
+          echo "Target: $ID"
+      - name: Arricchisci annuncio
+        env:
+          F1_ITEM_ID: ${{ steps.target.outputs.id }}
+          F1_ITEM_OUT: seller_radar_auto/data/item_result.json
+          F1_SEARCH_INTERVAL: "3"
+        run: python seller_radar_auto/item_worker.py
+      - name: Fallback Dork forte
+        env:
+          F1_ITEM_ID: ${{ steps.target.outputs.id }}
+          F1_ITEM_OUT: seller_radar_auto/data/item_result.json
+          F1_SEARCH_INTERVAL: "3"
+        run: python seller_radar_auto/search_market_fallback.py
+      - name: Prepara merge
+        run: |
+          mkdir -p seller_radar_auto/market_backfill_results/one
+          cp seller_radar_auto/data/item_result.json seller_radar_auto/market_backfill_results/one/result.json
+      - name: Unisci risultato
+        run: python seller_radar_auto/merge_market_backfill.py
+      - name: Applica storico verificato
+        run: python seller_radar_auto/apply_market_enrichment.py
+      - name: Rigenera KPI filtrati
+        run: python seller_radar_auto/market_intelligence_v2.py
+      - name: Rigenera Brief
+        run: python seller_radar_auto/appointment_brief.py
+      - name: Mostra risultato target
+        env:
+          TARGET: ${{ steps.target.outputs.id }}
+        shell: python
+        run: |
+          import json,os
+          from pathlib import Path
+          s=json.loads(Path('seller_radar_auto/data/state.json').read_text(encoding='utf-8'))
+          x=(s.get('items') or {}).get(os.environ['TARGET'],{})
+          e=x.get('enrichment') or {}
+          print('PRICE_HISTORY=',x.get('price_history'))
+          print('DETECTED_PRICE=',e.get('detected_price'))
+          print('PRICE_CONFIDENCE=',e.get('price_confidence'))
+          print('PRICE_SOURCE=',e.get('price_source'))
+          print('SELLER=',e.get('seller_name'))
+          print('FALLBACK_QUERIES=',e.get('fallback_queries'))
+          print('FALLBACK_MATCHES=',e.get('fallback_matches'))
+      - name: Salva se cambia qualcosa
+        shell: bash
+        run: |
+          git config user.name "f1-market-validator-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add seller_radar_auto/data/state.json seller_radar_auto/data/intelligence seller_radar_auto/intelligence_dashboard.html seller_radar_auto/appointment_brief.html
+          if git diff --cached --quiet; then
+            echo "Nessun dato verificato nuovo."
+          else
+            git commit -m "market: valida prezzo e agenzia singolo annuncio"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
