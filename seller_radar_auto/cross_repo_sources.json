@@ -1,0 +1,40 @@
+{
+  "generated_for": "F1 Market Intelligence",
+  "purpose": "Sorgenti GitHub collegate al quadro immobiliare centrale",
+  "sources": [
+    {
+      "name": "Acquisizione Susa",
+      "repo": "josephsocialmedia2-spec/acquisizionesusa",
+      "mode": "DATA_IF_AVAILABLE",
+      "url": "https://github.com/josephsocialmedia2-spec/acquisizionesusa",
+      "candidate_paths": [
+        "data/intelligence/immobili_snapshot.csv",
+        "data/report.csv",
+        "report.csv",
+        "RISULTATO_RADAR_SUSA.csv",
+        "data.csv"
+      ]
+    },
+    {
+      "name": "Open Social Scheduler",
+      "repo": "josephsocialmedia2-spec/open-social-scheduler",
+      "mode": "LINK_ONLY",
+      "url": "https://josephsocialmedia2-spec.github.io/open-social-scheduler/",
+      "candidate_paths": []
+    },
+    {
+      "name": "Launcher F1",
+      "repo": "josephsocialmedia2-spec/launcher-dashboard",
+      "mode": "LINK_ONLY",
+      "url": "https://josephsocialmedia2-spec.github.io/launcher-dashboard/",
+      "candidate_paths": []
+    },
+    {
+      "name": "Questionario di qualificazione",
+      "repo": "josephsocialmedia2-spec/QUESTIONARIO-DI-QUALIFICAZIONE",
+      "mode": "LINK_ONLY",
+      "url": "https://josephsocialmedia2-spec.github.io/QUESTIONARIO-DI-QUALIFICAZIONE/",
+      "candidate_paths": []
+    }
+  ]
+}
