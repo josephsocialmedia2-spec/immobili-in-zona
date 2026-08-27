@@ -1,0 +1,38 @@
+name: F1 Microzone Build
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "seller_radar_auto/.microzone_trigger"
+      - "seller_radar_auto/microzone_engine.py"
+      - "seller_radar_auto/f1_microzone_config.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-microzone-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Genera microzone
+        run: python seller_radar_auto/microzone_engine.py
+      - name: Salva vie pubbliche
+        shell: bash
+        run: |
+          git config user.name "f1-microzone-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add seller_radar_auto/data/microzone_targets.csv seller_radar_auto/data/microzone_targets.json seller_radar_auto/data/osm_microzone_cache || true
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica."
+          else
+            git commit -m "radar: aggiorna microzone telefoniche"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
