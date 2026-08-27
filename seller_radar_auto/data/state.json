@@ -23,7 +23,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T09:11:34.402128+00:00",
+        "checked_at": "2026-08-27T17:05:45.299262+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -48,7 +48,13 @@
             "q": "\"Via Rubiana\" \"Almese\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -104,7 +110,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T09:13:03.950113+00:00",
+        "checked_at": "2026-08-27T17:05:32.769955+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -129,7 +135,13 @@
             "q": "\"Via Piave\" \"Rosta\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -367,7 +379,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T16:57:45.761247+00:00",
+        "checked_at": "2026-08-27T17:05:51.821681+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -392,7 +404,13 @@
             "q": "\"Vicolo Superiore\" \"Vaie\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -434,7 +452,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T16:57:48.101221+00:00",
+        "checked_at": "2026-08-27T17:05:21.550705+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -459,7 +477,13 @@
             "q": "\"Via Celle\" \"Villar Dora\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -501,7 +525,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T16:57:56.379572+00:00",
+        "checked_at": "2026-08-27T17:05:19.831657+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -520,7 +544,13 @@
             "q": "\"Villa in vendita in Via Chiesali s.n.c, Villar Focchiardo - idealista\" \"Villar Focchiardo\"",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [],
@@ -551,7 +581,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-19T16:57:54.494735+00:00",
+        "checked_at": "2026-08-27T17:05:18.974887+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -570,7 +600,13 @@
             "q": "\"Villa in Vendita in Via Chiesali a Villar Focchiardo - Casa.it\" \"Villar Focchiardo\"",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [],
@@ -718,7 +754,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-22T17:18:00.873292+00:00",
+        "checked_at": "2026-08-27T17:05:51.917709+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -743,7 +779,13 @@
             "q": "\"Via Conti Carron\" \"Buttigliera Alta\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -1019,7 +1061,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:15.843879+00:00",
+        "checked_at": "2026-08-27T17:05:57.507736+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1044,7 +1086,13 @@
             "q": "\"via Rubiana\" \"Almese\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -1093,7 +1141,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:16.627010+00:00",
+        "checked_at": "2026-08-27T17:05:25.474092+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1118,7 +1166,13 @@
             "q": "\"via Montecapretto\" \"Almese\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -1336,7 +1390,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:15.220558+00:00",
+        "checked_at": "2026-08-27T17:05:23.569066+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1361,7 +1415,13 @@
             "q": "\"frazione Tuberghengo\" \"Almese\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -1403,7 +1463,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:27.389381+00:00",
+        "checked_at": "2026-08-27T17:05:27.218456+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1428,7 +1488,13 @@
             "q": "\"Via Almese\" \"Almese\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -2193,7 +2259,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-21T12:21:43.112631+00:00",
+        "checked_at": "2026-08-27T17:05:37.822690+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2212,7 +2278,13 @@
             "q": "\"Villetta bifamiliare in vendita a Bruzolo - idealista\" \"Bruzolo\"",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [],
@@ -2827,14 +2899,16 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T17:17:26.157914+00:00",
+        "checked_at": "2026-08-27T17:05:45.243670+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
           "status": 403,
           "error": "HTTP Error 403: Forbidden"
         },
-        "address_hints": [],
+        "address_hints": [
+          "Località Favorita 1"
+        ],
         "seller_name": "",
         "cross_matches": [],
         "cross_match_count": 0,
@@ -2846,11 +2920,19 @@
             "q": "\"Vendita Appartamento in Località Favorita 1. Caselette. Buono stato ...\" \"Caselette\"",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
-        "reference_addresses": [],
-        "street": "",
+        "reference_addresses": [
+          "Località Favorita 1"
+        ],
+        "street": "Località Favorita",
         "nearby_public_addresses": [],
         "actions": []
       }
@@ -3972,7 +4054,7 @@
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T09:12:19.720989+00:00",
+        "checked_at": "2026-08-27T17:05:26.604189+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -3997,7 +4079,13 @@
             "q": "\"Via Moncenisio\" \"Condove\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -4855,7 +4943,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T17:18:05.924824+00:00",
+        "checked_at": "2026-08-27T17:05:45.032000+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4874,7 +4962,13 @@
             "q": "\"Casa indipendente in vendita a Meana di Susa - idealista\" \"Meana di Susa\"",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [],
@@ -5582,7 +5676,26 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:06:02.827070+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {}
     },
     "b73ec2e01683d45992a6": {
       "id": "b73ec2e01683d45992a6",
@@ -5604,7 +5717,33 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:34.398642+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Mario Lisa 11"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Mario Lisa 11"
+        ],
+        "street": "via Mario Lisa"
+      }
     },
     "98b7939467772649808e": {
       "id": "98b7939467772649808e",
@@ -5626,7 +5765,26 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:38.750893+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {}
     },
     "b0eed8d7d334f60a5f49": {
       "id": "b0eed8d7d334f60a5f49",
@@ -5648,7 +5806,26 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:32.384128+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {}
     },
     "2145b6fb8ffc9afe462b": {
       "id": "2145b6fb8ffc9afe462b",
@@ -5692,7 +5869,33 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:22.551944+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Torino 18"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Torino 18"
+        ],
+        "street": "via Torino"
+      }
     },
     "4fc938e5cf4a24585042": {
       "id": "4fc938e5cf4a24585042",
@@ -5714,7 +5917,26 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:06:03.777547+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {}
     },
     "bedd327bc629ada95aea": {
       "id": "bedd327bc629ada95aea",
@@ -5736,7 +5958,26 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:29.203766+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {}
     },
     "5976219562e7b74da788": {
       "id": "5976219562e7b74da788",
@@ -5758,7 +5999,26 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:58.712480+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {}
     },
     "812d44942fb61458cf21": {
       "id": "812d44942fb61458cf21",
@@ -6532,7 +6792,33 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:55.143062+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Val della Torre 92"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Val della Torre 92"
+        ],
+        "street": "Via Val della Torre"
+      }
     },
     "a14b983efe1f237f4698": {
       "id": "a14b983efe1f237f4698",
@@ -7100,7 +7386,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-22T17:18:00.007215+00:00",
+        "checked_at": "2026-08-27T17:05:46.170885+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -7125,7 +7411,13 @@
             "q": "\"via Allende\" \"Buttigliera Alta\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -7168,7 +7460,7 @@
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-22T17:18:05.729031+00:00",
+        "checked_at": "2026-08-27T17:05:50.816008+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -7187,7 +7479,13 @@
             "q": "\"Vendita Villa a schiera in via San Giovanni Bosco Caselette. Buono ...\" \"Caselette\"",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [],
@@ -7329,7 +7627,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T09:12:12.046141+00:00",
+        "checked_at": "2026-08-27T17:05:47.540526+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -7354,7 +7652,13 @@
             "q": "\"vicolo G. Pietro Riva\" \"Chiusa di San Michele\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -8168,7 +8472,44 @@
       "score": 15,
       "score_reasons": [
         "monitoraggio base"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:40.741635+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Raffaello Sanzio 9"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [
+          {
+            "url": "https://www.immobiliare.it/annunci/99493520/",
+            "title": "Vendita Appartamento in via Raffaello Sanzio 9. Trana. Buono stato ...",
+            "snippet": "San Bernardino, in posizione soleggiata, appartamento in villa al primo piano composto da salone, cucina, 2 camere e doppi servizi. Al piano mansardato locale unico con angolo cottura e bagno. Tettoia per le auto e cantina. Giardino. Prezzo trattabile.",
+            "host": "immobiliare.it",
+            "match_score": 56,
+            "contact_scan": "NOT_SCANNED",
+            "detected_price": null,
+            "price_confidence": "NONE"
+          }
+        ],
+        "cross_match_count": 1
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Raffaello Sanzio 9"
+        ],
+        "street": "via Raffaello Sanzio"
+      }
     },
     "5bd181ac626990e7c0fd": {
       "id": "5bd181ac626990e7c0fd",
@@ -8190,7 +8531,33 @@
       "score": 15,
       "score_reasons": [
         "monitoraggio base"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:06:03.863751+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via alessandria 32"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via alessandria 32"
+        ],
+        "street": "via alessandria"
+      }
     },
     "f89f1d65a10514261b7d": {
       "id": "f89f1d65a10514261b7d",
@@ -8212,7 +8579,33 @@
       "score": 3,
       "score_reasons": [
         "indizio agenzia"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:21.612041+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Roma 38"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Roma 38"
+        ],
+        "street": "via Roma"
+      }
     },
     "e778ef9cb7bfa1d9f735": {
       "id": "e778ef9cb7bfa1d9f735",
@@ -8234,7 +8627,33 @@
       "score": 15,
       "score_reasons": [
         "monitoraggio base"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:24.735881+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Borgata Cordero 34"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Borgata Cordero 34"
+        ],
+        "street": "Borgata Cordero"
+      }
     },
     "300aa43f23d471f77658": {
       "id": "300aa43f23d471f77658",
@@ -8300,7 +8719,33 @@
       "score": 15,
       "score_reasons": [
         "monitoraggio base"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:06:00.797556+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Borgata Udritto 38"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Borgata Udritto 38"
+        ],
+        "street": "Borgata Udritto"
+      }
     },
     "3f543dd49044a7999488": {
       "id": "3f543dd49044a7999488",
@@ -8344,7 +8789,33 @@
       "score": 15,
       "score_reasons": [
         "monitoraggio base"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:58.617569+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Piave 5"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Piave 5"
+        ],
+        "street": "via Piave"
+      }
     },
     "58324867d15f72bd852e": {
       "id": "58324867d15f72bd852e",
@@ -8353,7 +8824,14 @@
       "url": "https://www.immobiliare.it/annunci/126465625/",
       "title": "Vendita Villa unifamiliare Val della Torre. Buono stato, posto auto ...",
       "snippet": "",
-      "price_history": [],
+      "price_history": [
+        {
+          "at": "2026-08-27T17:06:00.718471+00:00",
+          "price": 389000,
+          "source": "SNIPPET",
+          "confidence": "MEDIUM"
+        }
+      ],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-22T17:17:15.502924+00:00",
@@ -8366,7 +8844,40 @@
       "score": 15,
       "score_reasons": [
         "monitoraggio base"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:06:00.718471+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": 389000,
+        "price_confidence": "MEDIUM",
+        "price_source": "SNIPPET",
+        "price_evidence_count": 1,
+        "cross_matches": [
+          {
+            "url": "https://www.immobiliare.it/annunci/127842278/",
+            "title": "Vendita Villa unifamiliare Val della Torre. Buono stato, posto auto ...",
+            "snippet": "Villa unifamiliare, buono stato, 450 m², Val della Torre Val della Torre € 389.000 5+ locali 450 m²",
+            "host": "immobiliare.it",
+            "match_score": 50,
+            "contact_scan": "NOT_SCANNED",
+            "detected_price": 389000,
+            "price_confidence": "MEDIUM"
+          }
+        ],
+        "cross_match_count": 1
+      },
+      "area_radar": {},
+      "last_verified_price": 389000,
+      "last_price_confidence": "MEDIUM",
+      "last_price_source": "SNIPPET"
     },
     "4741658ffc88337a2f7d": {
       "id": "4741658ffc88337a2f7d",
@@ -9044,7 +9555,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T09:12:33.714298+00:00",
+        "checked_at": "2026-08-27T17:05:35.362007+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -9069,7 +9580,13 @@
             "q": "\"via Mattie\" \"Mattie\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -9225,7 +9742,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T09:12:55.925661+00:00",
+        "checked_at": "2026-08-27T17:05:58.414647+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -9250,7 +9767,13 @@
             "q": "\"Via Pullino\" \"Rivoli\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -9414,7 +9937,26 @@
       "score": 15,
       "score_reasons": [
         "monitoraggio base"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:41.150512+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {}
     },
     "05d5ca7161fecf206fee": {
       "id": "05d5ca7161fecf206fee",
@@ -9873,7 +10415,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T17:17:49.708652+00:00",
+        "checked_at": "2026-08-27T17:05:31.984596+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -9898,7 +10440,13 @@
             "q": "\"Borgata Borlera\" \"Condove\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -10164,7 +10712,33 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:38.320644+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "via Europa 6"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "via Europa 6"
+        ],
+        "street": "via Europa"
+      }
     },
     "68ec7571ec7ac011fbec": {
       "id": "68ec7571ec7ac011fbec",
@@ -10186,7 +10760,33 @@
       "score": 30,
       "score_reasons": [
         "nuova rilevazione"
-      ]
+      ],
+      "enrichment": {
+        "checked_at": "2026-08-27T17:05:59.188258+00:00",
+        "listing_fetch": {
+          "ok": false,
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        "address_hints": [
+          "Via Santuario 20"
+        ],
+        "seller_name": "",
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0,
+        "cross_matches": [],
+        "cross_match_count": 0
+      },
+      "area_radar": {
+        "reference_addresses": [
+          "Via Santuario 20"
+        ],
+        "street": "Via Santuario"
+      }
     },
     "88b4e0ca1713e792a6bb": {
       "id": "88b4e0ca1713e792a6bb",
@@ -13832,5 +14432,5 @@
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
   "matrix_discovery_updated_at": "2026-08-23T17:16:38.787172+00:00",
-  "market_enrichment_updated_at": "2026-08-27T17:03:29.752734+00:00"
+  "market_enrichment_updated_at": "2026-08-27T17:06:14.491653+00:00"
 }
