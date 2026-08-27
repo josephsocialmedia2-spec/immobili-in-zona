@@ -73,6 +73,15 @@ if (-not $running) {
     Start-Process -FilePath (Join-Path $RunnerDir 'run.cmd') -WorkingDirectory $RunnerDir -WindowStyle Minimized
 }
 
+# Primo test automatico: appena il runner è online, GitHub invia subito un job Telefonate PC.
+Start-Sleep -Seconds 3
+try {
+    gh workflow run f1-telefonate-pc.yml --repo $Repo
+    Write-Host 'Primo job F1 Telefonate PC inviato a GitHub.'
+} catch {
+    Write-Host 'Runner configurato; il primo job partirà comunque alla conclusione del prossimo Radar.'
+}
+
 Write-Host ''
 Write-Host 'CONFIGURAZIONE COMPLETATA.'
 Write-Host 'Da ora: Radar GitHub completato -> workflow F1 Telefonate PC -> lavoro automatico su questo computer.'
