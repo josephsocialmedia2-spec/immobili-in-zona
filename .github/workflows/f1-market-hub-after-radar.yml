@@ -2,6 +2,12 @@ name: F1 Market Hub AFTER RADAR
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "seller_radar_auto/cross_repo_sources.json"
+      - "seller_radar_auto/cross_repo_ingest.py"
+      - "seller_radar_auto/appointment_brief.py"
   workflow_run:
     workflows: ["F1 Seller Radar AUTO"]
     types: [completed]
@@ -15,7 +21,7 @@ concurrency:
 
 jobs:
   build-hub:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
