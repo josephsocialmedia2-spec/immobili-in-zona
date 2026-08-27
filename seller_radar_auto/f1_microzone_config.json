@@ -1,0 +1,19 @@
+{
+  "main_towns": [
+    "Avigliana",
+    "Almese",
+    "Condove",
+    "Sant'Antonino di Susa",
+    "Vaie",
+    "Chiusa di San Michele",
+    "Bussoleno",
+    "Susa"
+  ],
+  "excluded_towns": [
+    "Sant'Ambrogio di Torino"
+  ],
+  "nearby_streets_per_target": 4,
+  "osm_cache_days": 7,
+  "overpass_url": "https://overpass-api.de/api/interpreter",
+  "user_agent": "F1Immobiliare-Microzone/1.0 (market intelligence; contact: f1immobiliaresusa@outlook.it)"
+}
