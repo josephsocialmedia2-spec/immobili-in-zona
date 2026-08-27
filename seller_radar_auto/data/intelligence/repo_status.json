@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-08-27T16:54:39+00:00",
+  "records": 0,
+  "sources": [
+    {
+      "checked_at": "2026-08-27T16:54:39+00:00",
+      "name": "Acquisizione Susa",
+      "repo": "josephsocialmedia2-spec/acquisizionesusa",
+      "mode": "DATA_IF_AVAILABLE",
+      "status": "NO_DATA",
+      "file_found": "",
+      "rows_ingested": 0,
+      "url": "https://github.com/josephsocialmedia2-spec/acquisizionesusa",
+      "note": "Nessun dataset standard disponibile: fonte mantenuta collegata senza inventare dati."
+    },
+    {
+      "checked_at": "2026-08-27T16:54:39+00:00",
+      "name": "Open Social Scheduler",
+      "repo": "josephsocialmedia2-spec/open-social-scheduler",
+      "mode": "LINK_ONLY",
+      "status": "CONNECTED_LINK",
+      "file_found": "",
+      "rows_ingested": 0,
+      "url": "https://josephsocialmedia2-spec.github.io/open-social-scheduler/",
+      "note": "Collegato al quadro generale; nessun dataset immobiliare importato."
+    },
+    {
+      "checked_at": "2026-08-27T16:54:39+00:00",
+      "name": "Launcher F1",
+      "repo": "josephsocialmedia2-spec/launcher-dashboard",
+      "mode": "LINK_ONLY",
+      "status": "CONNECTED_LINK",
+      "file_found": "",
+      "rows_ingested": 0,
+      "url": "https://josephsocialmedia2-spec.github.io/launcher-dashboard/",
+      "note": "Collegato al quadro generale; nessun dataset immobiliare importato."
+    },
+    {
+      "checked_at": "2026-08-27T16:54:39+00:00",
+      "name": "Questionario di qualificazione",
+      "repo": "josephsocialmedia2-spec/QUESTIONARIO-DI-QUALIFICAZIONE",
+      "mode": "LINK_ONLY",
+      "status": "CONNECTED_LINK",
+      "file_found": "",
+      "rows_ingested": 0,
+      "url": "https://josephsocialmedia2-spec.github.io/QUESTIONARIO-DI-QUALIFICAZIONE/",
+      "note": "Collegato al quadro generale; nessun dataset immobiliare importato."
+    }
+  ]
+}
