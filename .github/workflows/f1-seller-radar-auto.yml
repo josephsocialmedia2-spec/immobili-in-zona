@@ -166,7 +166,7 @@ jobs:
     needs: [gate, merge, worker]
     if: always() && needs.gate.outputs.run == 'true' && needs.merge.result == 'success' && (needs.worker.result == 'success' || needs.worker.result == 'skipped')
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -198,6 +198,9 @@ jobs:
 
       - name: Genera Market Intelligence e KPI filtrati
         run: python seller_radar_auto/market_intelligence_v2.py
+
+      - name: Genera microzone per telefonate
+        run: python seller_radar_auto/microzone_engine.py
 
       - name: Invia nuove pubblicazioni via email
         env:
