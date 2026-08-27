@@ -122,7 +122,7 @@ jobs:
     needs: [gate, merge]
     if: needs.gate.outputs.run == 'true' && needs.merge.result == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 7
     strategy:
       fail-fast: false
       max-parallel: 10
@@ -145,6 +145,14 @@ jobs:
           F1_SEARCH_INTERVAL: "5"
         run: python seller_radar_auto/item_worker.py
 
+      - name: Fallback Dork prezzo e agenzia ${{ matrix.item_id }}
+        if: matrix.item_id != '__NONE__'
+        env:
+          F1_ITEM_ID: ${{ matrix.item_id }}
+          F1_ITEM_OUT: seller_radar_auto/data/item_result.json
+          F1_SEARCH_INTERVAL: "4"
+        run: python seller_radar_auto/search_market_fallback.py
+
       - name: Salva risultato annuncio
         if: matrix.item_id != '__NONE__'
         uses: actions/upload-artifact@v4
@@ -158,7 +166,7 @@ jobs:
     needs: [gate, merge, worker]
     if: always() && needs.gate.outputs.run == 'true' && needs.merge.result == 'success' && (needs.worker.result == 'success' || needs.worker.result == 'skipped')
     runs-on: ubuntu-latest
-    timeout-minutes: 9
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -178,6 +186,9 @@ jobs:
 
       - name: Unisci cross-match e Area Radar
         run: python seller_radar_auto/merge_item_results.py
+
+      - name: Applica prezzi e inserzionisti verificati
+        run: python seller_radar_auto/apply_market_enrichment.py
 
       - name: Prepara giro acquisizione
         run: python seller_radar_auto/prepare_acquisition_route.py
