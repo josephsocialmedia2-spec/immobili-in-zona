@@ -39,43 +39,49 @@ def addr_from(text):
     return re.sub(r'\s+',' ',m.group(0)).strip(' ,.;') if m else ''
 def score(item,r,address):
     text=f"{r.get('title','')} {r.get('snippet','')}";s=0
-    if (r.get('url') or '').rstrip('/')==(item.get('url') or '').rstrip('/'):s+=100
+    exact=(r.get('url') or '').rstrip('/')==(item.get('url') or '').rstrip('/')
+    same_host=bool(host(item.get('url')) and host(item.get('url'))==host(r.get('url')))
+    if exact:s+=100
     if address and fold(address) in fold(text):s+=55
     if fold(item.get('comune','')) and fold(item.get('comune','')) in fold(text):s+=20
-    if host(item.get('url')) and host(item.get('url'))==host(r.get('url')):s+=20
-    a=set(PROP_RE.findall(item.get('title','')));b=set(PROP_RE.findall(text));
+    if same_host:s+=20
+    a=set(PROP_RE.findall(item.get('title','')));b=set(PROP_RE.findall(text))
     if a and b:s+=15
-    return s
+    return s,exact,same_host
 
 if not ITEM_ID or not OUT.exists():raise SystemExit('item/output mancanti')
 state=json.loads(STATE.read_text(encoding='utf-8'));x=(state.get('items') or {}).get(ITEM_ID)
 if not x:raise SystemExit('item non trovato')
 doc=json.loads(OUT.read_text(encoding='utf-8'));e=doc.setdefault('enrichment',{})
 address=(e.get('address_hints') or [''])[0] or addr_from(f"{x.get('title','')} {x.get('snippet','')}")
-comune=x.get('comune','');domain=host(x.get('url'));ptype=(PROP_RE.search(x.get('title','') or '') or [None,'immobile'])[1]
+comune=x.get('comune','');domain=host(x.get('url'));pm=PROP_RE.search(x.get('title','') or '');ptype=pm.group(1) if pm else 'immobile'
+private_hint=bool(x.get('private_intent')) or str(x.get('seller_hint','')).upper()=='INDIZIO_PRIVATO'
 queries=[]
 if address:
     queries.append(f'site:{domain} "{comune}" "{address}"')
     queries.append(f'"{address}" "{comune}" "{ptype}" (vendita OR vendesi)')
-    queries.append(f'"{address}" "{comune}" (agenzia OR immobiliare OR propone)')
-else:
-    queries.append(f'site:{domain} "{comune}" "{(x.get("title") or "")[:80]}"')
+    if not private_hint:queries.append(f'"{address}" "{comune}" (agenzia OR immobiliare OR propone)')
+else:queries.append(f'site:{domain} "{comune}" "{(x.get("title") or "")[:80]}"')
 
 matches=[];best_price=None;best_p_score=-1;best_seller='';best_s_score=-1
 for q in queries:
     results,err=search(q,12)
     for r in results:
-        sc=score(x,r,address)
+        sc,exact,same_host=score(x,r,address)
         if sc<50:continue
         text=f"{r.get('title','')} {r.get('snippet','')}";ps=prices(text);sn=seller(text)
-        matches.append({'q':q,'url':r.get('url',''),'title':r.get('title',''),'snippet':r.get('snippet',''),'score':sc,'prices':ps,'seller':sn})
+        matches.append({'q':q,'url':r.get('url',''),'title':r.get('title',''),'snippet':r.get('snippet',''),'score':sc,'exact_url':exact,'same_host':same_host,'prices':ps,'seller':sn})
         if ps and sc>best_p_score:best_price=ps[0];best_p_score=sc
-        if sn and sc>best_s_score:best_seller=sn;best_s_score=sc
+        # Il seller è più delicato del prezzo: mai inferirlo per annunci privati.
+        # Per annunci non privati richiediamo URL esatto, oppure stesso host+indirizzo+tipologia con score forte.
+        seller_ok=(not private_hint) and sn and (exact or (same_host and sc>=105))
+        if seller_ok and sc>best_s_score:best_seller=sn;best_s_score=sc
 
 if best_price and str(e.get('price_confidence','')).upper() not in {'HIGH','MEDIUM'}:
     e['detected_price']=best_price;e['price_confidence']='HIGH' if best_p_score>=100 else 'MEDIUM';e['price_source']='DORK_FALLBACK';e['price_evidence_count']=sum(best_price in m.get('prices',[]) for m in matches)
 if best_seller and str(e.get('seller_confidence','')).upper() not in {'HIGH','MEDIUM'}:
     e['seller_name']=best_seller;e['seller_confidence']='HIGH' if best_s_score>=100 else 'MEDIUM';e['seller_source']='DORK_FALLBACK'
 e['fallback_queries']=queries;e['fallback_matches']=sorted(matches,key=lambda z:z['score'],reverse=True)[:10]
+e['fallback_private_protection']=private_hint
 OUT.write_text(json.dumps(doc,ensure_ascii=False,indent=2),encoding='utf-8')
-print(f"FALLBACK {ITEM_ID}: address={address or '-'} price={e.get('detected_price') or '-'} seller={e.get('seller_name') or '-'} matches={len(matches)}")
+print(f"FALLBACK {ITEM_ID}: address={address or '-'} price={e.get('detected_price') or '-'} seller={e.get('seller_name') or '-'} private={private_hint} matches={len(matches)}")
