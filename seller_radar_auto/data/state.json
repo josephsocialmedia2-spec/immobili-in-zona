@@ -23,7 +23,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:45.299262+00:00",
+        "checked_at": "2026-08-27T17:12:32.206668+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -110,7 +110,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:32.769955+00:00",
+        "checked_at": "2026-08-27T17:12:00.176058+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -379,7 +379,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:51.821681+00:00",
+        "checked_at": "2026-08-27T17:12:59.434035+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -452,7 +452,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:21.550705+00:00",
+        "checked_at": "2026-08-27T17:11:46.425776+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -525,7 +525,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:19.831657+00:00",
+        "checked_at": "2026-08-27T17:11:40.072865+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -581,12 +581,12 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:18.974887+00:00",
+        "checked_at": "2026-08-27T17:11:42.243610+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
-          "status": 403,
-          "error": "HTTP Error 403: Forbidden"
+          "status": 200,
+          "error": "verifica umana / anti-bot"
         },
         "address_hints": [],
         "seller_name": "",
@@ -754,7 +754,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:51.917709+00:00",
+        "checked_at": "2026-08-27T17:12:52.988549+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1061,7 +1061,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:57.507736+00:00",
+        "checked_at": "2026-08-27T17:13:13.274394+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1126,7 +1126,14 @@
       "url": "https://www.immobiliare.it/annunci/108146029/",
       "title": "Vendita Villa unifamiliare in via Montecapretto 24 Almese. Ottimo stato ...",
       "snippet": "",
-      "price_history": [],
+      "price_history": [
+        {
+          "at": "2026-08-27T17:11:48.754822+00:00",
+          "price": 299000,
+          "source": "DORK_FALLBACK",
+          "confidence": "HIGH"
+        }
+      ],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475211+00:00",
@@ -1141,7 +1148,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:25.474092+00:00",
+        "checked_at": "2026-08-27T17:11:48.754822+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1169,10 +1176,10 @@
         ],
         "seller_confidence": "NONE",
         "seller_source": "",
-        "detected_price": null,
-        "price_confidence": "NONE",
-        "price_source": "",
-        "price_evidence_count": 0
+        "detected_price": 299000,
+        "price_confidence": "HIGH",
+        "price_source": "DORK_FALLBACK",
+        "price_evidence_count": 1
       },
       "area_radar": {
         "reference_addresses": [
@@ -1190,7 +1197,10 @@
             "stato": "PRONTO"
           }
         ]
-      }
+      },
+      "last_verified_price": 299000,
+      "last_price_confidence": "HIGH",
+      "last_price_source": "DORK_FALLBACK"
     },
     "2356b8a6cc2bf07676f7": {
       "id": "2356b8a6cc2bf07676f7",
@@ -1390,7 +1400,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:23.569066+00:00",
+        "checked_at": "2026-08-27T17:11:46.058852+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -1463,7 +1473,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:27.218456+00:00",
+        "checked_at": "2026-08-27T17:11:52.106788+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2192,7 +2202,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-23T17:17:14.026746+00:00",
+        "checked_at": "2026-08-27T17:13:28.673619+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2217,7 +2227,13 @@
             "q": "\"Via dei Mille\" \"Bruzolo\" (vendita OR casa OR appartamento OR immobile)",
             "error": ""
           }
-        ]
+        ],
+        "seller_confidence": "NONE",
+        "seller_source": "",
+        "detected_price": null,
+        "price_confidence": "NONE",
+        "price_source": "",
+        "price_evidence_count": 0
       },
       "area_radar": {
         "reference_addresses": [
@@ -2259,7 +2275,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:37.822690+00:00",
+        "checked_at": "2026-08-27T17:12:24.796318+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -2899,7 +2915,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:45.243670+00:00",
+        "checked_at": "2026-08-27T17:12:37.029514+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4054,7 +4070,7 @@
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:26.604189+00:00",
+        "checked_at": "2026-08-27T17:11:49.585087+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -4943,7 +4959,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:45.032000+00:00",
+        "checked_at": "2026-08-27T17:12:36.098252+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -5678,7 +5694,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:06:02.827070+00:00",
+        "checked_at": "2026-08-27T17:13:18.292662+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -5719,7 +5735,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:34.398642+00:00",
+        "checked_at": "2026-08-27T17:12:18.826595+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -5767,7 +5783,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:38.750893+00:00",
+        "checked_at": "2026-08-27T17:12:27.258980+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -5793,7 +5809,14 @@
       "url": "https://www.immobiliare.it/annunci/130874738/",
       "title": "Vendita Appartamento Pianezza. Quadrilocale, Ottimo stato, terzo piano ...",
       "snippet": "",
-      "price_history": [],
+      "price_history": [
+        {
+          "at": "2026-08-27T17:12:16.801569+00:00",
+          "price": 169000,
+          "source": "DORK_FALLBACK",
+          "confidence": "HIGH"
+        }
+      ],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475715+00:00",
@@ -5808,7 +5831,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:32.384128+00:00",
+        "checked_at": "2026-08-27T17:12:16.801569+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -5818,14 +5841,17 @@
         "seller_name": "",
         "seller_confidence": "NONE",
         "seller_source": "",
-        "detected_price": null,
-        "price_confidence": "NONE",
-        "price_source": "",
-        "price_evidence_count": 0,
+        "detected_price": 169000,
+        "price_confidence": "HIGH",
+        "price_source": "DORK_FALLBACK",
+        "price_evidence_count": 1,
         "cross_matches": [],
         "cross_match_count": 0
       },
-      "area_radar": {}
+      "area_radar": {},
+      "last_verified_price": 169000,
+      "last_price_confidence": "HIGH",
+      "last_price_source": "DORK_FALLBACK"
     },
     "2145b6fb8ffc9afe462b": {
       "id": "2145b6fb8ffc9afe462b",
@@ -5871,7 +5897,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:22.551944+00:00",
+        "checked_at": "2026-08-27T17:11:43.919111+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -5904,7 +5930,14 @@
       "url": "https://www.immobiliare.it/annunci/115949989/",
       "title": "Vendita Terratetto unifamiliare Pianezza. Ottimo stato, posto auto, con ...",
       "snippet": "",
-      "price_history": [],
+      "price_history": [
+        {
+          "at": "2026-08-27T17:13:24.898544+00:00",
+          "price": 449000,
+          "source": "DORK_FALLBACK",
+          "confidence": "MEDIUM"
+        }
+      ],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-21T12:20:59.475732+00:00",
@@ -5919,7 +5952,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:06:03.777547+00:00",
+        "checked_at": "2026-08-27T17:13:24.898544+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -5929,14 +5962,17 @@
         "seller_name": "",
         "seller_confidence": "NONE",
         "seller_source": "",
-        "detected_price": null,
-        "price_confidence": "NONE",
-        "price_source": "",
-        "price_evidence_count": 0,
+        "detected_price": 449000,
+        "price_confidence": "MEDIUM",
+        "price_source": "DORK_FALLBACK",
+        "price_evidence_count": 1,
         "cross_matches": [],
         "cross_match_count": 0
       },
-      "area_radar": {}
+      "area_radar": {},
+      "last_verified_price": 449000,
+      "last_price_confidence": "MEDIUM",
+      "last_price_source": "DORK_FALLBACK"
     },
     "bedd327bc629ada95aea": {
       "id": "bedd327bc629ada95aea",
@@ -5960,7 +5996,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:29.203766+00:00",
+        "checked_at": "2026-08-27T17:12:16.449738+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -6001,7 +6037,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:58.712480+00:00",
+        "checked_at": "2026-08-27T17:13:19.292005+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -6794,7 +6830,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:55.143062+00:00",
+        "checked_at": "2026-08-27T17:12:57.358687+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -6803,9 +6839,9 @@
         "address_hints": [
           "Via Val della Torre 92"
         ],
-        "seller_name": "",
-        "seller_confidence": "NONE",
-        "seller_source": "",
+        "seller_name": "per chi cerca una soluzione pronta da abitare o un ottimo investimento immobiliare",
+        "seller_confidence": "HIGH",
+        "seller_source": "DORK_FALLBACK",
         "detected_price": null,
         "price_confidence": "NONE",
         "price_source": "",
@@ -6818,7 +6854,9 @@
           "Via Val della Torre 92"
         ],
         "street": "Via Val della Torre"
-      }
+      },
+      "seller_name_verified": "per chi cerca una soluzione pronta da abitare o un ottimo investimento immobiliare",
+      "seller_confidence": "HIGH"
     },
     "a14b983efe1f237f4698": {
       "id": "a14b983efe1f237f4698",
@@ -7386,7 +7424,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:46.170885+00:00",
+        "checked_at": "2026-08-27T17:12:43.584653+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -7460,7 +7498,7 @@
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:50.816008+00:00",
+        "checked_at": "2026-08-27T17:12:57.597057+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -7468,7 +7506,7 @@
           "error": "HTTP Error 403: Forbidden"
         },
         "address_hints": [],
-        "seller_name": "",
+        "seller_name": "un'opportunità di investimento immobiliare",
         "cross_matches": [],
         "cross_match_count": 0,
         "public_contacts": [],
@@ -7480,8 +7518,8 @@
             "error": ""
           }
         ],
-        "seller_confidence": "NONE",
-        "seller_source": "",
+        "seller_confidence": "HIGH",
+        "seller_source": "DORK_FALLBACK",
         "detected_price": null,
         "price_confidence": "NONE",
         "price_source": "",
@@ -7492,7 +7530,9 @@
         "street": "",
         "nearby_public_addresses": [],
         "actions": []
-      }
+      },
+      "seller_name_verified": "un'opportunità di investimento immobiliare",
+      "seller_confidence": "HIGH"
     },
     "76e1b14153cf314d0f57": {
       "id": "76e1b14153cf314d0f57",
@@ -7627,7 +7667,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:47.540526+00:00",
+        "checked_at": "2026-08-27T17:12:45.352369+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -8459,7 +8499,14 @@
       "url": "https://www.immobiliare.it/annunci/129944460/",
       "title": "Vendita Appartamento in via Raffaello Sanzio 9. Trana. Buono stato ...",
       "snippet": "",
-      "price_history": [],
+      "price_history": [
+        {
+          "at": "2026-08-27T17:12:27.107514+00:00",
+          "price": 185000,
+          "source": "DORK_FALLBACK",
+          "confidence": "HIGH"
+        }
+      ],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-22T17:17:15.502871+00:00",
@@ -8474,7 +8521,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:40.741635+00:00",
+        "checked_at": "2026-08-27T17:12:27.107514+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -8486,10 +8533,10 @@
         "seller_name": "",
         "seller_confidence": "NONE",
         "seller_source": "",
-        "detected_price": null,
-        "price_confidence": "NONE",
-        "price_source": "",
-        "price_evidence_count": 0,
+        "detected_price": 185000,
+        "price_confidence": "HIGH",
+        "price_source": "DORK_FALLBACK",
+        "price_evidence_count": 1,
         "cross_matches": [
           {
             "url": "https://www.immobiliare.it/annunci/99493520/",
@@ -8509,7 +8556,10 @@
           "via Raffaello Sanzio 9"
         ],
         "street": "via Raffaello Sanzio"
-      }
+      },
+      "last_verified_price": 185000,
+      "last_price_confidence": "HIGH",
+      "last_price_source": "DORK_FALLBACK"
     },
     "5bd181ac626990e7c0fd": {
       "id": "5bd181ac626990e7c0fd",
@@ -8533,7 +8583,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:06:03.863751+00:00",
+        "checked_at": "2026-08-27T17:13:23.608000+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -8581,7 +8631,7 @@
         "indizio agenzia"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:21.612041+00:00",
+        "checked_at": "2026-08-27T17:11:46.481279+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -8629,7 +8679,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:24.735881+00:00",
+        "checked_at": "2026-08-27T17:11:47.728525+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -8706,7 +8756,14 @@
       "url": "https://www.immobiliare.it/annunci/125751817/",
       "title": "Vendita Terratetto unifamiliare in Borgata Udritto 38 Trana. Ottimo ...",
       "snippet": "",
-      "price_history": [],
+      "price_history": [
+        {
+          "at": "2026-08-27T17:13:09.674122+00:00",
+          "price": 120000,
+          "source": "DORK_FALLBACK",
+          "confidence": "HIGH"
+        }
+      ],
       "seller_hint": "NON_DETERMINATO",
       "private_intent": false,
       "first_seen": "2026-08-22T17:17:15.502901+00:00",
@@ -8721,7 +8778,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:06:00.797556+00:00",
+        "checked_at": "2026-08-27T17:13:09.674122+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -8733,10 +8790,10 @@
         "seller_name": "",
         "seller_confidence": "NONE",
         "seller_source": "",
-        "detected_price": null,
-        "price_confidence": "NONE",
-        "price_source": "",
-        "price_evidence_count": 0,
+        "detected_price": 120000,
+        "price_confidence": "HIGH",
+        "price_source": "DORK_FALLBACK",
+        "price_evidence_count": 1,
         "cross_matches": [],
         "cross_match_count": 0
       },
@@ -8745,7 +8802,10 @@
           "Borgata Udritto 38"
         ],
         "street": "Borgata Udritto"
-      }
+      },
+      "last_verified_price": 120000,
+      "last_price_confidence": "HIGH",
+      "last_price_source": "DORK_FALLBACK"
     },
     "3f543dd49044a7999488": {
       "id": "3f543dd49044a7999488",
@@ -8791,7 +8851,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:58.617569+00:00",
+        "checked_at": "2026-08-27T17:13:14.999484+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -9555,7 +9615,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:35.362007+00:00",
+        "checked_at": "2026-08-27T17:12:23.040190+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -9742,7 +9802,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:58.414647+00:00",
+        "checked_at": "2026-08-27T17:12:46.293227+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -9939,7 +9999,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:41.150512+00:00",
+        "checked_at": "2026-08-27T17:12:29.203601+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -10415,7 +10475,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:31.984596+00:00",
+        "checked_at": "2026-08-27T17:11:56.416642+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -10714,7 +10774,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:38.320644+00:00",
+        "checked_at": "2026-08-27T17:12:29.167408+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -10762,7 +10822,7 @@
         "nuova rilevazione"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:05:59.188258+00:00",
+        "checked_at": "2026-08-27T17:13:09.222587+00:00",
         "listing_fetch": {
           "ok": false,
           "status": 403,
@@ -14432,5 +14492,5 @@
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
   "matrix_discovery_updated_at": "2026-08-23T17:16:38.787172+00:00",
-  "market_enrichment_updated_at": "2026-08-27T17:06:14.491653+00:00"
+  "market_enrichment_updated_at": "2026-08-27T17:14:00.204837+00:00"
 }
