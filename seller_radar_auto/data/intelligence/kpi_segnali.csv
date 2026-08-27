@@ -1,37 +1,42 @@
 ﻿COMUNE,IMMOBILI_QUALIFICATI,ASTE,PRIVATI,AGENZIE,RIBASSI_SEGNALATI,STORICO_USCITE
-Almese,9,0,0,0,0,0
-Alpignano,1,0,0,0,0,0
-Avigliana,3,0,0,0,0,0
-Bardonecchia,3,0,0,0,0,0
-Borgone Susa,1,0,0,0,0,0
-Bruzolo,3,0,0,0,0,0
-Bussoleno,1,0,0,0,0,0
-Buttigliera Alta,4,0,0,0,0,0
-Caselette,4,0,0,0,0,0
-Chianocco,2,0,0,0,0,0
-Chiusa di San Michele,2,0,0,0,0,0
-Coazze,1,0,0,0,0,0
-Collegno,3,0,0,0,0,0
-Condove,2,0,0,0,0,0
-Giaveno,1,0,0,0,0,0
+Almese,13,0,3,2,0,0
+Alpignano,10,0,1,1,0,0
+Avigliana,20,1,2,4,0,0
+Bardonecchia,15,0,0,3,0,0
+Borgone Susa,14,0,0,2,0,0
+Bruzolo,4,0,3,0,0,0
+Bussoleno,5,0,0,2,0,0
+Buttigliera Alta,4,0,0,1,0,0
+Caprie,2,0,0,0,0,0
+Caselette,5,1,0,2,0,0
+Chianocco,6,2,0,0,0,0
+Chiusa di San Michele,11,0,0,0,0,0
+Coazze,5,0,0,0,0,0
+Collegno,13,0,1,1,0,0
+Condove,10,2,1,0,0,0
+Giaglione,4,0,0,0,0,0
+Giaveno,11,0,0,1,0,0
 Gravere,3,0,0,0,0,0
-Grugliasco,1,0,0,0,0,0
-Mattie,3,0,0,0,0,0
-Meana di Susa,2,0,0,0,0,0
+Grugliasco,12,0,0,0,0,0
+Mattie,6,0,0,0,0,0
+Meana di Susa,4,0,1,0,0,0
 Mompantero,3,0,0,0,0,0
-Oulx,2,0,0,0,0,0
-Pianezza,12,0,0,0,0,0
-Reano,1,0,0,0,0,0
-Rivoli,3,0,0,0,0,0
-Rosta,4,0,0,0,0,0
-Rubiana,1,0,0,0,0,0
-San Didero,1,0,0,0,0,0
+Oulx,12,0,0,1,0,0
+Pianezza,16,0,1,1,0,0
+Reano,2,1,0,0,0,0
+Rivoli,13,0,0,1,0,0
+Rosta,13,0,0,1,0,0
+Rubiana,7,2,2,0,0,0
+San Didero,7,1,1,0,0,0
 San Giorio,1,0,0,0,0,0
-Sant'Antonino di Susa,2,0,0,0,0,0
-Trana,11,0,0,0,0,0
-Vaie,2,0,0,0,0,0
-Val della Torre,2,0,0,0,0,0
-Valgioie,1,0,0,0,0,0
-Venaus,2,0,0,0,0,0
-Villar Dora,1,0,0,0,0,0
-Villar Focchiardo,3,0,0,0,0,0
+San Valeriano,5,4,1,0,0,1
+Sant'Antonino di Susa,12,0,1,0,0,0
+Susa,7,1,0,0,0,0
+Trana,14,0,2,2,0,0
+Vaie,6,0,2,0,0,0
+Val della Torre,5,0,1,0,0,0
+Valgioie,6,0,0,1,0,0
+Venaus,3,0,0,0,0,0
+Villar Dora,2,0,0,0,0,0
+Villar Focchiardo,7,2,1,0,0,0
+Villarbasse,9,3,2,1,0,0

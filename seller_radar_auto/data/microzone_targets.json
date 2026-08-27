@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:13:00.252813+00:00",
+  "generated_at": "2026-08-27T21:15:34.477236+00:00",
   "main_towns": [
     "Avigliana",
     "Almese",
@@ -15,11 +15,11 @@
     {
       "zone_id": "almese-via-rubiana",
       "comune": "Almese",
-      "target_street": "via Rubiana",
+      "target_street": "Via Rubiana",
       "listing_target": "Via Rubiana 142",
-      "listing_url": "https://www.immobiliare.it/annunci/119867056/",
+      "listing_url": "https://www.idealista.it/immobile/36195511/",
       "streets": [
-        "via Rubiana",
+        "Via Rubiana",
         "Borgata Malatrait II",
         "Via Circonvallazione",
         "Via Combal",
@@ -73,6 +73,36 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "almese-via-braida",
+      "comune": "Almese",
+      "target_street": "via Braida",
+      "listing_target": "via Braida 18",
+      "listing_url": "https://www.immobiliare.it/annunci/131901566/",
+      "streets": [
+        "via Braida",
+        "Via Bertolo",
+        "Via della Roccia",
+        "Via Mollar",
+        "Via Moncurto"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-morsino",
+      "comune": "Almese",
+      "target_street": "via Morsino",
+      "listing_target": "Via Morsino 43",
+      "listing_url": "https://www.immobiliare.it/annunci/127965590/",
+      "streets": [
+        "via Morsino",
+        "Piazza Comba",
+        "Via Goletto",
+        "Via Gublera",
+        "Via Miosa"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-via-monte-cuneo",
       "comune": "Avigliana",
       "target_street": "VIA MONTE CUNEO",
@@ -90,15 +120,150 @@
     {
       "zone_id": "avigliana-corso-laghi",
       "comune": "Avigliana",
-      "target_street": "Corso Laghi",
+      "target_street": "corso Laghi",
       "listing_target": "corso Laghi 165",
-      "listing_url": "https://avigliana1.tecnorete.it/avigliana/avigliana/",
+      "listing_url": "https://www.immobiliare.it/annunci/129213392/",
       "streets": [
-        "Corso Laghi",
+        "corso Laghi",
         "Piazza del Popolo",
         "Via Alpi Cozie",
         "Via Carnino",
         "Via Cavalieri di Vittorio Veneto"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-sacra-san-michele",
+      "comune": "Avigliana",
+      "target_street": "via Sacra San Michele",
+      "listing_target": "via Sacra San Michele 17",
+      "listing_url": "https://www.immobiliare.it/annunci/131895478/",
+      "streets": [
+        "via Sacra San Michele",
+        "Via Sacra di San Michele",
+        "Viale Belvedere",
+        "Viale dei Tigli",
+        "Via Tetti Colombo"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "avigliana-viale-roma",
+      "comune": "Avigliana",
+      "target_street": "viale roma",
+      "listing_target": "viale roma 8",
+      "listing_url": "https://www.immobiliare.it/annunci/131481726/",
+      "streets": [
+        "viale roma",
+        "Corso Laghi",
+        "Via maestra Maria Gallo",
+        "Via Osvaldo Negarville",
+        "Via Tresserve"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-ailliaud-augusto",
+      "comune": "Avigliana",
+      "target_street": "via Ailliaud Augusto",
+      "listing_target": "via Ailliaud Augusto 8",
+      "listing_url": "https://www.immobiliare.it/annunci/129887012/",
+      "streets": [
+        "via Ailliaud Augusto",
+        "Via Augusto Ailliaud",
+        "Viale Roma (int)",
+        "Via Cavalieri di Vittorio Veneto",
+        "Via Venti Settembre"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "avigliana-piazza-del-popolo",
+      "comune": "Avigliana",
+      "target_street": "piazza del Popolo",
+      "listing_target": "piazza del Popolo 4",
+      "listing_url": "https://www.immobiliare.it/annunci/127408283/",
+      "streets": [
+        "piazza del Popolo",
+        "Corso Laghi",
+        "Via Cavalieri di Vittorio Veneto",
+        "Via della Repubblica",
+        "Via Martiri della Libertà"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-villar-dora",
+      "comune": "Avigliana",
+      "target_street": "via villar dora",
+      "listing_target": "via villar dora 15",
+      "listing_url": "https://www.immobiliare.it/annunci/130446938/",
+      "streets": [
+        "via villar dora",
+        "Via Cuminie",
+        "Via Moncenisio",
+        "Autostrada del Frejus",
+        "Via Dante Alighieri"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "avigliana-via-4-novembre",
+      "comune": "Avigliana",
+      "target_street": "via 4 Novembre",
+      "listing_target": "via 4 Novembre 21",
+      "listing_url": "https://www.immobiliare.it/annunci/130632950/",
+      "streets": [
+        "via 4 Novembre",
+        "Via Frejus",
+        "Via Quattro Novembre",
+        "Via Carnino",
+        "Via Luigi Einaudi"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "avigliana-via-cesare-battisti",
+      "comune": "Avigliana",
+      "target_street": "Via Cesare Battisti",
+      "listing_target": "Via Cesare Battisti 19",
+      "listing_url": "https://www.idealista.it/immobile/36653195/",
+      "streets": [
+        "Via Cesare Battisti",
+        "Via Giuseppe Garibaldi",
+        "Via Madonna delle Grazie",
+        "Via Mario Berta",
+        "Via Oscar Borgesa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-felice-goffi",
+      "comune": "Avigliana",
+      "target_street": "Via Felice Goffi",
+      "listing_target": "Via Felice Goffi 6",
+      "listing_url": "https://www.idealista.it/immobile/36626365/",
+      "streets": [
+        "Via Felice Goffi",
+        "Via Almese",
+        "Via Moncenisio",
+        "Via Grangia",
+        "Via Villardora"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-avigliana",
+      "comune": "Avigliana",
+      "target_street": "Via Avigliana",
+      "listing_target": "Via Avigliana 4",
+      "listing_url": "https://www.idealista.it/immobile/36652455/",
+      "streets": [
+        "Via Avigliana",
+        "Via Almese",
+        "Via Giaveno",
+        "Via Primo Levi",
+        "Viale dei Mareschi"
       ],
       "osm_status": "OK"
     },
@@ -162,13 +327,37 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "almese-via-iv-novembre",
+      "zone_id": "almese-borgata-carello-inferiore-mompellato",
       "comune": "Almese",
-      "target_street": "Via IV Novembre",
-      "listing_target": "Via IV Novembre 4",
+      "target_street": "Borgata Carello inferiore - Mompellato",
+      "listing_target": "Borgata Carello inferiore - Mompellato 4",
       "listing_url": "https://almese1.tecnorete.it/immobili-in-vendita",
       "streets": [
-        "Via IV Novembre"
+        "Borgata Carello inferiore - Mompellato"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-sacra-san-michele-laghi",
+      "comune": "Avigliana",
+      "target_street": "Via Sacra San Michele - Laghi",
+      "listing_target": "Via Sacra San Michele - Laghi 6",
+      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via Sacra San Michele - Laghi"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-aldo-carnino",
+      "comune": "Avigliana",
+      "target_street": "via Aldo Carnino",
+      "listing_target": "via Aldo Carnino 6",
+      "listing_url": "https://www.immobiliare.it/annunci/131045692/",
+      "streets": [
+        "via Aldo Carnino"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

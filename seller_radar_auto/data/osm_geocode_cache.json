@@ -1,0 +1,30 @@
+{
+  "frazione tuberghengo almese": null,
+  "borgata carello inferiore mompellato almese": null,
+  "via sacra san michele laghi avigliana": null,
+  "via sacra san michele avigliana": {
+    "lat": 45.0667654,
+    "lon": 7.3709931,
+    "display_name": "Via Sacra di San Michele, Villaggio Primavera, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via ailliaud augusto avigliana": {
+    "lat": 45.0820369,
+    "lon": 7.3969727,
+    "display_name": "Via Augusto Ailliaud, Ponte Dora, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via aldo carnino avigliana": null,
+  "via villar dora avigliana": {
+    "lat": 45.1017897,
+    "lon": 7.3880951,
+    "display_name": "Via Cuminie, Villar Dora, Torino, Piemonte, 10051, Italia"
+  },
+  "via 4 novembre avigliana": {
+    "lat": 45.0844199,
+    "lon": 7.3960013,
+    "display_name": "Via Quattro Novembre, Ponte Dora, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "viale lungo dora bussoleno": null,
+  "vicolo g pietro riva chiusa di san michele": null,
+  "borgata borlera condove": null,
+  "vicolo superiore vaie": null
+}
