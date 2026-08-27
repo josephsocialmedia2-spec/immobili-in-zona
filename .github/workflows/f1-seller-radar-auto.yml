@@ -3,8 +3,9 @@ name: F1 Seller Radar AUTO
 on:
   workflow_dispatch:
   schedule:
-    # Le due ore UTC coprono le 02:00 italiane sia con ora solare sia con ora legale.
-    - cron: "0 0,1 * * *"
+    # Due slot UTC: il gate lascia passare solo quello che cade nelle 00 italiane.
+    # In questo modo il ciclo parte alle 00:15 Europe/Rome sia con CET sia con CEST.
+    - cron: "15 22,23 * * *"
 
 permissions:
   contents: write
@@ -24,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verifica orario italiano
+      - name: Verifica orario italiano 00:15
         id: time_gate
         shell: bash
         run: |
@@ -35,7 +36,9 @@ jobs:
           LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
           LOCAL_TIME=$(TZ=Europe/Rome date +%H:%M)
           echo "Ora italiana rilevata: $LOCAL_TIME"
-          if [ "$LOCAL_HOUR" = "02" ]; then
+          # GitHub Actions può partire con qualche minuto di ritardo: accettiamo
+          # l'esecuzione schedulata che cade nell'ora 00 e scartiamo l'altro slot UTC.
+          if [ "$LOCAL_HOUR" = "00" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
@@ -93,7 +96,7 @@ jobs:
           pattern: discovery-*
           path: seller_radar_auto/discovery_results
 
-      - name: Unisci discovery
+      - name: Unisci discovery e lifecycle
         run: python seller_radar_auto/merge_discovery.py
 
       - name: Scoring, coda e dashboard
@@ -157,7 +160,7 @@ jobs:
     needs: [gate, merge, worker]
     if: always() && needs.gate.outputs.run == 'true' && needs.merge.result == 'success' && (needs.worker.result == 'success' || needs.worker.result == 'skipped')
     runs-on: ubuntu-latest
-    timeout-minutes: 7
+    timeout-minutes: 9
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -184,6 +187,9 @@ jobs:
       - name: Aggiorna dashboard con F1 Indirizzo Remoto
         run: python seller_radar_auto/refresh_dashboard.py
 
+      - name: Genera Market Intelligence e KPI
+        run: python seller_radar_auto/market_intelligence.py
+
       - name: Invia nuove pubblicazioni via email
         env:
           F1_EMAIL_USER: ${{ secrets.F1_EMAIL_USER }}
@@ -208,11 +214,11 @@ jobs:
         run: |
           git config user.name "f1-seller-radar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A seller_radar_auto/data seller_radar_auto/dashboard.html
+          git add -A seller_radar_auto/data seller_radar_auto/dashboard.html seller_radar_auto/intelligence_dashboard.html seller_radar_auto/integrations.json
           if git diff --cached --quiet; then
             echo "Nessuna modifica da salvare."
           else
-            git commit -m "radar: aggiornamento automatico"
+            git commit -m "radar: market intelligence notturna"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
