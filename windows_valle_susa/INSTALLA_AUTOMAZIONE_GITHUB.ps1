@@ -24,16 +24,42 @@ function Ensure-WingetPackage($Command, $PackageId) {
     }
 }
 
+function Test-GhAuth {
+    $oldPref = $ErrorActionPreference
+    try {
+        $ErrorActionPreference = 'SilentlyContinue'
+        & gh auth status -h github.com *> $null
+        $code = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $oldPref
+    }
+    return ($code -eq 0)
+}
+
 Write-Host '=== F1 - AUTOMAZIONE GITHUB RADAR -> TELEFONATE ==='
 Ensure-WingetPackage 'gh' 'GitHub.cli'
 Ensure-WingetPackage 'py' 'Python.Python.3.13'
 
-gh auth status -h github.com *> $null
-if ($LASTEXITCODE -ne 0) {
-    Write-Host 'Serve un solo accesso GitHub iniziale.'
-    gh auth login --web -h github.com -p https -s repo -s workflow
-    if ($LASTEXITCODE -ne 0) { throw 'Accesso GitHub non completato.' }
+if (-not (Test-GhAuth)) {
+    Write-Host ''
+    Write-Host 'Serve un solo accesso GitHub iniziale.' -ForegroundColor Yellow
+    Write-Host 'Si aprira il browser: accedi al tuo account GitHub e autorizza GitHub CLI.'
+    $oldPref = $ErrorActionPreference
+    try {
+        $ErrorActionPreference = 'Continue'
+        & gh auth login --web -h github.com -p https --scopes 'repo,workflow'
+        $loginCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $oldPref
+    }
+    if ($loginCode -ne 0 -or -not (Test-GhAuth)) {
+        throw 'Accesso GitHub non completato. Rilancia il file e completa il login nel browser.'
+    }
 }
+
+Write-Host 'GitHub CLI autenticato.' -ForegroundColor Green
 
 New-Item -ItemType Directory -Force -Path $RunnerDir | Out-Null
 Set-Location $RunnerDir
@@ -52,8 +78,16 @@ $token = gh api --method POST "repos/$Repo/actions/runners/registration-token" -
 if ($LASTEXITCODE -ne 0 -or -not $token) { throw 'Impossibile ottenere il token temporaneo del runner.' }
 
 if (Test-Path (Join-Path $RunnerDir '.runner')) {
-    & (Join-Path $RunnerDir 'config.cmd') remove --token $token
-    if ($LASTEXITCODE -ne 0) { Write-Host 'Vecchia registrazione non rimossa: proseguo con replace.' }
+    $oldPref = $ErrorActionPreference
+    try {
+        $ErrorActionPreference = 'Continue'
+        & (Join-Path $RunnerDir 'config.cmd') remove --token $token
+        $removeCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $oldPref
+    }
+    if ($removeCode -ne 0) { Write-Host 'Vecchia registrazione non rimossa: proseguo con replace.' }
 }
 
 $runnerName = "$env:COMPUTERNAME-F1"
@@ -85,15 +119,23 @@ if (-not $running) {
 }
 
 # Primo test automatico: appena il runner è online, GitHub invia subito un job Telefonate PC.
-Start-Sleep -Seconds 3
-gh workflow run f1-telefonate-pc.yml --repo $Repo
-if ($LASTEXITCODE -eq 0) {
-    Write-Host 'Primo job F1 Telefonate PC inviato a GitHub.'
+Start-Sleep -Seconds 4
+$oldPref = $ErrorActionPreference
+try {
+    $ErrorActionPreference = 'Continue'
+    & gh workflow run f1-telefonate-pc.yml --repo $Repo
+    $workflowCode = $LASTEXITCODE
+}
+finally {
+    $ErrorActionPreference = $oldPref
+}
+if ($workflowCode -eq 0) {
+    Write-Host 'Primo job F1 Telefonate PC inviato a GitHub.' -ForegroundColor Green
 } else {
-    Write-Host 'Runner configurato; il primo job partirà alla conclusione del prossimo Radar.'
+    Write-Host 'Runner configurato; il primo job partira alla conclusione del prossimo Radar.' -ForegroundColor Yellow
 }
 
 Write-Host ''
-Write-Host 'CONFIGURAZIONE COMPLETATA.'
+Write-Host 'CONFIGURAZIONE COMPLETATA.' -ForegroundColor Green
 Write-Host 'Da ora: Radar GitHub completato -> workflow F1 Telefonate PC -> lavoro automatico su questo computer.'
 Write-Host 'I numeri restano sul PC; GitHub riceve solo stato tecnico, comuni/vie e conteggi.'
