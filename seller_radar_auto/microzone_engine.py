@@ -14,6 +14,10 @@ Le strade arrivano da OpenStreetMap/Overpass. Se il nome della via target non
 combacia con la rete OSM, viene geocodificato solo quel target tramite Nominatim
 con cache persistente e massimo 4 richieste/minuto; poi si selezionano le strade
 nominate più vicine. Non vengono inviati dati personali.
+
+I target che restano geograficamente non risolti vengono conservati nel JSON
+come quarantena diagnostica, ma NON entrano nel CSV operativo usato dal motore
+telefonico locale.
 """
 from __future__ import annotations
 
@@ -60,8 +64,10 @@ def street_only(s: str) -> str:
 
 def target_street(raw: str, comune: str) -> str:
     s = str(raw or "").strip()
+    # Togli il comune SOLO quando è una coda esplicita separata da virgola.
+    # Non trasformare mai "Via Almese" in "Via" quando il comune è Almese.
     if comune:
-        s = re.sub(rf",?\s*{re.escape(comune)}\s*$", "", s, flags=re.I).strip(" ,")
+        s = re.sub(rf",\s*{re.escape(comune)}\s*$", "", s, flags=re.I).strip(" ,")
     return street_only(s)
 
 
@@ -316,7 +322,8 @@ def nearest_from_point(point, target: str, roads, limit: int):
     for k, v in grouped.items():
         if k == norm(target) or not v["geometry"]:
             continue
-        dist = min(hav(point, p) for p in v["geometry"][::max(1, len(v["geometry"])//24)])
+        sampled = v["geometry"][::max(1, len(v["geometry"])//24)]
+        dist = min(hav(point, p) for p in sampled)
         ranked.append((dist, v["name"]))
     ranked.sort(key=lambda x: (x[0], norm(x[1])))
     out=[]; seen=set()
@@ -339,11 +346,13 @@ def main():
         by_city.setdefault(x["comune"], []).append(x)
 
     rows = []
+    quarantine = []
     summary = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "main_towns": cfg["main_towns"],
         "map_data_attribution": cfg.get("map_data_attribution", "Data © OpenStreetMap contributors, ODbL 1.0"),
-        "microzones": []
+        "microzones": [],
+        "quarantine": quarantine,
     }
     for city_index, (comune, items) in enumerate(sorted(by_city.items())):
         if city_index:
@@ -369,6 +378,22 @@ def main():
                     osm_status = "TARGET_NON_RISOLTA"
 
             zone_id = slug(comune + "-" + x["target_street"])
+            micro = {
+                "zone_id": zone_id,
+                "comune": comune,
+                "target_street": x["target_street"],
+                "listing_target": x.get("listing_target", ""),
+                "listing_url": x.get("listing_url", ""),
+                "streets": [x["target_street"]] + [n["street"] for n in near],
+                "osm_status": osm_status,
+            }
+
+            # Un target non risolto non deve generare ricerche telefoniche.
+            if osm_status in {"TARGET_NON_RISOLTA", "FALLBACK_SOLO_TARGET"} or not near:
+                quarantine.append({**micro, "reason": "POSIZIONE/VIA DA VERIFICARE"})
+                print(f"[QUARANTENA] {comune} — {x['target_street']}: {osm_status}")
+                continue
+
             base = {
                 "ZONE_ID": zone_id,
                 "COMUNE": comune,
@@ -380,22 +405,14 @@ def main():
             rows.append({**base, "RANK": 0, "TIPO_VIA": "TARGET", "VIA_DA_LAVORARE": x["target_street"], "DISTANZA_M": 0, "RELAZIONE": "CENTRO"})
             for i, n in enumerate(near, 1):
                 rows.append({**base, "RANK": i, "TIPO_VIA": "VICINA", "VIA_DA_LAVORARE": n["street"], "DISTANZA_M": n["distance_m"], "RELAZIONE": n["relation"]})
-            summary["microzones"].append({
-                "zone_id": zone_id,
-                "comune": comune,
-                "target_street": x["target_street"],
-                "listing_target": x.get("listing_target", ""),
-                "listing_url": x.get("listing_url", ""),
-                "streets": [x["target_street"]] + [n["street"] for n in near],
-                "osm_status": osm_status,
-            })
+            summary["microzones"].append(micro)
 
     DATA.mkdir(parents=True, exist_ok=True)
     fields = ["ZONE_ID","COMUNE","VIA_ANNUNCIO","RIFERIMENTO_ANNUNCIO","ANNUNCIO_URL","RANK","TIPO_VIA","VIA_DA_LAVORARE","DISTANZA_M","RELAZIONE","OSM_STATUS"]
     with OUT_CSV.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
     OUT_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Microzone F1: {len(summary['microzones'])} zone, {len(rows)} righe strada. Nessun dato personale pubblicato.")
+    print(f"Microzone F1 operative: {len(summary['microzones'])}; quarantena: {len(quarantine)}; righe strada: {len(rows)}. Nessun dato personale pubblicato.")
 
 
 if __name__ == "__main__":
