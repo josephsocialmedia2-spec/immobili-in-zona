@@ -71,7 +71,6 @@ private_hint=bool(x.get('private_intent')) or str(x.get('seller_hint','')).upper
 street,civ=address_parts(address)
 title=re.sub(r'\s*[-–|]\s*(?:idealista|immobiliare\.it|casa\.it).*$', '', x.get('title',''), flags=re.I).strip()
 queries=[]
-# Prima le chiavi univoche dell'annuncio: sono molto più affidabili dell'indirizzo generico.
 if lid:
     queries.append(f'"{lid}"')
     if domain:queries.append(f'site:{domain} "{lid}"')
@@ -81,29 +80,30 @@ if address:
     queries.append(f'"{address}" "{comune}" "{ptype}"')
     if street and civ:queries.append(f'"{street}" {civ} "{comune}" {ptype}')
     if not private_hint:queries.append(f'"{address}" "{comune}" (agenzia OR immobiliare OR propone)')
-else:
-    queries.append(f'"{comune}" "{ptype}" "{title[:70]}"')
-# dedup query mantenendo l'ordine
+else:queries.append(f'"{comune}" "{ptype}" "{title[:70]}"')
 queries=list(dict.fromkeys(q for q in queries if q.strip()))[:7]
 
 matches=[];best_price=None;best_p_score=-1;best_seller='';best_s_score=-1;query_log=[]
 for q in queries:
-    results,err=search(q,15);query_log.append({'q':q,'error':err,'results':len(results)})
-    for r in results:
-        sc,exact,same_host=score(x,r,address)
+    results,err=search(q,15);samples=[]
+    for idx,r in enumerate(results):
+        sc,exact,same_host=score(x,r,address); text=f"{r.get('title','')} {r.get('snippet','')}";ps=prices(text);sn=seller(text)
+        if idx<5:samples.append({'url':r.get('url',''),'title':r.get('title','')[:180],'snippet':r.get('snippet','')[:240],'score':sc,'prices':ps})
         if sc<55:continue
-        text=f"{r.get('title','')} {r.get('snippet','')}";ps=prices(text);sn=seller(text)
         matches.append({'q':q,'url':r.get('url',''),'title':r.get('title',''),'snippet':r.get('snippet',''),'score':sc,'exact_url':exact,'same_host':same_host,'prices':ps,'seller':sn})
         if ps and sc>best_p_score:best_price=ps[0];best_p_score=sc
         seller_ok=(not private_hint) and sn and (exact or (same_host and sc>=115))
         if seller_ok and sc>best_s_score:best_seller=sn;best_s_score=sc
+    query_log.append({'q':q,'error':err,'results':len(results),'samples':samples})
 
 if best_price and str(e.get('price_confidence','')).upper() not in {'HIGH','MEDIUM'}:
     e['detected_price']=best_price;e['price_confidence']='HIGH' if best_p_score>=120 else 'MEDIUM';e['price_source']='DORK_FALLBACK';e['price_evidence_count']=sum(best_price in m.get('prices',[]) for m in matches)
 if best_seller and str(e.get('seller_confidence','')).upper() not in {'HIGH','MEDIUM'}:
     e['seller_name']=best_seller;e['seller_confidence']='HIGH' if best_s_score>=140 else 'MEDIUM';e['seller_source']='DORK_FALLBACK'
 e['fallback_queries']=query_log;e['fallback_matches']=sorted(matches,key=lambda z:z['score'],reverse=True)[:12]
-e['fallback_private_protection']=private_hint
-e['fallback_listing_id']=lid
+e['fallback_private_protection']=private_hint;e['fallback_listing_id']=lid
 OUT.write_text(json.dumps(doc,ensure_ascii=False,indent=2),encoding='utf-8')
-print(f"FALLBACK {ITEM_ID}: id={lid or '-'} address={address or '-'} price={e.get('detected_price') or '-'}({e.get('price_confidence','NONE')}) seller={e.get('seller_name') or '-'} private={private_hint} matches={len(matches)} queries={[(z['results'],z['error']) for z in query_log]}")
+print(f"FALLBACK {ITEM_ID}: id={lid or '-'} address={address or '-'} price={e.get('detected_price') or '-'}({e.get('price_confidence','NONE')}) seller={e.get('seller_name') or '-'} private={private_hint} matches={len(matches)}")
+for z in query_log:
+    print('QUERY',z['q'],'results=',z['results'],'error=',z['error'])
+    for s in z['samples'][:3]: print('  RAW score=',s['score'],'prices=',s['prices'],'url=',s['url'],'title=',s['title'])
