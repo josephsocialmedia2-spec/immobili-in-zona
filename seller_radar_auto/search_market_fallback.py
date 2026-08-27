@@ -16,6 +16,9 @@ BAD_SELLERS={'idealista','immobiliare.it','casa.it','subito','trovit','wikicasa'
 
 def fold(s):return re.sub(r'[^a-z0-9à-ÿ]+',' ',str(s or '').casefold()).strip()
 def host(u):return urlparse(u or '').netloc.lower().removeprefix('www.')
+def listing_id(u):
+    nums=re.findall(r'(?<!\d)(\d{6,12})(?!\d)',urlparse(u or '').path)
+    return nums[-1] if nums else ''
 def amount(v):
     d=re.sub(r'\D','',v or '')
     if not d:return None
@@ -37,15 +40,24 @@ def seller(text):
 def addr_from(text):
     m=ADDR_RE.search(text or '')
     return re.sub(r'\s+',' ',m.group(0)).strip(' ,.;') if m else ''
+def address_parts(address):
+    a=fold(address);m=re.search(r'\b(\d{1,4})\b',a);civ=m.group(1) if m else ''
+    street=re.sub(r'\b\d{1,4}\b.*$','',a).strip()
+    return street,civ
 def score(item,r,address):
-    text=f"{r.get('title','')} {r.get('snippet','')}";s=0
-    exact=(r.get('url') or '').rstrip('/')==(item.get('url') or '').rstrip('/')
-    same_host=bool(host(item.get('url')) and host(item.get('url'))==host(r.get('url')))
-    if exact:s+=100
-    if address and fold(address) in fold(text):s+=55
-    if fold(item.get('comune','')) and fold(item.get('comune','')) in fold(text):s+=20
+    text=f"{r.get('title','')} {r.get('snippet','')}";ft=fold(text);s=0
+    src=(r.get('url') or '').rstrip('/');orig=(item.get('url') or '').rstrip('/')
+    exact=src==orig; same_host=bool(host(orig) and host(orig)==host(src)); lid=listing_id(orig)
+    if exact:s+=140
+    if lid and (lid in src or lid in text):s+=100
+    street,civ=address_parts(address)
+    if address and fold(address) in ft:s+=65
+    else:
+        if street and street in ft:s+=35
+        if civ and re.search(rf'\b{re.escape(civ)}\b',ft):s+=25
+    if fold(item.get('comune','')) and fold(item.get('comune','')) in ft:s+=20
     if same_host:s+=20
-    a=set(PROP_RE.findall(item.get('title','')));b=set(PROP_RE.findall(text))
+    a={x.casefold() for x in PROP_RE.findall(item.get('title',''))};b={x.casefold() for x in PROP_RE.findall(text)}
     if a and b:s+=15
     return s,exact,same_host
 
@@ -54,34 +66,44 @@ state=json.loads(STATE.read_text(encoding='utf-8'));x=(state.get('items') or {})
 if not x:raise SystemExit('item non trovato')
 doc=json.loads(OUT.read_text(encoding='utf-8'));e=doc.setdefault('enrichment',{})
 address=(e.get('address_hints') or [''])[0] or addr_from(f"{x.get('title','')} {x.get('snippet','')}")
-comune=x.get('comune','');domain=host(x.get('url'));pm=PROP_RE.search(x.get('title','') or '');ptype=pm.group(1) if pm else 'immobile'
+comune=x.get('comune','');domain=host(x.get('url'));lid=listing_id(x.get('url'));pm=PROP_RE.search(x.get('title','') or '');ptype=pm.group(1) if pm else 'immobile'
 private_hint=bool(x.get('private_intent')) or str(x.get('seller_hint','')).upper()=='INDIZIO_PRIVATO'
+street,civ=address_parts(address)
+title=re.sub(r'\s*[-–|]\s*(?:idealista|immobiliare\.it|casa\.it).*$', '', x.get('title',''), flags=re.I).strip()
 queries=[]
+# Prima le chiavi univoche dell'annuncio: sono molto più affidabili dell'indirizzo generico.
+if lid:
+    queries.append(f'"{lid}"')
+    if domain:queries.append(f'site:{domain} "{lid}"')
+if title:queries.append(f'"{title}"')
 if address:
-    queries.append(f'site:{domain} "{comune}" "{address}"')
-    queries.append(f'"{address}" "{comune}" "{ptype}" (vendita OR vendesi)')
+    if domain:queries.append(f'site:{domain} "{comune}" "{address}"')
+    queries.append(f'"{address}" "{comune}" "{ptype}"')
+    if street and civ:queries.append(f'"{street}" {civ} "{comune}" {ptype}')
     if not private_hint:queries.append(f'"{address}" "{comune}" (agenzia OR immobiliare OR propone)')
-else:queries.append(f'site:{domain} "{comune}" "{(x.get("title") or "")[:80]}"')
+else:
+    queries.append(f'"{comune}" "{ptype}" "{title[:70]}"')
+# dedup query mantenendo l'ordine
+queries=list(dict.fromkeys(q for q in queries if q.strip()))[:7]
 
-matches=[];best_price=None;best_p_score=-1;best_seller='';best_s_score=-1
+matches=[];best_price=None;best_p_score=-1;best_seller='';best_s_score=-1;query_log=[]
 for q in queries:
-    results,err=search(q,12)
+    results,err=search(q,15);query_log.append({'q':q,'error':err,'results':len(results)})
     for r in results:
         sc,exact,same_host=score(x,r,address)
-        if sc<50:continue
+        if sc<55:continue
         text=f"{r.get('title','')} {r.get('snippet','')}";ps=prices(text);sn=seller(text)
         matches.append({'q':q,'url':r.get('url',''),'title':r.get('title',''),'snippet':r.get('snippet',''),'score':sc,'exact_url':exact,'same_host':same_host,'prices':ps,'seller':sn})
         if ps and sc>best_p_score:best_price=ps[0];best_p_score=sc
-        # Il seller è più delicato del prezzo: mai inferirlo per annunci privati.
-        # Per annunci non privati richiediamo URL esatto, oppure stesso host+indirizzo+tipologia con score forte.
-        seller_ok=(not private_hint) and sn and (exact or (same_host and sc>=105))
+        seller_ok=(not private_hint) and sn and (exact or (same_host and sc>=115))
         if seller_ok and sc>best_s_score:best_seller=sn;best_s_score=sc
 
 if best_price and str(e.get('price_confidence','')).upper() not in {'HIGH','MEDIUM'}:
-    e['detected_price']=best_price;e['price_confidence']='HIGH' if best_p_score>=100 else 'MEDIUM';e['price_source']='DORK_FALLBACK';e['price_evidence_count']=sum(best_price in m.get('prices',[]) for m in matches)
+    e['detected_price']=best_price;e['price_confidence']='HIGH' if best_p_score>=120 else 'MEDIUM';e['price_source']='DORK_FALLBACK';e['price_evidence_count']=sum(best_price in m.get('prices',[]) for m in matches)
 if best_seller and str(e.get('seller_confidence','')).upper() not in {'HIGH','MEDIUM'}:
-    e['seller_name']=best_seller;e['seller_confidence']='HIGH' if best_s_score>=100 else 'MEDIUM';e['seller_source']='DORK_FALLBACK'
-e['fallback_queries']=queries;e['fallback_matches']=sorted(matches,key=lambda z:z['score'],reverse=True)[:10]
+    e['seller_name']=best_seller;e['seller_confidence']='HIGH' if best_s_score>=140 else 'MEDIUM';e['seller_source']='DORK_FALLBACK'
+e['fallback_queries']=query_log;e['fallback_matches']=sorted(matches,key=lambda z:z['score'],reverse=True)[:12]
 e['fallback_private_protection']=private_hint
+e['fallback_listing_id']=lid
 OUT.write_text(json.dumps(doc,ensure_ascii=False,indent=2),encoding='utf-8')
-print(f"FALLBACK {ITEM_ID}: address={address or '-'} price={e.get('detected_price') or '-'} seller={e.get('seller_name') or '-'} private={private_hint} matches={len(matches)}")
+print(f"FALLBACK {ITEM_ID}: id={lid or '-'} address={address or '-'} price={e.get('detected_price') or '-'}({e.get('price_confidence','NONE')}) seller={e.get('seller_name') or '-'} private={private_hint} matches={len(matches)} queries={[(z['results'],z['error']) for z in query_log]}")
