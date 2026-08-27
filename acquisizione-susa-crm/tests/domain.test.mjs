@@ -31,3 +31,11 @@ test('estrae contatti senza inventare dati', () => {
   assert.match(result.phones[0], /333/);
   assert.match(result.prices[0], /125/);
 });
+
+test('estrae numeri italiani con slash, trattini e più contatti', () => {
+  const result = extractContacts('Casa: 0122/622123; mobile 333.555.7788; ufficio 011-1234567');
+  assert.equal(result.phones.length, 3);
+  assert.ok(result.phones.includes('0122/622123'));
+  assert.ok(result.phones.includes('333.555.7788'));
+  assert.ok(result.phones.includes('011-1234567'));
+});
