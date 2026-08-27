@@ -40,3 +40,4 @@ for x in items.values():
 state['items']=items; state['market_enrichment_updated_at']=iso_now()
 STATE.write_text(json.dumps(state,ensure_ascii=False,indent=2),encoding='utf-8')
 print(f'MARKET ENRICHMENT: prezzi aggiunti={prices_added}, seller verificati={sellers_verified}, seller review esclusi={sellers_review}')
+# Il file è osservato dal workflow Market Hub: ogni modifica valida una rigenerazione immediata.
