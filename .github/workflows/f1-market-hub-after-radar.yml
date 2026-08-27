@@ -8,6 +8,8 @@ on:
       - "seller_radar_auto/cross_repo_sources.json"
       - "seller_radar_auto/cross_repo_ingest.py"
       - "seller_radar_auto/appointment_brief.py"
+      - "seller_radar_auto/apply_market_enrichment.py"
+      - "seller_radar_auto/item_worker.py"
   workflow_run:
     workflows: ["F1 Seller Radar AUTO"]
     types: [completed]
@@ -23,7 +25,7 @@ jobs:
   build-hub:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - name: Checkout latest main
         uses: actions/checkout@v4
@@ -32,7 +34,13 @@ jobs:
           fetch-depth: 0
 
       - name: Verifica script
-        run: python -m py_compile seller_radar_auto/cross_repo_ingest.py seller_radar_auto/appointment_brief.py
+        run: python -m py_compile seller_radar_auto/cross_repo_ingest.py seller_radar_auto/appointment_brief.py seller_radar_auto/apply_market_enrichment.py seller_radar_auto/market_intelligence.py seller_radar_auto/item_worker.py
+
+      - name: Applica prezzi e inserzionisti verificati
+        run: python seller_radar_auto/apply_market_enrichment.py
+
+      - name: Rigenera Market Intelligence e KPI
+        run: python seller_radar_auto/market_intelligence.py
 
       - name: Collega repository F1
         run: python seller_radar_auto/cross_repo_ingest.py
@@ -45,14 +53,14 @@ jobs:
         run: |
           git config user.name "f1-market-hub-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add seller_radar_auto/data/intelligence/external_records.csv \
-                  seller_radar_auto/data/intelligence/repo_status.csv \
-                  seller_radar_auto/data/intelligence/repo_status.json \
+          git add seller_radar_auto/data/state.json \
+                  seller_radar_auto/data/intelligence \
+                  seller_radar_auto/intelligence_dashboard.html \
                   seller_radar_auto/appointment_brief.html
           if git diff --cached --quiet; then
             echo "Nessun aggiornamento del Market Hub."
           else
-            git commit -m "market-hub: aggiorna brief e repository collegati"
+            git commit -m "market-hub: aggiorna prezzi, agenzie e brief"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
