@@ -1,0 +1,34 @@
+{
+  "updated_by": "F1 Market Intelligence",
+  "purpose": "Hub unico operativo e KPI F1",
+  "repos": [
+    {
+      "name": "Immobili in zona / Seller Radar",
+      "repo": "josephsocialmedia2-spec/immobili-in-zona",
+      "url": "https://josephsocialmedia2-spec.github.io/immobili-in-zona/",
+      "role": "Radar, mercato, indirizzi, CRM Susa, market intelligence",
+      "data_mode": "PRIMARY"
+    },
+    {
+      "name": "Launcher F1",
+      "repo": "josephsocialmedia2-spec/launcher-dashboard",
+      "url": "https://josephsocialmedia2-spec.github.io/launcher-dashboard/",
+      "role": "Accesso operativo centralizzato",
+      "data_mode": "NAVIGATION"
+    },
+    {
+      "name": "Open Social Scheduler",
+      "repo": "josephsocialmedia2-spec/open-social-scheduler",
+      "url": "https://josephsocialmedia2-spec.github.io/open-social-scheduler/",
+      "role": "Contenuti, pubblicazione e marketing immobili",
+      "data_mode": "CONNECTED_LINK"
+    },
+    {
+      "name": "Acquisizione Susa",
+      "repo": "josephsocialmedia2-spec/acquisizionesusa",
+      "url": "https://github.com/josephsocialmedia2-spec/acquisizionesusa",
+      "role": "Repository acquisizione separato; attualmente senza dataset utile",
+      "data_mode": "NO_DATA_YET"
+    }
+  ]
+}
