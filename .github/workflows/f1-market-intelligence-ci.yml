@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'seller_radar_auto/market_intelligence.py'
+      - 'seller_radar_auto/market_intelligence_v2.py'
       - 'seller_radar_auto/merge_discovery.py'
       - 'seller_radar_auto/discovery_one.py'
       - 'seller_radar_auto/integrations.json'
@@ -24,10 +25,11 @@ jobs:
       - name: Python syntax
         run: |
           python -m py_compile seller_radar_auto/market_intelligence.py
+          python -m py_compile seller_radar_auto/market_intelligence_v2.py
           python -m py_compile seller_radar_auto/merge_discovery.py
           python -m py_compile seller_radar_auto/discovery_one.py
       - name: Generate KPI from repository state
-        run: python seller_radar_auto/market_intelligence.py
+        run: python seller_radar_auto/market_intelligence_v2.py
       - name: Verify expected outputs
         shell: bash
         run: |
@@ -36,8 +38,10 @@ jobs:
           test -f seller_radar_auto/data/intelligence/kpi_vie.csv
           test -f seller_radar_auto/data/intelligence/kpi_tipologie.csv
           test -f seller_radar_auto/data/intelligence/kpi_agenzie.csv
+          test -f seller_radar_auto/data/intelligence/kpi_segnali.csv
+          test -f seller_radar_auto/data/intelligence/scarti_qualita.csv
           test -f seller_radar_auto/intelligence_dashboard.html
-          echo 'F1 Market Intelligence OK'
+          echo 'F1 Market Intelligence v2 OK'
       - name: Publish generated intelligence
         shell: bash
         run: |
@@ -47,7 +51,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "KPI già aggiornati."
           else
-            git commit -m "intelligence: genera baseline KPI"
+            git commit -m "intelligence: baseline KPI filtrata"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
