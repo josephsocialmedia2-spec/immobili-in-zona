@@ -5,12 +5,22 @@ $RunnerDir = Join-Path $HOME 'F1-GitHub-Runner'
 $Startup = [Environment]::GetFolderPath('Startup')
 $Desktop = [Environment]::GetFolderPath('Desktop')
 
+function Refresh-Path {
+    $machine = [Environment]::GetEnvironmentVariable('Path','Machine')
+    $user = [Environment]::GetEnvironmentVariable('Path','User')
+    $env:Path = "$machine;$user"
+}
+
 function Ensure-WingetPackage($Command, $PackageId) {
     if (-not (Get-Command $Command -ErrorAction SilentlyContinue)) {
         if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
             throw "Manca $Command e winget non è disponibile."
         }
         winget install -e --id $PackageId --accept-package-agreements --accept-source-agreements
+        Refresh-Path
+    }
+    if (-not (Get-Command $Command -ErrorAction SilentlyContinue)) {
+        throw "$Command non è disponibile dopo l'installazione. Riavvia Windows e rilancia questo file."
     }
 }
 
@@ -18,11 +28,11 @@ Write-Host '=== F1 - AUTOMAZIONE GITHUB RADAR -> TELEFONATE ==='
 Ensure-WingetPackage 'gh' 'GitHub.cli'
 Ensure-WingetPackage 'py' 'Python.Python.3.13'
 
-try {
-    gh auth status -h github.com | Out-Null
-} catch {
+gh auth status -h github.com *> $null
+if ($LASTEXITCODE -ne 0) {
     Write-Host 'Serve un solo accesso GitHub iniziale.'
-    gh auth login --web -h github.com -p https -s repo,workflow
+    gh auth login --web -h github.com -p https -s repo -s workflow
+    if ($LASTEXITCODE -ne 0) { throw 'Accesso GitHub non completato.' }
 }
 
 New-Item -ItemType Directory -Force -Path $RunnerDir | Out-Null
@@ -39,10 +49,11 @@ if (-not (Test-Path (Join-Path $RunnerDir 'run.cmd'))) {
 }
 
 $token = gh api --method POST "repos/$Repo/actions/runners/registration-token" --jq .token
-if (-not $token) { throw 'Impossibile ottenere il token temporaneo del runner.' }
+if ($LASTEXITCODE -ne 0 -or -not $token) { throw 'Impossibile ottenere il token temporaneo del runner.' }
 
 if (Test-Path (Join-Path $RunnerDir '.runner')) {
-    try { & (Join-Path $RunnerDir 'config.cmd') remove --token $token } catch { }
+    & (Join-Path $RunnerDir 'config.cmd') remove --token $token
+    if ($LASTEXITCODE -ne 0) { Write-Host 'Vecchia registrazione non rimossa: proseguo con replace.' }
 }
 
 $runnerName = "$env:COMPUTERNAME-F1"
@@ -64,8 +75,8 @@ $reportLink.WorkingDirectory = (Split-Path $report -Parent)
 $reportLink.IconLocation = 'shell32.dll,220'
 $reportLink.Save()
 
-# Dipendenze una volta sola; il workflow le ricontrolla comunque.
 py -m pip install --disable-pip-version-check --quiet selenium openpyxl
+if ($LASTEXITCODE -ne 0) { throw 'Installazione dipendenze Python fallita.' }
 
 # Avvia subito il runner se non è già in esecuzione.
 $running = Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -like "*$RunnerDir*run.cmd*" }
@@ -75,11 +86,11 @@ if (-not $running) {
 
 # Primo test automatico: appena il runner è online, GitHub invia subito un job Telefonate PC.
 Start-Sleep -Seconds 3
-try {
-    gh workflow run f1-telefonate-pc.yml --repo $Repo
+gh workflow run f1-telefonate-pc.yml --repo $Repo
+if ($LASTEXITCODE -eq 0) {
     Write-Host 'Primo job F1 Telefonate PC inviato a GitHub.'
-} catch {
-    Write-Host 'Runner configurato; il primo job partirà comunque alla conclusione del prossimo Radar.'
+} else {
+    Write-Host 'Runner configurato; il primo job partirà alla conclusione del prossimo Radar.'
 }
 
 Write-Host ''
