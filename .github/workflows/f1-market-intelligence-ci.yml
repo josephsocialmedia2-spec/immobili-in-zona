@@ -12,7 +12,7 @@ on:
       - '.github/workflows/f1-market-intelligence-ci.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   test:
@@ -38,3 +38,16 @@ jobs:
           test -f seller_radar_auto/data/intelligence/kpi_agenzie.csv
           test -f seller_radar_auto/intelligence_dashboard.html
           echo 'F1 Market Intelligence OK'
+      - name: Publish generated intelligence
+        shell: bash
+        run: |
+          git config user.name "f1-market-intelligence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add seller_radar_auto/data/intelligence seller_radar_auto/intelligence_dashboard.html
+          if git diff --cached --quiet; then
+            echo "KPI già aggiornati."
+          else
+            git commit -m "intelligence: genera baseline KPI"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
