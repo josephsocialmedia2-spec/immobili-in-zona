@@ -10,6 +10,8 @@ on:
       - "seller_radar_auto/appointment_brief.py"
       - "seller_radar_auto/apply_market_enrichment.py"
       - "seller_radar_auto/item_worker.py"
+      - "seller_radar_auto/search_market_fallback.py"
+      - "seller_radar_auto/market_intelligence_v2.py"
   workflow_run:
     workflows: ["F1 Seller Radar AUTO"]
     types: [completed]
@@ -34,13 +36,13 @@ jobs:
           fetch-depth: 0
 
       - name: Verifica script
-        run: python -m py_compile seller_radar_auto/cross_repo_ingest.py seller_radar_auto/appointment_brief.py seller_radar_auto/apply_market_enrichment.py seller_radar_auto/market_intelligence.py seller_radar_auto/item_worker.py
+        run: python -m py_compile seller_radar_auto/cross_repo_ingest.py seller_radar_auto/appointment_brief.py seller_radar_auto/apply_market_enrichment.py seller_radar_auto/market_intelligence.py seller_radar_auto/market_intelligence_v2.py seller_radar_auto/item_worker.py seller_radar_auto/search_market_fallback.py
 
       - name: Applica prezzi e inserzionisti verificati
         run: python seller_radar_auto/apply_market_enrichment.py
 
-      - name: Rigenera Market Intelligence e KPI
-        run: python seller_radar_auto/market_intelligence.py
+      - name: Rigenera Market Intelligence e KPI filtrati
+        run: python seller_radar_auto/market_intelligence_v2.py
 
       - name: Collega repository F1
         run: python seller_radar_auto/cross_repo_ingest.py
