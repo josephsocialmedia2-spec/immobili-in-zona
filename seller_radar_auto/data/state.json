@@ -23,7 +23,7 @@
         "monitoraggio base"
       ],
       "enrichment": {
-        "checked_at": "2026-08-27T17:16:22.862606+00:00",
+        "checked_at": "2026-08-27T17:18:43.408753+00:00",
         "private_candidate": false,
         "listing_fetch": {
           "ok": false,
@@ -14492,5 +14492,5 @@
   "enrichment_updated_at": "2026-08-17T16:24:27.480224+00:00",
   "ddg_updated_at": "2026-08-17T16:24:17.232686+00:00",
   "matrix_discovery_updated_at": "2026-08-23T17:16:38.787172+00:00",
-  "market_enrichment_updated_at": "2026-08-27T17:18:21.446401+00:00"
+  "market_enrichment_updated_at": "2026-08-27T17:19:24.849442+00:00"
 }
