@@ -1,0 +1,22 @@
+name: F1 Radar Valle di Susa - Avvio immediato
+
+on:
+  push:
+    paths:
+      - "seller_radar_auto/.radar_now_trigger"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Avvia il Radar Valle di Susa completo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run f1-seller-radar-auto.yml --repo "${{ github.repository }}" --ref main
+          echo "Radar F1 Seller Radar AUTO richiesto."
