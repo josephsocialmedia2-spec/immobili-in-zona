@@ -19,5 +19,8 @@
     "https://z.overpass-api.de/api/interpreter",
     "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
   ],
-  "user_agent": "F1Immobiliare-Microzone/1.1 (market intelligence; contact: f1immobiliaresusa@outlook.it)"
+  "nominatim_url": "https://nominatim.openstreetmap.org/search",
+  "nominatim_min_interval_seconds": 15,
+  "user_agent": "F1Immobiliare-Microzone/1.2 (market intelligence; contact: f1immobiliaresusa@outlook.it)",
+  "map_data_attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
 }
