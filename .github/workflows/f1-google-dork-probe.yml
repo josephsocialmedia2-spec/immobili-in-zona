@@ -1,0 +1,22 @@
+name: F1 Google Dork Probe
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "seller_radar_auto/.google_probe_trigger"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test ID annuncio
+        run: python seller_radar_auto/google_dork_probe.py '"36069783"'
+      - name: Test indirizzo
+        run: python seller_radar_auto/google_dork_probe.py '"Via Rubiana 142" "Almese" villa'
