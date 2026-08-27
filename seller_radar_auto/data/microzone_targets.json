@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-08-27T20:02:32.394921+00:00",
+  "main_towns": [
+    "Avigliana",
+    "Almese",
+    "Condove",
+    "Sant'Antonino di Susa",
+    "Vaie",
+    "Chiusa di San Michele",
+    "Bussoleno",
+    "Susa"
+  ],
+  "microzones": [
+    {
+      "zone_id": "almese-via-rubiana",
+      "comune": "Almese",
+      "target_street": "via Rubiana",
+      "listing_target": "Via Rubiana 142",
+      "listing_url": "https://www.immobiliare.it/annunci/119867056/",
+      "streets": [
+        "via Rubiana"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "almese-via-montecapretto",
+      "comune": "Almese",
+      "target_street": "via Montecapretto",
+      "listing_target": "via Montecapretto 24",
+      "listing_url": "https://www.immobiliare.it/annunci/108146029/",
+      "streets": [
+        "via Montecapretto"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "almese-via-roma",
+      "comune": "Almese",
+      "target_street": "via Roma",
+      "listing_target": "via Roma 29",
+      "listing_url": "https://www.immobiliare.it/annunci/130993624/",
+      "streets": [
+        "via Roma"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "almese-frazione-tuberghengo",
+      "comune": "Almese",
+      "target_street": "frazione Tuberghengo",
+      "listing_target": "frazione Tuberghengo 2",
+      "listing_url": "https://www.immobiliare.it/annunci/101503673/",
+      "streets": [
+        "frazione Tuberghengo"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "almese-via-almese",
+      "comune": "Almese",
+      "target_street": "Via Almese",
+      "listing_target": "via almese 23",
+      "listing_url": "https://www.idealista.it/immobile/35031076/",
+      "streets": [
+        "Via Almese"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "almese-via-iv-novembre",
+      "comune": "Almese",
+      "target_street": "Via IV Novembre",
+      "listing_target": "Via IV Novembre 4",
+      "listing_url": "https://almese1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via IV Novembre"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "avigliana-via-monte-cuneo",
+      "comune": "Avigliana",
+      "target_street": "VIA MONTE CUNEO",
+      "listing_target": "VIA MONTE CUNEO 6",
+      "listing_url": "https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana",
+      "streets": [
+        "VIA MONTE CUNEO",
+        "Via Ceresole",
+        "Via Chiattera",
+        "Via don Alberto Milano",
+        "Via Oronte Nota"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-corso-laghi",
+      "comune": "Avigliana",
+      "target_street": "Corso Laghi",
+      "listing_target": "corso Laghi 165",
+      "listing_url": "https://avigliana1.tecnorete.it/avigliana/avigliana/",
+      "streets": [
+        "Corso Laghi",
+        "Piazza del Popolo",
+        "Via Alpi Cozie",
+        "Via Carnino",
+        "Via Cavalieri di Vittorio Veneto"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "bussoleno-viale-lungo-dora-bussoleno",
+      "comune": "Bussoleno",
+      "target_street": "Viale Lungo Dora, Bussoleno",
+      "listing_target": "Viale Lungo Dora, Bussoleno 160",
+      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
+      "streets": [
+        "Viale Lungo Dora, Bussoleno"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "chiusa-di-san-michele-vicolo-g-pietro-riva",
+      "comune": "Chiusa di San Michele",
+      "target_street": "vicolo G. Pietro Riva",
+      "listing_target": "vicolo G. Pietro Riva 13",
+      "listing_url": "https://www.immobiliare.it/annunci/127844320/",
+      "streets": [
+        "vicolo G. Pietro Riva"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "condove-via-moncenisio",
+      "comune": "Condove",
+      "target_street": "Via Moncenisio",
+      "listing_target": "Via Moncenisio 72",
+      "listing_url": "https://www.idealista.it/immobile/33250712/",
+      "streets": [
+        "Via Moncenisio"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "condove-borgata-borlera",
+      "comune": "Condove",
+      "target_street": "Borgata Borlera",
+      "listing_target": "Borgata Borlera 21",
+      "listing_url": "https://www.idealista.it/immobile/36228538/",
+      "streets": [
+        "Borgata Borlera"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "sant-antonino-di-susa-via-medagli",
+      "comune": "Sant'Antonino di Susa",
+      "target_street": "via Medagli",
+      "listing_target": "via Medagli 55",
+      "listing_url": "https://www.immobiliare.it/annunci/131644636/",
+      "streets": [
+        "via Medagli"
+      ],
+      "osm_status": "FALLBACK_SOLO_TARGET"
+    },
+    {
+      "zone_id": "vaie-via-peirolero",
+      "comune": "Vaie",
+      "target_street": "Via Peirolero",
+      "listing_target": "Via Peirolero 28",
+      "listing_url": "https://www.casa.it/immobili/50035067/",
+      "streets": [
+        "Via Peirolero",
+        "Via Nazionale",
+        "Via Primo Maggio",
+        "Via Quattro Novembre",
+        "Via Sauzi"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "vaie-vicolo-superiore",
+      "comune": "Vaie",
+      "target_street": "Vicolo Superiore",
+      "listing_target": "Vicolo Superiore 19",
+      "listing_url": "https://www.idealista.it/immobile/34422440/",
+      "streets": [
+        "Vicolo Superiore"
+      ],
+      "osm_status": "OK"
+    }
+  ]
+}

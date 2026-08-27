@@ -1,0 +1,28 @@
+﻿ZONE_ID,COMUNE,VIA_ANNUNCIO,RIFERIMENTO_ANNUNCIO,ANNUNCIO_URL,RANK,TIPO_VIA,VIA_DA_LAVORARE,DISTANZA_M,RELAZIONE,OSM_STATUS
+almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.immobiliare.it/annunci/119867056/,0,TARGET,via Rubiana,0,CENTRO,FALLBACK_SOLO_TARGET
+almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,0,TARGET,via Montecapretto,0,CENTRO,FALLBACK_SOLO_TARGET
+almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,0,TARGET,via Roma,0,CENTRO,FALLBACK_SOLO_TARGET
+almese-frazione-tuberghengo,Almese,frazione Tuberghengo,frazione Tuberghengo 2,https://www.immobiliare.it/annunci/101503673/,0,TARGET,frazione Tuberghengo,0,CENTRO,FALLBACK_SOLO_TARGET
+almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,0,TARGET,Via Almese,0,CENTRO,FALLBACK_SOLO_TARGET
+almese-via-iv-novembre,Almese,Via IV Novembre,Via IV Novembre 4,https://almese1.tecnorete.it/immobili-in-vendita,0,TARGET,Via IV Novembre,0,CENTRO,FALLBACK_SOLO_TARGET
+avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,0,TARGET,VIA MONTE CUNEO,0,CENTRO,OK
+avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,1,VICINA,Via Ceresole,0,INCROCIA,OK
+avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,2,VICINA,Via Chiattera,0,INCROCIA,OK
+avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,3,VICINA,Via don Alberto Milano,0,INCROCIA,OK
+avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,4,VICINA,Via Oronte Nota,0,INCROCIA,OK
+avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://avigliana1.tecnorete.it/avigliana/avigliana/,0,TARGET,Corso Laghi,0,CENTRO,OK
+avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://avigliana1.tecnorete.it/avigliana/avigliana/,1,VICINA,Piazza del Popolo,0,INCROCIA,OK
+avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://avigliana1.tecnorete.it/avigliana/avigliana/,2,VICINA,Via Alpi Cozie,0,INCROCIA,OK
+avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://avigliana1.tecnorete.it/avigliana/avigliana/,3,VICINA,Via Carnino,0,INCROCIA,OK
+avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://avigliana1.tecnorete.it/avigliana/avigliana/,4,VICINA,Via Cavalieri di Vittorio Veneto,0,INCROCIA,OK
+bussoleno-viale-lungo-dora-bussoleno,Bussoleno,"Viale Lungo Dora, Bussoleno","Viale Lungo Dora, Bussoleno 160",https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno,0,TARGET,"Viale Lungo Dora, Bussoleno",0,CENTRO,OK
+chiusa-di-san-michele-vicolo-g-pietro-riva,Chiusa di San Michele,vicolo G. Pietro Riva,vicolo G. Pietro Riva 13,https://www.immobiliare.it/annunci/127844320/,0,TARGET,vicolo G. Pietro Riva,0,CENTRO,OK
+condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,0,TARGET,Via Moncenisio,0,CENTRO,FALLBACK_SOLO_TARGET
+condove-borgata-borlera,Condove,Borgata Borlera,Borgata Borlera 21,https://www.idealista.it/immobile/36228538/,0,TARGET,Borgata Borlera,0,CENTRO,FALLBACK_SOLO_TARGET
+sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,0,TARGET,via Medagli,0,CENTRO,FALLBACK_SOLO_TARGET
+vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,0,TARGET,Via Peirolero,0,CENTRO,OK
+vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,1,VICINA,Via Nazionale,0,INCROCIA,OK
+vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,2,VICINA,Via Primo Maggio,0,INCROCIA,OK
+vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,3,VICINA,Via Quattro Novembre,0,INCROCIA,OK
+vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,4,VICINA,Via Sauzi,114,VICINA,OK
+vaie-vicolo-superiore,Vaie,Vicolo Superiore,Vicolo Superiore 19,https://www.idealista.it/immobile/34422440/,0,TARGET,Vicolo Superiore,0,CENTRO,OK
