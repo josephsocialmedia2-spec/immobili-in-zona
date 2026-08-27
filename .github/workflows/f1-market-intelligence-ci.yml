@@ -1,0 +1,40 @@
+name: F1 Market Intelligence CI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'seller_radar_auto/market_intelligence.py'
+      - 'seller_radar_auto/merge_discovery.py'
+      - 'seller_radar_auto/discovery_one.py'
+      - 'seller_radar_auto/integrations.json'
+      - '.github/workflows/f1-seller-radar-auto.yml'
+      - '.github/workflows/f1-market-intelligence-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python syntax
+        run: |
+          python -m py_compile seller_radar_auto/market_intelligence.py
+          python -m py_compile seller_radar_auto/merge_discovery.py
+          python -m py_compile seller_radar_auto/discovery_one.py
+      - name: Generate KPI from repository state
+        run: python seller_radar_auto/market_intelligence.py
+      - name: Verify expected outputs
+        shell: bash
+        run: |
+          test -f seller_radar_auto/data/intelligence/immobili_snapshot.csv
+          test -f seller_radar_auto/data/intelligence/kpi_comuni.csv
+          test -f seller_radar_auto/data/intelligence/kpi_vie.csv
+          test -f seller_radar_auto/data/intelligence/kpi_tipologie.csv
+          test -f seller_radar_auto/data/intelligence/kpi_agenzie.csv
+          test -f seller_radar_auto/intelligence_dashboard.html
+          echo 'F1 Market Intelligence OK'
