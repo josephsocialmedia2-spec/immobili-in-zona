@@ -3,6 +3,13 @@
   "purpose": "Hub unico operativo e KPI F1",
   "repos": [
     {
+      "name": "Brief Appuntamento F1",
+      "repo": "josephsocialmedia2-spec/immobili-in-zona",
+      "url": "https://josephsocialmedia2-spec.github.io/immobili-in-zona/seller_radar_auto/appointment_brief.html",
+      "role": "Vista pre-appuntamento: Comune, via, prezzi, tempi, ribassi, tipologie, agenzie e movimenti",
+      "data_mode": "PRIMARY_VIEW"
+    },
+    {
       "name": "Immobili in zona / Seller Radar",
       "repo": "josephsocialmedia2-spec/immobili-in-zona",
       "url": "https://josephsocialmedia2-spec.github.io/immobili-in-zona/",
@@ -27,8 +34,15 @@
       "name": "Acquisizione Susa",
       "repo": "josephsocialmedia2-spec/acquisizionesusa",
       "url": "https://github.com/josephsocialmedia2-spec/acquisizionesusa",
-      "role": "Repository acquisizione separato; attualmente senza dataset utile",
-      "data_mode": "NO_DATA_YET"
+      "role": "Repository acquisizione separato; import automatico appena pubblica un dataset standard",
+      "data_mode": "AUTO_IF_DATA"
+    },
+    {
+      "name": "Questionario di qualificazione",
+      "repo": "josephsocialmedia2-spec/QUESTIONARIO-DI-QUALIFICAZIONE",
+      "url": "https://josephsocialmedia2-spec.github.io/QUESTIONARIO-DI-QUALIFICAZIONE/",
+      "role": "Prequalifica e raccolta informazioni venditore",
+      "data_mode": "CONNECTED_LINK"
     }
   ]
 }
