@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:02:32.394921+00:00",
+  "generated_at": "2026-08-27T20:04:49.068115+00:00",
   "main_towns": [
     "Avigliana",
     "Almese",
@@ -18,9 +18,13 @@
       "listing_target": "Via Rubiana 142",
       "listing_url": "https://www.immobiliare.it/annunci/119867056/",
       "streets": [
-        "via Rubiana"
+        "via Rubiana",
+        "Borgata Malatrait II",
+        "Via Circonvallazione",
+        "Via Combal",
+        "Via dei Copertili"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "almese-via-montecapretto",
@@ -29,9 +33,13 @@
       "listing_target": "via Montecapretto 24",
       "listing_url": "https://www.immobiliare.it/annunci/108146029/",
       "streets": [
-        "via Montecapretto"
+        "via Montecapretto",
+        "Via Bertolo",
+        "Via Sonetto",
+        "Via Muande",
+        "Via Falca"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "almese-via-roma",
@@ -40,9 +48,13 @@
       "listing_target": "via Roma 29",
       "listing_url": "https://www.immobiliare.it/annunci/130993624/",
       "streets": [
-        "via Roma"
+        "via Roma",
+        "Piazza Martiri della Libertà",
+        "Piazza Pra Maccari",
+        "Via Cerrone",
+        "Via Circonvallazione"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "almese-frazione-tuberghengo",
@@ -53,7 +65,7 @@
       "streets": [
         "frazione Tuberghengo"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "almese-via-almese",
@@ -62,9 +74,13 @@
       "listing_target": "via almese 23",
       "listing_url": "https://www.idealista.it/immobile/35031076/",
       "streets": [
-        "Via Almese"
+        "Via Almese",
+        "Via Circonvallazione",
+        "Via Avigliana",
+        "Via della Michela",
+        "Via Dante Alighieri"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "almese-via-iv-novembre",
@@ -75,7 +91,7 @@
       "streets": [
         "Via IV Novembre"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "avigliana-via-monte-cuneo",
@@ -158,9 +174,13 @@
       "listing_target": "via Medagli 55",
       "listing_url": "https://www.immobiliare.it/annunci/131644636/",
       "streets": [
-        "via Medagli"
+        "via Medagli",
+        "Via Dora Riparia",
+        "Via Roma",
+        "Viale Quattro Novembre",
+        "Via Venticinque Aprile"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "vaie-via-peirolero",

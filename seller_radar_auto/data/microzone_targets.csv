@@ -1,10 +1,26 @@
 ﻿ZONE_ID,COMUNE,VIA_ANNUNCIO,RIFERIMENTO_ANNUNCIO,ANNUNCIO_URL,RANK,TIPO_VIA,VIA_DA_LAVORARE,DISTANZA_M,RELAZIONE,OSM_STATUS
-almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.immobiliare.it/annunci/119867056/,0,TARGET,via Rubiana,0,CENTRO,FALLBACK_SOLO_TARGET
-almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,0,TARGET,via Montecapretto,0,CENTRO,FALLBACK_SOLO_TARGET
-almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,0,TARGET,via Roma,0,CENTRO,FALLBACK_SOLO_TARGET
-almese-frazione-tuberghengo,Almese,frazione Tuberghengo,frazione Tuberghengo 2,https://www.immobiliare.it/annunci/101503673/,0,TARGET,frazione Tuberghengo,0,CENTRO,FALLBACK_SOLO_TARGET
-almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,0,TARGET,Via Almese,0,CENTRO,FALLBACK_SOLO_TARGET
-almese-via-iv-novembre,Almese,Via IV Novembre,Via IV Novembre 4,https://almese1.tecnorete.it/immobili-in-vendita,0,TARGET,Via IV Novembre,0,CENTRO,FALLBACK_SOLO_TARGET
+almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.immobiliare.it/annunci/119867056/,0,TARGET,via Rubiana,0,CENTRO,OK
+almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.immobiliare.it/annunci/119867056/,1,VICINA,Borgata Malatrait II,0,INCROCIA,OK
+almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.immobiliare.it/annunci/119867056/,2,VICINA,Via Circonvallazione,0,INCROCIA,OK
+almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.immobiliare.it/annunci/119867056/,3,VICINA,Via Combal,0,INCROCIA,OK
+almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.immobiliare.it/annunci/119867056/,4,VICINA,Via dei Copertili,0,INCROCIA,OK
+almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,0,TARGET,via Montecapretto,0,CENTRO,OK
+almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,1,VICINA,Via Bertolo,0,INCROCIA,OK
+almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,2,VICINA,Via Sonetto,0,INCROCIA,OK
+almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,3,VICINA,Via Muande,102,VICINA,OK
+almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,4,VICINA,Via Falca,124,VICINA,OK
+almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,0,TARGET,via Roma,0,CENTRO,OK
+almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,1,VICINA,Piazza Martiri della Libertà,0,INCROCIA,OK
+almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,2,VICINA,Piazza Pra Maccari,0,INCROCIA,OK
+almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,3,VICINA,Via Cerrone,0,INCROCIA,OK
+almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,4,VICINA,Via Circonvallazione,0,INCROCIA,OK
+almese-frazione-tuberghengo,Almese,frazione Tuberghengo,frazione Tuberghengo 2,https://www.immobiliare.it/annunci/101503673/,0,TARGET,frazione Tuberghengo,0,CENTRO,OK
+almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,0,TARGET,Via Almese,0,CENTRO,OK
+almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
+almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,2,VICINA,Via Avigliana,225,VICINA,OK
+almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,3,VICINA,Via della Michela,235,VICINA,OK
+almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
+almese-via-iv-novembre,Almese,Via IV Novembre,Via IV Novembre 4,https://almese1.tecnorete.it/immobili-in-vendita,0,TARGET,Via IV Novembre,0,CENTRO,OK
 avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,0,TARGET,VIA MONTE CUNEO,0,CENTRO,OK
 avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,1,VICINA,Via Ceresole,0,INCROCIA,OK
 avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,2,VICINA,Via Chiattera,0,INCROCIA,OK
@@ -19,7 +35,11 @@ bussoleno-viale-lungo-dora-bussoleno,Bussoleno,"Viale Lungo Dora, Bussoleno","Vi
 chiusa-di-san-michele-vicolo-g-pietro-riva,Chiusa di San Michele,vicolo G. Pietro Riva,vicolo G. Pietro Riva 13,https://www.immobiliare.it/annunci/127844320/,0,TARGET,vicolo G. Pietro Riva,0,CENTRO,OK
 condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,0,TARGET,Via Moncenisio,0,CENTRO,FALLBACK_SOLO_TARGET
 condove-borgata-borlera,Condove,Borgata Borlera,Borgata Borlera 21,https://www.idealista.it/immobile/36228538/,0,TARGET,Borgata Borlera,0,CENTRO,FALLBACK_SOLO_TARGET
-sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,0,TARGET,via Medagli,0,CENTRO,FALLBACK_SOLO_TARGET
+sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,0,TARGET,via Medagli,0,CENTRO,OK
+sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,1,VICINA,Via Dora Riparia,0,INCROCIA,OK
+sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,2,VICINA,Via Roma,0,INCROCIA,OK
+sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,3,VICINA,Viale Quattro Novembre,0,INCROCIA,OK
+sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,4,VICINA,Via Venticinque Aprile,134,VICINA,OK
 vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,0,TARGET,Via Peirolero,0,CENTRO,OK
 vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,1,VICINA,Via Nazionale,0,INCROCIA,OK
 vaie-via-peirolero,Vaie,Via Peirolero,Via Peirolero 28,https://www.casa.it/immobili/50035067/,2,VICINA,Via Primo Maggio,0,INCROCIA,OK
