@@ -33,8 +33,12 @@ avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://avigliana1.t
 avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://avigliana1.tecnorete.it/avigliana/avigliana/,4,VICINA,Via Cavalieri di Vittorio Veneto,0,INCROCIA,OK
 bussoleno-viale-lungo-dora-bussoleno,Bussoleno,"Viale Lungo Dora, Bussoleno","Viale Lungo Dora, Bussoleno 160",https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno,0,TARGET,"Viale Lungo Dora, Bussoleno",0,CENTRO,OK
 chiusa-di-san-michele-vicolo-g-pietro-riva,Chiusa di San Michele,vicolo G. Pietro Riva,vicolo G. Pietro Riva 13,https://www.immobiliare.it/annunci/127844320/,0,TARGET,vicolo G. Pietro Riva,0,CENTRO,OK
-condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,0,TARGET,Via Moncenisio,0,CENTRO,FALLBACK_SOLO_TARGET
-condove-borgata-borlera,Condove,Borgata Borlera,Borgata Borlera 21,https://www.idealista.it/immobile/36228538/,0,TARGET,Borgata Borlera,0,CENTRO,FALLBACK_SOLO_TARGET
+condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,0,TARGET,Via Moncenisio,0,CENTRO,OK
+condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,1,VICINA,Ciclabile Diacono Martino,0,INCROCIA,OK
+condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,2,VICINA,Strada Comunale,0,INCROCIA,OK
+condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,3,VICINA,Via Edmondo De Amicis,0,INCROCIA,OK
+condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,4,VICINA,Via Giuseppe Verdi,0,INCROCIA,OK
+condove-borgata-borlera,Condove,Borgata Borlera,Borgata Borlera 21,https://www.idealista.it/immobile/36228538/,0,TARGET,Borgata Borlera,0,CENTRO,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,0,TARGET,via Medagli,0,CENTRO,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,1,VICINA,Via Dora Riparia,0,INCROCIA,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,2,VICINA,Via Roma,0,INCROCIA,OK

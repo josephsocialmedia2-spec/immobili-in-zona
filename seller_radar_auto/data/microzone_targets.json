@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:04:49.068115+00:00",
+  "generated_at": "2026-08-27T20:05:32.565580+00:00",
   "main_towns": [
     "Avigliana",
     "Almese",
@@ -152,9 +152,13 @@
       "listing_target": "Via Moncenisio 72",
       "listing_url": "https://www.idealista.it/immobile/33250712/",
       "streets": [
-        "Via Moncenisio"
+        "Via Moncenisio",
+        "Ciclabile Diacono Martino",
+        "Strada Comunale",
+        "Via Edmondo De Amicis",
+        "Via Giuseppe Verdi"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "condove-borgata-borlera",
@@ -165,7 +169,7 @@
       "streets": [
         "Borgata Borlera"
       ],
-      "osm_status": "FALLBACK_SOLO_TARGET"
+      "osm_status": "OK"
     },
     {
       "zone_id": "sant-antonino-di-susa-via-medagli",
