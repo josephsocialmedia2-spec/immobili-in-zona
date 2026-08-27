@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:09:32.037149+00:00",
+  "generated_at": "2026-08-27T20:13:00.252813+00:00",
   "main_towns": [
     "Avigliana",
     "Almese",
@@ -58,41 +58,19 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "almese-frazione-tuberghengo",
+      "zone_id": "almese-via-almese",
       "comune": "Almese",
-      "target_street": "frazione Tuberghengo",
-      "listing_target": "frazione Tuberghengo 2",
-      "listing_url": "https://www.immobiliare.it/annunci/101503673/",
-      "streets": [
-        "frazione Tuberghengo"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA"
-    },
-    {
-      "zone_id": "almese-via",
-      "comune": "Almese",
-      "target_street": "Via",
+      "target_street": "Via Almese",
       "listing_target": "via almese 23",
       "listing_url": "https://www.idealista.it/immobile/35031076/",
       "streets": [
-        "Via",
-        "Piazza Martiri della Libertà",
-        "Piazza Pra Maccari",
-        "Via Cerrone",
-        "Via Circonvallazione"
+        "Via Almese",
+        "Via Circonvallazione",
+        "Via Avigliana",
+        "Via della Michela",
+        "Via Dante Alighieri"
       ],
       "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-iv-novembre",
-      "comune": "Almese",
-      "target_street": "Via IV Novembre",
-      "listing_target": "Via IV Novembre 4",
-      "listing_url": "https://almese1.tecnorete.it/immobili-in-vendita",
-      "streets": [
-        "Via IV Novembre"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA"
     },
     {
       "zone_id": "avigliana-via-monte-cuneo",
@@ -125,28 +103,6 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "bussoleno-viale-lungo-dora",
-      "comune": "Bussoleno",
-      "target_street": "Viale Lungo Dora",
-      "listing_target": "Viale Lungo Dora, Bussoleno 160",
-      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
-      "streets": [
-        "Viale Lungo Dora"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA"
-    },
-    {
-      "zone_id": "chiusa-di-san-michele-vicolo-g-pietro-riva",
-      "comune": "Chiusa di San Michele",
-      "target_street": "vicolo G. Pietro Riva",
-      "listing_target": "vicolo G. Pietro Riva 13",
-      "listing_url": "https://www.immobiliare.it/annunci/127844320/",
-      "streets": [
-        "vicolo G. Pietro Riva"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA"
-    },
-    {
       "zone_id": "condove-via-moncenisio",
       "comune": "Condove",
       "target_street": "Via Moncenisio",
@@ -160,17 +116,6 @@
         "Via Giuseppe Verdi"
       ],
       "osm_status": "OK"
-    },
-    {
-      "zone_id": "condove-borgata-borlera",
-      "comune": "Condove",
-      "target_street": "Borgata Borlera",
-      "listing_target": "Borgata Borlera 21",
-      "listing_url": "https://www.idealista.it/immobile/36228538/",
-      "streets": [
-        "Borgata Borlera"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA"
     },
     {
       "zone_id": "sant-antonino-di-susa-via-medagli",
@@ -201,6 +146,68 @@
         "Via Sauzi"
       ],
       "osm_status": "OK"
+    }
+  ],
+  "quarantine": [
+    {
+      "zone_id": "almese-frazione-tuberghengo",
+      "comune": "Almese",
+      "target_street": "frazione Tuberghengo",
+      "listing_target": "frazione Tuberghengo 2",
+      "listing_url": "https://www.immobiliare.it/annunci/101503673/",
+      "streets": [
+        "frazione Tuberghengo"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "almese-via-iv-novembre",
+      "comune": "Almese",
+      "target_street": "Via IV Novembre",
+      "listing_target": "Via IV Novembre 4",
+      "listing_url": "https://almese1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via IV Novembre"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "bussoleno-viale-lungo-dora",
+      "comune": "Bussoleno",
+      "target_street": "Viale Lungo Dora",
+      "listing_target": "Viale Lungo Dora, Bussoleno 160",
+      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
+      "streets": [
+        "Viale Lungo Dora"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "chiusa-di-san-michele-vicolo-g-pietro-riva",
+      "comune": "Chiusa di San Michele",
+      "target_street": "vicolo G. Pietro Riva",
+      "listing_target": "vicolo G. Pietro Riva 13",
+      "listing_url": "https://www.immobiliare.it/annunci/127844320/",
+      "streets": [
+        "vicolo G. Pietro Riva"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "condove-borgata-borlera",
+      "comune": "Condove",
+      "target_street": "Borgata Borlera",
+      "listing_target": "Borgata Borlera 21",
+      "listing_url": "https://www.idealista.it/immobile/36228538/",
+      "streets": [
+        "Borgata Borlera"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
       "zone_id": "vaie-vicolo-superiore",
@@ -211,7 +218,8 @@
       "streets": [
         "Vicolo Superiore"
       ],
-      "osm_status": "TARGET_NON_RISOLTA"
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
     }
   ]
 }
