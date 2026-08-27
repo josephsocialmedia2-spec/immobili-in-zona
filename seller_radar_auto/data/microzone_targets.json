@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:08:27.927245+00:00",
+  "generated_at": "2026-08-27T20:09:32.037149+00:00",
   "main_towns": [
     "Avigliana",
     "Almese",
@@ -10,6 +10,7 @@
     "Bussoleno",
     "Susa"
   ],
+  "map_data_attribution": "Data © OpenStreetMap contributors, ODbL 1.0",
   "microzones": [
     {
       "zone_id": "almese-via-rubiana",
@@ -65,20 +66,20 @@
       "streets": [
         "frazione Tuberghengo"
       ],
-      "osm_status": "OK"
+      "osm_status": "TARGET_NON_RISOLTA"
     },
     {
-      "zone_id": "almese-via-almese",
+      "zone_id": "almese-via",
       "comune": "Almese",
-      "target_street": "Via Almese",
+      "target_street": "Via",
       "listing_target": "via almese 23",
       "listing_url": "https://www.idealista.it/immobile/35031076/",
       "streets": [
-        "Via Almese",
-        "Via Circonvallazione",
-        "Via Avigliana",
-        "Via della Michela",
-        "Via Dante Alighieri"
+        "Via",
+        "Piazza Martiri della Libertà",
+        "Piazza Pra Maccari",
+        "Via Cerrone",
+        "Via Circonvallazione"
       ],
       "osm_status": "OK"
     },
@@ -91,7 +92,7 @@
       "streets": [
         "Via IV Novembre"
       ],
-      "osm_status": "OK"
+      "osm_status": "TARGET_NON_RISOLTA"
     },
     {
       "zone_id": "avigliana-via-monte-cuneo",
@@ -124,15 +125,15 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "bussoleno-viale-lungo-dora-bussoleno",
+      "zone_id": "bussoleno-viale-lungo-dora",
       "comune": "Bussoleno",
-      "target_street": "Viale Lungo Dora, Bussoleno",
+      "target_street": "Viale Lungo Dora",
       "listing_target": "Viale Lungo Dora, Bussoleno 160",
       "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
       "streets": [
-        "Viale Lungo Dora, Bussoleno"
+        "Viale Lungo Dora"
       ],
-      "osm_status": "OK"
+      "osm_status": "TARGET_NON_RISOLTA"
     },
     {
       "zone_id": "chiusa-di-san-michele-vicolo-g-pietro-riva",
@@ -143,7 +144,7 @@
       "streets": [
         "vicolo G. Pietro Riva"
       ],
-      "osm_status": "OK"
+      "osm_status": "TARGET_NON_RISOLTA"
     },
     {
       "zone_id": "condove-via-moncenisio",
@@ -169,7 +170,7 @@
       "streets": [
         "Borgata Borlera"
       ],
-      "osm_status": "OK"
+      "osm_status": "TARGET_NON_RISOLTA"
     },
     {
       "zone_id": "sant-antonino-di-susa-via-medagli",
@@ -210,7 +211,7 @@
       "streets": [
         "Vicolo Superiore"
       ],
-      "osm_status": "OK"
+      "osm_status": "TARGET_NON_RISOLTA"
     }
   ]
 }
