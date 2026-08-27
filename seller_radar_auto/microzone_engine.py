@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""F1 — Microzona: via annuncio + 4 vie realmente vicine.
+"""F1 — Microzona: via annuncio + massimo 4 vie realmente vicine.
 
 Input:
 - data/area_radar.csv (preferito)
@@ -10,8 +10,10 @@ Output pubblico (NESSUN telefono/nome):
 - data/microzone_targets.csv
 - data/microzone_targets.json
 
-La geometria stradale viene letta da OpenStreetMap tramite Overpass, una volta
-per comune e con cache locale. Non vengono usati dati personali.
+Le strade arrivano da OpenStreetMap/Overpass. Se il nome della via target non
+combacia con la rete OSM, viene geocodificato solo quel target tramite Nominatim
+con cache persistente e massimo 4 richieste/minuto; poi si selezionano le strade
+nominate più vicine. Non vengono inviati dati personali.
 """
 from __future__ import annotations
 
@@ -34,6 +36,8 @@ SNAP = DATA / "intelligence" / "immobili_snapshot.csv"
 OUT_CSV = DATA / "microzone_targets.csv"
 OUT_JSON = DATA / "microzone_targets.json"
 CACHE = DATA / "osm_microzone_cache"
+GEOCODE_CACHE = DATA / "osm_geocode_cache.json"
+_LAST_GEOCODE_CALL = 0.0
 
 
 def load_config():
@@ -52,6 +56,13 @@ def street_only(s: str) -> str:
     s = re.sub(r"\s+", " ", str(s or "")).strip(" ,.;")
     s = re.sub(r"\s+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|\s*[A-Za-z])?\s*$", "", s).strip()
     return s
+
+
+def target_street(raw: str, comune: str) -> str:
+    s = str(raw or "").strip()
+    if comune:
+        s = re.sub(rf",?\s*{re.escape(comune)}\s*$", "", s, flags=re.I).strip(" ,")
+    return street_only(s)
 
 
 def slug(s: str) -> str:
@@ -74,7 +85,7 @@ def target_streets(cfg):
         comune = (r.get("COMUNE") or "").strip()
         if norm(comune) not in allowed or norm(comune) in excluded:
             continue
-        via = street_only(r.get("VIA_RADAR") or r.get("TARGET") or "")
+        via = target_street(r.get("VIA_RADAR") or r.get("TARGET") or "", comune)
         if not via or "indirizzo da verificare" in norm(via):
             continue
         key = (norm(comune), norm(via))
@@ -96,7 +107,7 @@ def target_streets(cfg):
             continue
         if str(r.get("attivo", "")).strip().lower() not in {"true", "1", "si", "yes"}:
             continue
-        via = street_only(r.get("strada") or r.get("via") or "")
+        via = target_street(r.get("strada") or r.get("via") or "", comune)
         if not via:
             continue
         key = (norm(comune), norm(via))
@@ -142,7 +153,7 @@ out body geom;'''
                     endpoint,
                     data=data,
                     headers={
-                        "User-Agent": cfg.get("user_agent", "F1Immobiliare-Microzone/1.1"),
+                        "User-Agent": cfg.get("user_agent", "F1Immobiliare-Microzone/1.2"),
                         "Accept": "application/json",
                     },
                     method="POST",
@@ -176,6 +187,60 @@ out body geom;'''
         })
     cp.write_text(json.dumps(roads, ensure_ascii=False), encoding="utf-8")
     return roads
+
+
+def load_geocode_cache():
+    try:
+        return json.loads(GEOCODE_CACHE.read_text(encoding="utf-8")) if GEOCODE_CACHE.exists() else {}
+    except Exception:
+        return {}
+
+
+def save_geocode_cache(obj):
+    GEOCODE_CACHE.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def geocode_target(street: str, comune: str, cfg):
+    global _LAST_GEOCODE_CALL
+    cache = load_geocode_cache()
+    key = norm(f"{street}|{comune}")
+    if key in cache:
+        value = cache[key]
+        if value and value.get("lat") is not None and value.get("lon") is not None:
+            return [float(value["lat"]), float(value["lon"])]
+        return None
+
+    interval = max(15.0, float(cfg.get("nominatim_min_interval_seconds", 15)))
+    elapsed = time.time() - _LAST_GEOCODE_CALL
+    if elapsed < interval:
+        time.sleep(interval - elapsed)
+
+    params = urllib.parse.urlencode({
+        "q": f"{street}, {comune}, Torino, Piemonte, Italia",
+        "format": "jsonv2",
+        "limit": 1,
+        "countrycodes": "it",
+        "addressdetails": 0,
+    })
+    url = cfg.get("nominatim_url", "https://nominatim.openstreetmap.org/search") + "?" + params
+    req = urllib.request.Request(url, headers={
+        "User-Agent": cfg.get("user_agent", "F1Immobiliare-Microzone/1.2"),
+        "Accept": "application/json",
+    })
+    try:
+        _LAST_GEOCODE_CALL = time.time()
+        with urllib.request.urlopen(req, timeout=25) as res:
+            items = json.loads(res.read().decode("utf-8"))
+        if items:
+            point = {"lat": float(items[0]["lat"]), "lon": float(items[0]["lon"]), "display_name": items[0].get("display_name", "")}
+            cache[key] = point
+            save_geocode_cache(cache)
+            return [point["lat"], point["lon"]]
+        cache[key] = None
+        save_geocode_cache(cache)
+    except Exception as e:
+        print(f"[WARN] Nominatim {street}, {comune}: {e}")
+    return None
 
 
 def hav(a, b):
@@ -245,6 +310,27 @@ def nearest_streets(target: str, roads, limit: int):
     return out
 
 
+def nearest_from_point(point, target: str, roads, limit: int):
+    grouped = group_by_name(roads)
+    ranked = []
+    for k, v in grouped.items():
+        if k == norm(target) or not v["geometry"]:
+            continue
+        dist = min(hav(point, p) for p in v["geometry"][::max(1, len(v["geometry"])//24)])
+        ranked.append((dist, v["name"]))
+    ranked.sort(key=lambda x: (x[0], norm(x[1])))
+    out=[]; seen=set()
+    for dist, name in ranked:
+        k=norm(name)
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append({"street":name,"distance_m":int(round(dist)),"relation":"VICINA_GEOCODE"})
+        if len(out)>=limit:
+            break
+    return out
+
+
 def main():
     cfg = load_config()
     targets = target_streets(cfg)
@@ -253,20 +339,35 @@ def main():
         by_city.setdefault(x["comune"], []).append(x)
 
     rows = []
-    summary = {"generated_at": datetime.now(timezone.utc).isoformat(), "main_towns": cfg["main_towns"], "microzones": []}
+    summary = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "main_towns": cfg["main_towns"],
+        "map_data_attribution": cfg.get("map_data_attribution", "Data © OpenStreetMap contributors, ODbL 1.0"),
+        "microzones": []
+    }
     for city_index, (comune, items) in enumerate(sorted(by_city.items())):
         if city_index:
             time.sleep(2.5)
         try:
             roads = overpass_roads(comune, cfg)
-            osm_status = "OK"
+            city_status = "OK"
         except Exception as e:
             print(f"[WARN] OSM {comune}: {e}")
             roads = []
-            osm_status = "FALLBACK_SOLO_TARGET"
+            city_status = "FALLBACK_SOLO_TARGET"
 
         for x in items:
-            near = nearest_streets(x["target_street"], roads, int(cfg.get("nearby_streets_per_target", 4))) if roads else []
+            limit = int(cfg.get("nearby_streets_per_target", 4))
+            near = nearest_streets(x["target_street"], roads, limit) if roads else []
+            osm_status = city_status
+            if roads and len(near) < limit:
+                point = geocode_target(x["target_street"], comune, cfg)
+                if point:
+                    near = nearest_from_point(point, x["target_street"], roads, limit)
+                    osm_status = "OK_GEOCODE_FALLBACK"
+                elif not near:
+                    osm_status = "TARGET_NON_RISOLTA"
+
             zone_id = slug(comune + "-" + x["target_street"])
             base = {
                 "ZONE_ID": zone_id,
