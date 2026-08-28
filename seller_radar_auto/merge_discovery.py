@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"; DATA.mkdir(parents=True, exist_ok=True)
 INPUT = ROOT / "discovery_results"; STATE = DATA / "state.json"; STATUS = DATA / "ddg_source_status.csv"
 OUT_STATES = {"POSSIBILE_USCITA", "USCITO_MERCATO", "REMOVED", "EXPIRED", "OUT"}
-TRACKED_ENGINES = {"DDG_MATRIX_V1", "PUBLIC_DORK_MATRIX_V3", "PUBLIC_DORK_MATRIX_V4"}
+TRACKED_ENGINES = {"DDG_MATRIX_V1", "PUBLIC_DORK_MATRIX_V3", "PUBLIC_DORK_MATRIX_V4", "PUBLIC_DORK_MATRIX_V5"}
 
 
 def now(): return datetime.now(timezone.utc).isoformat()
@@ -65,12 +65,13 @@ for r in current:
     seen_urls.add(url)
     i = key(url); seen_ids.add(i)
     p = r.get("price")
-    engine = r.get("discovery_engine") or "PUBLIC_DORK_MATRIX_V4"
+    engine = r.get("discovery_engine") or "PUBLIC_DORK_MATRIX_V5"
     common = {
         "opportunity_type": r.get("opportunity_type", "RESIDENZIALE"),
         "lead_target": r.get("lead_target", "IMMOBILE"),
         "project_stage": r.get("project_stage", ""),
         "commercial_goal": r.get("commercial_goal", "ACQUISIZIONE IMMOBILE"),
+        "public_pdf": bool(r.get("public_pdf")),
     }
     if i not in items:
         items[i] = {
@@ -94,7 +95,7 @@ for r in current:
         x["market_signal"] = merge_signal(x.get("market_signal"), r.get("market_signal"))
         x["query_label"] = r.get("query_label", "") or x.get("query_label", "")
         for k, v in common.items():
-            if v:
+            if v or k == "public_pdf":
                 x[k] = v
         if r.get("seller_hint") and r.get("seller_hint") != "NON_DETERMINATO":
             x["seller_hint"] = r["seller_hint"]
