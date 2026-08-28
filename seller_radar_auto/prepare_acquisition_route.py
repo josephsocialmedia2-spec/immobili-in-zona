@@ -86,8 +86,10 @@ def current_price(x, fallback=""):
     return inferred or "PREZZO DA VERIFICARE"
 
 
-def action_for(address, opportunity_type, goal):
+def action_for(address, opportunity_type, goal, pdf_url=""):
     if opportunity_type in {"CANTIERE_NUOVA_COSTRUZIONE", "IMPRESA_EDILE_PROGETTO"}:
+        if pdf_url:
+            return "APRI PDF → VERIFICA PROGETTO/IMPRESA → POI CONTATTA"
         if "DA VERIFICARE" in address:
             return "APRI FONTE → IDENTIFICA IMPRESA/CANTIERE → CONTATTA"
         return "VERIFICA CANTIERE → CONTATTA IMPRESA/COSTRUTTORE"
@@ -126,7 +128,8 @@ for r in rows:
     stage = r.get("FASE_PROGETTO") or x.get("project_stage") or ""
     goal = r.get("OBIETTIVO_COMMERCIALE") or x.get("commercial_goal") or "ACQUISIZIONE IMMOBILE"
     target = r.get("TARGET") or x.get("lead_target") or "IMMOBILE"
-    action = action_for(address, otype, goal)
+    pdf_url = r.get("PDF_DA_VERIFICARE") or ""
+    action = action_for(address, otype, goal, pdf_url)
 
     r["DOVE_ANDRE"] = address
     r["COSA_CERCO"] = thing
@@ -148,6 +151,7 @@ for r in rows:
         "FONTE": r.get("FONTE", ""),
         "SELLER_SIGNAL": r.get("INDIZIO_INSERZIONISTA", ""),
         "AZIONE": action,
+        "PDF_DA_VERIFICARE": pdf_url,
         "URL": r.get("URL", ""),
         "F1_INDIRIZZO_REMOTO_URL": r["F1_INDIRIZZO_REMOTO_URL"],
     })
@@ -192,7 +196,7 @@ route_fields = [
     "FUNZIONARIO", "NUM_FUNZIONARIO", "STATO_ASSEGNAZIONE",
     "PRIORITA", "SCORE", "TIPO_OPPORTUNITA", "TARGET", "FASE_PROGETTO", "OBIETTIVO_COMMERCIALE",
     "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO",
-    "FONTE", "SELLER_SIGNAL", "AZIONE", "URL", "F1_INDIRIZZO_REMOTO_URL"
+    "FONTE", "SELLER_SIGNAL", "AZIONE", "PDF_DA_VERIFICARE", "URL", "F1_INDIRIZZO_REMOTO_URL"
 ]
 with OUT.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=route_fields); w.writeheader(); w.writerows(route_rows)
@@ -216,6 +220,7 @@ summary = {
             "residenziale": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") == "RESIDENZIALE"),
             "commerciale": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") in {"COMMERCIALE_IMMOBILE", "UFFICIO_DIREZIONALE", "INDUSTRIALE_LOGISTICA", "ATTIVITA_CESSIONE", "TERRENO_SVILUPPO"}),
             "cantieri_imprese": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") in {"CANTIERE_NUOVA_COSTRUZIONE", "IMPRESA_EDILE_PROGETTO"}),
+            "pdf_da_verificare": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("PDF_DA_VERIFICARE")),
         }
         for a in sorted(assignment.values(), key=lambda x: x["funzionario"])
     ],
