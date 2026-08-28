@@ -5,10 +5,13 @@ Radar multi-canale F1 / Real Media Pro:
 - residenziale;
 - immobili commerciali, uffici, capannoni e attività;
 - terreni/sviluppo;
-- imprese edili, nuovi cantieri e progetti in corso o programmati.
+- imprese edili, nuovi cantieri e progetti in corso o programmati;
+- atti pubblici/PDF urbanistici da verificare manualmente.
 
 Usa esclusivamente risultati pubblici del web. L'indirizzo non è requisito
-d'ingresso: viene arricchito nei passaggi successivi.
+d'ingresso: viene arricchito nei passaggi successivi. I PDF vengono solo
+segnalati come fonte pubblica da verificare: il Radar non li usa per creare
+automaticamente liste commerciali di persone fisiche.
 """
 import csv, html, json, os, re
 from datetime import datetime, timezone
@@ -69,6 +72,13 @@ DEVELOPMENT_WORDS = (
     "terreno edificabile", "area edificabile", "lotto edificabile", "terreno industriale",
     "area industriale", "area commerciale", "sviluppo immobiliare", "lottizzazione"
 )
+PUBLIC_DOCUMENT_WORDS = (
+    "albo pretorio", "amministrazione trasparente", "delibera", "deliberazione",
+    "determina", "determinazione", "permesso di costruire", "scia", "pec",
+    "piano regolatore", "piano esecutivo", "piano particolareggiato",
+    "variante urbanistica", "urbanistica", "edilizia privata", "lottizzazione",
+    "progetto approvato", "convenzione urbanistica"
+)
 STREET_RE = re.compile(r"\b(via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo|localit[aà])\b", re.I)
 
 
@@ -89,6 +99,11 @@ def norm(url):
     q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True)
          if not (k.lower().startswith("utm_") or k.lower() in TRACK)]
     return urlunparse((p.scheme, p.netloc, p.path, p.params, urlencode(q), ""))
+
+
+def is_pdf_url(url):
+    p = urlparse(url or "")
+    return p.path.casefold().endswith(".pdf") or ".pdf" in p.path.casefold()
 
 
 def host_matches(host, expected):
@@ -162,6 +177,13 @@ def relevant(url, text, comune, mode="residential", portal=None):
             "cantiere" in t or "nuova costruzione" in t or "lavori in corso" in t or
             "permesso di costruire" in t or "lottizzazione" in t
         )
+    if mode == "public_document":
+        return is_pdf_url(url) and (
+            contains_any(t, PUBLIC_DOCUMENT_WORDS) or
+            contains_any(t, PROJECT_WORDS) or
+            contains_any(t, CONSTRUCTION_WORDS) or
+            contains_any(t, DEVELOPMENT_WORDS)
+        )
     return False
 
 
@@ -200,6 +222,7 @@ def market_signal(text, label=""):
         ("CESSIONE_ATTIVITA", r"\b(cessione|cedesi|subentro)\b"),
         ("CANTIERE", r"\b(cantiere|in costruzione|lavori in corso|nuova costruzione)\b"),
         ("SVILUPPO", r"\b(lottizzazione|terreno edificabile|area edificabile|permesso di costruire)\b"),
+        ("ATTO_PUBBLICO_PDF", r"\b(albo pretorio|delibera|determina|urbanistica|permesso di costruire|scia|piano esecutivo|variante urbanistica)\b"),
     ]
     for lab, pat in rules:
         if re.search(pat, t, re.I):
@@ -256,6 +279,10 @@ plans = [
     {"label":"Nuove costruzioni e cantieri", "query":f'"{COMUNE}" (cantiere OR "nuova costruzione" OR "nuove costruzioni" OR "in costruzione" OR "lavori in corso" OR "nuovo complesso" OR "nuova residenza")', "count":30, "private":False, "portal":None, "mode":"construction", "type":"CANTIERE_NUOVA_COSTRUZIONE"},
     {"label":"Imprese edili con progetti", "query":f'"{COMUNE}" ("impresa edile" OR "impresa costruzioni" OR costruttore OR "società di costruzioni") (cantiere OR progetto OR "nuova costruzione" OR "lavori in corso" OR residenza)', "count":30, "private":False, "portal":None, "mode":"construction", "type":"IMPRESA_EDILE_PROGETTO"},
     {"label":"Progetti autorizzati", "query":f'"{COMUNE}" ("permesso di costruire" OR SCIA OR PEC OR "piano esecutivo" OR lottizzazione OR "progetto approvato") (residenziale OR commerciale OR costruzione OR edilizia)', "count":25, "private":False, "portal":None, "mode":"construction", "type":"IMPRESA_EDILE_PROGETTO"},
+
+    {"label":"PDF urbanistica e permessi", "query":f'"{COMUNE}" filetype:pdf ("permesso di costruire" OR SCIA OR "piano esecutivo" OR lottizzazione OR "variante urbanistica")', "count":20, "private":False, "portal":None, "mode":"public_document", "type":"IMPRESA_EDILE_PROGETTO"},
+    {"label":"PDF cantieri e progetti", "query":f'"{COMUNE}" filetype:pdf (cantiere OR "nuova costruzione" OR "progetto approvato" OR edilizia OR urbanistica)', "count":20, "private":False, "portal":None, "mode":"public_document", "type":"IMPRESA_EDILE_PROGETTO"},
+    {"label":"PDF Albo Pretorio edilizia", "query":f'"{COMUNE}" filetype:pdf ("albo pretorio" OR "amministrazione trasparente" OR delibera OR determina) (edilizia OR urbanistica OR lottizzazione OR costruire)', "count":20, "private":False, "portal":None, "mode":"public_document", "type":"IMPRESA_EDILE_PROGETTO"},
 ]
 
 for p in portals:
@@ -315,7 +342,8 @@ for plan in plans:
             "lead_target": "IMPRESA/AZIENDA" if otype in {"ATTIVITA_CESSIONE", "CANTIERE_NUOVA_COSTRUZIONE", "IMPRESA_EDILE_PROGETTO"} else "IMMOBILE",
             "project_stage": project_stage(evidence),
             "commercial_goal": commercial_goal(otype),
-            "discovery_engine": "PUBLIC_DORK_MATRIX_V4",
+            "public_pdf": is_pdf_url(url),
+            "discovery_engine": "PUBLIC_DORK_MATRIX_V5",
         })
     statuses.append({
         "FONTE": plan["label"], "COMUNE": COMUNE,
