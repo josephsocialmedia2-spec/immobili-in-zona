@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepara il giro operativo F1: dove andare, cosa cercare, prezzo e assegnazione team."""
+"""Prepara il giro operativo F1: residenziale, commerciale, attività e cantieri."""
 import csv, json, os, re, unicodedata
 from pathlib import Path
 
@@ -86,7 +86,17 @@ def current_price(x, fallback=""):
     return inferred or "PREZZO DA VERIFICARE"
 
 
-def action_for(address):
+def action_for(address, opportunity_type, goal):
+    if opportunity_type in {"CANTIERE_NUOVA_COSTRUZIONE", "IMPRESA_EDILE_PROGETTO"}:
+        if "DA VERIFICARE" in address:
+            return "APRI FONTE → IDENTIFICA IMPRESA/CANTIERE → CONTATTA"
+        return "VERIFICA CANTIERE → CONTATTA IMPRESA/COSTRUTTORE"
+    if opportunity_type == "ATTIVITA_CESSIONE":
+        return "VERIFICA ATTIVITA → CONTATTA TITOLARE/REFERENTE"
+    if opportunity_type in {"COMMERCIALE_IMMOBILE", "UFFICIO_DIREZIONALE", "INDUSTRIALE_LOGISTICA", "TERRENO_SVILUPPO"}:
+        if "DA VERIFICARE" in address:
+            return "APRI FONTE → VERIFICA UBICAZIONE → CONTATTA"
+        return "VAI IN ZONA / CONTATTA PER " + (goal or "OPPORTUNITA COMMERCIALE")
     if "DA VERIFICARE" in address:
         return "APRI FONTE E VERIFICA INDIRIZZO"
     return "VAI IN ZONA"
@@ -110,9 +120,13 @@ route_rows = []
 for r in rows:
     x = by_url.get((r.get("URL") or "").strip(), {})
     address = exact_address(x)
-    thing = clean(x.get("title") or r.get("TITOLO"))[:180] or "IMMOBILE DA VERIFICARE"
+    thing = clean(x.get("title") or r.get("TITOLO"))[:180] or "OPPORTUNITA DA VERIFICARE"
     price = current_price(x, r.get("PREZZO"))
-    action = action_for(address)
+    otype = r.get("TIPO_OPPORTUNITA") or x.get("opportunity_type") or "RESIDENZIALE"
+    stage = r.get("FASE_PROGETTO") or x.get("project_stage") or ""
+    goal = r.get("OBIETTIVO_COMMERCIALE") or x.get("commercial_goal") or "ACQUISIZIONE IMMOBILE"
+    target = r.get("TARGET") or x.get("lead_target") or "IMMOBILE"
+    action = action_for(address, otype, goal)
 
     r["DOVE_ANDRE"] = address
     r["COSA_CERCO"] = thing
@@ -123,6 +137,10 @@ for r in rows:
     route_rows.append({
         "PRIORITA": r.get("PRIORITA", ""),
         "SCORE": r.get("SCORE", ""),
+        "TIPO_OPPORTUNITA": otype,
+        "TARGET": target,
+        "FASE_PROGETTO": stage,
+        "OBIETTIVO_COMMERCIALE": goal,
         "COMUNE": r.get("COMUNE", ""),
         "DOVE_ANDRE": address,
         "COSA_CERCO": thing,
@@ -140,12 +158,10 @@ if rows:
         w.writeheader()
         w.writerows(rows)
 
-# Mantiene tutte le opportunità, ordinate per score.
 route_rows.sort(key=lambda r: int(r.get("SCORE") or 0), reverse=True)
 
-# Sceglie fino a TEAM_SIZE comuni distinti in base al miglior score disponibile.
-# Un funzionario presidia un comune/microzona principale: evita di mettere due persone
-# nello stesso comune finché esistono alternative valide.
+# Fino a 10 comuni/zone diversi, scelti dal miglior score. In ogni comune il
+# funzionario riceve tutte le opportunità: residenziali, commerciali e cantieri.
 best_by_town = {}
 for r in route_rows:
     town_key = norm(r.get("COMUNE"))
@@ -157,11 +173,7 @@ for r in route_rows:
 
 ranked_towns = sorted(best_by_town.items(), key=lambda kv: kv[1]["score"], reverse=True)[:TEAM_SIZE]
 assignment = {
-    town_key: {
-        "funzionario": idx + 1,
-        "comune": info["comune"],
-        "score_comune": info["score"],
-    }
+    town_key: {"funzionario": idx + 1, "comune": info["comune"], "score_comune": info["score"]}
     for idx, (town_key, info) in enumerate(ranked_towns)
 }
 
@@ -178,20 +190,17 @@ for r in route_rows:
 
 route_fields = [
     "FUNZIONARIO", "NUM_FUNZIONARIO", "STATO_ASSEGNAZIONE",
-    "PRIORITA", "SCORE", "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO",
+    "PRIORITA", "SCORE", "TIPO_OPPORTUNITA", "TARGET", "FASE_PROGETTO", "OBIETTIVO_COMMERCIALE",
+    "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO",
     "FONTE", "SELLER_SIGNAL", "AZIONE", "URL", "F1_INDIRIZZO_REMOTO_URL"
 ]
 with OUT.open("w", encoding="utf-8-sig", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=route_fields)
-    w.writeheader()
-    w.writerows(route_rows)
+    w = csv.DictWriter(f, fieldnames=route_fields); w.writeheader(); w.writerows(route_rows)
 
 team_rows = [r for r in route_rows if r.get("STATO_ASSEGNAZIONE") == "ASSEGNATO"]
 team_rows.sort(key=lambda r: (int(r.get("NUM_FUNZIONARIO") or 999), -int(r.get("SCORE") or 0)))
 with OUT_TEAM.open("w", encoding="utf-8-sig", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=route_fields)
-    w.writeheader()
-    w.writerows(team_rows)
+    w = csv.DictWriter(f, fieldnames=route_fields); w.writeheader(); w.writerows(team_rows)
 
 summary = {
     "team_size_configured": TEAM_SIZE,
@@ -204,6 +213,9 @@ summary = {
             "comune": a["comune"],
             "score_comune": a["score_comune"],
             "righe_lavoro": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"]),
+            "residenziale": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") == "RESIDENZIALE"),
+            "commerciale": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") in {"COMMERCIALE_IMMOBILE", "UFFICIO_DIREZIONALE", "INDUSTRIALE_LOGISTICA", "ATTIVITA_CESSIONE", "TERRENO_SVILUPPO"}),
+            "cantieri_imprese": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") in {"CANTIERE_NUOVA_COSTRUZIONE", "IMPRESA_EDILE_PROGETTO"}),
         }
         for a in sorted(assignment.values(), key=lambda x: x["funzionario"])
     ],
@@ -211,7 +223,6 @@ summary = {
 OUT_TEAM_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
 print(
-    f"GIRO ACQUISIZIONE: {len(route_rows)} opportunità; "
-    f"team configurato {TEAM_SIZE}; funzionari assegnati {len(assignment)}; "
-    f"output {OUT_TEAM.name}."
+    f"GIRO ACQUISIZIONE: {len(route_rows)} opportunità; team {TEAM_SIZE}; "
+    f"funzionari assegnati {len(assignment)}; output {OUT_TEAM.name}."
 )
