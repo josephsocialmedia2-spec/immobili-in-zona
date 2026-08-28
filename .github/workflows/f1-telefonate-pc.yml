@@ -1,6 +1,9 @@
 name: F1 Telefonate PC
 
 on:
+  workflow_run:
+    workflows: ["F1 Seller Radar AUTO"]
+    types: [completed]
   workflow_dispatch:
   push:
     paths:
@@ -15,6 +18,7 @@ concurrency:
 
 jobs:
   telefonate:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: [self-hosted, Windows, X64, f1-desktop]
     timeout-minutes: 180
     steps:
@@ -28,7 +32,7 @@ jobs:
         run: |
           py --version
 
-      - name: Radar -> microzone -> numeri -> LISTA_MATTINO
+      - name: Radar completo -> microzone -> numeri -> LISTA_MATTINO V3
         shell: powershell
         run: |
           powershell -NoProfile -ExecutionPolicy Bypass -File windows_valle_susa/run_telefonate.ps1
