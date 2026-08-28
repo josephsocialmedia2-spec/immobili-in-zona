@@ -1,9 +1,6 @@
 name: F1 Telefonate PC
 
 on:
-  workflow_run:
-    workflows: ["F1 Seller Radar AUTO"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -15,7 +12,6 @@ concurrency:
 
 jobs:
   telefonate:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: [self-hosted, Windows, X64, f1-desktop]
     timeout-minutes: 180
     steps:
@@ -29,7 +25,7 @@ jobs:
         run: |
           py --version
 
-      - name: Radar -> numeri -> telefonate
+      - name: Radar -> microzone -> numeri -> LISTA_MATTINO
         shell: powershell
         run: |
           powershell -NoProfile -ExecutionPolicy Bypass -File windows_valle_susa/run_telefonate.ps1
@@ -39,7 +35,9 @@ jobs:
         shell: powershell
         run: |
           $report = Join-Path $HOME 'Documents\F1_Directory_Microzone\LISTA_MATTINO.html'
+          $calls = Join-Path $HOME 'Documents\F1_Directory_Microzone\data\telefonate_mattino.csv'
           $log = Join-Path $HOME 'Documents\F1_Directory_Microzone\motore.log'
-          if (Test-Path $report) { Write-Host 'LISTA_MATTINO pronta sul PC.' }
-          if (Test-Path $log) { Get-Content $log -Tail 20 }
+          if (Test-Path $report) { Write-Host "RISULTATO: $report" } else { Write-Error 'LISTA_MATTINO.html non trovata.' }
+          if (Test-Path $calls) { Write-Host "CSV: $calls" }
+          if (Test-Path $log) { Get-Content $log -Tail 30 }
           Write-Host 'Nessun nome o telefono viene caricato come artifact GitHub.'
