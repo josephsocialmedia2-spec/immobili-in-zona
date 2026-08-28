@@ -2,6 +2,9 @@ name: F1 Telefonate PC
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'windows_valle_susa/.telefonate_now_trigger'
 
 permissions:
   contents: read
