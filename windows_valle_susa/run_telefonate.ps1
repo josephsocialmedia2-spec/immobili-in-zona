@@ -43,9 +43,21 @@ if (-not (Test-Path $FocusCalls)) { throw 'telefonate_susa_10km.csv non e stato 
 Write-Host '[6/6] Riporto i nuovi contatti nel database VALLE_SUSA_UNICO v2'
 py $Sync import
 
+# Collegamento Desktop stabile alla lista prioritaria.
+$Desktop = [Environment]::GetFolderPath('Desktop')
+$Shortcut = Join-Path $Desktop 'F1 - TELEFONATE SUSA 10 KM.lnk'
+$Shell = New-Object -ComObject WScript.Shell
+$Link = $Shell.CreateShortcut($Shortcut)
+$Link.TargetPath = $FocusReport
+$Link.WorkingDirectory = $Base
+$Link.IconLocation = 'shell32.dll,220'
+$Link.Description = 'F1 Immobiliare - Telefonate prioritarie Susa e raggio 10 km'
+$Link.Save()
+
 Write-Host ''
 Write-Host 'PRIORITA OPERATIVA: SUSA + 10 KM' -ForegroundColor Green
 Write-Host "APRI PER TELEFONARE: $FocusReport" -ForegroundColor Green
+Write-Host "ICONA DESKTOP: $Shortcut" -ForegroundColor Green
 Write-Host "CSV SUSA + 10 KM: $FocusCalls" -ForegroundColor Cyan
 Write-Host "LISTA COMPLETA VALLE: $Report"
 Write-Host "CSV COMPLETO: $Calls"
