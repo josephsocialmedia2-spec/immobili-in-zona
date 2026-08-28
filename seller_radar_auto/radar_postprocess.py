@@ -2,6 +2,7 @@
 import csv, html, json
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -17,6 +18,11 @@ PORTALS = ROOT / "portal_catalog.csv"
 
 def drops(hist):
     return sum(1 for a, b in zip(hist, hist[1:]) if a.get("price") and b.get("price") and b["price"] < a["price"])
+
+
+def is_pdf_url(url):
+    p = urlparse(url or "")
+    return p.path.casefold().endswith(".pdf") or ".pdf" in p.path.casefold()
 
 
 def score(x):
@@ -60,6 +66,9 @@ def score(x):
     elif stage == "NUOVA_COSTRUZIONE":
         s += 8; why.append("nuova costruzione")
 
+    if x.get("public_pdf") or is_pdf_url(x.get("url", "")):
+        s += 4; why.append("atto/PDF pubblico da verificare")
+
     try:
         age = (datetime.now(timezone.utc) - datetime.fromisoformat(x["first_seen"])).days
         if age >= 30:
@@ -91,11 +100,14 @@ STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-
 fields = [
     "PRIORITA", "SCORE", "TIPO_OPPORTUNITA", "TARGET", "FASE_PROGETTO", "OBIETTIVO_COMMERCIALE",
     "COMUNE", "FONTE", "TITOLO", "PREZZO", "PREZZO_PRECEDENTE", "RIBASSI",
-    "INDIZIO_INSERZIONISTA", "STATO", "PRIMA_RILEVAZIONE", "ULTIMO_CONTROLLO", "MOTIVI", "URL"
+    "INDIZIO_INSERZIONISTA", "STATO", "PRIMA_RILEVAZIONE", "ULTIMO_CONTROLLO", "MOTIVI",
+    "PDF_DA_VERIFICARE", "URL"
 ]
 queue = []
 for x in sorted(items.values(), key=lambda z: z.get("score", 0), reverse=True):
     hist = x.get("price_history", [])
+    url = x.get("url", "")
+    pdf_url = url if (x.get("public_pdf") or is_pdf_url(url)) else ""
     queue.append({
         "PRIORITA": "ALTA" if x["score"] >= 70 else "MEDIA" if x["score"] >= 45 else "BASSA",
         "SCORE": x["score"],
@@ -108,7 +120,8 @@ for x in sorted(items.values(), key=lambda z: z.get("score", 0), reverse=True):
         "RIBASSI": drops(hist), "INDIZIO_INSERZIONISTA": x.get("seller_hint", "NON_DETERMINATO"),
         "STATO": x.get("lifecycle", ""), "PRIMA_RILEVAZIONE": x.get("first_seen", ""),
         "ULTIMO_CONTROLLO": x.get("last_seen", ""), "MOTIVI": " | ".join(x.get("score_reasons", [])),
-        "URL": x.get("url", ""),
+        "PDF_DA_VERIFICARE": pdf_url,
+        "URL": url,
     })
 with QUEUE.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(queue)
@@ -140,20 +153,22 @@ accepted = sum(int(r.get("ACCETTATI") or 0) for r in status_rows)
 ok = sum(1 for r in status_rows if r.get("STATO") == "OK")
 construction = sum(1 for r in queue if r.get("TIPO_OPPORTUNITA") in {"CANTIERE_NUOVA_COSTRUZIONE", "IMPRESA_EDILE_PROGETTO"})
 commercial = len(business_rows) - construction
+pdf_count = sum(1 for r in queue if r.get("PDF_DA_VERIFICARE"))
 
 trs = []
 for r in queue[:1000]:
     cls = "high" if int(r["SCORE"]) >= 70 else "med" if int(r["SCORE"]) >= 45 else "low"
+    pdf_link = f"<a href='{html.escape(r['PDF_DA_VERIFICARE'])}' target='_blank'>PDF</a>" if r.get("PDF_DA_VERIFICARE") else "—"
     trs.append(
         f"<tr data-comune='{html.escape(r['COMUNE'])}' data-fonte='{html.escape(r['FONTE'])}'>"
         f"<td><span class='score {cls}'>{r['SCORE']}</span></td><td>{html.escape(r['PRIORITA'])}</td>"
         f"<td>{html.escape(r['TIPO_OPPORTUNITA'])}</td><td>{html.escape(r['COMUNE'])}</td>"
         f"<td>{html.escape(r['FASE_PROGETTO'] or '—')}</td><td>{html.escape(r['OBIETTIVO_COMMERCIALE'])}</td>"
         f"<td>{html.escape(r['TITOLO'])}</td><td>{html.escape(str(r['PREZZO'] or '—'))}</td>"
-        f"<td>{html.escape(r['MOTIVI'])}</td><td><a href='{html.escape(r['URL'])}' target='_blank'>APRI</a></td></tr>"
+        f"<td>{html.escape(r['MOTIVI'])}</td><td>{pdf_link}</td><td><a href='{html.escape(r['URL'])}' target='_blank'>APRI</a></td></tr>"
     )
 if not trs:
-    trs = ["<tr><td colspan='10'>Nessuna opportunità rilevata.</td></tr>"]
+    trs = ["<tr><td colspan='11'>Nessuna opportunità rilevata.</td></tr>"]
 
-DASH.write_text(f"""<!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>F1 Seller Radar</title><style>body{{font-family:Segoe UI,Arial;background:#0c0f0d;color:#eee;padding:22px}}.cards{{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}}.card{{background:#151a17;border:1px solid #2c3630;padding:14px;border-radius:12px}}table{{width:100%;border-collapse:collapse;background:#141815}}th,td{{padding:8px;border-bottom:1px solid #2c332f;text-align:left;font-size:13px}}a{{color:#78e08f}}.score{{padding:4px 6px;border-radius:7px}}.high{{background:#5f2020}}.med{{background:#5d4b17}}.low{{background:#25442f}}</style></head><body><h1>F1 SELLER RADAR</h1><div>Radar multi-canale · Aggiornato {datetime.now().strftime('%d/%m/%Y %H:%M')}</div><div class='cards'><div class='card'>Opportunità <b>{len(queue)}</b></div><div class='card'>Priorità alta <b>{high}</b></div><div class='card'>Commerciale/attività <b>{commercial}</b></div><div class='card'>Cantieri/imprese <b>{construction}</b></div><div class='card'>Indizi privato <b>{priv}</b></div><div class='card'>Accettati ciclo <b>{accepted}</b></div><div class='card'>Query OK <b>{ok}/{len(status_rows)}</b></div><div class='card'>Territori <b>{len(municipalities)}</b></div><div class='card'>Portali <b>{len(portals)}</b></div></div><table><thead><tr><th>Score</th><th>Priorità</th><th>Tipo</th><th>Comune</th><th>Fase</th><th>Obiettivo</th><th>Opportunità</th><th>Prezzo</th><th>Motivi</th><th>Azione</th></tr></thead><tbody>{''.join(trs)}</tbody></table></body></html>""", encoding="utf-8")
-print(f"F1 Radar postprocess: {len(queue)} opportunità, {len(business_rows)} commerciali/cantieri, {accepted} accettati discovery, {ok}/{len(status_rows)} query OK.")
+DASH.write_text(f"""<!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>F1 Seller Radar</title><style>body{{font-family:Segoe UI,Arial;background:#0c0f0d;color:#eee;padding:22px}}.cards{{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}}.card{{background:#151a17;border:1px solid #2c3630;padding:14px;border-radius:12px}}table{{width:100%;border-collapse:collapse;background:#141815}}th,td{{padding:8px;border-bottom:1px solid #2c332f;text-align:left;font-size:13px}}a{{color:#78e08f}}.score{{padding:4px 6px;border-radius:7px}}.high{{background:#5f2020}}.med{{background:#5d4b17}}.low{{background:#25442f}}</style></head><body><h1>F1 SELLER RADAR</h1><div>Radar multi-canale · Aggiornato {datetime.now().strftime('%d/%m/%Y %H:%M')}</div><div class='cards'><div class='card'>Opportunità <b>{len(queue)}</b></div><div class='card'>Priorità alta <b>{high}</b></div><div class='card'>Commerciale/attività <b>{commercial}</b></div><div class='card'>Cantieri/imprese <b>{construction}</b></div><div class='card'>PDF da verificare <b>{pdf_count}</b></div><div class='card'>Indizi privato <b>{priv}</b></div><div class='card'>Accettati ciclo <b>{accepted}</b></div><div class='card'>Query OK <b>{ok}/{len(status_rows)}</b></div><div class='card'>Territori <b>{len(municipalities)}</b></div><div class='card'>Portali <b>{len(portals)}</b></div></div><table><thead><tr><th>Score</th><th>Priorità</th><th>Tipo</th><th>Comune</th><th>Fase</th><th>Obiettivo</th><th>Opportunità</th><th>Prezzo</th><th>Motivi</th><th>PDF</th><th>Azione</th></tr></thead><tbody>{''.join(trs)}</tbody></table></body></html>""", encoding="utf-8")
+print(f"F1 Radar postprocess: {len(queue)} opportunità, {len(business_rows)} commerciali/cantieri, {pdf_count} PDF da verificare, {accepted} accettati discovery, {ok}/{len(status_rows)} query OK.")
