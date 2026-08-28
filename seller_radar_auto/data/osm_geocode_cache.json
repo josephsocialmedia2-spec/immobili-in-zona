@@ -76,5 +76,12 @@
     "lat": 45.0771003,
     "lon": 7.5147089,
     "display_name": "Via Gioacchino Rossini, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via dei ronchi alpignano": null,
+  "via san lorenzo gravere": null,
+  "frazione san giuseppe mompantero": {
+    "lat": 45.1488611,
+    "lon": 7.0343766,
+    "display_name": "Frazione San Giuseppe, SP209, Berno, Mompantero, Torino, Piemonte, 10059, Italia"
   }
 }

@@ -1,14 +1,25 @@
 {
-  "generated_at": "2026-08-28T05:17:27.761856+00:00",
+  "generated_at": "2026-08-28T11:09:35.490469+00:00",
   "main_towns": [
+    "Susa",
+    "Mompantero",
+    "Meana di Susa",
+    "Gravere",
+    "Giaglione",
+    "Venaus",
+    "Mattie",
+    "Chiomonte",
+    "Novalesa",
+    "Bussoleno",
+    "Chianocco",
+    "San Giorio di Susa",
+    "Moncenisio",
     "Avigliana",
     "Almese",
     "Condove",
     "Sant'Antonino di Susa",
     "Vaie",
     "Chiusa di San Michele",
-    "Bussoleno",
-    "Susa",
     "Collegno",
     "Grugliasco",
     "Rivoli",
@@ -27,7 +38,7 @@
       "zone_id": "almese-via-rubiana",
       "comune": "Almese",
       "target_street": "via Rubiana",
-      "listing_target": "via Rubiana 100",
+      "listing_target": "Via Rubiana 142",
       "listing_url": "https://www.nuroa.it/affitto-case/almese",
       "streets": [
         "via Rubiana",
@@ -296,11 +307,11 @@
     {
       "zone_id": "avigliana-via-avigliana",
       "comune": "Avigliana",
-      "target_street": "Via Avigliana",
-      "listing_target": "Via Avigliana 4",
-      "listing_url": "https://www.idealista.it/immobile/36652455/",
+      "target_street": "via Avigliana",
+      "listing_target": "Via Avigliana 18",
+      "listing_url": "https://www.immobiliare.it/annunci/131999982/",
       "streets": [
-        "Via Avigliana",
+        "via Avigliana",
         "Via Almese",
         "Via Giaveno",
         "Via Primo Levi",
@@ -309,13 +320,28 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "avigliana-via-orsiera",
+      "comune": "Avigliana",
+      "target_street": "via Orsiera",
+      "listing_target": "via Orsiera 5",
+      "listing_url": "https://www.immobiliare.it/annunci/129672110/",
+      "streets": [
+        "via Orsiera",
+        "Via della Repubblica",
+        "Via Cristalliera",
+        "Via Monte Bianco",
+        "Via Rossetti"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
-      "target_street": "via bussoleno",
-      "listing_target": "via bussoleno 7",
-      "listing_url": "https://www.immobiliare.it/annunci/129460110/",
+      "target_street": "Via Bussoleno",
+      "listing_target": "via bussoleno 26",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/bussoleno",
       "streets": [
-        "via bussoleno",
+        "Via Bussoleno",
         "Via Gran Borgata",
         "Via Gran Porta",
         "Piazza Caduti per la Libertà",
@@ -372,7 +398,7 @@
       "zone_id": "buttigliera-alta-via-iv-novembre",
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
-      "listing_target": "via IV Novembre 15",
+      "listing_target": "Via IV Novembre 5",
       "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
@@ -429,6 +455,21 @@
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
+      "zone_id": "collegno-via-avigliana",
+      "comune": "Collegno",
+      "target_street": "via Avigliana",
+      "listing_target": "via Avigliana 13",
+      "listing_url": "https://www.immobiliare.it/annunci/130994920/",
+      "streets": [
+        "via Avigliana",
+        "Corso Francia",
+        "Via Bardonecchia",
+        "Via Borgone",
+        "Via Cesana"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "condove-via-moncenisio",
       "comune": "Condove",
       "target_street": "Via Moncenisio",
@@ -444,6 +485,36 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "gravere-via-nazionale",
+      "comune": "Gravere",
+      "target_street": "Via Nazionale",
+      "listing_target": "Via Nazionale 45",
+      "listing_url": "https://www.casadaprivato.it/annunci-vendita/immobili/torino-gravere",
+      "streets": [
+        "Via Nazionale",
+        "Strada Statale 24 del Monginevro",
+        "Via Braidetta",
+        "Via Comunale",
+        "Via Europa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "gravere-via-terzo-reggimento-alpini",
+      "comune": "Gravere",
+      "target_street": "Via Terzo Reggimento Alpini",
+      "listing_target": "Via Terzo Reggimento Alpini 9",
+      "listing_url": "https://www.idealista.it/immobile/30296520/",
+      "streets": [
+        "Via Terzo Reggimento Alpini",
+        "Via Nazionale",
+        "Via Braidetta",
+        "Via Girodi",
+        "Via Molaretto"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "grugliasco-viale-gramsci",
       "comune": "Grugliasco",
       "target_street": "Viale Gramsci",
@@ -455,6 +526,51 @@
         "Via Cristoforo Colombo",
         "Via Giuseppe Cena",
         "Via Roma"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "mattie-via-giordani",
+      "comune": "Mattie",
+      "target_street": "via giordani",
+      "listing_target": "via giordani 3",
+      "listing_url": "https://www.trovacasa.it/annunci/to-tc-64869-72779648",
+      "streets": [
+        "via giordani",
+        "Via Tonda",
+        "Via Torino",
+        "Via Rio Gerardo",
+        "Via La Losa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "mattie-via-mattie",
+      "comune": "Mattie",
+      "target_street": "via Mattie",
+      "listing_target": "Via Mattie 2/B",
+      "listing_url": "https://www.immobiliare.it/annunci/130850322/",
+      "streets": [
+        "via Mattie",
+        "Sentiero delle Ecoumbele",
+        "La via della contemplazione",
+        "Via Grandi Tanze",
+        "Sentiero Grandi - Piccole Tanze"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "mompantero-frazione-san-giuseppe",
+      "comune": "Mompantero",
+      "target_street": "Frazione San Giuseppe",
+      "listing_target": "frazione San Giuseppe 21/d",
+      "listing_url": "https://www.casa.it/immobili/54595196/",
+      "streets": [
+        "Frazione San Giuseppe",
+        "Via Bosconero",
+        "Via Ezio Perino",
+        "Via Marzano",
+        "Via Novalesa"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
@@ -534,6 +650,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "susa-via-susa",
+      "comune": "Susa",
+      "target_street": "via Susa",
+      "listing_target": "Via Susa 50",
+      "listing_url": "https://www.immobiliare.it/annunci/125737541/",
+      "streets": [
+        "via Susa",
+        "Via Gravere",
+        "Via Oulx",
+        "Strada del Molino",
+        "Strada del Frais"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "vaie-via-peirolero",
       "comune": "Vaie",
       "target_street": "Via Peirolero",
@@ -587,18 +718,6 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "alpignano-via-costa",
-      "comune": "Alpignano",
-      "target_street": "Via Costa",
-      "listing_target": "Via Costa 7",
-      "listing_url": "https://www.nestoria.it/immobiliare/vendita/alpignano",
-      "streets": [
-        "Via Costa"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA",
-      "reason": "POSIZIONE/VIA DA VERIFICARE"
-    },
-    {
       "zone_id": "alpignano-via-g-mazzini",
       "comune": "Alpignano",
       "target_street": "Via G. Mazzini",
@@ -611,13 +730,13 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "alpignano-via-germain-sommeiller-piemonte-torino-visualizza-foto-capannone-in-vendita-di",
+      "zone_id": "alpignano-via-dei-ronchi",
       "comune": "Alpignano",
-      "target_street": "Via Germain Sommeiller Piemonte, Torino Visualizza foto Capannone in vendita di",
-      "listing_target": "Via Germain Sommeiller Piemonte, Torino Visualizza foto Capannone in vendita di 180",
+      "target_street": "Via dei Ronchi",
+      "listing_target": "via dei Ronchi 270",
       "listing_url": "https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano",
       "streets": [
-        "Via Germain Sommeiller Piemonte, Torino Visualizza foto Capannone in vendita di"
+        "Via dei Ronchi"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
@@ -690,6 +809,18 @@
       "listing_url": "https://www.idealista.it/immobile/36228538/",
       "streets": [
         "Borgata Borlera"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "gravere-via-san-lorenzo",
+      "comune": "Gravere",
+      "target_street": "via San Lorenzo",
+      "listing_target": "via San Lorenzo 1",
+      "listing_url": "https://www.immobiliare.it/annunci/126652927/",
+      "streets": [
+        "via San Lorenzo"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
