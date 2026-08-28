@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Prepara il giro operativo F1: dove andare, cosa cercare e prezzo."""
-import csv, json, re
+"""Prepara il giro operativo F1: dove andare, cosa cercare, prezzo e assegnazione team."""
+import csv, json, os, re, unicodedata
 from pathlib import Path
 
 from f1_remote_bridge import build_import_url
@@ -10,6 +10,11 @@ DATA = ROOT / "data"
 STATE = DATA / "state.json"
 QUEUE = DATA / "work_queue.csv"
 OUT = DATA / "giro_acquisizione.csv"
+OUT_TEAM = DATA / "giro_funzionari.csv"
+OUT_TEAM_JSON = DATA / "giro_funzionari.json"
+
+TEAM_SIZE = max(1, int(os.getenv("F1_OPERATOR_COUNT", "10")))
+EXCLUDED_TOWNS = {"sant ambrogio di torino"}
 
 ADDRESS_RE = re.compile(
     r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
@@ -31,6 +36,14 @@ def load_state():
 
 def clean(v):
     return re.sub(r"\s+", " ", str(v or "")).strip(" ,.;")
+
+
+def norm(v):
+    s = unicodedata.normalize("NFKD", str(v or ""))
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+    s = s.replace("’", "'")
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def exact_address(x):
@@ -127,11 +140,78 @@ if rows:
         w.writeheader()
         w.writerows(rows)
 
-route_fields = ["PRIORITA", "SCORE", "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO", "FONTE", "SELLER_SIGNAL", "AZIONE", "URL", "F1_INDIRIZZO_REMOTO_URL"]
+# Mantiene tutte le opportunità, ordinate per score.
 route_rows.sort(key=lambda r: int(r.get("SCORE") or 0), reverse=True)
+
+# Sceglie fino a TEAM_SIZE comuni distinti in base al miglior score disponibile.
+# Un funzionario presidia un comune/microzona principale: evita di mettere due persone
+# nello stesso comune finché esistono alternative valide.
+best_by_town = {}
+for r in route_rows:
+    town_key = norm(r.get("COMUNE"))
+    if not town_key or town_key in EXCLUDED_TOWNS:
+        continue
+    score = int(r.get("SCORE") or 0)
+    if town_key not in best_by_town or score > best_by_town[town_key]["score"]:
+        best_by_town[town_key] = {"score": score, "comune": r.get("COMUNE", "")}
+
+ranked_towns = sorted(best_by_town.items(), key=lambda kv: kv[1]["score"], reverse=True)[:TEAM_SIZE]
+assignment = {
+    town_key: {
+        "funzionario": idx + 1,
+        "comune": info["comune"],
+        "score_comune": info["score"],
+    }
+    for idx, (town_key, info) in enumerate(ranked_towns)
+}
+
+for r in route_rows:
+    a = assignment.get(norm(r.get("COMUNE")))
+    if a:
+        r["FUNZIONARIO"] = f"FUNZIONARIO {a['funzionario']}"
+        r["NUM_FUNZIONARIO"] = str(a["funzionario"])
+        r["STATO_ASSEGNAZIONE"] = "ASSEGNATO"
+    else:
+        r["FUNZIONARIO"] = ""
+        r["NUM_FUNZIONARIO"] = ""
+        r["STATO_ASSEGNAZIONE"] = "BACKLOG"
+
+route_fields = [
+    "FUNZIONARIO", "NUM_FUNZIONARIO", "STATO_ASSEGNAZIONE",
+    "PRIORITA", "SCORE", "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO",
+    "FONTE", "SELLER_SIGNAL", "AZIONE", "URL", "F1_INDIRIZZO_REMOTO_URL"
+]
 with OUT.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=route_fields)
     w.writeheader()
     w.writerows(route_rows)
 
-print(f"GIRO ACQUISIZIONE: {len(route_rows)} righe preparate in {OUT.name}.")
+team_rows = [r for r in route_rows if r.get("STATO_ASSEGNAZIONE") == "ASSEGNATO"]
+team_rows.sort(key=lambda r: (int(r.get("NUM_FUNZIONARIO") or 999), -int(r.get("SCORE") or 0)))
+with OUT_TEAM.open("w", encoding="utf-8-sig", newline="") as f:
+    w = csv.DictWriter(f, fieldnames=route_fields)
+    w.writeheader()
+    w.writerows(team_rows)
+
+summary = {
+    "team_size_configured": TEAM_SIZE,
+    "assigned_staff": len(assignment),
+    "unassigned_staff": max(0, TEAM_SIZE - len(assignment)),
+    "assignments": [
+        {
+            "funzionario": f"FUNZIONARIO {a['funzionario']}",
+            "numero": a["funzionario"],
+            "comune": a["comune"],
+            "score_comune": a["score_comune"],
+            "righe_lavoro": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"]),
+        }
+        for a in sorted(assignment.values(), key=lambda x: x["funzionario"])
+    ],
+}
+OUT_TEAM_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+
+print(
+    f"GIRO ACQUISIZIONE: {len(route_rows)} opportunità; "
+    f"team configurato {TEAM_SIZE}; funzionari assegnati {len(assignment)}; "
+    f"output {OUT_TEAM.name}."
+)
