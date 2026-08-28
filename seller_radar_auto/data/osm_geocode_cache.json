@@ -26,5 +26,55 @@
   "viale lungo dora bussoleno": null,
   "vicolo g pietro riva chiusa di san michele": null,
   "borgata borlera condove": null,
-  "vicolo superiore vaie": null
+  "vicolo superiore vaie": null,
+  "via della costa alpignano": null,
+  "via costa alpignano": null,
+  "via 11 febbraio alpignano": {
+    "lat": 45.1009085,
+    "lon": 7.5243454,
+    "display_name": "Via Undici Febbraio, Alpignano, Torino, Piemonte, 10091, Italia"
+  },
+  "via g mazzini alpignano": null,
+  "via germain sommeiller piemonte torino visualizza foto capannone in vendita di alpignano": null,
+  "via bussoleno bussoleno": {
+    "lat": 45.1417395,
+    "lon": 7.1154505,
+    "display_name": "Via Gran Borgata, Bari, Foresto, Bussoleno, Torino, Piemonte, 10050, Italia"
+  },
+  "strada monginevro bussoleno": {
+    "lat": 45.1346664,
+    "lon": 7.1375808,
+    "display_name": "Strada Provinciale 24 del Monginevro, Santa Petronilla, Foresto, Bussoleno, Torino, Piemonte, 10053, Italia"
+  },
+  "via conti carron buttigliera alta": null,
+  "via allende buttigliera alta": {
+    "lat": 45.0718243,
+    "lon": 7.4181635,
+    "display_name": "Via Salvador Allende, Le fronde, Ferriera, Buttigliera Alta, Torino, Piemonte, 10051, Italia"
+  },
+  "via iv novembre buttigliera alta": {
+    "lat": 45.0684675,
+    "lon": 7.4348067,
+    "display_name": "Via Quattro Novembre, Cornaglio, Ferriera, Buttigliera Alta, Torino, Piemonte, 10051, Italia"
+  },
+  "viale xxiv maggio collegno": {
+    "lat": 45.0778932,
+    "lon": 7.5744229,
+    "display_name": "Viale Ventiquattro Maggio, Regina Margherita, Leumann, Collegno, Torino, Piemonte, 10093, Italia"
+  },
+  "viale gramsci grugliasco": {
+    "lat": 45.0695347,
+    "lon": 7.5796877,
+    "display_name": "Viale Antonio Gramsci, Grugliasco, Torino, Piemonte, 10093, Italia"
+  },
+  "via calvino pianezza": {
+    "lat": 45.1056473,
+    "lon": 7.553239,
+    "display_name": "Via Italo Calvino, Pianezza, Torino, Piemonte, 10044, Italia"
+  },
+  "via rossini rivoli": {
+    "lat": 45.0771003,
+    "lon": 7.5147089,
+    "display_name": "Via Gioacchino Rossini, Rivoli, Torino, Piemonte, 10098, Italia"
+  }
 }

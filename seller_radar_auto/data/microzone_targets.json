@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:15:34.477236+00:00",
+  "generated_at": "2026-08-28T05:17:27.761856+00:00",
   "main_towns": [
     "Avigliana",
     "Almese",
@@ -8,18 +8,29 @@
     "Vaie",
     "Chiusa di San Michele",
     "Bussoleno",
-    "Susa"
+    "Susa",
+    "Collegno",
+    "Grugliasco",
+    "Rivoli",
+    "Alpignano",
+    "Pianezza",
+    "Rosta",
+    "Buttigliera Alta",
+    "Ferriera di Buttigliera Alta",
+    "Villarbasse",
+    "Caselette",
+    "Val della Torre"
   ],
   "map_data_attribution": "Data © OpenStreetMap contributors, ODbL 1.0",
   "microzones": [
     {
       "zone_id": "almese-via-rubiana",
       "comune": "Almese",
-      "target_street": "Via Rubiana",
-      "listing_target": "Via Rubiana 142",
-      "listing_url": "https://www.idealista.it/immobile/36195511/",
+      "target_street": "via Rubiana",
+      "listing_target": "via Rubiana 100",
+      "listing_url": "https://www.nuroa.it/affitto-case/almese",
       "streets": [
-        "Via Rubiana",
+        "via Rubiana",
         "Borgata Malatrait II",
         "Via Circonvallazione",
         "Via Combal",
@@ -103,6 +114,36 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "alpignano-via-11-febbraio",
+      "comune": "Alpignano",
+      "target_street": "via 11 Febbraio",
+      "listing_target": "via 11 Febbraio 51",
+      "listing_url": "https://www.immobiliare.it/annunci/125870679/",
+      "streets": [
+        "via 11 Febbraio",
+        "Via Francesco Baracca",
+        "Via Undici Febbraio",
+        "Via Enrico Toti",
+        "Via Camillo Benso Conte di Cavour"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "alpignano-via-lanzo",
+      "comune": "Alpignano",
+      "target_street": "via Lanzo",
+      "listing_target": "via Lanzo 8",
+      "listing_url": "https://www.immobiliare.it/annunci/128988474/",
+      "streets": [
+        "via Lanzo",
+        "Via Enrico Toti",
+        "Via Francesco Baracca",
+        "Via San Gillio",
+        "Via Val della Torre"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-via-monte-cuneo",
       "comune": "Avigliana",
       "target_street": "VIA MONTE CUNEO",
@@ -120,11 +161,11 @@
     {
       "zone_id": "avigliana-corso-laghi",
       "comune": "Avigliana",
-      "target_street": "corso Laghi",
+      "target_street": "Corso Laghi",
       "listing_target": "corso Laghi 165",
-      "listing_url": "https://www.immobiliare.it/annunci/129213392/",
+      "listing_url": "https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/",
       "streets": [
-        "corso Laghi",
+        "Corso Laghi",
         "Piazza del Popolo",
         "Via Alpi Cozie",
         "Via Carnino",
@@ -268,6 +309,126 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "bussoleno-via-bussoleno",
+      "comune": "Bussoleno",
+      "target_street": "via bussoleno",
+      "listing_target": "via bussoleno 7",
+      "listing_url": "https://www.immobiliare.it/annunci/129460110/",
+      "streets": [
+        "via bussoleno",
+        "Via Gran Borgata",
+        "Via Gran Porta",
+        "Piazza Caduti per la Libertà",
+        "Via San Rocco"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "bussoleno-strada-monginevro",
+      "comune": "Bussoleno",
+      "target_street": "Strada Monginevro",
+      "listing_target": "Strada Monginevro 7/a",
+      "listing_url": "https://www.immobiliare.it/annunci/65394712/",
+      "streets": [
+        "Strada Monginevro",
+        "Strada Provinciale 24 del Monginevro",
+        "Via Carlo Trattenero",
+        "Ponte Ignazio Micellone",
+        "Via Fabbrica da Fer"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "bussoleno-via-san-lorenzo",
+      "comune": "Bussoleno",
+      "target_street": "Via San Lorenzo",
+      "listing_target": "Via San Lorenzo 2",
+      "listing_url": "https://www.attico.it/immobile-casa+indipendente-piemonte-bussoleno-54425376/",
+      "streets": [
+        "Via San Lorenzo",
+        "Via Camposciutto",
+        "Via Ravetto",
+        "Corso Bruno Peirolo",
+        "Strada di Chianocco"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-allende",
+      "comune": "Buttigliera Alta",
+      "target_street": "via Allende",
+      "listing_target": "via Allende 13",
+      "listing_url": "https://www.immobiliare.it/annunci/131629064/",
+      "streets": [
+        "via Allende",
+        "Via Salvador Allende",
+        "Corso Laghi",
+        "Via Bacchiasso",
+        "Strada del Closio"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-iv-novembre",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via IV Novembre",
+      "listing_target": "via IV Novembre 15",
+      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via IV Novembre",
+        "Via Quattro Novembre",
+        "Vicolo Palermo",
+        "Via Avigliana",
+        "Piazza del Popolo"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "buttigliera-alta-strada-del-closio",
+      "comune": "Buttigliera Alta",
+      "target_street": "Strada del Closio",
+      "listing_target": "Strada del Closio 39",
+      "listing_url": "https://www.wikicasa.it/vendita-case/buttigliera-alta/",
+      "streets": [
+        "Strada del Closio",
+        "Via Bacchiasso",
+        "Via Cornaglio",
+        "Via Mario Greco",
+        "Via Salvador Allende"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "caselette-via-cirie",
+      "comune": "Caselette",
+      "target_street": "Via Ciriè",
+      "listing_target": "Via Ciriè 15",
+      "listing_url": "https://www.gabetti.it/vendita/caselette",
+      "streets": [
+        "Via Ciriè",
+        "Via Brione",
+        "Via Val della Torre",
+        "Via Givoletto",
+        "Via Martiri della Libertà"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "collegno-viale-xxiv-maggio",
+      "comune": "Collegno",
+      "target_street": "viale XXIV Maggio",
+      "listing_target": "viale XXIV Maggio 54",
+      "listing_url": "https://www.clickcase.it/annunci/vendita-case-privati-collegno.html",
+      "streets": [
+        "viale XXIV Maggio",
+        "Piazza della Repubblica",
+        "Viale Ventiquattro Maggio",
+        "Corso Papa Giovanni XXIII",
+        "Via Venti Settembre"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
       "zone_id": "condove-via-moncenisio",
       "comune": "Condove",
       "target_street": "Via Moncenisio",
@@ -279,6 +440,81 @@
         "Strada Comunale",
         "Via Edmondo De Amicis",
         "Via Giuseppe Verdi"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "grugliasco-viale-gramsci",
+      "comune": "Grugliasco",
+      "target_street": "Viale Gramsci",
+      "listing_target": "Viale Gramsci 66",
+      "listing_url": "https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco",
+      "streets": [
+        "Viale Gramsci",
+        "Viale Antonio Gramsci",
+        "Via Cristoforo Colombo",
+        "Via Giuseppe Cena",
+        "Via Roma"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "pianezza-via-calvino",
+      "comune": "Pianezza",
+      "target_street": "Via Calvino",
+      "listing_target": "Via Calvino 0",
+      "listing_url": "https://www.gabetti.it/vendita/pianezza",
+      "streets": [
+        "Via Calvino",
+        "Via Italo Calvino",
+        "Via Aldo Moro",
+        "Via Beppe Fenoglio",
+        "Via Giovanni Arpino"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "rivoli-via-pullino",
+      "comune": "Rivoli",
+      "target_street": "Via Pullino",
+      "listing_target": "Via Pullino 21",
+      "listing_url": "https://www.idealista.it/immobile/35768952/",
+      "streets": [
+        "Via Pullino",
+        "Via Avigliana",
+        "Via Balegno",
+        "Via Giuseppe Mazzini",
+        "Via Nino Bixio"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "rivoli-via-rossini",
+      "comune": "Rivoli",
+      "target_street": "via Rossini",
+      "listing_target": "via Rossini 8",
+      "listing_url": "https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm",
+      "streets": [
+        "via Rossini",
+        "Via Gioacchino Rossini",
+        "Via Cervino",
+        "Viale Partigiani d'Italia",
+        "Corso Susa"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "rosta-via-piave",
+      "comune": "Rosta",
+      "target_street": "Via Piave",
+      "listing_target": "Via Piave 53",
+      "listing_url": "https://www.casa.it/immobili/54099496/",
+      "streets": [
+        "Via Piave",
+        "Strada Antica di Buttigliera",
+        "Via Buttigliera Alta",
+        "Via Edoardo Aprà",
+        "Via Rivoli"
       ],
       "osm_status": "OK"
     },
@@ -339,6 +575,54 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
+      "zone_id": "alpignano-via-della-costa",
+      "comune": "Alpignano",
+      "target_street": "Via Della costa",
+      "listing_target": "via della Costa 71",
+      "listing_url": "https://www.gabetti.it/vendita/alpignano",
+      "streets": [
+        "Via Della costa"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "alpignano-via-costa",
+      "comune": "Alpignano",
+      "target_street": "Via Costa",
+      "listing_target": "Via Costa 7",
+      "listing_url": "https://www.nestoria.it/immobiliare/vendita/alpignano",
+      "streets": [
+        "Via Costa"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "alpignano-via-g-mazzini",
+      "comune": "Alpignano",
+      "target_street": "Via G. Mazzini",
+      "listing_target": "Via G. Mazzini 30",
+      "listing_url": "https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano",
+      "streets": [
+        "Via G. Mazzini"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "alpignano-via-germain-sommeiller-piemonte-torino-visualizza-foto-capannone-in-vendita-di",
+      "comune": "Alpignano",
+      "target_street": "Via Germain Sommeiller Piemonte, Torino Visualizza foto Capannone in vendita di",
+      "listing_target": "Via Germain Sommeiller Piemonte, Torino Visualizza foto Capannone in vendita di 180",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano",
+      "streets": [
+        "Via Germain Sommeiller Piemonte, Torino Visualizza foto Capannone in vendita di"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
       "zone_id": "avigliana-via-sacra-san-michele-laghi",
       "comune": "Avigliana",
       "target_street": "Via Sacra San Michele - Laghi",
@@ -370,6 +654,18 @@
       "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
       "streets": [
         "Viale Lungo Dora"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-conti-carron",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via Conti Carron",
+      "listing_target": "Via Conti Carron 57",
+      "listing_url": "https://www.idealista.it/immobile/33719415/",
+      "streets": [
+        "Via Conti Carron"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
