@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: f1-seller-radar-auto
@@ -234,3 +235,11 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+
+      - name: Avvia LISTA_MATTINO sul PC
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          echo "Avvio workflow Windows F1 Telefonate PC"
+          gh workflow run f1-telefonate-pc.yml --ref main
