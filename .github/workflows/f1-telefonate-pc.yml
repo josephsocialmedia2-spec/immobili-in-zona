@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'windows_valle_susa/.telefonate_now_trigger'
+      - 'windows_valle_susa/telefonate_now_trigger.txt'
 
 permissions:
   contents: read
