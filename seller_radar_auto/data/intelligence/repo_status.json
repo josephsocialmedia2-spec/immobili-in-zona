@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-08-28T06:06:19+00:00",
+  "checked_at": "2026-08-29T03:42:38+00:00",
   "records": 0,
   "sources": [
     {
-      "checked_at": "2026-08-28T06:06:19+00:00",
+      "checked_at": "2026-08-29T03:42:38+00:00",
       "name": "Acquisizione Susa",
       "repo": "josephsocialmedia2-spec/acquisizionesusa",
       "mode": "DATA_IF_AVAILABLE",
@@ -14,7 +14,7 @@
       "note": "Nessun dataset standard disponibile: fonte mantenuta collegata senza inventare dati."
     },
     {
-      "checked_at": "2026-08-28T06:06:19+00:00",
+      "checked_at": "2026-08-29T03:42:38+00:00",
       "name": "Open Social Scheduler",
       "repo": "josephsocialmedia2-spec/open-social-scheduler",
       "mode": "LINK_ONLY",
@@ -25,7 +25,7 @@
       "note": "Collegato al quadro generale; nessun dataset immobiliare importato."
     },
     {
-      "checked_at": "2026-08-28T06:06:19+00:00",
+      "checked_at": "2026-08-29T03:42:38+00:00",
       "name": "Launcher F1",
       "repo": "josephsocialmedia2-spec/launcher-dashboard",
       "mode": "LINK_ONLY",
@@ -36,7 +36,7 @@
       "note": "Collegato al quadro generale; nessun dataset immobiliare importato."
     },
     {
-      "checked_at": "2026-08-28T06:06:19+00:00",
+      "checked_at": "2026-08-29T03:42:38+00:00",
       "name": "Questionario di qualificazione",
       "repo": "josephsocialmedia2-spec/QUESTIONARIO-DI-QUALIFICAZIONE",
       "mode": "LINK_ONLY",
