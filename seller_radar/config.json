@@ -1,32 +1,14 @@
 {
-  "municipalities": [
-    "Avigliana", "Almese", "Susa", "Rivoli", "Collegno", "Condove", "Buttigliera Alta", "Rosta", "Villar Dora"
-  ],
-  "sources": [
-    {
-      "name": "idealista",
-      "url_templates": [
-        "https://www.idealista.it/vendita-case/{slug}/"
-      ],
-      "listing_markers": ["/immobile/"]
-    },
-    {
-      "name": "immobiliare.it",
-      "url_templates": [
-        "https://www.immobiliare.it/vendita-case/{slug}/"
-      ],
-      "listing_markers": ["/annunci/"]
-    },
-    {
-      "name": "casa.it",
-      "url_templates": [
-        "https://www.casa.it/vendita/residenziale/{slug}/"
-      ],
-      "listing_markers": ["/immobili/"]
-    }
-  ],
-  "request_delay_seconds": 4,
-  "timeout_seconds": 20,
-  "max_links_per_source_page": 80,
-  "user_agent": "F1SellerRadar/1.0 (+public-property-market-monitor; contact-manually)"
+  "deprecated": true,
+  "canonical_engine": "../seller_radar_auto",
+  "canonical_operational_output": "../seller_radar_auto/data/giro_acquisizione.csv",
+  "canonical_ui": "https://josephsocialmedia2-spec.github.io/launcher-dashboard/oggi.html",
+  "note": "Configurazione storica assorbita nel Seller Radar AUTO. Non usare questo file per avviare una seconda ricerca.",
+  "legacy_coverage_verified": {
+    "municipalities": [
+      "Avigliana", "Almese", "Susa", "Rivoli", "Collegno", "Condove", "Buttigliera Alta", "Rosta", "Villar Dora"
+    ],
+    "sources": ["idealista", "immobiliare.it", "casa.it"],
+    "status": "ALL_INCLUDED_IN_SELLER_RADAR_AUTO"
+  }
 }
