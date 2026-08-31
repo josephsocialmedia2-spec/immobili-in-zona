@@ -13,27 +13,35 @@ jobs:
       - uses: actions/checkout@v4
       - name: Python syntax
         run: |
-          python -m py_compile seller_radar_auto/search_engine.py seller_radar_auto/discovery_one.py seller_radar_auto/radar_postprocess.py seller_radar_auto/prepare_acquisition_route.py
-      - name: Configuration coverage
+          python -m py_compile seller_radar_auto/search_engine.py seller_radar_auto/discovery_one.py seller_radar_auto/radar_postprocess.py seller_radar_auto/prepare_acquisition_route.py windows_valle_susa/filtra_susa_20km.py
+      - name: Configuration coverage Susa 20 km
         run: |
           python - <<'PY'
-          import csv
+          import csv, json
           from pathlib import Path
           root=Path('seller_radar_auto')
+          cfg=json.loads((root/'f1_microzone_config.json').read_text(encoding='utf-8'))
+          assert cfg.get('priority_center') == 'Susa', cfg.get('priority_center')
+          assert int(cfg.get('priority_radius_km') or 0) == 20, cfg.get('priority_radius_km')
+          expected=[str(x).strip() for x in cfg.get('priority_towns',[]) if str(x).strip()]
+          assert expected, 'priority_towns vuoto'
+          assert len(expected) == len(set(expected)), 'duplicati in priority_towns'
           with (root/'municipalities.csv').open(encoding='utf-8-sig',newline='') as f:
               rows=list(csv.DictReader(f))
           enabled=[r['comune'] for r in rows if r.get('enabled')=='1']
-          assert len(enabled) >= 40, len(enabled)
-          assert "Sant'Ambrogio di Torino" not in enabled
+          assert enabled == expected, {'enabled': enabled, 'expected': expected}
+          for forbidden in ('Collegno','Rivoli','Avigliana',"Sant'Ambrogio di Torino"):
+              assert forbidden not in enabled, forbidden
           with (root/'portal_catalog.csv').open(encoding='utf-8-sig',newline='') as f:
               portals=[r for r in csv.DictReader(f) if r.get('enabled')=='1' and r.get('query_template')]
           assert len(portals) >= 19, len(portals)
-          print('Enabled territories:',len(enabled))
-          print('Configured query sources:',len(portals))
+          print('PASS center:',cfg['priority_center'],'radius_km:',cfg['priority_radius_km'])
+          print('PASS enabled territories:',len(enabled),', '.join(enabled))
+          print('PASS configured query sources:',len(portals))
           PY
-      - name: Real public-search smoke Avigliana
+      - name: Real public-search smoke Susa
         env:
-          F1_COMUNE: Avigliana
+          F1_COMUNE: Susa
           F1_DISCOVERY_OUT: /tmp/f1-discovery-qa.json
           F1_SEARCH_INTERVAL: "1"
         run: |
