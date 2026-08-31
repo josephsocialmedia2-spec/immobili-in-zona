@@ -191,6 +191,9 @@ jobs:
       - name: Applica prezzi e inserzionisti verificati
         run: python seller_radar_auto/apply_market_enrichment.py
 
+      - name: Quality gate operativo
+        run: python seller_radar_auto/sanitize_operational_queue.py
+
       - name: Prepara giro acquisizione
         run: python seller_radar_auto/prepare_acquisition_route.py
 
