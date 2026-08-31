@@ -1,0 +1,46 @@
+name: F1 Centrale Smoke Test
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'windows_valle_susa/centrale_telefonate_guidate.py'
+      - 'windows_valle_susa/f1_mobile_server.py'
+      - 'windows_valle_susa/APRI_CENTRALE_PC.bat'
+      - 'windows_valle_susa/ATTIVA_AVVIO_AUTOMATICO.ps1'
+      - 'windows_valle_susa/test_centrale_smoke.py'
+      - '.github/workflows/f1-centrale-smoke.yml'
+  pull_request:
+    paths:
+      - 'windows_valle_susa/centrale_telefonate_guidate.py'
+      - 'windows_valle_susa/f1_mobile_server.py'
+      - 'windows_valle_susa/APRI_CENTRALE_PC.bat'
+      - 'windows_valle_susa/ATTIVA_AVVIO_AUTOMATICO.ps1'
+      - 'windows_valle_susa/test_centrale_smoke.py'
+
+jobs:
+  smoke:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Sintassi Python
+        shell: powershell
+        run: |
+          python -m py_compile windows_valle_susa/centrale_telefonate_guidate.py
+          python -m py_compile windows_valle_susa/f1_mobile_server.py
+          python -m py_compile windows_valle_susa/test_centrale_smoke.py
+      - name: Smoke test Centrale
+        shell: powershell
+        run: python windows_valle_susa/test_centrale_smoke.py
+      - name: Controllo launcher PC
+        shell: powershell
+        run: |
+          $bat = Get-Content windows_valle_susa/APRI_CENTRALE_PC.bat -Raw
+          if ($bat -notmatch '127\.0\.0\.1:8766/health') { throw 'Health-check mancante nel launcher.' }
+          if ($bat -notmatch 'if not errorlevel 1 goto :open') { throw 'Apertura condizionata al health-check mancante.' }
+          if ($bat -notmatch 'start "" "%CENTRALE%"') { throw 'Apertura Centrale mancante.' }
+          Write-Host 'OK: il launcher non apre la Centrale prima del controllo /health.'
