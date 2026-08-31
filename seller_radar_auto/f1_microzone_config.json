@@ -1,6 +1,7 @@
 {
   "priority_center": "Susa",
-  "priority_radius_km": 10,
+  "priority_radius_km": 20,
+  "territory_rule": "FIRST_OFFICE_SUSA_STRICT_20KM",
   "priority_towns": [
     "Susa",
     "Mompantero",
@@ -14,7 +15,15 @@
     "Bussoleno",
     "Chianocco",
     "San Giorio di Susa",
-    "Moncenisio"
+    "Moncenisio",
+    "Exilles",
+    "Bruzolo",
+    "San Didero",
+    "Salbertrand",
+    "Villar Focchiardo",
+    "Borgone Susa",
+    "Sant'Antonino di Susa",
+    "Vaie"
   ],
   "main_towns": [
     "Susa",
@@ -30,28 +39,20 @@
     "Chianocco",
     "San Giorio di Susa",
     "Moncenisio",
-    "Avigliana",
-    "Almese",
-    "Condove",
+    "Exilles",
+    "Bruzolo",
+    "San Didero",
+    "Salbertrand",
+    "Villar Focchiardo",
+    "Borgone Susa",
     "Sant'Antonino di Susa",
-    "Vaie",
-    "Chiusa di San Michele",
-    "Collegno",
-    "Grugliasco",
-    "Rivoli",
-    "Alpignano",
-    "Pianezza",
-    "Rosta",
-    "Buttigliera Alta",
-    "Ferriera di Buttigliera Alta",
-    "Villarbasse",
-    "Caselette",
-    "Val della Torre"
+    "Vaie"
   ],
-  "excluded_towns": [
-    "Sant'Ambrogio di Torino"
-  ],
+  "excluded_towns": [],
   "nearby_streets_per_target": 4,
+  "contact_output_policy": "PUBLIC_CONTACTS_LOCAL_PC_ONLY",
+  "call_station": "F1_CENTRALE_TELEFONATE_GUIDATE",
+  "crm_entry_rule": "ONLY_AFTER_USEFUL_CALL_OUTCOME",
   "osm_cache_days": 7,
   "overpass_urls": [
     "https://lz4.overpass-api.de/api/interpreter",
@@ -60,6 +61,6 @@
   ],
   "nominatim_url": "https://nominatim.openstreetmap.org/search",
   "nominatim_min_interval_seconds": 15,
-  "user_agent": "F1Immobiliare-Microzone/1.2 (market intelligence; contact: f1immobiliaresusa@outlook.it)",
+  "user_agent": "F1Immobiliare-Microzone/2.0 (Susa 20 km market intelligence; contact: f1immobiliaresusa@outlook.it)",
   "map_data_attribution": "Data © OpenStreetMap contributors, ODbL 1.0"
 }
