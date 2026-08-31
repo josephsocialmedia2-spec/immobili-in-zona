@@ -5,12 +5,15 @@ $RunCmd = Join-Path $RunnerDir 'run.cmd'
 $AutoDir = Join-Path $env:LOCALAPPDATA 'F1Radar'
 $Watchdog = Join-Path $AutoDir 'F1_RUNNER_WATCHDOG.ps1'
 $MobileServer = Join-Path $AutoDir 'f1_mobile_server.py'
+$PcLauncher = Join-Path $AutoDir 'APRI_CENTRALE_PC.bat'
 $MobileServerUrl = 'https://raw.githubusercontent.com/josephsocialmedia2-spec/immobili-in-zona/main/windows_valle_susa/f1_mobile_server.py'
+$PcLauncherUrl = 'https://raw.githubusercontent.com/josephsocialmedia2-spec/immobili-in-zona/main/windows_valle_susa/APRI_CENTRALE_PC.bat'
 $Startup = [Environment]::GetFolderPath('Startup')
 $StartupLink = Join-Path $Startup 'F1 GitHub Runner.lnk'
 $Desktop = [Environment]::GetFolderPath('Desktop')
 $RunKey = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run'
 $MobileUrl = 'http://f1-radar.local:8766/'
+$HealthUrl = 'http://127.0.0.1:8766/health'
 
 if (-not (Test-Path $RunCmd)) {
     throw "Runner non trovato: $RunCmd. Esegui prima INSTALLA_AUTOMAZIONE_GITHUB.bat."
@@ -18,9 +21,11 @@ if (-not (Test-Path $RunCmd)) {
 
 New-Item -ItemType Directory -Force -Path $AutoDir | Out-Null
 
-Write-Host 'Scarico server mobile F1...'
+Write-Host 'Scarico server e launcher F1...'
 Invoke-WebRequest -UseBasicParsing -Headers @{ 'Cache-Control'='no-cache' } $MobileServerUrl -OutFile $MobileServer
 if (-not (Test-Path $MobileServer)) { throw 'Server mobile F1 non scaricato.' }
+Invoke-WebRequest -UseBasicParsing -Headers @{ 'Cache-Control'='no-cache' } $PcLauncherUrl -OutFile $PcLauncher
+if (-not (Test-Path $PcLauncher)) { throw 'Launcher Centrale PC non scaricato.' }
 
 # Zeroconf pubblicizza f1-radar.local nella sola LAN.
 py -m pip install --disable-pip-version-check --quiet zeroconf
@@ -85,7 +90,15 @@ $link.WorkingDirectory = $AutoDir
 $link.WindowStyle = 7
 $link.Save()
 
-# Collegamento desktop alla pagina mobile stabile.
+# PC: NON puntare direttamente a 127.0.0.1. Il launcher avvia il server,
+# verifica /health e apre il browser solo quando la Centrale risponde davvero.
+$pcLink = $ws.CreateShortcut((Join-Path $Desktop 'F1 - Apri Centrale PC.lnk'))
+$pcLink.TargetPath = $PcLauncher
+$pcLink.WorkingDirectory = $AutoDir
+$pcLink.IconLocation = 'shell32.dll,220'
+$pcLink.Save()
+
+# Telefono: collegamento di rete stabile; il watchdog mantiene il server acceso.
 $mobileLink = $ws.CreateShortcut((Join-Path $Desktop 'F1 - Lista Mattino Telefono.lnk'))
 $mobileLink.TargetPath = $MobileUrl
 $mobileLink.IconLocation = 'shell32.dll,220'
@@ -115,13 +128,19 @@ $listenerNow = Get-CimInstance Win32_Process | Where-Object {
 $mobileNow = Get-CimInstance Win32_Process | Where-Object {
     ($_.Name -like 'python*.exe' -or $_.Name -eq 'py.exe') -and $_.CommandLine -like "*$MobileServer*"
 }
+$healthOk = $false
+try {
+    $r = Invoke-WebRequest -UseBasicParsing -Uri $HealthUrl -TimeoutSec 2
+    $healthOk = ($r.StatusCode -eq 200 -and $r.Content.Trim() -eq 'OK')
+} catch {}
 
 Write-Host ''
 Write-Host 'F1 AUTOMAZIONE COMPLETA ATTIVATA.' -ForegroundColor Green
 Write-Host 'Da ora non devi aprire run.cmd manualmente.' -ForegroundColor Green
 Write-Host 'Runner: automatico ad ogni accesso Windows + riavvio automatico.'
+Write-Host 'PC: usa il collegamento "F1 - Apri Centrale PC". Avvia e verifica il server prima di aprire.' -ForegroundColor Cyan
 Write-Host 'Pagina telefono (stessa Wi-Fi):' -ForegroundColor Cyan
 Write-Host $MobileUrl -ForegroundColor Cyan
-Write-Host "Link di riserva/IP viene scritto in: $HOME\Documents\F1_Directory_Microzone\LINK_TELEFONO.txt"
+Write-Host "Link PC/telefono: $HOME\Documents\F1_Directory_Microzone\LINK_CENTRALE_TELEFONATE.txt"
 if ($listenerNow) { Write-Host 'Runner F1: ONLINE.' -ForegroundColor Green } else { Write-Host 'Runner F1: avvio richiesto.' -ForegroundColor Yellow }
-if ($mobileNow) { Write-Host 'Server telefono F1: ONLINE.' -ForegroundColor Green } else { Write-Host 'Server telefono F1: avvio richiesto.' -ForegroundColor Yellow }
+if ($mobileNow -and $healthOk) { Write-Host 'Server Centrale F1: ONLINE e /health OK.' -ForegroundColor Green } else { Write-Host 'Server Centrale F1: non ancora verificato.' -ForegroundColor Yellow }
