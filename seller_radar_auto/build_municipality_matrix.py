@@ -2,40 +2,33 @@
 import csv, json
 from pathlib import Path
 
-p = Path(__file__).resolve().parent / "municipalities.csv"
-priority = [
-    "Susa",
-    "Mompantero",
-    "Meana di Susa",
-    "Gravere",
-    "Giaglione",
-    "Venaus",
-    "Mattie",
-    "Chiomonte",
-    "Novalesa",
-    "Bussoleno",
-    "Chianocco",
-    "San Giorio di Susa",
-    "Moncenisio",
-]
+ROOT = Path(__file__).resolve().parent
+MUNICIPALITIES = ROOT / "municipalities.csv"
+CONFIG = ROOT / "f1_microzone_config.json"
 
-with p.open(encoding="utf-8-sig", newline="") as f:
-    enabled = [
-        (r.get("comune") or "").strip()
+cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
+priority = [str(x).strip() for x in cfg.get("priority_towns", []) if str(x).strip()]
+
+with MUNICIPALITIES.open(encoding="utf-8-sig", newline="") as f:
+    enabled = {
+        (r.get("comune") or "").strip().casefold(): (r.get("comune") or "").strip()
         for r in csv.DictReader(f)
         if r.get("enabled") == "1" and (r.get("comune") or "").strip()
-    ]
+    }
 
-# Prima Susa + raggio 10 km nell'ordine operativo definito; poi tutti gli altri.
-seen = set()
+# Regola unica: il primo ufficio e Susa. Il Radar non allarga piu la matrix
+# agli altri territori: elabora solo i comuni esplicitamente ammessi nel
+# perimetro operativo Susa 20 km, nell'ordine definito dalla configurazione.
 comuni = []
-for comune in priority + enabled:
+seen = set()
+for comune in priority:
     key = comune.casefold()
-    if key in seen:
-        continue
-    if comune not in enabled:
+    if key in seen or key not in enabled:
         continue
     seen.add(key)
-    comuni.append(comune)
+    comuni.append(enabled[key])
+
+if not comuni or comuni[0].casefold() != "susa":
+    raise SystemExit("Configurazione territorio non valida: Susa deve essere il centro operativo")
 
 print(json.dumps({"comune": comuni}, ensure_ascii=False, separators=(",", ":")))
