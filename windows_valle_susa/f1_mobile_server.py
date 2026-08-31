@@ -1,25 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""F1 Mobile Server — espone SOLO LISTA_MATTINO.html sulla LAN privata.
+"""F1 Local Call Server — espone SOLO la Centrale Telefonate Guidate.
 
-URL stabile pubblicizzato via mDNS: http://f1-radar.local:8766/
-I dati restano sul PC. Nessun upload a GitHub/cloud.
+URL stabile via mDNS: http://f1-radar.local:8766/
+Telefono, email, esiti e prospect restano sul PC. Nessun upload a GitHub/cloud.
 """
 from __future__ import annotations
 
 import html
 import os
 import socket
-import sys
-import threading
-import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 PORT = int(os.getenv("F1_MOBILE_PORT", "8766"))
 BASE = Path.home() / "Documents" / "F1_Directory_Microzone"
-REPORT = BASE / "LISTA_MATTINO.html"
-LINK_FILE = BASE / "LINK_TELEFONO.txt"
+REPORT = BASE / "F1_CENTRALE_TELEFONATE_GUIDATE.html"
+LINK_FILE = BASE / "LINK_CENTRALE_TELEFONATE.txt"
 HOSTNAME = "f1-radar.local."
 
 
@@ -46,7 +43,7 @@ def private_ipv4():
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "F1Mobile/1.0"
+    server_version = "F1Calls/2.0"
 
     def _headers(self, status=200, ctype="text/html; charset=utf-8"):
         self.send_response(status)
@@ -63,22 +60,21 @@ class Handler(BaseHTTPRequestHandler):
             self._headers(200, "text/plain; charset=utf-8")
             self.wfile.write(b"OK")
             return
-        if path not in {"/", "/LISTA_MATTINO.html"}:
+        if path not in {"/", "/F1_CENTRALE_TELEFONATE_GUIDATE.html"}:
             self._headers(404, "text/plain; charset=utf-8")
             self.wfile.write(b"Not found")
             return
         if not REPORT.exists():
             self._headers(503)
-            body = """<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta http-equiv='refresh' content='20'><title>F1 Radar</title><style>body{font-family:Arial;background:#070907;color:#fff;padding:24px}h1{color:#39f28a}.box{background:#101510;border:1px solid #2a342c;border-radius:14px;padding:18px}</style></head><body><h1>F1 Radar</h1><div class='box'><b>LISTA_MATTINO non ancora pronta.</b><p>La pagina si aggiorna automaticamente ogni 20 secondi.</p></div></body></html>"""
+            body = """<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta http-equiv='refresh' content='20'><title>F1 Centrale Telefonate</title><style>body{font-family:Arial;background:#070907;color:#fff;padding:24px}h1{color:#39f28a}.box{background:#101510;border:1px solid #2a342c;border-radius:14px;padding:18px}</style></head><body><h1>F1 Centrale Telefonate Guidate</h1><div class='box'><b>Lista del mattino non ancora pronta.</b><p>Il Radar Susa 20 km sta preparando i prospect. La pagina si aggiorna automaticamente.</p></div></body></html>"""
             self.wfile.write(body.encode("utf-8"))
             return
         try:
-            data = REPORT.read_bytes()
             self._headers(200)
-            self.wfile.write(data)
+            self.wfile.write(REPORT.read_bytes())
         except Exception as exc:
             self._headers(500)
-            self.wfile.write(("Errore lettura LISTA_MATTINO: " + html.escape(str(exc))).encode("utf-8"))
+            self.wfile.write(("Errore lettura Centrale: " + html.escape(str(exc))).encode("utf-8"))
 
     def log_message(self, fmt, *args):
         return
@@ -90,7 +86,7 @@ def register_mdns(ip):
         import socket as _socket
         info = ServiceInfo(
             "_http._tcp.local.",
-            "F1 Radar._http._tcp.local.",
+            "F1 Centrale Telefonate._http._tcp.local.",
             addresses=[_socket.inet_aton(ip)],
             port=PORT,
             properties={b"path": b"/"},
@@ -108,11 +104,13 @@ def main():
     ip = private_ipv4()
     stable = f"http://f1-radar.local:{PORT}/"
     fallback = f"http://{ip}:{PORT}/"
+    local_pc = f"http://127.0.0.1:{PORT}/"
     LINK_FILE.write_text(
-        "F1 LISTA MATTINO - TELEFONO\n\n"
-        f"Link principale: {stable}\n"
-        f"Link IP di riserva: {fallback}\n\n"
-        "PC e telefono devono essere collegati alla stessa rete Wi-Fi.\n",
+        "F1 CENTRALE TELEFONATE GUIDATE\n\n"
+        f"PC: {local_pc}\n"
+        f"Telefono: {stable}\n"
+        f"Telefono - IP di riserva: {fallback}\n\n"
+        "PC e telefono devono essere sulla stessa rete privata oppure collegati tramite la VPN privata configurata.\n",
         encoding="utf-8",
     )
     zc, info = register_mdns(ip)
