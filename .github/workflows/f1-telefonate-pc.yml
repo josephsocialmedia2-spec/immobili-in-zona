@@ -22,7 +22,7 @@ jobs:
     runs-on: [self-hosted, Windows, X64, f1-desktop]
     timeout-minutes: 180
     steps:
-      - name: Checkout Radar Valle di Susa
+      - name: Checkout F1 Susa 20 km
         uses: actions/checkout@v4
         with:
           ref: main
@@ -32,19 +32,25 @@ jobs:
         run: |
           py --version
 
-      - name: Radar completo -> microzone -> numeri -> LISTA_MATTINO V3
+      - name: Radar Susa 20 km -> prospect pubblici -> F1 Centrale Telefonate Guidate
         shell: powershell
         run: |
           powershell -NoProfile -ExecutionPolicy Bypass -File windows_valle_susa/run_telefonate.ps1
 
-      - name: Stato locale
+      - name: Stato locale centrale
         if: always()
         shell: powershell
         run: |
-          $report = Join-Path $HOME 'Documents\F1_Directory_Microzone\LISTA_MATTINO.html'
-          $calls = Join-Path $HOME 'Documents\F1_Directory_Microzone\data\telefonate_mattino.csv'
-          $log = Join-Path $HOME 'Documents\F1_Directory_Microzone\motore.log'
-          if (Test-Path $report) { Write-Host "RISULTATO: $report" } else { Write-Error 'LISTA_MATTINO.html non trovata.' }
-          if (Test-Path $calls) { Write-Host "CSV: $calls" }
+          $base = Join-Path $HOME 'Documents\F1_Directory_Microzone'
+          $report = Join-Path $base 'F1_CENTRALE_TELEFONATE_GUIDATE.html'
+          $calls = Join-Path $base 'data\centrale_telefonate_guidate.csv'
+          $prospects = Join-Path $base 'data\prospect_web_susa_20km.csv'
+          $micro = Join-Path $base 'data\telefonate_susa_20km.csv'
+          $log = Join-Path $base 'prospect_web.log'
+          if (Test-Path $report) { Write-Host "UNICO PUNTO CHIAMATE: $report" } else { Write-Error 'F1_CENTRALE_TELEFONATE_GUIDATE.html non trovata.' }
+          if (Test-Path $calls) { Write-Host "CSV CENTRALE: $calls" }
+          if (Test-Path $prospects) { Write-Host "PROSPECT WEB LOCALI: $prospects" }
+          if (Test-Path $micro) { Write-Host "CONTATTI MICROZONE 20 KM: $micro" }
           if (Test-Path $log) { Get-Content $log -Tail 30 }
-          Write-Host 'Nessun nome o telefono viene caricato come artifact GitHub.'
+          Write-Host 'Privacy: nessun nome, telefono, email o esito viene caricato come artifact GitHub.'
+          Write-Host 'CRM: nessun prospect viene inserito automaticamente; ingresso solo dopo esito utile.'
