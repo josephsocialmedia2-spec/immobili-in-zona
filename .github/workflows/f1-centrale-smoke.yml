@@ -8,6 +8,8 @@ on:
       - 'windows_valle_susa/f1_mobile_server.py'
       - 'windows_valle_susa/APRI_CENTRALE_PC.bat'
       - 'windows_valle_susa/ATTIVA_AVVIO_AUTOMATICO.ps1'
+      - 'windows_valle_susa/ensure_centrale_server.ps1'
+      - 'windows_valle_susa/run_telefonate.ps1'
       - 'windows_valle_susa/test_centrale_smoke.py'
       - '.github/workflows/f1-centrale-smoke.yml'
   pull_request:
@@ -16,7 +18,10 @@ on:
       - 'windows_valle_susa/f1_mobile_server.py'
       - 'windows_valle_susa/APRI_CENTRALE_PC.bat'
       - 'windows_valle_susa/ATTIVA_AVVIO_AUTOMATICO.ps1'
+      - 'windows_valle_susa/ensure_centrale_server.ps1'
+      - 'windows_valle_susa/run_telefonate.ps1'
       - 'windows_valle_susa/test_centrale_smoke.py'
+      - '.github/workflows/f1-centrale-smoke.yml'
 
 jobs:
   smoke:
@@ -33,9 +38,31 @@ jobs:
           python -m py_compile windows_valle_susa/centrale_telefonate_guidate.py
           python -m py_compile windows_valle_susa/f1_mobile_server.py
           python -m py_compile windows_valle_susa/test_centrale_smoke.py
+      - name: Parser PowerShell
+        shell: powershell
+        run: |
+          $files = @(
+            'windows_valle_susa/ensure_centrale_server.ps1',
+            'windows_valle_susa/run_telefonate.ps1',
+            'windows_valle_susa/ATTIVA_AVVIO_AUTOMATICO.ps1'
+          )
+          foreach ($file in $files) {
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path $file), [ref]$null, [ref]$errors)
+            if ($errors.Count -gt 0) { $errors | Format-List; throw "Errore sintassi PowerShell: $file" }
+          }
       - name: Smoke test Centrale
         shell: powershell
         run: python windows_valle_susa/test_centrale_smoke.py
+      - name: Test servizio persistente Windows e restart
+        shell: powershell
+        run: |
+          powershell.exe -NoProfile -ExecutionPolicy Bypass -File windows_valle_susa/ensure_centrale_server.ps1
+          $r = Invoke-WebRequest -UseBasicParsing -Uri 'http://127.0.0.1:8766/health' -TimeoutSec 3
+          if ($r.StatusCode -ne 200 -or $r.Content.Trim() -ne 'OK') { throw 'Health-check finale fallito.' }
+          $task = Get-ScheduledTask -TaskName 'F1 Centrale Server' -ErrorAction Stop
+          if ($task.Triggers.Count -lt 1) { throw 'Task senza trigger AtLogOn.' }
+          Write-Host 'PASS: task registrato, start/stop/restart e /health verificati su Windows.'
       - name: Controllo launcher PC
         shell: powershell
         run: |
@@ -43,4 +70,11 @@ jobs:
           if ($bat -notmatch '127\.0\.0\.1:8766/health') { throw 'Health-check mancante nel launcher.' }
           if ($bat -notmatch 'if not errorlevel 1 goto :open') { throw 'Apertura condizionata al health-check mancante.' }
           if ($bat -notmatch 'start "" "%CENTRALE%"') { throw 'Apertura Centrale mancante.' }
-          Write-Host 'OK: il launcher non apre la Centrale prima del controllo /health.'
+          Write-Host 'PASS: il launcher non apre la Centrale prima del controllo /health.'
+      - name: Cleanup test Windows
+        if: always()
+        shell: powershell
+        run: |
+          Stop-ScheduledTask -TaskName 'F1 Centrale Server' -ErrorAction SilentlyContinue
+          Unregister-ScheduledTask -TaskName 'F1 Centrale Server' -Confirm:$false -ErrorAction SilentlyContinue
+          Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'f1_mobile_server\.py' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
