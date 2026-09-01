@@ -1,0 +1,76 @@
+name: F1 Giro Refresh NOW
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "seller_radar_auto/.giro_refresh_trigger"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-giro-refresh-now
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rigenera Giro sulla versione più recente di main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "f1-giro-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            echo "Giro refresh tentativo $attempt/3"
+            git fetch origin main
+            git reset --hard origin/main
+
+            python -m py_compile \
+              seller_radar_auto/sanitize_operational_queue.py \
+              seller_radar_auto/prepare_acquisition_route.py \
+              seller_radar_auto/validate_giro_acquisizione.py \
+              seller_radar_auto/refresh_dashboard.py
+
+            python seller_radar_auto/sanitize_operational_queue.py
+            python seller_radar_auto/prepare_acquisition_route.py
+            python seller_radar_auto/validate_giro_acquisizione.py
+            python seller_radar_auto/refresh_dashboard.py
+
+            git add -A \
+              seller_radar_auto/data/work_queue.csv \
+              seller_radar_auto/data/work_queue_rejected.csv \
+              seller_radar_auto/data/giro_acquisizione.csv \
+              seller_radar_auto/data/giro_acquisizione_oggi.csv \
+              seller_radar_auto/data/giro_da_verificare.csv \
+              seller_radar_auto/data/giro_backlog.csv \
+              seller_radar_auto/data/giro_funzionari.csv \
+              seller_radar_auto/data/giro_funzionari.json \
+              seller_radar_auto/data/giro_riepilogo.json \
+              seller_radar_auto/dashboard.html
+
+            if git diff --cached --quiet; then
+              echo "PASS: Giro già allineato; nessuna modifica da salvare."
+              exit 0
+            fi
+
+            git commit -m "giro: refresh master and Susa 20 km operational route"
+            if git push origin HEAD:main; then
+              echo "PASS: Giro rigenerato e persistito su main."
+              exit 0
+            fi
+
+            echo "Main cambiato durante il refresh: rigenero sui dati più recenti."
+            sleep $((attempt * 2))
+          done
+
+          echo "FAIL: impossibile persistere il Giro dopo 3 tentativi."
+          exit 1
