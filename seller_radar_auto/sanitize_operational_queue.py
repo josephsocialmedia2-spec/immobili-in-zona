@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Ripulisce work_queue.csv prima del giro operativo.
 
-Obiettivo: impedire che pagine categoria/ricerca, risultati non azionabili o
-comuni fuori dal territorio F1 attivo entrino in giro_acquisizione.csv.
-Lo storico/Market Intelligence resta nello state e non viene cancellato.
+Obiettivo: rimuovere pagine categoria/ricerca e risultati non azionabili.
+Il filtro geografico NON appartiene a questo passaggio: work_queue.csv resta il
+MASTER Seller Radar completo; Susa +20 km viene applicato solo quando si genera
+il Giro operativo in prepare_acquisition_route.py.
 """
 from __future__ import annotations
 
@@ -15,7 +16,6 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent
 QUEUE = ROOT / "data" / "work_queue.csv"
 REJECTED = ROOT / "data" / "work_queue_rejected.csv"
-MUNICIPALITIES = ROOT / "municipalities.csv"
 
 CATEGORY_HOST_RULES = {
     "subito.it": [r"/annunci-[^/]+/(?:vendita|affitto)/(?:immobili|appartamenti|case|uffici|negozi)/"],
@@ -40,20 +40,6 @@ KNOWN_DETAIL_PATTERNS = (
 )
 
 
-def active_towns() -> set[str]:
-    if not MUNICIPALITIES.exists():
-        raise SystemExit("SANITIZE QUEUE: municipalities.csv assente")
-    with MUNICIPALITIES.open("r", encoding="utf-8-sig", newline="") as f:
-        towns = {
-            (r.get("comune") or "").strip().casefold()
-            for r in csv.DictReader(f)
-            if (r.get("enabled") or "").strip() == "1" and (r.get("comune") or "").strip()
-        }
-    if "susa" not in towns:
-        raise SystemExit("SANITIZE QUEUE: territorio non valido, Susa deve essere attiva")
-    return towns
-
-
 def is_detail_url(url: str) -> bool:
     return any(re.search(p, url or "", re.I) for p in KNOWN_DETAIL_PATTERNS)
 
@@ -72,10 +58,7 @@ def is_category_url(url: str) -> bool:
     return False
 
 
-def reason(row: dict, allowed_towns: set[str]) -> str:
-    town = (row.get("COMUNE") or "").strip().casefold()
-    if not town or town not in allowed_towns:
-        return "COMUNE_FUORI_TERRITORIO_F1"
+def reason(row: dict) -> str:
     url = (row.get("URL") or "").strip()
     title = (row.get("TITOLO") or "").strip().casefold()
     if is_category_url(url):
@@ -90,7 +73,6 @@ def main() -> None:
         print("SANITIZE QUEUE: work_queue.csv assente")
         return
 
-    allowed_towns = active_towns()
     with QUEUE.open("r", encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
@@ -98,7 +80,7 @@ def main() -> None:
 
     kept, rejected = [], []
     for row in rows:
-        why = reason(row, allowed_towns)
+        why = reason(row)
         if why:
             out = dict(row)
             out["MOTIVO_SCARTO_OPERATIVO"] = why
@@ -118,8 +100,8 @@ def main() -> None:
         w.writerows(rejected)
 
     print(
-        f"SANITIZE QUEUE: {len(rows)} totali -> {len(kept)} operativi, "
-        f"{len(rejected)} scartati; territorio F1={len(allowed_towns)} comuni attivi"
+        f"SANITIZE QUEUE MASTER: {len(rows)} totali -> {len(kept)} annunci azionabili, "
+        f"{len(rejected)} scartati per qualità; nessun filtro geografico applicato"
     )
 
 

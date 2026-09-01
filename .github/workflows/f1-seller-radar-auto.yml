@@ -43,7 +43,7 @@ jobs:
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Genera matrix comuni
+      - name: Genera matrix comuni MASTER
         id: matrix
         shell: bash
         run: |
@@ -194,8 +194,11 @@ jobs:
       - name: Quality gate operativo
         run: python seller_radar_auto/sanitize_operational_queue.py
 
-      - name: Prepara giro acquisizione
+      - name: Prepara giro acquisizione MASTER + Susa 20 km
         run: python seller_radar_auto/prepare_acquisition_route.py
+
+      - name: Verifica integrità Giro acquisizione
+        run: python seller_radar_auto/validate_giro_acquisizione.py
 
       - name: Sincronizza opportunità con F1 Demand Engine
         run: python seller_radar_auto/sync_demand_market.py

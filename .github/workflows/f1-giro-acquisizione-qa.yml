@@ -1,9 +1,8 @@
-name: F1 Giro Master QA
+name: F1 Giro Acquisizione QA
 
 on:
   workflow_dispatch:
   push:
-    branches: [main]
     paths:
       - "seller_radar_auto/build_municipality_matrix.py"
       - "seller_radar_auto/sanitize_operational_queue.py"
@@ -13,8 +12,7 @@ on:
       - "seller_radar_auto/municipalities.csv"
       - "seller_radar_auto/data/state.json"
       - "seller_radar_auto/data/work_queue.csv"
-      - ".github/workflows/f1-seller-radar-auto.yml"
-      - ".github/workflows/f1-giro-pr-gate.yml"
+      - ".github/workflows/f1-giro-acquisizione-qa.yml"
   pull_request:
     paths:
       - "seller_radar_auto/build_municipality_matrix.py"
@@ -25,15 +23,13 @@ on:
       - "seller_radar_auto/municipalities.csv"
       - "seller_radar_auto/data/state.json"
       - "seller_radar_auto/data/work_queue.csv"
-      - ".github/workflows/f1-seller-radar-auto.yml"
       - ".github/workflows/f1-giro-acquisizione-qa.yml"
-      - ".github/workflows/f1-giro-pr-gate.yml"
 
 permissions:
   contents: read
 
 jobs:
-  giro-master-integrity:
+  giro-integrity:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -48,7 +44,7 @@ jobs:
             seller_radar_auto/refresh_dashboard.py \
             seller_radar_auto/validate_giro_acquisizione.py
 
-      - name: Verifica discovery MASTER su tutto il catalogo
+      - name: Verifica matrix discovery MASTER
         shell: bash
         run: |
           MATRIX=$(python seller_radar_auto/build_municipality_matrix.py)
@@ -62,10 +58,10 @@ jobs:
           assert matrix and matrix[0].casefold() == "susa"
           assert {c.casefold() for c in matrix} == expected
           assert len(matrix) == len(expected)
-          print(f"PASS MATRIX MASTER | comuni={len(matrix)} | centro={matrix[0]}")
+          print(f"PASS MATRIX MASTER | comuni={len(matrix)} centro={matrix[0]}")
           PY
 
-      - name: Verifica che il sanitizer non tagli per geografia
+      - name: Sanitizer qualità senza filtro geografico
         shell: bash
         run: |
           python - <<'PY'
@@ -73,34 +69,32 @@ jobs:
           from pathlib import Path
           sys.path.insert(0, "seller_radar_auto")
           import sanitize_operational_queue as s
-          q = Path("seller_radar_auto/data/work_queue.csv")
-          m = Path("seller_radar_auto/municipalities.csv")
-          with m.open(encoding="utf-8-sig", newline="") as f:
+          with Path("seller_radar_auto/municipalities.csv").open(encoding="utf-8-sig", newline="") as f:
               active = {(r.get("comune") or "").strip().casefold() for r in csv.DictReader(f) if r.get("enabled") == "1"}
-          with q.open(encoding="utf-8-sig", newline="") as f:
+          with Path("seller_radar_auto/data/work_queue.csv").open(encoding="utf-8-sig", newline="") as f:
               rows = list(csv.DictReader(f))
           protected = sorted({(r.get("URL") or "").strip() for r in rows if (r.get("COMUNE") or "").strip().casefold() not in active and not s.reason(r) and (r.get("URL") or "").strip()})
-          Path("/tmp/outside_keepable.json").write_text(json.dumps(protected), encoding="utf-8")
-          print(f"SELLER FUORI TERRITORIO DA PRESERVARE={len(protected)}")
+          Path("/tmp/giro_protected.json").write_text(json.dumps(protected), encoding="utf-8")
+          print(f"FUORI TERRITORIO VALIDAMENTE AZIONABILI={len(protected)}")
           PY
           python seller_radar_auto/sanitize_operational_queue.py
           python - <<'PY'
           import csv, json
           from pathlib import Path
-          protected = set(json.loads(Path("/tmp/outside_keepable.json").read_text(encoding="utf-8")))
+          protected = set(json.loads(Path("/tmp/giro_protected.json").read_text(encoding="utf-8")))
           with Path("seller_radar_auto/data/work_queue.csv").open(encoding="utf-8-sig", newline="") as f:
               remaining = {(r.get("URL") or "").strip() for r in csv.DictReader(f)}
-          missing = protected - remaining
-          assert not missing, f"Sanitizer ha eliminato {len(missing)} seller validi solo perché fuori territorio"
-          print(f"PASS SANITIZER MASTER | fuori_territorio_preservati={len(protected)}")
+          assert protected <= remaining, f"Sanitizer ha tagliato {len(protected - remaining)} seller fuori territorio"
+          print(f"PASS SANITIZER MASTER | preservati={len(protected)}")
           PY
 
-      - name: Rigenera e valida Giro sulla sequenza reale
-        run: |
-          python seller_radar_auto/prepare_acquisition_route.py
-          python seller_radar_auto/validate_giro_acquisizione.py
+      - name: Rigenera Giro dai dati sanitizzati
+        run: python seller_radar_auto/prepare_acquisition_route.py
 
-      - name: Verifica dashboard MASTER e operativo
+      - name: Verifica integrità master e territorio
+        run: python seller_radar_auto/validate_giro_acquisizione.py
+
+      - name: Rigenera dashboard e verifica contatori
         shell: bash
         run: |
           python seller_radar_auto/refresh_dashboard.py
@@ -110,4 +104,4 @@ jobs:
           grep -q "INDIRIZZO DA VERIFICARE" seller_radar_auto/dashboard.html
           grep -q "BACKLOG FUORI TERRITORIO" seller_radar_auto/dashboard.html
           grep -q "MASTER completo + filtro operativo Susa 20 km" seller_radar_auto/dashboard.html
-          echo "PASS DASHBOARD MASTER + GIRO"
+          echo "PASS DASHBOARD GIRO"

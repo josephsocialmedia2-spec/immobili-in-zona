@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
-"""Validazione fail-closed del Giro F1.
+"""QA deterministico del Giro Acquisizione.
 
-Il Market Intelligence può contenere storico fuori zona. Il Giro operativo no:
-usa esclusivamente i comuni enabled=1 in municipalities.csv e deve partire da
-un territorio con Susa attiva.
+Fallisce se il master viene tagliato dal filtro Susa 20 km, se una fermata/team
+finisce fuori territorio, o se i contatori non corrispondono ai CSV generati.
 """
-from __future__ import annotations
-
 import csv
 import json
 import re
@@ -15,91 +12,98 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-MUNICIPALITIES = ROOT / "municipalities.csv"
-GIRO = DATA / "giro_acquisizione.csv"
+QUEUE = DATA / "work_queue.csv"
+MASTER = DATA / "giro_acquisizione.csv"
+TODAY = DATA / "giro_acquisizione_oggi.csv"
+VERIFY = DATA / "giro_da_verificare.csv"
+BACKLOG = DATA / "giro_backlog.csv"
 TEAM = DATA / "giro_funzionari.csv"
-TEAM_JSON = DATA / "giro_funzionari.json"
+SUMMARY = DATA / "giro_riepilogo.json"
+MUNICIPALITIES = ROOT / "municipalities.csv"
 
 
-def norm(value: object) -> str:
-    s = unicodedata.normalize("NFKD", str(value or ""))
-    s = "".join(c for c in s if not unicodedata.combining(c)).lower()
-    s = s.replace("’", "'")
-    s = re.sub(r"[^a-z0-9]+", " ", s)
-    return re.sub(r"\s+", " ", s).strip()
-
-
-def load_csv(path: Path) -> list[dict]:
+def read_csv(path):
     if not path.exists():
-        raise SystemExit(f"FAIL: file mancante: {path}")
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
+        raise AssertionError(f"File obbligatorio assente: {path.name}")
+    with path.open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
-def allowed_towns() -> set[str]:
-    rows = load_csv(MUNICIPALITIES)
-    towns = {
-        norm(r.get("comune"))
-        for r in rows
-        if (r.get("enabled") or "").strip() == "1" and norm(r.get("comune"))
-    }
-    if "susa" not in towns:
-        raise SystemExit("FAIL: Susa non è attiva nel territorio F1")
-    return towns
+def norm(value):
+    s = unicodedata.normalize("NFKD", str(value or ""))
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", s)).strip()
 
 
-def assert_towns(rows: list[dict], allowed: set[str], label: str) -> None:
-    outside = sorted({
-        (r.get("COMUNE") or "").strip()
-        for r in rows
-        if norm(r.get("COMUNE")) not in allowed
-    })
-    if outside:
-        raise SystemExit(f"FAIL {label}: comuni fuori territorio: {outside}")
+def as_int(value):
+    try:
+        return int(value or 0)
+    except (TypeError, ValueError):
+        return 0
 
 
-def main() -> int:
-    allowed = allowed_towns()
-    giro = load_csv(GIRO)
-    team = load_csv(TEAM)
-    assert_towns(giro, allowed, "GIRO")
-    assert_towns(team, allowed, "TEAM")
+queue = read_csv(QUEUE)
+master = read_csv(MASTER)
+today = read_csv(TODAY)
+verify = read_csv(VERIFY)
+backlog = read_csv(BACKLOG)
+team = read_csv(TEAM)
+municipalities = read_csv(MUNICIPALITIES)
+assert SUMMARY.exists(), "File obbligatorio assente: giro_riepilogo.json"
+summary = json.loads(SUMMARY.read_text(encoding="utf-8"))
 
-    giro_urls = {(r.get("URL") or "").strip() for r in giro if (r.get("URL") or "").strip()}
-    foreign_team_urls = sorted({
-        (r.get("URL") or "").strip()
-        for r in team
-        if (r.get("URL") or "").strip() and (r.get("URL") or "").strip() not in giro_urls
-    })
-    if foreign_team_urls:
-        raise SystemExit(f"FAIL TEAM: {len(foreign_team_urls)} righe non presenti nel Giro")
+active_towns = {norm(r.get("comune")) for r in municipalities if r.get("enabled") == "1" and norm(r.get("comune"))}
+assert "susa" in active_towns, "Susa non è nel territorio operativo"
 
-    disabled_known = {
-        norm(r.get("comune"))
-        for r in load_csv(MUNICIPALITIES)
-        if (r.get("enabled") or "").strip() != "1" and norm(r.get("comune"))
-    }
-    leaked_disabled = sorted({
-        (r.get("COMUNE") or "").strip()
-        for r in giro
-        if norm(r.get("COMUNE")) in disabled_known
-    })
-    if leaked_disabled:
-        raise SystemExit(f"FAIL GIRO: comuni disabled presenti: {leaked_disabled}")
+# 1. Il Giro master deve essere una classificazione della coda completa, non un sottoinsieme.
+assert len(master) == len(queue), f"Master tagliato: queue={len(queue)} giro_master={len(master)}"
+queue_urls = [(r.get("URL") or "").strip() for r in queue]
+master_urls = [(r.get("URL") or "").strip() for r in master]
+assert sorted(queue_urls) == sorted(master_urls), "Gli URL del Giro master non coincidono con work_queue.csv"
 
-    if TEAM_JSON.exists():
-        meta = json.loads(TEAM_JSON.read_text(encoding="utf-8"))
-        declared = {norm(x) for x in (meta.get("territory_active_towns") or []) if norm(x)}
-        if declared and declared != allowed:
-            raise SystemExit("FAIL TEAM JSON: territorio dichiarato diverso da municipalities.csv")
+# 2. Il filtro operativo deve agire soltanto sul Giro di oggi.
+for r in today:
+    assert r.get("TERRITORIO_OPERATIVO") == "SI", f"Record TODAY fuori territorio: {r.get('COMUNE')}"
+    assert norm(r.get("COMUNE")) in active_towns, f"Comune TODAY non enabled: {r.get('COMUNE')}"
+    assert r.get("STATO_GIRO") in {"FERMATA_PRONTA", "DA_VERIFICARE"}, f"Stato TODAY inatteso: {r.get('STATO_GIRO')}"
 
-    towns_in_giro = sorted({(r.get("COMUNE") or "").strip() for r in giro if (r.get("COMUNE") or "").strip()})
-    print(
-        f"PASS GIRO F1 | righe={len(giro)} | team={len(team)} | "
-        f"comuni_operativi={len(towns_in_giro)}/{len(allowed)} | centro=Susa"
-    )
-    return 0
+for r in verify:
+    assert r.get("STATO_GIRO") == "DA_VERIFICARE", "File verifica contiene record non DA_VERIFICARE"
+    assert norm(r.get("COMUNE")) in active_towns, "Record da verificare fuori territorio"
 
+for r in backlog:
+    assert r.get("STATO_GIRO") == "BACKLOG", "File backlog contiene record con stato diverso da BACKLOG"
+    assert norm(r.get("COMUNE")) not in active_towns, f"BACKLOG dentro territorio operativo: {r.get('COMUNE')}"
 
-if __name__ == "__main__":
-    raise SystemExit(main())
+# 3. Nessun funzionario deve ricevere record fuori territorio o non pronto.
+for r in team:
+    assert r.get("STATO_ASSEGNAZIONE") == "ASSEGNATO", "Team contiene riga non assegnata"
+    assert r.get("STATO_GIRO") == "FERMATA_PRONTA", "Team contiene riga non pronta"
+    assert r.get("TERRITORIO_OPERATIVO") == "SI", "Team contiene riga fuori territorio"
+    assert norm(r.get("COMUNE")) in active_towns, f"Team fuori Susa+20: {r.get('COMUNE')}"
+
+# 4. I contatori pubblicati devono essere derivati dai dati, non hard-coded.
+expected = {
+    "seller_master_totali": len(master),
+    "seller_attivi_master": sum(1 for r in master if r.get("STATO_GIRO") != "STORICO_NON_ATTIVO"),
+    "storico_non_attivo": sum(1 for r in master if r.get("STATO_GIRO") == "STORICO_NON_ATTIVO"),
+    "nel_territorio_attivo": len(today),
+    "fermate_pronte": sum(1 for r in master if r.get("STATO_GIRO") == "FERMATA_PRONTA"),
+    "indirizzo_da_verificare": len(verify),
+    "backlog_fuori_territorio": len(backlog),
+    "fermate_assegnate_team": len(team),
+    "territori_operativi_configurati": len(active_towns),
+}
+for key, value in expected.items():
+    assert as_int(summary.get(key)) == value, f"Contatore {key} errato: json={summary.get(key)} atteso={value}"
+
+# 5. Partizione dei seller attivi: territorio + backlog = attivi master.
+assert len(today) + len(backlog) == expected["seller_attivi_master"], (
+    "Partizione seller attivi incoerente: territorio + backlog != seller_attivi_master"
+)
+
+print(
+    "PASS GIRO QA | "
+    f"master={len(master)} attivi={expected['seller_attivi_master']} territorio={len(today)} "
+    f"fermate={expected['fermate_pronte']} verifica={len(verify)} backlog={len(backlog)} team={len(team)}"
+)
