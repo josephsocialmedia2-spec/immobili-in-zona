@@ -21,6 +21,14 @@ ADDRESS_RE = re.compile(
     r"[A-Za-zÀ-ÿ0-9'’.\-\s,]{2,80}?[,\s]+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|[A-Za-z])?\b",
     re.I,
 )
+# Una via/località senza numero civico è comunque una destinazione operativa utile.
+# Questo evita che opportunità valide (es. terreni edificabili) restino nascoste
+# in "INDIRIZZO DA VERIFICARE" quando il titolo contiene già la strada.
+STREET_RE = re.compile(
+    r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
+    r"[A-Za-zÀ-ÿ0-9'’.\-\s]{2,80}?(?=,|\s+-\s+|$)",
+    re.I,
+)
 PRICE_PATTERNS = [
     re.compile(r"(?:€|eur(?:o)?)\s*([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})", re.I),
     re.compile(r"([0-9]{1,3}(?:[.\s][0-9]{3})+|[0-9]{4,8})\s*(?:€|eur(?:o)?)", re.I),
@@ -54,13 +62,19 @@ def exact_address(x):
         m = ADDRESS_RE.search(a)
         if m:
             return clean(m.group(0)).replace(" /", "/").replace("/ ", "/")
+        m = STREET_RE.search(a)
+        if m:
+            return clean(m.group(0))
     title = clean(x.get("title"))
     m = ADDRESS_RE.search(title)
     if m:
         return clean(m.group(0)).replace(" /", "/").replace("/ ", "/")
+    m = STREET_RE.search(title)
+    if m:
+        return clean(m.group(0))
     street = clean(area.get("street"))
     if street:
-        return f"{street} — CIVICO DA VERIFICARE"
+        return street
     return "INDIRIZZO DA VERIFICARE"
 
 
@@ -128,6 +142,16 @@ for r in rows:
     stage = r.get("FASE_PROGETTO") or x.get("project_stage") or ""
     goal = r.get("OBIETTIVO_COMMERCIALE") or x.get("commercial_goal") or "ACQUISIZIONE IMMOBILE"
     target = r.get("TARGET") or x.get("lead_target") or "IMMOBILE"
+
+    # Normalizzazione trasversale: se Brief/Market Intelligence riconoscono un
+    # terreno edificabile, anche il giro operativo deve trattarlo come sviluppo.
+    thing_norm = norm(thing)
+    if "terreno edificabile" in thing_norm or "area edificabile" in thing_norm or "lotto edificabile" in thing_norm:
+        otype = "TERRENO_SVILUPPO"
+        target = "TERRENO"
+        if not goal or goal == "ACQUISIZIONE IMMOBILE":
+            goal = "ACQUISIZIONE TERRENO / SVILUPPO"
+
     pdf_url = r.get("PDF_DA_VERIFICARE") or ""
     action = action_for(address, otype, goal, pdf_url)
 
