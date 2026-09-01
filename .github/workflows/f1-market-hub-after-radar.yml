@@ -53,16 +53,44 @@ jobs:
       - name: Salva quadro generale
         shell: bash
         run: |
+          set -euo pipefail
           git config user.name "f1-market-hub-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add seller_radar_auto/data/state.json \
-                  seller_radar_auto/data/intelligence \
-                  seller_radar_auto/intelligence_dashboard.html \
-                  seller_radar_auto/appointment_brief.html
-          if git diff --cached --quiet; then
-            echo "Nessun aggiornamento del Market Hub."
-          else
+
+          SNAPSHOT_DIR="$(mktemp -d)"
+          mkdir -p "$SNAPSHOT_DIR/seller_radar_auto/data"
+          cp -a seller_radar_auto/data/state.json "$SNAPSHOT_DIR/seller_radar_auto/data/state.json"
+          cp -a seller_radar_auto/data/intelligence "$SNAPSHOT_DIR/seller_radar_auto/data/intelligence"
+          cp -a seller_radar_auto/intelligence_dashboard.html "$SNAPSHOT_DIR/seller_radar_auto/intelligence_dashboard.html"
+          cp -a seller_radar_auto/appointment_brief.html "$SNAPSHOT_DIR/seller_radar_auto/appointment_brief.html"
+
+          restore_outputs() {
+            mkdir -p seller_radar_auto/data
+            cp -a "$SNAPSHOT_DIR/seller_radar_auto/data/state.json" seller_radar_auto/data/state.json
+            rm -rf seller_radar_auto/data/intelligence
+            cp -a "$SNAPSHOT_DIR/seller_radar_auto/data/intelligence" seller_radar_auto/data/intelligence
+            cp -a "$SNAPSHOT_DIR/seller_radar_auto/intelligence_dashboard.html" seller_radar_auto/intelligence_dashboard.html
+            cp -a "$SNAPSHOT_DIR/seller_radar_auto/appointment_brief.html" seller_radar_auto/appointment_brief.html
+          }
+
+          for attempt in 1 2 3; do
+            echo "Persist Market Hub tentativo $attempt/3"
+            git fetch origin main
+            git reset --hard origin/main
+            restore_outputs
+            git add -A seller_radar_auto/data/state.json seller_radar_auto/data/intelligence seller_radar_auto/intelligence_dashboard.html seller_radar_auto/appointment_brief.html
+            if git diff --cached --quiet; then
+              echo "Nessun aggiornamento del Market Hub."
+              exit 0
+            fi
             git commit -m "market-hub: aggiorna prezzi, agenzie e brief"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+            if git push origin HEAD:main; then
+              echo "Market Hub persist completato."
+              exit 0
+            fi
+            echo "Push concorrente rilevato: riallineo main e riapplico il quadro generale."
+            sleep $((attempt * 2))
+          done
+
+          echo "Persist Market Hub fallito dopo 3 tentativi."
+          exit 1
