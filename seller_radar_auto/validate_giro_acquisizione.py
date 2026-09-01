@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import csv
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -17,6 +19,14 @@ MUNICIPALITIES = ROOT / "municipalities.csv"
 GIRO = DATA / "giro_acquisizione.csv"
 TEAM = DATA / "giro_funzionari.csv"
 TEAM_JSON = DATA / "giro_funzionari.json"
+
+
+def norm(value: object) -> str:
+    s = unicodedata.normalize("NFKD", str(value or ""))
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+    s = s.replace("’", "'")
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def load_csv(path: Path) -> list[dict]:
@@ -29,9 +39,9 @@ def load_csv(path: Path) -> list[dict]:
 def allowed_towns() -> set[str]:
     rows = load_csv(MUNICIPALITIES)
     towns = {
-        (r.get("comune") or "").strip().casefold()
+        norm(r.get("comune"))
         for r in rows
-        if (r.get("enabled") or "").strip() == "1" and (r.get("comune") or "").strip()
+        if (r.get("enabled") or "").strip() == "1" and norm(r.get("comune"))
     }
     if "susa" not in towns:
         raise SystemExit("FAIL: Susa non è attiva nel territorio F1")
@@ -42,7 +52,7 @@ def assert_towns(rows: list[dict], allowed: set[str], label: str) -> None:
     outside = sorted({
         (r.get("COMUNE") or "").strip()
         for r in rows
-        if (r.get("COMUNE") or "").strip().casefold() not in allowed
+        if norm(r.get("COMUNE")) not in allowed
     })
     if outside:
         raise SystemExit(f"FAIL {label}: comuni fuori territorio: {outside}")
@@ -65,21 +75,21 @@ def main() -> int:
         raise SystemExit(f"FAIL TEAM: {len(foreign_team_urls)} righe non presenti nel Giro")
 
     disabled_known = {
-        (r.get("comune") or "").strip().casefold()
+        norm(r.get("comune"))
         for r in load_csv(MUNICIPALITIES)
-        if (r.get("enabled") or "").strip() != "1" and (r.get("comune") or "").strip()
+        if (r.get("enabled") or "").strip() != "1" and norm(r.get("comune"))
     }
     leaked_disabled = sorted({
         (r.get("COMUNE") or "").strip()
         for r in giro
-        if (r.get("COMUNE") or "").strip().casefold() in disabled_known
+        if norm(r.get("COMUNE")) in disabled_known
     })
     if leaked_disabled:
         raise SystemExit(f"FAIL GIRO: comuni disabled presenti: {leaked_disabled}")
 
     if TEAM_JSON.exists():
         meta = json.loads(TEAM_JSON.read_text(encoding="utf-8"))
-        declared = set(meta.get("territory_active_towns") or [])
+        declared = {norm(x) for x in (meta.get("territory_active_towns") or []) if norm(x)}
         if declared and declared != allowed:
             raise SystemExit("FAIL TEAM JSON: territorio dichiarato diverso da municipalities.csv")
 
