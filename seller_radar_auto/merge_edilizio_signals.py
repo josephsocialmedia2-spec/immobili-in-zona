@@ -18,9 +18,30 @@ def norm(value):
 
 
 def fetch_db():
-    req = urllib.request.Request(RADAR_URL, headers={"User-Agent": "F1-Seller-Radar-Edilizio/1.0"})
+    req = urllib.request.Request(RADAR_URL, headers={"User-Agent": "F1-Seller-Radar-Edilizio/1.1"})
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode("utf-8-sig"))
+
+
+def practice_id(comune, atto):
+    town = norm(comune)
+    text = norm(atto)
+    # Identificatore stabile per evitare che la stessa pratica compaia sia
+    # come opportunità qualificata sia come backlog.
+    patterns = [
+        r"\balbo\s*(\d+\s*/\s*\d{4})",
+        r"\bpdc(?:\s+in\s+sanatoria)?\s*(\d+\s*/\s*\d{4})",
+        r"\bscia(?:\s+alternativa(?:\s+a\s+pdc)?)?\s*(\d+\s*/\s*\d{4})",
+        r"\bscagi\s*(\d+\s*/\s*\d{4})",
+        r"\b(?:accertamento\s+conformit[aà])\s*(\d+\s*/\s*\d{4})",
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, text, flags=re.I)
+        if m:
+            number = re.sub(r"\s+", "", m.group(1))
+            label = pattern.split("\\b")[1].split("(")[0].replace("\\s+", "_").replace("?:", "")[:20]
+            return f"{town}|{label}|{number}"
+    return f"{town}|{text}"
 
 
 def contact_index(db):
@@ -80,10 +101,9 @@ def row_from_opportunity(o, headers, contacts):
     priority = str(o.get("priorita") or "MEDIA").upper()
     address = str(o.get("indirizzo") or "DA APPROFONDIRE").strip()
     description = " · ".join(x for x in [o.get("tipo"), o.get("descrizione"), ref] if x)
-    target = target_for(description)
     action = str(o.get("azione") or "APRI FONTE E QUALIFICA").strip()
     if ref:
-        action = action + " · RIFERIMENTO: " + ref
+        action += " · RIFERIMENTO: " + ref
     row = {h: "" for h in headers}
     row.update({
         "STATO_ASSEGNAZIONE": "DA_ASSEGNARE",
@@ -93,7 +113,7 @@ def row_from_opportunity(o, headers, contacts):
         "PRIORITA": priority,
         "SCORE": str(score(priority, bool(o.get("verified")))),
         "TIPO_OPPORTUNITA": "EDILIZIO_" + re.sub(r"[^A-Z0-9]+", "_", str(o.get("tipo") or "OPPORTUNITA").upper()).strip("_")[:45],
-        "TARGET": target,
+        "TARGET": target_for(description),
         "FASE_PROGETTO": str(o.get("atto") or "").strip(),
         "OBIETTIVO_COMMERCIALE": "ACQUISIZIONE / NETWORKING TERRITORIALE",
         "COMUNE": str(o.get("comune") or "").strip(),
@@ -135,17 +155,6 @@ def row_from_backlog(b, headers):
     return row
 
 
-def dedupe_key(row):
-    url = norm(row.get("URL"))
-    phase = norm(row.get("FASE_PROGETTO"))
-    town = norm(row.get("COMUNE"))
-    if url and phase:
-        return ("edilizio", town, phase, url)
-    if url:
-        return ("url", url)
-    return ("edilizio", town, phase, norm(row.get("COSA_CERCO")))
-
-
 def main():
     if not GIRO.exists():
         raise SystemExit(f"File Seller Radar mancante: {GIRO}")
@@ -162,21 +171,31 @@ def main():
         raise SystemExit("Schema giro_acquisizione incompatibile: " + ", ".join(sorted(missing)))
 
     contacts = contact_index(db)
-    candidates = [row_from_opportunity(o, headers, contacts) for o in db.get("opportunities", [])]
-    candidates += [row_from_backlog(b, headers) for b in db.get("backlog", [])]
+    opportunities = list(db.get("opportunities", []))
+    backlog = list(db.get("backlog", []))
 
-    # Rimuove vecchie righe edilizie e le rigenera dalla fonte corrente: niente duplicati/stale.
+    # Le opportunità qualificate hanno precedenza. Se la stessa pratica è nel
+    # backlog, il backlog non genera una seconda riga.
+    qualified_ids = {practice_id(o.get("comune"), o.get("atto")) for o in opportunities}
+    candidates = [row_from_opportunity(o, headers, contacts) for o in opportunities]
+    skipped_backlog = 0
+    for b in backlog:
+        if practice_id(b.get("comune"), b.get("atto")) in qualified_ids:
+            skipped_backlog += 1
+            continue
+        candidates.append(row_from_backlog(b, headers))
+
     base = [r for r in existing if not str(r.get("SELLER_SIGNAL") or "").startswith("RADAR_EDILIZIO")]
-    seen = {dedupe_key(r) for r in base}
     merged = list(base)
     added = []
+    seen_practices = set()
     for row in candidates:
         if not row.get("COMUNE"):
             continue
-        key = dedupe_key(row)
-        if key in seen:
+        pid = practice_id(row.get("COMUNE"), row.get("FASE_PROGETTO"))
+        if pid in seen_practices:
             continue
-        seen.add(key)
+        seen_practices.add(pid)
         merged.append(row)
         added.append(row)
 
@@ -193,7 +212,13 @@ def main():
 
     if not added:
         raise SystemExit("Nessun segnale edilizio generato: integrazione non valida")
-    print(json.dumps({"opportunities": len(db.get("opportunities", [])), "backlog": len(db.get("backlog", [])), "seller_rows_added": len(added), "seller_rows_total": len(merged)}, ensure_ascii=False))
+    print(json.dumps({
+        "qualified": len(opportunities),
+        "backlog": len(backlog),
+        "backlog_duplicates_skipped": skipped_backlog,
+        "unique_edilizio_signals": len(added),
+        "seller_rows_total": len(merged)
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":
