@@ -49,6 +49,7 @@ verify = read_csv(VERIFY)
 backlog = read_csv(BACKLOG)
 team = read_csv(TEAM)
 municipalities = read_csv(MUNICIPALITIES)
+assert SUMMARY.exists(), "File obbligatorio assente: giro_riepilogo.json"
 summary = json.loads(SUMMARY.read_text(encoding="utf-8"))
 
 active_towns = {norm(r.get("comune")) for r in municipalities if r.get("enabled") == "1" and norm(r.get("comune"))}
