@@ -231,16 +231,50 @@ jobs:
       - name: Persist public market data
         shell: bash
         run: |
+          set -euo pipefail
           git config user.name "f1-seller-radar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A seller_radar_auto/data seller_radar_auto/dashboard.html seller_radar_auto/intelligence_dashboard.html seller_radar_auto/integrations.json
-          if git diff --cached --quiet; then
-            echo "Nessuna modifica da salvare."
-          else
+
+          SNAPSHOT_DIR="$(mktemp -d)"
+          mkdir -p "$SNAPSHOT_DIR/seller_radar_auto"
+          cp -a seller_radar_auto/data "$SNAPSHOT_DIR/seller_radar_auto/data"
+          for f in dashboard.html intelligence_dashboard.html integrations.json; do
+            if [ -e "seller_radar_auto/$f" ]; then
+              cp -a "seller_radar_auto/$f" "$SNAPSHOT_DIR/seller_radar_auto/$f"
+            fi
+          done
+
+          restore_outputs() {
+            rm -rf seller_radar_auto/data
+            cp -a "$SNAPSHOT_DIR/seller_radar_auto/data" seller_radar_auto/data
+            for f in dashboard.html intelligence_dashboard.html integrations.json; do
+              if [ -e "$SNAPSHOT_DIR/seller_radar_auto/$f" ]; then
+                cp -a "$SNAPSHOT_DIR/seller_radar_auto/$f" "seller_radar_auto/$f"
+              fi
+            done
+          }
+
+          for attempt in 1 2 3; do
+            echo "Persist tentativo $attempt/3"
+            git fetch origin main
+            git reset --hard origin/main
+            restore_outputs
+            git add -A seller_radar_auto/data seller_radar_auto/dashboard.html seller_radar_auto/intelligence_dashboard.html seller_radar_auto/integrations.json
+            if git diff --cached --quiet; then
+              echo "Nessuna modifica da salvare."
+              exit 0
+            fi
             git commit -m "radar: market intelligence notturna"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+            if git push origin HEAD:main; then
+              echo "Persist completato."
+              exit 0
+            fi
+            echo "Push concorrente rilevato: riallineo main e riapplico gli output generati."
+            sleep $((attempt * 2))
+          done
+
+          echo "Persist fallito dopo 3 tentativi."
+          exit 1
 
       - name: Avvia LISTA_MATTINO sul PC
         env:
