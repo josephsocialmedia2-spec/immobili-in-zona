@@ -1,0 +1,31 @@
+name: F1 Seller Radar Continuous
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/f1-seller-radar-continuous.yml"
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: f1-seller-radar-continuous-dispatch
+  cancel-in-progress: true
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Avvia Seller Radar completo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh workflow run f1-seller-radar-auto.yml --repo "${{ github.repository }}" --ref main
+          echo "Seller Radar completo avviato in modalità continua/oraria."
