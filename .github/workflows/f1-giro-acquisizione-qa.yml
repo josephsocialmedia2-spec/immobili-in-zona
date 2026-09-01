@@ -4,9 +4,10 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - "seller_radar_auto/build_municipality_matrix.py"
+      - "seller_radar_auto/sanitize_operational_queue.py"
       - "seller_radar_auto/prepare_acquisition_route.py"
       - "seller_radar_auto/refresh_dashboard.py"
-      - "seller_radar_auto/build_municipality_matrix.py"
       - "seller_radar_auto/validate_giro_acquisizione.py"
       - "seller_radar_auto/municipalities.csv"
       - "seller_radar_auto/data/state.json"
@@ -14,9 +15,10 @@ on:
       - ".github/workflows/f1-giro-acquisizione-qa.yml"
   pull_request:
     paths:
+      - "seller_radar_auto/build_municipality_matrix.py"
+      - "seller_radar_auto/sanitize_operational_queue.py"
       - "seller_radar_auto/prepare_acquisition_route.py"
       - "seller_radar_auto/refresh_dashboard.py"
-      - "seller_radar_auto/build_municipality_matrix.py"
       - "seller_radar_auto/validate_giro_acquisizione.py"
       - "seller_radar_auto/municipalities.csv"
       - "seller_radar_auto/data/state.json"
@@ -37,11 +39,12 @@ jobs:
         run: |
           python -m py_compile \
             seller_radar_auto/build_municipality_matrix.py \
+            seller_radar_auto/sanitize_operational_queue.py \
             seller_radar_auto/prepare_acquisition_route.py \
             seller_radar_auto/refresh_dashboard.py \
             seller_radar_auto/validate_giro_acquisizione.py
 
-      - name: Verifica matrix discovery master
+      - name: Verifica matrix discovery MASTER
         shell: bash
         run: |
           MATRIX=$(python seller_radar_auto/build_municipality_matrix.py)
@@ -49,16 +52,43 @@ jobs:
           import csv, json, sys
           from pathlib import Path
           matrix = json.loads(sys.argv[1])["comune"]
-          path = Path("seller_radar_auto/municipalities.csv")
-          with path.open(encoding="utf-8-sig", newline="") as f:
+          with Path("seller_radar_auto/municipalities.csv").open(encoding="utf-8-sig", newline="") as f:
               catalog = [r["comune"].strip() for r in csv.DictReader(f) if r.get("comune", "").strip()]
-          assert len(matrix) == len(dict.fromkeys(c.casefold() for c in catalog)), (len(matrix), len(catalog))
-          assert matrix[0].casefold() == "susa"
-          assert {c.casefold() for c in matrix} == {c.casefold() for c in catalog}
+          expected = {c.casefold() for c in catalog}
+          assert matrix and matrix[0].casefold() == "susa"
+          assert {c.casefold() for c in matrix} == expected
+          assert len(matrix) == len(expected)
           print(f"PASS MATRIX MASTER | comuni={len(matrix)} centro={matrix[0]}")
           PY
 
-      - name: Rigenera Giro dai dati repository
+      - name: Sanitizer qualità senza filtro geografico
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, json, sys
+          from pathlib import Path
+          sys.path.insert(0, "seller_radar_auto")
+          import sanitize_operational_queue as s
+          with Path("seller_radar_auto/municipalities.csv").open(encoding="utf-8-sig", newline="") as f:
+              active = {(r.get("comune") or "").strip().casefold() for r in csv.DictReader(f) if r.get("enabled") == "1"}
+          with Path("seller_radar_auto/data/work_queue.csv").open(encoding="utf-8-sig", newline="") as f:
+              rows = list(csv.DictReader(f))
+          protected = sorted({(r.get("URL") or "").strip() for r in rows if (r.get("COMUNE") or "").strip().casefold() not in active and not s.reason(r) and (r.get("URL") or "").strip()})
+          Path("/tmp/giro_protected.json").write_text(json.dumps(protected), encoding="utf-8")
+          print(f"FUORI TERRITORIO VALIDAMENTE AZIONABILI={len(protected)}")
+          PY
+          python seller_radar_auto/sanitize_operational_queue.py
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          protected = set(json.loads(Path("/tmp/giro_protected.json").read_text(encoding="utf-8")))
+          with Path("seller_radar_auto/data/work_queue.csv").open(encoding="utf-8-sig", newline="") as f:
+              remaining = {(r.get("URL") or "").strip() for r in csv.DictReader(f)}
+          assert protected <= remaining, f"Sanitizer ha tagliato {len(protected - remaining)} seller fuori territorio"
+          print(f"PASS SANITIZER MASTER | preservati={len(protected)}")
+          PY
+
+      - name: Rigenera Giro dai dati sanitizzati
         run: python seller_radar_auto/prepare_acquisition_route.py
 
       - name: Verifica integrità master e territorio
@@ -69,7 +99,9 @@ jobs:
         run: |
           python seller_radar_auto/refresh_dashboard.py
           grep -q "SELLER MASTER TOTALI" seller_radar_auto/dashboard.html
+          grep -q "NEL TERRITORIO ATTIVO" seller_radar_auto/dashboard.html
           grep -q "FERMATE PRONTE" seller_radar_auto/dashboard.html
+          grep -q "INDIRIZZO DA VERIFICARE" seller_radar_auto/dashboard.html
           grep -q "BACKLOG FUORI TERRITORIO" seller_radar_auto/dashboard.html
           grep -q "MASTER completo + filtro operativo Susa 20 km" seller_radar_auto/dashboard.html
           echo "PASS DASHBOARD GIRO"

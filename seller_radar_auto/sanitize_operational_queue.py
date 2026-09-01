@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Ripulisce work_queue.csv prima del giro operativo.
 
-Obiettivo: impedire che pagine categoria/ricerca o risultati non azionabili
-entrino in giro_acquisizione.csv. Non effettua scraping e non scopre nuovi dati.
+Obiettivo: rimuovere pagine categoria/ricerca e risultati non azionabili.
+Il filtro geografico NON appartiene a questo passaggio: work_queue.csv resta il
+MASTER Seller Radar completo; Susa +20 km viene applicato solo quando si genera
+il Giro operativo in prepare_acquisition_route.py.
 """
 from __future__ import annotations
 
@@ -97,7 +99,10 @@ def main() -> None:
         w.writeheader()
         w.writerows(rejected)
 
-    print(f"SANITIZE QUEUE: {len(rows)} totali -> {len(kept)} operativi, {len(rejected)} scartati")
+    print(
+        f"SANITIZE QUEUE MASTER: {len(rows)} totali -> {len(kept)} annunci azionabili, "
+        f"{len(rejected)} scartati per qualità; nessun filtro geografico applicato"
+    )
 
 
 if __name__ == "__main__":
