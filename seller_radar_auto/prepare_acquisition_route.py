@@ -12,6 +12,7 @@ QUEUE = DATA / "work_queue.csv"
 OUT = DATA / "giro_acquisizione.csv"
 OUT_TEAM = DATA / "giro_funzionari.csv"
 OUT_TEAM_JSON = DATA / "giro_funzionari.json"
+MUNICIPALITIES = ROOT / "municipalities.csv"
 
 TEAM_SIZE = max(1, int(os.getenv("F1_OPERATOR_COUNT", "10")))
 EXCLUDED_TOWNS = {"sant ambrogio di torino"}
@@ -21,9 +22,6 @@ ADDRESS_RE = re.compile(
     r"[A-Za-zÀ-ÿ0-9'’.\-\s,]{2,80}?[,\s]+\d{1,4}(?:\s*/\s*[A-Za-z0-9]+|[A-Za-z])?\b",
     re.I,
 )
-# Una via/località senza numero civico è comunque una destinazione operativa utile.
-# Questo evita che opportunità valide (es. terreni edificabili) restino nascoste
-# in "INDIRIZZO DA VERIFICARE" quando il titolo contiene già la strada.
 STREET_RE = re.compile(
     r"\b(?:via|viale|corso|piazza|strada|borgata|frazione|vicolo|largo)\s+"
     r"[A-Za-zÀ-ÿ0-9'’.\-\s]{2,80}?(?=,|\s+-\s+|$)",
@@ -52,6 +50,20 @@ def norm(v):
     s = s.replace("’", "'")
     s = re.sub(r"[^a-z0-9]+", " ", s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def active_towns():
+    if not MUNICIPALITIES.exists():
+        raise SystemExit("GIRO ACQUISIZIONE: municipalities.csv assente")
+    with MUNICIPALITIES.open(encoding="utf-8-sig", newline="") as f:
+        towns = {
+            norm(r.get("comune"))
+            for r in csv.DictReader(f)
+            if (r.get("enabled") or "").strip() == "1" and norm(r.get("comune"))
+        }
+    if "susa" not in towns:
+        raise SystemExit("GIRO ACQUISIZIONE: territorio non valido, Susa deve essere attiva")
+    return towns
 
 
 def exact_address(x):
@@ -118,6 +130,7 @@ def action_for(address, opportunity_type, goal, pdf_url=""):
     return "VAI IN ZONA"
 
 
+allowed_towns = active_towns()
 state = load_state()
 items = state.get("items") or {}
 by_url = {(x.get("url") or "").strip(): x for x in items.values()}
@@ -134,6 +147,10 @@ fields += [k for k in extras if k not in fields]
 
 route_rows = []
 for r in rows:
+    town_key = norm(r.get("COMUNE"))
+    if town_key not in allowed_towns:
+        continue
+
     x = by_url.get((r.get("URL") or "").strip(), {})
     address = exact_address(x)
     thing = clean(x.get("title") or r.get("TITOLO"))[:180] or "OPPORTUNITA DA VERIFICARE"
@@ -143,8 +160,6 @@ for r in rows:
     goal = r.get("OBIETTIVO_COMMERCIALE") or x.get("commercial_goal") or "ACQUISIZIONE IMMOBILE"
     target = r.get("TARGET") or x.get("lead_target") or "IMMOBILE"
 
-    # Normalizzazione trasversale: se Brief/Market Intelligence riconoscono un
-    # terreno edificabile, anche il giro operativo deve trattarlo come sviluppo.
     thing_norm = norm(thing)
     if "terreno edificabile" in thing_norm or "area edificabile" in thing_norm or "lotto edificabile" in thing_norm:
         otype = "TERRENO_SVILUPPO"
@@ -188,12 +203,10 @@ if rows:
 
 route_rows.sort(key=lambda r: int(r.get("SCORE") or 0), reverse=True)
 
-# Fino a 10 comuni/zone diversi, scelti dal miglior score. In ogni comune il
-# funzionario riceve tutte le opportunità: residenziali, commerciali e cantieri.
 best_by_town = {}
 for r in route_rows:
     town_key = norm(r.get("COMUNE"))
-    if not town_key or town_key in EXCLUDED_TOWNS:
+    if not town_key or town_key in EXCLUDED_TOWNS or town_key not in allowed_towns:
         continue
     score = int(r.get("SCORE") or 0)
     if town_key not in best_by_town or score > best_by_town[town_key]["score"]:
@@ -231,6 +244,8 @@ with OUT_TEAM.open("w", encoding="utf-8-sig", newline="") as f:
     w = csv.DictWriter(f, fieldnames=route_fields); w.writeheader(); w.writerows(team_rows)
 
 summary = {
+    "territory_center": "Susa",
+    "territory_active_towns": sorted(allowed_towns),
     "team_size_configured": TEAM_SIZE,
     "assigned_staff": len(assignment),
     "unassigned_staff": max(0, TEAM_SIZE - len(assignment)),
@@ -252,6 +267,6 @@ summary = {
 OUT_TEAM_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
 print(
-    f"GIRO ACQUISIZIONE: {len(route_rows)} opportunità; team {TEAM_SIZE}; "
+    f"GIRO ACQUISIZIONE: {len(route_rows)} opportunità nel territorio F1; team {TEAM_SIZE}; "
     f"funzionari assegnati {len(assignment)}; output {OUT_TEAM.name}."
 )
