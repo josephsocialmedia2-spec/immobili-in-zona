@@ -12,6 +12,7 @@ on:
       - "seller_radar_auto/item_worker.py"
       - "seller_radar_auto/search_market_fallback.py"
       - "seller_radar_auto/market_intelligence_v2.py"
+      - ".github/workflows/f1-market-hub-after-radar.yml"
   workflow_run:
     workflows: ["F1 Seller Radar AUTO"]
     types: [completed]
