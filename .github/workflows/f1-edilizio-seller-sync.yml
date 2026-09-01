@@ -1,0 +1,74 @@
+name: F1 Edilizio -> Seller Radar Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 * * * *"
+  workflow_run:
+    workflows: ["F1 Seller Radar AUTO"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "seller_radar_auto/merge_edilizio_signals.py"
+      - ".github/workflows/f1-edilizio-seller-sync.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-edilizio-seller-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sincronizza Radar Edilizio nel Seller Radar
+        run: python seller_radar_auto/merge_edilizio_signals.py
+
+      - name: Verifica righe edilizie
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p=Path('seller_radar_auto/data/giro_acquisizione.csv')
+          with p.open(encoding='utf-8-sig', newline='') as f:
+              rows=list(csv.DictReader(f))
+          edil=[r for r in rows if (r.get('SELLER_SIGNAL') or '').startswith('RADAR_EDILIZIO')]
+          assert edil, 'Nessun riferimento Radar Edilizio nel Seller Radar'
+          assert len({((r.get('COMUNE') or '').strip().lower(),(r.get('FASE_PROGETTO') or '').strip().lower(),(r.get('URL') or '').strip().lower()) for r in edil}) == len(edil), 'Duplicati edilizi trovati'
+          print('EDILIZIO SELLER RADAR PASS',len(edil))
+          PY
+
+      - name: Salva Seller Radar aggiornato
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "f1-edilizio-sync-bot"
+          git config user.email "actions@users.noreply.github.com"
+          SNAP="$(mktemp -d)"
+          cp seller_radar_auto/data/giro_acquisizione.csv "$SNAP/giro.csv"
+          cp seller_radar_auto/data/edilizio_seller_signals.csv "$SNAP/edilizio.csv"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$SNAP/giro.csv" seller_radar_auto/data/giro_acquisizione.csv
+            cp "$SNAP/edilizio.csv" seller_radar_auto/data/edilizio_seller_signals.csv
+            git add seller_radar_auto/data/giro_acquisizione.csv seller_radar_auto/data/edilizio_seller_signals.csv
+            if git diff --cached --quiet; then
+              echo "Seller Radar già sincronizzato."
+              exit 0
+            fi
+            git commit -m "seller radar: integra opportunità edilizie"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 2))
+          done
+          exit 1
