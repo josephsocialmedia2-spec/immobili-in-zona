@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: f1-seller-radar-auto
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   gate:
