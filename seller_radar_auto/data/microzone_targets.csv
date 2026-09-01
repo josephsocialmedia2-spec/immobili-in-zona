@@ -1,109 +1,54 @@
 ﻿ZONE_ID,COMUNE,VIA_ANNUNCIO,RIFERIMENTO_ANNUNCIO,ANNUNCIO_URL,RANK,TIPO_VIA,VIA_DA_LAVORARE,DISTANZA_M,RELAZIONE,OSM_STATUS
-almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.nuroa.it/affitto-case/almese,0,TARGET,via Rubiana,0,CENTRO,OK
-almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.nuroa.it/affitto-case/almese,1,VICINA,Borgata Malatrait II,0,INCROCIA,OK
-almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.nuroa.it/affitto-case/almese,2,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.nuroa.it/affitto-case/almese,3,VICINA,Via Combal,0,INCROCIA,OK
-almese-via-rubiana,Almese,via Rubiana,Via Rubiana 142,https://www.nuroa.it/affitto-case/almese,4,VICINA,Via dei Copertili,0,INCROCIA,OK
-almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,0,TARGET,via Montecapretto,0,CENTRO,OK
-almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,1,VICINA,Via Bertolo,0,INCROCIA,OK
-almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,2,VICINA,Via Sonetto,0,INCROCIA,OK
-almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,3,VICINA,Via Muande,102,VICINA,OK
-almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,4,VICINA,Via Falca,124,VICINA,OK
-almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,0,TARGET,via Roma,0,CENTRO,OK
-almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,1,VICINA,Piazza Martiri della Libertà,0,INCROCIA,OK
-almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,2,VICINA,Piazza Pra Maccari,0,INCROCIA,OK
-almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,3,VICINA,Via Cerrone,0,INCROCIA,OK
-almese-via-roma,Almese,via Roma,via Roma 29,https://www.immobiliare.it/annunci/130993624/,4,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,0,TARGET,Via Almese,0,CENTRO,OK
-almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,2,VICINA,Via Avigliana,225,VICINA,OK
-almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,3,VICINA,Via della Michela,235,VICINA,OK
-almese-via-almese,Almese,Via Almese,via almese 23,https://www.idealista.it/immobile/35031076/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
-almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,0,TARGET,via Braida,0,CENTRO,OK
-almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,1,VICINA,Via Bertolo,0,INCROCIA,OK
-almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,2,VICINA,Via della Roccia,0,INCROCIA,OK
-almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,3,VICINA,Via Mollar,0,INCROCIA,OK
-almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,4,VICINA,Via Moncurto,0,INCROCIA,OK
-almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,0,TARGET,via Morsino,0,CENTRO,OK
-almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,1,VICINA,Piazza Comba,0,INCROCIA,OK
-almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,2,VICINA,Via Goletto,0,INCROCIA,OK
-almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,3,VICINA,Via Gublera,0,INCROCIA,OK
-almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,4,VICINA,Via Miosa,0,INCROCIA,OK
-alpignano-via-11-febbraio,Alpignano,via 11 Febbraio,via 11 Febbraio 51,https://www.immobiliare.it/annunci/125870679/,0,TARGET,via 11 Febbraio,0,CENTRO,OK_GEOCODE_FALLBACK
-alpignano-via-11-febbraio,Alpignano,via 11 Febbraio,via 11 Febbraio 51,https://www.immobiliare.it/annunci/125870679/,1,VICINA,Via Francesco Baracca,36,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-alpignano-via-11-febbraio,Alpignano,via 11 Febbraio,via 11 Febbraio 51,https://www.immobiliare.it/annunci/125870679/,2,VICINA,Via Undici Febbraio,36,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-alpignano-via-11-febbraio,Alpignano,via 11 Febbraio,via 11 Febbraio 51,https://www.immobiliare.it/annunci/125870679/,3,VICINA,Via Enrico Toti,63,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-alpignano-via-11-febbraio,Alpignano,via 11 Febbraio,via 11 Febbraio 51,https://www.immobiliare.it/annunci/125870679/,4,VICINA,Via Camillo Benso Conte di Cavour,70,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-alpignano-via-lanzo,Alpignano,via Lanzo,via Lanzo 8,https://www.immobiliare.it/annunci/128988474/,0,TARGET,via Lanzo,0,CENTRO,OK
-alpignano-via-lanzo,Alpignano,via Lanzo,via Lanzo 8,https://www.immobiliare.it/annunci/128988474/,1,VICINA,Via Enrico Toti,0,INCROCIA,OK
-alpignano-via-lanzo,Alpignano,via Lanzo,via Lanzo 8,https://www.immobiliare.it/annunci/128988474/,2,VICINA,Via Francesco Baracca,0,INCROCIA,OK
-alpignano-via-lanzo,Alpignano,via Lanzo,via Lanzo 8,https://www.immobiliare.it/annunci/128988474/,3,VICINA,Via San Gillio,0,INCROCIA,OK
-alpignano-via-lanzo,Alpignano,via Lanzo,via Lanzo 8,https://www.immobiliare.it/annunci/128988474/,4,VICINA,Via Val della Torre,0,INCROCIA,OK
-avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,0,TARGET,VIA MONTE CUNEO,0,CENTRO,OK
-avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,1,VICINA,Via Ceresole,0,INCROCIA,OK
-avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,2,VICINA,Via Chiattera,0,INCROCIA,OK
-avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,3,VICINA,Via don Alberto Milano,0,INCROCIA,OK
-avigliana-via-monte-cuneo,Avigliana,VIA MONTE CUNEO,VIA MONTE CUNEO 6,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana,4,VICINA,Via Oronte Nota,0,INCROCIA,OK
-avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/,0,TARGET,Corso Laghi,0,CENTRO,OK
-avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/,1,VICINA,Piazza del Popolo,0,INCROCIA,OK
-avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/,2,VICINA,Via Alpi Cozie,0,INCROCIA,OK
-avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/,3,VICINA,Via Carnino,0,INCROCIA,OK
-avigliana-corso-laghi,Avigliana,Corso Laghi,corso Laghi 165,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/,4,VICINA,Via Cavalieri di Vittorio Veneto,0,INCROCIA,OK
-avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,via Sacra San Michele 17,https://www.immobiliare.it/annunci/131895478/,0,TARGET,via Sacra San Michele,0,CENTRO,OK_GEOCODE_FALLBACK
-avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,via Sacra San Michele 17,https://www.immobiliare.it/annunci/131895478/,1,VICINA,Via Sacra di San Michele,34,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,via Sacra San Michele 17,https://www.immobiliare.it/annunci/131895478/,2,VICINA,Viale Belvedere,297,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,via Sacra San Michele 17,https://www.immobiliare.it/annunci/131895478/,3,VICINA,Viale dei Tigli,309,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,via Sacra San Michele 17,https://www.immobiliare.it/annunci/131895478/,4,VICINA,Via Tetti Colombo,325,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,0,TARGET,viale roma,0,CENTRO,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,1,VICINA,Corso Laghi,0,INCROCIA,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,2,VICINA,Via maestra Maria Gallo,0,INCROCIA,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,3,VICINA,Via Osvaldo Negarville,0,INCROCIA,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,4,VICINA,Via Tresserve,0,INCROCIA,OK
-avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,0,TARGET,via Ailliaud Augusto,0,CENTRO,OK_GEOCODE_FALLBACK
-avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,1,VICINA,Via Augusto Ailliaud,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,2,VICINA,Viale Roma (int),70,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,3,VICINA,Via Cavalieri di Vittorio Veneto,76,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,4,VICINA,Via Venti Settembre,78,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,0,TARGET,piazza del Popolo,0,CENTRO,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,1,VICINA,Corso Laghi,0,INCROCIA,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,2,VICINA,Via Cavalieri di Vittorio Veneto,0,INCROCIA,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,3,VICINA,Via della Repubblica,0,INCROCIA,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,4,VICINA,Via Martiri della Libertà,0,INCROCIA,OK
-avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,0,TARGET,via villar dora,0,CENTRO,OK_GEOCODE_FALLBACK
-avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,1,VICINA,Via Cuminie,9,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,2,VICINA,Via Moncenisio,529,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,3,VICINA,Autostrada del Frejus,694,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,4,VICINA,Via Dante Alighieri,869,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-4-novembre,Avigliana,via 4 Novembre,via 4 Novembre 21,https://www.immobiliare.it/annunci/130632950/,0,TARGET,via 4 Novembre,0,CENTRO,OK_GEOCODE_FALLBACK
-avigliana-via-4-novembre,Avigliana,via 4 Novembre,via 4 Novembre 21,https://www.immobiliare.it/annunci/130632950/,1,VICINA,Via Frejus,47,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-4-novembre,Avigliana,via 4 Novembre,via 4 Novembre 21,https://www.immobiliare.it/annunci/130632950/,2,VICINA,Via Quattro Novembre,47,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-4-novembre,Avigliana,via 4 Novembre,via 4 Novembre 21,https://www.immobiliare.it/annunci/130632950/,3,VICINA,Via Carnino,89,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-4-novembre,Avigliana,via 4 Novembre,via 4 Novembre 21,https://www.immobiliare.it/annunci/130632950/,4,VICINA,Via Luigi Einaudi,102,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-via-cesare-battisti,Avigliana,Via Cesare Battisti,Via Cesare Battisti 19,https://www.idealista.it/immobile/36653195/,0,TARGET,Via Cesare Battisti,0,CENTRO,OK
-avigliana-via-cesare-battisti,Avigliana,Via Cesare Battisti,Via Cesare Battisti 19,https://www.idealista.it/immobile/36653195/,1,VICINA,Via Giuseppe Garibaldi,0,INCROCIA,OK
-avigliana-via-cesare-battisti,Avigliana,Via Cesare Battisti,Via Cesare Battisti 19,https://www.idealista.it/immobile/36653195/,2,VICINA,Via Madonna delle Grazie,0,INCROCIA,OK
-avigliana-via-cesare-battisti,Avigliana,Via Cesare Battisti,Via Cesare Battisti 19,https://www.idealista.it/immobile/36653195/,3,VICINA,Via Mario Berta,0,INCROCIA,OK
-avigliana-via-cesare-battisti,Avigliana,Via Cesare Battisti,Via Cesare Battisti 19,https://www.idealista.it/immobile/36653195/,4,VICINA,Via Oscar Borgesa,0,INCROCIA,OK
-avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,0,TARGET,Via Felice Goffi,0,CENTRO,OK
-avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,1,VICINA,Via Almese,0,INCROCIA,OK
-avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,2,VICINA,Via Moncenisio,99,VICINA,OK
-avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,3,VICINA,Via Grangia,126,VICINA,OK
-avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,4,VICINA,Via Villardora,128,VICINA,OK
-avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/131999982/,0,TARGET,via Avigliana,0,CENTRO,OK
-avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/131999982/,1,VICINA,Via Almese,0,INCROCIA,OK
-avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/131999982/,2,VICINA,Via Giaveno,0,INCROCIA,OK
-avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/131999982/,3,VICINA,Via Primo Levi,0,INCROCIA,OK
-avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/131999982/,4,VICINA,Viale dei Mareschi,48,VICINA,OK
-avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,0,TARGET,via Orsiera,0,CENTRO,OK
-avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,1,VICINA,Via della Repubblica,0,INCROCIA,OK
-avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,2,VICINA,Via Cristalliera,19,VICINA,OK
-avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,3,VICINA,Via Monte Bianco,41,VICINA,OK
-avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,4,VICINA,Via Rossetti,43,VICINA,OK
-bussoleno-via-bussoleno,Bussoleno,Via Bussoleno,via bussoleno 26,https://www.nuroa.it/vendita-immobili/bussoleno,0,TARGET,Via Bussoleno,0,CENTRO,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,Via Bussoleno,via bussoleno 26,https://www.nuroa.it/vendita-immobili/bussoleno,1,VICINA,Via Gran Borgata,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,Via Bussoleno,via bussoleno 26,https://www.nuroa.it/vendita-immobili/bussoleno,2,VICINA,Via Gran Porta,102,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,Via Bussoleno,via bussoleno 26,https://www.nuroa.it/vendita-immobili/bussoleno,3,VICINA,Piazza Caduti per la Libertà,103,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,Via Bussoleno,via bussoleno 26,https://www.nuroa.it/vendita-immobili/bussoleno,4,VICINA,Via San Rocco,109,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+borgone-susa-via-dei-grave,Borgone Susa,via dei Gravè,via dei Gravè 4,https://www.immobiliare.it/annunci/131917682/,0,TARGET,via dei Gravè,0,CENTRO,OK
+borgone-susa-via-dei-grave,Borgone Susa,via dei Gravè,via dei Gravè 4,https://www.immobiliare.it/annunci/131917682/,1,VICINA,Via Frejus,0,INCROCIA,OK
+borgone-susa-via-dei-grave,Borgone Susa,via dei Gravè,via dei Gravè 4,https://www.immobiliare.it/annunci/131917682/,2,VICINA,Via Moncenisio,0,INCROCIA,OK
+borgone-susa-via-dei-grave,Borgone Susa,via dei Gravè,via dei Gravè 4,https://www.immobiliare.it/annunci/131917682/,3,VICINA,Strada Provinciale 24 del Monginevro,6,VICINA,OK
+borgone-susa-via-dei-grave,Borgone Susa,via dei Gravè,via dei Gravè 4,https://www.immobiliare.it/annunci/131917682/,4,VICINA,Percorso pedonale su opere di difesa,22,VICINA,OK
+borgone-susa-via-abegg,Borgone Susa,via Abegg,via Abegg 18,https://www.immobiliare.it/annunci/125219057/,0,TARGET,via Abegg,0,CENTRO,OK_GEOCODE_FALLBACK
+borgone-susa-via-abegg,Borgone Susa,via Abegg,via Abegg 18,https://www.immobiliare.it/annunci/125219057/,1,VICINA,Via Augusto Abegg,13,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+borgone-susa-via-abegg,Borgone Susa,via Abegg,via Abegg 18,https://www.immobiliare.it/annunci/125219057/,2,VICINA,Via dei Vernetti,30,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+borgone-susa-via-abegg,Borgone Susa,via Abegg,via Abegg 18,https://www.immobiliare.it/annunci/125219057/,3,VICINA,Strada Donatori di Sangue,97,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+borgone-susa-via-abegg,Borgone Susa,via Abegg,via Abegg 18,https://www.immobiliare.it/annunci/125219057/,4,VICINA,Autostrada del Frejus,246,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 3,https://www.immobiliare.it/annunci/123006226/,0,TARGET,via Condove,0,CENTRO,OK
+borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 3,https://www.immobiliare.it/annunci/123006226/,1,VICINA,Interni di Via Condove,0,INCROCIA,OK
+borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 3,https://www.immobiliare.it/annunci/123006226/,2,VICINA,Piazza Canonico Anselmetti,0,INCROCIA,OK
+borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 3,https://www.immobiliare.it/annunci/123006226/,3,VICINA,S.S.24,0,INCROCIA,OK
+borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 3,https://www.immobiliare.it/annunci/123006226/,4,VICINA,Strada Provinciale 24 del Monginevro,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 80,https://www.immobiliare.it/annunci/127550838/,0,TARGET,via Augusto Abegg,0,CENTRO,OK
+borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 80,https://www.immobiliare.it/annunci/127550838/,1,VICINA,Strada Donatori di Sangue,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 80,https://www.immobiliare.it/annunci/127550838/,2,VICINA,Strada Statale 25 del Moncenisio,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 80,https://www.immobiliare.it/annunci/127550838/,3,VICINA,Via dei Vernetti,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 80,https://www.immobiliare.it/annunci/127550838/,4,VICINA,Via Florio Benvenuto,0,INCROCIA,OK
+borgone-susa-via-tarro-boiro,Borgone Susa,via Tarro Boiro,via Tarro Boiro 5,https://www.immobiliare.it/annunci/117236507/,0,TARGET,via Tarro Boiro,0,CENTRO,OK
+borgone-susa-via-tarro-boiro,Borgone Susa,via Tarro Boiro,via Tarro Boiro 5,https://www.immobiliare.it/annunci/117236507/,1,VICINA,Via Piero Alotto,0,INCROCIA,OK
+borgone-susa-via-tarro-boiro,Borgone Susa,via Tarro Boiro,via Tarro Boiro 5,https://www.immobiliare.it/annunci/117236507/,2,VICINA,Strada Statale 25 del Moncenisio,2,VICINA,OK
+borgone-susa-via-tarro-boiro,Borgone Susa,via Tarro Boiro,via Tarro Boiro 5,https://www.immobiliare.it/annunci/117236507/,3,VICINA,Via Guglielmo Marconi,22,VICINA,OK
+borgone-susa-via-tarro-boiro,Borgone Susa,via Tarro Boiro,via Tarro Boiro 5,https://www.immobiliare.it/annunci/117236507/,4,VICINA,Via Augusto Abegg,26,VICINA,OK
+borgone-susa-via-montenero,Borgone Susa,via Montenero,via Montenero 2A,https://www.immobiliare.it/annunci/122849092/,0,TARGET,via Montenero,0,CENTRO,OK
+borgone-susa-via-montenero,Borgone Susa,via Montenero,via Montenero 2A,https://www.immobiliare.it/annunci/122849092/,1,VICINA,Via Condove,0,INCROCIA,OK
+borgone-susa-via-montenero,Borgone Susa,via Montenero,via Montenero 2A,https://www.immobiliare.it/annunci/122849092/,2,VICINA,Via dei Pioppi,0,INCROCIA,OK
+borgone-susa-via-montenero,Borgone Susa,via Montenero,via Montenero 2A,https://www.immobiliare.it/annunci/122849092/,3,VICINA,Via Ponte Dora,0,INCROCIA,OK
+borgone-susa-via-montenero,Borgone Susa,via Montenero,via Montenero 2A,https://www.immobiliare.it/annunci/122849092/,4,VICINA,Via S.S. 24,0,INCROCIA,OK
+borgone-susa-via-ponte-dora,Borgone Susa,via Ponte Dora,via Ponte Dora 2,https://www.immobiliare.it/annunci/119519371/,0,TARGET,via Ponte Dora,0,CENTRO,OK
+borgone-susa-via-ponte-dora,Borgone Susa,via Ponte Dora,via Ponte Dora 2,https://www.immobiliare.it/annunci/119519371/,1,VICINA,Ciclabile Borgone San Valeriano,0,INCROCIA,OK
+borgone-susa-via-ponte-dora,Borgone Susa,via Ponte Dora,via Ponte Dora 2,https://www.immobiliare.it/annunci/119519371/,2,VICINA,Ponte Dora,0,INCROCIA,OK
+borgone-susa-via-ponte-dora,Borgone Susa,via Ponte Dora,via Ponte Dora 2,https://www.immobiliare.it/annunci/119519371/,3,VICINA,Via Condove,0,INCROCIA,OK
+borgone-susa-via-ponte-dora,Borgone Susa,via Ponte Dora,via Ponte Dora 2,https://www.immobiliare.it/annunci/119519371/,4,VICINA,Via dei Pioppi,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg-l-appartamento-e-stato-ristrutturato-circa,Borgone Susa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa 10,https://www.immobiliare.it/annunci/103552834/,0,TARGET,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,0,CENTRO,OK
+borgone-susa-via-augusto-abegg-l-appartamento-e-stato-ristrutturato-circa,Borgone Susa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa 10,https://www.immobiliare.it/annunci/103552834/,1,VICINA,Strada Donatori di Sangue,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg-l-appartamento-e-stato-ristrutturato-circa,Borgone Susa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa 10,https://www.immobiliare.it/annunci/103552834/,2,VICINA,Strada Statale 25 del Moncenisio,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg-l-appartamento-e-stato-ristrutturato-circa,Borgone Susa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa 10,https://www.immobiliare.it/annunci/103552834/,3,VICINA,Via dei Vernetti,0,INCROCIA,OK
+borgone-susa-via-augusto-abegg-l-appartamento-e-stato-ristrutturato-circa,Borgone Susa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa 10,https://www.immobiliare.it/annunci/103552834/,4,VICINA,Via Florio Benvenuto,0,INCROCIA,OK
+bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,0,TARGET,Via dei Mille,0,CENTRO,OK
+bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,1,VICINA,Via Carlo Emanuele Primo,0,INCROCIA,OK
+bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,2,VICINA,Via Cavour,0,INCROCIA,OK
+bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,3,VICINA,Via Federico Marconcini,0,INCROCIA,OK
+bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,4,VICINA,Via Maffiodenza,0,INCROCIA,OK
+bussoleno-via-bussoleno,Bussoleno,via Bussoleno,via bussoleno 26,https://www.immobiliare.it/annunci/132018520/,0,TARGET,via Bussoleno,0,CENTRO,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via Bussoleno,via bussoleno 26,https://www.immobiliare.it/annunci/132018520/,1,VICINA,Via Gran Borgata,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via Bussoleno,via bussoleno 26,https://www.immobiliare.it/annunci/132018520/,2,VICINA,Via Gran Porta,102,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via Bussoleno,via bussoleno 26,https://www.immobiliare.it/annunci/132018520/,3,VICINA,Piazza Caduti per la Libertà,103,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via Bussoleno,via bussoleno 26,https://www.immobiliare.it/annunci/132018520/,4,VICINA,Via San Rocco,109,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 bussoleno-strada-monginevro,Bussoleno,Strada Monginevro,Strada Monginevro 7/a,https://www.immobiliare.it/annunci/65394712/,0,TARGET,Strada Monginevro,0,CENTRO,OK_GEOCODE_FALLBACK
 bussoleno-strada-monginevro,Bussoleno,Strada Monginevro,Strada Monginevro 7/a,https://www.immobiliare.it/annunci/65394712/,1,VICINA,Strada Provinciale 24 del Monginevro,40,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 bussoleno-strada-monginevro,Bussoleno,Strada Monginevro,Strada Monginevro 7/a,https://www.immobiliare.it/annunci/65394712/,2,VICINA,Via Carlo Trattenero,46,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
@@ -114,41 +59,11 @@ bussoleno-via-san-lorenzo,Bussoleno,Via San Lorenzo,Via San Lorenzo 2,https://ww
 bussoleno-via-san-lorenzo,Bussoleno,Via San Lorenzo,Via San Lorenzo 2,https://www.attico.it/immobile-casa+indipendente-piemonte-bussoleno-54425376/,2,VICINA,Via Ravetto,0,INCROCIA,OK
 bussoleno-via-san-lorenzo,Bussoleno,Via San Lorenzo,Via San Lorenzo 2,https://www.attico.it/immobile-casa+indipendente-piemonte-bussoleno-54425376/,3,VICINA,Corso Bruno Peirolo,15,VICINA,OK
 bussoleno-via-san-lorenzo,Bussoleno,Via San Lorenzo,Via San Lorenzo 2,https://www.attico.it/immobile-casa+indipendente-piemonte-bussoleno-54425376/,4,VICINA,Strada di Chianocco,19,VICINA,OK
-buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,0,TARGET,via Allende,0,CENTRO,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,1,VICINA,Via Salvador Allende,35,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,3,VICINA,Via Bacchiasso,176,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,4,VICINA,Strada del Closio,180,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,0,TARGET,Via IV Novembre,0,CENTRO,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,1,VICINA,Via Quattro Novembre,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,2,VICINA,Vicolo Palermo,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,3,VICINA,Via Avigliana,16,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,4,VICINA,Piazza del Popolo,25,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,0,TARGET,Strada del Closio,0,CENTRO,OK
-buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,1,VICINA,Via Bacchiasso,0,INCROCIA,OK
-buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,2,VICINA,Via Cornaglio,0,INCROCIA,OK
-buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,3,VICINA,Via Mario Greco,0,INCROCIA,OK
-buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,4,VICINA,Via Salvador Allende,103,VICINA,OK
-caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,0,TARGET,Via Ciriè,0,CENTRO,OK
-caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,1,VICINA,Via Brione,0,INCROCIA,OK
-caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,2,VICINA,Via Val della Torre,0,INCROCIA,OK
-caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,3,VICINA,Via Givoletto,31,VICINA,OK
-caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,4,VICINA,Via Martiri della Libertà,117,VICINA,OK
-collegno-viale-xxiv-maggio,Collegno,viale XXIV Maggio,viale XXIV Maggio 54,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html,0,TARGET,viale XXIV Maggio,0,CENTRO,OK_GEOCODE_FALLBACK
-collegno-viale-xxiv-maggio,Collegno,viale XXIV Maggio,viale XXIV Maggio 54,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html,1,VICINA,Piazza della Repubblica,4,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-collegno-viale-xxiv-maggio,Collegno,viale XXIV Maggio,viale XXIV Maggio 54,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html,2,VICINA,Viale Ventiquattro Maggio,4,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-collegno-viale-xxiv-maggio,Collegno,viale XXIV Maggio,viale XXIV Maggio 54,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html,3,VICINA,Corso Papa Giovanni XXIII,20,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-collegno-viale-xxiv-maggio,Collegno,viale XXIV Maggio,viale XXIV Maggio 54,https://www.clickcase.it/annunci/vendita-case-privati-collegno.html,4,VICINA,Via Venti Settembre,20,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-collegno-via-avigliana,Collegno,via Avigliana,via Avigliana 13,https://www.immobiliare.it/annunci/130994920/,0,TARGET,via Avigliana,0,CENTRO,OK
-collegno-via-avigliana,Collegno,via Avigliana,via Avigliana 13,https://www.immobiliare.it/annunci/130994920/,1,VICINA,Corso Francia,0,INCROCIA,OK
-collegno-via-avigliana,Collegno,via Avigliana,via Avigliana 13,https://www.immobiliare.it/annunci/130994920/,2,VICINA,Via Bardonecchia,0,INCROCIA,OK
-collegno-via-avigliana,Collegno,via Avigliana,via Avigliana 13,https://www.immobiliare.it/annunci/130994920/,3,VICINA,Via Borgone,0,INCROCIA,OK
-collegno-via-avigliana,Collegno,via Avigliana,via Avigliana 13,https://www.immobiliare.it/annunci/130994920/,4,VICINA,Via Cesana,0,INCROCIA,OK
-condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,0,TARGET,Via Moncenisio,0,CENTRO,OK
-condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,1,VICINA,Ciclabile Diacono Martino,0,INCROCIA,OK
-condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,2,VICINA,Strada Comunale,0,INCROCIA,OK
-condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,3,VICINA,Via Edmondo De Amicis,0,INCROCIA,OK
-condove-via-moncenisio,Condove,Via Moncenisio,Via Moncenisio 72,https://www.idealista.it/immobile/33250712/,4,VICINA,Via Giuseppe Verdi,0,INCROCIA,OK
+chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,0,TARGET,Via Primo Maggio n,0,CENTRO,OK
+chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,1,VICINA,Via 25 Aprile 1945,0,INCROCIA,OK
+chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,2,VICINA,Via Chiesa Vecchia,0,INCROCIA,OK
+chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,3,VICINA,Via Ivol,0,INCROCIA,OK
+chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,4,VICINA,Via Nini Rossero,0,INCROCIA,OK
 gravere-via-nazionale,Gravere,Via Nazionale,Via Nazionale 45,https://www.casadaprivato.it/annunci-vendita/immobili/torino-gravere,0,TARGET,Via Nazionale,0,CENTRO,OK
 gravere-via-nazionale,Gravere,Via Nazionale,Via Nazionale 45,https://www.casadaprivato.it/annunci-vendita/immobili/torino-gravere,1,VICINA,Strada Statale 24 del Monginevro,0,INCROCIA,OK
 gravere-via-nazionale,Gravere,Via Nazionale,Via Nazionale 45,https://www.casadaprivato.it/annunci-vendita/immobili/torino-gravere,2,VICINA,Via Braidetta,0,INCROCIA,OK
@@ -159,11 +74,6 @@ gravere-via-terzo-reggimento-alpini,Gravere,Via Terzo Reggimento Alpini,Via Terz
 gravere-via-terzo-reggimento-alpini,Gravere,Via Terzo Reggimento Alpini,Via Terzo Reggimento Alpini 9,https://www.idealista.it/immobile/30296520/,2,VICINA,Via Braidetta,49,VICINA,OK
 gravere-via-terzo-reggimento-alpini,Gravere,Via Terzo Reggimento Alpini,Via Terzo Reggimento Alpini 9,https://www.idealista.it/immobile/30296520/,3,VICINA,Via Girodi,66,VICINA,OK
 gravere-via-terzo-reggimento-alpini,Gravere,Via Terzo Reggimento Alpini,Via Terzo Reggimento Alpini 9,https://www.idealista.it/immobile/30296520/,4,VICINA,Via Molaretto,82,VICINA,OK
-grugliasco-viale-gramsci,Grugliasco,Viale Gramsci,Viale Gramsci 66,https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco,0,TARGET,Viale Gramsci,0,CENTRO,OK_GEOCODE_FALLBACK
-grugliasco-viale-gramsci,Grugliasco,Viale Gramsci,Viale Gramsci 66,https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco,1,VICINA,Viale Antonio Gramsci,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-grugliasco-viale-gramsci,Grugliasco,Viale Gramsci,Viale Gramsci 66,https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco,2,VICINA,Via Cristoforo Colombo,63,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-grugliasco-viale-gramsci,Grugliasco,Viale Gramsci,Viale Gramsci 66,https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco,3,VICINA,Via Giuseppe Cena,76,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-grugliasco-viale-gramsci,Grugliasco,Viale Gramsci,Viale Gramsci 66,https://www.bancadellecase.it/torino/in-vendita/con-planimetrie_compagnia-immobiliare-grugliasco,4,VICINA,Via Roma,76,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 mattie-via-giordani,Mattie,via giordani,via giordani 3,https://www.trovacasa.it/annunci/to-tc-64869-72779648,0,TARGET,via giordani,0,CENTRO,OK
 mattie-via-giordani,Mattie,via giordani,via giordani 3,https://www.trovacasa.it/annunci/to-tc-64869-72779648,1,VICINA,Via Tonda,0,INCROCIA,OK
 mattie-via-giordani,Mattie,via giordani,via giordani 3,https://www.trovacasa.it/annunci/to-tc-64869-72779648,2,VICINA,Via Torino,0,INCROCIA,OK
@@ -179,26 +89,6 @@ mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San G
 mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San Giuseppe 21/d,https://www.casa.it/immobili/54595196/,2,VICINA,Via Ezio Perino,60,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San Giuseppe 21/d,https://www.casa.it/immobili/54595196/,3,VICINA,Via Marzano,80,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San Giuseppe 21/d,https://www.casa.it/immobili/54595196/,4,VICINA,Via Novalesa,385,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-pianezza-via-calvino,Pianezza,Via Calvino,Via Calvino 0,https://www.gabetti.it/vendita/pianezza,0,TARGET,Via Calvino,0,CENTRO,OK_GEOCODE_FALLBACK
-pianezza-via-calvino,Pianezza,Via Calvino,Via Calvino 0,https://www.gabetti.it/vendita/pianezza,1,VICINA,Via Italo Calvino,10,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-pianezza-via-calvino,Pianezza,Via Calvino,Via Calvino 0,https://www.gabetti.it/vendita/pianezza,2,VICINA,Via Aldo Moro,108,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-pianezza-via-calvino,Pianezza,Via Calvino,Via Calvino 0,https://www.gabetti.it/vendita/pianezza,3,VICINA,Via Beppe Fenoglio,112,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-pianezza-via-calvino,Pianezza,Via Calvino,Via Calvino 0,https://www.gabetti.it/vendita/pianezza,4,VICINA,Via Giovanni Arpino,112,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-rivoli-via-pullino,Rivoli,Via Pullino,Via Pullino 21,https://www.idealista.it/immobile/35768952/,0,TARGET,Via Pullino,0,CENTRO,OK
-rivoli-via-pullino,Rivoli,Via Pullino,Via Pullino 21,https://www.idealista.it/immobile/35768952/,1,VICINA,Via Avigliana,0,INCROCIA,OK
-rivoli-via-pullino,Rivoli,Via Pullino,Via Pullino 21,https://www.idealista.it/immobile/35768952/,2,VICINA,Via Balegno,0,INCROCIA,OK
-rivoli-via-pullino,Rivoli,Via Pullino,Via Pullino 21,https://www.idealista.it/immobile/35768952/,3,VICINA,Via Giuseppe Mazzini,0,INCROCIA,OK
-rivoli-via-pullino,Rivoli,Via Pullino,Via Pullino 21,https://www.idealista.it/immobile/35768952/,4,VICINA,Via Nino Bixio,0,INCROCIA,OK
-rivoli-via-rossini,Rivoli,via Rossini,via Rossini 8,https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm,0,TARGET,via Rossini,0,CENTRO,OK_GEOCODE_FALLBACK
-rivoli-via-rossini,Rivoli,via Rossini,via Rossini 8,https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm,1,VICINA,Via Gioacchino Rossini,55,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-rivoli-via-rossini,Rivoli,via Rossini,via Rossini 8,https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm,2,VICINA,Via Cervino,62,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-rivoli-via-rossini,Rivoli,via Rossini,via Rossini 8,https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm,3,VICINA,Viale Partigiani d'Italia,62,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-rivoli-via-rossini,Rivoli,via Rossini,via Rossini 8,https://www.vemaimmobiliare.com/it/immobile/3139-prestigioso-appartamento-con-giardino---rivoli-centro.htm,4,VICINA,Corso Susa,68,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-rosta-via-piave,Rosta,Via Piave,Via Piave 53,https://www.casa.it/immobili/54099496/,0,TARGET,Via Piave,0,CENTRO,OK
-rosta-via-piave,Rosta,Via Piave,Via Piave 53,https://www.casa.it/immobili/54099496/,1,VICINA,Strada Antica di Buttigliera,0,INCROCIA,OK
-rosta-via-piave,Rosta,Via Piave,Via Piave 53,https://www.casa.it/immobili/54099496/,2,VICINA,Via Buttigliera Alta,0,INCROCIA,OK
-rosta-via-piave,Rosta,Via Piave,Via Piave 53,https://www.casa.it/immobili/54099496/,3,VICINA,Via Edoardo Aprà,0,INCROCIA,OK
-rosta-via-piave,Rosta,Via Piave,Via Piave 53,https://www.casa.it/immobili/54099496/,4,VICINA,Via Rivoli,0,INCROCIA,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,0,TARGET,via Medagli,0,CENTRO,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,1,VICINA,Via Dora Riparia,0,INCROCIA,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,2,VICINA,Via Roma,0,INCROCIA,OK

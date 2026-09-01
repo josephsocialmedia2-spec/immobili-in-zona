@@ -83,5 +83,14 @@
     "lat": 45.1488611,
     "lon": 7.0343766,
     "display_name": "Frazione San Giuseppe, SP209, Berno, Mompantero, Torino, Piemonte, 10059, Italia"
-  }
+  },
+  "via a abegg borgone susa": null,
+  "via monte bianco borgone susa": null,
+  "via abegg borgone susa": {
+    "lat": 45.1246495,
+    "lon": 7.2270018,
+    "display_name": "Via Augusto Abegg, Achit, Borgone Susa, Torino, Piemonte, Italia"
+  },
+  "via bologna bruzolo": null,
+  "via camillo benso piemonte torino visualizza foto appartamento in vendita di bruzolo": null
 }
