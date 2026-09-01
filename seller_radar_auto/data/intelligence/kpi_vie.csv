@@ -1,7 +1,7 @@
 ﻿COMUNE,VIA,IMMOBILI_MONITORATI,STOCK_ATTIVO,PREZZO_MEDIANO,PREZZO_MQ_MEDIANO,PERMANENZA_MEDIANA_GG,RIBASSI_RILEVATI,USCITE_OSSERVATE
 Almese,Borgata Carello inferiore - Mompellato,1,1,,,9.0,0,0
 Almese,Via Almese,1,1,,,11.0,0,0
-Almese,Via Rubiana,2,2,150000.0,,9.0,0,0
+Almese,Via Rubiana,2,2,150000.0,,9.5,0,0
 Almese,frazione Tuberghengo,1,1,,,11.0,0,0
 Almese,via Braida,1,1,,,4.0,0,0
 Almese,via Montecapretto,1,0,,,0.0,0,1
@@ -177,7 +177,7 @@ Rivoli,via capra,1,1,,,4.0,0,0
 Rivoli,via ivrea,1,1,,,4.0,0,0
 Rivoli,via omegna,1,1,,,4.0,0,0
 Rivoli,viale Carrù,1,1,,,4.0,0,0
-Rosta,Via Piave,2,1,,,8.0,0,1
+Rosta,Via Piave,2,1,,,8.5,0,1
 Rosta,corso Moncenisio,2,2,,,4.0,0,0
 Rosta,piazza san michele,1,1,,,4.0,0,0
 Rosta,via Buttigliera Alta,1,1,339000.0,,4.0,0,0
@@ -224,8 +224,8 @@ Trana,via Raffaello Sanzio,1,0,,,0.0,0,1
 Trana,via Roma,1,1,,,9.0,0,0
 Trana,via Vercelli,1,1,,,9.0,0,0
 Trana,via alessandria,1,0,,,0.0,0,1
-Vaie,Via Peirolero,1,1,,,14.0,0,0
-Vaie,Vicolo Superiore,1,1,,,14.0,0,0
+Vaie,Via Peirolero,1,1,,,15.0,0,0
+Vaie,Vicolo Superiore,1,1,,,15.0,0,0
 Vaie,piazza del Priore,1,1,,,4.0,0,0
 Vaie,via I Maggio,1,1,,,4.0,0,0
 Vaie,via Peirolero,1,1,,,4.0,0,0
@@ -239,7 +239,7 @@ Valgioie,Borgata Chiapero,2,2,,,4.0,0,0
 Valgioie,Borgata Chiappero,1,0,,,0.0,0,1
 Valgioie,via Valgioie,2,2,,,4.0,0,0
 Venaus,Frazione Bar Cenisio,2,2,89000.0,890.0,6.0,0,0
-Villar Dora,Via Celle,1,1,,,14.0,0,0
+Villar Dora,Via Celle,1,1,,,15.0,0,0
 Villar Dora,via Al Cerrone,1,1,,,4.0,0,0
 Villar Dora,via Borgionera,1,1,,,4.0,0,0
 Villar Focchiardo,Via Preinera,1,1,,,4.0,0,0
