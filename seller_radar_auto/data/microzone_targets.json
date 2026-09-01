@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T21:08:07.322113+00:00",
+  "generated_at": "2026-09-01T23:48:44.877917+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -74,7 +74,7 @@
       "zone_id": "borgone-susa-via-augusto-abegg",
       "comune": "Borgone Susa",
       "target_street": "via Augusto Abegg",
-      "listing_target": "via Augusto Abegg 41",
+      "listing_target": "via Augusto Abegg 80",
       "listing_url": "https://www.immobiliare.it/annunci/127550838/",
       "streets": [
         "via Augusto Abegg",
@@ -346,7 +346,7 @@
       "zone_id": "borgone-susa-via-a-abegg",
       "comune": "Borgone Susa",
       "target_street": "via A. Abegg",
-      "listing_target": "Via A. Abegg 68",
+      "listing_target": "Via A. Abegg 34",
       "listing_url": "https://www.immobiliare.it/annunci/129563936/",
       "streets": [
         "via A. Abegg"

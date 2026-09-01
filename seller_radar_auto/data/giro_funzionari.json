@@ -7,7 +7,7 @@
       "funzionario": "FUNZIONARIO 1",
       "numero": 1,
       "comune": "Chiomonte",
-      "score_comune": 70,
+      "score_comune": 55,
       "righe_lavoro": 5,
       "residenziale": 5,
       "commerciale": 0,
@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 14,
-      "residenziale": 14,
+      "righe_lavoro": 17,
+      "residenziale": 17,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -50,17 +50,6 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
-      "comune": "Borgone Susa",
-      "score_comune": 35,
-      "righe_lavoro": 21,
-      "residenziale": 21,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 6",
-      "numero": 6,
       "comune": "Bruzolo",
       "score_comune": 35,
       "righe_lavoro": 4,
@@ -70,8 +59,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
+      "funzionario": "FUNZIONARIO 6",
+      "numero": 6,
       "comune": "San Didero",
       "score_comune": 30,
       "righe_lavoro": 7,
@@ -81,12 +70,23 @@
       "pdf_da_verificare": 0
     },
     {
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
+      "comune": "Borgone Susa",
+      "score_comune": 30,
+      "righe_lavoro": 21,
+      "residenziale": 21,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
       "funzionario": "FUNZIONARIO 8",
       "numero": 8,
-      "comune": "Moncenisio",
+      "comune": "Meana di Susa",
       "score_comune": 30,
-      "righe_lavoro": 5,
-      "residenziale": 5,
+      "righe_lavoro": 4,
+      "residenziale": 4,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -94,10 +94,10 @@
     {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Sant'Antonino di Susa",
+      "comune": "Susa",
       "score_comune": 30,
-      "righe_lavoro": 15,
-      "residenziale": 15,
+      "righe_lavoro": 13,
+      "residenziale": 13,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -105,11 +105,11 @@
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Meana di Susa",
+      "comune": "Vaie",
       "score_comune": 30,
-      "righe_lavoro": 4,
-      "residenziale": 4,
-      "commerciale": 0,
+      "righe_lavoro": 7,
+      "residenziale": 6,
+      "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }
