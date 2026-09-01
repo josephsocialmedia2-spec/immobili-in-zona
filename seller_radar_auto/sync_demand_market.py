@@ -17,7 +17,7 @@ from pathlib import Path
 CSV_PATH = Path(__file__).resolve().parent / "data" / "giro_acquisizione.csv"
 SUPABASE_URL = "https://nqnmlsmeiynxbdojeyjt.supabase.co"
 PUBLISHABLE_KEY = "sb_publishable_Clz5qPTkTtvwV0rqWTcfMQ_sCDSRgnu"
-ENDPOINT = f"{SUPABASE_URL}/rest/v1/f1_market_opportunities?on_conflict=source_url"
+ENDPOINT = f"{SUPABASE_URL}/rest/v1/f1_market_opportunities"
 ALLOWED_HOSTS = {
     "immobiliare.it", "www.immobiliare.it",
     "idealista.it", "www.idealista.it",
@@ -50,7 +50,6 @@ def parse_price(value: str):
     digits = re.sub(r"[^0-9,\.]", "", s)
     if not digits:
         return None
-    # Radar prices are normally integers; remove thousands separators conservatively.
     if "," in digits and "." in digits:
         digits = digits.replace(".", "").replace(",", ".")
     elif digits.count(".") > 1:
@@ -121,8 +120,8 @@ def build_rows() -> list[dict]:
     return rows
 
 
-def post_batch(batch: list[dict]) -> None:
-    data = json.dumps(batch, ensure_ascii=False).encode("utf-8")
+def post_one(row: dict) -> str:
+    data = json.dumps(row, ensure_ascii=False).encode("utf-8")
     req = urllib.request.Request(
         ENDPOINT,
         data=data,
@@ -131,15 +130,19 @@ def post_batch(batch: list[dict]) -> None:
             "apikey": PUBLISHABLE_KEY,
             "Authorization": f"Bearer {PUBLISHABLE_KEY}",
             "Content-Type": "application/json",
-            "Prefer": "resolution=ignore-duplicates,return=minimal",
+            "Prefer": "return=minimal",
         },
     )
     try:
         with urllib.request.urlopen(req, timeout=30) as res:
             if res.status not in (200, 201, 204):
                 raise RuntimeError(f"Supabase HTTP {res.status}")
+            return "inserted"
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", "replace")
+        # 23505 = duplicate source_url. Ignore without requesting SELECT rights.
+        if e.code == 409 and ('23505' in body or 'duplicate key' in body.lower()):
+            return "duplicate"
         raise RuntimeError(f"Supabase HTTP {e.code}: {body}") from e
 
 
@@ -148,9 +151,12 @@ def main() -> int:
     if not rows:
         print("F1 Demand sync: nessuna opportunità residenziale valida da sincronizzare.")
         return 0
-    for i in range(0, len(rows), 50):
-        post_batch(rows[i:i + 50])
-    print(f"F1 Demand sync: {len(rows)} opportunità candidate inviate (duplicati ignorati).")
+    inserted = duplicate = 0
+    for row in rows:
+        result = post_one(row)
+        inserted += result == "inserted"
+        duplicate += result == "duplicate"
+    print(f"F1 Demand sync: {inserted} nuove opportunità inserite; {duplicate} duplicati ignorati; {len(rows)} candidate valide.")
     return 0
 
 
