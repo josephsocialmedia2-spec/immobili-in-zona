@@ -1,9 +1,21 @@
-name: F1 Giro PR Gate
+name: F1 Giro Territory QA
 
 on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "seller_radar_auto/prepare_acquisition_route.py"
+      - "seller_radar_auto/sanitize_operational_queue.py"
+      - "seller_radar_auto/refresh_dashboard.py"
+      - "seller_radar_auto/build_municipality_matrix.py"
+      - "seller_radar_auto/validate_giro_acquisizione.py"
+      - "seller_radar_auto/municipalities.csv"
+      - ".github/workflows/f1-giro-pr-gate.yml"
   pull_request:
     paths:
       - "seller_radar_auto/prepare_acquisition_route.py"
+      - "seller_radar_auto/sanitize_operational_queue.py"
       - "seller_radar_auto/refresh_dashboard.py"
       - "seller_radar_auto/build_municipality_matrix.py"
       - "seller_radar_auto/validate_giro_acquisizione.py"
@@ -11,7 +23,6 @@ on:
       - "seller_radar_auto/data/state.json"
       - "seller_radar_auto/data/work_queue.csv"
       - ".github/workflows/f1-seller-radar-auto.yml"
-      - ".github/workflows/f1-giro-acquisizione-qa.yml"
       - ".github/workflows/f1-giro-pr-gate.yml"
 
 permissions:
@@ -28,11 +39,12 @@ jobs:
         run: |
           python -m py_compile \
             seller_radar_auto/build_municipality_matrix.py \
+            seller_radar_auto/sanitize_operational_queue.py \
             seller_radar_auto/prepare_acquisition_route.py \
             seller_radar_auto/refresh_dashboard.py \
             seller_radar_auto/validate_giro_acquisizione.py
 
-      - name: Verifica discovery MASTER
+      - name: Verifica discovery territorio attivo
         shell: bash
         run: |
           MATRIX=$(python seller_radar_auto/build_municipality_matrix.py)
@@ -41,25 +53,37 @@ jobs:
           from pathlib import Path
           matrix = json.loads(sys.argv[1])["comune"]
           with Path("seller_radar_auto/municipalities.csv").open(encoding="utf-8-sig", newline="") as f:
-              catalog = [r["comune"].strip() for r in csv.DictReader(f) if r.get("comune", "").strip()]
-          expected = {c.casefold() for c in catalog}
+              enabled = [r["comune"].strip() for r in csv.DictReader(f) if r.get("enabled") == "1" and r.get("comune", "").strip()]
+          expected = {c.casefold() for c in enabled}
           assert matrix and matrix[0].casefold() == "susa"
           assert {c.casefold() for c in matrix} == expected
           assert len(matrix) == len(expected)
-          print(f"PASS MATRIX MASTER | comuni={len(matrix)}")
+          print(f"PASS MATRIX TERRITORIO | comuni_attivi={len(matrix)} | centro={matrix[0]}")
           PY
 
-      - name: Rigenera e valida Giro
+      - name: Filtra, rigenera e valida Giro
         run: |
+          python seller_radar_auto/sanitize_operational_queue.py
           python seller_radar_auto/prepare_acquisition_route.py
           python seller_radar_auto/validate_giro_acquisizione.py
 
-      - name: Verifica dashboard
+      - name: Verifica dashboard operativo
         shell: bash
         run: |
           python seller_radar_auto/refresh_dashboard.py
-          grep -q "SELLER MASTER TOTALI" seller_radar_auto/dashboard.html
-          grep -q "FERMATE PRONTE" seller_radar_auto/dashboard.html
-          grep -q "BACKLOG FUORI TERRITORIO" seller_radar_auto/dashboard.html
-          grep -q "MASTER completo + filtro operativo Susa 20 km" seller_radar_auto/dashboard.html
-          echo "PASS DASHBOARD GIRO"
+          grep -q "F1 SELLER RADAR" seller_radar_auto/dashboard.html
+          grep -q "Territori" seller_radar_auto/dashboard.html
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          allowed = set()
+          with Path('seller_radar_auto/municipalities.csv').open(encoding='utf-8-sig', newline='') as f:
+              for r in csv.DictReader(f):
+                  if r.get('enabled') == '1':
+                      allowed.add((r.get('comune') or '').strip().casefold())
+          with Path('seller_radar_auto/data/work_queue.csv').open(encoding='utf-8-sig', newline='') as f:
+              towns = {(r.get('COMUNE') or '').strip().casefold() for r in csv.DictReader(f) if (r.get('COMUNE') or '').strip()}
+          outside = sorted(towns - allowed)
+          assert not outside, f"Dashboard queue fuori territorio: {outside}"
+          print(f"PASS DASHBOARD TERRITORIO | comuni={len(towns)}")
+          PY
