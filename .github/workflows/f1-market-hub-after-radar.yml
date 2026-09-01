@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: f1-market-hub-after-radar
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build-hub:
