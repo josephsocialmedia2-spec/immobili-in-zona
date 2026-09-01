@@ -197,6 +197,9 @@ jobs:
       - name: Prepara giro acquisizione
         run: python seller_radar_auto/prepare_acquisition_route.py
 
+      - name: Sincronizza opportunità con F1 Demand Engine
+        run: python seller_radar_auto/sync_demand_market.py
+
       - name: Aggiorna dashboard con F1 Indirizzo Remoto
         run: python seller_radar_auto/refresh_dashboard.py
 
