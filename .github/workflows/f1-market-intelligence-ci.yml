@@ -11,9 +11,18 @@ on:
       - 'seller_radar_auto/integrations.json'
       - '.github/workflows/f1-seller-radar-auto.yml'
       - '.github/workflows/f1-market-intelligence-ci.yml'
+  pull_request:
+    paths:
+      - 'seller_radar_auto/market_intelligence.py'
+      - 'seller_radar_auto/market_intelligence_v2.py'
+      - 'seller_radar_auto/merge_discovery.py'
+      - 'seller_radar_auto/discovery_one.py'
+      - 'seller_radar_auto/integrations.json'
+      - '.github/workflows/f1-seller-radar-auto.yml'
+      - '.github/workflows/f1-market-intelligence-ci.yml'
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   test:
@@ -22,14 +31,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Python syntax
         run: |
           python -m py_compile seller_radar_auto/market_intelligence.py
           python -m py_compile seller_radar_auto/market_intelligence_v2.py
           python -m py_compile seller_radar_auto/merge_discovery.py
           python -m py_compile seller_radar_auto/discovery_one.py
+
       - name: Generate KPI from repository state
         run: python seller_radar_auto/market_intelligence_v2.py
+
       - name: Verify expected outputs
         shell: bash
         run: |
@@ -41,18 +53,4 @@ jobs:
           test -f seller_radar_auto/data/intelligence/kpi_segnali.csv
           test -f seller_radar_auto/data/intelligence/scarti_qualita.csv
           test -f seller_radar_auto/intelligence_dashboard.html
-          echo 'F1 Market Intelligence v2 OK'
-      - name: Publish generated intelligence
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        shell: bash
-        run: |
-          git config user.name "f1-market-intelligence-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add seller_radar_auto/data/intelligence seller_radar_auto/intelligence_dashboard.html
-          if git diff --cached --quiet; then
-            echo "KPI già aggiornati."
-          else
-            git commit -m "intelligence: baseline KPI filtrata"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          echo 'F1 Market Intelligence v2 OK — CI read-only, nessun commit dati da questo workflow.'
