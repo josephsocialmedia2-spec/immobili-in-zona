@@ -6,6 +6,7 @@ on:
     paths:
       - 'seller_radar_auto/market_intelligence.py'
       - 'seller_radar_auto/market_intelligence_v2.py'
+      - 'seller_radar_auto/appointment_brief.py'
       - 'seller_radar_auto/merge_discovery.py'
       - 'seller_radar_auto/discovery_one.py'
       - 'seller_radar_auto/integrations.json'
@@ -15,6 +16,7 @@ on:
     paths:
       - 'seller_radar_auto/market_intelligence.py'
       - 'seller_radar_auto/market_intelligence_v2.py'
+      - 'seller_radar_auto/appointment_brief.py'
       - 'seller_radar_auto/merge_discovery.py'
       - 'seller_radar_auto/discovery_one.py'
       - 'seller_radar_auto/integrations.json'
@@ -36,15 +38,19 @@ jobs:
         run: |
           python -m py_compile seller_radar_auto/market_intelligence.py
           python -m py_compile seller_radar_auto/market_intelligence_v2.py
+          python -m py_compile seller_radar_auto/appointment_brief.py
           python -m py_compile seller_radar_auto/merge_discovery.py
           python -m py_compile seller_radar_auto/discovery_one.py
 
-      - name: Generate KPI from repository state
-        run: python seller_radar_auto/market_intelligence_v2.py
+      - name: Generate Market Intelligence and Brief from repository state
+        run: |
+          python seller_radar_auto/market_intelligence_v2.py
+          python seller_radar_auto/appointment_brief.py
 
       - name: Verify expected outputs
         shell: bash
         run: |
+          set -euo pipefail
           test -f seller_radar_auto/data/intelligence/immobili_snapshot.csv
           test -f seller_radar_auto/data/intelligence/kpi_comuni.csv
           test -f seller_radar_auto/data/intelligence/kpi_vie.csv
@@ -52,5 +58,8 @@ jobs:
           test -f seller_radar_auto/data/intelligence/kpi_agenzie.csv
           test -f seller_radar_auto/data/intelligence/kpi_segnali.csv
           test -f seller_radar_auto/data/intelligence/scarti_qualita.csv
-          test -f seller_radar_auto/intelligence_dashboard.html
-          echo 'F1 Market Intelligence v2 OK — CI read-only, nessun commit dati da questo workflow.'
+          test -s seller_radar_auto/intelligence_dashboard.html
+          test -s seller_radar_auto/appointment_brief.html
+          grep -q 'F1 MARKET INTELLIGENCE' seller_radar_auto/intelligence_dashboard.html
+          grep -q 'F1 IMMOBILIARE — BRIEF APPUNTAMENTO' seller_radar_auto/appointment_brief.html
+          echo 'F1 Market Intelligence + Brief OK — CI read-only, nessun commit dati da questo workflow.'
