@@ -1,7 +1,7 @@
 ﻿ID,COMUNE,TITOLO,FONTE,URL,MOTIVO_SCARTO
 8c2bf7566b731a977793,Almese,160 immobili in vendita a Almese - Trovit,Trovit,https://case.trovit.it/almese,EVIDENZA_INSUFFICIENTE
 1f6a089f092103b77b70,Almese,Case e appartamenti a Almese. Immobili in vendita a Almese - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/almese,EVIDENZA_INSUFFICIENTE
-9bd098c51c8133127d2c,Alpignano,26.388 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
+9bd098c51c8133127d2c,Alpignano,26.194 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
 b1401933cac7e2c369de,Avigliana,"7 immobili in vendita a Villaggio Primavera, Avigliana - Trovit",Trovit,https://case.trovit.it/avigliana-villaggio-primavera,EVIDENZA_INSUFFICIENTE
 26cf0943b957c20d714b,Bardonecchia,Bardonecchia - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=bardonecchia,PAGINA_CATEGORIA
 0e12d064bae5d860bc52,Borgone Susa,Case e appartamenti a Borgone Susa. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/borgone-susa,EVIDENZA_INSUFFICIENTE
@@ -57,10 +57,10 @@ b74a134d730b31fa0bc7,Rubiana,Case in vendita Rubiana Caprino veronese (Verona) d
 78a40ead67d790da4b21,San Giorio,Case in vendita San Giorio di Susa - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/san-giorio-di-susa/,PAGINA_CATEGORIA
 f6ed4722bcf102d0b386,Sangano,60 immobili villa in vendita a Sangano - Trovit,Trovit,https://case.trovit.it/villa-sangano,EVIDENZA_INSUFFICIENTE
 50c18056a4760e9cba2b,Sangano,Case in vendita Sangano - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/sangano/,PAGINA_CATEGORIA
-744d2e5b3957380bdd05,Sangano,Pragma Case,Agenzie,https://pragmacase.it/,EVIDENZA_INSUFFICIENTE
+744d2e5b3957380bdd05,Sangano,Pragma Case,Mercato residenziale,https://pragmacase.it/,EVIDENZA_INSUFFICIENTE
 2e12fd31e6f76c8469cd,Sant'Antonino di Susa,"Case in vendita a Sant'Antonino di Susa, Valli Susa, Sangone",Mercato generale,https://caseinvenditainaffitto.it/case-in-vendita/sant-antonino-di-susa-valli-susa-sangone,PAGINA_CATEGORIA
 3444bb3f22989d4a87cb,Sant'Antonino di Susa,42 immobili in vendita a Sant'Antonino di Susa - Trovit,Trovit,https://case.trovit.it/sant-antonino-susa,EVIDENZA_INSUFFICIENTE
-93c25228125292ec5155,Sant'Antonino di Susa,Sant'antonino Di Susa - 48 case in vendita in Sant'Antonino Di Susa de ...,Mercato residenziale,https://www.nuroa.it/vendita-immobili/sant-antonino-di-susa,EVIDENZA_INSUFFICIENTE
+93c25228125292ec5155,Sant'Antonino di Susa,Sant'antonino Di Susa - 48 case in vendita in Sant'Antonino Di Susa de ...,Uffici e direzionale,https://www.nuroa.it/vendita-immobili/sant-antonino-di-susa,EVIDENZA_INSUFFICIENTE
 9d980b4eaccd23c79a1b,Susa,72 immobili in vendita a Susa - Trovit,Trovit,https://case.trovit.it/susa,EVIDENZA_INSUFFICIENTE
 8217649129383c1f5fe9,Susa,106 Appartamenti in vendita a Susa - Mitula Case,Mercato generale,https://immobiliare.mitula.it/appartamento-susa,EVIDENZA_INSUFFICIENTE
 925e143232e86a0615ba,Susa,Casa Val Susa - 16 case in vendita in Susa de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/casa-val-susa,EVIDENZA_INSUFFICIENTE
@@ -98,11 +98,11 @@ f8de2593abe626c0d539,Susa,"Case in vendita a Susa, Valli Susa, Sangone",Agenzie,
 109f6f12102b36ee5655,Susa,Case in vendita da Privati a Susa - CasaDaPrivato.it,Mercato generale,https://www.casadaprivato.it/annunci-vendita/immobili/torino-susa,PAGINA_CATEGORIA
 e20df286bfce7076ef6a,Susa,Case in vendita Susa - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/susa/,PAGINA_CATEGORIA
 93665adc2504e2dce758,Trana,Più di dieci ville in vendita a Trana Moranda. - Caasa,Mercato generale,https://www.caasa.it/torino/trana-zona-moranda/villa/in-vendita.html,EVIDENZA_INSUFFICIENTE
-d289c9f4223e046d30bc,Venaus,280 Immobili in vendita a Venaus - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/venaus,EVIDENZA_INSUFFICIENTE
+d289c9f4223e046d30bc,Venaus,279 Immobili in vendita a Venaus - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/venaus,EVIDENZA_INSUFFICIENTE
 7508b733beefa70e7c85,Villarbasse,Vendita Ville a Villarbasse: Annunci Immobiliari | YesCasa,Mercato generale,https://www.yescasa.it/vendita-ville/villarbasse/,EVIDENZA_INSUFFICIENTE
 eb21a7194edb3f169bea,Bardonecchia,Case in vendita Bardonecchia - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/bardonecchia/,PAGINA_CATEGORIA
 5649ec0eb4392b9eda5c,Borgone Susa,Case a Borgone Susa. Ville in vendita a Borgone Susa - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/borgone-susa,EVIDENZA_INSUFFICIENTE
-af08fd890ebe132d1a48,Borgone Susa,276 Immobili in vendita a Borgone Susa - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/borgone-susa,EVIDENZA_INSUFFICIENTE
+af08fd890ebe132d1a48,Borgone Susa,275 Immobili in vendita a Borgone Susa - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/borgone-susa,EVIDENZA_INSUFFICIENTE
 a984b5642dca97af5a62,Condove,Case in vendita Condove - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/condove/,PAGINA_CATEGORIA
 aead058de8b8af15f838,Giaglione,Case a Giaglione. Ville in vendita a Giaglione - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/giaglione,EVIDENZA_INSUFFICIENTE
 84b54a494922c3f71596,Meana di Susa,38 immobili in vendita a Meana di Susa - Trovit,Trovit,https://case.trovit.it/meana-susa,EVIDENZA_INSUFFICIENTE
@@ -113,7 +113,7 @@ aead058de8b8af15f838,Giaglione,Case a Giaglione. Ville in vendita a Giaglione - 
 08457ed9166d8b5663bd,Villar Focchiardo,Monolocali in vendita Villar Focchiardo (TO),Mercato residenziale,https://www.caseinvendita360.com/monolocale-vendita-villar-focchiardo-to,EVIDENZA_INSUFFICIENTE
 86b759f47381baaa78bf,Avigliana,22.987 immobili in vendita a Avigliana - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/avigliana,EVIDENZA_INSUFFICIENTE
 c1bee8e431e849082b41,Buttigliera Alta,970 Immobili in vendita a Buttigliera Alta - Mitula Case,Mercato generale,https://immobiliare.mitula.it/buttigliera-alta,EVIDENZA_INSUFFICIENTE
-c21365ea16b964f6c0a4,Giaglione,29 Rustici in vendita a Giaglione - Mitula Case,Mercato generale,https://immobiliare.mitula.it/rustico-giaglione,EVIDENZA_INSUFFICIENTE
+c21365ea16b964f6c0a4,Giaglione,29 Rustici in vendita a Giaglione - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/rustico-giaglione,EVIDENZA_INSUFFICIENTE
 06b3700b9109ecb2a716,Pianezza,Case in vendita Pianezza - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/pianezza/,PAGINA_CATEGORIA
 fa1766875ffd2a6d95a1,Rivoli,Ghigo agenzia immobiliare a Rivoli - Trova o vendi casa,Agenzie,https://www.ghigoimmobiliare.it/,EVIDENZA_INSUFFICIENTE
 bd8697ba57dbe91d0fed,Alpignano,13 immobili zona belvedere in vendita a Alpignano - Trovit,Trovit,https://case.trovit.it/zona-belvedere-alpignano,EVIDENZA_INSUFFICIENTE
@@ -211,7 +211,7 @@ c08dc510b7f7a5c82a6b,Chiomonte,69 immobili in vendita a Chiomonte - Trovit,Trovi
 a86c054e354e742c7bb6,Chiomonte,Case in vendita Chiomonte - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/chiomonte/,PAGINA_CATEGORIA
 0f86b06f142f981d690b,Condove,"22 locale commerciales circolo in affitto a Bar, Condove - Trovit",Trovit,https://case.trovit.it/affitto-negozio-circolo-bar,EVIDENZA_INSUFFICIENTE
 d6a1bcb20bff78ace39c,Giaveno,Immobili in Vendita | Agenzia Tecnorete di Giaveno,Tecnorete,https://giaveno1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
-cac5db4f6e2b21ae5ab7,Giaveno,Locale Commerciale Giaveno - 63 locali comerciali in vendita in Giaveno ...,Commerciale negozi/locali,https://www.nuroa.it/vendita-immobili/locale-commerciale-giaveno,EVIDENZA_INSUFFICIENTE
+cac5db4f6e2b21ae5ab7,Giaveno,Locale Commerciale Giaveno - 65 locali comerciali in vendita in Giaveno ...,Commerciale negozi/locali,https://www.nuroa.it/vendita-immobili/locale-commerciale-giaveno,EVIDENZA_INSUFFICIENTE
 3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 155 locali comerciali in affito in ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
 2aab1ddaa700fe828f10,Moncenisio,770 appartamenti in vendita a Moncenisio - Nestoria,Nestoria,https://www.nestoria.it/appartamenti/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 3a19993ebbd5ad61f09c,Moncenisio,Il Colle del Moncenisio: cosa vedere e fare - Visit Val di Susa,Capannoni logistica,https://visitvaldisusa.it/moncenisio-la-porta-delle-alpi/,EVIDENZA_INSUFFICIENTE
@@ -238,7 +238,7 @@ be2a6500a3ec0925127d,Exilles,Case in vendita Exilles - Immobili - Subito.it,Subi
 d0135cc66026cf352a0e,Ferriera di Buttigliera Alta,CERCASI IMMOBILI IN VENDITA IN BASSA VALSUSA | ValsusaOggi,Mercato residenziale,https://www.valsusaoggi.it/cercasi-immobili-in-vendita-in-bassa-valsusa/,EVIDENZA_INSUFFICIENTE
 b90e2a65876b022b238a,Giaglione,"ValsusaOggi | VALSUSA, VENDESI CASA CON GRANDE AUTORIMESSA: SCOPRI L ...",Tipologie residenziali,https://www.instagram.com/reel/DZcP9_hOjvd/,EVIDENZA_INSUFFICIENTE
 6d42494c0a92c5372e32,Giaveno,Giaveno Selvaggio - 56 case in vendita in Giaveno de Nuroa.it,Tipologie residenziali,https://www.nuroa.it/vendita-immobili/giaveno-selvaggio,EVIDENZA_INSUFFICIENTE
-99b6049e77b5ddcfd120,Gravere,2.436 immobili in vendita a Bastia Gravere - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/bastia_gravere,EVIDENZA_INSUFFICIENTE
+99b6049e77b5ddcfd120,Gravere,2.429 immobili in vendita a Bastia Gravere - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/bastia_gravere,EVIDENZA_INSUFFICIENTE
 a8a2785580f9631f5ee3,Moncenisio,23 risultati per: immobili in Vendita Moncenisio (TO),Mercato residenziale,https://www.casadasoli.it/vendita-moncenisio-to-154,EVIDENZA_INSUFFICIENTE
 2539d7931fc725223cbe,Moncenisio,Case e appartamenti a Moncenisio. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 681bcf9e5313f1686d83,Moncenisio,Vendita Moncenisio - 219 case in vendita in Moncenisio de ... - nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/vendita-moncenisio,EVIDENZA_INSUFFICIENTE
@@ -259,3 +259,15 @@ aefa16fd4693487f0cfa,Sant'Ambrogio di Torino,Case in vendita Sant'Ambrogio di To
 cc333a1bfc34844611ff,Trana,Articoli legno per magazzinaggio | Trana | F. A. Imballaggi,Capannoni logistica,https://www.faimballaggisrl.it/,EVIDENZA_INSUFFICIENTE
 dc5d61a3eb0ebcb9d537,Vaie,51 immobili in vendita a Vaie - Trovit,Trovit,https://case.trovit.it/vaie,EVIDENZA_INSUFFICIENTE
 7a5fead4b906789b1807,Val della Torre,Val della torre - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=val+della+torre,PAGINA_CATEGORIA
+08dca210184b674f9ce2,Chianocco,"Appartamento in vendita, Chianocco con box, 96 mq • Wikicasa",Wikicasa,https://www.wikicasa.it/annuncio/30695067,EVIDENZA_INSUFFICIENTE
+daedcf064131113669fe,Collegno,"Case in vendita a Centro, Collegno - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/centro-collegno,PAGINA_CATEGORIA
+3736000af536ca2df68a,Collegno,223 Locali commerciali in affitto a Collegno - Mitula Case,Commerciale negozi/locali,https://immobiliare.mitula.it/affitto-locale-commerciale-collegno,EVIDENZA_INSUFFICIENTE
+6f965ee9e9168eb978c6,Giaveno,15.591 immobili in vendita a Giaveno - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/giaveno,EVIDENZA_INSUFFICIENTE
+f772f6b9469305b895f4,Giaveno,Appartamenti in vendita Giaveno - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/giaveno/,EVIDENZA_INSUFFICIENTE
+a817a2a58b929e8add68,Mattie,Case in vendita a Mattie - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/mattie/,PAGINA_CATEGORIA
+e1f1a0ef547c591b3e71,Mattie,Vendita Torino Mattie - 38 case in vendita in Torino de Nuroa.it,Tipologie residenziali,https://www.nuroa.it/vendita-immobili/vendita-torino-mattie,EVIDENZA_INSUFFICIENTE
+01784bb314fe191f77f7,Mompantero,Quanto vale una casa a Mompantero (TO) — prezzi al m² 2° semestre 2025,Mercato residenziale,https://tuttocalcolo.it/valore-immobili/to/mompantero,EVIDENZA_INSUFFICIENTE
+7ef590e6f208400fd0b6,Moncenisio,Quanto vale una casa a Moncenisio (TO) — prezzi al m² 2° semestre 2025,Mercato residenziale,https://tuttocalcolo.it/valore-immobili/to/moncenisio,EVIDENZA_INSUFFICIENTE
+364f53a9044156065fdf,Salbertrand,Case in vendita Salbertrand - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/salbertrand/,PAGINA_CATEGORIA
+54a66a44d82c1040b067,San Giorio di Susa,Quanto vale una casa a San Giorio Di Susa (TO),Mercato residenziale,https://tuttocalcolo.it/valore-immobili/to/san-giorio-di-susa,EVIDENZA_INSUFFICIENTE
+8f62898f38cc39acd123,Susa,30 locale commerciales commerciale in affitto a Susa - Trovit,Trovit,https://case.trovit.it/affitto-negozio-commerciale-susa,EVIDENZA_INSUFFICIENTE

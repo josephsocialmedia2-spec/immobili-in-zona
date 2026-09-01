@@ -15,7 +15,7 @@ d48aa39affeee332a566,Villar Dora,NON_DETERMINATO,Via Celle,VAI_IN_ZONA,Via Celle
 2bcdb0fc06c342a547fe,Almese,NON_DETERMINATO,VIA AVIGLIANA,VAI_IN_ZONA,VIA AVIGLIANA 98,,PRONTO,https://immobiliare.mitula.it/almese
 2bcdb0fc06c342a547fe,Almese,NON_DETERMINATO,VIA AVIGLIANA,VAI_IN_ZONA,Via Avigliana 93,,PRONTO,https://immobiliare.mitula.it/almese
 5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.immobiliare.it/annunci/119867056/
-5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 142,,PRONTO,https://www.immobiliare.it/annunci/119867056/
+5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.immobiliare.it/annunci/119867056/
 f03f60de65c9aab43eb5,Almese,NON_DETERMINATO,via Montecapretto,VAI_IN_ZONA,via Montecapretto 24,,PRONTO,https://www.immobiliare.it/annunci/108146029/
 2356b8a6cc2bf07676f7,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 29,,PRONTO,https://www.immobiliare.it/annunci/130993624/
 c49246626beeeef88169,Almese,NON_DETERMINATO,frazione Tuberghengo,VAI_IN_ZONA,frazione Tuberghengo 2,,PRONTO,https://www.immobiliare.it/annunci/101503673/
@@ -67,9 +67,6 @@ b2177e0b60eb038d86c0,Mattie,NON_DETERMINATO,via Mattie,VAI_IN_ZONA,Via Mattie 2/
 372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
 899f1b1a99b411684f64,Buttigliera Alta,INDIZIO_AGENZIA,Strada del Closio,VAI_IN_ZONA,Strada del Closio 39,,PRONTO,https://www.wikicasa.it/vendita-case/buttigliera-alta/
 d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,Via IV Novembre 5,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
-d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,Via IV Novembre 27,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
-d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,via IV Novembre 15,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
-d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,via IV novembre 14,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
 c20b4e08b8a9430e80eb,Condove,NON_DETERMINATO,Borgata Borlera,VAI_IN_ZONA,Borgata Borlera 12,,PRONTO,https://www.idealista.it/immobile/36228538/
 c20b4e08b8a9430e80eb,Condove,NON_DETERMINATO,Borgata Borlera,VAI_IN_ZONA,Borgata Borlera 21,,PRONTO,https://www.idealista.it/immobile/36228538/
 22c9c81c30cacb3c02ee,Gravere,NON_DETERMINATO,Via Terzo Reggimento Alpini,VAI_IN_ZONA,Via Terzo Reggimento Alpini 9,,PRONTO,https://www.idealista.it/immobile/30296520/
@@ -130,9 +127,9 @@ cbe57f4cb885a79a3f73,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,
 cbe57f4cb885a79a3f73,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 41,,PRONTO,https://www.immobiliare.it/annunci/116242543/
 cbe57f4cb885a79a3f73,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 80,,PRONTO,https://www.immobiliare.it/annunci/116242543/
 a4d364c5ffd5f86bf2ba,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 41,,PRONTO,https://www.immobiliare.it/annunci/127550838/
-a4d364c5ffd5f86bf2ba,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 80,,PRONTO,https://www.immobiliare.it/annunci/127550838/
 83d798285542757f6948,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 5,,PRONTO,https://www.immobiliare.it/annunci/127215327/
 83d798285542757f6948,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 26,,PRONTO,https://www.immobiliare.it/annunci/127215327/
+93aca0f4b12f1f8c2223,Borgone Susa,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,via Montenero 13,,PRONTO,https://www.immobiliare.it/annunci/122226200/
 2d3bbb1079093ec10b90,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 26,,PRONTO,https://www.immobiliare.it/annunci/117236507/
 2d3bbb1079093ec10b90,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 5,,PRONTO,https://www.immobiliare.it/annunci/117236507/
 c04b26514366b8fa03ad,Bruzolo,NON_DETERMINATO,Via Bologna,VAI_IN_ZONA,Via Bologna 1,,PRONTO,https://www.trovacasa.it/annunci/to-tc-96536-72839695
@@ -200,9 +197,16 @@ ba7ca81bf5879fb17efd,Bruzolo,NON_DETERMINATO,"Via Camillo Benso... Piemonte, Tor
 27883b3a518cd1d67d0e,Bussoleno,NON_DETERMINATO,via Bussoleno,VAI_IN_ZONA,Via Bussoleno 7,,PRONTO,https://www.immobiliare.it/annunci/132018520/
 27883b3a518cd1d67d0e,Bussoleno,NON_DETERMINATO,via Bussoleno,VAI_IN_ZONA,Via Bussoleno 16,,PRONTO,https://www.immobiliare.it/annunci/132018520/
 27883b3a518cd1d67d0e,Bussoleno,NON_DETERMINATO,via Bussoleno,VAI_IN_ZONA,via bussoleno 26,,PRONTO,https://www.immobiliare.it/annunci/132018520/
+27883b3a518cd1d67d0e,Bussoleno,NON_DETERMINATO,via Bussoleno,VAI_IN_ZONA,Via Bussoleno 22,,PRONTO,https://www.immobiliare.it/annunci/132018520/
 bb3abf7bc9c5e1f29d84,Caprie,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 12,,PRONTO,https://www.immobiliare.it/annunci/132000372/
 bb3abf7bc9c5e1f29d84,Caprie,NON_DETERMINATO,via Roma,VAI_IN_ZONA,Via Roma 250,,PRONTO,https://www.immobiliare.it/annunci/132000372/
 c7f47eaabb71eaeacc0e,Caprie,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 12,,PRONTO,https://www.trovacasa.it/annunci/to-tc-95641-72900561
 041bc8b84e1a74c0717c,Caprie,NON_DETERMINATO,"Borgata Peroldrado, proponiamo una soluzione indipendente risalente al",VAI_IN_ZONA,"Borgata Peroldrado, proponiamo una soluzione indipendente risalente al 1940",,PRONTO,https://www.immobiliare.it/annunci/131999318/
 5579e5e92a50ca4d1a1b,Caselette,NON_DETERMINATO,"Corso Susa, Caselette",VAI_IN_ZONA,"Corso Susa, Caselette 156",,PRONTO,https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone
 d4527eb1e6d3d20afe95,Caselette,NON_DETERMINATO,via Alpignano,VAI_IN_ZONA,via Alpignano 146,,PRONTO,https://www.immobiliare.it/annunci/109429209/
+5233b0ca73cbf346d3d1,Avigliana,NON_DETERMINATO,via Monte Pirchiriano,VAI_IN_ZONA,via Monte Pirchiriano 14,,PRONTO,https://www.immobiliare.it/annunci/130847028/
+3c04aae80e37d81472c7,Avigliana,NON_DETERMINATO,via Monte Cuneo,VAI_IN_ZONA,via Monte Cuneo 6,,PRONTO,https://www.immobiliare.it/annunci/117894169/
+1c7671bec69d8f1d4362,Avigliana,NON_DETERMINATO,via Oscar Borgesa,VAI_IN_ZONA,via Oscar Borgesa 19,,PRONTO,https://www.immobiliare.it/annunci/127109565/
+78656e54804ae44cf466,Avigliana,NON_DETERMINATO,via Chiattera,VAI_IN_ZONA,via Chiattera 56,,PRONTO,https://www.immobiliare.it/annunci/128300848/
+9efb0029fd1333284a42,Bruzolo,NON_DETERMINATO,Piazza del Moro,VAI_IN_ZONA,Piazza del Moro 6/8,,PRONTO,https://www.valsusaoggi.it/News-Commerciali/
+f0e95c5d3bbf444e6c41,Chianocco,NON_DETERMINATO,Frazione Pavaglione,VAI_IN_ZONA,Frazione Pavaglione 169,,PRONTO,https://www.casa.it/immobili/54627174/

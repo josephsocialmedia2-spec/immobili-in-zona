@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T19:11:46.735129+00:00",
+  "generated_at": "2026-09-01T21:08:07.322113+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -74,7 +74,7 @@
       "zone_id": "borgone-susa-via-augusto-abegg",
       "comune": "Borgone Susa",
       "target_street": "via Augusto Abegg",
-      "listing_target": "via Augusto Abegg 80",
+      "listing_target": "via Augusto Abegg 41",
       "listing_url": "https://www.immobiliare.it/annunci/127550838/",
       "streets": [
         "via Augusto Abegg",
@@ -164,7 +164,7 @@
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
       "target_street": "via Bussoleno",
-      "listing_target": "via bussoleno 26",
+      "listing_target": "Via Bussoleno 22",
       "listing_url": "https://www.immobiliare.it/annunci/132018520/",
       "streets": [
         "via Bussoleno",
@@ -391,6 +391,18 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
+      "zone_id": "bruzolo-piazza-del-moro",
+      "comune": "Bruzolo",
+      "target_street": "Piazza del Moro",
+      "listing_target": "Piazza del Moro 6/8",
+      "listing_url": "https://www.valsusaoggi.it/News-Commerciali/",
+      "streets": [
+        "Piazza del Moro"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
       "zone_id": "bussoleno-viale-lungo-dora",
       "comune": "Bussoleno",
       "target_street": "Viale Lungo Dora",
@@ -398,6 +410,18 @@
       "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
       "streets": [
         "Viale Lungo Dora"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "chianocco-frazione-pavaglione",
+      "comune": "Chianocco",
+      "target_street": "Frazione Pavaglione",
+      "listing_target": "Frazione Pavaglione 169",
+      "listing_url": "https://www.casa.it/immobili/54627174/",
+      "streets": [
+        "Frazione Pavaglione"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
