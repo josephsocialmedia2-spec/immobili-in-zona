@@ -1,0 +1,72 @@
+name: F1 OS 1.6.2 Windows QA
+
+on:
+  push:
+    branches: [feat/f1-os-single-control-plane]
+    paths:
+      - 'qa/f1_os_162/**'
+      - '.github/workflows/f1-os-162-windows-qa.yml'
+  workflow_dispatch:
+
+jobs:
+  windows-task-qa:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare dummy F1 OS install
+        shell: powershell
+        run: |
+          $dest = Join-Path $env:LOCALAPPDATA 'F1_OS_Immobiliare'
+          New-Item -ItemType Directory -Force -Path $dest | Out-Null
+          Copy-Item 'qa/f1_os_162/F1_OS_DAILY.cmd' (Join-Path $dest 'F1_OS_DAILY.cmd') -Force
+          @'
+          import os, sys
+          from pathlib import Path
+          p=Path(os.environ['APPDATA'])/'F1_OS_Immobiliare'/'task_probe.txt'
+          p.parent.mkdir(parents=True,exist_ok=True)
+          p.write_text('ARGS='+'|'.join(sys.argv[1:]),encoding='utf-8')
+          '@ | Set-Content -Encoding UTF8 (Join-Path $dest 'F1_OS_Immobiliare.pyw')
+
+      - name: Register 01:00 task
+        shell: powershell
+        run: |
+          $dest = Join-Path $env:LOCALAPPDATA 'F1_OS_Immobiliare'
+          & '.\qa\f1_os_162\INSTALLA_TASK_01.ps1' -DailyCmd (Join-Path $dest 'F1_OS_DAILY.cmd')
+
+      - name: Verify trigger and recovery settings
+        shell: powershell
+        run: |
+          $name='F1 OS Immobiliare - Flusso 01'
+          $task=Get-ScheduledTask -TaskName $name -ErrorAction Stop
+          $info=Get-ScheduledTaskInfo -TaskName $name
+          if (-not $task.Settings.StartWhenAvailable) { throw 'StartWhenAvailable FALSE' }
+          if (-not $task.Settings.WakeToRun) { throw 'WakeToRun FALSE' }
+          $daily=$task.Triggers | Where-Object { $_.CimClass.CimClassName -eq 'MSFT_TaskDailyTrigger' } | Select-Object -First 1
+          if (-not $daily) { throw 'Trigger daily assente' }
+          $start=[datetime]$daily.StartBoundary
+          if ($start.Hour -ne 1 -or $start.Minute -ne 0) { throw "Orario errato: $($daily.StartBoundary)" }
+          Write-Host "PASS trigger daily 01:00; StartWhenAvailable=$($task.Settings.StartWhenAvailable); WakeToRun=$($task.Settings.WakeToRun)"
+
+      - name: Execute task now and verify --daily-flow
+        shell: powershell
+        run: |
+          $name='F1 OS Immobiliare - Flusso 01'
+          $probe=Join-Path $env:APPDATA 'F1_OS_Immobiliare\task_probe.txt'
+          Remove-Item $probe -Force -ErrorAction SilentlyContinue
+          Start-ScheduledTask -TaskName $name
+          $ok=$false
+          1..30 | ForEach-Object {
+            Start-Sleep -Seconds 1
+            if (Test-Path $probe) { $ok=$true; return }
+          }
+          if (-not $ok) { throw 'Il task non ha eseguito il helper F1_OS_DAILY.cmd' }
+          $text=Get-Content $probe -Raw
+          if ($text -notmatch '--daily-flow') { throw "Argomento --daily-flow assente: $text" }
+          Write-Host "PASS task eseguito: $text"
+
+      - name: Cleanup task
+        if: always()
+        shell: powershell
+        run: Unregister-ScheduledTask -TaskName 'F1 OS Immobiliare - Flusso 01' -Confirm:$false -ErrorAction SilentlyContinue
