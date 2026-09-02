@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T23:48:44.877917+00:00",
+  "generated_at": "2026-09-02T06:02:19.862748+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -164,7 +164,7 @@
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
       "target_street": "via Bussoleno",
-      "listing_target": "Via Bussoleno 22",
+      "listing_target": "via bussoleno 26",
       "listing_url": "https://www.immobiliare.it/annunci/132018520/",
       "streets": [
         "via Bussoleno",
@@ -202,6 +202,21 @@
         "Via Ravetto",
         "Corso Bruno Peirolo",
         "Strada di Chianocco"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "bussoleno-via-traforo",
+      "comune": "Bussoleno",
+      "target_street": "via Traforo",
+      "listing_target": "Via Traforo 20",
+      "listing_url": "https://www.immobiliare.it/annunci/108335851/",
+      "streets": [
+        "via Traforo",
+        "Piazza C. L. N.",
+        "Piazza del Moro",
+        "Strada Ponte Guido Cambursano",
+        "Strada Susa"
       ],
       "osm_status": "OK"
     },
@@ -362,6 +377,18 @@
       "listing_url": "https://www.tecnocasa.it/vendita/ville/torino/borgone-susa/61255852.html",
       "streets": [
         "Via Monte Bianco"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "borgone-susa-frazione-molere",
+      "comune": "Borgone Susa",
+      "target_street": "frazione Molere",
+      "listing_target": "frazione Molere 10",
+      "listing_url": "https://www.immobiliare.it/annunci/113246237/",
+      "streets": [
+        "frazione Molere"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
