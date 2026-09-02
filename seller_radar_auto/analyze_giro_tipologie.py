@@ -24,10 +24,12 @@ def norm(value: object) -> str:
 
 
 def infer_subtype(row: dict) -> str:
+    # Importante: usare solo dati originari dell'annuncio. Non leggere
+    # OBIETTIVO_COMMERCIALE/TIPO_OPPORTUNITA perché sono già derivati da F1
+    # e renderebbero circolare la verifica della classificazione.
     text = norm(" ".join([
         row.get("COSA_CERCO", ""),
         row.get("DOVE_ANDRE", ""),
-        row.get("OBIETTIVO_COMMERCIALE", ""),
     ]))
 
     rules = [
@@ -35,7 +37,7 @@ def infer_subtype(row: dict) -> str:
         ("TERRENO", [r"\bterreno\b", r"area edificabile", r"lotto edificabile"]),
         ("CAPANNONE_MAGAZZINO", [r"\bcapannone\b", r"\bmagazzino\b", r"\bdeposito\b", r"laboratorio industriale"]),
         ("NEGOZIO_COMMERCIALE", [r"\bnegozio\b", r"locale commerciale", r"attivita commerciale"]),
-        ("UFFICIO", [r"\bufficio\b", r"studio professionale", r"direzionale"]),
+        ("UFFICIO", [r"\bufficio\b", r"studio professionale"]),
         ("RUSTICO_CASALE_BAITA", [r"\brustico\b", r"\bcasale\b", r"\bbaita\b", r"\bchalet\b"]),
         ("VILLA", [r"\bvilla\b", r"\bvilletta\b"]),
         ("CASA_INDIPENDENTE_TERRATETTO", [r"casa indipendente", r"\bterratetto\b", r"\bterracielo\b", r"casa singola"]),
@@ -63,8 +65,6 @@ def conservative_property_key(row: dict, subtype: str) -> str:
     comune = norm(row.get("COMUNE"))
     addr = norm(row.get("DOVE_ANDRE"))
     title = norm(row.get("COSA_CERCO"))
-    # Solo gli indirizzi con numero civico sono usati per deduplica cross-portale.
-    # Se manca il civico, usiamo il titolo per non fondere immobili diversi sulla stessa via.
     if addr and re.search(r"\b\d+[a-z]?\b", addr):
         return f"{comune}|{addr}|{subtype}"
     return f"{comune}|{title}|{subtype}"
