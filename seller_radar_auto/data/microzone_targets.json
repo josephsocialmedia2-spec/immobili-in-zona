@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T07:24:59.543532+00:00",
+  "generated_at": "2026-09-02T12:15:57.764748+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -74,8 +74,8 @@
       "zone_id": "borgone-susa-via-augusto-abegg",
       "comune": "Borgone Susa",
       "target_street": "via Augusto Abegg",
-      "listing_target": "via Augusto Abegg 80",
-      "listing_url": "https://www.immobiliare.it/annunci/127550838/",
+      "listing_target": "via Augusto Abegg 68",
+      "listing_url": "https://www.immobiliare.it/annunci/116053317/",
       "streets": [
         "via Augusto Abegg",
         "Strada Donatori di Sangue",
@@ -89,7 +89,7 @@
       "zone_id": "borgone-susa-via-tarro-boiro",
       "comune": "Borgone Susa",
       "target_street": "via Tarro Boiro",
-      "listing_target": "via Tarro Boiro 26",
+      "listing_target": "via Tarro Boiro 5",
       "listing_url": "https://www.immobiliare.it/annunci/117236507/",
       "streets": [
         "via Tarro Boiro",
@@ -346,7 +346,7 @@
       "zone_id": "borgone-susa-via-a-abegg",
       "comune": "Borgone Susa",
       "target_street": "via A. Abegg",
-      "listing_target": "Via A. Abegg 34",
+      "listing_target": "Via A. Abegg 2",
       "listing_url": "https://www.immobiliare.it/annunci/129563936/",
       "streets": [
         "via A. Abegg"
