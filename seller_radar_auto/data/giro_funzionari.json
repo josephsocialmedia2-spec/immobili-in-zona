@@ -40,10 +40,10 @@
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
       "comune": "Bussoleno",
-      "score_comune": 38,
-      "righe_lavoro": 9,
+      "score_comune": 37,
+      "righe_lavoro": 8,
       "residenziale": 6,
-      "commerciale": 3,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -74,8 +74,8 @@
       "numero": 7,
       "comune": "Borgone Susa",
       "score_comune": 30,
-      "righe_lavoro": 23,
-      "residenziale": 23,
+      "righe_lavoro": 21,
+      "residenziale": 21,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -83,17 +83,6 @@
     {
       "funzionario": "FUNZIONARIO 8",
       "numero": 8,
-      "comune": "Vaie",
-      "score_comune": 30,
-      "righe_lavoro": 7,
-      "residenziale": 6,
-      "commerciale": 1,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
       "comune": "Mompantero",
       "score_comune": 30,
       "righe_lavoro": 1,
@@ -103,12 +92,23 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 10",
-      "numero": 10,
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
       "comune": "Moncenisio",
       "score_comune": 30,
       "righe_lavoro": 6,
       "residenziale": 6,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 10",
+      "numero": 10,
+      "comune": "Sant'Antonino di Susa",
+      "score_comune": 30,
+      "righe_lavoro": 17,
+      "residenziale": 17,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
