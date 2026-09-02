@@ -38,12 +38,14 @@ jobs:
               seller_radar_auto/sanitize_operational_queue.py \
               seller_radar_auto/prepare_acquisition_route.py \
               seller_radar_auto/validate_giro_acquisizione.py \
-              seller_radar_auto/refresh_dashboard.py
+              seller_radar_auto/refresh_dashboard.py \
+              seller_radar_auto/analyze_giro_tipologie.py
 
             python seller_radar_auto/sanitize_operational_queue.py
             python seller_radar_auto/prepare_acquisition_route.py
             python seller_radar_auto/validate_giro_acquisizione.py
             python seller_radar_auto/refresh_dashboard.py
+            python seller_radar_auto/analyze_giro_tipologie.py
 
             git add -A \
               seller_radar_auto/data/work_queue.csv \
@@ -55,16 +57,18 @@ jobs:
               seller_radar_auto/data/giro_funzionari.csv \
               seller_radar_auto/data/giro_funzionari.json \
               seller_radar_auto/data/giro_riepilogo.json \
+              seller_radar_auto/data/giro_analisi_tipologie.json \
+              seller_radar_auto/data/giro_analisi_tipologie.csv \
               seller_radar_auto/dashboard.html
 
             if git diff --cached --quiet; then
-              echo "PASS: Giro già allineato; nessuna modifica da salvare."
+              echo "PASS: Giro e analisi tipologie già allineati; nessuna modifica da salvare."
               exit 0
             fi
 
-            git commit -m "giro: refresh master and Susa 20 km operational route"
+            git commit -m "giro: refresh route and typology analysis"
             if git push origin HEAD:main; then
-              echo "PASS: Giro rigenerato e persistito su main."
+              echo "PASS: Giro e analisi tipologie rigenerati e persistiti su main."
               exit 0
             fi
 
