@@ -8,8 +8,8 @@
       "numero": 1,
       "comune": "Chiomonte",
       "score_comune": 55,
-      "righe_lavoro": 5,
-      "residenziale": 5,
+      "righe_lavoro": 6,
+      "residenziale": 6,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -50,17 +50,6 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
-      "comune": "Moncenisio",
-      "score_comune": 30,
-      "righe_lavoro": 7,
-      "residenziale": 7,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 6",
-      "numero": 6,
       "comune": "Sant'Antonino di Susa",
       "score_comune": 30,
       "righe_lavoro": 17,
@@ -70,12 +59,23 @@
       "pdf_da_verificare": 0
     },
     {
+      "funzionario": "FUNZIONARIO 6",
+      "numero": 6,
+      "comune": "Moncenisio",
+      "score_comune": 30,
+      "righe_lavoro": 7,
+      "residenziale": 7,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
       "funzionario": "FUNZIONARIO 7",
       "numero": 7,
       "comune": "Borgone Susa",
       "score_comune": 30,
-      "righe_lavoro": 21,
-      "residenziale": 21,
+      "righe_lavoro": 22,
+      "residenziale": 22,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0

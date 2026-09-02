@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T12:15:57.764748+00:00",
+  "generated_at": "2026-09-02T16:22:06.351014+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -142,6 +142,21 @@
         "Strada Statale 25 del Moncenisio",
         "Via dei Vernetti",
         "Via Florio Benvenuto"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "borgone-susa-via-felice-falco",
+      "comune": "Borgone Susa",
+      "target_street": "via Felice Falco",
+      "listing_target": "via Felice Falco 6",
+      "listing_url": "https://www.immobiliare.it/annunci/128787806/",
+      "streets": [
+        "via Felice Falco",
+        "Piazza Canonico Anselmetti",
+        "Strada Gandoglio",
+        "Via Condove",
+        "Via Mosconi"
       ],
       "osm_status": "OK"
     },
