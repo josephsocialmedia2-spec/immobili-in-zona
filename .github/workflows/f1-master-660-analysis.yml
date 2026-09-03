@@ -1,0 +1,91 @@
+name: F1 Master 660 Analysis
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "seller_radar_auto/.master_660_trigger"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-master-660-analysis
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Recupera snapshot esatto dei 660
+        shell: bash
+        run: |
+          set -euo pipefail
+          git show d56abc5b5b71bbd9aafbbd9cd0874722e14c8701:seller_radar_auto/data/work_queue.csv > seller_radar_auto/data/seller_master_660.csv
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p = Path('seller_radar_auto/data/seller_master_660.csv')
+          with p.open(encoding='utf-8-sig', newline='') as f:
+              rows = list(csv.DictReader(f))
+          assert len(rows) == 660, f'ATTESI 660, TROVATI {len(rows)}'
+          print(f'PASS SNAPSHOT: {len(rows)} righe')
+          PY
+
+      - name: Analizza tutti i 660 senza esclusioni
+        run: |
+          python -m py_compile seller_radar_auto/analyze_master_660.py
+          python seller_radar_auto/analyze_master_660.py
+
+      - name: Verifica integrita 660 su 660
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          base = Path('seller_radar_auto/data')
+          with (base/'seller_master_660.csv').open(encoding='utf-8-sig', newline='') as f:
+              raw = list(csv.DictReader(f))
+          with (base/'seller_master_660_classificato.csv').open(encoding='utf-8-sig', newline='') as f:
+              classified = list(csv.DictReader(f))
+          report = json.loads((base/'seller_master_660_analisi.json').read_text(encoding='utf-8'))
+          assert len(raw) == 660
+          assert len(classified) == 660
+          assert report['seller_totali_richiesti'] == 660
+          assert report['seller_totali_analizzati'] == 660
+          assert report['righe_preservate'] == 660
+          assert report['controllo_integrita'] == 'PASS_660_SU_660'
+          assert all(r['MASTER_PRESERVATO'] == 'SI' for r in classified)
+          print('PASS INTEGRITA MASTER: 660 input = 660 classificati = 660 preservati')
+          PY
+
+      - name: Salva analisi su main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "f1-master-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add seller_radar_auto/data/seller_master_660.csv \
+                  seller_radar_auto/data/seller_master_660_classificato.csv \
+                  seller_radar_auto/data/seller_master_660_analisi.json \
+                  seller_radar_auto/data/seller_master_660_tipologie.csv
+          if git diff --cached --quiet; then
+            echo 'PASS: output 660 gia allineati.'
+            exit 0
+          fi
+          git commit -m "seller radar: preserve and classify all 660 master rows"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo 'PASS: master 660 salvato su main.'
+              exit 0
+            fi
+            git pull --rebase origin main
+            sleep $((attempt * 2))
+          done
+          echo 'FAIL: impossibile salvare il master 660.'
+          exit 1
