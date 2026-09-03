@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Rigenera la dashboard finale distinguendo MASTER e Giro operativo."""
+"""Rigenera la dashboard finale partendo dal MASTER preservato, senza perdere seller."""
 import csv
 import html
 import json
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -10,6 +11,7 @@ from f1_remote_bridge import build_import_url
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
+MASTER = DATA / "seller_master_660_classificato.csv"
 QUEUE = DATA / "work_queue.csv"
 ROUTE = DATA / "giro_acquisizione.csv"
 ROUTE_SUMMARY = DATA / "giro_riepilogo.json"
@@ -44,34 +46,64 @@ def as_int(value) -> int:
         return 0
 
 
+def row_url(row: dict) -> str:
+    return (row.get("URL") or "").strip()
+
+
+master_snapshot = load_csv(MASTER)
 queue = load_csv(QUEUE)
 route = load_csv(ROUTE)
 route_summary = load_json(ROUTE_SUMMARY)
 status_rows = load_csv(STATUS)
 municipalities = [r for r in load_csv(MUNICIPALITIES) if r.get("enabled") == "1"]
 portals = [r for r in load_csv(PORTALS) if r.get("enabled") == "1"]
-high = sum(1 for r in queue if as_int(r.get("SCORE")) >= 70)
-private = sum(1 for r in queue if r.get("INDIZIO_INSERZIONISTA") == "INDIZIO_PRIVATO")
+
+# MASTER = archivio preservato + eventuali nuovi seller della coda corrente.
+# I filtri operativi NON possono cancellare righe dal master.
+master_rows = list(master_snapshot)
+known_urls = {row_url(r) for r in master_rows if row_url(r)}
+for current in queue:
+    url = row_url(current)
+    if url and url not in known_urls:
+        extra = dict(current)
+        extra.setdefault("MASTER_660_ID", "")
+        extra.setdefault("TIPOLOGIA_REALE_INFERITA", "NON_CLASSIFICATO")
+        extra.setdefault("ASTA_RILEVATA", "NO")
+        extra.setdefault("STATO_INDIRIZZO_MASTER", "DA_VERIFICARE")
+        extra["MASTER_PRESERVATO"] = "SI"
+        master_rows.append(extra)
+        known_urls.add(url)
+
+if master_snapshot and len(master_snapshot) != 660:
+    raise SystemExit(f"FAIL MASTER: snapshot atteso 660, trovato {len(master_snapshot)}")
+if master_snapshot and any((r.get("MASTER_PRESERVATO") or "").strip().upper() != "SI" for r in master_snapshot):
+    raise SystemExit("FAIL MASTER: almeno una riga dei 660 non risulta preservata")
+
+high = sum(1 for r in master_rows if as_int(r.get("SCORE")) >= 70)
+private = sum(1 for r in master_rows if r.get("INDIZIO_INSERZIONISTA") == "INDIZIO_PRIVATO")
 accepted = sum(as_int(r.get("ACCETTATI")) for r in status_rows)
 ok = sum(1 for r in status_rows if r.get("STATO") == "OK")
 
-route_by_url = {(r.get("URL") or "").strip(): r for r in route if (r.get("URL") or "").strip()}
-state_order = {"FERMATA_PRONTA": 0, "DA_VERIFICARE": 1, "BACKLOG": 2, "STORICO_NON_ATTIVO": 3}
-queue_sorted = sorted(
-    queue,
+route_by_url = {row_url(r): r for r in route if row_url(r)}
+state_order = {"FERMATA_PRONTA": 0, "DA_VERIFICARE": 1, "BACKLOG": 2, "STORICO_NON_ATTIVO": 3, "MASTER": 4}
+master_sorted = sorted(
+    master_rows,
     key=lambda r: (
-        state_order.get(route_by_url.get((r.get("URL") or "").strip(), {}).get("STATO_GIRO", ""), 9),
+        state_order.get(route_by_url.get(row_url(r), {}).get("STATO_GIRO", "MASTER"), 9),
         -as_int(r.get("SCORE")),
     ),
 )
 
+tipologia_counts = Counter((r.get("TIPOLOGIA_REALE_INFERITA") or "NON_CLASSIFICATO").strip() for r in master_rows)
+asta_count = sum(1 for r in master_rows if (r.get("ASTA_RILEVATA") or "").strip().upper() == "SI")
+
 rows = []
-for row in queue_sorted[:1000]:
+for row in master_sorted:
     score = as_int(row.get("SCORE"))
     score_class = "high" if score >= 70 else "med" if score >= 45 else "low"
-    url_key = (row.get("URL") or "").strip()
+    url_key = row_url(row)
     route_row = route_by_url.get(url_key, {})
-    giro_state = route_row.get("STATO_GIRO") or row.get("STATO_GIRO") or "NON_CLASSIFICATO"
+    giro_state = route_row.get("STATO_GIRO") or row.get("STATO_GIRO") or "MASTER"
     address = route_row.get("DOVE_ANDRE") or row.get("DOVE_ANDRE") or "DA VERIFICARE"
     remote_url = route_row.get("F1_INDIRIZZO_REMOTO_URL") or build_import_url(row)
     remote_action = (
@@ -79,21 +111,31 @@ for row in queue_sorted[:1000]:
         if remote_url else "<span class='blocked'>CIVICO DA VERIFICARE</span>"
     )
     source_url = esc(row.get("URL"))
+    source_action = (
+        f"<a href='{source_url}' target='_blank' rel='noopener'>APRI FONTE</a>"
+        if source_url else "<span class='blocked'>FONTE NON DISPONIBILE</span>"
+    )
+    tipologia = (row.get("TIPOLOGIA_REALE_INFERITA") or "NON_CLASSIFICATO").strip()
+    asta = (row.get("ASTA_RILEVATA") or "NO").strip().upper()
+    master_id = row.get("MASTER_660_ID") or "NUOVO"
     rows.append(
-        f"<tr data-giro='{esc(giro_state)}'><td><span class='score {score_class}'>{score}</span></td>"
+        f"<tr class='seller-row' data-giro='{esc(giro_state)}' data-tipologia='{esc(tipologia)}' data-asta='{esc(asta)}' data-master-id='{esc(master_id)}'>"
+        f"<td>{esc(master_id)}</td><td><span class='score {score_class}'>{score}</span></td>"
         f"<td><span class='giro giro-{esc(giro_state.lower())}'>{esc(giro_state)}</span></td>"
+        f"<td>{esc(tipologia)}</td><td>{'SI' if asta == 'SI' else '—'}</td>"
         f"<td>{esc(row.get('PRIORITA'))}</td><td>{esc(row.get('COMUNE'))}</td>"
         f"<td>{esc(row.get('FONTE'))}</td><td>{esc(row.get('INDIZIO_INSERZIONISTA'))}</td>"
         f"<td>{esc(row.get('TITOLO'))}</td><td>{esc(address)}</td>"
         f"<td>{esc(route_row.get('PREZZO') or row.get('PREZZO_OPERATIVO') or row.get('PREZZO') or '—')}</td>"
         f"<td>{esc(row.get('RIBASSI'))}</td><td>{esc(row.get('MOTIVI'))}</td>"
-        f"<td><div class='actions'><a href='{source_url}' target='_blank' rel='noopener'>APRI FONTE</a>{remote_action}</div></td></tr>"
+        f"<td><div class='actions'>{source_action}{remote_action}</div></td></tr>"
     )
 if not rows:
-    rows = ["<tr><td colspan='12'>Nessuna opportunità rilevata.</td></tr>"]
+    rows = ["<tr><td colspan='15'>Nessun seller nel master.</td></tr>"]
 
-seller_master = as_int(route_summary.get("seller_master_totali")) or len(queue)
-seller_active = as_int(route_summary.get("seller_attivi_master")) or len(queue)
+seller_master = len(master_rows)
+seller_snapshot = len(master_snapshot)
+seller_active = as_int(route_summary.get("seller_attivi_master"))
 territory = as_int(route_summary.get("nel_territorio_attivo"))
 ready = as_int(route_summary.get("fermate_pronte"))
 verify = as_int(route_summary.get("indirizzo_da_verificare"))
@@ -101,12 +143,19 @@ backlog = as_int(route_summary.get("backlog_fuori_territorio"))
 historical = as_int(route_summary.get("storico_non_attivo"))
 assigned = as_int(route_summary.get("fermate_assegnate_team"))
 
-DASH.write_text(f"""<!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>F1 Seller Radar · Giro Acquisizione</title><style>
-body{{font-family:Segoe UI,Arial;background:#0c0f0d;color:#eee;padding:22px;margin:0}}h1{{margin-bottom:4px}}.subtitle{{color:#b8c0ba}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:20px 0}}.card{{background:#151a17;border:1px solid #2c3630;padding:13px;border-radius:12px}}.card b{{display:block;font-size:26px;margin-top:4px}}.primary{{border-color:#4a8f5c}}.warning{{border-color:#9a7a2f}}.muted{{opacity:.82}}.legend{{background:#121613;border:1px solid #2c3630;border-radius:10px;padding:12px;margin:14px 0;line-height:1.5}}.table-wrap{{overflow-x:auto}}table{{width:100%;border-collapse:collapse;background:#141815;min-width:1200px}}th,td{{padding:8px;border-bottom:1px solid #2c332f;text-align:left;font-size:13px;vertical-align:top}}a{{color:#78e08f}}.actions{{display:grid;gap:8px;min-width:190px}}.remote{{display:block;background:#174f2a;color:white;padding:8px;border-radius:7px;text-decoration:none;font-weight:800}}.blocked{{color:#d7b95b;font-size:11px}}.score,.giro{{padding:4px 6px;border-radius:7px;white-space:nowrap}}.high{{background:#5f2020}}.med{{background:#5d4b17}}.low{{background:#25442f}}.giro-fermata_pronta{{background:#174f2a}}.giro-da_verificare{{background:#5d4b17}}.giro-backlog{{background:#27303a}}.giro-storico_non_attivo{{background:#3c3c3c;color:#bbb}}@media(max-width:700px){{body{{padding:12px}}.card b{{font-size:22px}}}}
-</style></head><body><h1>F1 SELLER RADAR · GIRO ACQUISIZIONE</h1><div class='subtitle'>MASTER completo + filtro operativo Susa 20 km · Aggiornato {datetime.now().strftime('%d/%m/%Y %H:%M')}</div>
+filter_buttons = [f"<button class='filter active' data-filter='ALL'>TUTTI <b>{seller_master}</b></button>"]
+for tipologia, count in sorted(tipologia_counts.items(), key=lambda x: (-x[1], x[0])):
+    filter_buttons.append(
+        f"<button class='filter' data-filter='{esc(tipologia)}'>{esc(tipologia.replace('_', ' '))} <b>{count}</b></button>"
+    )
+filter_buttons.append(f"<button class='filter' data-filter='ASTE'>ASTE <b>{asta_count}</b></button>")
+
+DASH.write_text(f"""<!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>F1 Seller Radar · Master + Giro</title><style>
+body{{font-family:Segoe UI,Arial;background:#0c0f0d;color:#eee;padding:22px;margin:0}}h1{{margin-bottom:4px}}.subtitle{{color:#b8c0ba}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:20px 0}}.card{{background:#151a17;border:1px solid #2c3630;padding:13px;border-radius:12px}}.card b{{display:block;font-size:26px;margin-top:4px}}.master-card{{border:2px solid #78e08f;background:#102218}}.primary{{border-color:#4a8f5c}}.warning{{border-color:#9a7a2f}}.muted{{opacity:.82}}.legend{{background:#121613;border:1px solid #2c3630;border-radius:10px;padding:12px;margin:14px 0;line-height:1.5}}.filters{{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}}.filter{{background:#171d19;color:#eee;border:1px solid #354139;border-radius:9px;padding:8px 10px;cursor:pointer}}.filter.active{{border-color:#78e08f;background:#173922}}.filter b{{margin-left:5px}}.visible-count{{font-weight:800;margin:12px 0;color:#9ce8ad}}.table-wrap{{overflow-x:auto}}table{{width:100%;border-collapse:collapse;background:#141815;min-width:1500px}}th,td{{padding:8px;border-bottom:1px solid #2c332f;text-align:left;font-size:13px;vertical-align:top}}a{{color:#78e08f}}.actions{{display:grid;gap:8px;min-width:190px}}.remote{{display:block;background:#174f2a;color:white;padding:8px;border-radius:7px;text-decoration:none;font-weight:800}}.blocked{{color:#d7b95b;font-size:11px}}.score,.giro{{padding:4px 6px;border-radius:7px;white-space:nowrap}}.high{{background:#5f2020}}.med{{background:#5d4b17}}.low{{background:#25442f}}.giro-fermata_pronta{{background:#174f2a}}.giro-da_verificare{{background:#5d4b17}}.giro-backlog{{background:#27303a}}.giro-storico_non_attivo{{background:#3c3c3c;color:#bbb}}.giro-master{{background:#26372b}}@media(max-width:700px){{body{{padding:12px}}.card b{{font-size:22px}}}}
+</style></head><body><h1>F1 SELLER RADAR · MASTER COMPLETO</h1><div class='subtitle'>Il master conserva tutti i seller. I filtri cambiano solo la vista · Aggiornato {datetime.now().strftime('%d/%m/%Y %H:%M')}</div>
 <div class='cards'>
-<div class='card'>SELLER MASTER TOTALI<b>{seller_master}</b></div>
-<div class='card'>SELLER ATTIVI MASTER<b>{seller_active}</b></div>
+<div class='card master-card'>SELLER TOTALI<b>{seller_master}</b></div>
+<div class='card'>MASTER STORICO PRESERVATO<b>{seller_snapshot}</b></div>
 <div class='card primary'>NEL TERRITORIO ATTIVO<b>{territory}</b></div>
 <div class='card primary'>FERMATE PRONTE<b>{ready}</b></div>
 <div class='card warning'>INDIRIZZO DA VERIFICARE<b>{verify}</b></div>
@@ -115,14 +164,41 @@ body{{font-family:Segoe UI,Arial;background:#0c0f0d;color:#eee;padding:22px;marg
 <div class='card muted'>STORICO NON ATTIVO<b>{historical}</b></div>
 <div class='card muted'>PRIORITÀ ALTA<b>{high}</b></div>
 <div class='card muted'>INDIZI PRIVATO<b>{private}</b></div>
+<div class='card muted'>ASTE RILEVATE<b>{asta_count}</b></div>
 <div class='card muted'>QUERY OK<b>{ok}/{len(status_rows)}</b></div>
 <div class='card muted'>TERRITORI OPERATIVI<b>{len(municipalities)}</b></div>
 <div class='card muted'>PORTALI<b>{len(portals)}</b></div>
 </div>
-<div class='legend'><b>Come leggere i numeri:</b> il MASTER non viene tagliato dal raggio operativo. Susa +20 km decide soltanto cosa entra nel Giro di oggi. “FERMATA_PRONTA” significa indirizzo utilizzabile; “DA_VERIFICARE” resta nel territorio ma richiede controllo; “BACKLOG” è valido ma fuori dal giro corrente.</div>
-<div class='table-wrap'><table><thead><tr><th>Score</th><th>Stato Giro</th><th>Priorità</th><th>Comune</th><th>Fonte</th><th>Inserzionista</th><th>Immobile</th><th>Indirizzo</th><th>Prezzo</th><th>Ribassi</th><th>Motivi</th><th>Azioni</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<div class='legend'><b>Regola del sistema:</b> SELLER TOTALI è il MASTER. Nessun filtro geografico, qualitativo o operativo cancella seller dal master. Susa +20 km decide soltanto il Giro operativo. Le pagine categoria, agenzie, aste, duplicati e record da verificare restano visibili e classificati.</div>
+<div class='filters'>{''.join(filter_buttons)}</div>
+<div class='visible-count'>VISIBILI: <span id='visibleCount'>{seller_master}</span> / {seller_master}</div>
+<div class='table-wrap'><table><thead><tr><th>ID Master</th><th>Score</th><th>Stato Giro</th><th>Tipologia</th><th>Asta</th><th>Priorità</th><th>Comune</th><th>Fonte</th><th>Inserzionista</th><th>Immobile</th><th>Indirizzo</th><th>Prezzo</th><th>Ribassi</th><th>Motivi</th><th>Azioni</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<script>
+const buttons=[...document.querySelectorAll('.filter')];
+const sellerRows=[...document.querySelectorAll('.seller-row')];
+const visibleCount=document.getElementById('visibleCount');
+function applyFilter(value){{
+  let shown=0;
+  sellerRows.forEach(row=>{{
+    const match=value==='ALL' || (value==='ASTE' ? row.dataset.asta==='SI' : row.dataset.tipologia===value);
+    row.style.display=match?'':'none';
+    if(match) shown++;
+  }});
+  visibleCount.textContent=shown;
+  buttons.forEach(b=>b.classList.toggle('active',b.dataset.filter===value));
+}}
+buttons.forEach(button=>button.addEventListener('click',()=>applyFilter(button.dataset.filter)));
+</script>
 </body></html>""", encoding="utf-8")
+
+if seller_snapshot:
+    rendered_rows = DASH.read_text(encoding="utf-8").count("class='seller-row'")
+    if rendered_rows != seller_master:
+        raise SystemExit(f"FAIL DASHBOARD: righe renderizzate={rendered_rows}, master={seller_master}")
+
 print(
-    f"DASHBOARD FINALE: master={seller_master}, attivi={seller_active}, territorio={territory}, "
-    f"fermate={ready}, verifica={verify}, backlog={backlog}, assegnate={assigned}."
+    f"DASHBOARD MASTER: seller_totali={seller_master}, snapshot_preservato={seller_snapshot}, "
+    f"territorio={territory}, fermate={ready}, verifica={verify}, backlog={backlog}, assegnate={assigned}, "
+    f"aste={asta_count}."
 )
+print(f"PASS DASHBOARD MASTER | {seller_master} seller visibili e filtrabili senza cancellazioni")
