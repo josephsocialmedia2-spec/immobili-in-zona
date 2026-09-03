@@ -6,6 +6,7 @@ DASH = ROOT / "dashboard.html"
 TAGS = [
     "<script src='microzone_link.js'></script>",
     "<script src='cadastral_overlay.js'></script>",
+    "<script src='edilizia_overlay.js'></script>",
 ]
 
 text = DASH.read_text(encoding="utf-8")
@@ -20,4 +21,4 @@ for tag in TAGS:
         raise SystemExit(f"FAIL DASHBOARD LINK: script tag non univoco: {tag}")
 if check.count("class='seller-row'") != 660:
     raise SystemExit("FAIL DASHBOARD LINK: il MASTER non contiene più 660 righe")
-print("PASS DASHBOARD LINK | MASTER 660 preservato + microzona + overlay NOVITA/Catasto")
+print("PASS DASHBOARD LINK | MASTER 660 preservato + microzona + catasto + radar edilizio")
