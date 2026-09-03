@@ -1,0 +1,117 @@
+name: F1 Catasto Segnali AUTO
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'seller_radar_auto/data/work_queue.csv'
+      - 'seller_radar_auto/data/seller_master_660_classificato.csv'
+      - 'seller_radar_auto/cadastral_enrichment.py'
+      - 'seller_radar_auto/cadastral_overlay.js'
+      - 'seller_radar_auto/inject_microzone_links.py'
+      - '.github/workflows/f1-cadastral-enrichment.yml'
+      - '.cadastral_backfill_trigger'
+  schedule:
+    # Fallback giornaliero alle 01:15 Europe/Rome, valido con CET e CEST.
+    - cron: '15 23,0 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-cadastral-enrichment
+  cancel-in-progress: false
+
+jobs:
+  catasto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Gate fallback 01:15 Italia
+        id: gate
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo 'run=true' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          H=$(TZ=Europe/Rome date +%H)
+          T=$(TZ=Europe/Rome date +%H:%M)
+          echo "Ora italiana: $T"
+          if [ "$H" = '01' ]; then echo 'run=true' >> "$GITHUB_OUTPUT"; else echo 'run=false' >> "$GITHUB_OUTPUT"; fi
+
+      - name: Verifica codice
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python -m py_compile seller_radar_auto/cadastral_enrichment.py seller_radar_auto/refresh_dashboard.py seller_radar_auto/inject_microzone_links.py
+
+      - name: Indirizzi -> mappali Agenzia Entrate
+        if: steps.gate.outputs.run == 'true'
+        env:
+          F1_NOMINATIM_INTERVAL: '1.1'
+        run: python seller_radar_auto/cadastral_enrichment.py
+
+      - name: Rigenera dashboard e NOVITA
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python seller_radar_auto/refresh_dashboard.py
+          python seller_radar_auto/inject_microzone_links.py
+
+      - name: Quality gate 660 + privacy + target
+        if: steps.gate.outputs.run == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv,json
+          from pathlib import Path
+          d=Path('seller_radar_auto/data')
+          rows=list(csv.DictReader((d/'cadastral_enrichment.csv').open(encoding='utf-8-sig')))
+          base=[r for r in rows if r['ORIGINE']=='MASTER_660']
+          assert len(base)==660, len(base)
+          assert all(k not in rows[0] for k in ('TELEFONO','EMAIL','NOME_PROPRIETARIO','INTESTATARIO'))
+          allowed={'APPARTAMENTO','VILLA','CASA_INDIPENDENTE_TERRATETTO','RUSTICO_CASALE_BAITA','NEGOZIO_COMMERCIALE'}
+          summary=json.loads((d/'cadastral_summary.json').read_text(encoding='utf-8'))
+          assert summary['policy']=='NO_PERSONAL_DATA_ONLY_ADDRESS_TO_CADASTRAL_PARCEL'
+          page=Path('seller_radar_auto/dashboard.html').read_text(encoding='utf-8')
+          assert page.count("class='seller-row'")==660
+          assert "cadastral_overlay.js" in page and "microzone_link.js" in page
+          print('PASS CATASTO QA | master=660 | nessun dato personale | overlay NOVITA attivo')
+          PY
+
+      - name: Salva risultati su main
+        if: steps.gate.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'f1-catasto-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          SNAP="$(mktemp -d)"
+          mkdir -p "$SNAP/seller_radar_auto/data" "$SNAP/seller_radar_auto"
+          cp seller_radar_auto/data/cadastral_enrichment.csv "$SNAP/seller_radar_auto/data/"
+          cp seller_radar_auto/data/cadastral_summary.json "$SNAP/seller_radar_auto/data/"
+          cp seller_radar_auto/data/cadastral_geocode_cache.json "$SNAP/seller_radar_auto/data/"
+          cp seller_radar_auto/dashboard.html "$SNAP/seller_radar_auto/"
+          restore(){
+            cp "$SNAP/seller_radar_auto/data/cadastral_enrichment.csv" seller_radar_auto/data/
+            cp "$SNAP/seller_radar_auto/data/cadastral_summary.json" seller_radar_auto/data/
+            cp "$SNAP/seller_radar_auto/data/cadastral_geocode_cache.json" seller_radar_auto/data/
+            cp "$SNAP/seller_radar_auto/dashboard.html" seller_radar_auto/
+          }
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            restore
+            git add seller_radar_auto/data/cadastral_enrichment.csv seller_radar_auto/data/cadastral_summary.json seller_radar_auto/data/cadastral_geocode_cache.json seller_radar_auto/dashboard.html
+            if git diff --cached --quiet; then echo 'PASS: nessuna modifica catastale da salvare'; exit 0; fi
+            git commit -m 'catasto: enrich seller signals by address and parcel'
+            if git push origin HEAD:main; then echo 'PASS: arricchimento catastale persistito'; exit 0; fi
+            sleep $((attempt*2))
+          done
+          echo 'FAIL: impossibile persistere arricchimento catastale'
+          exit 1
