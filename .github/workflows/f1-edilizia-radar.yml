@@ -45,7 +45,7 @@ jobs:
         id: mx
         shell: bash
         run: |
-          python - <<'PY' >> "$GITHUB_OUTPUT"
+          MATRIX=$(python - <<'PY'
           import csv,json,re
           p='seller_radar_auto/data/seller_master_660_classificato.csv'
           allowed={'APPARTAMENTO','VILLA','CASA_INDIPENDENTE_TERRATETTO','RUSTICO_CASALE_BAITA','NEGOZIO_COMMERCIALE'}
@@ -59,9 +59,11 @@ jobs:
             if not addr or 'verificare' in addr.casefold(): continue
             c=(r.get('COMUNE') or '').strip()
             if c and c not in towns: towns.append(c)
-          print('comuni='+json.dumps({'comune':towns},ensure_ascii=False,separators=(',',':')))
-          print('Comuni target:',len(towns))
+          print(json.dumps({'comune':towns},ensure_ascii=False,separators=(',',':')))
           PY
+          )
+          echo "comuni=$MATRIX" >> "$GITHUB_OUTPUT"
+          echo "Matrix comuni: $MATRIX"
 
   scan:
     needs: matrix
