@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T16:22:06.351014+00:00",
+  "generated_at": "2026-09-03T19:00:13.306296+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -425,6 +425,18 @@
       "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
       "streets": [
         "Viale Lungo Dora"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "bussoleno-strada-principale-si-trova-un-negozio-di",
+      "comune": "Bussoleno",
+      "target_street": "strada principale, si trova un negozio di",
+      "listing_target": "strada principale, si trova un negozio di 65",
+      "listing_url": "https://case.trovit.it/affitto-negozio-bussoleno",
+      "streets": [
+        "strada principale, si trova un negozio di"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

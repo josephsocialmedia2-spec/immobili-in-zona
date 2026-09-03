@@ -6,17 +6,6 @@
     {
       "funzionario": "FUNZIONARIO 1",
       "numero": 1,
-      "comune": "Chiomonte",
-      "score_comune": 55,
-      "righe_lavoro": 6,
-      "residenziale": 6,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 2",
-      "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
       "righe_lavoro": 22,
@@ -26,13 +15,24 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 3",
-      "numero": 3,
+      "funzionario": "FUNZIONARIO 2",
+      "numero": 2,
       "comune": "Bussoleno",
       "score_comune": 37,
-      "righe_lavoro": 8,
-      "residenziale": 6,
-      "commerciale": 2,
+      "righe_lavoro": 6,
+      "residenziale": 5,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 3",
+      "numero": 3,
+      "comune": "Borgone Susa",
+      "score_comune": 35,
+      "righe_lavoro": 20,
+      "residenziale": 20,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -50,10 +50,10 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
-      "comune": "Sant'Antonino di Susa",
+      "comune": "Moncenisio",
       "score_comune": 30,
-      "righe_lavoro": 17,
-      "residenziale": 17,
+      "righe_lavoro": 6,
+      "residenziale": 6,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -61,7 +61,18 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
-      "comune": "Moncenisio",
+      "comune": "Chiomonte",
+      "score_comune": 30,
+      "righe_lavoro": 4,
+      "residenziale": 4,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
+      "comune": "Exilles",
       "score_comune": 30,
       "righe_lavoro": 7,
       "residenziale": 7,
@@ -70,23 +81,12 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
-      "comune": "Borgone Susa",
-      "score_comune": 30,
-      "righe_lavoro": 22,
-      "residenziale": 22,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 8",
       "numero": 8,
-      "comune": "Bruzolo",
-      "score_comune": 27,
-      "righe_lavoro": 4,
-      "residenziale": 4,
+      "comune": "Gravere",
+      "score_comune": 30,
+      "righe_lavoro": 3,
+      "residenziale": 3,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -94,21 +94,21 @@
     {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Chianocco",
-      "score_comune": 27,
-      "righe_lavoro": 6,
-      "residenziale": 4,
-      "commerciale": 2,
+      "comune": "Mattie",
+      "score_comune": 30,
+      "righe_lavoro": 3,
+      "residenziale": 3,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Giaglione",
-      "score_comune": 23,
-      "righe_lavoro": 3,
-      "residenziale": 2,
+      "comune": "Salbertrand",
+      "score_comune": 30,
+      "righe_lavoro": 5,
+      "residenziale": 4,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
