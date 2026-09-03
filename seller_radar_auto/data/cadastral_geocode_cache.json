@@ -1,0 +1,986 @@
+{
+  "viale carrù 22, rivoli, torino, piemonte, italia": {
+    "lat": "45.0754556",
+    "lon": "7.5526588",
+    "display_name": "Viale Carrù, Maiasco, Cascine Vica, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via val della torre, 62, val della torre, torino, piemonte, italia": {
+    "lat": "45.1263423",
+    "lon": "7.4911606",
+    "display_name": "Via Val della Torre, Grange di Brione, Caselette, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, 10091, Italia"
+  },
+  "corso torino 6, buttigliera alta, torino, piemonte, italia": {
+    "lat": "45.0834176",
+    "lon": "7.4315264",
+    "display_name": "Corso Torino, Ferriera, Buttigliera Alta, Torino, Piemonte, 10051, Italia"
+  },
+  "piazza martiri della libertà 5, rivoli, torino, piemonte, italia": {
+    "lat": "45.0697584",
+    "lon": "7.5197239",
+    "display_name": "Piazza Martiri della Libertà, Cascine Vica, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via piol 18, rivoli, torino, piemonte, italia": {
+    "lat": "45.0714495",
+    "lon": "7.5157382",
+    "display_name": "18, Via Fratelli Piol, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via san lorenzo 2, bussoleno, torino, piemonte, italia": {
+    "lat": "45.1417008",
+    "lon": "7.1516431",
+    "display_name": "Via San Lorenzo, Argiassera, Bussoleno, Torino, Piemonte, 10053, Italia"
+  },
+  "via cesare battisti 19, avigliana, torino, piemonte, italia": {
+    "lat": "45.0772285",
+    "lon": "7.3981969",
+    "display_name": "Via Cesare Battisti, Chiattera, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via felice goffi 6, avigliana, torino, piemonte, italia": {
+    "lat": "45.0968870",
+    "lon": "7.4057820",
+    "display_name": "Via Felice Goffi, Ponte Dora, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via avigliana 13, avigliana, torino, piemonte, italia": {
+    "lat": "45.0488684",
+    "lon": "7.3739816",
+    "display_name": "Via Avigliana, Brossa, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via avigliana 28, avigliana, torino, piemonte, italia": {
+    "lat": "45.0488684",
+    "lon": "7.3739816",
+    "display_name": "Via Avigliana, Brossa, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via avigliana 18, avigliana, torino, piemonte, italia": {
+    "lat": "45.0488684",
+    "lon": "7.3739816",
+    "display_name": "Via Avigliana, Brossa, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via a. abegg 41, borgone susa, torino, piemonte, italia": null,
+  "via fabbrichetta 1, collegno, torino, piemonte, italia": {
+    "lat": "45.0713071",
+    "lon": "7.5629676",
+    "display_name": "Via Fabbrichetta, Terracorta, Leumann, Collegno, Torino, Piemonte, 10093, Italia"
+  },
+  "via generale cantore 11, bardonecchia, torino, piemonte, italia": null,
+  "piazza mistral 2, oulx, torino, piemonte, italia": {
+    "lat": "45.0287206",
+    "lon": "6.8325930",
+    "display_name": "Piazza Federico Mistral, San Marco, Oulx, Torino, Piemonte, Italia"
+  },
+  "via medail 98, bardonecchia, torino, piemonte, italia": {
+    "lat": "45.0790424",
+    "lon": "6.7023957",
+    "display_name": "Via Giuseppe Francesco Medail, Bardonecchia, Torino, Piemonte, 10052, Italia"
+  },
+  "via montenero 13, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1154529",
+    "lon": "7.2707188",
+    "display_name": "Via Montenero, Molere di Borgone, Borgone Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "via michelangelo buonarroti, 53, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0670774",
+    "lon": "7.5837875",
+    "display_name": "Via Michelangelo Buonarroti, Grugliasco, Torino, Piemonte, 10095, Italia"
+  },
+  "borgata balma, 14, rubiana, torino, piemonte, italia": null,
+  "via roma, 54, rubiana, torino, piemonte, italia": {
+    "lat": "45.1372334",
+    "lon": "7.3833417",
+    "display_name": "Via Roma, Borgata Bugnone, Rubiana, Unione Montana Alpi Graie, Torino, Piemonte, 10057, Italia"
+  },
+  "via roma 11, sant'antonino di susa, torino, piemonte, italia": {
+    "lat": "45.1090202",
+    "lon": "7.2757379",
+    "display_name": "Via Roma, Maisonetta, Sant'Antonino di Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "strada avigliana, 16, trana, torino, piemonte, italia": {
+    "lat": "45.0492694",
+    "lon": "7.4032670",
+    "display_name": "Strada Avigliana, Cordero, San Bernardino, Trana, Torino, Piemonte, 10051, Italia"
+  },
+  "via castello 71, val della torre, torino, piemonte, italia": {
+    "lat": "45.1559231",
+    "lon": "7.4454424",
+    "display_name": "Via Carlo Lucco Castello, Borgata Verna, Val della Torre, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "via borgionera 6, villar dora, torino, piemonte, italia": {
+    "lat": "45.1234833",
+    "lon": "7.3791518",
+    "display_name": "Via Borgionera, Borgata Colombo, Villar Dora, Torino, Piemonte, 10057, Italia"
+  },
+  "via san rocco 9/b, villarbasse, torino, piemonte, italia": {
+    "lat": "45.0478223",
+    "lon": "7.4733957",
+    "display_name": "Via San Rocco, Villarbasse, Vigne, Villarbasse, Torino, Piemonte, 10040, Italia"
+  },
+  "via ponte dora 2, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1133001",
+    "lon": "7.2680192",
+    "display_name": "Via Ponte Dora, San Valeriano, Borgone Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "via milano 78, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0672468",
+    "lon": "7.6037381",
+    "display_name": "78, Via Milano, Borgata Quaglia, Grugliasco, Torino, Piemonte, 10095, Italia"
+  },
+  "via colle delle finestre 16, meana di susa, torino, piemonte, italia": {
+    "lat": "45.1265643",
+    "lon": "7.0622826",
+    "display_name": "Via Colle delle Finestre, Bassa Meana, Meana di Susa, Torino, Piemonte, 10059, Italia"
+  },
+  "corso ortigara 23, oulx, torino, piemonte, italia": {
+    "lat": "45.0375332",
+    "lon": "6.8286220",
+    "display_name": "Corso Monte Ortigara, Beaume, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via chateau 48, oulx, torino, piemonte, italia": {
+    "lat": "45.0436796",
+    "lon": "6.7621210",
+    "display_name": "Via Chateau, Beaulard, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via aurelia 22, sant'antonino di susa, torino, piemonte, italia": null,
+  "via al cerrone 9, villar dora, torino, piemonte, italia": {
+    "lat": "45.1130785",
+    "lon": "7.3889762",
+    "display_name": "Via al Cerrone, Borgata Merlo, Villar Dora, Torino, Piemonte, 10057, Italia"
+  },
+  "via avigliana 24, avigliana, torino, piemonte, italia": {
+    "lat": "45.0488684",
+    "lon": "7.3739816",
+    "display_name": "Via Avigliana, Brossa, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via orsiera 5, avigliana, torino, piemonte, italia": {
+    "lat": "45.0799066",
+    "lon": "7.4042445",
+    "display_name": "Via Orsiera, Sant'Agostino, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via verdi 27, bardonecchia, torino, piemonte, italia": {
+    "lat": "45.0740079",
+    "lon": "6.7024545",
+    "display_name": "Via Giuseppe Verdi, Campo Smith, Les Arnauds, Bardonecchia, Torino, Piemonte, 10052, Italia"
+  },
+  "via dei gravè 4, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1192251",
+    "lon": "7.2407188",
+    "display_name": "Via dei Gravè, Costa, Borgone Susa, Torino, Piemonte, Italia"
+  },
+  "via augusto abegg ... l'appartamento è stato ristrutturato circa 10, borgone susa, torino, piemonte, italia": null,
+  "via iii reggimento alpini 7, chiomonte, torino, piemonte, italia": {
+    "lat": "45.1170702",
+    "lon": "6.9859673",
+    "display_name": "Via Terzo Reggimento Alpini, Chiomonte, Case Eleizane, Ramats, Chiomonte, Torino, Piemonte, Italia"
+  },
+  "via assietta 4, chiomonte, torino, piemonte, italia": {
+    "lat": "45.1191147",
+    "lon": "6.9846196",
+    "display_name": "Via Assietta, Chiomonte, Sant'Antonio, Ramats, Chiomonte, Torino, Piemonte, Italia"
+  },
+  "via soubeyrand 10, chiomonte, torino, piemonte, italia": {
+    "lat": "45.1043786",
+    "lon": "6.9926998",
+    "display_name": "10, Via Soubeyrand, Frais, Chiomonte, Torino, Piemonte, 10050, Italia"
+  },
+  "via torino 34, chiusa di san michele, torino, piemonte, italia": {
+    "lat": "45.1051952",
+    "lon": "7.3323296",
+    "display_name": "Charlie, 34, Via Torino, Chiusa di San Michele, Torino, Piemonte, 10050, Italia"
+  },
+  "borgata basinatto 22, chiusa di san michele, torino, piemonte, italia": null,
+  "via susa 31, chiusa di san michele, torino, piemonte, italia": {
+    "lat": "45.1057827",
+    "lon": "7.3230289",
+    "display_name": "31, Via Susa, Ponte Rosso, Chiusa di San Michele, Torino, Piemonte, 10050, Italia"
+  },
+  "via marco minghetti 6, collegno, torino, piemonte, italia": {
+    "lat": "45.0764436",
+    "lon": "7.5724827",
+    "display_name": "Via Marco Minghetti, Leumann, Collegno, Torino, Piemonte, 10093, Italia"
+  },
+  "via villanova 23, giaveno, torino, piemonte, italia": {
+    "lat": "45.0503101",
+    "lon": "7.3391394",
+    "display_name": "Via Villanova, Ruata Ollasio, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via moncenisio 62, moncenisio, torino, piemonte, italia": {
+    "lat": "45.2047140",
+    "lon": "6.9823766",
+    "display_name": "Via Moncenisio, Moncenisio, Torino, Piemonte, Italia"
+  },
+  "via moncenisio 6b, moncenisio, torino, piemonte, italia": {
+    "lat": "45.2047140",
+    "lon": "6.9823766",
+    "display_name": "Via Moncenisio, Moncenisio, Torino, Piemonte, Italia"
+  },
+  "via alpi carniche 8, rivoli, torino, piemonte, italia": {
+    "lat": "45.0811705",
+    "lon": "7.5142045",
+    "display_name": "8, Via Alpi Carniche, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via susa 2, san giorio di susa, torino, piemonte, italia": {
+    "lat": "45.1295386",
+    "lon": "7.1730137",
+    "display_name": "2, Via Susa, La Balma, San Giorio di Susa, Torino, Piemonte, 10050, Italia"
+  },
+  "via carlo carli 156, san giorio di susa, torino, piemonte, italia": {
+    "lat": "45.1311563",
+    "lon": "7.1688500",
+    "display_name": "Via Carlo Carli, La Balma, San Giorio di Susa, Torino, Piemonte, 10053, Italia"
+  },
+  "via don cesare martinetti 20, san giorio di susa, torino, piemonte, italia": null,
+  "via val della torre 78, val della torre, torino, piemonte, italia": {
+    "lat": "45.1263423",
+    "lon": "7.4911606",
+    "display_name": "Via Val della Torre, Grange di Brione, Caselette, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, 10091, Italia"
+  },
+  "via ciaine, 53, val della torre, torino, piemonte, italia": {
+    "lat": "45.1673503",
+    "lon": "7.4284455",
+    "display_name": "Via Trucco Rossato, Ciaine, Val della Torre, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "via giordani 3, mattie, torino, piemonte, italia": {
+    "lat": "45.1185119",
+    "lon": "7.1264908",
+    "display_name": "Via Giordani, Giordani, Mattie, Torino, Piemonte, 10053, Italia"
+  },
+  "via bologna 1, bruzolo, torino, piemonte, italia": null,
+  "frazione vernetto, 76b, chianocco, torino, piemonte, italia": {
+    "lat": "45.1348625",
+    "lon": "7.1802393",
+    "display_name": "Frazione Vernetto, Vindrolere, Chianocco, Torino, Piemonte, 10053, Italia"
+  },
+  "viale italia 61, coazze, torino, piemonte, italia": {
+    "lat": "45.0525081",
+    "lon": "7.3013381",
+    "display_name": "Viale Italia 61, Ruadamonte, Coazze, Torino, Piemonte, 10094, Italia"
+  },
+  "via gentileschi, 0, pianezza, torino, piemonte, italia": {
+    "lat": "45.1127719",
+    "lon": "7.5507304",
+    "display_name": "Via Artemisia Gentileschi, Pianezza, Torino, Piemonte, 10044, Italia"
+  },
+  "via morsino 74/5, almese, torino, piemonte, italia": {
+    "lat": "45.1147802",
+    "lon": "7.4147533",
+    "display_name": "Via Morsino, Rivera, Almese, Torino, Piemonte, 10051, Italia"
+  },
+  "corso laghi 165, avigliana, torino, piemonte, italia": {
+    "lat": "45.0762135",
+    "lon": "7.4014627",
+    "display_name": "Corso Laghi, Chiattera, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "frazione vernetto 18, chianocco, torino, piemonte, italia": {
+    "lat": "45.1348625",
+    "lon": "7.1802393",
+    "display_name": "Frazione Vernetto, Vindrolere, Chianocco, Torino, Piemonte, 10053, Italia"
+  },
+  "via a.abegg 1, san didero, torino, piemonte, italia": null,
+  "via peirolero 28, vaie, torino, piemonte, italia": {
+    "lat": "45.1044396",
+    "lon": "7.2850824",
+    "display_name": "Via Peirolero, Vaie, Torino, Piemonte, 10055, Italia"
+  },
+  "frazione vernetto, 18, chianocco, torino, piemonte, italia": {
+    "lat": "45.1348625",
+    "lon": "7.1802393",
+    "display_name": "Frazione Vernetto, Vindrolere, Chianocco, Torino, Piemonte, 10053, Italia"
+  },
+  "via maurizio guglielmino 6, giaveno, torino, piemonte, italia": null,
+  "via 25 aprile 9, pianezza, torino, piemonte, italia": {
+    "lat": "45.0999427",
+    "lon": "7.5485506",
+    "display_name": "9, Via Venticinque Aprile, Pianezza, Torino, Piemonte, 10044, Italia"
+  },
+  "via rombò 29, rivoli, torino, piemonte, italia": {
+    "lat": "45.0694093",
+    "lon": "7.5165711",
+    "display_name": "Via Rombò, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via rubiana 100, almese, torino, piemonte, italia": {
+    "lat": "45.1288515",
+    "lon": "7.3952489",
+    "display_name": "Via Rubiana, Gamba Bosco, Almese, Torino, Piemonte, 10057, Italia"
+  },
+  "via montecapretto 24, almese, torino, piemonte, italia": {
+    "lat": "45.1214284",
+    "lon": "7.4098577",
+    "display_name": "Via Montecapretto, Bertolo, Almese, Torino, Piemonte, 10051, Italia"
+  },
+  "via roma 29, almese, torino, piemonte, italia": {
+    "lat": "45.1172199",
+    "lon": "7.3908671",
+    "display_name": "Via Roma, Fucinassa, Almese, Torino, Piemonte, 10057, Italia"
+  },
+  "via raffaello sanzio 9, trana, torino, piemonte, italia": {
+    "lat": "45.0353415",
+    "lon": "7.3969657",
+    "display_name": "Via Raffaello Sanzio, Durando, San Bernardino, Trana, Torino, Piemonte, 10051, Italia"
+  },
+  "borgata udritto 38, trana, torino, piemonte, italia": {
+    "lat": "45.0388140",
+    "lon": "7.4091460",
+    "display_name": "Borgata Udritto, Paiere, Biellese-Belvedere, San Bernardino, Trana, Torino, Piemonte, 10051, Italia"
+  },
+  "frazione bar cenisio, 24, venaus, torino, piemonte, italia": null,
+  "via 11 febbraio 51, alpignano, torino, piemonte, italia": {
+    "lat": "45.1009085",
+    "lon": "7.5243454",
+    "display_name": "Via Undici Febbraio, Alpignano, Torino, Piemonte, 10091, Italia"
+  },
+  "via lanzo 8, alpignano, torino, piemonte, italia": {
+    "lat": "45.1030462",
+    "lon": "7.5224426",
+    "display_name": "8, Via Lanzo, Alpignano, Torino, Piemonte, 10091, Italia"
+  },
+  "viale roma 8, avigliana, torino, piemonte, italia": {
+    "lat": "45.0841944",
+    "lon": "7.3999707",
+    "display_name": "La casetta di Ivy, 8/A, Viale Roma, Ponte Dora, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "piazza del popolo 4, avigliana, torino, piemonte, italia": {
+    "lat": "45.0795241",
+    "lon": "7.4011522",
+    "display_name": "Piazza del Popolo, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via g. f. medail 100b, bardonecchia, torino, piemonte, italia": null,
+  "via augusto abegg 41, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1234039",
+    "lon": "7.2327258",
+    "display_name": "Via Augusto Abegg, Achit, Borgone Susa, Torino, Piemonte, Italia"
+  },
+  "via tripoli 46, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0560477",
+    "lon": "7.6226080",
+    "display_name": "46, Via Tripoli, Borgata Lesna (Grugliasco), Grugliasco, Torino, Piemonte, 10142, Italia"
+  },
+  "via monginevro 58, oulx, torino, piemonte, italia": {
+    "lat": "45.0317231",
+    "lon": "6.8323880",
+    "display_name": "Via Monginevro, San Marco, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via buttigliera alta 32, rosta, torino, piemonte, italia": {
+    "lat": "45.0697421",
+    "lon": "7.4603373",
+    "display_name": "Via Buttigliera Alta, Ponata, Rosta, Torino, Piemonte, 10040, Italia"
+  },
+  "corso laghi 81, buttigliera alta, torino, piemonte, italia": {
+    "lat": "45.0699500",
+    "lon": "7.4221357",
+    "display_name": "Corso Laghi, Le fronde, Ferriera, Buttigliera Alta, Torino, Piemonte, 10051, Italia"
+  },
+  "via rubiana 142, almese, torino, piemonte, italia": {
+    "lat": "45.1288515",
+    "lon": "7.3952489",
+    "display_name": "Via Rubiana, Gamba Bosco, Almese, Torino, Piemonte, 10057, Italia"
+  },
+  "via piave 53, rosta, torino, piemonte, italia": {
+    "lat": "45.0743056",
+    "lon": "7.4589025",
+    "display_name": "Via Piave, Ponata, Rosta, Torino, Piemonte, 10040, Italia"
+  },
+  "via medagli 55, sant'antonino di susa, torino, piemonte, italia": {
+    "lat": "45.1101666",
+    "lon": "7.2776503",
+    "display_name": "Via Medagli, Maisonetta, Sant'Antonino di Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "vicolo superiore 19, vaie, torino, piemonte, italia": null,
+  "via celle 64, villar dora, torino, piemonte, italia": {
+    "lat": "45.1284691",
+    "lon": "7.3753583",
+    "display_name": "Via Celle, Costa, Villar Dora, Unione Montana Alpi Graie, Torino, Piemonte, 10057, Italia"
+  },
+  "via conti carron 4, buttigliera alta, torino, piemonte, italia": null,
+  "via monte cuneo 6, avigliana, torino, piemonte, italia": {
+    "lat": "45.0727785",
+    "lon": "7.3978532",
+    "display_name": "Via Monte Cuneo, Chiattera, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "frazione tuberghengo 2, almese, torino, piemonte, italia": null,
+  "via almese 10, almese, torino, piemonte, italia": {
+    "lat": "45.1010494",
+    "lon": "7.4030928",
+    "display_name": "Via Almese, Borgata Malano, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via dei mille 19, bruzolo, torino, piemonte, italia": {
+    "lat": "45.1408430",
+    "lon": "7.1941733",
+    "display_name": "Via dei Mille, Brecchi, Bruzolo, Torino, Piemonte, 10053, Italia"
+  },
+  "frazione san giuseppe 21, mompantero, torino, piemonte, italia": {
+    "lat": "45.1488611",
+    "lon": "7.0343766",
+    "display_name": "Frazione San Giuseppe, SP209, Berno, Mompantero, Torino, Piemonte, 10059, Italia"
+  },
+  "via mario lisa 11, pianezza, torino, piemonte, italia": {
+    "lat": "45.1105539",
+    "lon": "7.5435064",
+    "display_name": "Via Mario Lisa, Pianezza, Torino, Piemonte, 10044, Italia"
+  },
+  "via torino 18, pianezza, torino, piemonte, italia": {
+    "lat": "45.0954148",
+    "lon": "7.5659150",
+    "display_name": "Via Torino, Pianezza, Torino, Piemonte, 10093, Italia"
+  },
+  "via val della torre 92, val della torre, torino, piemonte, italia": {
+    "lat": "45.1263423",
+    "lon": "7.4911606",
+    "display_name": "Via Val della Torre, Grange di Brione, Caselette, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, 10091, Italia"
+  },
+  "via pollicino 10, bardonecchia, torino, piemonte, italia": {
+    "lat": "45.0780957",
+    "lon": "6.7017892",
+    "display_name": "Via Pollicino, Bardonecchia, Torino, Piemonte, 10052, Italia"
+  },
+  "via allende 13, buttigliera alta, torino, piemonte, italia": {
+    "lat": "45.0718243",
+    "lon": "7.4181635",
+    "display_name": "Via Salvador Allende, Le fronde, Ferriera, Buttigliera Alta, Torino, Piemonte, 10051, Italia"
+  },
+  "vicolo g. pietro riva 13, chiusa di san michele, torino, piemonte, italia": null,
+  "via principe della cisterna 63, reano, torino, piemonte, italia": null,
+  "via vercelli, 3, trana, torino, piemonte, italia": null,
+  "via alessandria 32, trana, torino, piemonte, italia": {
+    "lat": "45.0328748",
+    "lon": "7.4312690",
+    "display_name": "Via Alessandria, Area industriale di Trana, Galletto, Trana, Torino, Piemonte, 10040, Italia"
+  },
+  "borgata cordero 34, trana, torino, piemonte, italia": {
+    "lat": "45.0357005",
+    "lon": "7.4036964",
+    "display_name": "Borgata Udritto, Biellese-Belvedere, San Bernardino, Trana, Torino, Piemonte, 10051, Italia"
+  },
+  "strada avigliana 016, trana, torino, piemonte, italia": {
+    "lat": "45.0492694",
+    "lon": "7.4032670",
+    "display_name": "Strada Avigliana, Cordero, San Bernardino, Trana, Torino, Piemonte, 10051, Italia"
+  },
+  "via dante alighieri 31, trana, torino, piemonte, italia": {
+    "lat": "45.0379339",
+    "lon": "7.4222313",
+    "display_name": "Via Dante Alighieri, Galletto, Trana, Torino, Piemonte, 10040, Italia"
+  },
+  "via piave 5, trana, torino, piemonte, italia": {
+    "lat": "45.0176736",
+    "lon": "7.3913979",
+    "display_name": "Via Piave, Pianca, Trana, Torino, Piemonte, 10094, Italia"
+  },
+  "via san lorenzo 1, gravere, torino, piemonte, italia": null,
+  "via mattie 21, mattie, torino, piemonte, italia": {
+    "lat": "45.1215619",
+    "lon": "7.0810690",
+    "display_name": "Via Mattie, Borgata Sarette, Meana di Susa, Torino, Piemonte, 10050, Italia"
+  },
+  "via pullino 14, rivoli, torino, piemonte, italia": {
+    "lat": "45.0663620",
+    "lon": "7.5149086",
+    "display_name": "Via Pullino, Borgo Uriola, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via rossini 8, rivoli, torino, piemonte, italia": {
+    "lat": "45.0771125",
+    "lon": "7.5147863",
+    "display_name": "8, Via Gioacchino Rossini, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via terzo reggimento alpini 9, gravere, torino, piemonte, italia": {
+    "lat": "45.1283400",
+    "lon": "7.0115534",
+    "display_name": "Via Terzo Reggimento Alpini, Villaggio Edelweiss, Mollare, Gravere, Torino, Piemonte, 10059, Italia"
+  },
+  "via europa 6, rubiana, torino, piemonte, italia": {
+    "lat": "45.1345977",
+    "lon": "7.3889977",
+    "display_name": "Via Europa, Borgata Bugnone, Rubiana, Unione Montana Alpi Graie, Torino, Piemonte, 10057, Italia"
+  },
+  "via santuario 20, trana, torino, piemonte, italia": {
+    "lat": "45.0406236",
+    "lon": "7.4154821",
+    "display_name": "Via Santuario, Galletto, San Bernardino, Trana, Torino, Piemonte, 10051, Italia"
+  },
+  "via braida 18, almese, torino, piemonte, italia": {
+    "lat": "45.1190964",
+    "lon": "7.4102295",
+    "display_name": "Via Braida, Bertolo, Almese, Torino, Piemonte, 10051, Italia"
+  },
+  "via sacra san michele 17, avigliana, torino, piemonte, italia": {
+    "lat": "45.0812691",
+    "lon": "7.3588492",
+    "display_name": "Via Sacra di San Michele, Mortera, Avigliana, Torino, Piemonte, 10057, Italia"
+  },
+  "via ailliaud augusto 8, avigliana, torino, piemonte, italia": {
+    "lat": "45.0820369",
+    "lon": "7.3969727",
+    "display_name": "Via Augusto Ailliaud, Ponte Dora, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via aldo carnino 6, avigliana, torino, piemonte, italia": null,
+  "via villar dora 15, avigliana, torino, piemonte, italia": {
+    "lat": "45.1017897",
+    "lon": "7.3880951",
+    "display_name": "Via Cuminie, Villar Dora, Torino, Piemonte, 10051, Italia"
+  },
+  "via 4 novembre 21, avigliana, torino, piemonte, italia": {
+    "lat": "45.0858352",
+    "lon": "7.3954698",
+    "display_name": "21, Via Quattro Novembre, Ponte Dora, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "corso laghi 238, avigliana, torino, piemonte, italia": {
+    "lat": "45.0762135",
+    "lon": "7.4014627",
+    "display_name": "Corso Laghi, Chiattera, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via genova 9, bardonecchia, torino, piemonte, italia": {
+    "lat": "45.0798765",
+    "lon": "6.7050711",
+    "display_name": "Via Genova, Millaures, Bardonecchia, Torino, Piemonte, 10052, Italia"
+  },
+  "via einaudi 27, bardonecchia, torino, piemonte, italia": {
+    "lat": "45.0760755",
+    "lon": "6.7076907",
+    "display_name": "Via Luigi Einaudi, Millaures, Bardonecchia, Torino, Piemonte, 10052, Italia"
+  },
+  "via medail, proponiamo in vendita un appartamento di mq 70, bardonecchia, torino, piemonte, italia": null,
+  "via montello 7, bardonecchia, torino, piemonte, italia": {
+    "lat": "45.0804336",
+    "lon": "6.7046191",
+    "display_name": "Via Montello, Bardonecchia, Torino, Piemonte, 10052, Italia"
+  },
+  "via abegg 18, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1220348",
+    "lon": "7.2380263",
+    "display_name": "18, Via Augusto Abegg, Costa, Borgone Susa, Torino, Piemonte, 10050, Italia"
+  },
+  "via a. abegg 18, borgone susa, torino, piemonte, italia": null,
+  "via condove 3, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1174507",
+    "lon": "7.2539822",
+    "display_name": "Via Condove, Costa, Borgone Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "via augusto abegg 79, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1234039",
+    "lon": "7.2327258",
+    "display_name": "Via Augusto Abegg, Achit, Borgone Susa, Torino, Piemonte, Italia"
+  },
+  "via tarro boiro 5, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1209470",
+    "lon": "7.2379771",
+    "display_name": "Via Tarro Boiro, Costa, Borgone Susa, Torino, Piemonte, Italia"
+  },
+  "via tarro boiro 26, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1209470",
+    "lon": "7.2379771",
+    "display_name": "Via Tarro Boiro, Costa, Borgone Susa, Torino, Piemonte, Italia"
+  },
+  "frazione pavaglione 169, chianocco, torino, piemonte, italia": null,
+  "via susa 63, chiusa di san michele, torino, piemonte, italia": {
+    "lat": "45.1059833",
+    "lon": "7.3189088",
+    "display_name": "Buondì, 63, Via Susa, Ponte Rosso, Chiusa di San Michele, Torino, Piemonte, 10050, Italia"
+  },
+  "via susa 95, chiusa di san michele, torino, piemonte, italia": {
+    "lat": "45.1061381",
+    "lon": "7.3129900",
+    "display_name": "Motorcity, 95, Via Susa, Ponte Rosso, Chiusa di San Michele, Torino, Piemonte, 10050, Italia"
+  },
+  "via susa 12, chiusa di san michele, torino, piemonte, italia": {
+    "lat": "45.1060417",
+    "lon": "7.3226724",
+    "display_name": "12, Via Susa, Ponte Rosso, Chiusa di San Michele, Torino, Piemonte, 10050, Italia"
+  },
+  "via roma 67, chiusa di san michele, torino, piemonte, italia": {
+    "lat": "45.1016940",
+    "lon": "7.3292731",
+    "display_name": "67, Via Roma, Chiusa di San Michele, Torino, Piemonte, 10050, Italia"
+  },
+  "via giaveno, 6/b, coazze, torino, piemonte, italia": {
+    "lat": "45.0484574",
+    "lon": "7.2881788",
+    "display_name": "Via Montenero, Borgata Sangonetto, Coazze, Torino, Piemonte, 10094, Italia"
+  },
+  "via freinetto 51, coazze, torino, piemonte, italia": {
+    "lat": "45.0525286",
+    "lon": "7.2902549",
+    "display_name": "Via Freinetto, Castagna, Coazze, Torino, Piemonte, 10094, Italia"
+  },
+  "via giaveno 8, coazze, torino, piemonte, italia": {
+    "lat": "45.0484574",
+    "lon": "7.2881788",
+    "display_name": "Via Montenero, Borgata Sangonetto, Coazze, Torino, Piemonte, 10094, Italia"
+  },
+  "via coazze 15, coazze, torino, piemonte, italia": {
+    "lat": "45.0500099",
+    "lon": "7.3043679",
+    "display_name": "Via Matteotti, Ruadamonte, Coazze, Torino, Piemonte, 10094, Italia"
+  },
+  "via luigi galvani 9, collegno, torino, piemonte, italia": {
+    "lat": "45.0770204",
+    "lon": "7.6029831",
+    "display_name": "9, Via Luigi Galvani, Borgata Paradiso, Collegno, Torino, Piemonte, 10993, Italia"
+  },
+  "via giorgio la pira 5, collegno, torino, piemonte, italia": {
+    "lat": "45.0885332",
+    "lon": "7.5689566",
+    "display_name": "Via Giorgio La Pira, Villaggio Dora, Leumann, Collegno, Torino, Piemonte, 10093, Italia"
+  },
+  "via podgora 12, collegno, torino, piemonte, italia": {
+    "lat": "45.0723709",
+    "lon": "7.6021561",
+    "display_name": "Via Podgora, Borgata Paradiso, Collegno, Torino, Piemonte, 10195, Italia"
+  },
+  "via avigliana 13, collegno, torino, piemonte, italia": {
+    "lat": "45.0765632",
+    "lon": "7.5622076",
+    "display_name": "Via Avigliana, Terracorta, Leumann, Collegno, Torino, Piemonte, 10093, Italia"
+  },
+  "borgata belle fugera 11, condove, torino, piemonte, italia": null,
+  "strada comunale condove-mocchie 39, condove, torino, piemonte, italia": {
+    "lat": "45.1369932",
+    "lon": "7.2891913",
+    "display_name": "Strada Comunale della Portiglia, Mocchie, Condove, Torino, Piemonte, 10055, Italia"
+  },
+  "via superga 43, condove, torino, piemonte, italia": null,
+  "frazione rastella, 34, giaglione, torino, piemonte, italia": {
+    "lat": "45.1425766",
+    "lon": "7.0101140",
+    "display_name": "34, Frazione Rastella, Giaglione, Torino, Piemonte, 10050, Italia"
+  },
+  "via san michele 61, giaveno, torino, piemonte, italia": {
+    "lat": "45.0391969",
+    "lon": "7.3560043",
+    "display_name": "Via San Michele, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via genolino 57, giaveno, torino, piemonte, italia": {
+    "lat": "45.0401471",
+    "lon": "7.3426897",
+    "display_name": "Via Genolino, Case Tetti Brandol, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "piazza san rocco 6, giaveno, torino, piemonte, italia": null,
+  "via garnier valletti 3, giaveno, torino, piemonte, italia": {
+    "lat": "45.0449128",
+    "lon": "7.3471648",
+    "display_name": "Via Garnier Valletti, Ruata Ollasio, Sala, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via san luigi 50, giaveno, torino, piemonte, italia": {
+    "lat": "45.0510010",
+    "lon": "7.3664254",
+    "display_name": "Via San Luigi, Sala, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via martiri della libertà 5, giaveno, torino, piemonte, italia": {
+    "lat": "45.0478367",
+    "lon": "7.3496361",
+    "display_name": "Via Martiri della Libertà, Ruata Ollasio, Sala, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via colle del vento 59, giaveno, torino, piemonte, italia": {
+    "lat": "45.0445885",
+    "lon": "7.3226550",
+    "display_name": "Via Colle del Vento, Giué, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "via canonico pio rolla 17, giaveno, torino, piemonte, italia": {
+    "lat": "45.0373008",
+    "lon": "7.3527894",
+    "display_name": "Via Canonico Pio Rolla, Ciausi, Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "borgata verna 61, giaveno, torino, piemonte, italia": null,
+  "strada della pronda 165, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0654015",
+    "lon": "7.6096624",
+    "display_name": "165, Strada della Pronda, Borgata Quaglia, Grugliasco, Torino, Piemonte, 10095, Italia"
+  },
+  "via silvio allason 20/7, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0391055",
+    "lon": "7.6161456",
+    "display_name": "Via Silvio Allason, Centro Europa, Mirafiori Nord, Circoscrizione 2, Torino, Piemonte, 10137, Italia"
+  },
+  "via crea 43, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0572221",
+    "lon": "7.6148048",
+    "display_name": "Via Crea, Shopville Le Gru, Grugliasco, Torino, Piemonte, 10195, Italia"
+  },
+  "via severino doppi 31, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0411161",
+    "lon": "7.6162800",
+    "display_name": "Via Severino Doppi, Gerbido, Grugliasco, Torino, Piemonte, 10137, Italia"
+  },
+  "via panealbo 63, grugliasco, torino, piemonte, italia": {
+    "lat": "45.0644701",
+    "lon": "7.5836326",
+    "display_name": "63, Via Panealbo, Grugliasco, Torino, Piemonte, 10095, Italia"
+  },
+  "via e. montanaro 17, grugliasco, torino, piemonte, italia": null,
+  "via torino 7, mattie, torino, piemonte, italia": {
+    "lat": "45.1187990",
+    "lon": "7.1140076",
+    "display_name": "Via Torino, Vallone, Mattie, Torino, Piemonte, 10050, Italia"
+  },
+  "via grandi tanze 39, mattie, torino, piemonte, italia": {
+    "lat": "45.1201747",
+    "lon": "7.0999599",
+    "display_name": "Via Grandi Tanze, Grandi Tanze, Mattie, Torino, Piemonte, 10050, Italia"
+  },
+  "via cotolivier 59, oulx, torino, piemonte, italia": {
+    "lat": "45.0330377",
+    "lon": "6.8301377",
+    "display_name": "Via Cotolivier, Pierremenaud, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via bardonecchia 20, oulx, torino, piemonte, italia": {
+    "lat": "45.0422679",
+    "lon": "6.8175437",
+    "display_name": "Via Bardonecchia, Beaume, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via roma, 49, oulx, torino, piemonte, italia": {
+    "lat": "45.0334097",
+    "lon": "6.8347730",
+    "display_name": "Via Roma, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "vicolo bouchard, 6, oulx, torino, piemonte, italia": {
+    "lat": "45.0329329",
+    "lon": "6.8348384",
+    "display_name": "Vicolo Bouchard, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via riccardo ghiotti 148, oulx, torino, piemonte, italia": {
+    "lat": "45.0419647",
+    "lon": "6.8468997",
+    "display_name": "Via Riccardo Ghiotti, Gad, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via dei laghi 21, oulx, torino, piemonte, italia": {
+    "lat": "45.0345927",
+    "lon": "6.8285730",
+    "display_name": "Via dei Laghi, Beaume, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via papa giovanni xxiii 21, oulx, torino, piemonte, italia": {
+    "lat": "45.0368918",
+    "lon": "6.8240547",
+    "display_name": "Via Papa Giovanni Ventitreesimo, Beaume, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via dei laghi 15, oulx, torino, piemonte, italia": {
+    "lat": "45.0345927",
+    "lon": "6.8285730",
+    "display_name": "Via dei Laghi, Beaume, Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "via san gillio 46, pianezza, torino, piemonte, italia": {
+    "lat": "45.1096942",
+    "lon": "7.5307626",
+    "display_name": "Via San Gillio, Pianezza, Torino, Piemonte, 10044, Italia"
+  },
+  "via bachelet 13, pianezza, torino, piemonte, italia": {
+    "lat": "45.1107329",
+    "lon": "7.5350689",
+    "display_name": "Via Bachelet, Pianezza, Torino, Piemonte, 10044, Italia"
+  },
+  "via giorgio vecco 44, rivoli, torino, piemonte, italia": {
+    "lat": "45.0742247",
+    "lon": "7.5192932",
+    "display_name": "44, Via Giorgio Vecco, Cascine Vica, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via giovanni battista rossano 24, rivoli, torino, piemonte, italia": {
+    "lat": "45.0465899",
+    "lon": "7.5314270",
+    "display_name": "Via Giovanni Battista Rossano, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via unità d'italia 1, rivoli, torino, piemonte, italia": {
+    "lat": "45.0731587",
+    "lon": "7.5202928",
+    "display_name": "Via Unità d'Italia, Cascine Vica, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via monte rosa 35, rivoli, torino, piemonte, italia": {
+    "lat": "45.0747546",
+    "lon": "7.4998769",
+    "display_name": "35, Via Monte Rosa, Borgo Nuovo, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via omegna 5, rivoli, torino, piemonte, italia": {
+    "lat": "45.0700212",
+    "lon": "7.5442091",
+    "display_name": "Via Omegna, Cascine Vica, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via ivrea 8, rivoli, torino, piemonte, italia": {
+    "lat": "45.0667921",
+    "lon": "7.5485151",
+    "display_name": "Via Ivrea, Zona industriale di Rivoli, Cascine Vica, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via capra 21, rivoli, torino, piemonte, italia": {
+    "lat": "45.0751920",
+    "lon": "7.5155714",
+    "display_name": "Via Capra, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via aosta 19, rivoli, torino, piemonte, italia": {
+    "lat": "45.0692742",
+    "lon": "7.5480676",
+    "display_name": "Via Aosta, Maiasco, Cascine Vica, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via fratelli macario 7, rivoli, torino, piemonte, italia": {
+    "lat": "45.0670941",
+    "lon": "7.5376026",
+    "display_name": "Via Fratelli Macario, Cascine Vica, Tetti Neirotti, Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "via corbiglia 36, rosta, torino, piemonte, italia": {
+    "lat": "45.0669603",
+    "lon": "7.4630136",
+    "display_name": "Via Corbiglia, Ponata, Rosta, Torino, Piemonte, 10040, Italia"
+  },
+  "via rosta 185, rosta, torino, piemonte, italia": {
+    "lat": "45.0525788",
+    "lon": "7.4726935",
+    "display_name": "Via Rosta, Rosta, Torino, Piemonte, 10040, Italia"
+  },
+  "piazza san michele 1, rosta, torino, piemonte, italia": {
+    "lat": "45.0693884",
+    "lon": "7.4645713",
+    "display_name": "Piazza San Michele, Ponata, Rosta, Torino, Piemonte, Italia"
+  },
+  "via rivoli 118, rosta, torino, piemonte, italia": {
+    "lat": "45.0696112",
+    "lon": "7.4743640",
+    "display_name": "Via Rivoli, Ponata, Rosta, Torino, Piemonte, 10040, Italia"
+  },
+  "borgata grattasola, 14, rubiana, torino, piemonte, italia": null,
+  "borgata ruatta 2, rubiana, torino, piemonte, italia": null,
+  "borgata favella 1, rubiana, torino, piemonte, italia": null,
+  "via augusto abegg 5b, san didero, torino, piemonte, italia": {
+    "lat": "45.1312845",
+    "lon": "7.2147309",
+    "display_name": "Via Augusto Abegg, Leitera Inferiore, San Didero, Torino, Piemonte, Italia"
+  },
+  "via a. abegg 38, san didero, torino, piemonte, italia": null,
+  "via braida 9, san didero, torino, piemonte, italia": {
+    "lat": "45.1344191",
+    "lon": "7.2124639",
+    "display_name": "9, Via Braida, Leitera Inferiore, San Didero, Torino, Piemonte, 10050, Italia"
+  },
+  "via san valeriano, 20, san valeriano, torino, piemonte, italia": {
+    "lat": "45.1135330",
+    "lon": "7.2705646",
+    "display_name": "Via dei Pioppi, San Valeriano, Borgone Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "via san valeriano 20, san valeriano, torino, piemonte, italia": {
+    "lat": "45.1141009",
+    "lon": "7.2674056",
+    "display_name": "Via S.S.24, San Valeriano, Borgone Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "via medagli 38, sant'antonino di susa, torino, piemonte, italia": {
+    "lat": "45.1101666",
+    "lon": "7.2776503",
+    "display_name": "Via Medagli, Maisonetta, Sant'Antonino di Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "via assietta 1, sant'antonino di susa, torino, piemonte, italia": {
+    "lat": "45.1065859",
+    "lon": "7.2800009",
+    "display_name": "Via Assietta, Cresto, Sant'Antonino di Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "via martiri della libertà, 14, susa, torino, piemonte, italia": {
+    "lat": "45.1364558",
+    "lon": "7.0451123",
+    "display_name": "14, Via Martiri della Libertà, Borgo Storico, Balma di Grosso, Susa, Torino, Piemonte, 10059, Italia"
+  },
+  "corso luciano couvert 18, susa, torino, piemonte, italia": {
+    "lat": "45.1391043",
+    "lon": "7.0555563",
+    "display_name": "Nemo Stefano, 18, Corso Luciano Couvert, Borgo dei Cappuccini, Balma di Grosso, Susa, Torino, Piemonte, 10059, Italia"
+  },
+  "via susa 13, susa, torino, piemonte, italia": {
+    "lat": "45.1280702",
+    "lon": "7.0433642",
+    "display_name": "Via Susa, Colfacero, Gravere, Torino, Piemonte, 10059, Italia"
+  },
+  "via dei sei martiri 2, susa, torino, piemonte, italia": {
+    "lat": "45.1357272",
+    "lon": "7.0495455",
+    "display_name": "Via dei Sei Martiri, Borgo dei Nobili, Balma di Grosso, Susa, Torino, Piemonte, 10059, Italia"
+  },
+  "via lunga 47, trana, torino, piemonte, italia": null,
+  "via torino 23, vaie, torino, piemonte, italia": {
+    "lat": "45.1062247",
+    "lon": "7.2981103",
+    "display_name": "Via Torino, Vaie, Torino, Piemonte, 10055, Italia"
+  },
+  "piazza del priore 2, vaie, torino, piemonte, italia": {
+    "lat": "45.1022914",
+    "lon": "7.2900788",
+    "display_name": "Piazza del Priore, Vaie, Torino, Piemonte, Italia"
+  },
+  "via i maggio 53, vaie, torino, piemonte, italia": {
+    "lat": "45.1024660",
+    "lon": "7.2844283",
+    "display_name": "Via Primo Maggio, Vaie, Torino, Piemonte, 10055, Italia"
+  },
+  "via borgo nuovo 18, val della torre, torino, piemonte, italia": null,
+  "via valgioie 60, valgioie, torino, piemonte, italia": {
+    "lat": "45.0653808",
+    "lon": "7.3587268",
+    "display_name": "Via Sala, Case Mastropietro, Valgioie, Torino, Piemonte, 10094, Italia"
+  },
+  "borgata chiapero 44, valgioie, torino, piemonte, italia": null,
+  "borgata chiapero 6, valgioie, torino, piemonte, italia": null,
+  "frazione bar cenisio 24, venaus, torino, piemonte, italia": null,
+  "via copotti 2, villar focchiardo, torino, piemonte, italia": {
+    "lat": "45.1113565",
+    "lon": "7.2425094",
+    "display_name": "Via Copotti, Truna, Villar Focchiardo, Torino, Piemonte, Italia"
+  },
+  "via fratelli roasio 9, villarbasse, torino, piemonte, italia": null,
+  "via casotto 1, villarbasse, torino, piemonte, italia": {
+    "lat": "45.0498563",
+    "lon": "7.4878056",
+    "display_name": "Via Casotto, Corbiglia, Villarbasse, Torino, Piemonte, 10040, Italia"
+  },
+  "strada camporosso 6, villarbasse, torino, piemonte, italia": null,
+  "via villarbasse, 68, villarbasse, torino, piemonte, italia": {
+    "lat": "45.0354049",
+    "lon": "7.4548414",
+    "display_name": "Via Villarbasse, Sangano, Torino, Piemonte, 10040, Italia"
+  },
+  "via villarbasse 68, villarbasse, torino, piemonte, italia": {
+    "lat": "45.0354049",
+    "lon": "7.4548414",
+    "display_name": "Via Villarbasse, Sangano, Torino, Piemonte, 10040, Italia"
+  },
+  "via montenero 2a, borgone susa, torino, piemonte, italia": {
+    "lat": "45.1152550",
+    "lon": "7.2689535",
+    "display_name": "Via Montenero, San Valeriano, Borgone Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "piazza sandro pertini 6, collegno, torino, piemonte, italia": {
+    "lat": "45.0787081",
+    "lon": "7.6062565",
+    "display_name": "6, Piazza Sandro Pertini, Borgata Paradiso, Collegno, Torino, Piemonte, 10093, Italia"
+  },
+  "via cristoforo colombo 7, collegno, torino, piemonte, italia": {
+    "lat": "45.0807506",
+    "lon": "7.5701510",
+    "display_name": "7, Via Cristoforo Colombo, Leumann, Collegno, Torino, Piemonte, 10090, Italia"
+  },
+  "via susa 40, susa, torino, piemonte, italia": {
+    "lat": "45.1099841",
+    "lon": "7.2657666",
+    "display_name": "40, Via Susa, Maisonetta, Sant'Antonino di Susa, Torino, Piemonte, 10050, Italia"
+  },
+  "corso laghi 70, avigliana, torino, piemonte, italia": {
+    "lat": "45.0762135",
+    "lon": "7.4014627",
+    "display_name": "Corso Laghi, Chiattera, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via bussoleno 26, bussoleno, torino, piemonte, italia": {
+    "lat": "45.1373040",
+    "lon": "7.1424089",
+    "display_name": "26, Via Carlo Trattenero, Santa Petronilla, Foresto, Bussoleno, Torino, Piemonte, 10053, Italia"
+  },
+  "via moncenisio 72, condove, torino, piemonte, italia": {
+    "lat": "45.1149631",
+    "lon": "7.3004521",
+    "display_name": "Via Moncenisio, Poisatto, Condove, Torino, Piemonte, 10055, Italia"
+  },
+  "via roma 38, trana, torino, piemonte, italia": {
+    "lat": "45.0380401",
+    "lon": "7.4191931",
+    "display_name": "Via Roma, Galletto, San Bernardino, Trana, Torino, Piemonte, 10051, Italia"
+  },
+  "via bussoleno 7, bussoleno, torino, piemonte, italia": {
+    "lat": "45.1380376",
+    "lon": "7.1461223",
+    "display_name": "7, Via Carlo Trattenero, Santa Petronilla, Foresto, Bussoleno, Torino, Piemonte, 10053, Italia"
+  },
+  "via rosta 12, rosta, torino, piemonte, italia": {
+    "lat": "45.0525788",
+    "lon": "7.4726935",
+    "display_name": "Via Rosta, Rosta, Torino, Piemonte, 10040, Italia"
+  },
+  "via valgioie 88, valgioie, torino, piemonte, italia": {
+    "lat": "45.0653808",
+    "lon": "7.3587268",
+    "display_name": "Via Sala, Case Mastropietro, Valgioie, Torino, Piemonte, 10094, Italia"
+  }
+}
