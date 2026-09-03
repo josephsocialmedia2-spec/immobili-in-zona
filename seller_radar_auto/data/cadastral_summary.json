@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-03T19:01:31.716029+00:00",
+  "generated_at": "2026-09-03T19:09:24.872183+00:00",
   "master_660_rows": 660,
-  "total_records_with_live": 904,
+  "total_records_with_live": 964,
   "target_master_660": 372,
-  "mappali_verificati_master_660": 33,
+  "mappali_verificati_master_660": 90,
   "indirizzi_senza_civico_master_660": 135,
-  "novita_live": 48,
-  "geocode_web_calls": 189,
-  "wms_calls": 198,
+  "novita_live": 85,
+  "geocode_web_calls": 2,
+  "wms_calls": 167,
   "policy": "NO_PERSONAL_DATA_ONLY_ADDRESS_TO_CADASTRAL_PARCEL"
 }

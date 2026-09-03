@@ -982,5 +982,15 @@
     "lat": "45.0653808",
     "lon": "7.3587268",
     "display_name": "Via Sala, Case Mastropietro, Valgioie, Torino, Piemonte, 10094, Italia"
+  },
+  "piazza martiri della libertà 31, almese, torino, piemonte, italia": {
+    "lat": "45.1172896",
+    "lon": "7.3950990",
+    "display_name": "Piazza Martiri della Libertà, Fucinassa, Almese, Torino, Piemonte, 10051, Italia"
+  },
+  "via bardonecchia 134, bardonecchia, torino, piemonte, italia": {
+    "lat": "45.1126301",
+    "lon": "6.7464628",
+    "display_name": "Via Bardonecchia, Rochemolles, Bardonecchia, Torino, Piemonte, 10052, Italia"
   }
 }
