@@ -1,0 +1,154 @@
+name: F1 Radar Edilizio Comunale AUTO
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'seller_radar_auto/data/work_queue.csv'
+      - 'seller_radar_auto/data/seller_master_660_classificato.csv'
+      - 'seller_radar_auto/municipal_edilizia_radar.py'
+      - 'seller_radar_auto/merge_edilizia_radar.py'
+      - 'seller_radar_auto/edilizia_overlay.js'
+      - 'seller_radar_auto/inject_microzone_links.py'
+      - '.github/workflows/f1-edilizia-radar.yml'
+      - '.edilizia_backfill_trigger'
+  schedule:
+    # Fallback 01:45 Europe/Rome; il push della work_queue resta il trigger immediato.
+    - cron: '45 23,0 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: f1-radar-edilizio-comunale
+  cancel-in-progress: false
+
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
+      comuni: ${{ steps.mx.outputs.comuni }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gate fallback 01:45 Italia
+        id: gate
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo 'run=true' >> "$GITHUB_OUTPUT"; exit 0; fi
+          H=$(TZ=Europe/Rome date +%H)
+          T=$(TZ=Europe/Rome date +%H:%M)
+          echo "Ora italiana: $T"
+          if [ "$H" = '01' ]; then echo 'run=true' >> "$GITHUB_OUTPUT"; else echo 'run=false' >> "$GITHUB_OUTPUT"; fi
+      - name: Comuni realmente presenti nei 660 target
+        id: mx
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import csv,json,re
+          p='seller_radar_auto/data/seller_master_660_classificato.csv'
+          allowed={'APPARTAMENTO','VILLA','CASA_INDIPENDENTE_TERRATETTO','RUSTICO_CASALE_BAITA','NEGOZIO_COMMERCIALE'}
+          rows=list(csv.DictReader(open(p,encoding='utf-8-sig')))
+          towns=[]
+          for r in rows:
+            typ=(r.get('TIPOLOGIA_REALE_INFERITA') or '').strip()
+            title=r.get('TITOLO') or ''
+            addr=(r.get('DOVE_ANDRE') or '').strip()
+            if typ not in allowed and not re.search(r'attivit[aà]|locale\s+commerciale|negozio',title,re.I): continue
+            if not addr or 'verificare' in addr.casefold(): continue
+            c=(r.get('COMUNE') or '').strip()
+            if c and c not in towns: towns.append(c)
+          print('comuni='+json.dumps({'comune':towns},ensure_ascii=False,separators=(',',':')))
+          print('Comuni target:',len(towns))
+          PY
+
+  scan:
+    needs: matrix
+    if: needs.matrix.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix: ${{ fromJson(needs.matrix.outputs.comuni) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dipendenza lettura PDF
+        run: python -m pip install --disable-pip-version-check --quiet pypdf
+      - name: Cerca atti edilizi pubblici ${{ matrix.comune }}
+        env:
+          F1_COMUNE: ${{ matrix.comune }}
+          F1_EDILIZIA_OUT: seller_radar_auto/data/edilizia_one.json
+          F1_SEARCH_INTERVAL: '1.7'
+          F1_EDILIZIA_RESULTS: '7'
+          F1_EDILIZIA_PAGES_PER_ADDRESS: '10'
+        run: python seller_radar_auto/municipal_edilizia_radar.py
+      - name: Salva worker ${{ matrix.comune }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: edilizia-${{ strategy.job-index }}
+          path: seller_radar_auto/data/edilizia_one.json
+          if-no-files-found: error
+          retention-days: 1
+
+  merge:
+    needs: [matrix,scan]
+    if: always() && needs.matrix.outputs.run == 'true' && (needs.scan.result == 'success' || needs.scan.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scarica risultati comunali
+        uses: actions/download-artifact@v4
+        with:
+          pattern: edilizia-*
+          path: seller_radar_auto/edilizia_results
+      - name: Unisci atti e identifica NOVITA EDILIZIA
+        run: python seller_radar_auto/merge_edilizia_radar.py
+      - name: Rigenera MASTER e overlay
+        run: |
+          python seller_radar_auto/refresh_dashboard.py
+          python seller_radar_auto/inject_microzone_links.py
+      - name: Quality gate
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv,json
+          from pathlib import Path
+          d=Path('seller_radar_auto/data')
+          page=Path('seller_radar_auto/dashboard.html').read_text(encoding='utf-8')
+          assert page.count("class='seller-row'")==660
+          assert 'edilizia_overlay.js' in page
+          rows=list(csv.DictReader((d/'municipal_edilizia_radar.csv').open(encoding='utf-8-sig'))) if (d/'municipal_edilizia_radar.csv').exists() else []
+          forbidden={'TELEFONO','EMAIL','NOME_PROPRIETARIO','INTESTATARIO','CODICE_FISCALE'}
+          if rows: assert not (forbidden & set(rows[0]))
+          s=json.loads((d/'municipal_edilizia_summary.json').read_text(encoding='utf-8'))
+          assert s['policy']=='PUBLIC_MUNICIPAL_BUILDING_ACTS_NO_PERSONAL_DATA_NO_OWNER_INFERENCE'
+          print('PASS RADAR EDILIZIO QA | master=660 | documenti=',len(rows),'| nessun dato personale')
+          PY
+      - name: Persisti Radar Edilizio
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'f1-edilizia-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          SNAP=$(mktemp -d)
+          mkdir -p "$SNAP/data"
+          cp seller_radar_auto/data/municipal_edilizia_radar.csv "$SNAP/data/"
+          cp seller_radar_auto/data/municipal_edilizia_summary.json "$SNAP/data/"
+          cp seller_radar_auto/dashboard.html "$SNAP/"
+          restore(){ cp "$SNAP/data/municipal_edilizia_radar.csv" seller_radar_auto/data/; cp "$SNAP/data/municipal_edilizia_summary.json" seller_radar_auto/data/; cp "$SNAP/dashboard.html" seller_radar_auto/; }
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            restore
+            git add seller_radar_auto/data/municipal_edilizia_radar.csv seller_radar_auto/data/municipal_edilizia_summary.json seller_radar_auto/dashboard.html
+            if git diff --cached --quiet; then echo 'PASS: nessuna variazione'; exit 0; fi
+            git commit -m 'radar edilizio: aggiorna atti comunali pubblici'
+            if git push origin HEAD:main; then echo 'PASS: Radar Edilizio persistito'; exit 0; fi
+            sleep $((attempt*2))
+          done
+          exit 1
