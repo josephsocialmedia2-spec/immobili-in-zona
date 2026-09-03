@@ -1,0 +1,404 @@
+{
+  "generated_at": "2026-09-03T17:32:14+00:00",
+  "snapshot_commit": "d56abc5b5b71bbd9aafbbd9cd0874722e14c8701",
+  "source": "data/seller_master_660.csv",
+  "seller_totali_richiesti": 660,
+  "seller_totali_analizzati": 660,
+  "righe_preservate": 660,
+  "controllo_integrita": "PASS_660_SU_660",
+  "aste_rilevate": 29,
+  "gruppi_duplicati_conservativi": 14,
+  "righe_duplicate_eccedenti_stimate": 16,
+  "per_tipologia_reale_inferita": [
+    {
+      "tipologia": "APPARTAMENTO",
+      "righe": 217,
+      "percentuale": 32.9
+    },
+    {
+      "tipologia": "PAGINA_RICERCA_CATEGORIA",
+      "righe": 146,
+      "percentuale": 22.1
+    },
+    {
+      "tipologia": "ALTRO_NON_DETERMINATO",
+      "righe": 97,
+      "percentuale": 14.7
+    },
+    {
+      "tipologia": "VILLA",
+      "righe": 76,
+      "percentuale": 11.5
+    },
+    {
+      "tipologia": "CASA_INDIPENDENTE_TERRATETTO",
+      "righe": 41,
+      "percentuale": 6.2
+    },
+    {
+      "tipologia": "PAGINA_AGENZIA_SERVIZIO",
+      "righe": 24,
+      "percentuale": 3.6
+    },
+    {
+      "tipologia": "RUSTICO_CASALE_BAITA",
+      "righe": 22,
+      "percentuale": 3.3
+    },
+    {
+      "tipologia": "NEGOZIO_COMMERCIALE",
+      "righe": 13,
+      "percentuale": 2.0
+    },
+    {
+      "tipologia": "CAPANNONE_MAGAZZINO",
+      "righe": 12,
+      "percentuale": 1.8
+    },
+    {
+      "tipologia": "TERRENO",
+      "righe": 4,
+      "percentuale": 0.6
+    },
+    {
+      "tipologia": "UFFICIO",
+      "righe": 4,
+      "percentuale": 0.6
+    },
+    {
+      "tipologia": "PALAZZO_EDIFICIO",
+      "righe": 2,
+      "percentuale": 0.3
+    },
+    {
+      "tipologia": "GARAGE_BOX",
+      "righe": 2,
+      "percentuale": 0.3
+    }
+  ],
+  "per_tipologia_software": [
+    {
+      "tipologia_software": "RESIDENZIALE",
+      "righe": 592,
+      "percentuale": 89.7
+    },
+    {
+      "tipologia_software": "INDUSTRIALE_LOGISTICA",
+      "righe": 28,
+      "percentuale": 4.2
+    },
+    {
+      "tipologia_software": "UFFICIO_DIREZIONALE",
+      "righe": 22,
+      "percentuale": 3.3
+    },
+    {
+      "tipologia_software": "COMMERCIALE_IMMOBILE",
+      "righe": 18,
+      "percentuale": 2.7
+    }
+  ],
+  "per_seller_signal": [
+    {
+      "seller_signal": "NON_DETERMINATO",
+      "righe": 660,
+      "percentuale": 100.0
+    }
+  ],
+  "per_stato_mercato": [
+    {
+      "stato_mercato": "NON_DETERMINATO",
+      "righe": 660,
+      "percentuale": 100.0
+    }
+  ],
+  "per_stato_indirizzo": [
+    {
+      "stato_indirizzo": "DA_VERIFICARE",
+      "righe": 371,
+      "percentuale": 56.2
+    },
+    {
+      "stato_indirizzo": "CON_CIVICO",
+      "righe": 288,
+      "percentuale": 43.6
+    },
+    {
+      "stato_indirizzo": "SENZA_CIVICO",
+      "righe": 1,
+      "percentuale": 0.2
+    }
+  ],
+  "top_fonti": [
+    {
+      "fonte": "Immobiliare.it",
+      "righe": 316
+    },
+    {
+      "fonte": "Subito privati",
+      "righe": 50
+    },
+    {
+      "fonte": "Mercato generale",
+      "righe": 41
+    },
+    {
+      "fonte": "Mercato residenziale",
+      "righe": 39
+    },
+    {
+      "fonte": "Trovit",
+      "righe": 36
+    },
+    {
+      "fonte": "Nestoria",
+      "righe": 36
+    },
+    {
+      "fonte": "Idealista",
+      "righe": 34
+    },
+    {
+      "fonte": "Casa.it",
+      "righe": 18
+    },
+    {
+      "fonte": "Agenzie",
+      "righe": 16
+    },
+    {
+      "fonte": "Capannoni logistica",
+      "righe": 14
+    },
+    {
+      "fonte": "Uffici e direzionale",
+      "righe": 10
+    },
+    {
+      "fonte": "Commerciale negozi/locali",
+      "righe": 10
+    },
+    {
+      "fonte": "Wikicasa",
+      "righe": 9
+    },
+    {
+      "fonte": "Tecnorete",
+      "righe": 9
+    },
+    {
+      "fonte": "Bakeca privati",
+      "righe": 6
+    },
+    {
+      "fonte": "TrovaCasa privati",
+      "righe": 5
+    },
+    {
+      "fonte": "Tempocasa",
+      "righe": 5
+    },
+    {
+      "fonte": "Tipologie residenziali",
+      "righe": 3
+    },
+    {
+      "fonte": "Privati generico",
+      "righe": 1
+    },
+    {
+      "fonte": "Tipologie complete",
+      "righe": 1
+    },
+    {
+      "fonte": "Tecnocasa",
+      "righe": 1
+    }
+  ],
+  "per_comune": [
+    {
+      "comune": "Rivoli",
+      "righe": 40
+    },
+    {
+      "comune": "Avigliana",
+      "righe": 28
+    },
+    {
+      "comune": "Bardonecchia",
+      "righe": 27
+    },
+    {
+      "comune": "Collegno",
+      "righe": 26
+    },
+    {
+      "comune": "Grugliasco",
+      "righe": 25
+    },
+    {
+      "comune": "Borgone Susa",
+      "righe": 25
+    },
+    {
+      "comune": "Pianezza",
+      "righe": 23
+    },
+    {
+      "comune": "Sant'Antonino di Susa",
+      "righe": 22
+    },
+    {
+      "comune": "Chiusa di San Michele",
+      "righe": 21
+    },
+    {
+      "comune": "Oulx",
+      "righe": 20
+    },
+    {
+      "comune": "Rosta",
+      "righe": 20
+    },
+    {
+      "comune": "Giaveno",
+      "righe": 20
+    },
+    {
+      "comune": "Trana",
+      "righe": 20
+    },
+    {
+      "comune": "Condove",
+      "righe": 19
+    },
+    {
+      "comune": "Susa",
+      "righe": 19
+    },
+    {
+      "comune": "Almese",
+      "righe": 18
+    },
+    {
+      "comune": "Rubiana",
+      "righe": 17
+    },
+    {
+      "comune": "Alpignano",
+      "righe": 17
+    },
+    {
+      "comune": "Villar Focchiardo",
+      "righe": 16
+    },
+    {
+      "comune": "Coazze",
+      "righe": 15
+    },
+    {
+      "comune": "Villarbasse",
+      "righe": 15
+    },
+    {
+      "comune": "Bussoleno",
+      "righe": 14
+    },
+    {
+      "comune": "Buttigliera Alta",
+      "righe": 14
+    },
+    {
+      "comune": "Caselette",
+      "righe": 11
+    },
+    {
+      "comune": "San Giorio di Susa",
+      "righe": 10
+    },
+    {
+      "comune": "San Didero",
+      "righe": 10
+    },
+    {
+      "comune": "Val della Torre",
+      "righe": 10
+    },
+    {
+      "comune": "Chianocco",
+      "righe": 10
+    },
+    {
+      "comune": "Mattie",
+      "righe": 10
+    },
+    {
+      "comune": "Chiomonte",
+      "righe": 9
+    },
+    {
+      "comune": "Villar Dora",
+      "righe": 9
+    },
+    {
+      "comune": "Reano",
+      "righe": 9
+    },
+    {
+      "comune": "Meana di Susa",
+      "righe": 9
+    },
+    {
+      "comune": "Valgioie",
+      "righe": 9
+    },
+    {
+      "comune": "Vaie",
+      "righe": 9
+    },
+    {
+      "comune": "Giaglione",
+      "righe": 8
+    },
+    {
+      "comune": "Sangano",
+      "righe": 7
+    },
+    {
+      "comune": "Venaus",
+      "righe": 7
+    },
+    {
+      "comune": "Bruzolo",
+      "righe": 7
+    },
+    {
+      "comune": "Moncenisio",
+      "righe": 6
+    },
+    {
+      "comune": "Mompantero",
+      "righe": 6
+    },
+    {
+      "comune": "Gravere",
+      "righe": 6
+    },
+    {
+      "comune": "San Giorio",
+      "righe": 6
+    },
+    {
+      "comune": "Caprie",
+      "righe": 5
+    },
+    {
+      "comune": "San Valeriano",
+      "righe": 5
+    },
+    {
+      "comune": "Novalesa",
+      "righe": 1
+    }
+  ]
+}
