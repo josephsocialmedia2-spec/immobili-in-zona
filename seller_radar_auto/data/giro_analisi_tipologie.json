@@ -1,37 +1,29 @@
 {
-  "generated_at": "2026-09-02T13:41:47",
+  "generated_at": "2026-09-03T17:35:24",
   "source": "data/giro_acquisizione_oggi.csv",
-  "totale_righe_giro_oggi": 199,
-  "immobili_unici_stimati": 182,
-  "gruppi_duplicati_conservativi": 14,
-  "righe_duplicate_eccedenti_stimate": 17,
-  "aste_rilevate": 9,
+  "totale_righe_giro_oggi": 201,
+  "immobili_unici_stimati": 185,
+  "gruppi_duplicati_conservativi": 13,
+  "righe_duplicate_eccedenti_stimate": 16,
+  "aste_rilevate": 8,
   "indizi_privato": 2,
   "classificazioni_sospette": 6,
   "per_tipologia_software": [
     {
       "tipologia_software": "RESIDENZIALE",
-      "righe": 180,
+      "righe": 182,
       "percentuale": 90.5,
-      "fermate_pronte": 143,
-      "da_verificare": 37,
-      "assegnate": 94
+      "fermate_pronte": 142,
+      "da_verificare": 40,
+      "assegnate": 96
     },
     {
       "tipologia_software": "INDUSTRIALE_LOGISTICA",
-      "righe": 9,
-      "percentuale": 4.5,
+      "righe": 10,
+      "percentuale": 5.0,
       "fermate_pronte": 3,
-      "da_verificare": 6,
+      "da_verificare": 7,
       "assegnate": 3
-    },
-    {
-      "tipologia_software": "COMMERCIALE_IMMOBILE",
-      "righe": 5,
-      "percentuale": 2.5,
-      "fermate_pronte": 2,
-      "da_verificare": 3,
-      "assegnate": 1
     },
     {
       "tipologia_software": "UFFICIO_DIREZIONALE",
@@ -40,13 +32,21 @@
       "fermate_pronte": 4,
       "da_verificare": 1,
       "assegnate": 2
+    },
+    {
+      "tipologia_software": "COMMERCIALE_IMMOBILE",
+      "righe": 4,
+      "percentuale": 2.0,
+      "fermate_pronte": 2,
+      "da_verificare": 2,
+      "assegnate": 1
     }
   ],
   "per_tipologia_reale_inferita": [
     {
       "tipologia_reale_inferita": "APPARTAMENTO",
       "righe": 93,
-      "percentuale": 46.7,
+      "percentuale": 46.3,
       "immobili_unici_stimati": 83,
       "fermate_pronte": 86,
       "da_verificare": 7,
@@ -54,48 +54,39 @@
     },
     {
       "tipologia_reale_inferita": "VILLA",
-      "righe": 37,
-      "percentuale": 18.6,
-      "immobili_unici_stimati": 34,
-      "fermate_pronte": 29,
+      "righe": 39,
+      "percentuale": 19.4,
+      "immobili_unici_stimati": 36,
+      "fermate_pronte": 31,
       "da_verificare": 8,
-      "assegnate": 21
+      "assegnate": 23
     },
     {
       "tipologia_reale_inferita": "ALTRO_NON_DETERMINATO",
-      "righe": 28,
-      "percentuale": 14.1,
-      "immobili_unici_stimati": 28,
-      "fermate_pronte": 7,
-      "da_verificare": 21,
+      "righe": 31,
+      "percentuale": 15.4,
+      "immobili_unici_stimati": 31,
+      "fermate_pronte": 6,
+      "da_verificare": 25,
       "assegnate": 3
     },
     {
       "tipologia_reale_inferita": "CASA_INDIPENDENTE_TERRATETTO",
-      "righe": 15,
-      "percentuale": 7.5,
+      "righe": 14,
+      "percentuale": 7.0,
       "immobili_unici_stimati": 14,
-      "fermate_pronte": 14,
+      "fermate_pronte": 13,
       "da_verificare": 1,
       "assegnate": 6
     },
     {
       "tipologia_reale_inferita": "RUSTICO_CASALE_BAITA",
-      "righe": 10,
-      "percentuale": 5.0,
-      "immobili_unici_stimati": 9,
-      "fermate_pronte": 8,
+      "righe": 9,
+      "percentuale": 4.5,
+      "immobili_unici_stimati": 8,
+      "fermate_pronte": 7,
       "da_verificare": 2,
       "assegnate": 5
-    },
-    {
-      "tipologia_reale_inferita": "NEGOZIO_COMMERCIALE",
-      "righe": 6,
-      "percentuale": 3.0,
-      "immobili_unici_stimati": 5,
-      "fermate_pronte": 3,
-      "da_verificare": 3,
-      "assegnate": 2
     },
     {
       "tipologia_reale_inferita": "GARAGE_BOX",
@@ -105,6 +96,15 @@
       "fermate_pronte": 0,
       "da_verificare": 5,
       "assegnate": 0
+    },
+    {
+      "tipologia_reale_inferita": "NEGOZIO_COMMERCIALE",
+      "righe": 5,
+      "percentuale": 2.5,
+      "immobili_unici_stimati": 4,
+      "fermate_pronte": 3,
+      "da_verificare": 2,
+      "assegnate": 2
     },
     {
       "tipologia_reale_inferita": "CAPANNONE_MAGAZZINO",
