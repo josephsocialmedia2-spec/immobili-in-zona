@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T06:43:04.540378+00:00",
+  "generated_at": "2026-09-04T08:04:50.164724+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -178,11 +178,11 @@
     {
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
-      "target_street": "via bussoleno",
-      "listing_target": "Via Bussoleno 3",
-      "listing_url": "https://www.immobiliare.it/annunci/130283966/",
+      "target_street": "Via Bussoleno",
+      "listing_target": "via bussoleno 26",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/immobili-bussoleno",
       "streets": [
-        "via bussoleno",
+        "Via Bussoleno",
         "Via Gran Borgata",
         "Via Gran Porta",
         "Piazza Caduti per la Libertà",
@@ -234,21 +234,6 @@
         "Via Rubattera"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
-    },
-    {
-      "zone_id": "bussoleno-via-traforo",
-      "comune": "Bussoleno",
-      "target_street": "via Traforo",
-      "listing_target": "via Traforo 30",
-      "listing_url": "https://www.immobiliare.it/annunci/108335851/",
-      "streets": [
-        "via Traforo",
-        "Piazza C. L. N.",
-        "Piazza del Moro",
-        "Strada Ponte Guido Cambursano",
-        "Strada Susa"
-      ],
-      "osm_status": "OK"
     },
     {
       "zone_id": "chianocco-via-primo-maggio-n",
@@ -391,7 +376,7 @@
       "zone_id": "borgone-susa-via-a-abegg",
       "comune": "Borgone Susa",
       "target_street": "via A. Abegg",
-      "listing_target": "Via A. Abegg 68",
+      "listing_target": "Via A. Abegg 2",
       "listing_url": "https://www.immobiliare.it/annunci/129563936/",
       "streets": [
         "via A. Abegg"
