@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T16:12:57.385428+00:00",
+  "generated_at": "2026-09-04T19:33:41.534225+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -157,6 +157,21 @@
         "Strada Gandoglio",
         "Via Condove",
         "Via Mosconi"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "borgone-susa-via-moncenisio",
+      "comune": "Borgone Susa",
+      "target_street": "via Moncenisio",
+      "listing_target": "Via Moncenisio 1",
+      "listing_url": "https://www.immobiliare.it/annunci/111573305/",
+      "streets": [
+        "via Moncenisio",
+        "Strada del Cimitero",
+        "Via Condove",
+        "Via dei Gravè",
+        "Via Frejus"
       ],
       "osm_status": "OK"
     },
