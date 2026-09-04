@@ -1,12 +1,12 @@
 ﻿COMUNE,IMMOBILI_QUALIFICATI,ASTE,PRIVATI,AGENZIE,RIBASSI_SEGNALATI,STORICO_USCITE
 Almese,17,0,3,2,0,0
-Alpignano,16,0,1,2,0,0
-Avigliana,35,1,6,6,0,0
-Bardonecchia,30,0,0,5,0,0
-Borgone Susa,27,0,1,3,0,1
+Alpignano,17,0,1,2,0,0
+Avigliana,36,1,6,6,0,0
+Bardonecchia,34,0,0,5,0,0
+Borgone Susa,28,0,1,3,0,1
 Bruzolo,7,0,5,0,0,0
-Bussoleno,12,0,1,4,0,0
-Buttigliera Alta,8,0,0,4,0,0
+Bussoleno,13,0,1,4,0,0
+Buttigliera Alta,7,0,0,3,0,0
 Caprie,9,0,0,0,0,1
 Caselette,11,3,0,3,0,0
 Chianocco,8,3,0,0,0,0
@@ -17,25 +17,25 @@ Collegno,37,0,2,2,0,0
 Condove,17,4,2,3,0,0
 Exilles,8,0,0,0,0,0
 Giaglione,5,0,0,0,0,0
-Giaveno,21,0,1,1,0,0
+Giaveno,24,0,1,1,0,0
 Gravere,8,0,0,0,0,0
-Grugliasco,32,0,1,1,0,0
+Grugliasco,33,0,1,1,0,0
 Mattie,9,0,0,0,0,0
 Meana di Susa,6,0,3,0,0,0
 Mompantero,5,1,0,0,0,0
-Moncenisio,9,3,0,0,0,1
-Novalesa,2,0,0,0,0,0
+Moncenisio,11,3,0,0,0,1
+Novalesa,2,0,0,1,0,0
 Oulx,19,0,0,1,0,0
 Pianezza,29,0,2,1,0,0
 Reano,6,2,1,0,0,0
-Rivoli,39,1,3,2,0,1
+Rivoli,42,1,5,2,0,1
 Rosta,26,0,0,1,0,0
-Rubiana,18,6,3,0,0,0
+Rubiana,19,6,3,0,0,0
 Salbertrand,6,0,0,1,0,0
 San Didero,10,1,1,0,0,0
 San Giorio,2,0,0,0,0,0
-San Giorio di Susa,23,0,3,0,0,0
-San Valeriano,16,11,2,1,0,1
+San Giorio di Susa,25,0,3,0,0,0
+San Valeriano,17,11,2,1,0,1
 Sangano,5,0,1,3,0,0
 Sant'Ambrogio di Torino,9,0,2,0,0,0
 Sant'Antonino di Susa,22,0,2,0,0,0
@@ -43,7 +43,7 @@ Susa,20,1,2,1,0,0
 Trana,16,0,2,2,0,0
 Vaie,7,0,2,0,0,0
 Val della Torre,9,1,1,0,0,0
-Valgioie,7,0,0,1,0,0
+Valgioie,8,0,0,1,0,0
 Venaus,4,1,0,0,0,0
 Villar Dora,8,0,0,0,0,0
 Villar Focchiardo,12,4,1,0,0,0

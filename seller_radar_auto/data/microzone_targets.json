@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:00:13.306296+00:00",
+  "generated_at": "2026-09-04T00:25:52.159943+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -219,6 +219,21 @@
         "Strada di Chianocco"
       ],
       "osm_status": "OK"
+    },
+    {
+      "zone_id": "bussoleno-strada-chianocco",
+      "comune": "Bussoleno",
+      "target_street": "Strada Chianocco",
+      "listing_target": "Strada Chianocco, Bussoleno 90",
+      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/bussoleno-valli-susa-sangone?page=2",
+      "streets": [
+        "Strada Chianocco",
+        "Strada di Chianocco",
+        "Via Balmafol",
+        "Via Ravetto",
+        "Via Rubattera"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
       "zone_id": "chianocco-via-primo-maggio-n",

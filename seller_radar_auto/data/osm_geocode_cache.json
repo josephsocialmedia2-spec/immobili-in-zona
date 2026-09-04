@@ -95,5 +95,10 @@
   "via camillo benso piemonte torino visualizza foto appartamento in vendita di bruzolo": null,
   "piazza del moro bruzolo": null,
   "frazione pavaglione chianocco": null,
-  "strada principale si trova un negozio di bussoleno": null
+  "strada principale si trova un negozio di bussoleno": null,
+  "strada chianocco bussoleno": {
+    "lat": 45.1404376,
+    "lon": 7.1555933,
+    "display_name": "Strada di Chianocco, Bussoleno, Torino, Piemonte, 10053, Italia"
+  }
 }

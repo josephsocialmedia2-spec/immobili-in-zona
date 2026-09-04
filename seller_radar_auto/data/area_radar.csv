@@ -15,6 +15,7 @@ d48aa39affeee332a566,Villar Dora,NON_DETERMINATO,Via Celle,VAI_IN_ZONA,Via Celle
 2bcdb0fc06c342a547fe,Almese,NON_DETERMINATO,VIA AVIGLIANA,VAI_IN_ZONA,VIA AVIGLIANA 98,,PRONTO,https://immobiliare.mitula.it/almese
 5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.immobiliare.it/annunci/119867056/
 5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 142,,PRONTO,https://www.immobiliare.it/annunci/119867056/
+5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.immobiliare.it/annunci/119867056/
 f03f60de65c9aab43eb5,Almese,NON_DETERMINATO,via Montecapretto,VAI_IN_ZONA,via Montecapretto 24,,PRONTO,https://www.immobiliare.it/annunci/108146029/
 2356b8a6cc2bf07676f7,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 29,,PRONTO,https://www.immobiliare.it/annunci/130993624/
 c49246626beeeef88169,Almese,NON_DETERMINATO,frazione Tuberghengo,VAI_IN_ZONA,frazione Tuberghengo 2,,PRONTO,https://www.immobiliare.it/annunci/101503673/
@@ -63,8 +64,9 @@ b2177e0b60eb038d86c0,Mattie,NON_DETERMINATO,via Mattie,VAI_IN_ZONA,Via Mattie 2/
 372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 3,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
 372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 115,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
 372e8d3efedd00da03bc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://avigliana1.tecnorete.it/avigliana/avigliana/
-899f1b1a99b411684f64,Buttigliera Alta,INDIZIO_AGENZIA,Strada del Closio,VAI_IN_ZONA,Strada del Closio 39,,PRONTO,https://www.wikicasa.it/vendita-case/buttigliera-alta/
 d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,Via IV Novembre 5,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
+d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,via IV Novembre 15,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
+d8ef7bfdf75744bb84fc,Buttigliera Alta,INDIZIO_AGENZIA,Via IV Novembre,VAI_IN_ZONA,via IV novembre 14,,PRONTO,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita
 c20b4e08b8a9430e80eb,Condove,NON_DETERMINATO,Borgata Borlera,VAI_IN_ZONA,Borgata Borlera 12,,PRONTO,https://www.idealista.it/immobile/36228538/
 c20b4e08b8a9430e80eb,Condove,NON_DETERMINATO,Borgata Borlera,VAI_IN_ZONA,Borgata Borlera 21,,PRONTO,https://www.idealista.it/immobile/36228538/
 22c9c81c30cacb3c02ee,Gravere,NON_DETERMINATO,Via Terzo Reggimento Alpini,VAI_IN_ZONA,Via Terzo Reggimento Alpini 9,,PRONTO,https://www.idealista.it/immobile/30296520/
@@ -147,12 +149,15 @@ ca0da030b717e3360d8b,Collegno,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avig
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,via Susa 40,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 50,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 2812ed64093f464b6c85,Almese,NON_DETERMINATO,Via Drubiaglio,VAI_IN_ZONA,Via Drubiaglio 6,,PRONTO,https://www.nuroa.it/affitto-case/almese
-de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via G. Mazzini,VAI_IN_ZONA,Via G. Mazzini 30,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
+de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,Via Collegno 23,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
+de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,via Collegno 84,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
 1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via dei Ronchi,VAI_IN_ZONA,Via dei Ronchi 51/A6,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
 1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via dei Ronchi,VAI_IN_ZONA,Via dei Ronchi 51,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
 1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via dei Ronchi,VAI_IN_ZONA,via dei Ronchi 270,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
 66478e0ea28bbf6bd725,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 70,,PRONTO,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/
 66478e0ea28bbf6bd725,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/
+3adcafe82d35ce3c7be8,Bardonecchia,NON_DETERMINATO,Piazza Europa,VAI_IN_ZONA,Piazza Europa 18/B,,PRONTO,https://maisondoc.it/affitto-stagionale/
+3adcafe82d35ce3c7be8,Bardonecchia,NON_DETERMINATO,Piazza Europa,VAI_IN_ZONA,Piazza Europa 18,,PRONTO,https://maisondoc.it/affitto-stagionale/
 a8d2985549c287ccaf93,Bardonecchia,NON_DETERMINATO,via generale cantore,VAI_IN_ZONA,via generale cantore 11,,PRONTO,https://www.immobiliare.it/annunci/126542873/
 997d8c6d6104c3e40dd7,Borgone Susa,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,via Montenero 2A,,PRONTO,https://www.immobiliare.it/annunci/122849092/
 eb1e8e8bbb4906ffb427,Borgone Susa,NON_DETERMINATO,via Ponte Dora,VAI_IN_ZONA,via Ponte Dora 2,,PRONTO,https://www.immobiliare.it/annunci/119519371/
@@ -166,12 +171,13 @@ b601c2a15af0cfaaedf8,Bussoleno,NON_DETERMINATO,Via San Lorenzo,VAI_IN_ZONA,Via S
 7c705b2969b4cb1f1bb9,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 18,,PRONTO,https://www.immobiliare.it/annunci/131999982/
 0aa713c1d374b06fb647,Avigliana,NON_DETERMINATO,via Orsiera,VAI_IN_ZONA,via Orsiera 5,,PRONTO,https://www.immobiliare.it/annunci/129672110/
 8ff15a9d9bf50ac0df35,Bardonecchia,INDIZIO_AGENZIA,Via Medail,VAI_IN_ZONA,Via Medail 37/A,,PRONTO,https://www.valsusaoggi.it/bardonecchia-vendesi-proprieta-con-giardino-in-via-san-giorgio/
-8ff15a9d9bf50ac0df35,Bardonecchia,INDIZIO_AGENZIA,Via Medail,VAI_IN_ZONA,via Medail 74,,PRONTO,https://www.valsusaoggi.it/bardonecchia-vendesi-proprieta-con-giardino-in-via-san-giorgio/
+8ff15a9d9bf50ac0df35,Bardonecchia,INDIZIO_AGENZIA,Via Medail,VAI_IN_ZONA,via Medail 21,,PRONTO,https://www.valsusaoggi.it/bardonecchia-vendesi-proprieta-con-giardino-in-via-san-giorgio/
 8ff15a9d9bf50ac0df35,Bardonecchia,INDIZIO_AGENZIA,Via Medail,VAI_IN_ZONA,via medail 86,,PRONTO,https://www.valsusaoggi.it/bardonecchia-vendesi-proprieta-con-giardino-in-via-san-giorgio/
-8ff15a9d9bf50ac0df35,Bardonecchia,INDIZIO_AGENZIA,Via Medail,VAI_IN_ZONA,Via medail 86/A,,PRONTO,https://www.valsusaoggi.it/bardonecchia-vendesi-proprieta-con-giardino-in-via-san-giorgio/
+8ff15a9d9bf50ac0df35,Bardonecchia,INDIZIO_AGENZIA,Via Medail,VAI_IN_ZONA,Via Medail 55,,PRONTO,https://www.valsusaoggi.it/bardonecchia-vendesi-proprieta-con-giardino-in-via-san-giorgio/
 22dcd0f468fedfee14c9,Bardonecchia,NON_DETERMINATO,via Verdi,VAI_IN_ZONA,via Verdi 27,,PRONTO,https://www.immobiliare.it/annunci/124612643/
 6fa0852fbbba8e070235,Borgone Susa,NON_DETERMINATO,via dei Gravè,VAI_IN_ZONA,via dei Gravè 4,,PRONTO,https://www.immobiliare.it/annunci/131917682/
 ec8b9bd87a9c17875f68,Borgone Susa,NON_DETERMINATO,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,VAI_IN_ZONA,via Augusto Abegg ... L'appartamento è stato ristrutturato circa 10,,PRONTO,https://www.immobiliare.it/annunci/103552834/
+55ef2c7fdb2770f273b2,Bussoleno,INDIZIO_AGENZIA,Via Bussoleno,VAI_IN_ZONA,Via Bussoleno 22,,PRONTO,https://www.nuroa.it/vendita-immobili/bussoleno
 55ef2c7fdb2770f273b2,Bussoleno,INDIZIO_AGENZIA,Via Bussoleno,VAI_IN_ZONA,Via Bussoleno 3,,PRONTO,https://www.nuroa.it/vendita-immobili/bussoleno
 55ef2c7fdb2770f273b2,Bussoleno,INDIZIO_AGENZIA,Via Bussoleno,VAI_IN_ZONA,Via Bussoleno 7,,PRONTO,https://www.nuroa.it/vendita-immobili/bussoleno
 55ef2c7fdb2770f273b2,Bussoleno,INDIZIO_AGENZIA,Via Bussoleno,VAI_IN_ZONA,Via Bussoleno 16,,PRONTO,https://www.nuroa.it/vendita-immobili/bussoleno
@@ -179,7 +185,6 @@ ec8b9bd87a9c17875f68,Borgone Susa,NON_DETERMINATO,via Augusto Abegg ... L'appart
 97a8d751ed8dfe575b6b,Almese,NON_DETERMINATO,via Almese,VAI_IN_ZONA,Via Almese 10,,PRONTO,https://www.immobiliare.it/annunci/125159231/
 97a8d751ed8dfe575b6b,Almese,NON_DETERMINATO,via Almese,VAI_IN_ZONA,Via Almese 12,,PRONTO,https://www.immobiliare.it/annunci/125159231/
 97a8d751ed8dfe575b6b,Almese,NON_DETERMINATO,via Almese,VAI_IN_ZONA,via almese 23,,PRONTO,https://www.immobiliare.it/annunci/125159231/
-fa464327d098b42cc057,Alpignano,NON_DETERMINATO,"Via dei Ronchi, si propone in locazione un capannone di circa",VAI_IN_ZONA,"Via dei Ronchi, si propone in locazione un capannone di circa 300",,PRONTO,https://case.trovit.it/affitto-negozio-alpignano
 76b37646a59f6fb8302d,Alpignano,NON_DETERMINATO,via Beinasco,VAI_IN_ZONA,via Beinasco 13,,PRONTO,https://www.immobiliare.it/annunci/129515200/
 4cd47f6dd65116e694de,Bardonecchia,NON_DETERMINATO,via La Rho,VAI_IN_ZONA,via La Rho 19,,PRONTO,https://www.immobiliare.it/annunci/124664157/
 4cd47f6dd65116e694de,Bardonecchia,NON_DETERMINATO,via La Rho,VAI_IN_ZONA,Via la Rho 58,,PRONTO,https://www.immobiliare.it/annunci/124664157/
@@ -217,6 +222,7 @@ f0548e22d7117187fc2b,Bardonecchia,NON_DETERMINATO,viale Bramafam,VAI_IN_ZONA,Via
 f0548e22d7117187fc2b,Bardonecchia,NON_DETERMINATO,viale Bramafam,VAI_IN_ZONA,viale Bramafam 31,,PRONTO,https://www.immobiliare.it/annunci/131382180/
 ab2196a93e1fb8725dc9,Buttigliera Alta,INDIZIO_AGENZIA,Via Monte Bianco,VAI_IN_ZONA,Via Monte Bianco 60/A,,PRONTO,https://www.tecnocasa.it/vendita/negozio/torino/buttigliera-alta/60932694.html
 c10b47311edad0b31066,Caprie,NON_DETERMINATO,Viale Kennedy,VAI_IN_ZONA,Viale Kennedy 27,,PRONTO,https://www.casa.it/immobili/54638195/
+d6373297aedc07de7664,San Valeriano,NON_DETERMINATO,"via principale del paese e vicina al centro, appartamento al piano terra di",VAI_IN_ZONA,"via principale del paese e vicina al centro, appartamento al piano terra di 98",,PRONTO,https://www.nuroa.it/vendita-immobili/appartamento-borgone-susa
 341b2c68c4675093ddb3,Alpignano,NON_DETERMINATO,Strada della Costa,VAI_IN_ZONA,Strada della Costa 91,,PRONTO,https://www.immobiliare.it/annunci/121671340/
 8df3cd2fe1742ec01fce,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 2,,PRONTO,https://www.immobiliare.it/annunci/129828138/
 8df3cd2fe1742ec01fce,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/129828138/
@@ -241,3 +247,16 @@ abaaca4cf9d1a058cb04,Bardonecchia,NON_DETERMINATO,Via Bardonecchia,VAI_IN_ZONA,v
 abaaca4cf9d1a058cb04,Bardonecchia,NON_DETERMINATO,Via Bardonecchia,VAI_IN_ZONA,via Bardonecchia 112,,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-bardonecchia
 ca01a4c62ab0780ba610,Bardonecchia,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,via Montenero 22,,PRONTO,https://www.immobiliare.it/annunci/131109262/
 ca01a4c62ab0780ba610,Bardonecchia,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,Via Montenero 16,,PRONTO,https://www.immobiliare.it/annunci/131109262/
+d7ee33d6b4b9ab54f7f7,Caprie,NON_DETERMINATO,via Peroldrado,VAI_IN_ZONA,via Peroldrado 22,,PRONTO,https://www.immobiliare.it/annunci/132084518/
+caf593979784073235a7,Alpignano,NON_DETERMINATO,via dei Ronchi,VAI_IN_ZONA,via dei Ronchi 45,,PRONTO,https://www.immobiliare.it/annunci/127650474/
+caf593979784073235a7,Alpignano,NON_DETERMINATO,via dei Ronchi,VAI_IN_ZONA,Via dei Ronchi 51,,PRONTO,https://www.immobiliare.it/annunci/127650474/
+caf593979784073235a7,Alpignano,NON_DETERMINATO,via dei Ronchi,VAI_IN_ZONA,via dei Ronchi 270,,PRONTO,https://www.immobiliare.it/annunci/127650474/
+eed9c6a6ba5260e9edab,Alpignano,NON_DETERMINATO,"Via dei Ronchi, si propone in locazione un capannone di circa",VAI_IN_ZONA,"Via dei Ronchi, si propone in locazione un capannone di circa 300",,PRONTO,https://www.nuroa.it/affitto-case/alpignano
+0f40cd33c71b810b02e2,Avigliana,NON_DETERMINATO,via Aldo Moro,VAI_IN_ZONA,via Aldo Moro 14,,PRONTO,https://www.immobiliare.it/annunci/126423911/
+17c9b431014ef6e0a297,Bardonecchia,NON_DETERMINATO,Via Montello,VAI_IN_ZONA,Via Montello 9,,PRONTO,https://www.casa.it/immobili/54501771/
+77b73cf1a085bdaa3c66,Bardonecchia,NON_DETERMINATO,via Medail,VAI_IN_ZONA,via Medail 21,,PRONTO,https://www.immobiliare.it/annunci/125996311/
+77b73cf1a085bdaa3c66,Bardonecchia,NON_DETERMINATO,via Medail,VAI_IN_ZONA,via Medail 74,,PRONTO,https://www.immobiliare.it/annunci/125996311/
+77b73cf1a085bdaa3c66,Bardonecchia,NON_DETERMINATO,via Medail,VAI_IN_ZONA,via medail 86,,PRONTO,https://www.immobiliare.it/annunci/125996311/
+77b73cf1a085bdaa3c66,Bardonecchia,NON_DETERMINATO,via Medail,VAI_IN_ZONA,Via medail 86/A,,PRONTO,https://www.immobiliare.it/annunci/125996311/
+77b73cf1a085bdaa3c66,Bardonecchia,NON_DETERMINATO,via Medail,VAI_IN_ZONA,Via Medail 57,,PRONTO,https://www.immobiliare.it/annunci/125996311/
+088546dced4c0aaefcd5,Bussoleno,NON_DETERMINATO,"Strada Chianocco, Bussoleno",VAI_IN_ZONA,"Strada Chianocco, Bussoleno 90",,PRONTO,https://caseinvenditainaffitto.it/case-in-vendita/bussoleno-valli-susa-sangone?page=2
