@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T12:13:24.849414+00:00",
+  "generated_at": "2026-09-04T16:12:57.385428+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -221,6 +221,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "bussoleno-via-della-bocciofila",
+      "comune": "Bussoleno",
+      "target_street": "Via della Bocciofila",
+      "listing_target": "Via della Bocciofila 4",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/bussoleno",
+      "streets": [
+        "Via della Bocciofila",
+        "Via Barges",
+        "Via Carlo Trattenero",
+        "Via Don Carlo Prinetto",
+        "Via Luigi Tonelli"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "bussoleno-strada-chianocco",
       "comune": "Bussoleno",
       "target_street": "Strada Chianocco",
@@ -376,7 +391,7 @@
       "zone_id": "borgone-susa-via-a-abegg",
       "comune": "Borgone Susa",
       "target_street": "via A. Abegg",
-      "listing_target": "Via A. Abegg 2",
+      "listing_target": "Via A. Abegg 68",
       "listing_url": "https://www.immobiliare.it/annunci/129563936/",
       "streets": [
         "via A. Abegg"
