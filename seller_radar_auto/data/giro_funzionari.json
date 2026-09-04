@@ -8,8 +8,8 @@
       "numero": 1,
       "comune": "Chiomonte",
       "score_comune": 55,
-      "righe_lavoro": 5,
-      "residenziale": 5,
+      "righe_lavoro": 6,
+      "residenziale": 6,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 23,
-      "residenziale": 23,
+      "righe_lavoro": 21,
+      "residenziale": 21,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -61,6 +61,17 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
+      "comune": "Susa",
+      "score_comune": 30,
+      "righe_lavoro": 10,
+      "residenziale": 10,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Villar Focchiardo",
       "score_comune": 23,
       "righe_lavoro": 3,
@@ -70,19 +81,19 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Borgone Susa",
       "score_comune": 20,
-      "righe_lavoro": 18,
-      "residenziale": 18,
+      "righe_lavoro": 17,
+      "residenziale": 17,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
       "comune": "Sant'Antonino di Susa",
       "score_comune": 20,
       "righe_lavoro": 19,
@@ -92,23 +103,12 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
-      "comune": "Venaus",
+      "funzionario": "FUNZIONARIO 10",
+      "numero": 10,
+      "comune": "Novalesa",
       "score_comune": 20,
       "righe_lavoro": 1,
       "residenziale": 1,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 10",
-      "numero": 10,
-      "comune": "Vaie",
-      "score_comune": 15,
-      "righe_lavoro": 6,
-      "residenziale": 6,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
