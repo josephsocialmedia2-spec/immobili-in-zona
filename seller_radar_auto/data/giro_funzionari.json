@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 16,
-      "residenziale": 16,
+      "righe_lavoro": 18,
+      "residenziale": 18,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -30,8 +30,8 @@
       "numero": 3,
       "comune": "Bussoleno",
       "score_comune": 42,
-      "righe_lavoro": 5,
-      "residenziale": 4,
+      "righe_lavoro": 6,
+      "residenziale": 5,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -40,9 +40,9 @@
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
       "comune": "Moncenisio",
-      "score_comune": 30,
-      "righe_lavoro": 9,
-      "residenziale": 7,
+      "score_comune": 35,
+      "righe_lavoro": 10,
+      "residenziale": 8,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -52,8 +52,8 @@
       "numero": 5,
       "comune": "Sant'Antonino di Susa",
       "score_comune": 30,
-      "righe_lavoro": 25,
-      "residenziale": 25,
+      "righe_lavoro": 23,
+      "residenziale": 23,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -63,8 +63,8 @@
       "numero": 6,
       "comune": "Borgone Susa",
       "score_comune": 30,
-      "righe_lavoro": 16,
-      "residenziale": 16,
+      "righe_lavoro": 15,
+      "residenziale": 15,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -72,17 +72,6 @@
     {
       "funzionario": "FUNZIONARIO 7",
       "numero": 7,
-      "comune": "Venaus",
-      "score_comune": 30,
-      "righe_lavoro": 2,
-      "residenziale": 2,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
       "comune": "Exilles",
       "score_comune": 25,
       "righe_lavoro": 7,
@@ -92,13 +81,24 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "San Didero",
       "score_comune": 23,
       "righe_lavoro": 6,
       "residenziale": 6,
       "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
+      "comune": "Vaie",
+      "score_comune": 23,
+      "righe_lavoro": 6,
+      "residenziale": 5,
+      "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
