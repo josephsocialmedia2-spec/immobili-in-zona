@@ -49,11 +49,11 @@ bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,2,VICINA,Via Cavour,0,INCROCIA,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,3,VICINA,Via Federico Marconcini,0,INCROCIA,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,4,VICINA,Via Maffiodenza,0,INCROCIA,OK
-bussoleno-via-bussoleno,Bussoleno,via bussoleno,via bussoleno 21,https://www.immobiliare.it/annunci/130283966/,0,TARGET,via bussoleno,0,CENTRO,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,via bussoleno,via bussoleno 21,https://www.immobiliare.it/annunci/130283966/,1,VICINA,Via Gran Borgata,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,via bussoleno,via bussoleno 21,https://www.immobiliare.it/annunci/130283966/,2,VICINA,Via Gran Porta,102,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,via bussoleno,via bussoleno 21,https://www.immobiliare.it/annunci/130283966/,3,VICINA,Piazza Caduti per la Libertà,103,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-bussoleno-via-bussoleno,Bussoleno,via bussoleno,via bussoleno 21,https://www.immobiliare.it/annunci/130283966/,4,VICINA,Via San Rocco,109,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via bussoleno,Via Bussoleno 3,https://www.immobiliare.it/annunci/130283966/,0,TARGET,via bussoleno,0,CENTRO,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via bussoleno,Via Bussoleno 3,https://www.immobiliare.it/annunci/130283966/,1,VICINA,Via Gran Borgata,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via bussoleno,Via Bussoleno 3,https://www.immobiliare.it/annunci/130283966/,2,VICINA,Via Gran Porta,102,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via bussoleno,Via Bussoleno 3,https://www.immobiliare.it/annunci/130283966/,3,VICINA,Piazza Caduti per la Libertà,103,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-bussoleno,Bussoleno,via bussoleno,Via Bussoleno 3,https://www.immobiliare.it/annunci/130283966/,4,VICINA,Via San Rocco,109,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 bussoleno-strada-monginevro,Bussoleno,Strada Monginevro,Strada Monginevro 7/a,https://www.immobiliare.it/annunci/65394712/,0,TARGET,Strada Monginevro,0,CENTRO,OK_GEOCODE_FALLBACK
 bussoleno-strada-monginevro,Bussoleno,Strada Monginevro,Strada Monginevro 7/a,https://www.immobiliare.it/annunci/65394712/,1,VICINA,Strada Provinciale 24 del Monginevro,40,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 bussoleno-strada-monginevro,Bussoleno,Strada Monginevro,Strada Monginevro 7/a,https://www.immobiliare.it/annunci/65394712/,2,VICINA,Via Carlo Trattenero,46,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
@@ -69,6 +69,11 @@ bussoleno-strada-chianocco,Bussoleno,Strada Chianocco,"Strada Chianocco, Bussole
 bussoleno-strada-chianocco,Bussoleno,Strada Chianocco,"Strada Chianocco, Bussoleno 90",https://caseinvenditainaffitto.it/case-in-vendita/bussoleno-valli-susa-sangone?page=2,2,VICINA,Via Balmafol,109,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 bussoleno-strada-chianocco,Bussoleno,Strada Chianocco,"Strada Chianocco, Bussoleno 90",https://caseinvenditainaffitto.it/case-in-vendita/bussoleno-valli-susa-sangone?page=2,3,VICINA,Via Ravetto,144,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 bussoleno-strada-chianocco,Bussoleno,Strada Chianocco,"Strada Chianocco, Bussoleno 90",https://caseinvenditainaffitto.it/case-in-vendita/bussoleno-valli-susa-sangone?page=2,4,VICINA,Via Rubattera,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+bussoleno-via-traforo,Bussoleno,via Traforo,via Traforo 30,https://www.immobiliare.it/annunci/108335851/,0,TARGET,via Traforo,0,CENTRO,OK
+bussoleno-via-traforo,Bussoleno,via Traforo,via Traforo 30,https://www.immobiliare.it/annunci/108335851/,1,VICINA,Piazza C. L. N.,0,INCROCIA,OK
+bussoleno-via-traforo,Bussoleno,via Traforo,via Traforo 30,https://www.immobiliare.it/annunci/108335851/,2,VICINA,Piazza del Moro,0,INCROCIA,OK
+bussoleno-via-traforo,Bussoleno,via Traforo,via Traforo 30,https://www.immobiliare.it/annunci/108335851/,3,VICINA,Strada Ponte Guido Cambursano,0,INCROCIA,OK
+bussoleno-via-traforo,Bussoleno,via Traforo,via Traforo 30,https://www.immobiliare.it/annunci/108335851/,4,VICINA,Strada Susa,0,INCROCIA,OK
 chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,0,TARGET,Via Primo Maggio n,0,CENTRO,OK
 chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,1,VICINA,Via 25 Aprile 1945,0,INCROCIA,OK
 chianocco-via-primo-maggio-n,Chianocco,Via Primo Maggio n,Via Primo Maggio n. 4/c,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco,2,VICINA,Via Chiesa Vecchia,0,INCROCIA,OK
