@@ -2,6 +2,7 @@
 """Ripulisce work_queue.csv prima del giro operativo.
 
 Obiettivo: rimuovere pagine categoria/ricerca e risultati non azionabili.
+Esclude inoltre i rustici dal Seller Radar operativo.
 Il filtro geografico NON appartiene a questo passaggio: work_queue.csv resta il
 MASTER Seller Radar completo; Susa +20 km viene applicato solo quando si genera
 il Giro operativo in prepare_acquisition_route.py.
@@ -39,6 +40,12 @@ KNOWN_DETAIL_PATTERNS = (
     r"subito\.it/.+\.htm(?:$|[?#])",
 )
 
+RUSTIC_RE = re.compile(r"\brustic(?:o|a|i|he)\b", re.I)
+RUSTIC_FIELDS = (
+    "TITOLO", "TIPO_OPPORTUNITA", "TARGET", "MOTIVI", "URL",
+    "DOVE_ANDRE", "COSA_CERCO", "ISTRUZIONE_OPERATIVA",
+)
+
 
 def is_detail_url(url: str) -> bool:
     return any(re.search(p, url or "", re.I) for p in KNOWN_DETAIL_PATTERNS)
@@ -58,9 +65,16 @@ def is_category_url(url: str) -> bool:
     return False
 
 
+def is_rustic(row: dict) -> bool:
+    text = " ".join(str(row.get(field) or "") for field in RUSTIC_FIELDS)
+    return bool(RUSTIC_RE.search(text))
+
+
 def reason(row: dict) -> str:
     url = (row.get("URL") or "").strip()
     title = (row.get("TITOLO") or "").strip().casefold()
+    if is_rustic(row):
+        return "RUSTICO_ESCLUSO"
     if is_category_url(url):
         return "PAGINA_CATEGORIA_O_RICERCA"
     if any(term in title for term in GENERIC_CATEGORY_TERMS) and not is_detail_url(url):
@@ -101,7 +115,7 @@ def main() -> None:
 
     print(
         f"SANITIZE QUEUE MASTER: {len(rows)} totali -> {len(kept)} annunci azionabili, "
-        f"{len(rejected)} scartati per qualità; nessun filtro geografico applicato"
+        f"{len(rejected)} scartati per qualità/tipologia; nessun filtro geografico applicato"
     )
 
 
