@@ -6,11 +6,11 @@
     {
       "funzionario": "FUNZIONARIO 1",
       "numero": 1,
-      "comune": "Moncenisio",
-      "score_comune": 45,
-      "righe_lavoro": 8,
-      "residenziale": 6,
-      "commerciale": 2,
+      "comune": "Chiomonte",
+      "score_comune": 55,
+      "righe_lavoro": 5,
+      "residenziale": 5,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 25,
-      "residenziale": 25,
+      "righe_lavoro": 24,
+      "residenziale": 24,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -39,17 +39,28 @@
     {
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
-      "comune": "Borgone Susa",
+      "comune": "Moncenisio",
       "score_comune": 35,
-      "righe_lavoro": 21,
-      "residenziale": 21,
-      "commerciale": 0,
+      "righe_lavoro": 9,
+      "residenziale": 7,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
+      "comune": "Venaus",
+      "score_comune": 35,
+      "righe_lavoro": 1,
+      "residenziale": 1,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 6",
+      "numero": 6,
       "comune": "San Didero",
       "score_comune": 30,
       "righe_lavoro": 7,
@@ -59,8 +70,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 6",
-      "numero": 6,
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Sant'Antonino di Susa",
       "score_comune": 30,
       "righe_lavoro": 20,
@@ -70,23 +81,12 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Giaglione",
       "score_comune": 23,
       "righe_lavoro": 2,
       "residenziale": 1,
-      "commerciale": 1,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
-      "comune": "Vaie",
-      "score_comune": 23,
-      "righe_lavoro": 6,
-      "residenziale": 5,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -105,10 +105,10 @@
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Bruzolo",
+      "comune": "Borgone Susa",
       "score_comune": 20,
-      "righe_lavoro": 2,
-      "residenziale": 2,
+      "righe_lavoro": 18,
+      "residenziale": 18,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0

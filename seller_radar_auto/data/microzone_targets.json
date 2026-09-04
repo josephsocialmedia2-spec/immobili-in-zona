@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:25:52.159943+00:00",
+  "generated_at": "2026-09-04T02:16:18.090939+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -178,11 +178,11 @@
     {
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
-      "target_street": "via Bussoleno",
-      "listing_target": "via bussoleno 26",
-      "listing_url": "https://www.immobiliare.it/annunci/132018520/",
+      "target_street": "via bussoleno",
+      "listing_target": "via bussoleno 21",
+      "listing_url": "https://www.immobiliare.it/annunci/130283966/",
       "streets": [
-        "via Bussoleno",
+        "via bussoleno",
         "Via Gran Borgata",
         "Via Gran Porta",
         "Piazza Caduti per la Libertà",
