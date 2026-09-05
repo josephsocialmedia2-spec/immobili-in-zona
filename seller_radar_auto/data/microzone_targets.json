@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T01:10:10.372818+00:00",
+  "generated_at": "2026-09-05T04:56:41.299233+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -44,7 +44,7 @@
       "zone_id": "borgone-susa-via-abegg",
       "comune": "Borgone Susa",
       "target_street": "via Abegg",
-      "listing_target": "via Abegg 18",
+      "listing_target": "Via Abegg 72",
       "listing_url": "https://www.immobiliare.it/annunci/125219057/",
       "streets": [
         "via Abegg",
@@ -59,8 +59,8 @@
       "zone_id": "borgone-susa-via-condove",
       "comune": "Borgone Susa",
       "target_street": "via Condove",
-      "listing_target": "via Condove 3",
-      "listing_url": "https://www.immobiliare.it/annunci/123006226/",
+      "listing_target": "via Condove 86",
+      "listing_url": "https://www.immobiliare.it/annunci/126581511/",
       "streets": [
         "via Condove",
         "Interni di Via Condove",
@@ -224,8 +224,8 @@
       "zone_id": "bussoleno-strada-monginevro",
       "comune": "Bussoleno",
       "target_street": "Strada Monginevro",
-      "listing_target": "Strada Monginevro 7/a",
-      "listing_url": "https://www.immobiliare.it/annunci/65394712/",
+      "listing_target": "Strada Monginevro 28",
+      "listing_url": "https://www.immobiliare.it/annunci/119706740/",
       "streets": [
         "Strada Monginevro",
         "Strada Provinciale 24 del Monginevro",
@@ -458,7 +458,7 @@
       "comune": "Bruzolo",
       "target_street": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",
       "listing_target": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/bruzolo",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/vendita-bruzolo",
       "streets": [
         "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di"
       ],

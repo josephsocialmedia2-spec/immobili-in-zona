@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 20,
-      "residenziale": 20,
+      "righe_lavoro": 19,
+      "residenziale": 19,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -51,9 +51,9 @@
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
       "comune": "Borgone Susa",
-      "score_comune": 30,
-      "righe_lavoro": 16,
-      "residenziale": 16,
+      "score_comune": 35,
+      "righe_lavoro": 20,
+      "residenziale": 20,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -72,6 +72,17 @@
     {
       "funzionario": "FUNZIONARIO 7",
       "numero": 7,
+      "comune": "Meana di Susa",
+      "score_comune": 30,
+      "righe_lavoro": 8,
+      "residenziale": 8,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Exilles",
       "score_comune": 25,
       "righe_lavoro": 7,
@@ -81,8 +92,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
       "comune": "San Didero",
       "score_comune": 23,
       "righe_lavoro": 6,
@@ -92,23 +103,12 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
+      "funzionario": "FUNZIONARIO 10",
+      "numero": 10,
       "comune": "Vaie",
       "score_comune": 23,
       "righe_lavoro": 6,
       "residenziale": 5,
-      "commerciale": 1,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 10",
-      "numero": 10,
-      "comune": "Villar Focchiardo",
-      "score_comune": 23,
-      "righe_lavoro": 3,
-      "residenziale": 2,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
