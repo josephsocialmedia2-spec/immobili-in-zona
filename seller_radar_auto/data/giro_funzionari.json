@@ -40,9 +40,9 @@
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
       "comune": "Moncenisio",
-      "score_comune": 35,
-      "righe_lavoro": 11,
-      "residenziale": 9,
+      "score_comune": 30,
+      "righe_lavoro": 12,
+      "residenziale": 10,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -50,10 +50,10 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
-      "comune": "Borgone Susa",
-      "score_comune": 35,
-      "righe_lavoro": 20,
-      "residenziale": 20,
+      "comune": "Sant'Antonino di Susa",
+      "score_comune": 30,
+      "righe_lavoro": 24,
+      "residenziale": 24,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -61,10 +61,10 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
-      "comune": "Sant'Antonino di Susa",
+      "comune": "Borgone Susa",
       "score_comune": 30,
-      "righe_lavoro": 23,
-      "residenziale": 23,
+      "righe_lavoro": 19,
+      "residenziale": 19,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
