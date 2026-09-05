@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T19:21:34.141148+00:00",
+  "generated_at": "2026-09-05T21:27:38.066297+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -204,6 +204,21 @@
         "Via Frejus"
       ],
       "osm_status": "OK"
+    },
+    {
+      "zone_id": "borgone-susa-via-4-novembre",
+      "comune": "Borgone Susa",
+      "target_street": "via 4 Novembre",
+      "listing_target": "via 4 Novembre 13",
+      "listing_url": "https://www.immobiliare.it/annunci/105071031/",
+      "streets": [
+        "via 4 Novembre",
+        "Via Quattro Novembre",
+        "Vicolo Cavour",
+        "Via Francesco Perodo",
+        "Via Augusto Abegg"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
       "zone_id": "bruzolo-via-dei-mille",
@@ -451,8 +466,8 @@
       "zone_id": "borgone-susa-via-a-abegg",
       "comune": "Borgone Susa",
       "target_street": "via A. Abegg",
-      "listing_target": "Via A. Abegg 2",
-      "listing_url": "https://www.immobiliare.it/annunci/129563936/",
+      "listing_target": "via A. Abegg 18",
+      "listing_url": "https://www.immobiliare.it/annunci/108837545/",
       "streets": [
         "via A. Abegg"
       ],

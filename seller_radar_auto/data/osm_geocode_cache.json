@@ -101,5 +101,10 @@
     "lon": 7.1555933,
     "display_name": "Strada di Chianocco, Bussoleno, Torino, Piemonte, 10053, Italia"
   },
-  "localita dove mappa aggiornato piu di un mese fa bruzolo": null
+  "localita dove mappa aggiornato piu di un mese fa bruzolo": null,
+  "via 4 novembre borgone susa": {
+    "lat": 45.1224419,
+    "lon": 7.2391371,
+    "display_name": "Via Quattro Novembre, Achit, Borgone Susa, Torino, Piemonte, Italia"
+  }
 }
