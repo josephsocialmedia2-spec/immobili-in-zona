@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 18,
-      "residenziale": 18,
+      "righe_lavoro": 20,
+      "residenziale": 20,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -41,8 +41,8 @@
       "numero": 4,
       "comune": "Moncenisio",
       "score_comune": 35,
-      "righe_lavoro": 10,
-      "residenziale": 8,
+      "righe_lavoro": 11,
+      "residenziale": 9,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -50,10 +50,10 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
-      "comune": "Sant'Antonino di Susa",
+      "comune": "Borgone Susa",
       "score_comune": 30,
-      "righe_lavoro": 23,
-      "residenziale": 23,
+      "righe_lavoro": 16,
+      "residenziale": 16,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -61,10 +61,10 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
-      "comune": "Borgone Susa",
+      "comune": "Sant'Antonino di Susa",
       "score_comune": 30,
-      "righe_lavoro": 15,
-      "residenziale": 15,
+      "righe_lavoro": 23,
+      "residenziale": 23,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0

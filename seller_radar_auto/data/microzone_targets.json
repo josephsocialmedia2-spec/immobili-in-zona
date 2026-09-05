@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T22:40:03.148768+00:00",
+  "generated_at": "2026-09-05T01:10:10.372818+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -176,6 +176,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "borgone-susa-via-guido-bobba",
+      "comune": "Borgone Susa",
+      "target_street": "via Guido Bobba",
+      "listing_target": "via Guido Bobba 46",
+      "listing_url": "https://www.immobiliare.it/annunci/122347108/",
+      "streets": [
+        "via Guido Bobba",
+        "Piazza Canonico Anselmetti",
+        "Via Bruno Mosconi",
+        "Via Moncenisio",
+        "Via Venti Settembre"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "bruzolo-via-dei-mille",
       "comune": "Bruzolo",
       "target_street": "Via dei Mille",
@@ -193,11 +208,11 @@
     {
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
-      "target_street": "Via Bussoleno",
+      "target_street": "via bussoleno",
       "listing_target": "via bussoleno 26",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/immobili-bussoleno",
+      "listing_url": "https://www.immobiliare.it/annunci/130283966/",
       "streets": [
-        "Via Bussoleno",
+        "via bussoleno",
         "Via Gran Borgata",
         "Via Gran Porta",
         "Piazza Caduti per la Libertà",
@@ -240,7 +255,7 @@
       "comune": "Bussoleno",
       "target_street": "Via della Bocciofila",
       "listing_target": "Via della Bocciofila 4",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/bussoleno",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/immobili-bussoleno",
       "streets": [
         "Via della Bocciofila",
         "Via Barges",
