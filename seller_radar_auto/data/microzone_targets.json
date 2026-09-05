@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T09:31:45.738966+00:00",
+  "generated_at": "2026-09-05T17:12:00.765729+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -191,6 +191,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "borgone-susa-via-roma",
+      "comune": "Borgone Susa",
+      "target_street": "via Roma",
+      "listing_target": "via Roma 6",
+      "listing_url": "https://www.immobiliare.it/annunci/105065761/",
+      "streets": [
+        "via Roma",
+        "Via dei Pioppi",
+        "Via Ponte Dora",
+        "S.S.24",
+        "Via Frejus"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "bruzolo-via-dei-mille",
       "comune": "Bruzolo",
       "target_street": "Via dei Mille",
@@ -369,6 +384,21 @@
         "Via Novalesa"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "moncenisio-via-moncenisio",
+      "comune": "Moncenisio",
+      "target_street": "via Moncenisio",
+      "listing_target": "via Moncenisio 12",
+      "listing_url": "https://www.immobiliare.it/annunci/132188518/",
+      "streets": [
+        "via Moncenisio",
+        "Tsëmin de Muhni",
+        "Ruà de Seint Zors",
+        "Ruà Trieste",
+        "Ruà Trento"
+      ],
+      "osm_status": "OK"
     },
     {
       "zone_id": "sant-antonino-di-susa-via-medagli",

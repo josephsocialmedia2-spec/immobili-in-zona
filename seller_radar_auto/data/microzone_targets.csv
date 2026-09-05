@@ -54,6 +54,11 @@ borgone-susa-via-guido-bobba,Borgone Susa,via Guido Bobba,via Guido Bobba 46,htt
 borgone-susa-via-guido-bobba,Borgone Susa,via Guido Bobba,via Guido Bobba 46,https://www.immobiliare.it/annunci/122347108/,2,VICINA,Via Bruno Mosconi,0,INCROCIA,OK
 borgone-susa-via-guido-bobba,Borgone Susa,via Guido Bobba,via Guido Bobba 46,https://www.immobiliare.it/annunci/122347108/,3,VICINA,Via Moncenisio,0,INCROCIA,OK
 borgone-susa-via-guido-bobba,Borgone Susa,via Guido Bobba,via Guido Bobba 46,https://www.immobiliare.it/annunci/122347108/,4,VICINA,Via Venti Settembre,0,INCROCIA,OK
+borgone-susa-via-roma,Borgone Susa,via Roma,via Roma 6,https://www.immobiliare.it/annunci/105065761/,0,TARGET,via Roma,0,CENTRO,OK
+borgone-susa-via-roma,Borgone Susa,via Roma,via Roma 6,https://www.immobiliare.it/annunci/105065761/,1,VICINA,Via dei Pioppi,0,INCROCIA,OK
+borgone-susa-via-roma,Borgone Susa,via Roma,via Roma 6,https://www.immobiliare.it/annunci/105065761/,2,VICINA,Via Ponte Dora,0,INCROCIA,OK
+borgone-susa-via-roma,Borgone Susa,via Roma,via Roma 6,https://www.immobiliare.it/annunci/105065761/,3,VICINA,S.S.24,13,VICINA,OK
+borgone-susa-via-roma,Borgone Susa,via Roma,via Roma 6,https://www.immobiliare.it/annunci/105065761/,4,VICINA,Via Frejus,16,VICINA,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,0,TARGET,Via dei Mille,0,CENTRO,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,1,VICINA,Via Carlo Emanuele Primo,0,INCROCIA,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,2,VICINA,Via Cavour,0,INCROCIA,OK
@@ -114,6 +119,11 @@ mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San G
 mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San Giuseppe 21/d,https://www.casa.it/immobili/54595196/,2,VICINA,Via Ezio Perino,60,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San Giuseppe 21/d,https://www.casa.it/immobili/54595196/,3,VICINA,Via Marzano,80,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 mompantero-frazione-san-giuseppe,Mompantero,Frazione San Giuseppe,frazione San Giuseppe 21/d,https://www.casa.it/immobili/54595196/,4,VICINA,Via Novalesa,385,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+moncenisio-via-moncenisio,Moncenisio,via Moncenisio,via Moncenisio 12,https://www.immobiliare.it/annunci/132188518/,0,TARGET,via Moncenisio,0,CENTRO,OK
+moncenisio-via-moncenisio,Moncenisio,via Moncenisio,via Moncenisio 12,https://www.immobiliare.it/annunci/132188518/,1,VICINA,Tsëmin de Muhni,0,INCROCIA,OK
+moncenisio-via-moncenisio,Moncenisio,via Moncenisio,via Moncenisio 12,https://www.immobiliare.it/annunci/132188518/,2,VICINA,Ruà de Seint Zors,12,VICINA,OK
+moncenisio-via-moncenisio,Moncenisio,via Moncenisio,via Moncenisio 12,https://www.immobiliare.it/annunci/132188518/,3,VICINA,Ruà Trieste,20,VICINA,OK
+moncenisio-via-moncenisio,Moncenisio,via Moncenisio,via Moncenisio 12,https://www.immobiliare.it/annunci/132188518/,4,VICINA,Ruà Trento,29,VICINA,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,0,TARGET,via Medagli,0,CENTRO,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,1,VICINA,Via Dora Riparia,0,INCROCIA,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,2,VICINA,Via Roma,0,INCROCIA,OK

@@ -8,8 +8,8 @@
       "numero": 1,
       "comune": "Chiomonte",
       "score_comune": 55,
-      "righe_lavoro": 6,
-      "residenziale": 6,
+      "righe_lavoro": 7,
+      "residenziale": 7,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -39,6 +39,17 @@
     {
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
+      "comune": "Vaie",
+      "score_comune": 35,
+      "righe_lavoro": 7,
+      "residenziale": 6,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 5",
+      "numero": 5,
       "comune": "Moncenisio",
       "score_comune": 30,
       "righe_lavoro": 12,
@@ -48,30 +59,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 5",
-      "numero": 5,
-      "comune": "Sant'Antonino di Susa",
-      "score_comune": 30,
-      "righe_lavoro": 24,
-      "residenziale": 24,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
-      "comune": "Borgone Susa",
-      "score_comune": 30,
-      "righe_lavoro": 19,
-      "residenziale": 19,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
       "comune": "Meana di Susa",
       "score_comune": 30,
       "righe_lavoro": 8,
@@ -81,8 +70,30 @@
       "pdf_da_verificare": 0
     },
     {
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
+      "comune": "Borgone Susa",
+      "score_comune": 30,
+      "righe_lavoro": 19,
+      "residenziale": 19,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
       "funzionario": "FUNZIONARIO 8",
       "numero": 8,
+      "comune": "Villar Focchiardo",
+      "score_comune": 30,
+      "righe_lavoro": 4,
+      "residenziale": 3,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
       "comune": "Exilles",
       "score_comune": 25,
       "righe_lavoro": 7,
@@ -92,24 +103,13 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
-      "comune": "San Didero",
-      "score_comune": 23,
-      "righe_lavoro": 6,
-      "residenziale": 6,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Vaie",
+      "comune": "San Didero",
       "score_comune": 23,
-      "righe_lavoro": 6,
+      "righe_lavoro": 5,
       "residenziale": 5,
-      "commerciale": 1,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }
