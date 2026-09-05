@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T17:12:00.765729+00:00",
+  "generated_at": "2026-09-05T19:21:34.141148+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -224,7 +224,7 @@
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
       "target_street": "via bussoleno",
-      "listing_target": "via bussoleno 26",
+      "listing_target": "Via Bussoleno 92",
       "listing_url": "https://www.immobiliare.it/annunci/130283966/",
       "streets": [
         "via bussoleno",
@@ -484,13 +484,13 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "bruzolo-via-camillo-benso-piemonte-torino-visualizza-foto-appartamento-in-vendita-di",
+      "zone_id": "bruzolo-localita-dove-mappa-aggiornato-piu-di-un-mese-fa",
       "comune": "Bruzolo",
-      "target_street": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",
-      "listing_target": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",
+      "target_street": "località dove Mappa aggiornato più di un mese fa",
+      "listing_target": "località dove Mappa aggiornato più di un mese fa 198",
       "listing_url": "https://www.nuroa.it/vendita-immobili/vendita-bruzolo",
       "streets": [
-        "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di"
+        "località dove Mappa aggiornato più di un mese fa"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

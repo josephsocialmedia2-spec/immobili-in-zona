@@ -39,11 +39,11 @@
     {
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
-      "comune": "Vaie",
+      "comune": "Borgone Susa",
       "score_comune": 35,
-      "righe_lavoro": 7,
-      "residenziale": 6,
-      "commerciale": 1,
+      "righe_lavoro": 20,
+      "residenziale": 20,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -61,39 +61,17 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
-      "comune": "Meana di Susa",
+      "comune": "Villar Focchiardo",
       "score_comune": 30,
-      "righe_lavoro": 8,
-      "residenziale": 8,
-      "commerciale": 0,
+      "righe_lavoro": 5,
+      "residenziale": 4,
+      "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 7",
       "numero": 7,
-      "comune": "Borgone Susa",
-      "score_comune": 30,
-      "righe_lavoro": 19,
-      "residenziale": 19,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
-      "comune": "Villar Focchiardo",
-      "score_comune": 30,
-      "righe_lavoro": 4,
-      "residenziale": 3,
-      "commerciale": 1,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
       "comune": "Exilles",
       "score_comune": 25,
       "righe_lavoro": 7,
@@ -103,12 +81,34 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 10",
-      "numero": 10,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "San Didero",
       "score_comune": 23,
       "righe_lavoro": 5,
       "residenziale": 5,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
+      "comune": "Vaie",
+      "score_comune": 23,
+      "righe_lavoro": 7,
+      "residenziale": 6,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 10",
+      "numero": 10,
+      "comune": "Sant'Antonino di Susa",
+      "score_comune": 20,
+      "righe_lavoro": 16,
+      "residenziale": 16,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
