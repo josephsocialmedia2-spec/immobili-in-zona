@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 19,
-      "residenziale": 19,
+      "righe_lavoro": 15,
+      "residenziale": 15,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -41,8 +41,8 @@
       "numero": 4,
       "comune": "Bussoleno",
       "score_comune": 32,
-      "righe_lavoro": 6,
-      "residenziale": 6,
+      "righe_lavoro": 5,
+      "residenziale": 5,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -50,10 +50,10 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
-      "comune": "Villar Focchiardo",
-      "score_comune": 30,
-      "righe_lavoro": 5,
-      "residenziale": 4,
+      "comune": "Vaie",
+      "score_comune": 25,
+      "righe_lavoro": 7,
+      "residenziale": 6,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -72,6 +72,17 @@
     {
       "funzionario": "FUNZIONARIO 7",
       "numero": 7,
+      "comune": "Villar Focchiardo",
+      "score_comune": 23,
+      "righe_lavoro": 5,
+      "residenziale": 4,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Moncenisio",
       "score_comune": 23,
       "righe_lavoro": 8,
@@ -81,23 +92,12 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
-      "comune": "Borgone Susa",
-      "score_comune": 20,
-      "righe_lavoro": 29,
-      "residenziale": 29,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Sant'Antonino di Susa",
+      "comune": "Borgone Susa",
       "score_comune": 20,
-      "righe_lavoro": 14,
-      "residenziale": 14,
+      "righe_lavoro": 30,
+      "residenziale": 30,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -105,10 +105,10 @@
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Venaus",
+      "comune": "Sant'Antonino di Susa",
       "score_comune": 20,
-      "righe_lavoro": 2,
-      "residenziale": 2,
+      "righe_lavoro": 14,
+      "residenziale": 14,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
