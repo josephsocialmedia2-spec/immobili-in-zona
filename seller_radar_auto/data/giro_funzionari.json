@@ -30,8 +30,8 @@
       "numero": 3,
       "comune": "Borgone Susa",
       "score_comune": 35,
-      "righe_lavoro": 32,
-      "residenziale": 32,
+      "righe_lavoro": 30,
+      "residenziale": 30,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -39,10 +39,10 @@
     {
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
-      "comune": "Moncenisio",
+      "comune": "Exilles",
       "score_comune": 35,
-      "righe_lavoro": 12,
-      "residenziale": 11,
+      "righe_lavoro": 9,
+      "residenziale": 8,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -61,17 +61,6 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
-      "comune": "Exilles",
-      "score_comune": 25,
-      "righe_lavoro": 7,
-      "residenziale": 6,
-      "commerciale": 1,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
       "comune": "San Didero",
       "score_comune": 23,
       "righe_lavoro": 5,
@@ -81,8 +70,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Vaie",
       "score_comune": 23,
       "righe_lavoro": 7,
@@ -92,12 +81,23 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Villar Focchiardo",
       "score_comune": 23,
       "righe_lavoro": 5,
       "residenziale": 4,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
+      "comune": "Moncenisio",
+      "score_comune": 23,
+      "righe_lavoro": 12,
+      "residenziale": 11,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
