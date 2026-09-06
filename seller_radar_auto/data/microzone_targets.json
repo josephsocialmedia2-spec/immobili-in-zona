@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T14:04:18.206072+00:00",
+  "generated_at": "2026-09-06T17:22:52.043005+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -529,13 +529,13 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "bruzolo-via-camillo-benso-piemonte-torino-visualizza-foto-appartamento-in-vendita-di",
+      "zone_id": "bruzolo-localita-dove-mappa-aggiornato-piu-di-un-mese-fa",
       "comune": "Bruzolo",
-      "target_street": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",
-      "listing_target": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/vendita-bruzolo",
+      "target_street": "località dove Mappa aggiornato più di un mese fa",
+      "listing_target": "località dove Mappa aggiornato più di un mese fa 198",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/bruzolo",
       "streets": [
-        "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di"
+        "località dove Mappa aggiornato più di un mese fa"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
@@ -548,6 +548,18 @@
       "listing_url": "https://www.valsusaoggi.it/News-Commerciali/",
       "streets": [
         "Piazza del Moro"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "bruzolo-via-camillo-benso-piemonte-torino-visualizza-foto-appartamento-in-vendita-di",
+      "comune": "Bruzolo",
+      "target_street": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",
+      "listing_target": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/vendita-bruzolo",
+      "streets": [
+        "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
