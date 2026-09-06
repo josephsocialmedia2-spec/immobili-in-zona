@@ -9,11 +9,11 @@ borgone-susa-via-abegg,Borgone Susa,via Abegg,Via Abegg 72,https://www.immobilia
 borgone-susa-via-abegg,Borgone Susa,via Abegg,Via Abegg 72,https://www.immobiliare.it/annunci/125219057/,2,VICINA,Via dei Vernetti,30,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 borgone-susa-via-abegg,Borgone Susa,via Abegg,Via Abegg 72,https://www.immobiliare.it/annunci/125219057/,3,VICINA,Strada Donatori di Sangue,97,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 borgone-susa-via-abegg,Borgone Susa,via Abegg,Via Abegg 72,https://www.immobiliare.it/annunci/125219057/,4,VICINA,Autostrada del Frejus,246,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 86,https://www.immobiliare.it/annunci/126581511/,0,TARGET,via Condove,0,CENTRO,OK
-borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 86,https://www.immobiliare.it/annunci/126581511/,1,VICINA,Interni di Via Condove,0,INCROCIA,OK
-borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 86,https://www.immobiliare.it/annunci/126581511/,2,VICINA,Piazza Canonico Anselmetti,0,INCROCIA,OK
-borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 86,https://www.immobiliare.it/annunci/126581511/,3,VICINA,S.S.24,0,INCROCIA,OK
-borgone-susa-via-condove,Borgone Susa,via Condove,via Condove 86,https://www.immobiliare.it/annunci/126581511/,4,VICINA,Strada Provinciale 24 del Monginevro,0,INCROCIA,OK
+borgone-susa-via-condove,Borgone Susa,Via Condove,Via Condove 3,https://www.idealista.it/immobile/33654375/,0,TARGET,Via Condove,0,CENTRO,OK
+borgone-susa-via-condove,Borgone Susa,Via Condove,Via Condove 3,https://www.idealista.it/immobile/33654375/,1,VICINA,Interni di Via Condove,0,INCROCIA,OK
+borgone-susa-via-condove,Borgone Susa,Via Condove,Via Condove 3,https://www.idealista.it/immobile/33654375/,2,VICINA,Piazza Canonico Anselmetti,0,INCROCIA,OK
+borgone-susa-via-condove,Borgone Susa,Via Condove,Via Condove 3,https://www.idealista.it/immobile/33654375/,3,VICINA,S.S.24,0,INCROCIA,OK
+borgone-susa-via-condove,Borgone Susa,Via Condove,Via Condove 3,https://www.idealista.it/immobile/33654375/,4,VICINA,Strada Provinciale 24 del Monginevro,0,INCROCIA,OK
 borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 68,https://www.immobiliare.it/annunci/116053317/,0,TARGET,via Augusto Abegg,0,CENTRO,OK
 borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 68,https://www.immobiliare.it/annunci/116053317/,1,VICINA,Strada Donatori di Sangue,0,INCROCIA,OK
 borgone-susa-via-augusto-abegg,Borgone Susa,via Augusto Abegg,via Augusto Abegg 68,https://www.immobiliare.it/annunci/116053317/,2,VICINA,Strada Statale 25 del Moncenisio,0,INCROCIA,OK
@@ -64,6 +64,16 @@ borgone-susa-via-4-novembre,Borgone Susa,via 4 Novembre,via 4 Novembre 13,https:
 borgone-susa-via-4-novembre,Borgone Susa,via 4 Novembre,via 4 Novembre 13,https://www.immobiliare.it/annunci/105071031/,2,VICINA,Vicolo Cavour,52,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 borgone-susa-via-4-novembre,Borgone Susa,via 4 Novembre,via 4 Novembre 13,https://www.immobiliare.it/annunci/105071031/,3,VICINA,Via Francesco Perodo,61,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 borgone-susa-via-4-novembre,Borgone Susa,via 4 Novembre,via 4 Novembre 13,https://www.immobiliare.it/annunci/105071031/,4,VICINA,Via Augusto Abegg,95,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+borgone-susa-piazza-montabone,Borgone Susa,piazza Montabone,piazza Montabone 5,https://www.idealista.it/immobile/31471280/,0,TARGET,piazza Montabone,0,CENTRO,OK
+borgone-susa-piazza-montabone,Borgone Susa,piazza Montabone,piazza Montabone 5,https://www.idealista.it/immobile/31471280/,1,VICINA,Via Francesco Perodo,0,INCROCIA,OK
+borgone-susa-piazza-montabone,Borgone Susa,piazza Montabone,piazza Montabone 5,https://www.idealista.it/immobile/31471280/,2,VICINA,Via Quattro Novembre,0,INCROCIA,OK
+borgone-susa-piazza-montabone,Borgone Susa,piazza Montabone,piazza Montabone 5,https://www.idealista.it/immobile/31471280/,3,VICINA,Via Venti Settembre,0,INCROCIA,OK
+borgone-susa-piazza-montabone,Borgone Susa,piazza Montabone,piazza Montabone 5,https://www.idealista.it/immobile/31471280/,4,VICINA,Vicolo Parrocchiale,50,VICINA,OK
+borgone-susa-via-bruno-mosconi,Borgone Susa,via Bruno Mosconi,Via Bruno Mosconi 2,https://www.idealista.it/immobile/30873639/,0,TARGET,via Bruno Mosconi,0,CENTRO,OK
+borgone-susa-via-bruno-mosconi,Borgone Susa,via Bruno Mosconi,Via Bruno Mosconi 2,https://www.idealista.it/immobile/30873639/,1,VICINA,Via Guido Bobba,0,INCROCIA,OK
+borgone-susa-via-bruno-mosconi,Borgone Susa,via Bruno Mosconi,Via Bruno Mosconi 2,https://www.idealista.it/immobile/30873639/,2,VICINA,Via Mosconi,0,INCROCIA,OK
+borgone-susa-via-bruno-mosconi,Borgone Susa,via Bruno Mosconi,Via Bruno Mosconi 2,https://www.idealista.it/immobile/30873639/,3,VICINA,Via Venti Settembre,0,INCROCIA,OK
+borgone-susa-via-bruno-mosconi,Borgone Susa,via Bruno Mosconi,Via Bruno Mosconi 2,https://www.idealista.it/immobile/30873639/,4,VICINA,Strada del Cimitero,50,VICINA,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,0,TARGET,Via dei Mille,0,CENTRO,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,1,VICINA,Via Carlo Emanuele Primo,0,INCROCIA,OK
 bruzolo-via-dei-mille,Bruzolo,Via dei Mille,Via dei Mille 19,https://www.casa.it/immobili/53531383/,2,VICINA,Via Cavour,0,INCROCIA,OK

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T23:24:12.070140+00:00",
+  "generated_at": "2026-09-06T01:06:33.909571+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -58,11 +58,11 @@
     {
       "zone_id": "borgone-susa-via-condove",
       "comune": "Borgone Susa",
-      "target_street": "via Condove",
-      "listing_target": "via Condove 86",
-      "listing_url": "https://www.immobiliare.it/annunci/126581511/",
+      "target_street": "Via Condove",
+      "listing_target": "Via Condove 3",
+      "listing_url": "https://www.idealista.it/immobile/33654375/",
       "streets": [
-        "via Condove",
+        "Via Condove",
         "Interni di Via Condove",
         "Piazza Canonico Anselmetti",
         "S.S.24",
@@ -219,6 +219,36 @@
         "Via Augusto Abegg"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "borgone-susa-piazza-montabone",
+      "comune": "Borgone Susa",
+      "target_street": "piazza Montabone",
+      "listing_target": "piazza Montabone 5",
+      "listing_url": "https://www.idealista.it/immobile/31471280/",
+      "streets": [
+        "piazza Montabone",
+        "Via Francesco Perodo",
+        "Via Quattro Novembre",
+        "Via Venti Settembre",
+        "Vicolo Parrocchiale"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "borgone-susa-via-bruno-mosconi",
+      "comune": "Borgone Susa",
+      "target_street": "via Bruno Mosconi",
+      "listing_target": "Via Bruno Mosconi 2",
+      "listing_url": "https://www.idealista.it/immobile/30873639/",
+      "streets": [
+        "via Bruno Mosconi",
+        "Via Guido Bobba",
+        "Via Mosconi",
+        "Via Venti Settembre",
+        "Strada del Cimitero"
+      ],
+      "osm_status": "OK"
     },
     {
       "zone_id": "bruzolo-via-dei-mille",
@@ -465,11 +495,11 @@
     {
       "zone_id": "borgone-susa-via-a-abegg",
       "comune": "Borgone Susa",
-      "target_street": "via A. Abegg",
-      "listing_target": "Via A. Abegg 18",
-      "listing_url": "https://www.immobiliare.it/annunci/108837545/",
+      "target_street": "Via A. Abegg",
+      "listing_target": "via A. Abegg 18",
+      "listing_url": "https://www.idealista.it/immobile/33742491/",
       "streets": [
-        "via A. Abegg"
+        "Via A. Abegg"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

@@ -47,7 +47,7 @@ c0878aeada2ed6008db8,Oulx,236 immobili in vendita a Oulx - Trovit,Trovit,https:/
 34a652fd73504a581aed,Pianezza,Case indipendenti e ville a schiera in vendita Pianezza - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/pianezza/,EVIDENZA_INSUFFICIENTE
 812d44942fb61458cf21,Reano,Case e appartamenti a Reano. Immobili in vendita a Reano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/reano,EVIDENZA_INSUFFICIENTE
 f073bf97e2a0894b0f8a,Reano,Case in vendita Reano - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/reano/,PAGINA_CATEGORIA
-180fd3b192de1a3ccffe,Reano,64 Rustici in vendita a Reano - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
+180fd3b192de1a3ccffe,Reano,64 Rustici in vendita a Reano - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
 75bea38c2e641daa5e3e,Rivoli,57 immobili villa collina in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/villa-collina-rivoli,EVIDENZA_INSUFFICIENTE
 033e4c5815c3ce197d27,Rivoli,Immobili in vendita a Rivoli | Gabetti,Mercato generale,https://www.gabetti.it/vendita/rivoli,PAGINA_CATEGORIA
 19e4d46c5e7c11ee620c,Rivoli,Case e appartamenti a Rivoli Torino. Immobili in vendita a Rivoli ...,Nestoria,https://www.nestoria.it/immobiliare/vendita/rivoli,EVIDENZA_INSUFFICIENTE
@@ -60,7 +60,7 @@ f6ed4722bcf102d0b386,Sangano,60 immobili villa in vendita a Sangano - Trovit,Tro
 744d2e5b3957380bdd05,Sangano,Pragma Case,Mercato residenziale,https://pragmacase.it/,EVIDENZA_INSUFFICIENTE
 2e12fd31e6f76c8469cd,Sant'Antonino di Susa,"Case in vendita a Sant'Antonino di Susa, Valli Susa, Sangone",Mercato generale,https://caseinvenditainaffitto.it/case-in-vendita/sant-antonino-di-susa-valli-susa-sangone,PAGINA_CATEGORIA
 3444bb3f22989d4a87cb,Sant'Antonino di Susa,42 immobili in vendita a Sant'Antonino di Susa - Trovit,Trovit,https://case.trovit.it/sant-antonino-susa,EVIDENZA_INSUFFICIENTE
-93c25228125292ec5155,Sant'Antonino di Susa,Sant'antonino Di Susa - 48 case in vendita in Sant'Antonino Di Susa de ...,Commerciale negozi/locali,https://www.nuroa.it/vendita-immobili/sant-antonino-di-susa,EVIDENZA_INSUFFICIENTE
+93c25228125292ec5155,Sant'Antonino di Susa,Sant'antonino Di Susa - 48 case in vendita in Sant'Antonino Di Susa de ...,Mercato residenziale,https://www.nuroa.it/vendita-immobili/sant-antonino-di-susa,EVIDENZA_INSUFFICIENTE
 9d980b4eaccd23c79a1b,Susa,72 immobili in vendita a Susa - Trovit,Trovit,https://case.trovit.it/susa,EVIDENZA_INSUFFICIENTE
 8217649129383c1f5fe9,Susa,106 Appartamenti in vendita a Susa - Mitula Case,Mercato generale,https://immobiliare.mitula.it/appartamento-susa,EVIDENZA_INSUFFICIENTE
 925e143232e86a0615ba,Susa,Casa Val Susa - 16 case in vendita in Susa de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/casa-val-susa,EVIDENZA_INSUFFICIENTE
@@ -86,7 +86,7 @@ fb8e03d8101b8a9cea31,Bruzolo,"Casa indipendente in vendita, Bruzolo, Ristruttura
 7cda5f3339f0283e1b6b,Collegno,"63 immobili in vendita a Leumann, Collegno - Trovit",Trovit,https://case.trovit.it/leumann,EVIDENZA_INSUFFICIENTE
 46a26260a54e88462f74,Condove,Casa singola in vendita a Condove Cod. BELLAFUGERA,Mercato residenziale,https://www.fcimmobiliare.it/i-672094-vendita-casa-singola-condove/,EVIDENZA_INSUFFICIENTE
 a1de59aa4dc36eee7c23,Giaveno,585 immobili in vendita a Giaveno - Trovit,Trovit,https://case.trovit.it/giaveno,EVIDENZA_INSUFFICIENTE
-3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Tipologie residenziali,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
+3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Mercato residenziale,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
 dcca0694688746bd4182,Mompantero,Villa singola in vendita a Mompantero - Urbiano Cod. SUSA143,Mercato generale,https://www.fcimmobiliare.it/i-672129-vendita-villa-singola-mompantero-urbiano/,EVIDENZA_INSUFFICIENTE
 889e6d621b6e64a5d38c,Rivoli,Rivoli - Vendita case - Subito.it,Subito privati,https://www.subito.it/annunci-italia/vendita/immobili/?q=rivoli,EVIDENZA_INSUFFICIENTE
 041892b6563d1bcfafa2,Rosta,"Case in vendita a Rosta, Torino Ovest",Mercato generale,https://caseinvenditainaffitto.it/case-in-vendita/rosta-torino-ovest,PAGINA_CATEGORIA
@@ -304,7 +304,7 @@ e6449bf2fb46ee9bc909,Sant'Ambrogio di Torino,Appartamenti in vendita Sant'Ambrog
 6f18420dfde2f82d259c,Collegno,Case in vendita a Collegno • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/collegno/,PAGINA_CATEGORIA
 dd75942b662419d15c20,Meana di Susa,Case indipendenti e ville a schiera in vendita Meana di Susa - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/meana-di-susa/,EVIDENZA_INSUFFICIENTE
 6860892aaec86613bc14,Rosta,"Prestigiosa villa in vendita Rosta, Piemonte - 132054500",Mercato residenziale,https://www.luxuryestate.com/it/p132054500-villa-for-sale-rosta,EVIDENZA_INSUFFICIENTE
-8595a6e8cf61db653c09,Susa,13 casas in vendita a Susa - Trovit,Trovit,https://case.trovit.it/casa-susa,EVIDENZA_INSUFFICIENTE
+8595a6e8cf61db653c09,Susa,14 casas in vendita a Susa - Trovit,Trovit,https://case.trovit.it/casa-susa,EVIDENZA_INSUFFICIENTE
 9ed253bac39f0b3e4ddc,Venaus,Quanto vale una casa a Venaus (TO) — prezzi al m² 2° semestre 2025,Mercato residenziale,https://tuttocalcolo.it/valore-immobili/to/venaus,EVIDENZA_INSUFFICIENTE
 d523d76ee9e6f51ed4dd,Alpignano,Case in vendita a Alpignano • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/alpignano/,PAGINA_CATEGORIA
 ab500015206766fbf6a4,Alpignano,230 Locali commerciali in affitto a Alpignano - Mitula Case,Commerciale negozi/locali,https://immobiliare.mitula.it/affitto-locale-commerciale-alpignano,EVIDENZA_INSUFFICIENTE
@@ -328,7 +328,7 @@ a8b792085a88b5af639e,Coazze,Case indipendenti e ville a schiera in vendita Coazz
 c3be07df98e72b843eba,Susa,30 capannones in affitto a Susa - Trovit,Trovit,https://case.trovit.it/affitto-capannone-susa,EVIDENZA_INSUFFICIENTE
 4f12d34416e84746f8c4,Val della Torre,Case in vendita a Val della Torre - Attico.it,Mercato residenziale,https://www.attico.it/val%20della%20torre/vendita/,PAGINA_CATEGORIA
 e1877b576d9657757de2,Villar Focchiardo,"VALSUSA, VENDESI CASA INDIPENDENTE CON GIARDINO | ValsusaOggi",Tipologie residenziali,https://www.valsusaoggi.it/valsusa-vendesi-casa-indipendente-con-giardino-3/,EVIDENZA_INSUFFICIENTE
-b285b2ec75b9d5d4bab8,Alpignano,26 Capannoni in affitto a Alpignano - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-alpignano,EVIDENZA_INSUFFICIENTE
+b285b2ec75b9d5d4bab8,Alpignano,26 Capannoni in affitto a Alpignano - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/affitto-capannone-alpignano,EVIDENZA_INSUFFICIENTE
 a6b6053d6128ed7b45ac,Avigliana,1 Capannoni in affitto a Avigliana - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-avigliana,EVIDENZA_INSUFFICIENTE
 1f61cf95458b122c957f,Borgone Susa,Rustico in a borgone susa in vendita - Waa2,Mercato residenziale,https://case.waa2.it/vendita/rustico-in-a-borgone-susa,EVIDENZA_INSUFFICIENTE
 56d7a7ecf4cbeda96939,Grugliasco,"Case in vendita in Viale Gramsci, Grugliasco - Attico.it",Mercato residenziale,"https://www.attico.it/Viale%20Gramsci,%20grugliasco/vendita/",PAGINA_CATEGORIA
@@ -384,3 +384,4 @@ ea42bb881c27e7a7a38d,Meana di Susa,Case a Meana di Susa. Ville in vendita a Mean
 316c4f2ff245aefe0fd0,Grugliasco,Case e appartamenti a Grugliasco. Immobili in vendita a Grugliasco ...,Nestoria,https://www.nestoria.it/immobiliare/vendita/grugliasco,EVIDENZA_INSUFFICIENTE
 56e41c30d3424c007a16,Rubiana,"Appartamento in vendita, Rubiana con giardino condominiale, 77 mq ...",Wikicasa,https://www.wikicasa.it/annuncio/30727473,EVIDENZA_INSUFFICIENTE
 8a7d331fd7556ea19e02,Venaus,"Case in vendita a Ar Cenisio, Venaus - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/ar-cenisio-venaus,PAGINA_CATEGORIA
+ae27331f0b60e2e659cb,Bardonecchia,AREA CASA IMMOBILIARE - Bardonecchia,Mercato residenziale,https://bardonecchia.it/strutture/area-casa-immobiliare/,EVIDENZA_INSUFFICIENTE
