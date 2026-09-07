@@ -1,45 +1,45 @@
 enabled,comune
-1,Susa
-1,Mompantero
-1,Meana di Susa
-1,Gravere
-1,Giaglione
-1,Venaus
-1,Mattie
-1,Chiomonte
-1,Novalesa
-1,Bussoleno
-1,Chianocco
-1,San Giorio di Susa
-1,Moncenisio
-1,Exilles
-1,Bruzolo
-1,San Didero
-1,Salbertrand
-1,Villar Focchiardo
-1,Borgone Susa
+0,Susa
+0,Mompantero
+0,Meana di Susa
+0,Gravere
+0,Giaglione
+0,Venaus
+0,Mattie
+0,Chiomonte
+0,Novalesa
+0,Bussoleno
+0,Chianocco
+0,San Giorio di Susa
+0,Moncenisio
+0,Exilles
+0,Bruzolo
+0,San Didero
+0,Salbertrand
+0,Villar Focchiardo
+0,Borgone Susa
 1,Sant'Antonino di Susa
-1,Vaie
-0,Condove
-0,Coazze
-0,Chiusa di San Michele
-0,Caprie
+0,Vaie
+1,Condove
+1,Coazze
+1,Chiusa di San Michele
+1,Caprie
 0,San Valeriano
-0,Villar Dora
-0,Almese
-0,Rubiana
-0,Avigliana
-0,Valgioie
-0,Giaveno
-0,Buttigliera Alta
+1,Villar Dora
+1,Almese
+1,Rubiana
+1,Avigliana
+1,Valgioie
+1,Giaveno
+1,Buttigliera Alta
 0,Ferriera di Buttigliera Alta
-0,Rosta
-0,Reano
+1,Rosta
+1,Reano
 0,Villarbasse
-0,Trana
+1,Trana
 0,Sangano
-0,Caselette
-0,Val della Torre
+1,Caselette
+1,Val della Torre
 0,Alpignano
 0,Pianezza
 0,Rivoli
@@ -49,3 +49,4 @@ enabled,comune
 0,Bardonecchia
 0,Novaretto
 0,Sant'Ambrogio di Torino
+1,Givoletto
