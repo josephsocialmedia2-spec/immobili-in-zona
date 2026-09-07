@@ -1,9 +1,10 @@
 {
-  "version": 3,
+  "version": 4,
   "files": [
     "contatti_verificati.csv",
     "contatti_batch2.csv",
-    "contatti_batch3.csv"
+    "contatti_batch3.csv",
+    "contatti_villar_dora_2026-09-07.csv"
   ],
   "territory_aliases": {
     "Novaretto": "Caprie",
