@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Filtra la lista locale dei contatti sul perimetro unico Susa 20 km.
+"""Filtra la lista locale dei contatti sul perimetro operativo configurato.
 
-Non crea un secondo pannello: produce soltanto il CSV intermedio che alimenta
-F1 Centrale Telefonate Guidate. I dati personali restano sul PC.
+Mantiene i nomi file legacy per compatibilita con la Centrale Telefonate, ma il
+territorio effettivo e definito da seller_radar_auto/f1_microzone_config.json.
+I dati personali restano sul PC.
 """
 from __future__ import annotations
 
@@ -38,10 +39,13 @@ def row_town(row: dict) -> str:
 
 def main() -> int:
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
+    center = str(cfg.get("priority_center") or "").strip()
+    radius = int(cfg.get("priority_radius_km", 0))
     towns = [str(x).strip() for x in cfg.get("priority_towns", []) if str(x).strip()]
-    allowed = {norm(x): i for i, x in enumerate(towns)}
-    if cfg.get("priority_center") != "Susa" or int(cfg.get("priority_radius_km", 0)) != 20:
-        raise SystemExit("Configurazione non coerente: richiesto centro Susa, raggio 20 km")
+    excluded = {norm(x) for x in cfg.get("excluded_towns", []) if str(x).strip()}
+    allowed = {norm(x): i for i, x in enumerate(towns) if norm(x) not in excluded}
+    if not center or radius <= 0 or not allowed:
+        raise SystemExit("Configurazione territorio operativo incompleta")
     if not SOURCE.exists():
         raise SystemExit(f"Lista locale non trovata: {SOURCE}")
 
@@ -65,15 +69,15 @@ def main() -> int:
 
     SUMMARY.write_text(
         "F1 — PERIMETRO OPERATIVO UNICO\n"
-        "Centro: Susa\n"
-        "Raggio: 20 km\n"
+        f"Centro: {center}\n"
+        f"Raggio: {radius} km\n"
         "Comuni attivi: " + ", ".join(towns) + "\n"
         f"Contatti microzona nel perimetro: {len(rows)}\n"
         f"CSV intermedio: {OUT}\n"
         "Output chiamate: F1_CENTRALE_TELEFONATE_GUIDATE.html\n",
         encoding="utf-8",
     )
-    print(f"SUSA 20 KM: {len(rows)} contatti microzona ammessi")
+    print(f"{center.upper()} {radius} KM: {len(rows)} contatti microzona ammessi")
     return 0
 
 
