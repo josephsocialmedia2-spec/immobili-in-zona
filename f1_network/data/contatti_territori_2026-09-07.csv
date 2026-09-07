@@ -1,0 +1,32 @@
+id,comune,categoria,nome,telefono,email,indirizzo,sito,fonte,stato,priorita,note
+bruzolo-comm-20260907-01,Bruzolo,Commercialista,Studio Toldo di Toldo Fabiana Ester,+39 348 368 3667,F.TOLDO@RAGIONIERI.COM,Via Cinaglio 1 - 10050 Bruzolo TO,,Comune di Bruzolo - elenco professionisti,DA_CONTATTARE,ALTA,Recapito professionale a Bruzolo
+bruzolo-avv-20260907-01,Bruzolo,Avvocato,Avv. Virginia Iorio,+39 335 643 4070,avv.virginiaiorio@libero.it,Località Posta 6 - 10050 Bruzolo TO,,Comune di Bruzolo - elenco professionisti,DA_CONTATTARE,ALTA,Recapito professionale a Bruzolo
+bruzolo-avv-20260907-02,Bruzolo,Avvocato,Avv. Stefano Sobrato,+39 335 837 8517,stefano.sobrato@libero.it,Via Lago 8/B - 10050 Bruzolo TO,,Comune di Bruzolo - elenco professionisti,DA_CONTATTARE,NORMALE,Recapito professionale a Bruzolo
+borgone-geo-20260907-02,Borgone Susa,Geometra,Geometra Andrea Guglielmo Guglielmetto,+39 011 964 1774,,Via dei Grav? 4 - 10050 Borgone Susa TO,,Reteimprese ricerca pubblica 2026-09-07,DA_VERIFICARE,ALTA,Verificare grafia indirizzo prima della chiamata
+villarfocchiardo-geo-20260907-01,Villar Focchiardo,Geometra,Geometra Denis Versino,+39 011 964 6818,,Via Umberto I 72 - 10050 Villar Focchiardo TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,ALTA,
+villarfocchiardo-geo-20260907-02,Villar Focchiardo,Geometra,Geometra Ilio Miletto,+39 011 964 6378,,Via Comba 13 - 10050 Villar Focchiardo TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,ALTA,
+chiusa-geo-20260907-02,Chiusa di San Michele,Geometra,Studio Tecnico Massimo Tonda Roc,+39 338 262 2482,info@studiotonda.it,Via General Cantore 48 - 10050 Chiusa di San Michele TO,https://www.studiotonda.it/,Sito ufficiale Studio Tonda,DA_CONTATTARE,ALTA,
+sangiorio-edile-20260907-01,San Giorio di Susa,Impresa edile,Impresa edile,+39 340 700 4059,,Via Susa 5A - 10050 San Giorio di Susa TO,,Ricerca locale 2026-09-07,DA_VERIFICARE,NORMALE,Denominazione impresa da verificare prima del contatto
+avigliana-arch-20260907-03,Avigliana,Architetto,Andrea Diego Di Natale,+39 011 932 8383,,Via Ceresole 4 - 10051 Avigliana TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+avigliana-not-20260907-02,Avigliana,Notaio,Notaio Vaglienti Francesco,+39 011 932 7706,,Corso Laghi 99 - 10051 Avigliana TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,ALTA,
+avigliana-avv-20260907-03,Avigliana,Avvocato,Avv. Federica Bonaveri,+39 011 305 2639,,Corso Laghi 60 - 10051 Avigliana TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+avigliana-arch-20260907-04,Avigliana,Architetto,OB|A Studio - Oscar Battagliotti,+39 011 931 1358,,Corso Torino 4D - 10051 Avigliana TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+avigliana-edile-20260907-02,Avigliana,Impresa edile,Impresa Edile Carello & Cogerino,+39 335 678 9333,,Corso Laghi 81 - 10051 Avigliana TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+valtorre-studio-20260907-01,Val della Torre,Servizi tecnici immobiliari,Studio Tecnico Associato Boggiatto / D'Agostino,+39 011 968 9393,,Via Alpignano 159 - 10040 Val della Torre TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,ALTA,Studio con geometra architetto e ingegnere
+fiano-studio-20260907-01,Fiano,Servizi tecnici immobiliari,Architetto Andrea - Geometra Stefano Trombin,+39 011 925 4187,,Via Rizzetti 15 - 10070 Fiano TO,,Comune di Fiano - Shopping Aziende,DA_CONTATTARE,ALTA,
+fiano-geo-20260907-01,Fiano,Geometra,Geometra Gianluca Ossola,+39 011 925 4922,,Via Cafasse 15/A - 10070 Fiano TO,,Comune di Fiano - Shopping Aziende,DA_CONTATTARE,ALTA,
+druento-geo-20260907-01,Druento,Geometra,Geom. Alex Gerace,,,Via Manzoni 16 - 10040 Druento TO,https://www.geometrageracetorino.it/,Sito ufficiale Gerace Studio,DA_VERIFICARE,ALTA,Contatti telefonici da integrare
+caselette-arch-20260907-01,Caselette,Architetto,Arch. Danilo Garoglio,+39 011 968 8836,,Via Alpignano 149 - 10040 Caselette TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,NORMALE,
+caselette-avv-20260907-01,Caselette,Avvocato,Avv. Ilaria Paiano,+39 328 141 9898,,Via Alpignano 149/B - 10040 Caselette TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,NORMALE,
+caselette-comm-20260907-01,Caselette,Commercialista,Anna Barbin Maccario,+39 011 968 9271,,Regione Grange 42 - 10040 Caselette TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,ALTA,
+collegno-comm-20260907-01,Collegno,Commercialista,Studio Martinasso & Valente,+39 011 405 2977,studio.martinasso.valente@gmail.com,Via Gaetano Donizetti 26 - Collegno TO,https://www.torinocommercialista.it/,Sito ufficiale Studio Martinasso Valente,DA_CONTATTARE,ALTA,
+rivalta-geo-20260907-01,Rivalta di Torino,Geometra,Geom. Mattia Ferrise,+39 347 409 3546,,Strada Torino 59 - 10040 Rivalta di Torino TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,ALTA,
+rivalta-geo-20260907-02,Rivalta di Torino,Geometra,Studio Tecnico Alfa - Geom. Pasquale Armocida,+39 011 904 6562,,Via Balegno 1 - 10040 Rivalta di Torino TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,ALTA,
+rivalta-geo-20260907-03,Rivalta di Torino,Geometra,Geom. Sandro Filia,+39 339 610 4526,,Via dei Mille 27 - 10040 Rivalta di Torino TO,,Reteimprese ricerca pubblica 2026-09-07,DA_CONTATTARE,NORMALE,
+rivalta-arch-20260907-01,Rivalta di Torino,Architetto,Arch. Valerio Lardone,+39 391 388 7057,,Via Goffredo Mameli 25 - 10040 Rivalta di Torino TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+rivalta-avv-20260907-01,Rivalta di Torino,Avvocato,Avv. Alessandra Carbone,+39 338 181 2439,,Via Giuseppe Di Vittorio 19C5 - 10040 Rivalta di Torino TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+bruino-geo-20260907-01,Bruino,Geometra,Studio Tecnico Bartolotta geom. Daniele,+39 339 280 5184,,Via Orbassano 16 - 10090 Bruino TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,ALTA,
+bruino-arch-20260907-01,Bruino,Architetto,Sabrina Rosso Architetto,+39 333 156 0700,,Via Torino 19 - 10090 Bruino TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+bruino-studio-20260907-01,Bruino,Servizi tecnici immobiliari,Studio Tecnico Alessi,+39 011 908 4410,,Via Roma 15 - 10090 Bruino TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,ALTA,Architetto geometra ingegnere
+bruino-avv-20260907-01,Bruino,Avvocato,Avv. Franzoso Dr. Diogene,+39 011 908 6912,,Via Valgioie 2 - 10090 Bruino TO,,Ricerca locale 2026-09-07,DA_CONTATTARE,NORMALE,
+beinasco-comm-20260907-01,Beinasco,Commercialista,Studio Commercialista Silvana Busso,,,Beinasco TO,https://www.commercialistabusso.it/,Sito ufficiale Studio Busso,DA_VERIFICARE,ALTA,Telefono e indirizzo puntuale da integrare
