@@ -81,8 +81,8 @@ def load_active_towns():
             for r in csv.DictReader(f)
             if r.get("enabled") == "1" and norm(r.get("comune"))
         }
-    if "susa" not in towns:
-        raise SystemExit("Territorio operativo non valido: Susa deve essere enabled=1")
+    if not towns:
+        raise SystemExit("Territorio operativo non valido: nessun comune enabled=1")
     return towns
 
 
@@ -336,8 +336,8 @@ summary = {
     "fermate_assegnate_team": len(team_rows),
     "territori_master": len({norm(r.get("COMUNE")) for r in route_rows if norm(r.get("COMUNE"))}),
     "territori_operativi_configurati": len(active_towns),
-    "centro_operativo": "Susa",
-    "raggio_operativo": "20 km",
+    "centro_operativo": "Villar Dora",
+    "raggio_operativo": "10 km",
 }
 OUT_SUMMARY.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
