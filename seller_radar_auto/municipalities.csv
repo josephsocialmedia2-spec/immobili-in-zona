@@ -1,4 +1,45 @@
 enabled,comune
+1,Villar Dora
+1,Chianocco
+1,Bruzolo
+1,San Didero
+1,San Giorio di Susa
+1,Borgone Susa
+1,Villar Focchiardo
+1,Condove
+1,Caprie
+1,Sant'Antonino di Susa
+1,Vaie
+1,Chiusa di San Michele
+0,Sant'Ambrogio di Torino
+1,Rubiana
+1,Valgioie
+1,Coazze
+1,Giaveno
+1,Almese
+1,Avigliana
+1,Val della Torre
+1,Givoletto
+1,La Cassa
+1,Varisella
+1,Fiano
+1,Robassomero
+1,San Gillio
+1,Druento
+1,Caselette
+1,Pianezza
+1,Alpignano
+1,Buttigliera Alta
+1,Rosta
+1,Reano
+1,Villarbasse
+1,Trana
+1,Rivoli
+1,Collegno
+1,Grugliasco
+1,Rivalta di Torino
+1,Bruino
+1,Beinasco
 0,Susa
 0,Mompantero
 0,Meana di Susa
@@ -9,53 +50,12 @@ enabled,comune
 0,Chiomonte
 0,Novalesa
 0,Bussoleno
-1,Chianocco
-1,San Giorio di Susa
 0,Moncenisio
 0,Exilles
-1,Bruzolo
-1,San Didero
 0,Salbertrand
-1,Villar Focchiardo
-1,Borgone Susa
-1,Sant'Antonino di Susa
-1,Vaie
-1,Condove
-1,Coazze
-1,Chiusa di San Michele
-1,Caprie
 0,San Valeriano
-1,Villar Dora
-1,Almese
-1,Rubiana
-1,Avigliana
-1,Valgioie
-1,Giaveno
-1,Buttigliera Alta
 0,Ferriera di Buttigliera Alta
-1,Rosta
-1,Reano
-1,Villarbasse
-1,Trana
 0,Sangano
-1,Caselette
-1,Val della Torre
-1,Alpignano
-1,Pianezza
-1,Rivoli
-1,Collegno
-1,Grugliasco
 0,Oulx
 0,Bardonecchia
 0,Novaretto
-0,Sant'Ambrogio di Torino
-1,Givoletto
-1,La Cassa
-1,Varisella
-1,Fiano
-1,Robassomero
-1,San Gillio
-1,Druento
-1,Rivalta di Torino
-1,Bruino
-1,Beinasco
