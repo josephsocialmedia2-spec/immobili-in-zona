@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T22:31:10.725208+00:00",
+  "generated_at": "2026-09-07T00:57:53.408918+00:00",
   "main_towns": [
     "Susa",
     "Mompantero",
@@ -269,7 +269,7 @@
       "zone_id": "bussoleno-via-bussoleno",
       "comune": "Bussoleno",
       "target_street": "via bussoleno",
-      "listing_target": "via bussoleno 26",
+      "listing_target": "Via bussoleno 4",
       "listing_url": "https://www.immobiliare.it/annunci/130283966/",
       "streets": [
         "via bussoleno",
@@ -326,19 +326,19 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "bussoleno-strada-chianocco",
+      "zone_id": "bussoleno-via-traforo",
       "comune": "Bussoleno",
-      "target_street": "Strada Chianocco",
-      "listing_target": "Strada Chianocco, Bussoleno 90",
+      "target_street": "Via Traforo",
+      "listing_target": "Via Traforo, Bussoleno 33",
       "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/bussoleno-valli-susa-sangone?page=2",
       "streets": [
-        "Strada Chianocco",
-        "Strada di Chianocco",
-        "Via Balmafol",
-        "Via Ravetto",
-        "Via Rubattera"
+        "Via Traforo",
+        "Piazza C. L. N.",
+        "Piazza del Moro",
+        "Strada Ponte Guido Cambursano",
+        "Strada Susa"
       ],
-      "osm_status": "OK_GEOCODE_FALLBACK"
+      "osm_status": "OK"
     },
     {
       "zone_id": "chianocco-via-primo-maggio-n",

@@ -1,5 +1,5 @@
 ﻿AGENZIA,COMUNI,STOCK_ATTIVO,NUOVI_30G,USCITE_OSSERVATE_30G,VENDUTI_CONFERMATI,RIBASSI_30G,PERMANENZA_MEDIANA_GG,GIORNI_MEDI_PRIMO_RIBASSO,RIBASSO_MEDIO_PCT,TURNOVER_OSSERVATO_30G_PCT,SCORE_OPERATIVO,NOTA
-Avigliana - Immobiliare,Avigliana,0,4,4,0,0,0.0,,,400.0,100,Uscita osservata != vendita certa
+Avigliana - Immobiliare,Avigliana,1,4,3,0,1,0.5,3.0,61.67,300.0,100,Uscita osservata != vendita certa
 Agenzia Immobiliare,Bardonecchia,0,2,2,0,0,4.5,,,200.0,100,Uscita osservata != vendita certa
 Borgone Susa - Immobiliare,Borgone Susa,1,3,2,0,0,9.0,,,200.0,100,Uscita osservata != vendita certa
 la F.C. Immobiliare,Borgone Susa,0,2,2,0,0,0.0,,,200.0,100,Uscita osservata != vendita certa
@@ -11,8 +11,10 @@ L'agenzia Tecnocasa Bardonecchia,Bardonecchia,0,1,1,0,0,8.0,,,100.0,61.0,Uscita 
 Rif. 132000372 - Immobiliare,Caprie,0,1,1,0,0,0.0,,,100.0,61.0,Uscita osservata != vendita certa
 Val della Torre - Immobiliare,Alpignano,0,1,1,0,0,0.0,,,100.0,61.0,Uscita osservata != vendita certa
 Via Avigliana 15,Avigliana,0,1,1,0,0,0.0,,,100.0,61.0,Uscita osservata != vendita certa
+Via San Lorenzo 2 - 54425376 ... COMPLESSO IMMOBILIARE,Bussoleno,0,1,1,0,0,9.0,,,100.0,61.0,Uscita osservata != vendita certa
 annuncio Vedi il telefono Codice dell'annuncio 29849422 Professionista Immobiliare,Borgone Susa,0,1,1,0,0,0.0,,,100.0,61.0,Uscita osservata != vendita certa
 "id=""8870"" data-sede-id=""5"" data-sedeaw-id=""0"" data-agente-id=""0"" data-site-id=""3371"" data-gruppo-id=""0"" data-page=""immob",Bruzolo,0,1,1,0,0,4.0,,,100.0,61.0,Uscita osservata != vendita certa
+"immobiliare/""",Bardonecchia,0,1,1,0,0,4.0,,,100.0,61.0,Uscita osservata != vendita certa
 la Grimaldi Immobiliare,Almese,0,1,1,0,0,19.0,,,100.0,61.0,Uscita osservata != vendita certa
 la TEMPOCASA DI CONDOVE,Almese,0,1,1,0,0,0.0,,,100.0,61.0,Uscita osservata != vendita certa
 locali - Immobiliare,Alpignano,0,1,1,0,0,9.0,,,100.0,61.0,Uscita osservata != vendita certa
@@ -21,20 +23,17 @@ rif. 126452785 - Immobiliare,Almese,0,1,1,0,0,6.0,,,100.0,61.0,Uscita osservata 
 rif. 131984330 ... OTTIMA OCCASIONE - ASTA IMMOBILIARE,Caselette,0,1,1,0,0,4.0,,,100.0,61.0,Uscita osservata != vendita certa
 Almese - Immobiliare,Almese,1,1,0,0,1,1.0,1.0,0.0,0.0,2.0,Uscita osservata != vendita certa
 AVI-98 - L'FC Immobiliare,Avigliana,1,1,0,0,0,10.0,,,0.0,0.0,Uscita osservata != vendita certa
-Alp.375 - TEMPOCASA ALPIGNANO,Alpignano,1,1,0,0,0,10.0,,,0.0,0.0,Uscita osservata != vendita certa
-Alpignano - Immobiliare,Alpignano,1,1,0,0,0,1.0,,,0.0,0.0,Uscita osservata != vendita certa
-Avigliana. Quadrilocale in via Drubiaglio 8 ... L'appartamento,Avigliana,1,1,0,0,0,2.0,,,0.0,0.0,Uscita osservata != vendita certa
+Bardonecchia. Bilocale in viale Callet 19. Buono ... L'unità immobiliare,Bardonecchia,1,1,0,0,0,5.0,,,0.0,0.0,Uscita osservata != vendita certa
 CC010 - In zona residenziale la TEMPOCASA DI CONDOVE,Caprie,1,1,0,0,0,3.0,,,0.0,0.0,Uscita osservata != vendita certa
 Fondocasa TORINO FILADELFIA STADIO OLIMPICO,Coazze,1,1,0,0,0,16.0,,,0.0,0.0,Uscita osservata != vendita certa
 Gabetti Grugliasco,Alpignano,1,1,0,0,0,5.0,,,0.0,0.0,Uscita osservata != vendita certa
+L'agenzia Tempocasa Torino Cenisia,Bussoleno,1,1,0,0,0,10.0,,,0.0,0.0,Uscita osservata != vendita certa
 Maison Doc - Bardonecchia e Sauze d'Oulx Maison doc è un'agenzia immobiliare,Bardonecchia,1,1,0,0,0,9.0,,,0.0,0.0,Uscita osservata != vendita certa
 RE/MAX Italia Vendita Casa Semindipendente Corso Susa,Caselette,1,1,0,0,0,10.0,,,0.0,0.0,Uscita osservata != vendita certa
-Rif. 127650474 - Immobiliare,Alpignano,1,1,0,0,0,2.0,,,0.0,0.0,Uscita osservata != vendita certa
+Rif. 127650474 - Immobiliare,Alpignano,1,1,0,0,0,3.0,,,0.0,0.0,Uscita osservata != vendita certa
 Torino. Quadrilocale in via bussoleno 21. Buono ... L'appartamento si,Bussoleno,1,1,0,0,0,2.0,,,0.0,0.0,Uscita osservata != vendita certa
-Via San Lorenzo 2 - 54425376 ... COMPLESSO IMMOBILIARE,Bussoleno,1,1,0,0,0,9.0,,,0.0,0.0,Uscita osservata != vendita certa
 al primo piano di una porzione di casa. L'immobile si,Borgone Susa,1,1,0,0,0,9.0,,,0.0,0.0,Uscita osservata != vendita certa
 ampio complesso immobiliare,Caprie,1,1,0,0,0,3.0,,,0.0,0.0,Uscita osservata != vendita certa
-"immobiliare/""",Bardonecchia,1,1,0,0,0,4.0,,,0.0,0.0,Uscita osservata != vendita certa
 metri da Piazza del Popolo. Scopri questa meravigliosa opportunità immobiliare,Avigliana,1,1,0,0,0,9.0,,,0.0,0.0,Uscita osservata != vendita certa
 nel centro storico di Bruzolo si,Bruzolo,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
 ref. 129022660 - Immobiliare,Almese,1,1,0,0,0,16.0,,,0.0,0.0,Uscita osservata != vendita certa
