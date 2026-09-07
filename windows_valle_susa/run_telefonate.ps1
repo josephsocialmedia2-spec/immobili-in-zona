@@ -11,6 +11,7 @@ $Bridge = Join-Path $Base 'f1_microzone_directory_v3.py'
 $BridgeUrl = 'https://raw.githubusercontent.com/josephsocialmedia2-spec/launcher-dashboard/main/windows-bridge/f1_microzone_directory_v3.py'
 $Targets = Join-Path $Base 'data\microzone_targets.csv'
 $MicroCalls = Join-Path $Base 'data\telefonate_mattino.csv'
+# Nomi legacy mantenuti per compatibilita con la Centrale; il contenuto usa Villar Dora 10 km.
 $FocusCalls = Join-Path $Base 'data\telefonate_susa_20km.csv'
 $WebProspects = Join-Path $Base 'data\prospect_web_susa_20km.csv'
 $CentralCsv = Join-Path $Base 'data\centrale_telefonate_guidate.csv'
@@ -24,7 +25,7 @@ New-Item -ItemType Directory -Force -Path $Base | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $Base 'data') | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $Base 'IMPORTA_ESISTENTI') | Out-Null
 
-Write-Host '=== F1 SUSA 20 KM -> GIRO SELLER RADAR -> VIE/CIVICI -> CONTATTI PUBBLICI -> CENTRALE TELEFONATE ==='
+Write-Host '=== F1 VILLAR DORA 10 KM -> GIRO SELLER RADAR -> VIE/CIVICI -> CONTATTI PUBBLICI -> CENTRALE TELEFONATE ==='
 
 Write-Host '[1/9] Dipendenze locali'
 py -m pip install --disable-pip-version-check --quiet selenium openpyxl zeroconf
@@ -44,22 +45,29 @@ if ($LASTEXITCODE -ne 0) { throw "Bridge V3 terminato con codice $LASTEXITCODE" 
 if (-not (Test-Path $Targets)) { throw 'microzone_targets.csv non disponibile sul PC.' }
 if (-not (Test-Path $MicroCalls)) { throw 'telefonate_mattino.csv non generato.' }
 
-Write-Host '[5/9] Applico perimetro operativo unico SUSA + 20 KM'
+Write-Host '[5/9] Applico perimetro operativo unico VILLAR DORA + 10 KM'
 py $Filter20
-if ($LASTEXITCODE -ne 0) { throw "Filtro Susa 20 km terminato con codice $LASTEXITCODE" }
-if (-not (Test-Path $FocusCalls)) { throw 'telefonate_susa_20km.csv non generato.' }
+if ($LASTEXITCODE -ne 0) { throw "Filtro Villar Dora 10 km terminato con codice $LASTEXITCODE" }
+if (-not (Test-Path $FocusCalls)) { throw 'CSV contatti del perimetro non generato.' }
 
-Write-Host '[6/9] Cerco prospect pubblici generali nel perimetro Susa 20 km'
+Write-Host '[6/9] Cerco prospect pubblici generali nel perimetro Villar Dora 10 km'
+# Compatibilita: prospect_susa_20km.py conserva il nome legacy, ma non deve piu imporre Susa/20 km.
+$prospectText = Get-Content -LiteralPath $Prospect -Raw -Encoding UTF8
+$pattern = '    if cfg\.get\("priority_center"\) != "Susa" or int\(cfg\.get\("priority_radius_km", 0\)\) != 20:\r?\n        raise SystemExit\("Prospect engine richiede configurazione Susa 20 km"\)'
+$replacement = '    if not towns:`n        raise SystemExit("Prospect engine: nessun comune operativo configurato")'
+$patched = [regex]::Replace($prospectText, $pattern, $replacement)
+if ($patched -eq $prospectText) { throw 'Impossibile rimuovere il vecchio vincolo Susa 20 km dal prospect engine.' }
+Set-Content -LiteralPath $Prospect -Value $patched -Encoding UTF8
 $env:F1_SEARCH_INTERVAL = '2'
 py $Prospect
 if ($LASTEXITCODE -ne 0) { throw "Prospect web terminato con codice $LASTEXITCODE" }
-if (-not (Test-Path $WebProspects)) { throw 'prospect_web_susa_20km.csv non generato.' }
+if (-not (Test-Path $WebProspects)) { throw 'CSV prospect web non generato.' }
 
 Write-Host '[7/9] INCROCIO OBBLIGATORIO: vie/civici del Giro -> contatti pubblici della stessa via'
 if (-not (Test-Path $RouteProspect)) { throw 'prospect_vie_giro.py non disponibile.' }
 py $RouteProspect
 if ($LASTEXITCODE -ne 0) { throw "Arricchimento vie del Giro terminato con codice $LASTEXITCODE" }
-if (-not (Test-Path $WebProspects)) { throw 'prospect_web_susa_20km.csv assente dopo arricchimento vie.' }
+if (-not (Test-Path $WebProspects)) { throw 'CSV prospect web assente dopo arricchimento vie.' }
 
 Write-Host '[8/9] Unisco tutto nella F1 CENTRALE TELEFONATE GUIDATE'
 py $Central
@@ -81,8 +89,8 @@ try {
 if (-not (Test-Path $Shortcut)) { throw 'Collegamento desktop verificato non disponibile.' }
 
 Write-Host ''
-Write-Host 'CENTRO OPERATIVO: SUSA' -ForegroundColor Green
-Write-Host 'RAGGIO OPERATIVO: 20 KM' -ForegroundColor Green
+Write-Host 'CENTRO OPERATIVO: VILLAR DORA' -ForegroundColor Green
+Write-Host 'RAGGIO OPERATIVO: 10 KM' -ForegroundColor Green
 Write-Host 'PRIORITA TELEFONATE: VIE/CIVICI DEL GIRO SELLER RADAR' -ForegroundColor Green
 Write-Host 'UNICO PUNTO CHIAMATE: F1 CENTRALE TELEFONATE GUIDATE' -ForegroundColor Green
 Write-Host "URL LOCALE VERIFICATO: $CentralUrl" -ForegroundColor Green
