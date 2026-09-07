@@ -165,7 +165,7 @@ df65a689976070bcc335,Sangano,Cerca case - rt rcis - Sangano,Mercato residenziale
 b83a93e112b01e1b7f5e,Sangano,Immobiliari all'Asta Sangano - Fallimenti.it,Agenzie,https://www.fallimenti.it/torino-sangano/aste-immobiliari,EVIDENZA_INSUFFICIENTE
 92d6d23f534c64cede14,Sant'Antonino di Susa,Case in vendita da Privati a Sant'Antonino di Susa,Mercato residenziale,https://www.casadaprivato.it/annunci-vendita/immobili/torino-sant_antonino_di_susa,PAGINA_CATEGORIA
 b666b43cbafcfb222dbc,Susa,Case in vendita a Susa - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/susa/,PAGINA_CATEGORIA
-809816aaada9c3d25f77,Trana,12 locale commerciales in vendita a Trana - Trovit,Trovit,https://case.trovit.it/negozio-trana,EVIDENZA_INSUFFICIENTE
+809816aaada9c3d25f77,Trana,10 locale commerciales in vendita a Trana - Trovit,Trovit,https://case.trovit.it/negozio-trana,EVIDENZA_INSUFFICIENTE
 426f07c8422da4b2c824,Vaie,La Dimora Immobiliare - Vendita immobili a Torino e provincia,Capannoni logistica,https://www.ladimoraimmobiliare.com/,EVIDENZA_INSUFFICIENTE
 b8583273e21a96ab8aa0,Valgioie,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/valgioie.html,EVIDENZA_INSUFFICIENTE
 b96beaa4fa5bff9c9ce5,Venaus,13 immobili in vendita a Venaus - Trovit,Trovit,https://case.trovit.it/venaus,EVIDENZA_INSUFFICIENTE
@@ -214,7 +214,7 @@ a86c054e354e742c7bb6,Chiomonte,Case in vendita Chiomonte - Immobili - Subito.it,
 0f86b06f142f981d690b,Condove,"21 locale commerciales circolo in affitto a Bar, Condove - Trovit",Trovit,https://case.trovit.it/affitto-negozio-circolo-bar,EVIDENZA_INSUFFICIENTE
 d6a1bcb20bff78ace39c,Giaveno,Immobili in Vendita | Agenzia Tecnorete di Giaveno,Tecnorete,https://giaveno1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
 cac5db4f6e2b21ae5ab7,Giaveno,Locale Commerciale Giaveno - 60 locali comerciali in vendita in Giaveno ...,Commerciale negozi/locali,https://www.nuroa.it/vendita-immobili/locale-commerciale-giaveno,EVIDENZA_INSUFFICIENTE
-3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 152 locali comerciali in affito in ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
+3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 152 locali comerciali in affito in ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
 2aab1ddaa700fe828f10,Moncenisio,Appartamenti a Moncenisio. Appartamenti in vendita a Moncenisio - Nestoria,Nestoria,https://www.nestoria.it/appartamenti/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 3a19993ebbd5ad61f09c,Moncenisio,Il Colle del Moncenisio: cosa vedere e fare • Visit Val di Susa,Capannoni logistica,https://visitvaldisusa.it/moncenisio-la-porta-delle-alpi/,EVIDENZA_INSUFFICIENTE
 dd57f1a588eac0425281,Oulx,Case in vendita a Oulx • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/oulx/,PAGINA_CATEGORIA
@@ -229,7 +229,7 @@ eeef50895cf2886edf06,Sant'Antonino di Susa,"Lo stabilimento Ex Sogefi è in vend
 de1336a270d36ed86baf,Alpignano,Appartamenti in vendita a Alpignano • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-appartamenti/alpignano/,EVIDENZA_INSUFFICIENTE
 fa464327d098b42cc057,Alpignano,17 locale commerciales in affitto a Alpignano - Trovit,Trovit,https://case.trovit.it/affitto-negozio-alpignano,EVIDENZA_INSUFFICIENTE
 179bd73a3c8fb834846e,Bardonecchia,Case in vendita a Bardonecchia - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/bardonecchia/,PAGINA_CATEGORIA
-251234149fbf68315de2,Chiomonte,Chiomonte - 91 case in vendita in Chiomonte de Nuroa.it,Tipologie residenziali,https://www.nuroa.it/vendita-immobili/chiomonte,EVIDENZA_INSUFFICIENTE
+251234149fbf68315de2,Chiomonte,Chiomonte - 91 case in vendita in Chiomonte de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/chiomonte,EVIDENZA_INSUFFICIENTE
 fceaf2f90f46ef8d8665,Chiomonte,1 locale commerciales in affitto a Chiomonte - Trovit,Trovit,https://case.trovit.it/affitto-negozio-chiomonte,EVIDENZA_INSUFFICIENTE
 178f55700376af1957fd,Collegno,63 immobili villa in vendita a Collegno - Trovit,Trovit,https://case.trovit.it/villa-collegno,EVIDENZA_INSUFFICIENTE
 6c071b481e2714457111,Condove,ELENCO IMMOBILI - La Dimora Immobiliare - Agenzia Immobiliare,Commerciale negozi/locali,https://www.ladimoraimmobiliare.com/elenco-immobili/,EVIDENZA_INSUFFICIENTE
@@ -254,7 +254,7 @@ e614faef9025c48000d8,Salbertrand,"Case in vendita a Salbertrand, Valli Susa, San
 202af9b3bed6099ce69b,San Didero,Quanto vale una casa a San Didero (TO) — prezzi al m² 2° semestre 2025,Mercato residenziale,https://tuttocalcolo.it/valore-immobili/to/san-didero,EVIDENZA_INSUFFICIENTE
 f0bd72a403283f3a7510,San Giorio di Susa,"Case in vendita a San Giorio di Susa, Valli Susa, Sangone",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/san-giorio-di-susa-valli-susa-sangone,PAGINA_CATEGORIA
 e8b0c0e52f342c0303c0,San Giorio di Susa,102 Case in vendita a San Giorio Di Susa - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/casa-san-giorio-susa,EVIDENZA_INSUFFICIENTE
-2cda8d74b2b9a0f6646a,Sangano,"Case in vendita a Sangano, Torino Ovest",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/sangano-torino-ovest,PAGINA_CATEGORIA
+2cda8d74b2b9a0f6646a,Sangano,"Case in vendita a Sangano, Torino Ovest - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/sangano-torino-ovest,PAGINA_CATEGORIA
 aefa16fd4693487f0cfa,Sant'Ambrogio di Torino,Case in vendita Sant'Ambrogio di Torino - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/sant-ambrogio-di-torino/,PAGINA_CATEGORIA
 65d8b4c0d0d78d13973b,Trana,Decine di ville in vendita a Trana Galletto. - Caasa,Mercato residenziale,https://www.caasa.it/torino/trana-zona-galletto/villa/in-vendita.html,EVIDENZA_INSUFFICIENTE
 cc333a1bfc34844611ff,Trana,Articoli legno per magazzinaggio | Trana | F. A. Imballaggi,Capannoni logistica,https://www.faimballaggisrl.it/,EVIDENZA_INSUFFICIENTE
@@ -394,3 +394,7 @@ fc0bd8053fe212112c42,Collegno,36 locale commerciales in affitto a Collegno - Tro
 8467ac8fad300122cde4,Pianezza,Depósito a subasta a Pianezza (TO) | 293361 | Gobidreal.it,Capannoni logistica,https://www.gobidreal.it/es/subastas/sklad-a-pianezza-to-293361,EVIDENZA_INSUFFICIENTE
 c62b5c94f9e164a061e1,Novalesa,Cambio proprietà impianto fotovoltaico a Novalesa (TO),Mercato residenziale,https://www.la-certificazione-energetica.net/cambio-proprieta-impianto-fotovoltaico/cambio-proprieta-impianto-fotovoltaico-a-Novalesa.html,EVIDENZA_INSUFFICIENTE
 29e17c00f17f37c8558b,Sant'Ambrogio di Torino,24 Locali commerciali in affitto a Avigliana - Mitula Case,Commerciale negozi/locali,https://immobiliare.mitula.it/affitto-locale-commerciale-avigliana,EVIDENZA_INSUFFICIENTE
+dee5f58cad36dc7d904a,Buttigliera Alta,Case indipendenti in vendita a Buttigliera Alta in zona Ferriera,Mercato residenziale,https://www.caasa.it/torino/buttigliera-alta-zona-ferriera/casa-indipendente/in-vendita.html,EVIDENZA_INSUFFICIENTE
+9a06a40c3b5f505617dc,Chiusa di San Michele,"Case in affitto a Chiusa di San Michele, Valli Susa, Sangone - Case in ...",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-affitto/chiusa-di-san-michele-valli-susa-sangone,EVIDENZA_INSUFFICIENTE
+1c32eb102c25332bef8a,Collegno,134 locale commerciales in vendita a Collegno - Trovit,Trovit,https://case.trovit.it/negozio-collegno,EVIDENZA_INSUFFICIENTE
+241018f9f96acadaa63f,Susa,Agenzia immobiliare a Susa,Mercato residenziale,https://www.vendofacileimmobiliare.it/a-8123010-vendofacile/,EVIDENZA_INSUFFICIENTE
