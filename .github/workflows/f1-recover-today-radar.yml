@@ -1,0 +1,85 @@
+name: F1 Recover Today Radar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/f1-recover-today-radar.yml'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: f1-recover-today-radar
+  cancel-in-progress: true
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout current fixed code
+        uses: actions/checkout@v4
+
+      - name: Recover today's completed Radar runtime
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/radar-runtime seller_radar_auto/item_results
+          mkdir -p /tmp/radar-runtime seller_radar_auto/item_results
+          gh run download 34191623887 --repo "${{ github.repository }}" --name radar-runtime --dir /tmp/radar-runtime
+          rm -rf seller_radar_auto/data
+          cp -a /tmp/radar-runtime/data seller_radar_auto/data
+          for f in dashboard.html intelligence_dashboard.html integrations.json; do
+            if [ -e "/tmp/radar-runtime/$f" ]; then cp -a "/tmp/radar-runtime/$f" "seller_radar_auto/$f"; fi
+          done
+          gh run download 34191623887 --repo "${{ github.repository }}" --pattern 'item-*' --dir seller_radar_auto/item_results
+
+      - name: Complete final processing with fixed QA
+        shell: bash
+        run: |
+          set -euo pipefail
+          python seller_radar_auto/merge_item_results.py
+          python seller_radar_auto/apply_market_enrichment.py
+          python seller_radar_auto/sanitize_operational_queue.py
+          python seller_radar_auto/prepare_acquisition_route.py
+          python seller_radar_auto/validate_giro_acquisizione.py
+          python seller_radar_auto/sync_demand_market.py
+          python seller_radar_auto/refresh_dashboard.py
+          python seller_radar_auto/market_intelligence_v2.py
+          python seller_radar_auto/microzone_engine.py
+
+      - name: Verify today output
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s seller_radar_auto/data/work_queue.csv
+          test -s seller_radar_auto/data/giro_acquisizione_oggi.csv
+          python - <<'PY'
+          import csv, pathlib
+          base=pathlib.Path('seller_radar_auto/data')
+          with (base/'work_queue.csv').open(encoding='utf-8-sig',newline='') as f: q=list(csv.DictReader(f))
+          with (base/'giro_acquisizione_oggi.csv').open(encoding='utf-8-sig',newline='') as f: g=list(csv.DictReader(f))
+          assert q, 'work_queue vuota'
+          assert g, 'giro_acquisizione_oggi vuoto'
+          print(f'PASS TODAY RECOVERY | work_queue={len(q)} giro_oggi={len(g)}')
+          PY
+
+      - name: Publish recovered outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'f1-seller-radar-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A seller_radar_auto/data seller_radar_auto/dashboard.html seller_radar_auto/intelligence_dashboard.html seller_radar_auto/integrations.json
+          if git diff --cached --quiet; then
+            echo 'Nessuna modifica da pubblicare.'
+            exit 0
+          fi
+          git commit -m 'radar: recover current 2026-09-08 data'
+          git pull --rebase origin main
+          git push origin HEAD:main
