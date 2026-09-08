@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """QA deterministico del Giro Acquisizione.
 
-Fallisce se il master viene tagliato dal filtro Susa 20 km, se una fermata/team
-finisce fuori territorio, o se i contatori non corrispondono ai CSV generati.
+Fallisce se il master viene tagliato, se una fermata/team finisce fuori dai
+comuni operativi configurati, o se i contatori non corrispondono ai CSV generati.
+La validazione usa municipalities.csv come unica fonte del territorio attivo:
+non impone più la presenza di un comune specifico (es. Susa).
 """
 import csv
 import json
@@ -53,7 +55,7 @@ assert SUMMARY.exists(), "File obbligatorio assente: giro_riepilogo.json"
 summary = json.loads(SUMMARY.read_text(encoding="utf-8"))
 
 active_towns = {norm(r.get("comune")) for r in municipalities if r.get("enabled") == "1" and norm(r.get("comune"))}
-assert "susa" in active_towns, "Susa non è nel territorio operativo"
+assert active_towns, "Nessun comune operativo abilitato in municipalities.csv"
 
 # 1. Il Giro master deve essere una classificazione della coda completa, non un sottoinsieme.
 assert len(master) == len(queue), f"Master tagliato: queue={len(queue)} giro_master={len(master)}"
@@ -80,7 +82,7 @@ for r in team:
     assert r.get("STATO_ASSEGNAZIONE") == "ASSEGNATO", "Team contiene riga non assegnata"
     assert r.get("STATO_GIRO") == "FERMATA_PRONTA", "Team contiene riga non pronta"
     assert r.get("TERRITORIO_OPERATIVO") == "SI", "Team contiene riga fuori territorio"
-    assert norm(r.get("COMUNE")) in active_towns, f"Team fuori Susa+20: {r.get('COMUNE')}"
+    assert norm(r.get("COMUNE")) in active_towns, f"Team fuori territorio configurato: {r.get('COMUNE')}"
 
 # 4. I contatori pubblicati devono essere derivati dai dati, non hard-coded.
 expected = {
