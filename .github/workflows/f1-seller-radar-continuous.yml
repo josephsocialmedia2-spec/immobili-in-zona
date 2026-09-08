@@ -29,3 +29,5 @@ jobs:
         run: |
           gh workflow run f1-seller-radar-auto.yml --repo "${{ github.repository }}" --ref main
           echo "Seller Radar completo avviato in modalità continua/oraria."
+
+# force-refresh: 2026-09-08
