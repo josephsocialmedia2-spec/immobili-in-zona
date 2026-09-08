@@ -24,6 +24,11 @@ almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/ann
 almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/annunci/125159231/,2,VICINA,Via Avigliana,225,VICINA,OK
 almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/annunci/125159231/,3,VICINA,Via della Michela,235,VICINA,OK
 almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/annunci/125159231/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,0,TARGET,piazza Martiri della Libertà,0,CENTRO,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,1,VICINA,Piazza della Fiera,0,INCROCIA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,2,VICINA,Via Avigliana,0,INCROCIA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,3,VICINA,Via Rocci,0,INCROCIA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,4,VICINA,Via Roma,0,INCROCIA,OK
 almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,0,TARGET,via Braida,0,CENTRO,OK
 almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,1,VICINA,Via Bertolo,0,INCROCIA,OK
 almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,2,VICINA,Via della Roccia,0,INCROCIA,OK
@@ -34,11 +39,6 @@ almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/
 almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,2,VICINA,Via Goletto,0,INCROCIA,OK
 almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,3,VICINA,Via Gublera,0,INCROCIA,OK
 almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,4,VICINA,Via Miosa,0,INCROCIA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,0,TARGET,piazza Martiri della Libertà,0,CENTRO,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,1,VICINA,Piazza della Fiera,0,INCROCIA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,2,VICINA,Via Avigliana,0,INCROCIA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,3,VICINA,Via Rocci,0,INCROCIA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,4,VICINA,Via Roma,0,INCROCIA,OK
 almese-via-rivera,Almese,via Rivera,via Rivera 66,https://www.immobiliare.it/annunci/132203708/,0,TARGET,via Rivera,0,CENTRO,OK
 almese-via-rivera,Almese,via Rivera,via Rivera 66,https://www.immobiliare.it/annunci/132203708/,1,VICINA,Via Caselette,0,INCROCIA,OK
 almese-via-rivera,Almese,via Rivera,via Rivera 66,https://www.immobiliare.it/annunci/132203708/,2,VICINA,Via delle Industrie,0,INCROCIA,OK
@@ -144,6 +144,16 @@ avigliana-via-umberto-i,Avigliana,via Umberto I,via Umberto I 42,https://www.imm
 avigliana-via-umberto-i,Avigliana,via Umberto I,via Umberto I 42,https://www.immobiliare.it/annunci/132071842/,2,VICINA,Via Giuseppe Mazzini,36,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-umberto-i,Avigliana,via Umberto I,via Umberto I 42,https://www.immobiliare.it/annunci/132071842/,3,VICINA,Via Madonna delle Grazie,43,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-umberto-i,Avigliana,via Umberto I,via Umberto I 42,https://www.immobiliare.it/annunci/132071842/,4,VICINA,Piazzale dei Caduti,60,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+avigliana-via-bacchiasso,Avigliana,via Bacchiasso,via Bacchiasso 17,https://www.immobiliare.it/annunci/115943823/,0,TARGET,via Bacchiasso,0,CENTRO,OK
+avigliana-via-bacchiasso,Avigliana,via Bacchiasso,via Bacchiasso 17,https://www.immobiliare.it/annunci/115943823/,1,VICINA,Via Sant'Agostino,0,INCROCIA,OK
+avigliana-via-bacchiasso,Avigliana,via Bacchiasso,via Bacchiasso 17,https://www.immobiliare.it/annunci/115943823/,2,VICINA,Via Don Giuseppe Menzio,87,VICINA,OK
+avigliana-via-bacchiasso,Avigliana,via Bacchiasso,via Bacchiasso 17,https://www.immobiliare.it/annunci/115943823/,3,VICINA,Via Santo Sudario,104,VICINA,OK
+avigliana-via-bacchiasso,Avigliana,via Bacchiasso,via Bacchiasso 17,https://www.immobiliare.it/annunci/115943823/,4,VICINA,Via San Martino,112,VICINA,OK
+avigliana-via-pontetto,Avigliana,via Pontetto,via Pontetto 19,https://www.immobiliare.it/annunci/116770153/,0,TARGET,via Pontetto,0,CENTRO,OK
+avigliana-via-pontetto,Avigliana,via Pontetto,via Pontetto 19,https://www.immobiliare.it/annunci/116770153/,1,VICINA,Corso Laghi,0,INCROCIA,OK
+avigliana-via-pontetto,Avigliana,via Pontetto,via Pontetto 19,https://www.immobiliare.it/annunci/116770153/,2,VICINA,Via Giovanni Suppo,0,INCROCIA,OK
+avigliana-via-pontetto,Avigliana,via Pontetto,via Pontetto 19,https://www.immobiliare.it/annunci/116770153/,3,VICINA,Via Monte Pirchiriano,0,INCROCIA,OK
+avigliana-via-pontetto,Avigliana,via Pontetto,via Pontetto 19,https://www.immobiliare.it/annunci/116770153/,4,VICINA,Via Renzo Suriani,91,VICINA,OK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,0,TARGET,via Allende,0,CENTRO,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,1,VICINA,Via Salvador Allende,35,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK

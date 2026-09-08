@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T11:22:35.419361+00:00",
+  "generated_at": "2026-09-08T18:54:21.578293+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -98,6 +98,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "almese-piazza-martiri-della-liberta",
+      "comune": "Almese",
+      "target_street": "piazza Martiri della Libertà",
+      "listing_target": "piazza Martiri della Libertà 31",
+      "listing_url": "https://www.immobiliare.it/annunci/113407257/",
+      "streets": [
+        "piazza Martiri della Libertà",
+        "Piazza della Fiera",
+        "Via Avigliana",
+        "Via Rocci",
+        "Via Roma"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "almese-via-braida",
       "comune": "Almese",
       "target_street": "via Braida",
@@ -124,21 +139,6 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-piazza-martiri-della-liberta",
-      "comune": "Almese",
-      "target_street": "piazza Martiri della Libertà",
-      "listing_target": "piazza Martiri della Libertà 31",
-      "listing_url": "https://www.immobiliare.it/annunci/113407257/",
-      "streets": [
-        "piazza Martiri della Libertà",
-        "Piazza della Fiera",
-        "Via Avigliana",
-        "Via Rocci",
-        "Via Roma"
       ],
       "osm_status": "OK"
     },
@@ -458,6 +458,36 @@
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
+      "zone_id": "avigliana-via-bacchiasso",
+      "comune": "Avigliana",
+      "target_street": "via Bacchiasso",
+      "listing_target": "via Bacchiasso 17",
+      "listing_url": "https://www.immobiliare.it/annunci/115943823/",
+      "streets": [
+        "via Bacchiasso",
+        "Via Sant'Agostino",
+        "Via Don Giuseppe Menzio",
+        "Via Santo Sudario",
+        "Via San Martino"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-pontetto",
+      "comune": "Avigliana",
+      "target_street": "via Pontetto",
+      "listing_target": "via Pontetto 19",
+      "listing_url": "https://www.immobiliare.it/annunci/116770153/",
+      "streets": [
+        "via Pontetto",
+        "Corso Laghi",
+        "Via Giovanni Suppo",
+        "Via Monte Pirchiriano",
+        "Via Renzo Suriani"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "buttigliera-alta-via-allende",
       "comune": "Buttigliera Alta",
       "target_street": "via Allende",
@@ -722,18 +752,6 @@
       "listing_url": "https://www.immobiliare.it/annunci/101503673/",
       "streets": [
         "frazione Tuberghengo"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA",
-      "reason": "POSIZIONE/VIA DA VERIFICARE"
-    },
-    {
-      "zone_id": "almese-borgata-carello-inferiore-mompellato",
-      "comune": "Almese",
-      "target_street": "Borgata Carello inferiore - Mompellato",
-      "listing_target": "Borgata Carello inferiore - Mompellato 4",
-      "listing_url": "https://almese1.tecnorete.it/immobili-in-vendita",
-      "streets": [
-        "Borgata Carello inferiore - Mompellato"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
