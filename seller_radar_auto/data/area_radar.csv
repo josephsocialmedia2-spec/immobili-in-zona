@@ -17,6 +17,7 @@ d48aa39affeee332a566,Villar Dora,NON_DETERMINATO,Via Celle,VAI_IN_ZONA,Via Celle
 5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.immobiliare.it/annunci/119867056/
 f03f60de65c9aab43eb5,Almese,NON_DETERMINATO,via Montecapretto,VAI_IN_ZONA,via Montecapretto 24,,PRONTO,https://www.immobiliare.it/annunci/108146029/
 2356b8a6cc2bf07676f7,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 29,,PRONTO,https://www.immobiliare.it/annunci/130993624/
+2356b8a6cc2bf07676f7,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,Via Roma 80,,PRONTO,https://www.immobiliare.it/annunci/130993624/
 c49246626beeeef88169,Almese,NON_DETERMINATO,frazione Tuberghengo,VAI_IN_ZONA,frazione Tuberghengo 2,,PRONTO,https://www.immobiliare.it/annunci/101503673/
 d11a35dc33bf88a2bc87,Almese,NON_DETERMINATO,Via Almese,VAI_IN_ZONA,Via Almese 10,,PRONTO,https://www.idealista.it/immobile/35031076/
 d11a35dc33bf88a2bc87,Almese,NON_DETERMINATO,Via Almese,VAI_IN_ZONA,Via Almese 64,,PRONTO,https://www.idealista.it/immobile/35031076/
@@ -146,15 +147,11 @@ da9efafcd4f50168b7f4,Bussoleno,INDIZIO_AGENZIA,via bussoleno,VAI_IN_ZONA,Via bus
 7132719c8706f284e66c,Caselette,INDIZIO_AGENZIA,corso Susa,VAI_IN_ZONA,corso Susa 192,,PRONTO,https://www.remax.it/trova/immobile/Casa-Semindipendente-In-Vendita-Caselette_45671003-52
 471f5426ac3d280c9982,Chianocco,NON_DETERMINATO,Via Primo Maggio n,VAI_IN_ZONA,Via Primo Maggio n. 4/c,,PRONTO,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco
 ca0da030b717e3360d8b,Collegno,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 13,,PRONTO,https://www.immobiliare.it/annunci/130994920/
-ca0da030b717e3360d8b,Collegno,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/130994920/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,via Susa 13,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 60,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 2,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 50,,PRONTO,https://www.immobiliare.it/annunci/125737541/
-2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 33f,,PRONTO,https://www.nuroa.it/affitto-case/almese
-2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 21,,PRONTO,https://www.nuroa.it/affitto-case/almese
-2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.nuroa.it/affitto-case/almese
-2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.nuroa.it/affitto-case/almese
+2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 56,,PRONTO,https://www.nuroa.it/affitto-case/almese
 de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,Via Collegno 23,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
 de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,via Collegno 84,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
 1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,Via Collegno 49,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
@@ -193,6 +190,7 @@ ec8b9bd87a9c17875f68,Borgone Susa,NON_DETERMINATO,via Augusto Abegg ... L'appart
 f4e5b096c2e7dd7bb240,Bardonecchia,NON_DETERMINATO,via Pollicino,VAI_IN_ZONA,via Pollicino 10,,PRONTO,https://www.immobiliare.it/annunci/128966152/
 583440cfb831ddc1e6c8,Bardonecchia,NON_DETERMINATO,viale Callet,VAI_IN_ZONA,viale Callet 19,,PRONTO,https://www.immobiliare.it/annunci/125028809/
 22cf8fb9c6f04f583503,Borgone Susa,INDIZIO_AGENZIA,via A. Abegg,VAI_IN_ZONA,via A. Abegg 18,,PRONTO,https://www.immobiliare.it/annunci/129563936/
+22cf8fb9c6f04f583503,Borgone Susa,INDIZIO_AGENZIA,via A. Abegg,VAI_IN_ZONA,Via A. Abegg 34,,PRONTO,https://www.immobiliare.it/annunci/129563936/
 22cf8fb9c6f04f583503,Borgone Susa,INDIZIO_AGENZIA,via A. Abegg,VAI_IN_ZONA,Via A. Abegg 68,,PRONTO,https://www.immobiliare.it/annunci/129563936/
 ba7ca81bf5879fb17efd,Bruzolo,NON_DETERMINATO,"Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",VAI_IN_ZONA,"Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",,PRONTO,https://www.nuroa.it/vendita-immobili/bruzolo
 174c264a5da220da7872,Bussoleno,NON_DETERMINATO,"strada principale, si trova un negozio di",VAI_IN_ZONA,"strada principale, si trova un negozio di 65",,PRONTO,https://case.trovit.it/affitto-negozio-bussoleno
@@ -305,7 +303,6 @@ feae333010e39e1d57fc,Alpignano,NON_DETERMINATO,Via Alpignano,VAI_IN_ZONA,Via Alp
 2a8434676ada393addec,Borgone Susa,NON_DETERMINATO,via Condove,VAI_IN_ZONA,via Condove 86,,PRONTO,https://www.immobiliare.it/annunci/126581511/
 4e1204e82daafde31e4e,Bruzolo,NON_DETERMINATO,"Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",VAI_IN_ZONA,"Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",,PRONTO,https://www.nuroa.it/vendita-immobili/vendita-bruzolo
 dfb212ee276ada4413ac,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 93,,PRONTO,https://www.immobiliare.it/annunci/132183836/
-dfb212ee276ada4413ac,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.immobiliare.it/annunci/132183836/
 dfb212ee276ada4413ac,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.immobiliare.it/annunci/132183836/
 cd60a58dfa065a2e505f,Almese,NON_DETERMINATO,via Rivera,VAI_IN_ZONA,via Rivera 66,,PRONTO,https://www.immobiliare.it/annunci/132181734/
 2cd8e4544351911ada91,Alpignano,NON_DETERMINATO,"Via dei Ronchi, si propone in locazione un capannone di circa",VAI_IN_ZONA,"Via dei Ronchi, si propone in locazione un capannone di circa 300",,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-alpignano
@@ -393,3 +390,4 @@ c031c1c079c91b64927b,Bruino,NON_DETERMINATO,Via Torino,VAI_IN_ZONA,Via Torino 63
 dd55b46282b67136f66c,Bruino,NON_DETERMINATO,via piossasco,VAI_IN_ZONA,via piossasco 123,,PRONTO,https://www.immobiliare.it/annunci/128786104/
 dd55b46282b67136f66c,Bruino,NON_DETERMINATO,via piossasco,VAI_IN_ZONA,Via Piossasco 74,,PRONTO,https://www.immobiliare.it/annunci/128786104/
 8f3c54f277cb8e0b9144,Bruino,INDIZIO_AGENZIA,via VOLVERA,VAI_IN_ZONA,via VOLVERA 37,,PRONTO,https://www.immobiliare.it/annunci/126709191/
+5a6f4db24bcda72aaed7,Beinasco,NON_DETERMINATO,via fornasio,VAI_IN_ZONA,via fornasio 1,,PRONTO,https://www.immobiliare.it/annunci/128180162/

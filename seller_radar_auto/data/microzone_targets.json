@@ -1,447 +1,669 @@
 {
-  "generated_at": "2026-09-07T10:28:00.379728+00:00",
+  "generated_at": "2026-09-08T11:22:35.419361+00:00",
   "main_towns": [
-    "Susa",
-    "Mompantero",
-    "Meana di Susa",
-    "Gravere",
-    "Giaglione",
-    "Venaus",
-    "Mattie",
-    "Chiomonte",
-    "Novalesa",
-    "Bussoleno",
-    "Chianocco",
-    "San Giorio di Susa",
-    "Moncenisio",
-    "Exilles",
-    "Bruzolo",
-    "San Didero",
-    "Salbertrand",
-    "Villar Focchiardo",
-    "Borgone Susa",
+    "Villar Dora",
+    "Almese",
+    "Rubiana",
+    "Caprie",
+    "Avigliana",
+    "Chiusa di San Michele",
+    "Valgioie",
+    "Condove",
+    "Buttigliera Alta",
+    "Val della Torre",
+    "Caselette",
+    "Reano",
+    "Giaveno",
+    "Rosta",
     "Sant'Antonino di Susa",
-    "Vaie"
+    "Trana",
+    "Coazze",
+    "Givoletto"
   ],
   "map_data_attribution": "Data © OpenStreetMap contributors, ODbL 1.0",
   "microzones": [
     {
-      "zone_id": "borgone-susa-via-dei-grave",
-      "comune": "Borgone Susa",
-      "target_street": "via dei Gravè",
-      "listing_target": "via dei Gravè 4",
-      "listing_url": "https://www.immobiliare.it/annunci/131917682/",
+      "zone_id": "almese-via-rubiana",
+      "comune": "Almese",
+      "target_street": "via Rubiana",
+      "listing_target": "via Rubiana 100",
+      "listing_url": "https://www.immobiliare.it/annunci/132183836/",
       "streets": [
-        "via dei Gravè",
-        "Via Frejus",
-        "Via Moncenisio",
-        "Strada Provinciale 24 del Monginevro",
-        "Percorso pedonale su opere di difesa"
+        "via Rubiana",
+        "Borgata Malatrait II",
+        "Via Circonvallazione",
+        "Via Combal",
+        "Via dei Copertili"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "borgone-susa-via-abegg",
-      "comune": "Borgone Susa",
-      "target_street": "via Abegg",
-      "listing_target": "via Abegg 18",
-      "listing_url": "https://www.immobiliare.it/annunci/125219057/",
+      "zone_id": "almese-via-avigliana",
+      "comune": "Almese",
+      "target_street": "via Avigliana",
+      "listing_target": "via Avigliana 56",
+      "listing_url": "https://www.nuroa.it/affitto-case/almese",
       "streets": [
-        "via Abegg",
-        "Via Augusto Abegg",
-        "Via dei Vernetti",
-        "Strada Donatori di Sangue",
-        "Autostrada del Frejus"
+        "via Avigliana",
+        "Piazza Martiri della Libertà",
+        "Via Dante Alighieri",
+        "Via dell'Ajgro",
+        "Via della Michela"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-montecapretto",
+      "comune": "Almese",
+      "target_street": "via Montecapretto",
+      "listing_target": "via Montecapretto 24",
+      "listing_url": "https://www.immobiliare.it/annunci/108146029/",
+      "streets": [
+        "via Montecapretto",
+        "Via Bertolo",
+        "Via Sonetto",
+        "Via Muande",
+        "Via Falca"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-roma",
+      "comune": "Almese",
+      "target_street": "Via Roma",
+      "listing_target": "Via Roma 29",
+      "listing_url": "https://www.casa.it/immobili/54664232/",
+      "streets": [
+        "Via Roma",
+        "Piazza Martiri della Libertà",
+        "Piazza Pra Maccari",
+        "Via Cerrone",
+        "Via Circonvallazione"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-almese",
+      "comune": "Almese",
+      "target_street": "via Almese",
+      "listing_target": "Via Almese 64",
+      "listing_url": "https://www.immobiliare.it/annunci/125159231/",
+      "streets": [
+        "via Almese",
+        "Via Circonvallazione",
+        "Via Avigliana",
+        "Via della Michela",
+        "Via Dante Alighieri"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-braida",
+      "comune": "Almese",
+      "target_street": "via Braida",
+      "listing_target": "via Braida 18",
+      "listing_url": "https://www.immobiliare.it/annunci/131901566/",
+      "streets": [
+        "via Braida",
+        "Via Bertolo",
+        "Via della Roccia",
+        "Via Mollar",
+        "Via Moncurto"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-morsino",
+      "comune": "Almese",
+      "target_street": "via Morsino",
+      "listing_target": "Via Morsino 43",
+      "listing_url": "https://www.immobiliare.it/annunci/127965590/",
+      "streets": [
+        "via Morsino",
+        "Piazza Comba",
+        "Via Goletto",
+        "Via Gublera",
+        "Via Miosa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-piazza-martiri-della-liberta",
+      "comune": "Almese",
+      "target_street": "piazza Martiri della Libertà",
+      "listing_target": "piazza Martiri della Libertà 31",
+      "listing_url": "https://www.immobiliare.it/annunci/113407257/",
+      "streets": [
+        "piazza Martiri della Libertà",
+        "Piazza della Fiera",
+        "Via Avigliana",
+        "Via Rocci",
+        "Via Roma"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-rivera",
+      "comune": "Almese",
+      "target_street": "via Rivera",
+      "listing_target": "via Rivera 66",
+      "listing_url": "https://www.immobiliare.it/annunci/132203708/",
+      "streets": [
+        "via Rivera",
+        "Via Caselette",
+        "Via delle Industrie",
+        "Via Drubiaglio",
+        "Via Milanere"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-monte-cuneo",
+      "comune": "Avigliana",
+      "target_street": "via Monte Cuneo",
+      "listing_target": "via Monte Cuneo 6",
+      "listing_url": "https://www.immobiliare.it/annunci/113651037/",
+      "streets": [
+        "via Monte Cuneo",
+        "Via Ceresole",
+        "Via Chiattera",
+        "Via don Alberto Milano",
+        "Via Oronte Nota"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-corso-laghi",
+      "comune": "Avigliana",
+      "target_street": "Corso Laghi",
+      "listing_target": "corso Laghi 165",
+      "listing_url": "https://www.casadaprivato.it/annunci-vendita/immobili/torino-avigliana",
+      "streets": [
+        "Corso Laghi",
+        "Piazza del Popolo",
+        "Via Alpi Cozie",
+        "Via Carnino",
+        "Via Cavalieri di Vittorio Veneto"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-sacra-san-michele",
+      "comune": "Avigliana",
+      "target_street": "via Sacra San Michele",
+      "listing_target": "via Sacra San Michele 17",
+      "listing_url": "https://www.immobiliare.it/annunci/131895478/",
+      "streets": [
+        "via Sacra San Michele",
+        "Via Sacra di San Michele",
+        "Viale Belvedere",
+        "Viale dei Tigli",
+        "Via Tetti Colombo"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "borgone-susa-via-condove",
-      "comune": "Borgone Susa",
-      "target_street": "Via Condove",
-      "listing_target": "Via Condove 3",
-      "listing_url": "https://www.idealista.it/immobile/33654375/",
+      "zone_id": "avigliana-viale-roma",
+      "comune": "Avigliana",
+      "target_street": "viale roma",
+      "listing_target": "viale roma 8",
+      "listing_url": "https://www.immobiliare.it/annunci/131481726/",
       "streets": [
-        "Via Condove",
-        "Interni di Via Condove",
-        "Piazza Canonico Anselmetti",
-        "S.S.24",
-        "Strada Provinciale 24 del Monginevro"
+        "viale roma",
+        "Corso Laghi",
+        "Via maestra Maria Gallo",
+        "Via Osvaldo Negarville",
+        "Via Tresserve"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "borgone-susa-via-augusto-abegg",
-      "comune": "Borgone Susa",
-      "target_street": "via Augusto Abegg",
-      "listing_target": "via Augusto Abegg 68",
-      "listing_url": "https://www.immobiliare.it/annunci/116053317/",
+      "zone_id": "avigliana-via-ailliaud-augusto",
+      "comune": "Avigliana",
+      "target_street": "via Ailliaud Augusto",
+      "listing_target": "via Ailliaud Augusto 8",
+      "listing_url": "https://www.immobiliare.it/annunci/129887012/",
       "streets": [
-        "via Augusto Abegg",
-        "Strada Donatori di Sangue",
-        "Strada Statale 25 del Moncenisio",
-        "Via dei Vernetti",
-        "Via Florio Benvenuto"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-tarro-boiro",
-      "comune": "Borgone Susa",
-      "target_street": "via Tarro Boiro",
-      "listing_target": "via Tarro Boiro 5",
-      "listing_url": "https://www.immobiliare.it/annunci/117236507/",
-      "streets": [
-        "via Tarro Boiro",
-        "Via Piero Alotto",
-        "Strada Statale 25 del Moncenisio",
-        "Via Guglielmo Marconi",
-        "Via Augusto Abegg"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-montenero",
-      "comune": "Borgone Susa",
-      "target_street": "via Montenero",
-      "listing_target": "via Montenero 2A",
-      "listing_url": "https://www.immobiliare.it/annunci/122849092/",
-      "streets": [
-        "via Montenero",
-        "Via Condove",
-        "Via dei Pioppi",
-        "Via Ponte Dora",
-        "Via S.S. 24"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-ponte-dora",
-      "comune": "Borgone Susa",
-      "target_street": "via Ponte Dora",
-      "listing_target": "via Ponte Dora 2",
-      "listing_url": "https://www.immobiliare.it/annunci/119519371/",
-      "streets": [
-        "via Ponte Dora",
-        "Ciclabile Borgone San Valeriano",
-        "Ponte Dora",
-        "Via Condove",
-        "Via dei Pioppi"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-augusto-abegg-l-appartamento-e-stato-ristrutturato-circa",
-      "comune": "Borgone Susa",
-      "target_street": "via Augusto Abegg ... L'appartamento è stato ristrutturato circa",
-      "listing_target": "via Augusto Abegg ... L'appartamento è stato ristrutturato circa 10",
-      "listing_url": "https://www.immobiliare.it/annunci/103552834/",
-      "streets": [
-        "via Augusto Abegg ... L'appartamento è stato ristrutturato circa",
-        "Strada Donatori di Sangue",
-        "Strada Statale 25 del Moncenisio",
-        "Via dei Vernetti",
-        "Via Florio Benvenuto"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-felice-falco",
-      "comune": "Borgone Susa",
-      "target_street": "via Felice Falco",
-      "listing_target": "via Felice Falco 6",
-      "listing_url": "https://www.immobiliare.it/annunci/128787806/",
-      "streets": [
-        "via Felice Falco",
-        "Piazza Canonico Anselmetti",
-        "Strada Gandoglio",
-        "Via Condove",
-        "Via Mosconi"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-moncenisio",
-      "comune": "Borgone Susa",
-      "target_street": "via Moncenisio",
-      "listing_target": "Via Moncenisio 1",
-      "listing_url": "https://www.immobiliare.it/annunci/111573305/",
-      "streets": [
-        "via Moncenisio",
-        "Strada del Cimitero",
-        "Via Condove",
-        "Via dei Gravè",
-        "Via Frejus"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-guido-bobba",
-      "comune": "Borgone Susa",
-      "target_street": "via Guido Bobba",
-      "listing_target": "via Guido Bobba 46",
-      "listing_url": "https://www.immobiliare.it/annunci/122347108/",
-      "streets": [
-        "via Guido Bobba",
-        "Piazza Canonico Anselmetti",
-        "Via Bruno Mosconi",
-        "Via Moncenisio",
+        "via Ailliaud Augusto",
+        "Via Augusto Ailliaud",
+        "Viale Roma (int)",
+        "Via Cavalieri di Vittorio Veneto",
         "Via Venti Settembre"
       ],
-      "osm_status": "OK"
+      "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "borgone-susa-via-roma",
-      "comune": "Borgone Susa",
-      "target_street": "via Roma",
-      "listing_target": "via Roma 6",
-      "listing_url": "https://www.immobiliare.it/annunci/105065761/",
+      "zone_id": "avigliana-piazza-del-popolo",
+      "comune": "Avigliana",
+      "target_street": "piazza del Popolo",
+      "listing_target": "piazza del Popolo 4",
+      "listing_url": "https://www.immobiliare.it/annunci/127408283/",
       "streets": [
-        "via Roma",
-        "Via dei Pioppi",
-        "Via Ponte Dora",
-        "S.S.24",
-        "Via Frejus"
+        "piazza del Popolo",
+        "Corso Laghi",
+        "Via Cavalieri di Vittorio Veneto",
+        "Via della Repubblica",
+        "Via Martiri della Libertà"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "borgone-susa-via-4-novembre",
-      "comune": "Borgone Susa",
+      "zone_id": "avigliana-via-villar-dora",
+      "comune": "Avigliana",
+      "target_street": "via villar dora",
+      "listing_target": "via villar dora 15",
+      "listing_url": "https://www.immobiliare.it/annunci/130446938/",
+      "streets": [
+        "via villar dora",
+        "Via Cuminie",
+        "Via Moncenisio",
+        "Autostrada del Frejus",
+        "Via Dante Alighieri"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "avigliana-via-4-novembre",
+      "comune": "Avigliana",
       "target_street": "via 4 Novembre",
-      "listing_target": "via 4 Novembre 13",
-      "listing_url": "https://www.immobiliare.it/annunci/105071031/",
+      "listing_target": "via 4 Novembre 21",
+      "listing_url": "https://www.immobiliare.it/annunci/130632950/",
       "streets": [
         "via 4 Novembre",
+        "Via Frejus",
         "Via Quattro Novembre",
-        "Vicolo Cavour",
-        "Via Francesco Perodo",
-        "Via Augusto Abegg"
+        "Via Carnino",
+        "Via Luigi Einaudi"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "borgone-susa-piazza-montabone",
-      "comune": "Borgone Susa",
-      "target_street": "piazza Montabone",
-      "listing_target": "piazza Montabone 5",
-      "listing_url": "https://www.idealista.it/immobile/31471280/",
+      "zone_id": "avigliana-via-cesare-battisti",
+      "comune": "Avigliana",
+      "target_street": "Via Cesare Battisti",
+      "listing_target": "Via Cesare Battisti 19",
+      "listing_url": "https://www.idealista.it/immobile/36653195/",
       "streets": [
-        "piazza Montabone",
-        "Via Francesco Perodo",
+        "Via Cesare Battisti",
+        "Via Giuseppe Garibaldi",
+        "Via Madonna delle Grazie",
+        "Via Mario Berta",
+        "Via Oscar Borgesa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-felice-goffi",
+      "comune": "Avigliana",
+      "target_street": "Via Felice Goffi",
+      "listing_target": "Via Felice Goffi 6",
+      "listing_url": "https://www.idealista.it/immobile/36626365/",
+      "streets": [
+        "Via Felice Goffi",
+        "Via Almese",
+        "Via Moncenisio",
+        "Via Grangia",
+        "Via Villardora"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-avigliana",
+      "comune": "Avigliana",
+      "target_street": "via Avigliana",
+      "listing_target": "Via Avigliana 4",
+      "listing_url": "https://www.immobiliare.it/annunci/132223466/",
+      "streets": [
+        "via Avigliana",
+        "Via Almese",
+        "Via Giaveno",
+        "Via Primo Levi",
+        "Viale dei Mareschi"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-orsiera",
+      "comune": "Avigliana",
+      "target_street": "via Orsiera",
+      "listing_target": "via Orsiera 5",
+      "listing_url": "https://www.immobiliare.it/annunci/129672110/",
+      "streets": [
+        "via Orsiera",
+        "Via della Repubblica",
+        "Via Cristalliera",
+        "Via Monte Bianco",
+        "Via Rossetti"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-monte-pirchiriano",
+      "comune": "Avigliana",
+      "target_street": "via Monte Pirchiriano",
+      "listing_target": "via Monte Pirchiriano 14",
+      "listing_url": "https://www.immobiliare.it/annunci/130847028/",
+      "streets": [
+        "via Monte Pirchiriano",
+        "Via Ferruccio Gallo",
+        "Via Giovanni Suppo",
+        "Via Grignetto",
+        "Via Monte Capretto"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-oscar-borgesa",
+      "comune": "Avigliana",
+      "target_street": "via Oscar Borgesa",
+      "listing_target": "via Oscar Borgesa 19",
+      "listing_url": "https://www.immobiliare.it/annunci/127109565/",
+      "streets": [
+        "via Oscar Borgesa",
+        "Via Carlo Carli",
+        "Via Case Braida",
+        "Via Cesare Battisti",
+        "Via Ferruccio Gallo"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-chiattera",
+      "comune": "Avigliana",
+      "target_street": "via Chiattera",
+      "listing_target": "via Chiattera 56",
+      "listing_url": "https://www.immobiliare.it/annunci/128300848/",
+      "streets": [
+        "via Chiattera",
+        "Via Monte Cuneo",
+        "Via Reano",
+        "Galleria Monte Cuneo",
+        "Via Benetti"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-tetti-colombo",
+      "comune": "Avigliana",
+      "target_street": "via Tetti Colombo",
+      "listing_target": "via Tetti Colombo 7",
+      "listing_url": "https://www.immobiliare.it/annunci/130992664/",
+      "streets": [
+        "via Tetti Colombo",
+        "Strada vicinale della Ghirba",
+        "Via Sacra di San Michele",
+        "Sentiero dei Maritano",
+        "Via Giaveno"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-vicolo-statuto",
+      "comune": "Avigliana",
+      "target_street": "Vicolo Statuto",
+      "listing_target": "Vicolo Statuto, Avigliana 75",
+      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/avigliana-valli-susa-sangone?page=7",
+      "streets": [
+        "Vicolo Statuto",
+        "Via Oscar Borgesa",
+        "Vicolo Paglierino",
+        "Via Carlo Carli",
+        "Vicolo Ferdinando Ribodi"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-aldo-moro",
+      "comune": "Avigliana",
+      "target_street": "via Aldo Moro",
+      "listing_target": "via Aldo Moro 14",
+      "listing_url": "https://www.immobiliare.it/annunci/126423911/",
+      "streets": [
+        "via Aldo Moro",
+        "Via Alpi Cozie",
+        "Via Carlo Carli",
+        "Via Fratelli Cervi",
+        "Via Guido Portigliatti"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-drubiaglio",
+      "comune": "Avigliana",
+      "target_street": "Via Drubiaglio",
+      "listing_target": "Via Drubiaglio 8",
+      "listing_url": "https://www.idealista.it/immobile/36719669/",
+      "streets": [
+        "Via Drubiaglio",
+        "Via don Marco Cravotto",
+        "Via Fratelli Girotto",
+        "Via Moncenisio",
+        "Via Rivera"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-umberto-i",
+      "comune": "Avigliana",
+      "target_street": "via Umberto I",
+      "listing_target": "via Umberto I 42",
+      "listing_url": "https://www.immobiliare.it/annunci/132071842/",
+      "streets": [
+        "via Umberto I",
+        "Via Umberto Primo",
+        "Via Giuseppe Mazzini",
+        "Via Madonna delle Grazie",
+        "Piazzale dei Caduti"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-allende",
+      "comune": "Buttigliera Alta",
+      "target_street": "via Allende",
+      "listing_target": "via Allende 13",
+      "listing_url": "https://www.immobiliare.it/annunci/131629064/",
+      "streets": [
+        "via Allende",
+        "Via Salvador Allende",
+        "Corso Laghi",
+        "Via Bacchiasso",
+        "Strada del Closio"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-iv-novembre",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via IV Novembre",
+      "listing_target": "Via IV Novembre 5",
+      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html",
+      "streets": [
+        "Via IV Novembre",
         "Via Quattro Novembre",
-        "Via Venti Settembre",
-        "Vicolo Parrocchiale"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "borgone-susa-via-bruno-mosconi",
-      "comune": "Borgone Susa",
-      "target_street": "via Bruno Mosconi",
-      "listing_target": "Via Bruno Mosconi 2",
-      "listing_url": "https://www.idealista.it/immobile/30873639/",
-      "streets": [
-        "via Bruno Mosconi",
-        "Via Guido Bobba",
-        "Via Mosconi",
-        "Via Venti Settembre",
-        "Strada del Cimitero"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "bruzolo-via-dei-mille",
-      "comune": "Bruzolo",
-      "target_street": "Via dei Mille",
-      "listing_target": "Via dei Mille 19",
-      "listing_url": "https://www.casa.it/immobili/53531383/",
-      "streets": [
-        "Via dei Mille",
-        "Via Carlo Emanuele Primo",
-        "Via Cavour",
-        "Via Federico Marconcini",
-        "Via Maffiodenza"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "bussoleno-via-bussoleno",
-      "comune": "Bussoleno",
-      "target_street": "via bussoleno",
-      "listing_target": "via bussoleno 26",
-      "listing_url": "https://www.immobiliare.it/annunci/130283966/",
-      "streets": [
-        "via bussoleno",
-        "Via Gran Borgata",
-        "Via Gran Porta",
-        "Piazza Caduti per la Libertà",
-        "Via San Rocco"
+        "Vicolo Palermo",
+        "Via Avigliana",
+        "Piazza del Popolo"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "bussoleno-strada-monginevro",
-      "comune": "Bussoleno",
-      "target_street": "Strada Monginevro",
-      "listing_target": "Strada Monginevro 28",
-      "listing_url": "https://www.immobiliare.it/annunci/119706740/",
+      "zone_id": "buttigliera-alta-corso-superga",
+      "comune": "Buttigliera Alta",
+      "target_street": "Corso Superga",
+      "listing_target": "Corso Superga 57/4",
+      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
-        "Strada Monginevro",
-        "Strada Provinciale 24 del Monginevro",
-        "Via Carlo Trattenero",
-        "Ponte Ignazio Micellone",
-        "Via Fabbrica da Fer"
+        "Corso Superga",
+        "Corso Laghi",
+        "Via Madonna dei Boschi",
+        "Via Ragazzi del '99",
+        "Via Reano"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "caprie-via-roma",
+      "comune": "Caprie",
+      "target_street": "via Roma",
+      "listing_target": "Via Roma 250",
+      "listing_url": "https://www.trovacasa.it/annunci/to-tc-95641-72900561",
+      "streets": [
+        "via Roma",
+        "Via Conte Verde",
+        "Via Lino Maffiodo",
+        "Viale Kennedy",
+        "Via Monginevro"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "caprie-viale-kennedy",
+      "comune": "Caprie",
+      "target_street": "Viale Kennedy",
+      "listing_target": "viale kennedy 25",
+      "listing_url": "https://www.idealista.it/immobile/36681241/",
+      "streets": [
+        "Viale Kennedy",
+        "Piazza Giacomo Matteotti",
+        "Via Armona",
+        "Via Colombardo",
+        "Via Don Beniamino Pagliarello"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "caprie-via-caprie",
+      "comune": "Caprie",
+      "target_street": "via Caprie",
+      "listing_target": "via Caprie 5",
+      "listing_url": "https://www.immobiliare.it/annunci/128454554/",
+      "streets": [
+        "via Caprie",
+        "Canalone",
+        "Aurora",
+        "Tramontana",
+        "Piazza Santa Maria della Stella"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "bussoleno-via-san-lorenzo",
-      "comune": "Bussoleno",
-      "target_street": "Via San Lorenzo",
-      "listing_target": "Via San Lorenzo 2",
-      "listing_url": "https://www.attico.it/immobile-casa+indipendente-piemonte-bussoleno-54425376/",
+      "zone_id": "caprie-via-peroldrado",
+      "comune": "Caprie",
+      "target_street": "via Peroldrado",
+      "listing_target": "via Peroldrado 22",
+      "listing_url": "https://www.immobiliare.it/annunci/132084518/",
       "streets": [
-        "Via San Lorenzo",
-        "Via Camposciutto",
-        "Via Ravetto",
-        "Corso Bruno Peirolo",
-        "Strada di Chianocco"
+        "via Peroldrado",
+        "Borgata Chiodo",
+        "Via Lino Maffiodo",
+        "Viale Kennedy",
+        "Via Colombardo"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "bussoleno-via-della-bocciofila",
-      "comune": "Bussoleno",
-      "target_street": "Via della Bocciofila",
-      "listing_target": "Via della Bocciofila 4",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/bilocale-bussoleno",
+      "zone_id": "caselette-via-cirie",
+      "comune": "Caselette",
+      "target_street": "Via Ciriè",
+      "listing_target": "Via Ciriè 15",
+      "listing_url": "https://www.gabetti.it/vendita/caselette",
       "streets": [
-        "Via della Bocciofila",
-        "Via Barges",
-        "Via Carlo Trattenero",
-        "Via Don Carlo Prinetto",
-        "Via Luigi Tonelli"
+        "Via Ciriè",
+        "Via Brione",
+        "Via Val della Torre",
+        "Via Givoletto",
+        "Via Martiri della Libertà"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "bussoleno-via-traforo",
-      "comune": "Bussoleno",
-      "target_street": "Via Traforo",
-      "listing_target": "Via Traforo, Bussoleno 33",
-      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/bussoleno-valli-susa-sangone?page=2",
+      "zone_id": "caselette-corso-susa",
+      "comune": "Caselette",
+      "target_street": "Corso Susa",
+      "listing_target": "Corso Susa, Caselette 156",
+      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone",
       "streets": [
-        "Via Traforo",
-        "Piazza C. L. N.",
-        "Piazza del Moro",
-        "Strada Ponte Guido Cambursano",
-        "Strada Susa"
+        "Corso Susa",
+        "Strada dei Prati",
+        "Via Almese",
+        "Via Alpignano",
+        "Via Guglielmo Marconi"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "chianocco-via-primo-maggio-n",
-      "comune": "Chianocco",
-      "target_street": "Via Primo Maggio n",
-      "listing_target": "Via Primo Maggio n. 4/c",
-      "listing_url": "https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco",
+      "zone_id": "caselette-via-alpignano",
+      "comune": "Caselette",
+      "target_street": "via Alpignano",
+      "listing_target": "via Alpignano 146",
+      "listing_url": "https://www.immobiliare.it/annunci/109429209/",
       "streets": [
-        "Via Primo Maggio n",
-        "Via 25 Aprile 1945",
-        "Via Chiesa Vecchia",
-        "Via Ivol",
-        "Via Nini Rossero"
+        "via Alpignano",
+        "Corso Susa",
+        "Strada Contessa",
+        "Strada dei Giardini",
+        "Via al Musinè"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "gravere-via-nazionale",
-      "comune": "Gravere",
-      "target_street": "Via Nazionale",
-      "listing_target": "Via Nazionale 45",
-      "listing_url": "https://www.casadaprivato.it/annunci-vendita/immobili/torino-gravere",
+      "zone_id": "coazze-via-freinetto",
+      "comune": "Coazze",
+      "target_street": "via Freinetto",
+      "listing_target": "via freinetto 51",
+      "listing_url": "https://www.caasa.it/torino/coazze/villa/in-vendita.html",
       "streets": [
-        "Via Nazionale",
-        "Strada Statale 24 del Monginevro",
-        "Via Braidetta",
-        "Via Comunale",
-        "Via Europa"
+        "via Freinetto",
+        "Borgata Castagna",
+        "Sentiero dell'amore",
+        "Via Giacomo Matteotti",
+        "Via Ruadavalle"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "gravere-via-terzo-reggimento-alpini",
-      "comune": "Gravere",
-      "target_street": "Via Terzo Reggimento Alpini",
-      "listing_target": "Via Terzo Reggimento Alpini 9",
-      "listing_url": "https://www.idealista.it/immobile/30296520/",
+      "zone_id": "condove-via-moncenisio",
+      "comune": "Condove",
+      "target_street": "Via Moncenisio",
+      "listing_target": "Via Moncenisio 72",
+      "listing_url": "https://www.idealista.it/immobile/33250712/",
       "streets": [
-        "Via Terzo Reggimento Alpini",
-        "Via Nazionale",
-        "Via Braidetta",
-        "Via Girodi",
-        "Via Molaretto"
+        "Via Moncenisio",
+        "Ciclabile Diacono Martino",
+        "Strada Comunale",
+        "Via Edmondo De Amicis",
+        "Via Giuseppe Verdi"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "mattie-via-giordani",
-      "comune": "Mattie",
-      "target_street": "via giordani",
-      "listing_target": "via giordani 3",
-      "listing_url": "https://www.trovacasa.it/annunci/to-tc-64869-72779648",
+      "zone_id": "giaveno-borgata-selvaggio-sotto",
+      "comune": "Giaveno",
+      "target_street": "Borgata Selvaggio Sotto",
+      "listing_target": "Borgata Selvaggio Sotto 31",
+      "listing_url": "https://www.gabetti.it/vendita/giaveno",
       "streets": [
-        "via giordani",
-        "Via Tonda",
-        "Via Torino",
-        "Via Rio Gerardo",
-        "Via La Losa"
+        "Borgata Selvaggio Sotto",
+        "Borgata Selvaggio Rio",
+        "Via Monsignor Carlo Bovero",
+        "Via Selvaggio",
+        "Via Paradiso"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "mattie-via-mattie",
-      "comune": "Mattie",
-      "target_street": "via Mattie",
-      "listing_target": "Via Mattie 2/B",
-      "listing_url": "https://www.immobiliare.it/annunci/130850322/",
+      "zone_id": "rosta-via-piave",
+      "comune": "Rosta",
+      "target_street": "Via Piave",
+      "listing_target": "Via Piave 53",
+      "listing_url": "https://www.casa.it/immobili/54099496/",
       "streets": [
-        "via Mattie",
-        "Sentiero delle Ecoumbele",
-        "La via della contemplazione",
-        "Via Grandi Tanze",
-        "Sentiero Grandi - Piccole Tanze"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "mompantero-frazione-san-giuseppe",
-      "comune": "Mompantero",
-      "target_street": "Frazione San Giuseppe",
-      "listing_target": "frazione San Giuseppe 21/d",
-      "listing_url": "https://www.casa.it/immobili/54595196/",
-      "streets": [
-        "Frazione San Giuseppe",
-        "Via Bosconero",
-        "Via Ezio Perino",
-        "Via Marzano",
-        "Via Novalesa"
-      ],
-      "osm_status": "OK_GEOCODE_FALLBACK"
-    },
-    {
-      "zone_id": "moncenisio-via-moncenisio",
-      "comune": "Moncenisio",
-      "target_street": "via Moncenisio",
-      "listing_target": "via Moncenisio 10",
-      "listing_url": "https://www.immobiliare.it/annunci/132188518/",
-      "streets": [
-        "via Moncenisio",
-        "Tsëmin de Muhni",
-        "Ruà de Seint Zors",
-        "Ruà Trieste",
-        "Ruà Trento"
+        "Via Piave",
+        "Strada Antica di Buttigliera",
+        "Via Buttigliera Alta",
+        "Via Edoardo Aprà",
+        "Via Rivoli"
       ],
       "osm_status": "OK"
     },
@@ -461,55 +683,127 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "susa-via-susa",
-      "comune": "Susa",
-      "target_street": "via Susa",
-      "listing_target": "Via Susa 50",
-      "listing_url": "https://www.immobiliare.it/annunci/125737541/",
+      "zone_id": "val-della-torre-via-val-della-torre",
+      "comune": "Val della Torre",
+      "target_street": "via Val della Torre",
+      "listing_target": "via Val della Torre 41",
+      "listing_url": "https://www.immobiliare.it/annunci/127148161/",
       "streets": [
-        "via Susa",
-        "Via Gravere",
-        "Via Oulx",
-        "Strada del Molino",
-        "Strada del Frais"
+        "via Val della Torre",
+        "Via Alpignano",
+        "Via Lanzo",
+        "Via Trucco di Brione",
+        "Via Brione"
       ],
       "osm_status": "OK"
     },
     {
-      "zone_id": "vaie-via-peirolero",
-      "comune": "Vaie",
-      "target_street": "Via Peirolero",
-      "listing_target": "Via Peirolero 28",
-      "listing_url": "https://www.casa.it/immobili/50035067/",
+      "zone_id": "villar-dora-via-celle",
+      "comune": "Villar Dora",
+      "target_street": "Via Celle",
+      "listing_target": "Via Celle 64",
+      "listing_url": "https://www.idealista.it/immobile/34771243/",
       "streets": [
-        "Via Peirolero",
-        "Via Nazionale",
-        "Via Primo Maggio",
-        "Via Quattro Novembre",
-        "Via Sauzi"
+        "Via Celle",
+        "Borgata Montecomposto",
+        "Via Roccasella",
+        "Via San Giovanni",
+        "Bert - Roccasella"
       ],
       "osm_status": "OK"
     }
   ],
   "quarantine": [
     {
-      "zone_id": "borgone-susa-via-a-abegg",
-      "comune": "Borgone Susa",
-      "target_street": "Via A. Abegg",
-      "listing_target": "via A. Abegg 18",
-      "listing_url": "https://www.idealista.it/immobile/33742491/",
+      "zone_id": "almese-frazione-tuberghengo",
+      "comune": "Almese",
+      "target_street": "frazione Tuberghengo",
+      "listing_target": "frazione Tuberghengo 2",
+      "listing_url": "https://www.immobiliare.it/annunci/101503673/",
       "streets": [
-        "Via A. Abegg"
+        "frazione Tuberghengo"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "borgone-susa-via-monte-bianco",
-      "comune": "Borgone Susa",
+      "zone_id": "almese-borgata-carello-inferiore-mompellato",
+      "comune": "Almese",
+      "target_street": "Borgata Carello inferiore - Mompellato",
+      "listing_target": "Borgata Carello inferiore - Mompellato 4",
+      "listing_url": "https://almese1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Borgata Carello inferiore - Mompellato"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-sacra-san-michele-laghi",
+      "comune": "Avigliana",
+      "target_street": "Via Sacra San Michele - Laghi",
+      "listing_target": "Via Sacra San Michele - Laghi 6",
+      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via Sacra San Michele - Laghi"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-aldo-carnino",
+      "comune": "Avigliana",
+      "target_street": "via Aldo Carnino",
+      "listing_target": "via Aldo Carnino 6",
+      "listing_url": "https://www.immobiliare.it/annunci/131045692/",
+      "streets": [
+        "via Aldo Carnino"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-alliaud",
+      "comune": "Avigliana",
+      "target_street": "via Alliaud",
+      "listing_target": "via Alliaud 42",
+      "listing_url": "https://www.immobiliare.it/annunci/120792436/",
+      "streets": [
+        "via Alliaud"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-don-luigi-balbiano",
+      "comune": "Avigliana",
+      "target_street": "via Don Luigi Balbiano",
+      "listing_target": "via Don Luigi Balbiano 11",
+      "listing_url": "https://www.immobiliare.it/annunci/132226918/",
+      "streets": [
+        "via Don Luigi Balbiano"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-conti-carron",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via Conti Carron",
+      "listing_target": "Via Conti Carron 57",
+      "listing_url": "https://www.idealista.it/immobile/33719415/",
+      "streets": [
+        "Via Conti Carron"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-monte-bianco",
+      "comune": "Buttigliera Alta",
       "target_street": "Via Monte Bianco",
       "listing_target": "Via Monte Bianco 60/A",
-      "listing_url": "https://www.tecnocasa.it/vendita/ville/torino/borgone-susa/61255852.html",
+      "listing_url": "https://www.tecnocasa.it/vendita/negozio/torino/buttigliera-alta/60932694.html",
       "streets": [
         "Via Monte Bianco"
       ],
@@ -517,97 +811,73 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "bruzolo-via-bologna",
-      "comune": "Bruzolo",
-      "target_street": "Via Bologna",
-      "listing_target": "Via Bologna 1",
-      "listing_url": "https://www.ilrinascimentoimmobiliare.it/web/immobile_print.asp?language=ita&cod_annuncio=2591902&cod_foto=29325481",
+      "zone_id": "buttigliera-alta-vicolo-moncenisio",
+      "comune": "Buttigliera Alta",
+      "target_street": "vicolo Moncenisio",
+      "listing_target": "vicolo Moncenisio 2",
+      "listing_url": "https://www.immobiliare.it/annunci/123148631/",
       "streets": [
-        "Via Bologna"
+        "vicolo Moncenisio"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "bruzolo-via-camillo-benso-piemonte-torino-visualizza-foto-appartamento-in-vendita-di",
-      "comune": "Bruzolo",
-      "target_street": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",
-      "listing_target": "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/vendita-bruzolo",
+      "zone_id": "caprie-borgata-peroldrado-proponiamo-una-soluzione-indipendente-risalente-al",
+      "comune": "Caprie",
+      "target_street": "Borgata Peroldrado, proponiamo una soluzione indipendente risalente al",
+      "listing_target": "Borgata Peroldrado, proponiamo una soluzione indipendente risalente al 1940",
+      "listing_url": "https://www.immobiliare.it/annunci/131999318/",
       "streets": [
-        "Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di"
+        "Borgata Peroldrado, proponiamo una soluzione indipendente risalente al"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "bruzolo-piazza-del-moro",
-      "comune": "Bruzolo",
-      "target_street": "Piazza del Moro",
-      "listing_target": "Piazza del Moro 6/8",
-      "listing_url": "https://www.valsusaoggi.it/News-Commerciali/",
+      "zone_id": "caselette-localita-favorita",
+      "comune": "Caselette",
+      "target_street": "Località Favorita",
+      "listing_target": "Località Favorita 1",
+      "listing_url": "https://www.immobiliare.it/annunci/126844533/",
       "streets": [
-        "Piazza del Moro"
+        "Località Favorita"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "bussoleno-viale-lungo-dora",
-      "comune": "Bussoleno",
-      "target_street": "Viale Lungo Dora",
-      "listing_target": "Viale Lungo Dora, Bussoleno 160",
-      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/centro-bussoleno",
+      "zone_id": "chiusa-di-san-michele-vicolo-g-pietro-riva",
+      "comune": "Chiusa di San Michele",
+      "target_street": "vicolo G. Pietro Riva",
+      "listing_target": "vicolo G. Pietro Riva 13",
+      "listing_url": "https://www.immobiliare.it/annunci/127844320/",
       "streets": [
-        "Viale Lungo Dora"
+        "vicolo G. Pietro Riva"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "bussoleno-strada-principale-si-trova-un-negozio-di",
-      "comune": "Bussoleno",
-      "target_street": "strada principale, si trova un negozio di",
-      "listing_target": "strada principale, si trova un negozio di 65",
-      "listing_url": "https://case.trovit.it/affitto-negozio-bussoleno",
+      "zone_id": "condove-borgata-borlera",
+      "comune": "Condove",
+      "target_street": "Borgata Borlera",
+      "listing_target": "Borgata Borlera 21",
+      "listing_url": "https://www.idealista.it/immobile/36228538/",
       "streets": [
-        "strada principale, si trova un negozio di"
+        "Borgata Borlera"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "chianocco-frazione-pavaglione",
-      "comune": "Chianocco",
-      "target_street": "Frazione Pavaglione",
-      "listing_target": "Frazione Pavaglione 169",
-      "listing_url": "https://www.casa.it/immobili/54627174/",
+      "zone_id": "reano-via-principe-della-cisterna",
+      "comune": "Reano",
+      "target_street": "via Principe della Cisterna",
+      "listing_target": "via Principe Della Cisterna 3",
+      "listing_url": "https://www.immobiliare.it/annunci/122985494/",
       "streets": [
-        "Frazione Pavaglione"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA",
-      "reason": "POSIZIONE/VIA DA VERIFICARE"
-    },
-    {
-      "zone_id": "gravere-via-san-lorenzo",
-      "comune": "Gravere",
-      "target_street": "via San Lorenzo",
-      "listing_target": "via San Lorenzo 1",
-      "listing_url": "https://www.immobiliare.it/annunci/126652927/",
-      "streets": [
-        "via San Lorenzo"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA",
-      "reason": "POSIZIONE/VIA DA VERIFICARE"
-    },
-    {
-      "zone_id": "vaie-vicolo-superiore",
-      "comune": "Vaie",
-      "target_street": "Vicolo Superiore",
-      "listing_target": "Vicolo Superiore 19",
-      "listing_url": "https://www.idealista.it/immobile/34422440/",
-      "streets": [
-        "Vicolo Superiore"
+        "via Principe della Cisterna"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

@@ -106,5 +106,22 @@
     "lat": 45.1224419,
     "lon": 7.2391371,
     "display_name": "Via Quattro Novembre, Achit, Borgone Susa, Torino, Piemonte, Italia"
-  }
+  },
+  "via alliaud avigliana": null,
+  "via umberto i avigliana": {
+    "lat": 45.0780815,
+    "lon": 7.398636,
+    "display_name": "Via Umberto Primo, Nota, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via don luigi balbiano avigliana": null,
+  "via monte bianco buttigliera alta": null,
+  "vicolo moncenisio buttigliera alta": null,
+  "borgata peroldrado proponiamo una soluzione indipendente risalente al caprie": null,
+  "via caprie caprie": {
+    "lat": 45.1381225,
+    "lon": 7.3523357,
+    "display_name": "Via Gervasutti, Case Inferiori, Caprie, Torino, Piemonte, 10057, Italia"
+  },
+  "localita favorita caselette": null,
+  "via principe della cisterna reano": null
 }
