@@ -1,14 +1,14 @@
 {
-  "seller_master_totali": 1102,
-  "seller_attivi_master": 543,
-  "storico_non_attivo": 559,
-  "nel_territorio_attivo": 167,
-  "fermate_pronte": 123,
-  "indirizzo_da_verificare": 44,
-  "backlog_fuori_territorio": 376,
-  "fermate_assegnate_team": 97,
-  "territori_master": 50,
-  "territori_operativi_configurati": 21,
-  "centro_operativo": "Susa",
-  "raggio_operativo": "20 km"
+  "seller_master_totali": 1202,
+  "seller_attivi_master": 645,
+  "storico_non_attivo": 557,
+  "nel_territorio_attivo": 488,
+  "fermate_pronte": 370,
+  "indirizzo_da_verificare": 118,
+  "backlog_fuori_territorio": 157,
+  "fermate_assegnate_team": 130,
+  "territori_master": 60,
+  "territori_operativi_configurati": 40,
+  "centro_operativo": "Villar Dora",
+  "raggio_operativo": "10 km"
 }
