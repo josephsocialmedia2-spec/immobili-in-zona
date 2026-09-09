@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T21:11:30.757297+00:00",
+  "generated_at": "2026-09-09T23:33:25.345171+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -70,11 +70,11 @@
     {
       "zone_id": "almese-via-roma",
       "comune": "Almese",
-      "target_street": "Via Roma",
-      "listing_target": "Via Roma 29",
-      "listing_url": "https://www.casa.it/immobili/54664232/",
+      "target_street": "via Roma",
+      "listing_target": "via Roma 29",
+      "listing_url": "https://www.immobiliare.it/annunci/132169640/",
       "streets": [
-        "Via Roma",
+        "via Roma",
         "Piazza Martiri della Libertà",
         "Piazza Pra Maccari",
         "Via Cerrone",
@@ -139,21 +139,6 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-drubiaglio",
-      "comune": "Almese",
-      "target_street": "Via Drubiaglio",
-      "listing_target": "Via Drubiaglio 6",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
-      "streets": [
-        "Via Drubiaglio",
-        "Via delle Industrie",
-        "Via don Marco Cravotto",
-        "Via Milanere",
-        "Via Rivera"
       ],
       "osm_status": "OK"
     },
@@ -782,6 +767,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/101503673/",
       "streets": [
         "frazione Tuberghengo"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "almese-via-ruffini",
+      "comune": "Almese",
+      "target_street": "Via Ruffini",
+      "listing_target": "Via Ruffini 1",
+      "listing_url": "https://www.idealista.it/immobile/35234714/",
+      "streets": [
+        "Via Ruffini"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
