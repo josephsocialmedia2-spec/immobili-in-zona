@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T22:12:05.426040+00:00",
+  "generated_at": "2026-09-09T04:16:52.969189+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -40,11 +40,11 @@
     {
       "zone_id": "almese-via-avigliana",
       "comune": "Almese",
-      "target_street": "via Avigliana",
-      "listing_target": "via Avigliana 56",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
+      "target_street": "VIA AVIGLIANA",
+      "listing_target": "VIA AVIGLIANA 98",
+      "listing_url": "https://immobiliare.mitula.it/almese",
       "streets": [
-        "via Avigliana",
+        "VIA AVIGLIANA",
         "Piazza Martiri della Libertà",
         "Via Dante Alighieri",
         "Via dell'Ajgro",
@@ -507,7 +507,7 @@
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
       "listing_target": "Via IV Novembre 5",
-      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html",
+      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
         "Via Quattro Novembre",
@@ -518,17 +518,17 @@
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "buttigliera-alta-corso-superga",
+      "zone_id": "buttigliera-alta-strada-del-closio",
       "comune": "Buttigliera Alta",
-      "target_street": "Corso Superga",
-      "listing_target": "Corso Superga 57/4",
-      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "target_street": "Strada del Closio",
+      "listing_target": "Strada del Closio 39",
+      "listing_url": "https://www.wikicasa.it/vendita-case/buttigliera-alta/",
       "streets": [
-        "Corso Superga",
-        "Corso Laghi",
-        "Via Madonna dei Boschi",
-        "Via Ragazzi del '99",
-        "Via Reano"
+        "Strada del Closio",
+        "Via Bacchiasso",
+        "Via Cornaglio",
+        "Via Mario Greco",
+        "Via Salvador Allende"
       ],
       "osm_status": "OK"
     },
@@ -836,6 +836,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/123148631/",
       "streets": [
         "vicolo Moncenisio"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "buttigliera-alta-frazione-bessen-alto-sauze-di-cesana-sauze-di-cesana",
+      "comune": "Buttigliera Alta",
+      "target_street": "frazione Bessen Alto, Sauze di Cesana Sauze di Cesana",
+      "listing_target": "frazione Bessen Alto, Sauze di Cesana Sauze di Cesana 165",
+      "listing_url": "https://immhogroup.it/",
+      "streets": [
+        "frazione Bessen Alto, Sauze di Cesana Sauze di Cesana"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

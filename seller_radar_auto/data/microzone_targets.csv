@@ -4,11 +4,11 @@ almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it
 almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,2,VICINA,Via Circonvallazione,0,INCROCIA,OK
 almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,3,VICINA,Via Combal,0,INCROCIA,OK
 almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,4,VICINA,Via dei Copertili,0,INCROCIA,OK
-almese-via-avigliana,Almese,via Avigliana,via Avigliana 56,https://www.nuroa.it/affitto-case/almese,0,TARGET,via Avigliana,0,CENTRO,OK
-almese-via-avigliana,Almese,via Avigliana,via Avigliana 56,https://www.nuroa.it/affitto-case/almese,1,VICINA,Piazza Martiri della Libertà,0,INCROCIA,OK
-almese-via-avigliana,Almese,via Avigliana,via Avigliana 56,https://www.nuroa.it/affitto-case/almese,2,VICINA,Via Dante Alighieri,0,INCROCIA,OK
-almese-via-avigliana,Almese,via Avigliana,via Avigliana 56,https://www.nuroa.it/affitto-case/almese,3,VICINA,Via dell'Ajgro,0,INCROCIA,OK
-almese-via-avigliana,Almese,via Avigliana,via Avigliana 56,https://www.nuroa.it/affitto-case/almese,4,VICINA,Via della Michela,0,INCROCIA,OK
+almese-via-avigliana,Almese,VIA AVIGLIANA,VIA AVIGLIANA 98,https://immobiliare.mitula.it/almese,0,TARGET,VIA AVIGLIANA,0,CENTRO,OK
+almese-via-avigliana,Almese,VIA AVIGLIANA,VIA AVIGLIANA 98,https://immobiliare.mitula.it/almese,1,VICINA,Piazza Martiri della Libertà,0,INCROCIA,OK
+almese-via-avigliana,Almese,VIA AVIGLIANA,VIA AVIGLIANA 98,https://immobiliare.mitula.it/almese,2,VICINA,Via Dante Alighieri,0,INCROCIA,OK
+almese-via-avigliana,Almese,VIA AVIGLIANA,VIA AVIGLIANA 98,https://immobiliare.mitula.it/almese,3,VICINA,Via dell'Ajgro,0,INCROCIA,OK
+almese-via-avigliana,Almese,VIA AVIGLIANA,VIA AVIGLIANA 98,https://immobiliare.mitula.it/almese,4,VICINA,Via della Michela,0,INCROCIA,OK
 almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,0,TARGET,via Montecapretto,0,CENTRO,OK
 almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,1,VICINA,Via Bertolo,0,INCROCIA,OK
 almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,2,VICINA,Via Sonetto,0,INCROCIA,OK
@@ -159,16 +159,16 @@ buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https:/
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,3,VICINA,Via Bacchiasso,176,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,4,VICINA,Strada del Closio,180,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,0,TARGET,Via IV Novembre,0,CENTRO,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,1,VICINA,Via Quattro Novembre,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,2,VICINA,Vicolo Palermo,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,3,VICINA,Via Avigliana,16,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,4,VICINA,Piazza del Popolo,25,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 57/4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,0,TARGET,Corso Superga,0,CENTRO,OK
-buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 57/4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,1,VICINA,Corso Laghi,0,INCROCIA,OK
-buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 57/4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,2,VICINA,Via Madonna dei Boschi,0,INCROCIA,OK
-buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 57/4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,3,VICINA,Via Ragazzi del '99,0,INCROCIA,OK
-buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 57/4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,4,VICINA,Via Reano,0,INCROCIA,OK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,0,TARGET,Via IV Novembre,0,CENTRO,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,1,VICINA,Via Quattro Novembre,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,2,VICINA,Vicolo Palermo,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,3,VICINA,Via Avigliana,16,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,4,VICINA,Piazza del Popolo,25,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,0,TARGET,Strada del Closio,0,CENTRO,OK
+buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,1,VICINA,Via Bacchiasso,0,INCROCIA,OK
+buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,2,VICINA,Via Cornaglio,0,INCROCIA,OK
+buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,3,VICINA,Via Mario Greco,0,INCROCIA,OK
+buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,4,VICINA,Via Salvador Allende,103,VICINA,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,0,TARGET,via Roma,0,CENTRO,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,1,VICINA,Via Conte Verde,0,INCROCIA,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,2,VICINA,Via Lino Maffiodo,0,INCROCIA,OK
