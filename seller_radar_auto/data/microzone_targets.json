@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T04:16:52.969189+00:00",
+  "generated_at": "2026-09-09T14:06:23.977477+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -800,6 +800,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/132226918/",
       "streets": [
         "via Don Luigi Balbiano"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-generale-c-alberto-dalla-chiesa",
+      "comune": "Avigliana",
+      "target_street": "via Generale C. Alberto dalla Chiesa",
+      "listing_target": "via Generale C. Alberto dalla Chiesa 7",
+      "listing_url": "https://www.immobiliare.it/annunci/119041139/",
+      "streets": [
+        "via Generale C. Alberto dalla Chiesa"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
