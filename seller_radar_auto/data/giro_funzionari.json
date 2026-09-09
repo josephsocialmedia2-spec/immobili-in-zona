@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "Avigliana",
       "score_comune": 48,
-      "righe_lavoro": 17,
-      "residenziale": 15,
+      "righe_lavoro": 16,
+      "residenziale": 14,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -28,28 +28,61 @@
     {
       "funzionario": "FUNZIONARIO 3",
       "numero": 3,
-      "comune": "San Giorio di Susa",
-      "score_comune": 43,
-      "righe_lavoro": 15,
-      "residenziale": 15,
-      "commerciale": 0,
+      "comune": "Bruino",
+      "score_comune": 46,
+      "righe_lavoro": 11,
+      "residenziale": 8,
+      "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
-      "comune": "Beinasco",
-      "score_comune": 38,
-      "righe_lavoro": 19,
-      "residenziale": 15,
-      "commerciale": 4,
+      "comune": "San Giorio di Susa",
+      "score_comune": 43,
+      "righe_lavoro": 14,
+      "residenziale": 14,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
+      "comune": "Fiano",
+      "score_comune": 40,
+      "righe_lavoro": 13,
+      "residenziale": 12,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 6",
+      "numero": 6,
+      "comune": "Val della Torre",
+      "score_comune": 40,
+      "righe_lavoro": 14,
+      "residenziale": 13,
+      "commerciale": 1,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
+      "comune": "Beinasco",
+      "score_comune": 38,
+      "righe_lavoro": 21,
+      "residenziale": 17,
+      "commerciale": 4,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Rosta",
       "score_comune": 38,
       "righe_lavoro": 11,
@@ -59,8 +92,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 6",
-      "numero": 6,
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
       "comune": "Villar Dora",
       "score_comune": 32,
       "righe_lavoro": 5,
@@ -70,46 +103,13 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
-      "comune": "Bruino",
-      "score_comune": 30,
-      "righe_lavoro": 11,
-      "residenziale": 8,
-      "commerciale": 3,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
+      "funzionario": "FUNZIONARIO 10",
+      "numero": 10,
       "comune": "La Cassa",
       "score_comune": 30,
       "righe_lavoro": 18,
       "residenziale": 18,
       "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
-      "comune": "Fiano",
-      "score_comune": 30,
-      "righe_lavoro": 10,
-      "residenziale": 10,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 10",
-      "numero": 10,
-      "comune": "Pianezza",
-      "score_comune": 30,
-      "righe_lavoro": 15,
-      "residenziale": 13,
-      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }
