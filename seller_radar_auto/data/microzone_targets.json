@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T18:11:49.759772+00:00",
+  "generated_at": "2026-09-09T21:11:30.757297+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -499,6 +499,21 @@
         "Via Giovanni Suppo",
         "Via Monte Pirchiriano",
         "Via Renzo Suriani"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-corso-torino",
+      "comune": "Avigliana",
+      "target_street": "corso Torino",
+      "listing_target": "corso Torino 35",
+      "listing_url": "https://www.immobiliare.it/annunci/132260558/",
+      "streets": [
+        "corso Torino",
+        "Corso Dora",
+        "Corso Europa",
+        "Strada Statale 25 del Moncenisio",
+        "Via Antonio Gramsci"
       ],
       "osm_status": "OK"
     },
