@@ -7,7 +7,7 @@
       "funzionario": "FUNZIONARIO 1",
       "numero": 1,
       "comune": "Almese",
-      "score_comune": 58,
+      "score_comune": 56,
       "righe_lavoro": 12,
       "residenziale": 9,
       "commerciale": 3,
@@ -29,7 +29,7 @@
       "funzionario": "FUNZIONARIO 3",
       "numero": 3,
       "comune": "Bruino",
-      "score_comune": 48,
+      "score_comune": 46,
       "righe_lavoro": 11,
       "residenziale": 8,
       "commerciale": 3,
@@ -39,19 +39,8 @@
     {
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
-      "comune": "San Giorio di Susa",
-      "score_comune": 43,
-      "righe_lavoro": 16,
-      "residenziale": 16,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 5",
-      "numero": 5,
       "comune": "Beinasco",
-      "score_comune": 38,
+      "score_comune": 46,
       "righe_lavoro": 21,
       "residenziale": 16,
       "commerciale": 5,
@@ -59,8 +48,30 @@
       "pdf_da_verificare": 0
     },
     {
+      "funzionario": "FUNZIONARIO 5",
+      "numero": 5,
+      "comune": "Rivoli",
+      "score_comune": 45,
+      "righe_lavoro": 26,
+      "residenziale": 17,
+      "commerciale": 9,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
+      "comune": "San Giorio di Susa",
+      "score_comune": 43,
+      "righe_lavoro": 17,
+      "residenziale": 17,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Rosta",
       "score_comune": 33,
       "righe_lavoro": 9,
@@ -70,24 +81,13 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Druento",
       "score_comune": 30,
       "righe_lavoro": 7,
       "residenziale": 6,
       "commerciale": 1,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
-      "comune": "Rivoli",
-      "score_comune": 30,
-      "righe_lavoro": 25,
-      "residenziale": 18,
-      "commerciale": 7,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -105,11 +105,11 @@
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Condove",
+      "comune": "Giaveno",
       "score_comune": 30,
-      "righe_lavoro": 9,
-      "residenziale": 9,
-      "commerciale": 0,
+      "righe_lavoro": 16,
+      "residenziale": 14,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }

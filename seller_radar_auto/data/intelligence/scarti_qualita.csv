@@ -1,6 +1,7 @@
 ﻿ID,COMUNE,TITOLO,FONTE,URL,MOTIVO_SCARTO
 8c2bf7566b731a977793,Almese,160 immobili in vendita a Almese - Trovit,Trovit,https://case.trovit.it/almese,EVIDENZA_INSUFFICIENTE
 1f6a089f092103b77b70,Almese,Case e appartamenti a Almese. Immobili in vendita a Almese - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/almese,EVIDENZA_INSUFFICIENTE
+2bcdb0fc06c342a547fe,Almese,469 Immobili in vendita a Almese - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/almese,EVIDENZA_INSUFFICIENTE
 9bd098c51c8133127d2c,Alpignano,26.732 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
 b1401933cac7e2c369de,Avigliana,"8 immobili in vendita a Villaggio Primavera, Avigliana - Trovit",Trovit,https://case.trovit.it/avigliana-villaggio-primavera,EVIDENZA_INSUFFICIENTE
 26cf0943b957c20d714b,Bardonecchia,Bardonecchia - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=bardonecchia,PAGINA_CATEGORIA
@@ -132,7 +133,7 @@ e02c71dbd5aedd7e0a04,Coazze,224 immobili in vendita a Coazze - Trovit,Trovit,htt
 94c1f9e47a4396769d1c,Coazze,Case e appartamenti a Coazze Torino. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/coazze_torino,EVIDENZA_INSUFFICIENTE
 7ec321fa5ec90ddaf0e9,Coazze,44 Rustici in vendita a Coazze - Mitula Case,Agenzie,https://immobiliare.mitula.it/rustico-coazze,EVIDENZA_INSUFFICIENTE
 dd1e48ed3885f904503f,Collegno,"COLLEGNO, VENDESI APPARTAMENTO A 98.000 € | TorinoCintura",Mercato generale,https://www.torinocintura.it/2026/08/25/collegno-vendesi-appartamento-a-98-000-e/,EVIDENZA_INSUFFICIENTE
-85b4d6b71351d6a020cd,Collegno,Vendita e Affitto Immobili a Collegno Torino| Agenzia Immobiliare ...,Uffici e direzionale,https://www.immobiliareprimaveraenicolo.it/,EVIDENZA_INSUFFICIENTE
+85b4d6b71351d6a020cd,Collegno,Vendita e Affitto Immobili a Collegno Torino| Agenzia Immobiliare ...,Commerciale negozi/locali,https://www.immobiliareprimaveraenicolo.it/,EVIDENZA_INSUFFICIENTE
 e30767433e2c2af3cd3a,Condove,Rustico in vendita a Condove Cod. 34221003-2080,Tipologie residenziali,https://www.fcimmobiliare.it/i-672099-vendita-rustico-condove/,EVIDENZA_INSUFFICIENTE
 57a9a3164ec6e82d82d1,Giaveno,Immobiliare Centrale E Servizi Vari | Agenzia immobiliare a Giaveno,Agenzie,https://www.immobiliarecentrale.it/,EVIDENZA_INSUFFICIENTE
 778f6ad58d785f200720,Giaveno,Casa Semindipendente Giaveno - Immobiliare La Sacra,Agenzie,https://lasacraimmobiliare.it/products/casa-semindipendente-ristrutturata-in-vendita-a-giaveno-borgata-san-filippo,EVIDENZA_INSUFFICIENTE
@@ -179,7 +180,7 @@ b9f03c0f70b2fe34edaf,Avigliana,13 Capannoni in vendita a Avigliana - Mitula Case
 bc6d0ed30cb789eb55c6,Bussoleno,Case a Bussoleno. Immobili in affitto a Bussoleno - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/affitto/bussoleno,EVIDENZA_INSUFFICIENTE
 fa753112ac63a76d2488,Bussoleno,"Bussoleno-Complesso immobiliare con varie destinazioni, ottima ...",Capannoni logistica,https://www.ladimoraimmobiliare.com/complesso-immobiliare-con-varie-destinazioni-ottima-opportunita-di-investimento/,EVIDENZA_INSUFFICIENTE
 e15cc35f00af46ab1fe6,Caselette,29 Capannoni in affitto a Caselette - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-caselette,EVIDENZA_INSUFFICIENTE
-70d8bc246dc4231e9b21,Coazze,Albo Pretorio Digitale - Comune Di Coazze,Uffici e direzionale,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?CE=czz436,EVIDENZA_INSUFFICIENTE
+70d8bc246dc4231e9b21,Coazze,Albo Pretorio Digitale - Comune Di Coazze,Capannoni logistica,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?CE=czz436,EVIDENZA_INSUFFICIENTE
 fa8cc2c7a104698cb1b5,Collegno,"COLLEGNO, VENDESI APPARTAMENTO A 98.000 € | ValsusaOggi",Mercato residenziale,https://www.valsusaoggi.it/collegno-vendesi-appartamento-a-98-000-e/,EVIDENZA_INSUFFICIENTE
 8b864fbe51f3f6ec3b1e,Collegno,Case in vendita Collegno - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/collegno/,PAGINA_CATEGORIA
 991a8c1640846f799254,Collegno,Appartamenti in vendita Collegno - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/collegno/,EVIDENZA_INSUFFICIENTE
@@ -225,7 +226,7 @@ ad8021c54de9e2af8404,Reano,Terreno Reano - 10 terreni in vendita in Reano de Nur
 adcb6ce4ece7a549b47e,Sangano,2 locale commerciales in affitto a Sangano - Trovit,Trovit,https://case.trovit.it/affitto-negozio-sangano,EVIDENZA_INSUFFICIENTE
 eeef50895cf2886edf06,Sant'Antonino di Susa,"Lo stabilimento Ex Sogefi è in vendita, gli operai lo scoprono ... - Today",Capannoni logistica,https://www.today.it/attualita/ex-sogefi-vendita-immobiliare-capannone-sant-antonino-di-susa-purflux-group.html,EVIDENZA_INSUFFICIENTE
 223945a44bc42e5a1f7f,Val della Torre,Casa indipendente in Vendita a Val Della Torre,Uffici e direzionale,https://all.biz/it-it/casa-indipendente-in-vendita-a-val-della-torre-g48045,EVIDENZA_INSUFFICIENTE
-de1336a270d36ed86baf,Alpignano,Appartamenti in vendita a Alpignano • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-appartamenti/alpignano/,EVIDENZA_INSUFFICIENTE
+de1336a270d36ed86baf,Alpignano,Appartamenti in vendita a Alpignano - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-appartamenti/alpignano/,EVIDENZA_INSUFFICIENTE
 179bd73a3c8fb834846e,Bardonecchia,Case in vendita a Bardonecchia - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/bardonecchia/,PAGINA_CATEGORIA
 251234149fbf68315de2,Chiomonte,Chiomonte - 91 case in vendita in Chiomonte de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/chiomonte,EVIDENZA_INSUFFICIENTE
 fceaf2f90f46ef8d8665,Chiomonte,1 locale commerciales in affitto a Chiomonte - Trovit,Trovit,https://case.trovit.it/affitto-negozio-chiomonte,EVIDENZA_INSUFFICIENTE
@@ -309,7 +310,7 @@ ab500015206766fbf6a4,Alpignano,224 Locali commerciali in affitto a Alpignano - M
 0f41348be271430a6bd1,Bussoleno,Appartamenti in vendita Bussoleno - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/bussoleno/,EVIDENZA_INSUFFICIENTE
 98f3dea7339033b83f94,Chiusa di San Michele,Quanto vale una casa a Chiusa Di San Michele (TO),Mercato residenziale,https://tuttocalcolo.it/valore-immobili/to/chiusa-di-san-michele,EVIDENZA_INSUFFICIENTE
 a8b792085a88b5af639e,Coazze,Case indipendenti e ville a schiera in vendita Coazze - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/coazze/,EVIDENZA_INSUFFICIENTE
-640094999292a564fed1,Collegno,27.221 immobili in vendita a Collegno - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/collegno,EVIDENZA_INSUFFICIENTE
+640094999292a564fed1,Collegno,27.264 immobili in vendita a Collegno - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/collegno,EVIDENZA_INSUFFICIENTE
 49a9e17986c126ebe294,Collegno,5 Bedrooms Apartment for sale in Collegno [675674] | Gate-away®,Gate-away,https://www.gate-away.com/properties/piedmont/turin/collegno/id/675674,EVIDENZA_INSUFFICIENTE
 8bf99897db4502cfdd5d,Ferriera di Buttigliera Alta,ValsusaOggi | CERCASI IMMOBILI IN VENDITA IN BASSA VALSUSA FERRIERA DI ...,Mercato residenziale,https://www.instagram.com/p/Dcxz6lsjgwM/,EVIDENZA_INSUFFICIENTE
 1f1f858b0c6511382efb,Gravere,"Case in vendita a Gravere, Valli Susa, Sangone",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/gravere-valli-susa-sangone,PAGINA_CATEGORIA
@@ -324,7 +325,7 @@ a8b792085a88b5af639e,Coazze,Case indipendenti e ville a schiera in vendita Coazz
 c3be07df98e72b843eba,Susa,30 capannones in affitto a Susa - Trovit,Trovit,https://case.trovit.it/affitto-capannone-susa,EVIDENZA_INSUFFICIENTE
 4f12d34416e84746f8c4,Val della Torre,Case in vendita a Val della Torre - Attico.it,Mercato residenziale,https://www.attico.it/val%20della%20torre/vendita/,PAGINA_CATEGORIA
 e1877b576d9657757de2,Villar Focchiardo,"VALSUSA, VENDESI CASA INDIPENDENTE CON GIARDINO | ValsusaOggi",Tipologie residenziali,https://www.valsusaoggi.it/valsusa-vendesi-casa-indipendente-con-giardino-3/,EVIDENZA_INSUFFICIENTE
-b285b2ec75b9d5d4bab8,Alpignano,26 Capannoni in affitto a Alpignano - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-alpignano,EVIDENZA_INSUFFICIENTE
+b285b2ec75b9d5d4bab8,Alpignano,26 Capannoni in affitto a Alpignano - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/affitto-capannone-alpignano,EVIDENZA_INSUFFICIENTE
 a6b6053d6128ed7b45ac,Avigliana,1 Capannoni in affitto a Avigliana - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-avigliana,EVIDENZA_INSUFFICIENTE
 1f61cf95458b122c957f,Borgone Susa,Rustico in a borgone susa in vendita - Waa2,Mercato residenziale,https://case.waa2.it/vendita/rustico-in-a-borgone-susa,EVIDENZA_INSUFFICIENTE
 56d7a7ecf4cbeda96939,Grugliasco,"Case in vendita in Viale Gramsci, Grugliasco - Attico.it",Mercato residenziale,"https://www.attico.it/Viale%20Gramsci,%20grugliasco/vendita/",PAGINA_CATEGORIA
@@ -449,7 +450,7 @@ aaa58a809ba4078de931,Fiano,Ufficio affitto Fiano Romano - Affitto.it,Uffici e di
 202766c4ba6257fabc40,Giaveno,Case in vendita a Giaveno - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/giaveno/,PAGINA_CATEGORIA
 ae6cde3e1087f4d6b83b,Grugliasco,"Negozio in Vendita, 98 mq (Grugliasco) - Grugliasco - Immobili ...",Commerciale negozi/locali,https://www.tuttoannunci.org/torino/case-immobili-commerciali/negozio-in-vendita-98-mq-grugliasco-torino--tipdan-idi90-ida4924877-idc205.aspx,EVIDENZA_INSUFFICIENTE
 c254c302f0f4543b2646,Grugliasco,Negozi in vendita a Grugliasco - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-negozi/grugliasco/,EVIDENZA_INSUFFICIENTE
-4b7d1f4a55e0eebaba59,La Cassa,La Cassa - 557 appartamenti in affito in La Cassa de Nuroa.it,Capannoni logistica,https://www.nuroa.it/affitto-case/la-cassa,EVIDENZA_INSUFFICIENTE
+4b7d1f4a55e0eebaba59,La Cassa,La Cassa - 551 appartamenti in affito in La Cassa de Nuroa.it,Uffici e direzionale,https://www.nuroa.it/affitto-case/la-cassa,EVIDENZA_INSUFFICIENTE
 0219d1c59724ddfd076b,Rivalta di Torino,Immobili in Vendita | Agenzia Tecnorete di Rivalta Di Torino,Tecnorete,https://rivaltaditorino1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
 b92c5e10f6de97e7f9c2,Robassomero,Comune di Robassomero - Amministrazione trasparente,Uffici e direzionale,https://www.comune.robassomero.to.it/Menu?IDVoceMenu=233399,EVIDENZA_INSUFFICIENTE
 0464c18684a4c499d788,Chiusa di San Michele,"Case in vendita a Chiusa di San Michele, Valli Susa, Sangone",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/chiusa-di-san-michele-valli-susa-sangone,PAGINA_CATEGORIA
@@ -485,7 +486,7 @@ e55c28919fdd043bdeac,Rivoli,Gesim Immobili - Immobili in vendita e affitto a Riv
 2cc810f9cdca3b4837be,Coazze,Coazze - 306 case in vendita in Coazze de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/coazze,EVIDENZA_INSUFFICIENTE
 186ebe6a51791d36b31d,Fiano,Fiano romano - Vendita appartamenti Lazio - Subito.it,Subito privati,https://www.subito.it/annunci-lazio/vendita/appartamenti/?q=fiano+romano,EVIDENZA_INSUFFICIENTE
 70dffd9c48ef4356bba5,Rivalta di Torino,Case in vendita Rivalta di Torino - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/rivalta-di-torino/,PAGINA_CATEGORIA
-64d5199745f1bede403e,Rivoli,Locale Commerciale Rivoli - 377 locali comerciali in affito in Rivoli ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-rivoli,EVIDENZA_INSUFFICIENTE
+64d5199745f1bede403e,Rivoli,Locale Commerciale Rivoli - 377 locali comerciali in affito in Rivoli ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-rivoli,EVIDENZA_INSUFFICIENTE
 d5cdadff00aec4fc0e04,Robassomero,Appartamenti in vendita Robassomero - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/robassomero/,EVIDENZA_INSUFFICIENTE
 1da5f976c9988d8aa396,Rosta,"Capannone in vendita a Rosta, 703 mq | PCase.it",Capannoni logistica,https://www.pcase.it/immobili/capannone-vendita-rosta-sc9705973/,EVIDENZA_INSUFFICIENTE
 0126a747c12feba1517b,San Gillio,"offerte di lavoro - San Gillio, Piemonte - Indeed",Capannoni logistica,"https://it.indeed.com/l-san-gillio,-piemonte-offerte-lavoro.html?vjk=a4fddd0ce94d8b5a",EVIDENZA_INSUFFICIENTE
@@ -493,3 +494,4 @@ d5cdadff00aec4fc0e04,Robassomero,Appartamenti in vendita Robassomero - Subito.it
 1d5b9a134f1c7f7aae7b,Val della Torre,Appartamenti in vendita Val della Torre - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/val-della-torre/,EVIDENZA_INSUFFICIENTE
 8954df94bdab85f389f7,Fiano,66 immobili in vendita a Fiano - Trovit,Trovit,https://case.trovit.it/fiano,EVIDENZA_INSUFFICIENTE
 ce10a01d3ebda2ed176b,Rivoli,Rivoli Cascine Vica - 510 case in vendita in Rivoli de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/rivoli-cascine-vica,EVIDENZA_INSUFFICIENTE
+4c07ed0b0a7ff569f931,Val della Torre,studio casa sas - gruppo casa re,Capannoni logistica,https://www.gruppocasaretorino.it/,EVIDENZA_INSUFFICIENTE

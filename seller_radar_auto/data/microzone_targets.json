@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T01:29:14.448066+00:00",
+  "generated_at": "2026-09-10T06:13:30.663582+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -34,21 +34,6 @@
         "Via Circonvallazione",
         "Via Combal",
         "Via dei Copertili"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-avigliana",
-      "comune": "Almese",
-      "target_street": "VIA AVIGLIANA",
-      "listing_target": "VIA AVIGLIANA 98",
-      "listing_url": "https://immobiliare.mitula.it/almese",
-      "streets": [
-        "VIA AVIGLIANA",
-        "Piazza Martiri della Libertà",
-        "Via Dante Alighieri",
-        "Via dell'Ajgro",
-        "Via della Michela"
       ],
       "osm_status": "OK"
     },
