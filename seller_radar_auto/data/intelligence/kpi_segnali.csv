@@ -1,7 +1,7 @@
 ﻿COMUNE,IMMOBILI_QUALIFICATI,ASTE,PRIVATI,AGENZIE,RIBASSI_SEGNALATI,STORICO_USCITE
 Almese,26,0,7,3,0,0
 Alpignano,34,0,4,4,0,1
-Avigliana,54,3,6,6,0,0
+Avigliana,55,3,7,6,0,0
 Bardonecchia,42,0,0,5,0,1
 Beinasco,23,0,0,4,0,0
 Borgone Susa,44,0,4,4,0,1
@@ -10,19 +10,19 @@ Bruzolo,9,0,6,0,0,0
 Bussoleno,18,0,1,4,0,0
 Buttigliera Alta,19,0,3,4,0,0
 Caprie,12,0,0,0,0,1
-Caselette,16,5,0,3,0,0
+Caselette,17,6,0,3,0,0
 Chianocco,9,3,0,0,0,0
 Chiomonte,13,1,4,0,0,0
 Chiusa di San Michele,16,2,0,0,0,0
 Coazze,21,0,1,5,0,0
 Collegno,62,0,8,3,0,0
-Condove,26,6,3,6,0,0
+Condove,27,7,3,6,0,0
 Druento,15,0,0,0,0,0
 Exilles,13,0,0,0,0,0
 Ferriera di Buttigliera Alta,8,0,0,1,0,0
 Fiano,17,0,2,0,0,0
 Giaglione,5,0,0,0,0,0
-Giaveno,40,1,2,2,0,0
+Giaveno,41,1,2,2,0,0
 Givoletto,14,0,3,2,0,0
 Gravere,8,0,0,0,0,0
 Grugliasco,58,0,2,5,0,0
@@ -33,7 +33,7 @@ Mompantero,6,1,0,0,0,0
 Moncenisio,18,4,0,2,0,1
 Novalesa,2,0,1,2,0,0
 Oulx,29,2,0,1,0,0
-Pianezza,42,0,4,2,0,0
+Pianezza,44,0,4,2,0,0
 Reano,10,5,3,0,0,0
 Rivalta di Torino,4,0,0,1,0,0
 Rivoli,71,3,6,4,0,1
@@ -48,7 +48,7 @@ San Giorio di Susa,31,0,3,1,0,0
 San Valeriano,18,11,2,1,0,1
 Sangano,8,0,1,4,0,0
 Sant'Ambrogio di Torino,17,1,4,0,0,0
-Sant'Antonino di Susa,32,0,3,0,0,0
+Sant'Antonino di Susa,33,0,3,0,0,0
 Susa,26,1,2,1,0,0
 Trana,19,0,3,3,0,0
 Vaie,9,1,2,0,0,0
@@ -58,4 +58,4 @@ Varisella,1,0,0,0,0,0
 Venaus,8,5,0,0,0,0
 Villar Dora,11,0,0,0,0,0
 Villar Focchiardo,26,4,2,2,0,0
-Villarbasse,24,4,6,10,0,0
+Villarbasse,25,5,6,10,0,0

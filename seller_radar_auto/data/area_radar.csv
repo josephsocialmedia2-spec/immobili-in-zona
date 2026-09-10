@@ -144,6 +144,7 @@ da9efafcd4f50168b7f4,Bussoleno,INDIZIO_AGENZIA,via bussoleno,VAI_IN_ZONA,Via bus
 7132719c8706f284e66c,Caselette,INDIZIO_AGENZIA,corso Susa,VAI_IN_ZONA,corso Susa 192,,PRONTO,https://www.remax.it/trova/immobile/Casa-Semindipendente-In-Vendita-Caselette_45671003-52
 471f5426ac3d280c9982,Chianocco,NON_DETERMINATO,Via Primo Maggio n,VAI_IN_ZONA,Via Primo Maggio n. 4/c,,PRONTO,https://www.astalegale.net/Aste/Detail/B2404054-Abitazione-di-tipo-civile-Via-Primo--Maggio-4C-10050-Chianocco-TO-Italia-Chianocco
 ca0da030b717e3360d8b,Collegno,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 13,,PRONTO,https://www.immobiliare.it/annunci/130994920/
+ca0da030b717e3360d8b,Collegno,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/130994920/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,via Susa 13,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 60,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 2,,PRONTO,https://www.immobiliare.it/annunci/125737541/
@@ -162,7 +163,6 @@ de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,via Coll
 a8d2985549c287ccaf93,Bardonecchia,NON_DETERMINATO,via generale cantore,VAI_IN_ZONA,via generale cantore 11,,PRONTO,https://www.immobiliare.it/annunci/126542873/
 997d8c6d6104c3e40dd7,Borgone Susa,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,via Montenero 2A,,PRONTO,https://www.immobiliare.it/annunci/122849092/
 eb1e8e8bbb4906ffb427,Borgone Susa,NON_DETERMINATO,via Ponte Dora,VAI_IN_ZONA,via Ponte Dora 2,,PRONTO,https://www.immobiliare.it/annunci/119519371/
-eb1e8e8bbb4906ffb427,Borgone Susa,NON_DETERMINATO,via Ponte Dora,VAI_IN_ZONA,Via Ponte Dora 4,,PRONTO,https://www.immobiliare.it/annunci/119519371/
 93178ba075da13b66c61,Bruzolo,NON_DETERMINATO,Via Bologna,VAI_IN_ZONA,Via Bologna 1,,PRONTO,https://www.ilrinascimentoimmobiliare.it/web/immobile_print.asp?language=ita&cod_annuncio=2591902&cod_foto=29325481
 b6580d35068fa70b073c,Bussoleno,NON_DETERMINATO,Strada Monginevro,VAI_IN_ZONA,Strada Monginevro 7/a,,PRONTO,https://www.immobiliare.it/annunci/65394712/
 b601c2a15af0cfaaedf8,Bussoleno,NON_DETERMINATO,Via San Lorenzo,VAI_IN_ZONA,Via San Lorenzo 2,,PRONTO,https://www.attico.it/immobile-casa+indipendente-piemonte-bussoleno-54425376/
@@ -369,6 +369,7 @@ d872a8bccff109f71716,Alpignano,NON_DETERMINATO,via Torelle,VAI_IN_ZONA,via Torel
 0a1b48b9b85dc979654c,Alpignano,NON_DETERMINATO,corso Torino,VAI_IN_ZONA,corso Torino 7,,PRONTO,https://www.immobiliare.it/annunci/124972329/
 939dcdcd8d0855b7cd83,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 13,,PRONTO,https://www.immobiliare.it/annunci/132223466/
 939dcdcd8d0855b7cd83,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/132223466/
+939dcdcd8d0855b7cd83,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 18,,PRONTO,https://www.immobiliare.it/annunci/132223466/
 3830095702e4d1a7e3dc,Avigliana,NON_DETERMINATO,via Don Luigi Balbiano,VAI_IN_ZONA,via Don Luigi Balbiano 11,,PRONTO,https://www.immobiliare.it/annunci/132226918/
 0d7341a0f2f731fe1cca,Beinasco,NON_DETERMINATO,via Principe Amedeo,VAI_IN_ZONA,via Principe Amedeo 51,,PRONTO,https://www.immobiliare.it/annunci/130841324/
 b8129ae85601ee46dfa0,Beinasco,NON_DETERMINATO,via Volta,VAI_IN_ZONA,via Volta 2,,PRONTO,https://www.immobiliare.it/annunci/130526654/
@@ -383,7 +384,9 @@ b8129ae85601ee46dfa0,Beinasco,NON_DETERMINATO,via Volta,VAI_IN_ZONA,via Volta 2,
 4b567a6e7ecfee623414,Beinasco,NON_DETERMINATO,via San Giovanni,VAI_IN_ZONA,via San Giovanni 2,,PRONTO,https://www.immobiliare.it/annunci/125068303/
 4b567a6e7ecfee623414,Beinasco,NON_DETERMINATO,via San Giovanni,VAI_IN_ZONA,via San Giovanni 6,,PRONTO,https://www.immobiliare.it/annunci/125068303/
 f1ee95cb22cb49b42929,Beinasco,NON_DETERMINATO,via dei Villini,VAI_IN_ZONA,via dei Villini 30,,PRONTO,https://www.immobiliare.it/annunci/125829075/
-ffcda583629159fe6539,Bruino,NON_DETERMINATO,Via Torino,VAI_IN_ZONA,Via Torino 63,,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-bruino
+ffcda583629159fe6539,Bruino,NON_DETERMINATO,Via Piossasco,VAI_IN_ZONA,Via Piossasco 30,,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-bruino
+ffcda583629159fe6539,Bruino,NON_DETERMINATO,Via Piossasco,VAI_IN_ZONA,via piossasco 123,,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-bruino
+ffcda583629159fe6539,Bruino,NON_DETERMINATO,Via Piossasco,VAI_IN_ZONA,Via Piossasco 74,,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-bruino
 c031c1c079c91b64927b,Bruino,NON_DETERMINATO,via Valgioie,VAI_IN_ZONA,via Valgioie 2,,PRONTO,https://www.nuroa.it/affitto-case/bruino
 c031c1c079c91b64927b,Bruino,NON_DETERMINATO,via Valgioie,VAI_IN_ZONA,via Valgioie 12,,PRONTO,https://www.nuroa.it/affitto-case/bruino
 1cad1d5ded85f86f4878,Bruino,NON_DETERMINATO,via Rocciamelone,VAI_IN_ZONA,via Rocciamelone 30,,PRONTO,https://www.immobiliare.it/annunci/127253049/
@@ -417,8 +420,11 @@ a97cef39a6fe88183a70,Avigliana,NON_DETERMINATO,via Generale C. Alberto dalla Chi
 9e3bd3b98c665c53d8ba,Beinasco,NON_DETERMINATO,piazza Kennedy,VAI_IN_ZONA,piazza Kennedy 17,,PRONTO,https://www.immobiliare.it/annunci/132231550/
 9e3bd3b98c665c53d8ba,Beinasco,NON_DETERMINATO,piazza Kennedy,VAI_IN_ZONA,Piazza Kennedy 21,,PRONTO,https://www.immobiliare.it/annunci/132231550/
 5f8a6fdf350e9c4c6ea5,Avigliana,NON_DETERMINATO,corso Torino,VAI_IN_ZONA,corso Torino 35,,PRONTO,https://www.immobiliare.it/annunci/132260558/
-d28666cc215f0a105dd6,Beinasco,NON_DETERMINATO,"via San Felice, zona industriale, proponiamo in vendita capannone di",VAI_IN_ZONA,"via San Felice, zona industriale, proponiamo in vendita capannone di 2200",,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-beinasco
+d28666cc215f0a105dd6,Beinasco,NON_DETERMINATO,Corso Racconigi,VAI_IN_ZONA,Corso Racconigi 48,,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-beinasco
 c8a9c2af8c034efbcd38,Beinasco,NON_DETERMINATO,via Dante Alighieri,VAI_IN_ZONA,via Dante Alighieri 6,,PRONTO,https://www.immobiliare.it/annunci/127030947/
 025e3b323cd2f7a93856,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 29,,PRONTO,https://www.immobiliare.it/annunci/132169640/
 55cb4d66e34bf79bc0cc,Almese,NON_DETERMINATO,Via Ruffini,VAI_IN_ZONA,Via Ruffini 13,,PRONTO,https://www.idealista.it/immobile/35234714/
 55cb4d66e34bf79bc0cc,Almese,NON_DETERMINATO,Via Ruffini,VAI_IN_ZONA,Via Ruffini 1,,PRONTO,https://www.idealista.it/immobile/35234714/
+ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 15,,PRONTO,https://www.immobiliare.it/annunci/132265274/
+ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.immobiliare.it/annunci/132265274/
+ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/132265274/
