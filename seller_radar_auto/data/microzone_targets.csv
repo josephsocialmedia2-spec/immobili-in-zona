@@ -19,11 +19,6 @@ almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/ann
 almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/annunci/125159231/,2,VICINA,Via Avigliana,225,VICINA,OK
 almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/annunci/125159231/,3,VICINA,Via della Michela,235,VICINA,OK
 almese-via-almese,Almese,via Almese,Via Almese 64,https://www.immobiliare.it/annunci/125159231/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,0,TARGET,piazza Martiri della Libertà,0,CENTRO,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,1,VICINA,Piazza della Fiera,0,INCROCIA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,2,VICINA,Via Avigliana,0,INCROCIA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,3,VICINA,Via Rocci,0,INCROCIA,OK
-almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,4,VICINA,Via Roma,0,INCROCIA,OK
 almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,0,TARGET,via Braida,0,CENTRO,OK
 almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,1,VICINA,Via Bertolo,0,INCROCIA,OK
 almese-via-braida,Almese,via Braida,via Braida 18,https://www.immobiliare.it/annunci/131901566/,2,VICINA,Via della Roccia,0,INCROCIA,OK
@@ -34,6 +29,11 @@ almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/
 almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,2,VICINA,Via Goletto,0,INCROCIA,OK
 almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,3,VICINA,Via Gublera,0,INCROCIA,OK
 almese-via-morsino,Almese,via Morsino,Via Morsino 43,https://www.immobiliare.it/annunci/127965590/,4,VICINA,Via Miosa,0,INCROCIA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,0,TARGET,piazza Martiri della Libertà,0,CENTRO,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,1,VICINA,Piazza della Fiera,0,INCROCIA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,2,VICINA,Via Avigliana,0,INCROCIA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,3,VICINA,Via Rocci,0,INCROCIA,OK
+almese-piazza-martiri-della-liberta,Almese,piazza Martiri della Libertà,piazza Martiri della Libertà 31,https://www.immobiliare.it/annunci/113407257/,4,VICINA,Via Roma,0,INCROCIA,OK
 almese-via-rivera,Almese,via Rivera,via Rivera 66,https://www.immobiliare.it/annunci/132203708/,0,TARGET,via Rivera,0,CENTRO,OK
 almese-via-rivera,Almese,via Rivera,via Rivera 66,https://www.immobiliare.it/annunci/132203708/,1,VICINA,Via Caselette,0,INCROCIA,OK
 almese-via-rivera,Almese,via Rivera,via Rivera 66,https://www.immobiliare.it/annunci/132203708/,2,VICINA,Via delle Industrie,0,INCROCIA,OK
@@ -159,16 +159,21 @@ buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https:/
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,3,VICINA,Via Bacchiasso,176,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,4,VICINA,Strada del Closio,180,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,0,TARGET,Via IV Novembre,0,CENTRO,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,1,VICINA,Via Quattro Novembre,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,2,VICINA,Vicolo Palermo,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,3,VICINA,Via Avigliana,16,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,4,VICINA,Piazza del Popolo,25,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,via IV novembre 14,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,0,TARGET,Via IV Novembre,0,CENTRO,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,via IV novembre 14,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,1,VICINA,Via Quattro Novembre,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,via IV novembre 14,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,2,VICINA,Vicolo Palermo,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,via IV novembre 14,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,3,VICINA,Via Avigliana,16,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,via IV novembre 14,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,4,VICINA,Piazza del Popolo,25,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,0,TARGET,Strada del Closio,0,CENTRO,OK
 buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,1,VICINA,Via Bacchiasso,0,INCROCIA,OK
 buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,2,VICINA,Via Cornaglio,0,INCROCIA,OK
 buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,3,VICINA,Via Mario Greco,0,INCROCIA,OK
 buttigliera-alta-strada-del-closio,Buttigliera Alta,Strada del Closio,Strada del Closio 39,https://www.wikicasa.it/vendita-case/buttigliera-alta/,4,VICINA,Via Salvador Allende,103,VICINA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,0,TARGET,via Reano,0,CENTRO,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,1,VICINA,Corso Laghi,0,INCROCIA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,2,VICINA,Corso Superga,0,INCROCIA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,3,VICINA,Via Monte Cuneo,0,INCROCIA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,4,VICINA,Via Rivoli,0,INCROCIA,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,0,TARGET,via Roma,0,CENTRO,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,1,VICINA,Via Conte Verde,0,INCROCIA,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,2,VICINA,Via Lino Maffiodo,0,INCROCIA,OK
