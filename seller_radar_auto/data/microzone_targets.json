@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T21:59:26.267784+00:00",
+  "generated_at": "2026-09-11T09:15:26.515676+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -109,21 +109,6 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-drubiaglio",
-      "comune": "Almese",
-      "target_street": "Via Drubiaglio",
-      "listing_target": "Via Drubiaglio 6",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
-      "streets": [
-        "Via Drubiaglio",
-        "Via delle Industrie",
-        "Via don Marco Cravotto",
-        "Via Milanere",
-        "Via Rivera"
       ],
       "osm_status": "OK"
     },
@@ -326,7 +311,7 @@
       "zone_id": "avigliana-via-avigliana",
       "comune": "Avigliana",
       "target_street": "via Avigliana",
-      "listing_target": "Via Avigliana 13",
+      "listing_target": "Via Avigliana 4",
       "listing_url": "https://www.immobiliare.it/annunci/132265274/",
       "streets": [
         "via Avigliana",
@@ -536,7 +521,7 @@
       "zone_id": "buttigliera-alta-via-iv-novembre",
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
-      "listing_target": "via IV novembre 14",
+      "listing_target": "Via IV Novembre 5",
       "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
