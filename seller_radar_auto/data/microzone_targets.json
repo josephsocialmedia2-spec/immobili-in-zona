@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T13:54:53.875353+00:00",
+  "generated_at": "2026-09-11T18:08:39.650099+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -158,6 +158,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "almese-via-milanere",
+      "comune": "Almese",
+      "target_street": "via Milanere",
+      "listing_target": "Via Milanere. 5",
+      "listing_url": "https://torino.bakeca.it/annunci/vendita-case/luogo/Almese/",
+      "streets": [
+        "via Milanere",
+        "Borgata Grange",
+        "Via Crivella",
+        "Via della Chiesa",
+        "Via Drubiaglio"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-via-monte-cuneo",
       "comune": "Avigliana",
       "target_street": "via Monte Cuneo",
@@ -173,11 +188,26 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "avigliana-via-moncenisio-grangia",
+      "comune": "Avigliana",
+      "target_street": "Via Moncenisio - Grangia",
+      "listing_target": "Via Moncenisio - Grangia 8",
+      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via Moncenisio - Grangia",
+        "Borgata Malano",
+        "Via Cuminie",
+        "Via don Campagna",
+        "Via Drubiaglio"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-corso-laghi",
       "comune": "Avigliana",
       "target_street": "Corso Laghi",
-      "listing_target": "corso Laghi 165",
-      "listing_url": "https://www.casadaprivato.it/annunci-vendita/immobili/torino-avigliana",
+      "listing_target": "Corso Laghi 165",
+      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/avigliana.html",
       "streets": [
         "Corso Laghi",
         "Piazza del Popolo",
@@ -503,6 +533,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "avigliana-via-partigiani-d-italia",
+      "comune": "Avigliana",
+      "target_street": "Via Partigiani D'Italia",
+      "listing_target": "Via Partigiani D'Italia 10",
+      "listing_url": "https://www.casa.it/immobili/54715382/",
+      "streets": [
+        "Via Partigiani D'Italia",
+        "Via Fratelli Cervi",
+        "Via Guido Portigliatti",
+        "Via Oscar Borgesa",
+        "Vicolo Ferronia"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "buttigliera-alta-via-allende",
       "comune": "Buttigliera Alta",
       "target_street": "via Allende",
@@ -811,18 +856,6 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "avigliana-via-sacra-san-michele-laghi",
-      "comune": "Avigliana",
-      "target_street": "Via Sacra San Michele - Laghi",
-      "listing_target": "Via Sacra San Michele - Laghi 6",
-      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
-      "streets": [
-        "Via Sacra San Michele - Laghi"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA",
-      "reason": "POSIZIONE/VIA DA VERIFICARE"
-    },
-    {
       "zone_id": "avigliana-via-aldo-carnino",
       "comune": "Avigliana",
       "target_street": "via Aldo Carnino",
@@ -866,6 +899,30 @@
       "listing_url": "https://www.immobiliare.it/annunci/119041139/",
       "streets": [
         "via Generale C. Alberto dalla Chiesa"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-g-matteotti",
+      "comune": "Avigliana",
+      "target_street": "Via G. Matteotti",
+      "listing_target": "Via G. Matteotti 6",
+      "listing_url": "https://torino.bakeca.it/annunci/vendita-case/luogo/avigliana/",
+      "streets": [
+        "Via G. Matteotti"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-micheletta-a-avigliana-rexer-villa-di-239mq-in-vendita-a-avigliana",
+      "comune": "Avigliana",
+      "target_street": "Via Micheletta a Avigliana - Rexer Villa di 239mq in vendita a Avigliana",
+      "listing_target": "Via Micheletta a Avigliana - Rexer Villa di 239mq in vendita a Avigliana. 5",
+      "listing_url": "https://rexer.it/immobile/389643",
+      "streets": [
+        "Via Micheletta a Avigliana - Rexer Villa di 239mq in vendita a Avigliana"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
