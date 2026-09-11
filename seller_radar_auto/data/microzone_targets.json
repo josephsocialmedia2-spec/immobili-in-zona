@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T18:08:39.650099+00:00",
+  "generated_at": "2026-09-11T23:35:05.413725+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -184,21 +184,6 @@
         "Via Chiattera",
         "Via don Alberto Milano",
         "Via Oronte Nota"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "avigliana-via-moncenisio-grangia",
-      "comune": "Avigliana",
-      "target_street": "Via Moncenisio - Grangia",
-      "listing_target": "Via Moncenisio - Grangia 8",
-      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
-      "streets": [
-        "Via Moncenisio - Grangia",
-        "Borgata Malano",
-        "Via Cuminie",
-        "Via don Campagna",
-        "Via Drubiaglio"
       ],
       "osm_status": "OK"
     },
@@ -567,7 +552,7 @@
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
       "listing_target": "Via IV Novembre 5",
-      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html",
       "streets": [
         "Via IV Novembre",
         "Via Quattro Novembre",
@@ -593,6 +578,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "buttigliera-alta-corso-superga",
+      "comune": "Buttigliera Alta",
+      "target_street": "Corso Superga",
+      "listing_target": "Corso Superga 57/4",
+      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Corso Superga",
+        "Corso Laghi",
+        "Via Madonna dei Boschi",
+        "Via Ragazzi del '99",
+        "Via Reano"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "buttigliera-alta-via-reano",
       "comune": "Buttigliera Alta",
       "target_street": "via Reano",
@@ -604,6 +604,21 @@
         "Corso Superga",
         "Via Monte Cuneo",
         "Via Rivoli"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-dei-comuni",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via dei Comuni",
+      "listing_target": "Via dei Comuni 16",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/ferriera-buttigliera-alta",
+      "streets": [
+        "Via dei Comuni",
+        "Corso Torino",
+        "Corso Vandel",
+        "Strada Antica di Francia",
+        "Strada della Praia"
       ],
       "osm_status": "OK"
     },
@@ -856,6 +871,18 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
+      "zone_id": "avigliana-via-sacra-san-michele-laghi",
+      "comune": "Avigliana",
+      "target_street": "Via Sacra San Michele - Laghi",
+      "listing_target": "Via Sacra San Michele - Laghi 6",
+      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via Sacra San Michele - Laghi"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
       "zone_id": "avigliana-via-aldo-carnino",
       "comune": "Avigliana",
       "target_street": "via Aldo Carnino",
@@ -883,7 +910,7 @@
       "zone_id": "avigliana-via-don-luigi-balbiano",
       "comune": "Avigliana",
       "target_street": "via Don Luigi Balbiano",
-      "listing_target": "via Don Luigi Balbiano 11",
+      "listing_target": "via Don Luigi Balbiano 27/m",
       "listing_url": "https://www.immobiliare.it/annunci/132226918/",
       "streets": [
         "via Don Luigi Balbiano"
@@ -955,7 +982,7 @@
       "zone_id": "buttigliera-alta-vicolo-moncenisio",
       "comune": "Buttigliera Alta",
       "target_street": "vicolo Moncenisio",
-      "listing_target": "vicolo Moncenisio 4",
+      "listing_target": "vicolo Moncenisio 2",
       "listing_url": "https://www.immobiliare.it/annunci/123148631/",
       "streets": [
         "vicolo Moncenisio"
