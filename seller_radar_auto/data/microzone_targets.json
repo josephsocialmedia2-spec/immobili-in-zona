@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T17:20:09.067996+00:00",
+  "generated_at": "2026-09-12T19:34:49.274157+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -116,8 +116,8 @@
       "zone_id": "almese-via-morsino",
       "comune": "Almese",
       "target_street": "via Morsino",
-      "listing_target": "Via Morsino 43",
-      "listing_url": "https://www.immobiliare.it/annunci/127965590/",
+      "listing_target": "via Morsino 74/5",
+      "listing_url": "https://www.immobiliare.it/annunci/131300422/",
       "streets": [
         "via Morsino",
         "Piazza Comba",
@@ -416,7 +416,7 @@
       "zone_id": "avigliana-via-chiattera",
       "comune": "Avigliana",
       "target_street": "via Chiattera",
-      "listing_target": "Via Chiattera 62",
+      "listing_target": "via Chiattera 56",
       "listing_url": "https://www.immobiliare.it/annunci/128300848/",
       "streets": [
         "via Chiattera",
@@ -634,6 +634,21 @@
         "Corso Superga",
         "Via Monte Cuneo",
         "Via Rivoli"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-della-torre",
+      "comune": "Buttigliera Alta",
+      "target_street": "via della Torre",
+      "listing_target": "via della Torre 59",
+      "listing_url": "https://www.caasa.it/torino/buttigliera-alta-zona-ferriera/casa-indipendente/in-vendita.html",
+      "streets": [
+        "via della Torre",
+        "Corso Torino",
+        "Corso Vandel",
+        "Strada Antica di Francia",
+        "Via Capoluogo"
       ],
       "osm_status": "OK"
     },

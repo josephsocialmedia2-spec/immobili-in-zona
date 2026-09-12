@@ -19,9 +19,9 @@
       "numero": 2,
       "comune": "Beinasco",
       "score_comune": 58,
-      "righe_lavoro": 18,
-      "residenziale": 14,
-      "commerciale": 4,
+      "righe_lavoro": 19,
+      "residenziale": 13,
+      "commerciale": 6,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -41,9 +41,9 @@
       "numero": 4,
       "comune": "Avigliana",
       "score_comune": 48,
-      "righe_lavoro": 27,
-      "residenziale": 25,
-      "commerciale": 2,
+      "righe_lavoro": 24,
+      "residenziale": 24,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -52,8 +52,8 @@
       "numero": 5,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
-      "righe_lavoro": 16,
-      "residenziale": 16,
+      "righe_lavoro": 15,
+      "residenziale": 15,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -61,17 +61,6 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
-      "comune": "Rivalta di Torino",
-      "score_comune": 38,
-      "righe_lavoro": 6,
-      "residenziale": 4,
-      "commerciale": 2,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
       "comune": "Valgioie",
       "score_comune": 35,
       "righe_lavoro": 6,
@@ -81,12 +70,23 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Rosta",
       "score_comune": 33,
-      "righe_lavoro": 11,
+      "righe_lavoro": 10,
       "residenziale": 8,
+      "commerciale": 2,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
+      "comune": "Alpignano",
+      "score_comune": 30,
+      "righe_lavoro": 17,
+      "residenziale": 14,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -94,22 +94,22 @@
     {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Alpignano",
+      "comune": "Trana",
       "score_comune": 30,
-      "righe_lavoro": 16,
-      "residenziale": 13,
-      "commerciale": 3,
+      "righe_lavoro": 11,
+      "residenziale": 10,
+      "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Trana",
+      "comune": "Grugliasco",
       "score_comune": 30,
-      "righe_lavoro": 11,
-      "residenziale": 10,
-      "commerciale": 1,
+      "righe_lavoro": 19,
+      "residenziale": 16,
+      "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }
