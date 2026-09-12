@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Python syntax
         run: |
-          python -m py_compile seller_radar_auto/search_engine.py seller_radar_auto/discovery_one.py seller_radar_auto/build_municipality_matrix.py seller_radar_auto/radar_postprocess.py seller_radar_auto/prepare_acquisition_route.py
+          python -m py_compile seller_radar_auto/search_engine.py seller_radar_auto/discovery_one.py seller_radar_auto/build_municipality_matrix.py seller_radar_auto/radar_postprocess.py seller_radar_auto/prepare_acquisition_route.py seller_radar_auto/merge_discovery.py
       - name: Configuration coverage Villar Dora radial
         run: |
           python - <<'PY'
@@ -40,10 +40,11 @@ jobs:
           assert ranks == sorted(ranks) and len(ranks)==len(set(ranks)), ranks
           with (root/'portal_catalog.csv').open(encoding='utf-8-sig',newline='') as f:
               portals=[r for r in csv.DictReader(f) if r.get('enabled')=='1' and r.get('query_template')]
-          assert len(portals) >= 19, len(portals)
+          assert len(portals) >= 24, len(portals)
           agency=[r for r in portals if r.get('private_intent')!='1']
           private=[r for r in portals if r.get('private_intent')=='1']
-          assert agency and private, 'devono esistere fonti concorrenza e privati'
+          assert len(agency)>=10 and len(private)>=5, {'agency':len(agency),'private':len(private)}
+          assert all(int(r.get('max_results') or 0)>=20 for r in portals), 'copertura fonte troppo bassa'
           print('PASS hub: Villar Dora')
           print('PASS configured territory:',len(enabled),'towns')
           print('PASS left:',sum(r['side']=='SINISTRA' for r in enabled),'right:',sum(r['side']=='DESTRA' for r in enabled))
@@ -53,12 +54,16 @@ jobs:
         run: |
           python seller_radar_auto/build_municipality_matrix.py > /tmp/matrix.json
           python - <<'PY'
-          import json
+          import csv,json
+          from pathlib import Path
           d=json.load(open('/tmp/matrix.json',encoding='utf-8'))
-          rows=d.get('include') or []
-          assert rows and rows[0]=={'comune':'Villar Dora','side':'CENTRO','radial_rank':0}, rows[:1]
-          assert all(x.get('side') in {'CENTRO','SINISTRA','DESTRA'} for x in rows)
-          print('PASS matrix rows:',len(rows))
+          towns=d.get('comune') or []
+          with Path('seller_radar_auto/municipalities.csv').open(encoding='utf-8-sig',newline='') as f:
+              enabled=[r for r in csv.DictReader(f) if r.get('enabled')=='1']
+          expected=[r['comune'] for r in enabled]
+          assert towns==expected, {'matrix':towns,'expected':expected}
+          assert towns and towns[0]=='Villar Dora', towns[:1]
+          print('PASS matrix rows:',len(towns))
           PY
       - name: Real public-search smoke Villar Dora
         env:
