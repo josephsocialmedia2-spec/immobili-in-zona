@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T14:25:54.911413+00:00",
+  "generated_at": "2026-09-12T17:20:09.067996+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -34,6 +34,21 @@
         "Via Circonvallazione",
         "Via Combal",
         "Via dei Copertili"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-avigliana",
+      "comune": "Almese",
+      "target_street": "via Avigliana",
+      "listing_target": "VIA AVIGLIANA 98",
+      "listing_url": "https://www.nuroa.it/affitto-case/almese",
+      "streets": [
+        "via Avigliana",
+        "Piazza Martiri della Libertà",
+        "Via Dante Alighieri",
+        "Via dell'Ajgro",
+        "Via della Michela"
       ],
       "osm_status": "OK"
     },
@@ -109,21 +124,6 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-avigliana",
-      "comune": "Almese",
-      "target_street": "via Avigliana",
-      "listing_target": "VIA AVIGLIANA 98",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
-      "streets": [
-        "via Avigliana",
-        "Piazza Martiri della Libertà",
-        "Via Dante Alighieri",
-        "Via dell'Ajgro",
-        "Via della Michela"
       ],
       "osm_status": "OK"
     },
