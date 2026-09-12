@@ -7,6 +7,10 @@ Regole obbligatorie:
 - ogni altro comune abilitato è SINISTRA o DESTRA;
 - radial_rank è univoco e determina l'ordine operativo;
 - i comuni disabilitati sono fuori perimetro e non entrano nella discovery.
+
+L'output mantiene la forma storica {"comune":[...]} perché è consumata da
+più workflow GitHub; lato e radial_rank restano nella fonte municipalities.csv
+e vengono persistiti negli item durante il merge della discovery.
 """
 import csv
 import json
@@ -44,4 +48,4 @@ for row in rows:
     seen_names.add(key); seen_ranks.add(row["radial_rank"])
 
 rows.sort(key=lambda r:(r["radial_rank"],r["comune"].casefold()))
-print(json.dumps({"include":rows}, ensure_ascii=False, separators=(",", ":")))
+print(json.dumps({"comune":[r["comune"] for r in rows]}, ensure_ascii=False, separators=(",", ":")))
