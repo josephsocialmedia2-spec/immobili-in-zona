@@ -8,48 +8,68 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-24.04
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - name: Python syntax
         run: |
-          python -m py_compile seller_radar_auto/search_engine.py seller_radar_auto/discovery_one.py seller_radar_auto/radar_postprocess.py seller_radar_auto/prepare_acquisition_route.py windows_valle_susa/filtra_susa_20km.py
-      - name: Configuration coverage Susa 20 km
+          python -m py_compile seller_radar_auto/search_engine.py seller_radar_auto/discovery_one.py seller_radar_auto/build_municipality_matrix.py seller_radar_auto/radar_postprocess.py seller_radar_auto/prepare_acquisition_route.py
+      - name: Configuration coverage Villar Dora radial
         run: |
           python - <<'PY'
           import csv, json
           from pathlib import Path
           root=Path('seller_radar_auto')
           cfg=json.loads((root/'f1_microzone_config.json').read_text(encoding='utf-8'))
-          assert cfg.get('priority_center') == 'Susa', cfg.get('priority_center')
-          assert int(cfg.get('priority_radius_km') or 0) == 20, cfg.get('priority_radius_km')
-          expected=[str(x).strip() for x in cfg.get('priority_towns',[]) if str(x).strip()]
-          assert expected, 'priority_towns vuoto'
-          assert len(expected) == len(set(expected)), 'duplicati in priority_towns'
+          assert cfg.get('priority_center') == 'Villar Dora', cfg.get('priority_center')
+          assert cfg.get('territory_rule') == 'VILLAR_DORA_RADIAL_SINISTRA_DESTRA', cfg.get('territory_rule')
+          assert cfg.get('crm_entry_rule') == 'EVERY_DISCOVERED_MARKET_SIGNAL_MUST_BE_REGISTERED_BEFORE_OPERATIONAL_ACTION'
+          assert cfg.get('market_streams') == ['CONCORRENZA','PRIVATI','INCARICHI_SCADUTI']
           with (root/'municipalities.csv').open(encoding='utf-8-sig',newline='') as f:
               rows=list(csv.DictReader(f))
-          enabled=[r['comune'] for r in rows if r.get('enabled')=='1']
-          assert enabled == expected, {'enabled': enabled, 'expected': expected}
-          for forbidden in ('Collegno','Rivoli','Avigliana',"Sant'Ambrogio di Torino"):
-              assert forbidden not in enabled, forbidden
+          enabled=[r for r in rows if r.get('enabled')=='1']
+          assert enabled, 'territorio vuoto'
+          centers=[r for r in enabled if r.get('side')=='CENTRO']
+          assert len(centers)==1 and centers[0].get('comune')=='Villar Dora', centers
+          assert all(r.get('side') in {'CENTRO','SINISTRA','DESTRA'} for r in enabled)
+          assert all(r.get('side')!='CENTRO' for r in enabled if r.get('comune')!='Villar Dora')
+          names=[r['comune'] for r in enabled]
+          assert names == cfg.get('priority_towns'), {'municipalities':names,'config':cfg.get('priority_towns')}
+          assert "Sant'Ambrogio di Torino" in names
+          ranks=[int(r.get('radial_rank') or -1) for r in enabled]
+          assert ranks == sorted(ranks) and len(ranks)==len(set(ranks)), ranks
           with (root/'portal_catalog.csv').open(encoding='utf-8-sig',newline='') as f:
               portals=[r for r in csv.DictReader(f) if r.get('enabled')=='1' and r.get('query_template')]
           assert len(portals) >= 19, len(portals)
-          print('PASS center:',cfg['priority_center'],'radius_km:',cfg['priority_radius_km'])
-          print('PASS enabled territories:',len(enabled),', '.join(enabled))
-          print('PASS configured query sources:',len(portals))
+          agency=[r for r in portals if r.get('private_intent')!='1']
+          private=[r for r in portals if r.get('private_intent')=='1']
+          assert agency and private, 'devono esistere fonti concorrenza e privati'
+          print('PASS hub: Villar Dora')
+          print('PASS configured territory:',len(enabled),'towns')
+          print('PASS left:',sum(r['side']=='SINISTRA' for r in enabled),'right:',sum(r['side']=='DESTRA' for r in enabled))
+          print('PASS configured query sources:',len(portals),'agency:',len(agency),'private:',len(private))
           PY
-      - name: Real public-search smoke Susa
+      - name: Municipality matrix smoke
+        run: |
+          python seller_radar_auto/build_municipality_matrix.py > /tmp/matrix.json
+          python - <<'PY'
+          import json
+          d=json.load(open('/tmp/matrix.json',encoding='utf-8'))
+          rows=d.get('include') or []
+          assert rows and rows[0]=={'comune':'Villar Dora','side':'CENTRO','radial_rank':0}, rows[:1]
+          assert all(x.get('side') in {'CENTRO','SINISTRA','DESTRA'} for x in rows)
+          print('PASS matrix rows:',len(rows))
+          PY
+      - name: Real public-search smoke Villar Dora
         env:
-          F1_COMUNE: Susa
+          F1_COMUNE: Villar Dora
           F1_DISCOVERY_OUT: /tmp/f1-discovery-qa.json
           F1_SEARCH_INTERVAL: "1"
         run: |
           python seller_radar_auto/discovery_one.py
           python - <<'PY'
           import json
-          p='/tmp/f1-discovery-qa.json'
-          d=json.load(open(p,encoding='utf-8'))
+          d=json.load(open('/tmp/f1-discovery-qa.json',encoding='utf-8'))
           statuses=d.get('status') or []
           results=d.get('results') or []
           assert len(statuses) >= 20, len(statuses)
@@ -57,5 +77,5 @@ jobs:
           raw=sum(int(x.get('RISULTATI_GREZZI') or 0) for x in statuses)
           accepted=sum(int(x.get('ACCETTATI') or 0) for x in statuses)
           assert ok > 0, 'nessuna query pubblica riuscita'
-          print('QA queries:',len(statuses),'OK:',ok,'raw:',raw,'accepted:',accepted,'unique:',len(results))
+          print('QA Villar Dora queries:',len(statuses),'OK:',ok,'raw:',raw,'accepted:',accepted,'unique:',len(results))
           PY
