@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T06:07:48.728095+00:00",
+  "generated_at": "2026-09-12T10:50:53.477803+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -173,6 +173,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "almese-via-granaglie",
+      "comune": "Almese",
+      "target_street": "via Granaglie",
+      "listing_target": "via Granaglie 43",
+      "listing_url": "https://www.immobiliare.it/annunci/132358596/",
+      "streets": [
+        "via Granaglie",
+        "Strada della Torre",
+        "Via Altinetti",
+        "Via Avigliana",
+        "Via dei Caduti"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-via-monte-cuneo",
       "comune": "Avigliana",
       "target_street": "via Monte Cuneo",
@@ -184,21 +199,6 @@
         "Via Chiattera",
         "Via don Alberto Milano",
         "Via Oronte Nota"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "avigliana-via-moncenisio-grangia",
-      "comune": "Avigliana",
-      "target_street": "Via Moncenisio - Grangia",
-      "listing_target": "Via Moncenisio - Grangia 8",
-      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
-      "streets": [
-        "Via Moncenisio - Grangia",
-        "Borgata Malano",
-        "Via Cuminie",
-        "Via don Campagna",
-        "Via Drubiaglio"
       ],
       "osm_status": "OK"
     },
@@ -582,7 +582,7 @@
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
       "listing_target": "Via IV Novembre 5",
-      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html",
+      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
         "Via Quattro Novembre",
@@ -604,21 +604,6 @@
         "Via Cornaglio",
         "Via Mario Greco",
         "Via Salvador Allende"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "buttigliera-alta-corso-superga",
-      "comune": "Buttigliera Alta",
-      "target_street": "Corso Superga",
-      "listing_target": "Corso Superga 57/4",
-      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
-      "streets": [
-        "Corso Superga",
-        "Corso Laghi",
-        "Via Madonna dei Boschi",
-        "Via Ragazzi del '99",
-        "Via Reano"
       ],
       "osm_status": "OK"
     },
@@ -896,6 +881,18 @@
       "listing_url": "https://www.idealista.it/immobile/35234714/",
       "streets": [
         "Via Ruffini"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-sacra-san-michele-laghi",
+      "comune": "Avigliana",
+      "target_street": "Via Sacra San Michele - Laghi",
+      "listing_target": "Via Sacra San Michele - Laghi 6",
+      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via Sacra San Michele - Laghi"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

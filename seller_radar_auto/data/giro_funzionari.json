@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "Almese",
       "score_comune": 56,
-      "righe_lavoro": 7,
-      "residenziale": 4,
+      "righe_lavoro": 8,
+      "residenziale": 5,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -41,8 +41,8 @@
       "numero": 4,
       "comune": "Avigliana",
       "score_comune": 48,
-      "righe_lavoro": 27,
-      "residenziale": 25,
+      "righe_lavoro": 28,
+      "residenziale": 26,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -50,6 +50,17 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
+      "comune": "Rivalta di Torino",
+      "score_comune": 38,
+      "righe_lavoro": 8,
+      "residenziale": 5,
+      "commerciale": 3,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 6",
+      "numero": 6,
       "comune": "Druento",
       "score_comune": 35,
       "righe_lavoro": 11,
@@ -59,8 +70,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 6",
-      "numero": 6,
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Reano",
       "score_comune": 35,
       "righe_lavoro": 8,
@@ -70,8 +81,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Rosta",
       "score_comune": 33,
       "righe_lavoro": 11,
@@ -81,35 +92,24 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
-      "comune": "Alpignano",
-      "score_comune": 30,
-      "righe_lavoro": 15,
-      "residenziale": 12,
-      "commerciale": 3,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Trana",
+      "comune": "Alpignano",
       "score_comune": 30,
-      "righe_lavoro": 10,
-      "residenziale": 9,
-      "commerciale": 1,
+      "righe_lavoro": 16,
+      "residenziale": 13,
+      "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Borgone Susa",
+      "comune": "Trana",
       "score_comune": 30,
-      "righe_lavoro": 26,
-      "residenziale": 26,
-      "commerciale": 0,
+      "righe_lavoro": 11,
+      "residenziale": 10,
+      "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }
