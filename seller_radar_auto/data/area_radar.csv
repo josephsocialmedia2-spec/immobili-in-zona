@@ -13,7 +13,6 @@ d48aa39affeee332a566,Villar Dora,NON_DETERMINATO,Via Celle,VAI_IN_ZONA,Via Celle
 81ad12948dc002c416d4,Buttigliera Alta,NON_DETERMINATO,Via Conti Carron,VAI_IN_ZONA,Via Conti Carron 57,,PRONTO,https://www.idealista.it/immobile/33719415/
 3cb21c58d0c3d50430d6,Avigliana,NON_DETERMINATO,VIA MONTE CUNEO,VAI_IN_ZONA,VIA MONTE CUNEO 6,,PRONTO,https://www.luxuryestate.com/it/p131147981-villa-for-sale-avigliana
 5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.immobiliare.it/annunci/119867056/
-5fe366ce6142845c6cfa,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.immobiliare.it/annunci/119867056/
 f03f60de65c9aab43eb5,Almese,NON_DETERMINATO,via Montecapretto,VAI_IN_ZONA,via Montecapretto 24,,PRONTO,https://www.immobiliare.it/annunci/108146029/
 2356b8a6cc2bf07676f7,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 29,,PRONTO,https://www.immobiliare.it/annunci/130993624/
 c49246626beeeef88169,Almese,NON_DETERMINATO,frazione Tuberghengo,VAI_IN_ZONA,frazione Tuberghengo 2,,PRONTO,https://www.immobiliare.it/annunci/101503673/
@@ -21,7 +20,8 @@ d11a35dc33bf88a2bc87,Almese,NON_DETERMINATO,Via Almese,VAI_IN_ZONA,Via Almese 10
 d11a35dc33bf88a2bc87,Almese,NON_DETERMINATO,Via Almese,VAI_IN_ZONA,Via Almese 64,,PRONTO,https://www.idealista.it/immobile/35031076/
 f203f95c72721cdc179e,Alpignano,INDIZIO_AGENZIA,Via Della costa,VAI_IN_ZONA,Via Della costa 41,,PRONTO,https://www.gabetti.it/vendita/alpignano
 f203f95c72721cdc179e,Alpignano,INDIZIO_AGENZIA,Via Della costa,VAI_IN_ZONA,via della Costa 71,,PRONTO,https://www.gabetti.it/vendita/alpignano
-8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Via Sacra San Michele - Laghi,VAI_IN_ZONA,Via Sacra San Michele - Laghi 6,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
+8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Via Moncenisio - Grangia,VAI_IN_ZONA,Via Moncenisio - Grangia 4,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
+8ea27ac2188aa7571e12,Avigliana,INDIZIO_AGENZIA,Via Moncenisio - Grangia,VAI_IN_ZONA,Via Moncenisio - Grangia 8,,PRONTO,https://avigliana1.tecnorete.it/immobili-in-vendita
 8b565539856bab5ada39,Bardonecchia,INDIZIO_AGENZIA,Via Sommeiller,VAI_IN_ZONA,Via Sommeiller 8,,PRONTO,https://www.gabetti.it/vendita/bardonecchia
 318b0b8cf624873620cf,Borgone Susa,INDIZIO_AGENZIA,Via dei Gravè,VAI_IN_ZONA,Via dei Gravè 5,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/borgone-susa.html
 318b0b8cf624873620cf,Borgone Susa,INDIZIO_AGENZIA,Via dei Gravè,VAI_IN_ZONA,via dei Gravè 4,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/borgone-susa.html
@@ -84,7 +84,7 @@ aaa238999467f83f1e8b,Avigliana,NON_DETERMINATO,via Sacra San Michele,VAI_IN_ZONA
 9007fd5e0eccfe1089c3,Avigliana,NON_DETERMINATO,via villar dora,VAI_IN_ZONA,via villar dora 15,,PRONTO,https://www.immobiliare.it/annunci/130446938/
 dcc79366123e25e678f4,Avigliana,NON_DETERMINATO,via 4 Novembre,VAI_IN_ZONA,via 4 Novembre 21,,PRONTO,https://www.immobiliare.it/annunci/130632950/
 c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,corso Laghi 238,,PRONTO,https://www.immobiliare.it/annunci/129213392/
-c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,Corso Laghi 165,,PRONTO,https://www.immobiliare.it/annunci/129213392/
+c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://www.immobiliare.it/annunci/129213392/
 77ecc5911b39e9f9e909,Avigliana,NON_DETERMINATO,Via Cesare Battisti,VAI_IN_ZONA,Via Cesare Battisti 19,,PRONTO,https://www.idealista.it/immobile/36653195/
 cb7a9c45ac78165b7c89,Avigliana,NON_DETERMINATO,Via Felice Goffi,VAI_IN_ZONA,Via Felice Goffi 6,,PRONTO,https://www.idealista.it/immobile/36626365/
 9b1158889eced804ea5b,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.idealista.it/immobile/36264890/
@@ -153,13 +153,11 @@ ca0da030b717e3360d8b,Collegno,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avig
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 50,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 33f,,PRONTO,https://www.nuroa.it/affitto-case/almese
 2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 21,,PRONTO,https://www.nuroa.it/affitto-case/almese
-2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.nuroa.it/affitto-case/almese
 2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.nuroa.it/affitto-case/almese
 de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,Via Collegno 23,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
 de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,via Collegno 84,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
 1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via dei Ronchi,VAI_IN_ZONA,Via dei Ronchi 51/A6,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
 1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via dei Ronchi,VAI_IN_ZONA,Via dei Ronchi 51,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
-1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via dei Ronchi,VAI_IN_ZONA,via dei Ronchi 270,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
 66478e0ea28bbf6bd725,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 70,,PRONTO,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/
 66478e0ea28bbf6bd725,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 165,,PRONTO,https://www.valsusaoggi.it/valsusa-affittasi-locale-commerciale-offerta-ad-avigliana/
 3adcafe82d35ce3c7be8,Bardonecchia,NON_DETERMINATO,Piazza Europa,VAI_IN_ZONA,Piazza Europa 18/B,,PRONTO,https://maisondoc.it/affitto-stagionale/
@@ -234,6 +232,7 @@ ab2196a93e1fb8725dc9,Buttigliera Alta,INDIZIO_AGENZIA,Via Monte Bianco,VAI_IN_ZO
 c10b47311edad0b31066,Caprie,NON_DETERMINATO,Viale Kennedy,VAI_IN_ZONA,Viale Kennedy 27,,PRONTO,https://www.casa.it/immobili/54638195/
 d6373297aedc07de7664,San Valeriano,NON_DETERMINATO,"via principale del paese e vicina al centro, appartamento al piano terra di",VAI_IN_ZONA,"via principale del paese e vicina al centro, appartamento al piano terra di 98",,PRONTO,https://www.nuroa.it/vendita-immobili/appartamento-borgone-susa
 341b2c68c4675093ddb3,Alpignano,NON_DETERMINATO,Strada della Costa,VAI_IN_ZONA,Strada della Costa 91,,PRONTO,https://www.immobiliare.it/annunci/121671340/
+341b2c68c4675093ddb3,Alpignano,NON_DETERMINATO,Strada della Costa,VAI_IN_ZONA,Strada della Costa 6,,PRONTO,https://www.immobiliare.it/annunci/121671340/
 8df3cd2fe1742ec01fce,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 2,,PRONTO,https://www.immobiliare.it/annunci/129828138/
 8df3cd2fe1742ec01fce,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/129828138/
 8df3cd2fe1742ec01fce,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.immobiliare.it/annunci/129828138/
@@ -343,6 +342,7 @@ b7b6010cf71194115081,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avi
 4c451e0c2ec7488cc987,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.immobiliare.it/annunci/131177854/
 4c451e0c2ec7488cc987,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/131177854/
 d85ba2d8e8fd31f1b4ee,Borgone Susa,NON_DETERMINATO,Via A. Abegg,VAI_IN_ZONA,Via A. Abegg 68,,PRONTO,https://www.idealista.it/immobile/31221200/
+d85ba2d8e8fd31f1b4ee,Borgone Susa,NON_DETERMINATO,Via A. Abegg,VAI_IN_ZONA,Via A. Abegg 34,,PRONTO,https://www.idealista.it/immobile/31221200/
 d85ba2d8e8fd31f1b4ee,Borgone Susa,NON_DETERMINATO,Via A. Abegg,VAI_IN_ZONA,via A. Abegg 18,,PRONTO,https://www.idealista.it/immobile/31221200/
 d54334bfd94a66030788,Borgone Susa,INDIZIO_AGENZIA,Via A. Abegg,VAI_IN_ZONA,Via A. Abegg 34,,PRONTO,https://www.idealista.it/immobile/33743415/
 d54334bfd94a66030788,Borgone Susa,INDIZIO_AGENZIA,Via A. Abegg,VAI_IN_ZONA,Via A. Abegg 68,,PRONTO,https://www.idealista.it/immobile/33743415/
@@ -423,7 +423,6 @@ f9e99b22668ac06e5306,Bruino,NON_DETERMINATO,via Volvera,VAI_IN_ZONA,via Volvera 
 987a9ccb966f7cd0d1fe,Beinasco,NON_DETERMINATO,Strada Torino,VAI_IN_ZONA,Strada Torino 90,,PRONTO,https://www.idealista.it/immobile/31689224/
 987a9ccb966f7cd0d1fe,Beinasco,NON_DETERMINATO,Strada Torino,VAI_IN_ZONA,Strada Torino 122,,PRONTO,https://www.idealista.it/immobile/31689224/
 e28eafe38d7fc74f1b71,Beinasco,NON_DETERMINATO,via Torino,VAI_IN_ZONA,via Torino 36,,PRONTO,https://www.immobiliare.it/annunci/110515307/
-e28eafe38d7fc74f1b71,Beinasco,NON_DETERMINATO,via Torino,VAI_IN_ZONA,via Torino 14,,PRONTO,https://www.immobiliare.it/annunci/110515307/
 8623d7271397de64e9b0,Bruino,NON_DETERMINATO,via Torino,VAI_IN_ZONA,via Torino 78,,PRONTO,https://www.immobiliare.it/annunci/132181574/
 8623d7271397de64e9b0,Bruino,NON_DETERMINATO,via Torino,VAI_IN_ZONA,via torino 78,,PRONTO,https://www.immobiliare.it/annunci/132181574/
 a97cef39a6fe88183a70,Avigliana,NON_DETERMINATO,via Generale C. Alberto dalla Chiesa,VAI_IN_ZONA,via Generale C. Alberto dalla Chiesa 7,,PRONTO,https://www.immobiliare.it/annunci/119041139/
@@ -451,7 +450,6 @@ ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avi
 24a508a9b50e4819738b,Borgone Susa,NON_DETERMINATO,Via Bruno Mosconi,VAI_IN_ZONA,Via Bruno Mosconi 24,,PRONTO,https://www.idealista.it/immobile/34756672/
 9e6544bd16fced76b81c,Borgone Susa,NON_DETERMINATO,Via Florio Benvenuto,VAI_IN_ZONA,Via Florio Benvenuto 10,,PRONTO,https://www.idealista.it/immobile/34302532/
 815c0502392e2fb7ef45,Borgone Susa,NON_DETERMINATO,Via A. Abegg,VAI_IN_ZONA,Via A. Abegg 67,,PRONTO,https://www.idealista.it/immobile/31520884/
-815c0502392e2fb7ef45,Borgone Susa,NON_DETERMINATO,Via A. Abegg,VAI_IN_ZONA,Via A. Abegg 34,,PRONTO,https://www.idealista.it/immobile/31520884/
 815c0502392e2fb7ef45,Borgone Susa,NON_DETERMINATO,Via A. Abegg,VAI_IN_ZONA,Via A. Abegg 68,,PRONTO,https://www.idealista.it/immobile/31520884/
 815c0502392e2fb7ef45,Borgone Susa,NON_DETERMINATO,Via A. Abegg,VAI_IN_ZONA,via A. Abegg 18,,PRONTO,https://www.idealista.it/immobile/31520884/
 c6f1619ab90ada01fc92,Bruino,NON_DETERMINATO,via Torino,VAI_IN_ZONA,via Torino 63,,PRONTO,https://www.immobiliare.it/annunci/125835137/
@@ -484,3 +482,16 @@ ea3809aa24d883a5509b,Avigliana,NON_DETERMINATO,Via Partigiani D'Italia,VAI_IN_ZO
 88d07963707c01858779,Beinasco,NON_DETERMINATO,Via Aosta,VAI_IN_ZONA,Via Aosta 16,,PRONTO,https://asteflorio.it/aste/capannone-a-beinasco-to-beinasco-2
 3ba45506fa42f0be6383,Beinasco,INDIZIO_AGENZIA,via Enrico De Nicola,VAI_IN_ZONA,via Enrico De Nicola 10,,PRONTO,https://www.immobiliare.it/annunci/130016970/
 1d95b1f5952adc668bd4,Bruino,NON_DETERMINATO,Via Galileo Ferraris,VAI_IN_ZONA,Via Galileo Ferraris 36,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-bruino
+a00251fe32d5e2e6f836,Avigliana,NON_DETERMINATO,via Micheletta,VAI_IN_ZONA,via Micheletta 23,,PRONTO,https://www.immobiliare.it/annunci/132324314/
+87b352441eb8e008f43b,Avigliana,NON_DETERMINATO,Via Micheletta,VAI_IN_ZONA,Via Micheletta 23,,PRONTO,https://www.idealista.it/immobile/36760841/
+e7edfedd2592c56c3118,Avigliana,NON_DETERMINATO,Via Partigiani D'Italia,VAI_IN_ZONA,Via Partigiani D'Italia 10,,PRONTO,https://www.idealista.it/immobile/36796999/
+844ee7c6cf5bb1c1da5e,Avigliana,NON_DETERMINATO,Via Partigiani D'Italia,VAI_IN_ZONA,Via Partigiani D'Italia 10,,PRONTO,https://www.idealista.it/immobile/36798196/
+447731b9657a1d94ca0f,Avigliana,NON_DETERMINATO,Via Laghi di Avigliana,VAI_IN_ZONA,Via Laghi di Avigliana 29,,PRONTO,https://www.idealista.it/immobile/36748394/
+5f4f282a783aea54595d,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.idealista.it/immobile/36744009/
+5f4f282a783aea54595d,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.idealista.it/immobile/36744009/
+1ee108c2d35ae0921d31,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 18,,PRONTO,https://www.idealista.it/immobile/36752163/
+1ee108c2d35ae0921d31,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.idealista.it/immobile/36752163/
+1ee108c2d35ae0921d31,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.idealista.it/immobile/36752163/
+3301656548c0ccd5ebbd,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 18,,PRONTO,https://www.idealista.it/immobile/36742432/
+3301656548c0ccd5ebbd,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.idealista.it/immobile/36742432/
+3301656548c0ccd5ebbd,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.idealista.it/immobile/36742432/

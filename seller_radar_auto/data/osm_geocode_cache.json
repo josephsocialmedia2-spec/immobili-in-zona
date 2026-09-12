@@ -130,5 +130,11 @@
   "borgata giorda superiore almese": null,
   "vicolo volpellato caprie": null,
   "via g matteotti avigliana": null,
-  "via micheletta a avigliana rexer villa di 239mq in vendita a avigliana avigliana": null
+  "via micheletta a avigliana rexer villa di 239mq in vendita a avigliana avigliana": null,
+  "via micheletta avigliana": {
+    "lat": 45.0711379,
+    "lon": 7.3943543,
+    "display_name": "Via Domenico Micheletta, Chiattera, Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "via laghi di avigliana avigliana": null
 }

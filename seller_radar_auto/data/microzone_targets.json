@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T23:35:05.413725+00:00",
+  "generated_at": "2026-09-12T06:07:48.728095+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -188,6 +188,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "avigliana-via-moncenisio-grangia",
+      "comune": "Avigliana",
+      "target_street": "Via Moncenisio - Grangia",
+      "listing_target": "Via Moncenisio - Grangia 8",
+      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via Moncenisio - Grangia",
+        "Borgata Malano",
+        "Via Cuminie",
+        "Via don Campagna",
+        "Via Drubiaglio"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-corso-laghi",
       "comune": "Avigliana",
       "target_street": "Corso Laghi",
@@ -325,11 +340,11 @@
     {
       "zone_id": "avigliana-via-avigliana",
       "comune": "Avigliana",
-      "target_street": "via Avigliana",
-      "listing_target": "Via Avigliana 4",
-      "listing_url": "https://www.immobiliare.it/annunci/132265274/",
+      "target_street": "Via Avigliana",
+      "listing_target": "Via Avigliana 13",
+      "listing_url": "https://www.idealista.it/immobile/36742432/",
       "streets": [
-        "via Avigliana",
+        "Via Avigliana",
         "Via Almese",
         "Via Giaveno",
         "Via Primo Levi",
@@ -522,7 +537,7 @@
       "comune": "Avigliana",
       "target_street": "Via Partigiani D'Italia",
       "listing_target": "Via Partigiani D'Italia 10",
-      "listing_url": "https://www.casa.it/immobili/54715382/",
+      "listing_url": "https://www.idealista.it/immobile/36798196/",
       "streets": [
         "Via Partigiani D'Italia",
         "Via Fratelli Cervi",
@@ -531,6 +546,21 @@
         "Vicolo Ferronia"
       ],
       "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-micheletta",
+      "comune": "Avigliana",
+      "target_street": "Via Micheletta",
+      "listing_target": "Via Micheletta 23",
+      "listing_url": "https://www.idealista.it/immobile/36760841/",
+      "streets": [
+        "Via Micheletta",
+        "Via Domenico Micheletta",
+        "Via Monte Cuneo",
+        "Via Renzo Suriani",
+        "Corso Laghi"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
       "zone_id": "buttigliera-alta-via-allende",
@@ -871,18 +901,6 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "avigliana-via-sacra-san-michele-laghi",
-      "comune": "Avigliana",
-      "target_street": "Via Sacra San Michele - Laghi",
-      "listing_target": "Via Sacra San Michele - Laghi 6",
-      "listing_url": "https://avigliana1.tecnorete.it/immobili-in-vendita",
-      "streets": [
-        "Via Sacra San Michele - Laghi"
-      ],
-      "osm_status": "TARGET_NON_RISOLTA",
-      "reason": "POSIZIONE/VIA DA VERIFICARE"
-    },
-    {
       "zone_id": "avigliana-via-aldo-carnino",
       "comune": "Avigliana",
       "target_street": "via Aldo Carnino",
@@ -950,6 +968,18 @@
       "listing_url": "https://rexer.it/immobile/389643",
       "streets": [
         "Via Micheletta a Avigliana - Rexer Villa di 239mq in vendita a Avigliana"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-laghi-di-avigliana",
+      "comune": "Avigliana",
+      "target_street": "Via Laghi di Avigliana",
+      "listing_target": "Via Laghi di Avigliana 29",
+      "listing_url": "https://www.idealista.it/immobile/36748394/",
+      "streets": [
+        "Via Laghi di Avigliana"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
