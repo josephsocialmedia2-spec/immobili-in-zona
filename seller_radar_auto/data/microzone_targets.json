@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T09:54:16.299226+00:00",
+  "generated_at": "2026-09-13T14:42:15.182260+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -907,7 +907,7 @@
       "zone_id": "almese-via-ruffini",
       "comune": "Almese",
       "target_street": "Via Ruffini",
-      "listing_target": "Via Ruffini 1",
+      "listing_target": "Via Ruffini 13",
       "listing_url": "https://www.idealista.it/immobile/35234714/",
       "streets": [
         "Via Ruffini"
