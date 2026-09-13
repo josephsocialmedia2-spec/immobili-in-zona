@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T21:01:15.340387+00:00",
+  "generated_at": "2026-09-13T23:31:49.722898+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -596,7 +596,7 @@
       "zone_id": "buttigliera-alta-via-iv-novembre",
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
-      "listing_target": "Via IV Novembre 5",
+      "listing_target": "via IV novembre 14",
       "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
@@ -638,17 +638,17 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "buttigliera-alta-via-della-torre",
+      "zone_id": "buttigliera-alta-via-del-cavallo-grigio-ferriera-gio",
       "comune": "Buttigliera Alta",
-      "target_street": "via della Torre",
-      "listing_target": "via della Torre 59",
+      "target_street": "via del Cavallo Grigio, Ferriera gio",
+      "listing_target": "via del Cavallo Grigio, Ferriera gio 3",
       "listing_url": "https://www.caasa.it/torino/buttigliera-alta-zona-ferriera/casa-indipendente/in-vendita.html",
       "streets": [
-        "via della Torre",
+        "via del Cavallo Grigio, Ferriera gio",
         "Corso Torino",
         "Corso Vandel",
-        "Strada Antica di Francia",
-        "Via Capoluogo"
+        "Piazza Ragazzi di Piazza Tienanmen",
+        "Strada Antica di Francia"
       ],
       "osm_status": "OK"
     },
@@ -664,6 +664,21 @@
         "Corso Vandel",
         "Strada Antica di Francia",
         "Strada della Praia"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-della-torre",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via della Torre",
+      "listing_target": "Via della Torre 10/A",
+      "listing_url": "https://www.idealista.it/immobile/36323286/",
+      "streets": [
+        "Via della Torre",
+        "Corso Torino",
+        "Corso Vandel",
+        "Strada Antica di Francia",
+        "Via Capoluogo"
       ],
       "osm_status": "OK"
     },
