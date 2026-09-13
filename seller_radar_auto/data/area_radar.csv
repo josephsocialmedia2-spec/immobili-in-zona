@@ -83,8 +83,6 @@ aaa238999467f83f1e8b,Avigliana,NON_DETERMINATO,via Sacra San Michele,VAI_IN_ZONA
 9007fd5e0eccfe1089c3,Avigliana,NON_DETERMINATO,via villar dora,VAI_IN_ZONA,via villar dora 15,,PRONTO,https://www.immobiliare.it/annunci/130446938/
 dcc79366123e25e678f4,Avigliana,NON_DETERMINATO,via 4 Novembre,VAI_IN_ZONA,via 4 Novembre 21,,PRONTO,https://www.immobiliare.it/annunci/130632950/
 c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,corso Laghi 238,,PRONTO,https://www.immobiliare.it/annunci/129213392/
-c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,Corso Laghi 165,,PRONTO,https://www.immobiliare.it/annunci/129213392/
-c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,Corso Laghi 42,,PRONTO,https://www.immobiliare.it/annunci/129213392/
 77ecc5911b39e9f9e909,Avigliana,NON_DETERMINATO,Via Cesare Battisti,VAI_IN_ZONA,Via Cesare Battisti 19,,PRONTO,https://www.idealista.it/immobile/36653195/
 cb7a9c45ac78165b7c89,Avigliana,NON_DETERMINATO,Via Felice Goffi,VAI_IN_ZONA,Via Felice Goffi 6,,PRONTO,https://www.idealista.it/immobile/36626365/
 9b1158889eced804ea5b,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.idealista.it/immobile/36264890/
@@ -126,6 +124,7 @@ cbe57f4cb885a79a3f73,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,
 a4d364c5ffd5f86bf2ba,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 41,,PRONTO,https://www.immobiliare.it/annunci/127550838/
 83d798285542757f6948,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 5,,PRONTO,https://www.immobiliare.it/annunci/127215327/
 83d798285542757f6948,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 26,,PRONTO,https://www.immobiliare.it/annunci/127215327/
+83d798285542757f6948,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,Via Tarro Boiro 1,,PRONTO,https://www.immobiliare.it/annunci/127215327/
 93aca0f4b12f1f8c2223,Borgone Susa,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,via Montenero 13,,PRONTO,https://www.immobiliare.it/annunci/122226200/
 2d3bbb1079093ec10b90,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 26,,PRONTO,https://www.immobiliare.it/annunci/117236507/
 2d3bbb1079093ec10b90,Borgone Susa,NON_DETERMINATO,via Tarro Boiro,VAI_IN_ZONA,via Tarro Boiro 5,,PRONTO,https://www.immobiliare.it/annunci/117236507/
@@ -372,6 +371,7 @@ dee5f58cad36dc7d904a,Buttigliera Alta,NON_DETERMINATO,via della Torre,VAI_IN_ZON
 dee5f58cad36dc7d904a,Buttigliera Alta,NON_DETERMINATO,via della Torre,VAI_IN_ZONA,Via Della Torre. 3,,PRONTO,https://www.caasa.it/torino/buttigliera-alta-zona-ferriera/casa-indipendente/in-vendita.html
 dee5f58cad36dc7d904a,Buttigliera Alta,NON_DETERMINATO,via della Torre,VAI_IN_ZONA,via della Torre 59,,PRONTO,https://www.caasa.it/torino/buttigliera-alta-zona-ferriera/casa-indipendente/in-vendita.html
 4ce8ae6af7d58b5805f1,Alpignano,NON_DETERMINATO,via Germano Sommeiller,VAI_IN_ZONA,via Germano Sommeiller 7,,PRONTO,https://www.immobiliare.it/annunci/127479090/
+4ce8ae6af7d58b5805f1,Alpignano,NON_DETERMINATO,via Germano Sommeiller,VAI_IN_ZONA,via Germano Sommeiller 17,,PRONTO,https://www.immobiliare.it/annunci/127479090/
 397034e795f02e33d149,Avigliana,NON_DETERMINATO,Corso Laghi,VAI_IN_ZONA,Corso Laghi 159,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-avigliana
 397034e795f02e33d149,Avigliana,NON_DETERMINATO,Corso Laghi,VAI_IN_ZONA,Corso Laghi 42,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-avigliana
 397034e795f02e33d149,Avigliana,NON_DETERMINATO,Corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-avigliana
@@ -437,6 +437,7 @@ a97cef39a6fe88183a70,Avigliana,NON_DETERMINATO,via Generale C. Alberto dalla Chi
 d28666cc215f0a105dd6,Beinasco,NON_DETERMINATO,Corso Racconigi,VAI_IN_ZONA,Corso Racconigi 48,,PRONTO,https://www.nuroa.it/affitto-case/locale-commerciale-beinasco
 c8a9c2af8c034efbcd38,Beinasco,NON_DETERMINATO,via Dante Alighieri,VAI_IN_ZONA,via Dante Alighieri 6,,PRONTO,https://www.immobiliare.it/annunci/127030947/
 025e3b323cd2f7a93856,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 29,,PRONTO,https://www.immobiliare.it/annunci/132169640/
+025e3b323cd2f7a93856,Almese,NON_DETERMINATO,via Roma,VAI_IN_ZONA,Via Roma 8,,PRONTO,https://www.immobiliare.it/annunci/132169640/
 55cb4d66e34bf79bc0cc,Almese,NON_DETERMINATO,Via Ruffini,VAI_IN_ZONA,Via Ruffini 13,,PRONTO,https://www.idealista.it/immobile/35234714/
 ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 15,,PRONTO,https://www.immobiliare.it/annunci/132265274/
 ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/132265274/
@@ -512,3 +513,6 @@ d1e9c84c6daccf6d586a,Almese,INDIZIO_AGENZIA,Borgata Soffietti Bollè,VAI_IN_ZONA
 29389dbb028dfc929458,Beinasco,NON_DETERMINATO,Via Aosta numero,VAI_IN_ZONA,Via Aosta numero 16/A,,PRONTO,https://www.pcase.it/immobili/capannone-vendita-beinasco-sc9708325/
 92fb22cd338e10ca5fdc,Bruino,NON_DETERMINATO,"Piazza Municipio, proponiamo in locazione locale commerciale di",VAI_IN_ZONA,"Piazza Municipio, proponiamo in locazione locale commerciale di 40",,PRONTO,https://www.immobiliare.it/annunci/125595159/
 de1325509ceefaeb4cc9,Beinasco,NON_DETERMINATO,Via Galileo Galilei,VAI_IN_ZONA,Via Galileo Galilei 43,,PRONTO,https://www.nuroa.it/vendita-immobili/bilocale-beinasco
+de1325509ceefaeb4cc9,Beinasco,NON_DETERMINATO,Via Galileo Galilei,VAI_IN_ZONA,Via Galileo Galilei 32,,PRONTO,https://www.nuroa.it/vendita-immobili/bilocale-beinasco
+c7e0b5b08b7ada6f8f9e,Alpignano,NON_DETERMINATO,"via Valdellatorre, a soli",VAI_IN_ZONA,"via Valdellatorre, a soli 300",,PRONTO,https://immobiliare.mitula.it/affitto-appartamento-alpignano
+a3329af859e0bd87c31d,Beinasco,NON_DETERMINATO,Via Aosta,VAI_IN_ZONA,Via Aosta 16/A,,PRONTO,https://www.casa.it/immobili/54721587/

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T14:42:15.182260+00:00",
+  "generated_at": "2026-09-13T18:29:06.627744+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -71,7 +71,7 @@
       "zone_id": "almese-via-roma",
       "comune": "Almese",
       "target_street": "via Roma",
-      "listing_target": "via Roma 29",
+      "listing_target": "Via Roma 8",
       "listing_url": "https://www.immobiliare.it/annunci/132169640/",
       "streets": [
         "via Roma",
