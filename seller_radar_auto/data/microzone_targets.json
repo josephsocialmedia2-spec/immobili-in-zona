@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T19:34:49.274157+00:00",
+  "generated_at": "2026-09-13T09:54:16.299226+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -416,7 +416,7 @@
       "zone_id": "avigliana-via-chiattera",
       "comune": "Avigliana",
       "target_street": "via Chiattera",
-      "listing_target": "via Chiattera 56",
+      "listing_target": "Via Chiattera 62",
       "listing_url": "https://www.immobiliare.it/annunci/128300848/",
       "streets": [
         "via Chiattera",
@@ -911,6 +911,18 @@
       "listing_url": "https://www.idealista.it/immobile/35234714/",
       "streets": [
         "Via Ruffini"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "almese-borgata-soffietti-bolle",
+      "comune": "Almese",
+      "target_street": "Borgata Soffietti Bollè",
+      "listing_target": "Borgata Soffietti Bollè 14",
+      "listing_url": "https://www.immobiliare.it/annunci/114608417/",
+      "streets": [
+        "Borgata Soffietti Bollè"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
