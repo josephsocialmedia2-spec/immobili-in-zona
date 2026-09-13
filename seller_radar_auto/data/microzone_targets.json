@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T18:29:06.627744+00:00",
+  "generated_at": "2026-09-13T21:01:15.340387+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -1019,6 +1019,18 @@
       "listing_url": "https://www.idealista.it/immobile/36748394/",
       "streets": [
         "Via Laghi di Avigliana"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-avogadro",
+      "comune": "Avigliana",
+      "target_street": "via Avogadro",
+      "listing_target": "via Avogadro 31",
+      "listing_url": "https://www.immobiliare.it/annunci/132264762/",
+      "streets": [
+        "via Avogadro"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

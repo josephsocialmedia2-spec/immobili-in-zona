@@ -83,6 +83,8 @@ aaa238999467f83f1e8b,Avigliana,NON_DETERMINATO,via Sacra San Michele,VAI_IN_ZONA
 9007fd5e0eccfe1089c3,Avigliana,NON_DETERMINATO,via villar dora,VAI_IN_ZONA,via villar dora 15,,PRONTO,https://www.immobiliare.it/annunci/130446938/
 dcc79366123e25e678f4,Avigliana,NON_DETERMINATO,via 4 Novembre,VAI_IN_ZONA,via 4 Novembre 21,,PRONTO,https://www.immobiliare.it/annunci/130632950/
 c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,corso Laghi 238,,PRONTO,https://www.immobiliare.it/annunci/129213392/
+c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,Corso Laghi 42,,PRONTO,https://www.immobiliare.it/annunci/129213392/
+c1ad4d3fe6048c75dc6d,Avigliana,NON_DETERMINATO,corso Laghi,VAI_IN_ZONA,corso Laghi 165,,PRONTO,https://www.immobiliare.it/annunci/129213392/
 77ecc5911b39e9f9e909,Avigliana,NON_DETERMINATO,Via Cesare Battisti,VAI_IN_ZONA,Via Cesare Battisti 19,,PRONTO,https://www.idealista.it/immobile/36653195/
 cb7a9c45ac78165b7c89,Avigliana,NON_DETERMINATO,Via Felice Goffi,VAI_IN_ZONA,Via Felice Goffi 6,,PRONTO,https://www.idealista.it/immobile/36626365/
 9b1158889eced804ea5b,Avigliana,NON_DETERMINATO,Via Avigliana,VAI_IN_ZONA,Via Avigliana 13,,PRONTO,https://www.idealista.it/immobile/36264890/
@@ -441,9 +443,7 @@ c8a9c2af8c034efbcd38,Beinasco,NON_DETERMINATO,via Dante Alighieri,VAI_IN_ZONA,vi
 55cb4d66e34bf79bc0cc,Almese,NON_DETERMINATO,Via Ruffini,VAI_IN_ZONA,Via Ruffini 13,,PRONTO,https://www.idealista.it/immobile/35234714/
 ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avigliana 15,,PRONTO,https://www.immobiliare.it/annunci/132265274/
 ef78ae2d07c58fcca768,Avigliana,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,Via Avigliana 4,,PRONTO,https://www.immobiliare.it/annunci/132265274/
-782f0c1e8c4615304c6a,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 9,,PRONTO,https://www.nuroa.it/vendita-immobili/locale-commerciale-beinasco
-782f0c1e8c4615304c6a,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,via San Giacomo 12,,PRONTO,https://www.nuroa.it/vendita-immobili/locale-commerciale-beinasco
-782f0c1e8c4615304c6a,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 41,,PRONTO,https://www.nuroa.it/vendita-immobili/locale-commerciale-beinasco
+782f0c1e8c4615304c6a,Beinasco,NON_DETERMINATO,"via San Felice, zona industriale, proponiamo in vendita capannone di",VAI_IN_ZONA,"via San Felice, zona industriale, proponiamo in vendita capannone di 2200",,PRONTO,https://www.nuroa.it/vendita-immobili/locale-commerciale-beinasco
 4c92b5955ef6e5cf6fe7,Beinasco,NON_DETERMINATO,viale Papa Giovanni Xxiii,VAI_IN_ZONA,viale Papa Giovanni Xxiii 3,,PRONTO,https://www.immobiliare.it/annunci/132231566/
 4c92b5955ef6e5cf6fe7,Beinasco,NON_DETERMINATO,viale Papa Giovanni Xxiii,VAI_IN_ZONA,viale Papa Giovanni XXIII 3,,PRONTO,https://www.immobiliare.it/annunci/132231566/
 4c92b5955ef6e5cf6fe7,Beinasco,NON_DETERMINATO,viale Papa Giovanni Xxiii,VAI_IN_ZONA,Viale Papa Giovanni XXIII 11,,PRONTO,https://www.immobiliare.it/annunci/132231566/
@@ -462,7 +462,6 @@ f66c1e057abc51050e6d,Almese,NON_DETERMINATO,Vicolo Ciandellera,VAI_IN_ZONA,Vicol
 d60bda274383df89e95f,Bruino,NON_DETERMINATO,Via Marconi57,VAI_IN_ZONA,Via Marconi57. 6,,PRONTO,https://www.bilocale.it/bruino-via-marconi57-ufficio-vendita-2721992.html
 d60bda274383df89e95f,Bruino,NON_DETERMINATO,Via Marconi57,VAI_IN_ZONA,Via Marconi57 6,,PRONTO,https://www.bilocale.it/bruino-via-marconi57-ufficio-vendita-2721992.html
 80ea73f48372d51edf0a,Alpignano,NON_DETERMINATO,via Pianezza,VAI_IN_ZONA,via Pianezza 76,,PRONTO,https://www.immobiliare.it/annunci/132249964/
-80ea73f48372d51edf0a,Alpignano,NON_DETERMINATO,via Pianezza,VAI_IN_ZONA,Via Pianezza 83,,PRONTO,https://www.immobiliare.it/annunci/132249964/
 9bbf984461c969f64585,Beinasco,NON_DETERMINATO,Via Principe Amedeo,VAI_IN_ZONA,Via Principe Amedeo 18,,PRONTO,https://www.wikicasa.it/annuncio/30795663
 6c6738a754e391524007,Alpignano,NON_DETERMINATO,"Via Collegno, Alpignano",VAI_IN_ZONA,"Via Collegno, Alpignano 4",,PRONTO,https://www.bilocale.it/vendita-case/alpignano/
 7ef8cfff279601a22c43,Alpignano,INDIZIO_AGENZIA,"Via Collegno, si propone un capannone di circa",VAI_IN_ZONA,"Via Collegno, si propone un capannone di circa 500",,PRONTO,https://www.subito.it/uffici-locali-commerciali/capannone-a-alpignano-torino-659433515.htm
@@ -488,6 +487,7 @@ ea3809aa24d883a5509b,Avigliana,NON_DETERMINATO,Via Partigiani D'Italia,VAI_IN_ZO
 67da772f547f1e2e6708,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 46,,PRONTO,https://www.immobiliare.it/annunci/115022795/
 67da772f547f1e2e6708,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 68,,PRONTO,https://www.immobiliare.it/annunci/115022795/
 88d07963707c01858779,Beinasco,NON_DETERMINATO,Via Aosta,VAI_IN_ZONA,Via Aosta 16/A,,PRONTO,https://asteflorio.it/aste/capannone-a-beinasco-to-beinasco-2
+88d07963707c01858779,Beinasco,NON_DETERMINATO,Via Aosta,VAI_IN_ZONA,via Aosta 16,,PRONTO,https://asteflorio.it/aste/capannone-a-beinasco-to-beinasco-2
 3ba45506fa42f0be6383,Beinasco,INDIZIO_AGENZIA,via Enrico De Nicola,VAI_IN_ZONA,via Enrico De Nicola 10,,PRONTO,https://www.immobiliare.it/annunci/130016970/
 1d95b1f5952adc668bd4,Bruino,NON_DETERMINATO,Via Galileo Ferraris,VAI_IN_ZONA,Via Galileo Ferraris 36,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-bruino
 a00251fe32d5e2e6f836,Avigliana,NON_DETERMINATO,via Micheletta,VAI_IN_ZONA,via Micheletta 23,,PRONTO,https://www.immobiliare.it/annunci/132324314/
@@ -516,3 +516,15 @@ de1325509ceefaeb4cc9,Beinasco,NON_DETERMINATO,Via Galileo Galilei,VAI_IN_ZONA,Vi
 de1325509ceefaeb4cc9,Beinasco,NON_DETERMINATO,Via Galileo Galilei,VAI_IN_ZONA,Via Galileo Galilei 32,,PRONTO,https://www.nuroa.it/vendita-immobili/bilocale-beinasco
 c7e0b5b08b7ada6f8f9e,Alpignano,NON_DETERMINATO,"via Valdellatorre, a soli",VAI_IN_ZONA,"via Valdellatorre, a soli 300",,PRONTO,https://immobiliare.mitula.it/affitto-appartamento-alpignano
 a3329af859e0bd87c31d,Beinasco,NON_DETERMINATO,Via Aosta,VAI_IN_ZONA,Via Aosta 16/A,,PRONTO,https://www.casa.it/immobili/54721587/
+2b831acde3195b678718,Alpignano,NON_DETERMINATO,via Gioachino Rossini,VAI_IN_ZONA,via Gioachino Rossini 9,,PRONTO,https://www.pcase.it/immobili/ufficio-vendita-alpignano-sc9707597/
+c630bfcecd63a04771ac,Avigliana,INDIZIO_AGENZIA,via Avogadro,VAI_IN_ZONA,via Avogadro 31,,PRONTO,https://www.immobiliare.it/annunci/132264762/
+7c60fd48e15ddf3687c8,Beinasco,INDIZIO_AGENZIA,Via Monte Bianco,VAI_IN_ZONA,Via Monte Bianco 60/A,,PRONTO,https://www.tecnocasa.it/vendita/appartamenti/torino/beinasco/61245056.html
+0d8165b16811b0bfb71f,Beinasco,INDIZIO_AGENZIA,Via Monte Bianco,VAI_IN_ZONA,Via Monte Bianco 60/A,,PRONTO,https://www.tecnocasa.it/vendita/appartamenti/torino/beinasco/61256645.html
+ce84b8524477c0657560,Beinasco,INDIZIO_AGENZIA,Via Monte Bianco,VAI_IN_ZONA,Via Monte Bianco 60/A,,PRONTO,https://www.tecnocasa.it/vendita/appartamenti/torino/beinasco/61170331.html
+8077ece28f8ca28433db,Beinasco,NON_DETERMINATO,Via Monte Bianco,VAI_IN_ZONA,Via Monte Bianco 60/A,,PRONTO,https://www.tecnocasa.it/vendita/appartamenti/torino/beinasco/61222089.html
+36fde9babc9a33f70a03,Beinasco,NON_DETERMINATO,Strada Torino,VAI_IN_ZONA,Strada Torino 41,,PRONTO,https://www.tecnocasa.it/vendita/appartamenti/torino/beinasco/61222083.html
+aba1cec97ea836404a09,Beinasco,NON_DETERMINATO,Via Nenni,VAI_IN_ZONA,Via Nenni 8,,PRONTO,https://www.tecnocasa.it/vendita/appartamenti/torino/beinasco/61231469.html
+c43f7b5fc0b54abbbc1d,Beinasco,INDIZIO_AGENZIA,Strada Borgaretto - Borgaretto Centro,VAI_IN_ZONA,Strada Borgaretto - Borgaretto Centro 5,,PRONTO,https://beinasco1.tecnorete.it/immobili-in-vendita
+e7b473cd7d43a8019e53,Beinasco,INDIZIO_AGENZIA,Via Torino,VAI_IN_ZONA,Via Torino 14,,PRONTO,https://www.tecnorete.it/agenzie/immobiliari+residenziali/torino/beinasco/toha3.html
+5a5cc2aae566517166b2,Beinasco,INDIZIO_AGENZIA,Via Torino,VAI_IN_ZONA,Via Torino 60,,PRONTO,https://tempocasa.it/it/vendita/torino/beinasco/stabile-palazzo/14690120
+5cbfb82de8309532b066,Beinasco,INDIZIO_AGENZIA,"Via Galileo Galilei, Borgaretto",VAI_IN_ZONA,"Via Galileo Galilei, Borgaretto 2",,PRONTO,https://tempocasa.it/it/vendita/torino/beinasco/quadrilocale/8555853
