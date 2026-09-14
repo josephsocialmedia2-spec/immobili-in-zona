@@ -3,7 +3,6 @@ Avigliana - Immobiliare,Avigliana,0,5,5,0,1,1.0,3.0,61.67,500.0,100,Uscita osser
 Agenzia Immobiliare,Bardonecchia,0,2,2,0,0,4.5,,,200.0,100,Uscita osservata != vendita certa
 Borgone Susa - Immobiliare,Borgone Susa,0,2,2,0,0,6.0,,,200.0,100,Uscita osservata != vendita certa
 la F.C. Immobiliare,Borgone Susa,0,2,2,0,0,3.5,,,200.0,100,Uscita osservata != vendita certa
-la Grimaldi Immobiliare,"Almese, Beinasco",0,2,2,0,0,9.5,,,200.0,100,Uscita osservata != vendita certa
 AD AVIGLIANA AVIGLIANA - Nel centro del paese di Avigliana l'agenzia immobiliare,Avigliana,0,1,1,0,0,7.0,,,100.0,61.0,Uscita osservata != vendita certa
 Almese - idealista RUSTICO CON VISTA PANORAMICALa FC Immobiliare,Almese,0,1,1,0,0,13.0,,,100.0,61.0,Uscita osservata != vendita certa
 Alpignano - Immobiliare,Alpignano,0,1,1,0,0,4.0,,,100.0,61.0,Uscita osservata != vendita certa
@@ -31,6 +30,7 @@ centrale è comodissima ai servizi principali la Grimaldi di Borgaretto,Beinasco
 "id=""8870"" data-sede-id=""5"" data-sedeaw-id=""0"" data-agente-id=""0"" data-site-id=""3371"" data-gruppo-id=""0"" data-page=""immob",Bruzolo,0,1,1,0,0,4.0,,,100.0,61.0,Uscita osservata != vendita certa
 ideale per chi cerca una soluzione pronta da abitare. L'immobile si,Alpignano,1,2,1,0,0,1.0,,,100.0,61.0,Uscita osservata != vendita certa
 la Gabetti di Grugliasco,Beinasco,0,1,1,0,0,0.0,,,100.0,61.0,Uscita osservata != vendita certa
+la Grimaldi Immobiliare,"Almese, Beinasco",1,2,1,0,0,10.5,,,100.0,61.0,Uscita osservata != vendita certa
 la Grimaldi immobiliare,Beinasco,0,1,1,0,0,1.0,,,100.0,61.0,Uscita osservata != vendita certa
 la TEMPOCASA DI CONDOVE,Almese,1,2,1,0,0,0.5,,,100.0,61.0,Uscita osservata != vendita certa
 locali - Immobiliare,Alpignano,0,1,1,0,0,9.0,,,100.0,61.0,Uscita osservata != vendita certa
@@ -42,29 +42,31 @@ un meraviglioso giardino piantumato e soleggiato. Questa stupenda unità immobil
 va398 - La Tempocasa di Collegno Terracorta,Almese,0,1,1,0,0,4.0,,,100.0,61.0,Uscita osservata != vendita certa
 "immobiliare/""","Alpignano, Bardonecchia, Beinasco",2,3,1,0,0,0.0,,,50.0,33.5,Uscita osservata != vendita certa
 CASEINPIEMONTE -Agenzia immobiliare di Rivoli e Alpignano,Buttigliera Alta,1,1,0,0,1,6.0,6.0,20.36,0.0,2.0,Uscita osservata != vendita certa
+Almese. Buono ... Gabetti Rivoli,Almese,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
 Alp.375 - TEMPOCASA ALPIGNANO,Alpignano,1,1,0,0,0,17.0,,,0.0,0.0,Uscita osservata != vendita certa
 Bardonecchia. Bilocale in viale Callet 19. Buono ... L'unità immobiliare,Bardonecchia,1,1,0,0,0,12.0,,,0.0,0.0,Uscita osservata != vendita certa
 Buttigliera Alta ... Caseitalia,Buttigliera Alta,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
 Fondocasa TORINO FILADELFIA STADIO OLIMPICO,Coazze,1,1,0,0,0,23.0,,,0.0,0.0,Uscita osservata != vendita certa
+Gabetti Grugliasco,Alpignano,1,1,0,0,0,12.0,,,0.0,0.0,Uscita osservata != vendita certa
 La TEMPOCASA,Beinasco,2,2,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
 Mq 100 La Tempocasa di Beinasco,Beinasco,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
-Nel cuore del paese in posizione comoda a tutti i servizi la Grimaldi Immobiliare,Beinasco,1,1,0,0,0,3.0,,,0.0,0.0,Uscita osservata != vendita certa
 RE/MAX Italia Vendita Casa Semindipendente Corso Susa,Caselette,1,1,0,0,0,17.0,,,0.0,0.0,Uscita osservata != vendita certa
 RO499 - Tempocasa Bruino,Bruino,1,1,0,0,0,2.0,,,0.0,0.0,Uscita osservata != vendita certa
 Rif. 125835137 - Immobiliare,Bruino,1,1,0,0,0,3.0,,,0.0,0.0,Uscita osservata != vendita certa
-Rif. 127650474 - Immobiliare,Alpignano,1,1,0,0,0,9.0,,,0.0,0.0,Uscita osservata != vendita certa
+Rif. 127650474 - Immobiliare,Alpignano,1,1,0,0,0,10.0,,,0.0,0.0,Uscita osservata != vendita certa
 Rif. 132169640 - Immobiliare,Almese,1,1,0,0,0,4.0,,,0.0,0.0,Uscita osservata != vendita certa
 Rif. 132249964 - Immobiliare,Alpignano,1,1,0,0,0,3.0,,,0.0,0.0,Uscita osservata != vendita certa
 Rif. 132264762 - Immobiliare,Avigliana,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
+TEMPOCASA di Bruino propone in vendita a BEINASCO ampio bilocale sito al piano r,Beinasco,1,1,0,0,0,2.0,,,0.0,0.0,Uscita osservata != vendita certa
 Torino. Quadrilocale in via bussoleno 21. Buono ... L'appartamento si,Bussoleno,1,1,0,0,0,9.0,,,0.0,0.0,Uscita osservata != vendita certa
 al primo piano di una porzione di casa. L'immobile si,Borgone Susa,1,1,0,0,0,16.0,,,0.0,0.0,Uscita osservata != vendita certa
 bagno finestrato e spazioso terrazzo esterno. L'immobile,Beinasco,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
-il complesso e' stato edificato nel 1987 e si,Alpignano,1,1,0,0,0,11.0,,,0.0,0.0,Uscita osservata != vendita certa
-immobiliare Remax Sfera,Beinasco,1,1,0,0,0,5.0,,,0.0,0.0,Uscita osservata != vendita certa
+"immobiliare-collegno-96116""",Alpignano,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
 in via bussoleno 26. Ottimo ... L'agenzia Tempocasa Torino Cenisia,Bussoleno,1,1,0,0,0,17.0,,,0.0,0.0,Uscita osservata != vendita certa
 la Larry immobiliare,Bardonecchia,1,1,0,0,0,8.0,,,0.0,0.0,Uscita osservata != vendita certa
 metri da Piazza del Popolo. Scopri questa meravigliosa opportunità immobiliare,Avigliana,1,1,0,0,0,16.0,,,0.0,0.0,Uscita osservata != vendita certa
 "panel"" class=""accordion-collapse"" aria-labelledby=""filtriav-tipoagenzia-heading""",Beinasco,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
 proponiamo interessantissima opportunità immobiliare,Alpignano,1,1,0,0,0,0.0,,,0.0,0.0,Uscita osservata != vendita certa
 ref. 129022660 - Immobiliare,Almese,1,1,0,0,0,23.0,,,0.0,0.0,Uscita osservata != vendita certa
+rif ... - Lo Studio Immobiliare,Beinasco,1,1,0,0,0,3.0,,,0.0,0.0,Uscita osservata != vendita certa
 un'opportunità di investimento immobiliare,Caselette,1,1,0,0,0,22.0,,,0.0,0.0,Uscita osservata != vendita certa
