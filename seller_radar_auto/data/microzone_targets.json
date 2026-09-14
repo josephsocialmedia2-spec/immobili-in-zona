@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T12:42:01.807789+00:00",
+  "generated_at": "2026-09-14T18:57:56.657104+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -40,11 +40,11 @@
     {
       "zone_id": "almese-via-avigliana",
       "comune": "Almese",
-      "target_street": "via Avigliana",
+      "target_street": "VIA AVIGLIANA",
       "listing_target": "VIA AVIGLIANA 98",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
+      "listing_url": "https://immobiliare.mitula.it/almese",
       "streets": [
-        "via Avigliana",
+        "VIA AVIGLIANA",
         "Piazza Martiri della Libertà",
         "Via Dante Alighieri",
         "Via dell'Ajgro",
@@ -124,6 +124,21 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-drubiaglio",
+      "comune": "Almese",
+      "target_street": "Via Drubiaglio",
+      "listing_target": "Via Drubiaglio 6",
+      "listing_url": "https://www.nuroa.it/affitto-case/almese",
+      "streets": [
+        "Via Drubiaglio",
+        "Via delle Industrie",
+        "Via don Marco Cravotto",
+        "Via Milanere",
+        "Via Rivera"
       ],
       "osm_status": "OK"
     },
