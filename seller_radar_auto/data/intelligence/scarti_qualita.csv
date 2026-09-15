@@ -30,7 +30,7 @@ d364c8e882bb12849ed6,Chianocco,Case in vendita Chianocco - Immobili - Subito.it,
 9b93ebd08af5840b06a9,Coazze,"30 immobili in vendita a Forno, Coazze - Trovit",Trovit,https://case.trovit.it/forno-coazze,EVIDENZA_INSUFFICIENTE
 6d0da11f6f37738e7b11,Collegno,23 Immobili in vendita gramsci a Collegno - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/gramsci-collegno,EVIDENZA_INSUFFICIENTE
 109b2937ad76b2c31e45,Condove,Case e appartamenti a Condove. Immobili in vendita a Condove - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/condove,EVIDENZA_INSUFFICIENTE
-26c747e2aec55e38fc2b,Condove,163 immobili in vendita a Condove - Trovit,Trovit,https://case.trovit.it/condove,EVIDENZA_INSUFFICIENTE
+26c747e2aec55e38fc2b,Condove,156 immobili in vendita a Condove - Trovit,Trovit,https://case.trovit.it/condove,EVIDENZA_INSUFFICIENTE
 4c07fb8f9747121faed9,Condove,162 Case in vendita a Condove - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/casa-condove,EVIDENZA_INSUFFICIENTE
 583d14f0d7e8f197362f,Giaglione,Case in vendita Giaglione - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/giaglione/,PAGINA_CATEGORIA
 9d870772ada9f3aaf340,Giaglione,Instagram,Tipologie residenziali,https://www.instagram.com/p/DZcPoC0jctl/,EVIDENZA_INSUFFICIENTE
@@ -47,7 +47,7 @@ c0878aeada2ed6008db8,Oulx,236 immobili in vendita a Oulx - Trovit,Trovit,https:/
 34a652fd73504a581aed,Pianezza,Case indipendenti e ville a schiera in vendita Pianezza - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/pianezza/,EVIDENZA_INSUFFICIENTE
 812d44942fb61458cf21,Reano,Case e appartamenti a Reano. Immobili in vendita a Reano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/reano,EVIDENZA_INSUFFICIENTE
 f073bf97e2a0894b0f8a,Reano,Case in vendita Reano - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/reano/,PAGINA_CATEGORIA
-180fd3b192de1a3ccffe,Reano,65 Rustici in vendita a Reano - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
+180fd3b192de1a3ccffe,Reano,65 Rustici in vendita a Reano - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
 75bea38c2e641daa5e3e,Rivoli,57 immobili villa collina in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/villa-collina-rivoli,EVIDENZA_INSUFFICIENTE
 033e4c5815c3ce197d27,Rivoli,Immobili in vendita a Rivoli | Gabetti,Mercato generale,https://www.gabetti.it/vendita/rivoli,PAGINA_CATEGORIA
 19e4d46c5e7c11ee620c,Rivoli,Case e appartamenti a Rivoli Torino. Immobili in vendita a Rivoli ...,Nestoria,https://www.nestoria.it/immobiliare/vendita/rivoli,EVIDENZA_INSUFFICIENTE
@@ -213,7 +213,7 @@ a86c054e354e742c7bb6,Chiomonte,Case in vendita Chiomonte - Immobili - Subito.it,
 0f86b06f142f981d690b,Condove,"20 locale commerciales circolo in affitto a Bar, Condove - Trovit",Trovit,https://case.trovit.it/affitto-negozio-circolo-bar,EVIDENZA_INSUFFICIENTE
 d6a1bcb20bff78ace39c,Giaveno,Immobili in Vendita | Agenzia Tecnorete di Giaveno,Tecnorete,https://giaveno1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
 cac5db4f6e2b21ae5ab7,Giaveno,Locale Commerciale Giaveno - 57 locali comerciali in vendita in Giaveno ...,Capannoni logistica,https://www.nuroa.it/vendita-immobili/locale-commerciale-giaveno,EVIDENZA_INSUFFICIENTE
-3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 159 locali comerciali in affito in ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
+3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 159 locali comerciali in affito in ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
 2aab1ddaa700fe828f10,Moncenisio,Appartamenti a Moncenisio. Appartamenti in vendita a Moncenisio - Nestoria,Nestoria,https://www.nestoria.it/appartamenti/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 3a19993ebbd5ad61f09c,Moncenisio,Il Colle del Moncenisio: cosa vedere e fare • Visit Val di Susa,Capannoni logistica,https://visitvaldisusa.it/moncenisio-la-porta-delle-alpi/,EVIDENZA_INSUFFICIENTE
 dd57f1a588eac0425281,Oulx,Case in vendita a Oulx • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/oulx/,PAGINA_CATEGORIA
@@ -403,7 +403,7 @@ fe57dfa90d2f7186008a,Bruino,Case a Bruino. Immobili in affitto a Bruino - Nestor
 e774f7b66c1c80462fe1,Bruino,PDF Istituto Comprensivo BRUINO,PDF Albo Pretorio edilizia,https://www.icbruino.edu.it/wp-content/uploads/2025/12/del_n.-1_2024-del-C.d-I.-del-10-12-2024-revisione-criteri-iscrizioni.pdf,EVIDENZA_INSUFFICIENTE
 4ddcc7392d80f918f328,Buttigliera Alta,Tecnocasa - INDUSTRIALE PROVINCIA TORINO OVEST sas,Subito privati,https://impresapiu.subito.it/shops/46868-tecnocasa-industriale-provincia-torino-ovest-sas,EVIDENZA_INSUFFICIENTE
 4480010df09c694bc6da,Chiusa di San Michele,Appartamenti in vendita Chiusa di San Michele - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/chiusa-di-san-michele/,EVIDENZA_INSUFFICIENTE
-1f949185a9acca62724e,Condove,Locale Commerciale Condove - 24 locali comerciali in affito in Condove ...,Uffici e direzionale,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
+1f949185a9acca62724e,Condove,Locale Commerciale Condove - 24 locali comerciali in affito in Condove ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
 b583fcc5a28d734ea3fe,Druento,Case in vendita a Druento - oikia.it,Mercato residenziale,https://www.oikia.it/vendita-case/druento/,PAGINA_CATEGORIA
 0eca3ec41b65f8d0e4e9,Druento,Case a Druento in vendita e affitto - RisorseImmobiliari.it,Mercato residenziale,https://www.risorseimmobiliari.it/immobili.asp?url_firstparam=Torino%2Fcase_Druento.html&url_search=case_Druento,EVIDENZA_INSUFFICIENTE
 da701beeaf2f56a92f75,Druento,Case in vendita a Druento - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/druento/,PAGINA_CATEGORIA
@@ -427,7 +427,7 @@ a1fe863166c4b10b6ed1,Robassomero,3 Uffici in vendita a Robassomero - Mitula Case
 0d102203e1c3304c75d6,San Gillio,Case e appartamenti a San Gillio. Immobili in vendita a San ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/san-gillio,EVIDENZA_INSUFFICIENTE
 fe7b7da2149cf2c773e3,San Gillio,Appartamenti in vendita San Gillio - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/san-gillio/,EVIDENZA_INSUFFICIENTE
 a6974727e82e0cd589f6,San Gillio,Case in vendita San Gillio - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/san-gillio/,PAGINA_CATEGORIA
-6c795ccfb1276a814d90,San Gillio,28 Capannoni in vendita a San Gillio - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/capannone-san-gillio,EVIDENZA_INSUFFICIENTE
+6c795ccfb1276a814d90,San Gillio,28 Capannoni in vendita a San Gillio - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/capannone-san-gillio,EVIDENZA_INSUFFICIENTE
 35818cb098d34aa613cc,San Gillio,"Immobiliare CASEINPIEMONTE, CASAPIEMONTE OVEST SRL, CASAPIEMONTE",Capannoni logistica,https://caseinpiemonte.it/,EVIDENZA_INSUFFICIENTE
 b2d21e027e754544c918,Vaie,Case e appartamenti a Vaie Torino. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/vaie_torino,EVIDENZA_INSUFFICIENTE
 3d86907b55db2f325963,Varisella,Case in vendita Varisella - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/varisella/,PAGINA_CATEGORIA
@@ -602,3 +602,10 @@ fe935dae1a7d73987638,Alpignano,103 Capannoni in vendita a Alpignano - Mitula Cas
 3692dc39cb1e07a054b2,San Gillio,case in vendita a San Gillio - oikia.it,Mercato residenziale,https://www.oikia.it/vendita-case/san_gillio/,PAGINA_CATEGORIA
 af4c9ffa05ecc7cd6a3d,San Gillio,"Case in affitto a San Gillio, Torino Ovest - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-affitto/san-gillio-torino-ovest,EVIDENZA_INSUFFICIENTE
 9c2ac9c632a4816ddd8a,Villarbasse,974 Immobili in vendita a Villarbasse - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/villarbasse,EVIDENZA_INSUFFICIENTE
+ba4207d1fe6a55ec5c48,Chianocco,1.916 appartamenti in vendita a Pian Benot - Nestoria,Nestoria,https://www.nestoria.it/appartamenti/vendita/pian-benot,EVIDENZA_INSUFFICIENTE
+61086d557c6dae7e8378,Chianocco,Case a Pavaglione. Ville in vendita a Pavaglione - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/pavaglione,EVIDENZA_INSUFFICIENTE
+575df223c11908328f09,Chianocco,Case e appartamenti a Frassinere. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/frassinere,EVIDENZA_INSUFFICIENTE
+66a0e4f88e49eefed09f,Givoletto,Case in vendita a Givoletto | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita-case/givoletto/,PAGINA_CATEGORIA
+b9e4f1c9cf8c4369c1ad,Givoletto,Lavorazione ferro a Torino: leader per edilizia civile e industriale ...,Capannoni logistica,https://teknoferr.it/,EVIDENZA_INSUFFICIENTE
+1522a90287d353e76967,Rivalta di Torino,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/rivalta-di-torino.html,EVIDENZA_INSUFFICIENTE
+c29a993708b578e42076,Val della Torre,91 casas in vendita a Val della Torre - Trovit,Trovit,https://case.trovit.it/casa-val-torre,EVIDENZA_INSUFFICIENTE

@@ -89,11 +89,11 @@ avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augus
 avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,2,VICINA,Viale Roma (int),70,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,3,VICINA,Via Cavalieri di Vittorio Veneto,76,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,4,VICINA,Via Venti Settembre,78,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del popolo 100,https://www.immobiliare.it/annunci/127408283/,0,TARGET,piazza del Popolo,0,CENTRO,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del popolo 100,https://www.immobiliare.it/annunci/127408283/,1,VICINA,Corso Laghi,0,INCROCIA,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del popolo 100,https://www.immobiliare.it/annunci/127408283/,2,VICINA,Via Cavalieri di Vittorio Veneto,0,INCROCIA,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del popolo 100,https://www.immobiliare.it/annunci/127408283/,3,VICINA,Via della Repubblica,0,INCROCIA,OK
-avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del popolo 100,https://www.immobiliare.it/annunci/127408283/,4,VICINA,Via Martiri della Libertà,0,INCROCIA,OK
+avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,0,TARGET,piazza del Popolo,0,CENTRO,OK
+avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,1,VICINA,Corso Laghi,0,INCROCIA,OK
+avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,2,VICINA,Via Cavalieri di Vittorio Veneto,0,INCROCIA,OK
+avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,3,VICINA,Via della Repubblica,0,INCROCIA,OK
+avigliana-piazza-del-popolo,Avigliana,piazza del Popolo,piazza del Popolo 4,https://www.immobiliare.it/annunci/127408283/,4,VICINA,Via Martiri della Libertà,0,INCROCIA,OK
 avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,0,TARGET,via villar dora,0,CENTRO,OK_GEOCODE_FALLBACK
 avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,1,VICINA,Via Cuminie,9,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-villar-dora,Avigliana,via villar dora,via villar dora 15,https://www.immobiliare.it/annunci/130446938/,2,VICINA,Via Moncenisio,529,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
@@ -244,21 +244,31 @@ caprie-via-peroldrado,Caprie,via Peroldrado,via Peroldrado 22,https://www.immobi
 caprie-via-peroldrado,Caprie,via Peroldrado,via Peroldrado 22,https://www.immobiliare.it/annunci/132084518/,2,VICINA,Via Lino Maffiodo,0,INCROCIA,OK
 caprie-via-peroldrado,Caprie,via Peroldrado,via Peroldrado 22,https://www.immobiliare.it/annunci/132084518/,3,VICINA,Viale Kennedy,0,INCROCIA,OK
 caprie-via-peroldrado,Caprie,via Peroldrado,via Peroldrado 22,https://www.immobiliare.it/annunci/132084518/,4,VICINA,Via Colombardo,61,VICINA,OK
+caprie-via-pietra-rotonda,Caprie,via Pietra Rotonda,via Pietra Rotonda 15,https://www.immobiliare.it/annunci/132334780/,0,TARGET,via Pietra Rotonda,0,CENTRO,OK
+caprie-via-pietra-rotonda,Caprie,via Pietra Rotonda,via Pietra Rotonda 15,https://www.immobiliare.it/annunci/132334780/,1,VICINA,Via Alcide De Gasperi,0,INCROCIA,OK
+caprie-via-pietra-rotonda,Caprie,via Pietra Rotonda,via Pietra Rotonda 15,https://www.immobiliare.it/annunci/132334780/,2,VICINA,Via Celle,20,VICINA,OK
+caprie-via-pietra-rotonda,Caprie,via Pietra Rotonda,via Pietra Rotonda 15,https://www.immobiliare.it/annunci/132334780/,3,VICINA,Via Longobardi,45,VICINA,OK
+caprie-via-pietra-rotonda,Caprie,via Pietra Rotonda,via Pietra Rotonda 15,https://www.immobiliare.it/annunci/132334780/,4,VICINA,Via Braida,168,VICINA,OK
 caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,0,TARGET,Via Ciriè,0,CENTRO,OK
 caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,1,VICINA,Via Brione,0,INCROCIA,OK
 caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,2,VICINA,Via Val della Torre,0,INCROCIA,OK
 caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,3,VICINA,Via Givoletto,31,VICINA,OK
 caselette-via-cirie,Caselette,Via Ciriè,Via Ciriè 15,https://www.gabetti.it/vendita/caselette,4,VICINA,Via Martiri della Libertà,117,VICINA,OK
-caselette-corso-susa,Caselette,Corso Susa,"Corso Susa, Caselette 156",https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone,0,TARGET,Corso Susa,0,CENTRO,OK
-caselette-corso-susa,Caselette,Corso Susa,"Corso Susa, Caselette 156",https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone,1,VICINA,Strada dei Prati,0,INCROCIA,OK
-caselette-corso-susa,Caselette,Corso Susa,"Corso Susa, Caselette 156",https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone,2,VICINA,Via Almese,0,INCROCIA,OK
-caselette-corso-susa,Caselette,Corso Susa,"Corso Susa, Caselette 156",https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone,3,VICINA,Via Alpignano,0,INCROCIA,OK
-caselette-corso-susa,Caselette,Corso Susa,"Corso Susa, Caselette 156",https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone,4,VICINA,Via Guglielmo Marconi,0,INCROCIA,OK
+caselette-corso-susa,Caselette,corso Susa,corso Susa 192,https://www.immobiliare.it/annunci/119823144/,0,TARGET,corso Susa,0,CENTRO,OK
+caselette-corso-susa,Caselette,corso Susa,corso Susa 192,https://www.immobiliare.it/annunci/119823144/,1,VICINA,Strada dei Prati,0,INCROCIA,OK
+caselette-corso-susa,Caselette,corso Susa,corso Susa 192,https://www.immobiliare.it/annunci/119823144/,2,VICINA,Via Almese,0,INCROCIA,OK
+caselette-corso-susa,Caselette,corso Susa,corso Susa 192,https://www.immobiliare.it/annunci/119823144/,3,VICINA,Via Alpignano,0,INCROCIA,OK
+caselette-corso-susa,Caselette,corso Susa,corso Susa 192,https://www.immobiliare.it/annunci/119823144/,4,VICINA,Via Guglielmo Marconi,0,INCROCIA,OK
 caselette-via-alpignano,Caselette,via Alpignano,via Alpignano 146,https://www.immobiliare.it/annunci/109429209/,0,TARGET,via Alpignano,0,CENTRO,OK
 caselette-via-alpignano,Caselette,via Alpignano,via Alpignano 146,https://www.immobiliare.it/annunci/109429209/,1,VICINA,Corso Susa,0,INCROCIA,OK
 caselette-via-alpignano,Caselette,via Alpignano,via Alpignano 146,https://www.immobiliare.it/annunci/109429209/,2,VICINA,Strada Contessa,0,INCROCIA,OK
 caselette-via-alpignano,Caselette,via Alpignano,via Alpignano 146,https://www.immobiliare.it/annunci/109429209/,3,VICINA,Strada dei Giardini,0,INCROCIA,OK
 caselette-via-alpignano,Caselette,via Alpignano,via Alpignano 146,https://www.immobiliare.it/annunci/109429209/,4,VICINA,Via al Musinè,0,INCROCIA,OK
+caselette-via-caselette,Caselette,via Caselette,via Caselette 7,https://www.immobiliare.it/annunci/124199825/,0,TARGET,via Caselette,0,CENTRO,OK_GEOCODE_FALLBACK
+caselette-via-caselette,Caselette,via Caselette,via Caselette 7,https://www.immobiliare.it/annunci/124199825/,1,VICINA,Via Alpignano,12,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+caselette-via-caselette,Caselette,via Caselette,via Caselette 7,https://www.immobiliare.it/annunci/124199825/,2,VICINA,Via Guglielmo Marconi,22,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+caselette-via-caselette,Caselette,via Caselette,via Caselette 7,https://www.immobiliare.it/annunci/124199825/,3,VICINA,Corso Susa,34,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+caselette-via-caselette,Caselette,via Caselette,via Caselette 7,https://www.immobiliare.it/annunci/124199825/,4,VICINA,Via Alessandro Volta,97,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 coazze-via-freinetto,Coazze,via Freinetto,via freinetto 51,https://www.caasa.it/torino/coazze/villa/in-vendita.html,0,TARGET,via Freinetto,0,CENTRO,OK
 coazze-via-freinetto,Coazze,via Freinetto,via freinetto 51,https://www.caasa.it/torino/coazze/villa/in-vendita.html,1,VICINA,Borgata Castagna,0,INCROCIA,OK
 coazze-via-freinetto,Coazze,via Freinetto,via freinetto 51,https://www.caasa.it/torino/coazze/villa/in-vendita.html,2,VICINA,Sentiero dell'amore,0,INCROCIA,OK

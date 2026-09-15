@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T22:57:29.699110+00:00",
+  "generated_at": "2026-09-15T01:47:14.311305+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -296,7 +296,7 @@
       "zone_id": "avigliana-piazza-del-popolo",
       "comune": "Avigliana",
       "target_street": "piazza del Popolo",
-      "listing_target": "piazza del popolo 100",
+      "listing_target": "piazza del Popolo 4",
       "listing_url": "https://www.immobiliare.it/annunci/127408283/",
       "streets": [
         "piazza del Popolo",
@@ -758,6 +758,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "caprie-via-pietra-rotonda",
+      "comune": "Caprie",
+      "target_street": "via Pietra Rotonda",
+      "listing_target": "via Pietra Rotonda 15",
+      "listing_url": "https://www.immobiliare.it/annunci/132334780/",
+      "streets": [
+        "via Pietra Rotonda",
+        "Via Alcide De Gasperi",
+        "Via Celle",
+        "Via Longobardi",
+        "Via Braida"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "caselette-via-cirie",
       "comune": "Caselette",
       "target_street": "Via Ciriè",
@@ -775,11 +790,11 @@
     {
       "zone_id": "caselette-corso-susa",
       "comune": "Caselette",
-      "target_street": "Corso Susa",
-      "listing_target": "Corso Susa, Caselette 156",
-      "listing_url": "https://caseinvenditainaffitto.it/case-in-vendita/caselette-valli-susa-sangone",
+      "target_street": "corso Susa",
+      "listing_target": "corso Susa 192",
+      "listing_url": "https://www.immobiliare.it/annunci/119823144/",
       "streets": [
-        "Corso Susa",
+        "corso Susa",
         "Strada dei Prati",
         "Via Almese",
         "Via Alpignano",
@@ -801,6 +816,21 @@
         "Via al Musinè"
       ],
       "osm_status": "OK"
+    },
+    {
+      "zone_id": "caselette-via-caselette",
+      "comune": "Caselette",
+      "target_street": "via Caselette",
+      "listing_target": "via Caselette 7",
+      "listing_url": "https://www.immobiliare.it/annunci/124199825/",
+      "streets": [
+        "via Caselette",
+        "Via Alpignano",
+        "Via Guglielmo Marconi",
+        "Corso Susa",
+        "Via Alessandro Volta"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
       "zone_id": "coazze-via-freinetto",

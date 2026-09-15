@@ -139,5 +139,10 @@
   "via laghi di avigliana avigliana": null,
   "borgata soffietti bolle almese": null,
   "via avogadro avigliana": null,
-  "strada della praia almese": null
+  "strada della praia almese": null,
+  "via caselette caselette": {
+    "lat": 45.1073689,
+    "lon": 7.4941365,
+    "display_name": "Via Alpignano, Caselette, Torino, Piemonte, 10091, Italia"
+  }
 }
