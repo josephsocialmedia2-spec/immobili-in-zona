@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:49:24.968488+00:00",
+  "generated_at": "2026-09-15T18:34:11.391455+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -370,11 +370,11 @@
     {
       "zone_id": "avigliana-via-avigliana",
       "comune": "Avigliana",
-      "target_street": "Via Avigliana",
-      "listing_target": "Via Avigliana 13",
-      "listing_url": "https://www.idealista.it/immobile/36742432/",
+      "target_street": "via Avigliana",
+      "listing_target": "Via Avigliana 18",
+      "listing_url": "https://www.immobiliare.it/annunci/132403128/",
       "streets": [
-        "Via Avigliana",
+        "via Avigliana",
         "Via Almese",
         "Via Giaveno",
         "Via Primo Levi",
@@ -591,6 +591,21 @@
         "Corso Laghi"
       ],
       "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "avigliana-via-giacomo-matteotti",
+      "comune": "Avigliana",
+      "target_street": "via Giacomo Matteotti",
+      "listing_target": "via Giacomo Matteotti 33",
+      "listing_url": "https://www.immobiliare.it/annunci/132401210/",
+      "streets": [
+        "via Giacomo Matteotti",
+        "Corso Dora",
+        "Corso Torino",
+        "Piazzale Cesare Valloire",
+        "Via Antonio Gramsci"
+      ],
+      "osm_status": "OK"
     },
     {
       "zone_id": "buttigliera-alta-via-allende",
@@ -904,6 +919,21 @@
         "Via Roma",
         "Viale Quattro Novembre",
         "Via Venticinque Aprile"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "trana-via-giordano-bruno",
+      "comune": "Trana",
+      "target_street": "via Giordano Bruno",
+      "listing_target": "via Giordano Bruno 8",
+      "listing_url": "https://www.immobiliare.it/annunci/131553914/",
+      "streets": [
+        "via Giordano Bruno",
+        "Piazza Caduti",
+        "Via Pietra Scisa",
+        "Via Roma",
+        "Via Santuario"
       ],
       "osm_status": "OK"
     },

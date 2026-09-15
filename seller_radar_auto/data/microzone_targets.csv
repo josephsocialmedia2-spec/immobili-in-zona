@@ -114,11 +114,11 @@ avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https:/
 avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,2,VICINA,Via Moncenisio,99,VICINA,OK
 avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,3,VICINA,Via Grangia,126,VICINA,OK
 avigliana-via-felice-goffi,Avigliana,Via Felice Goffi,Via Felice Goffi 6,https://www.idealista.it/immobile/36626365/,4,VICINA,Via Villardora,128,VICINA,OK
-avigliana-via-avigliana,Avigliana,Via Avigliana,Via Avigliana 13,https://www.idealista.it/immobile/36742432/,0,TARGET,Via Avigliana,0,CENTRO,OK
-avigliana-via-avigliana,Avigliana,Via Avigliana,Via Avigliana 13,https://www.idealista.it/immobile/36742432/,1,VICINA,Via Almese,0,INCROCIA,OK
-avigliana-via-avigliana,Avigliana,Via Avigliana,Via Avigliana 13,https://www.idealista.it/immobile/36742432/,2,VICINA,Via Giaveno,0,INCROCIA,OK
-avigliana-via-avigliana,Avigliana,Via Avigliana,Via Avigliana 13,https://www.idealista.it/immobile/36742432/,3,VICINA,Via Primo Levi,0,INCROCIA,OK
-avigliana-via-avigliana,Avigliana,Via Avigliana,Via Avigliana 13,https://www.idealista.it/immobile/36742432/,4,VICINA,Viale dei Mareschi,48,VICINA,OK
+avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/132403128/,0,TARGET,via Avigliana,0,CENTRO,OK
+avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/132403128/,1,VICINA,Via Almese,0,INCROCIA,OK
+avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/132403128/,2,VICINA,Via Giaveno,0,INCROCIA,OK
+avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/132403128/,3,VICINA,Via Primo Levi,0,INCROCIA,OK
+avigliana-via-avigliana,Avigliana,via Avigliana,Via Avigliana 18,https://www.immobiliare.it/annunci/132403128/,4,VICINA,Viale dei Mareschi,48,VICINA,OK
 avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,0,TARGET,via Orsiera,0,CENTRO,OK
 avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,1,VICINA,Via della Repubblica,0,INCROCIA,OK
 avigliana-via-orsiera,Avigliana,via Orsiera,via Orsiera 5,https://www.immobiliare.it/annunci/129672110/,2,VICINA,Via Cristalliera,19,VICINA,OK
@@ -189,6 +189,11 @@ avigliana-via-micheletta,Avigliana,Via Micheletta,Via Micheletta 23,https://www.
 avigliana-via-micheletta,Avigliana,Via Micheletta,Via Micheletta 23,https://www.idealista.it/immobile/36760841/,2,VICINA,Via Monte Cuneo,124,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-micheletta,Avigliana,Via Micheletta,Via Micheletta 23,https://www.idealista.it/immobile/36760841/,3,VICINA,Via Renzo Suriani,138,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-micheletta,Avigliana,Via Micheletta,Via Micheletta 23,https://www.idealista.it/immobile/36760841/,4,VICINA,Corso Laghi,150,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+avigliana-via-giacomo-matteotti,Avigliana,via Giacomo Matteotti,via Giacomo Matteotti 33,https://www.immobiliare.it/annunci/132401210/,0,TARGET,via Giacomo Matteotti,0,CENTRO,OK
+avigliana-via-giacomo-matteotti,Avigliana,via Giacomo Matteotti,via Giacomo Matteotti 33,https://www.immobiliare.it/annunci/132401210/,1,VICINA,Corso Dora,0,INCROCIA,OK
+avigliana-via-giacomo-matteotti,Avigliana,via Giacomo Matteotti,via Giacomo Matteotti 33,https://www.immobiliare.it/annunci/132401210/,2,VICINA,Corso Torino,0,INCROCIA,OK
+avigliana-via-giacomo-matteotti,Avigliana,via Giacomo Matteotti,via Giacomo Matteotti 33,https://www.immobiliare.it/annunci/132401210/,3,VICINA,Piazzale Cesare Valloire,0,INCROCIA,OK
+avigliana-via-giacomo-matteotti,Avigliana,via Giacomo Matteotti,via Giacomo Matteotti 33,https://www.immobiliare.it/annunci/132401210/,4,VICINA,Via Antonio Gramsci,0,INCROCIA,OK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,0,TARGET,via Allende,0,CENTRO,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,1,VICINA,Via Salvador Allende,35,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
@@ -294,6 +299,11 @@ sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,2,VICINA,Via Roma,0,INCROCIA,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,3,VICINA,Viale Quattro Novembre,0,INCROCIA,OK
 sant-antonino-di-susa-via-medagli,Sant'Antonino di Susa,via Medagli,via Medagli 55,https://www.immobiliare.it/annunci/131644636/,4,VICINA,Via Venticinque Aprile,134,VICINA,OK
+trana-via-giordano-bruno,Trana,via Giordano Bruno,via Giordano Bruno 8,https://www.immobiliare.it/annunci/131553914/,0,TARGET,via Giordano Bruno,0,CENTRO,OK
+trana-via-giordano-bruno,Trana,via Giordano Bruno,via Giordano Bruno 8,https://www.immobiliare.it/annunci/131553914/,1,VICINA,Piazza Caduti,0,INCROCIA,OK
+trana-via-giordano-bruno,Trana,via Giordano Bruno,via Giordano Bruno 8,https://www.immobiliare.it/annunci/131553914/,2,VICINA,Via Pietra Scisa,0,INCROCIA,OK
+trana-via-giordano-bruno,Trana,via Giordano Bruno,via Giordano Bruno 8,https://www.immobiliare.it/annunci/131553914/,3,VICINA,Via Roma,0,INCROCIA,OK
+trana-via-giordano-bruno,Trana,via Giordano Bruno,via Giordano Bruno 8,https://www.immobiliare.it/annunci/131553914/,4,VICINA,Via Santuario,0,INCROCIA,OK
 val-della-torre-via-val-della-torre,Val della Torre,via Val della Torre,via Val della Torre 41,https://www.immobiliare.it/annunci/127148161/,0,TARGET,via Val della Torre,0,CENTRO,OK
 val-della-torre-via-val-della-torre,Val della Torre,via Val della Torre,via Val della Torre 41,https://www.immobiliare.it/annunci/127148161/,1,VICINA,Via Alpignano,13,VICINA,OK
 val-della-torre-via-val-della-torre,Val della Torre,via Val della Torre,via Val della Torre 41,https://www.immobiliare.it/annunci/127148161/,2,VICINA,Via Lanzo,40,VICINA,OK
