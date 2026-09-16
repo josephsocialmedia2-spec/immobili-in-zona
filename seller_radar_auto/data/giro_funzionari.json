@@ -7,10 +7,10 @@
       "funzionario": "FUNZIONARIO 1",
       "numero": 1,
       "comune": "Almese",
-      "score_comune": 56,
-      "righe_lavoro": 9,
+      "score_comune": 58,
+      "righe_lavoro": 8,
       "residenziale": 6,
-      "commerciale": 3,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -41,8 +41,8 @@
       "numero": 4,
       "comune": "Avigliana",
       "score_comune": 48,
-      "righe_lavoro": 13,
-      "residenziale": 13,
+      "righe_lavoro": 15,
+      "residenziale": 15,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -61,6 +61,17 @@
     {
       "funzionario": "FUNZIONARIO 6",
       "numero": 6,
+      "comune": "Rosta",
+      "score_comune": 45,
+      "righe_lavoro": 18,
+      "residenziale": 15,
+      "commerciale": 3,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
       "righe_lavoro": 15,
@@ -70,24 +81,13 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
-      "comune": "Rosta",
-      "score_comune": 40,
-      "righe_lavoro": 18,
-      "residenziale": 15,
-      "commerciale": 3,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 8",
       "numero": 8,
       "comune": "Buttigliera Alta",
       "score_comune": 38,
-      "righe_lavoro": 2,
+      "righe_lavoro": 1,
       "residenziale": 1,
-      "commerciale": 1,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },

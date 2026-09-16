@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T19:16:02.874518+00:00",
+  "generated_at": "2026-09-16T22:29:06.666394+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -191,7 +191,7 @@
       "zone_id": "almese-via-granaglie",
       "comune": "Almese",
       "target_street": "via Granaglie",
-      "listing_target": "via Granaglie 35",
+      "listing_target": "via Granaglie 43",
       "listing_url": "https://www.immobiliare.it/annunci/132358596/",
       "streets": [
         "via Granaglie",
@@ -281,7 +281,7 @@
       "zone_id": "avigliana-piazza-del-popolo",
       "comune": "Avigliana",
       "target_street": "piazza del Popolo",
-      "listing_target": "piazza del Popolo 4",
+      "listing_target": "piazza del popolo 100",
       "listing_url": "https://www.immobiliare.it/annunci/127408283/",
       "streets": [
         "piazza del Popolo",
@@ -356,7 +356,7 @@
       "zone_id": "avigliana-via-avigliana",
       "comune": "Avigliana",
       "target_street": "via Avigliana",
-      "listing_target": "Via Avigliana 18",
+      "listing_target": "via avigliana 35",
       "listing_url": "https://www.immobiliare.it/annunci/132403128/",
       "streets": [
         "via Avigliana",
@@ -611,7 +611,7 @@
       "zone_id": "buttigliera-alta-via-iv-novembre",
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
-      "listing_target": "Via IV Novembre 5",
+      "listing_target": "via IV Novembre 15",
       "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
@@ -904,6 +904,21 @@
         "Via Monsignor Carlo Bovero",
         "Via Selvaggio",
         "Via Paradiso"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "givoletto-via-alpignano",
+      "comune": "Givoletto",
+      "target_street": "via Alpignano",
+      "listing_target": "Via Alpignano 8",
+      "listing_url": "https://www.immobiliare.it/annunci/122846016/",
+      "streets": [
+        "via Alpignano",
+        "Strada delle Berchie",
+        "Via Avigliana",
+        "Via Brione",
+        "Via Rivoli"
       ],
       "osm_status": "OK"
     },
