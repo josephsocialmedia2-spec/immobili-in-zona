@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T18:34:11.391455+00:00",
+  "generated_at": "2026-09-16T05:08:38.053565+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -124,21 +124,6 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-drubiaglio",
-      "comune": "Almese",
-      "target_street": "Via Drubiaglio",
-      "listing_target": "Via Drubiaglio 6",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
-      "streets": [
-        "Via Drubiaglio",
-        "Via delle Industrie",
-        "Via don Marco Cravotto",
-        "Via Milanere",
-        "Via Rivera"
       ],
       "osm_status": "OK"
     },
@@ -626,7 +611,7 @@
       "zone_id": "buttigliera-alta-via-iv-novembre",
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
-      "listing_target": "via IV novembre 14",
+      "listing_target": "Via IV Novembre 5",
       "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
@@ -848,6 +833,36 @@
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
+      "zone_id": "caselette-via-roma-piemonte-torino-visualizza-foto-villetta-indipendente-in-vendita-di",
+      "comune": "Caselette",
+      "target_street": "Via Roma Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",
+      "listing_target": "Via Roma Piemonte, Torino Visualizza foto Villetta indipendente in vendita di 96",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/vendita-caselette",
+      "streets": [
+        "Via Roma Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",
+        "Via al Musinè",
+        "Via Almese",
+        "Via Alpignano",
+        "Via Val della Torre"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "caselette-via-roma",
+      "comune": "Caselette",
+      "target_street": "Via Roma",
+      "listing_target": "Via Roma 31",
+      "listing_url": "https://www.bilocale.it/vendita-case/caselette/",
+      "streets": [
+        "Via Roma",
+        "Via al Musinè",
+        "Via Almese",
+        "Via Alpignano",
+        "Via Val della Torre"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "coazze-via-freinetto",
       "comune": "Coazze",
       "target_street": "via Freinetto",
@@ -982,13 +997,13 @@
       "reason": "POSIZIONE/VIA DA VERIFICARE"
     },
     {
-      "zone_id": "almese-borgata-giorda-superiore",
+      "zone_id": "almese-borgata-franchino-mompellato",
       "comune": "Almese",
-      "target_street": "Borgata Giorda superiore",
-      "listing_target": "Borgata Giorda superiore 4",
+      "target_street": "borgata franchino - Mompellato",
+      "listing_target": "borgata franchino - Mompellato 6",
       "listing_url": "https://almese1.tecnorete.it/immobili-in-vendita",
       "streets": [
-        "Borgata Giorda superiore"
+        "borgata franchino - Mompellato"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
