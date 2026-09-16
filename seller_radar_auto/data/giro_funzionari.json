@@ -30,8 +30,8 @@
       "numero": 3,
       "comune": "Beinasco",
       "score_comune": 56,
-      "righe_lavoro": 27,
-      "residenziale": 18,
+      "righe_lavoro": 29,
+      "residenziale": 20,
       "commerciale": 9,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -41,8 +41,8 @@
       "numero": 4,
       "comune": "Avigliana",
       "score_comune": 48,
-      "righe_lavoro": 15,
-      "residenziale": 15,
+      "righe_lavoro": 13,
+      "residenziale": 13,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -53,8 +53,8 @@
       "comune": "Pianezza",
       "score_comune": 48,
       "righe_lavoro": 18,
-      "residenziale": 17,
-      "commerciale": 1,
+      "residenziale": 16,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -72,6 +72,17 @@
     {
       "funzionario": "FUNZIONARIO 7",
       "numero": 7,
+      "comune": "Rosta",
+      "score_comune": 40,
+      "righe_lavoro": 18,
+      "residenziale": 15,
+      "commerciale": 3,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Buttigliera Alta",
       "score_comune": 38,
       "righe_lavoro": 2,
@@ -81,35 +92,24 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
-      "comune": "Alpignano",
-      "score_comune": 38,
-      "righe_lavoro": 15,
-      "residenziale": 11,
-      "commerciale": 4,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Rubiana",
-      "score_comune": 37,
-      "righe_lavoro": 3,
-      "residenziale": 2,
-      "commerciale": 1,
+      "comune": "Alpignano",
+      "score_comune": 38,
+      "righe_lavoro": 14,
+      "residenziale": 10,
+      "commerciale": 4,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Druento",
-      "score_comune": 35,
-      "righe_lavoro": 15,
-      "residenziale": 15,
-      "commerciale": 0,
+      "comune": "Rubiana",
+      "score_comune": 37,
+      "righe_lavoro": 3,
+      "residenziale": 2,
+      "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }

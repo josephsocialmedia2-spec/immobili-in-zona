@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T15:14:46.323019+00:00",
+  "generated_at": "2026-09-16T19:16:02.874518+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -191,7 +191,7 @@
       "zone_id": "almese-via-granaglie",
       "comune": "Almese",
       "target_street": "via Granaglie",
-      "listing_target": "via Granaglie 43",
+      "listing_target": "via Granaglie 35",
       "listing_url": "https://www.immobiliare.it/annunci/132358596/",
       "streets": [
         "via Granaglie",
