@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T05:08:38.053565+00:00",
+  "generated_at": "2026-09-16T15:14:46.323019+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -416,7 +416,7 @@
       "zone_id": "avigliana-via-chiattera",
       "comune": "Avigliana",
       "target_street": "via Chiattera",
-      "listing_target": "Via Chiattera 62",
+      "listing_target": "via Chiattera 56",
       "listing_url": "https://www.immobiliare.it/annunci/128300848/",
       "streets": [
         "via Chiattera",
@@ -1011,11 +1011,11 @@
     {
       "zone_id": "almese-via-ruffini",
       "comune": "Almese",
-      "target_street": "Via Ruffini",
-      "listing_target": "Via Ruffini 13",
-      "listing_url": "https://www.idealista.it/immobile/35234714/",
+      "target_street": "via Ruffini",
+      "listing_target": "via Ruffini 13",
+      "listing_url": "https://www.immobiliare.it/annunci/127739728/",
       "streets": [
-        "Via Ruffini"
+        "via Ruffini"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
