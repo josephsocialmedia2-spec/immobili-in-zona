@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Prepara il Giro Acquisizione senza perdere il database master.
+"""Prepara il Giro Acquisizione sul territorio radiale centrato su Villar Dora.
 
-Principio:
-- work_queue.csv / state.json = MASTER Seller Radar, tutti i territori catalogati;
-- municipalities.csv enabled=1 = territorio operativo del Giro di oggi;
+Principi:
+- work_queue.csv / state.json = MASTER Seller Radar;
+- municipalities.csv enabled=1 = territorio operativo;
+- Villar Dora = CENTRO, gli altri comuni = SINISTRA / DESTRA;
+- nessun comune operativo viene escluso dall'assegnazione;
 - giro_acquisizione.csv = master completo classificato;
 - giro_acquisizione_oggi.csv = opportunità attive nel territorio operativo;
 - giro_da_verificare.csv = record del territorio con indirizzo incompleto;
-- giro_backlog.csv = opportunità attive fuori dal territorio operativo;
-- giro_funzionari.csv = sole fermate pronte effettivamente assegnate.
+- giro_backlog.csv = opportunità attive fuori territorio;
+- giro_funzionari.csv = fermate pronte assegnate.
 """
 import csv
 import json
@@ -34,7 +36,6 @@ OUT_TEAM_JSON = DATA / "giro_funzionari.json"
 OUT_SUMMARY = DATA / "giro_riepilogo.json"
 
 TEAM_SIZE = max(1, int(os.getenv("F1_OPERATOR_COUNT", "10")))
-EXCLUDED_TOWNS = {"sant ambrogio di torino"}
 OUT_MARKET_STATES = {"USCITO_MERCATO", "REMOVED", "EXPIRED", "OUT"}
 
 ADDRESS_RE = re.compile(
@@ -72,18 +73,30 @@ def norm(v):
     return re.sub(r"\s+", " ", s).strip()
 
 
-def load_active_towns():
+def load_territory():
     if not MUNICIPALITIES.exists():
         raise SystemExit("municipalities.csv assente: impossibile definire il territorio operativo")
     with MUNICIPALITIES.open(encoding="utf-8-sig", newline="") as f:
-        towns = {
-            norm(r.get("comune"))
-            for r in csv.DictReader(f)
-            if r.get("enabled") == "1" and norm(r.get("comune"))
-        }
-    if not towns:
+        rows = [r for r in csv.DictReader(f) if r.get("enabled") == "1" and norm(r.get("comune"))]
+    if not rows:
         raise SystemExit("Territorio operativo non valido: nessun comune enabled=1")
-    return towns
+    territory = {}
+    centers = []
+    for r in rows:
+        comune = clean(r.get("comune"))
+        side = clean(r.get("side")).upper()
+        try:
+            rank = int(r.get("radial_rank") or 9999)
+        except Exception:
+            rank = 9999
+        if side not in {"CENTRO", "SINISTRA", "DESTRA"}:
+            raise SystemExit(f"Lato territoriale non valido per {comune}: {side or 'MANCANTE'}")
+        territory[norm(comune)] = {"comune": comune, "side": side, "rank": rank}
+        if side == "CENTRO":
+            centers.append(comune)
+    if centers != ["Villar Dora"]:
+        raise SystemExit(f"Villar Dora deve essere l'unico CENTRO: {centers}")
+    return territory
 
 
 def exact_address(x):
@@ -105,20 +118,17 @@ def exact_address(x):
     if m:
         return clean(m.group(0))
     street = clean(area.get("street"))
-    if street:
-        return street
-    return "INDIRIZZO DA VERIFICARE"
+    return street or "INDIRIZZO DA VERIFICARE"
 
 
 def price_from_text(text):
     text = clean(text)
     for pat in PRICE_PATTERNS:
         m = pat.search(text)
-        if not m:
-            continue
-        n = int(re.sub(r"\D", "", m.group(1)))
-        if 5000 <= n <= 20000000:
-            return str(n)
+        if m:
+            n = int(re.sub(r"\D", "", m.group(1)))
+            if 5000 <= n <= 20000000:
+                return str(n)
     return ""
 
 
@@ -164,7 +174,8 @@ def write_csv(path, fieldnames, rows):
         w.writerows(rows)
 
 
-active_towns = load_active_towns()
+territory = load_territory()
+active_towns = set(territory)
 state = load_state()
 items = state.get("items") or {}
 by_url = {(x.get("url") or "").strip(): x for x in items.values()}
@@ -178,7 +189,8 @@ if QUEUE.exists():
 
 extras = [
     "DOVE_ANDRE", "COSA_CERCO", "PREZZO_OPERATIVO", "ISTRUZIONE_OPERATIVA",
-    "F1_INDIRIZZO_REMOTO_URL", "TERRITORIO_OPERATIVO", "STATO_GIRO"
+    "F1_INDIRIZZO_REMOTO_URL", "TERRITORIO_OPERATIVO", "STATO_GIRO",
+    "TERRITORY_SIDE", "RADIAL_RANK"
 ]
 fields += [k for k in extras if k not in fields]
 
@@ -194,7 +206,7 @@ for r in rows:
     target = r.get("TARGET") or x.get("lead_target") or "IMMOBILE"
 
     thing_norm = norm(thing)
-    if "terreno edificabile" in thing_norm or "area edificabile" in thing_norm or "lotto edificabile" in thing_norm:
+    if any(v in thing_norm for v in ("terreno edificabile", "area edificabile", "lotto edificabile")):
         otype = "TERRENO_SVILUPPO"
         target = "TERRENO"
         if not goal or goal == "ACQUISIZIONE IMMOBILE":
@@ -203,6 +215,7 @@ for r in rows:
     pdf_url = r.get("PDF_DA_VERIFICARE") or ""
     action = action_for(address, otype, goal, pdf_url)
     comune = r.get("COMUNE", "")
+    town = territory.get(norm(comune), {})
     in_active_territory = norm(comune) in active_towns
     lifecycle = (r.get("STATO") or x.get("lifecycle") or "").strip().upper()
     market_active = lifecycle not in OUT_MARKET_STATES
@@ -223,49 +236,41 @@ for r in rows:
     r["F1_INDIRIZZO_REMOTO_URL"] = build_import_url(r)
     r["TERRITORIO_OPERATIVO"] = "SI" if in_active_territory else "NO"
     r["STATO_GIRO"] = route_state
+    r["TERRITORY_SIDE"] = town.get("side", "FUORI_LISTA")
+    r["RADIAL_RANK"] = str(town.get("rank", 9999))
 
     route_rows.append({
-        "FUNZIONARIO": "",
-        "NUM_FUNZIONARIO": "",
-        "STATO_ASSEGNAZIONE": "",
-        "TERRITORIO_OPERATIVO": r["TERRITORIO_OPERATIVO"],
-        "STATO_GIRO": route_state,
-        "STATO_MERCATO": lifecycle,
-        "PRIORITA": r.get("PRIORITA", ""),
-        "SCORE": r.get("SCORE", ""),
-        "TIPO_OPPORTUNITA": otype,
-        "TARGET": target,
-        "FASE_PROGETTO": stage,
-        "OBIETTIVO_COMMERCIALE": goal,
-        "COMUNE": comune,
-        "DOVE_ANDRE": address,
-        "COSA_CERCO": thing,
-        "PREZZO": price,
-        "FONTE": r.get("FONTE", ""),
-        "SELLER_SIGNAL": r.get("INDIZIO_INSERZIONISTA", ""),
-        "AZIONE": action,
-        "PDF_DA_VERIFICARE": pdf_url,
-        "URL": r.get("URL", ""),
+        "FUNZIONARIO": "", "NUM_FUNZIONARIO": "", "STATO_ASSEGNAZIONE": "",
+        "TERRITORIO_OPERATIVO": r["TERRITORIO_OPERATIVO"], "TERRITORY_SIDE": r["TERRITORY_SIDE"],
+        "RADIAL_RANK": r["RADIAL_RANK"], "STATO_GIRO": route_state, "STATO_MERCATO": lifecycle,
+        "PRIORITA": r.get("PRIORITA", ""), "SCORE": r.get("SCORE", ""),
+        "TIPO_OPPORTUNITA": otype, "TARGET": target, "FASE_PROGETTO": stage,
+        "OBIETTIVO_COMMERCIALE": goal, "COMUNE": comune, "DOVE_ANDRE": address,
+        "COSA_CERCO": thing, "PREZZO": price, "FONTE": r.get("FONTE", ""),
+        "SELLER_SIGNAL": r.get("INDIZIO_INSERZIONISTA", ""), "AZIONE": action,
+        "PDF_DA_VERIFICARE": pdf_url, "URL": r.get("URL", ""),
         "F1_INDIRIZZO_REMOTO_URL": r["F1_INDIRIZZO_REMOTO_URL"],
     })
 
 if rows:
     write_csv(QUEUE, fields, rows)
 
-# Assegnazione team: esclusivamente fermate pronte nel territorio operativo.
+# Assegnazione team: tutte le fermate pronte del territorio sono eleggibili,
+# incluso Sant'Ambrogio di Torino. Priorità per ordine radiale, poi score.
 ready_rows = [r for r in route_rows if r.get("STATO_GIRO") == "FERMATA_PRONTA"]
 best_by_town = {}
 for r in ready_rows:
     town_key = norm(r.get("COMUNE"))
-    if not town_key or town_key in EXCLUDED_TOWNS:
+    if not town_key:
         continue
     score = int_score(r)
+    rank = int(r.get("RADIAL_RANK") or 9999)
     if town_key not in best_by_town or score > best_by_town[town_key]["score"]:
-        best_by_town[town_key] = {"score": score, "comune": r.get("COMUNE", "")}
+        best_by_town[town_key] = {"score": score, "rank": rank, "comune": r.get("COMUNE", "")}
 
-ranked_towns = sorted(best_by_town.items(), key=lambda kv: kv[1]["score"], reverse=True)[:TEAM_SIZE]
+ranked_towns = sorted(best_by_town.items(), key=lambda kv: (kv[1]["rank"], -kv[1]["score"]))[:TEAM_SIZE]
 assignment = {
-    town_key: {"funzionario": idx + 1, "comune": info["comune"], "score_comune": info["score"]}
+    town_key: {"funzionario": idx + 1, "comune": info["comune"], "score_comune": info["score"], "radial_rank": info["rank"]}
     for idx, (town_key, info) in enumerate(ranked_towns)
 }
 
@@ -282,21 +287,21 @@ for r in route_rows:
         r["STATO_ASSEGNAZIONE"] = r.get("STATO_GIRO", "")
 
 route_fields = [
-    "FUNZIONARIO", "NUM_FUNZIONARIO", "STATO_ASSEGNAZIONE",
-    "TERRITORIO_OPERATIVO", "STATO_GIRO", "STATO_MERCATO",
-    "PRIORITA", "SCORE", "TIPO_OPPORTUNITA", "TARGET", "FASE_PROGETTO", "OBIETTIVO_COMMERCIALE",
-    "COMUNE", "DOVE_ANDRE", "COSA_CERCO", "PREZZO",
-    "FONTE", "SELLER_SIGNAL", "AZIONE", "PDF_DA_VERIFICARE", "URL", "F1_INDIRIZZO_REMOTO_URL"
+    "FUNZIONARIO", "NUM_FUNZIONARIO", "STATO_ASSEGNAZIONE", "TERRITORIO_OPERATIVO",
+    "TERRITORY_SIDE", "RADIAL_RANK", "STATO_GIRO", "STATO_MERCATO", "PRIORITA", "SCORE",
+    "TIPO_OPPORTUNITA", "TARGET", "FASE_PROGETTO", "OBIETTIVO_COMMERCIALE", "COMUNE",
+    "DOVE_ANDRE", "COSA_CERCO", "PREZZO", "FONTE", "SELLER_SIGNAL", "AZIONE",
+    "PDF_DA_VERIFICARE", "URL", "F1_INDIRIZZO_REMOTO_URL"
 ]
 
-route_rows.sort(key=lambda r: int_score(r), reverse=True)
+route_rows.sort(key=lambda r: (int(r.get("RADIAL_RANK") or 9999), -int_score(r)))
 today_rows = [r for r in route_rows if r.get("TERRITORIO_OPERATIVO") == "SI" and r.get("STATO_GIRO") != "STORICO_NON_ATTIVO"]
 today_order = {"FERMATA_PRONTA": 0, "DA_VERIFICARE": 1}
-today_rows.sort(key=lambda r: (today_order.get(r.get("STATO_GIRO"), 9), -int_score(r)))
+today_rows.sort(key=lambda r: (int(r.get("RADIAL_RANK") or 9999), today_order.get(r.get("STATO_GIRO"), 9), -int_score(r)))
 verify_rows = [r for r in today_rows if r.get("STATO_GIRO") == "DA_VERIFICARE"]
 backlog_rows = [r for r in route_rows if r.get("STATO_GIRO") == "BACKLOG"]
 team_rows = [r for r in route_rows if r.get("STATO_ASSEGNAZIONE") == "ASSEGNATO"]
-team_rows.sort(key=lambda r: (int(r.get("NUM_FUNZIONARIO") or 999), -int_score(r)))
+team_rows.sort(key=lambda r: (int(r.get("NUM_FUNZIONARIO") or 999), int(r.get("RADIAL_RANK") or 9999), -int_score(r)))
 
 write_csv(OUT, route_fields, route_rows)
 write_csv(OUT_TODAY, route_fields, today_rows)
@@ -310,10 +315,8 @@ team_summary = {
     "unassigned_staff": max(0, TEAM_SIZE - len(assignment)),
     "assignments": [
         {
-            "funzionario": f"FUNZIONARIO {a['funzionario']}",
-            "numero": a["funzionario"],
-            "comune": a["comune"],
-            "score_comune": a["score_comune"],
+            "funzionario": f"FUNZIONARIO {a['funzionario']}", "numero": a["funzionario"],
+            "comune": a["comune"], "score_comune": a["score_comune"], "radial_rank": a["radial_rank"],
             "righe_lavoro": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"]),
             "residenziale": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") == "RESIDENZIALE"),
             "commerciale": sum(1 for r in team_rows if int(r.get("NUM_FUNZIONARIO") or 0) == a["funzionario"] and r.get("TIPO_OPPORTUNITA") in {"COMMERCIALE_IMMOBILE", "UFFICIO_DIREZIONALE", "INDUSTRIALE_LOGISTICA", "ATTIVITA_CESSIONE", "TERRENO_SVILUPPO"}),
@@ -337,13 +340,15 @@ summary = {
     "territori_master": len({norm(r.get("COMUNE")) for r in route_rows if norm(r.get("COMUNE"))}),
     "territori_operativi_configurati": len(active_towns),
     "centro_operativo": "Villar Dora",
-    "raggio_operativo": "10 km",
+    "regola_territoriale": "CENTRO_RADIALE_SINISTRA_DESTRA",
+    "comuni_sinistra": sum(1 for x in territory.values() if x["side"] == "SINISTRA"),
+    "comuni_destra": sum(1 for x in territory.values() if x["side"] == "DESTRA"),
 }
 OUT_SUMMARY.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
 print(
     "GIRO ACQUISIZIONE: "
-    f"master={summary['seller_master_totali']}; attivi={summary['seller_attivi_master']}; "
+    f"centro=Villar Dora; master={summary['seller_master_totali']}; attivi={summary['seller_attivi_master']}; "
     f"territorio={summary['nel_territorio_attivo']}; fermate_pronte={summary['fermate_pronte']}; "
     f"da_verificare={summary['indirizzo_da_verificare']}; backlog={summary['backlog_fuori_territorio']}; "
     f"assegnate={summary['fermate_assegnate_team']}."
