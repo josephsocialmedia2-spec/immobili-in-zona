@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T06:23:31.313904+00:00",
+  "generated_at": "2026-09-17T11:47:05.687531+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -281,7 +281,7 @@
       "zone_id": "avigliana-piazza-del-popolo",
       "comune": "Avigliana",
       "target_street": "piazza del Popolo",
-      "listing_target": "piazza del popolo 100",
+      "listing_target": "piazza del Popolo 4",
       "listing_url": "https://www.immobiliare.it/annunci/127408283/",
       "streets": [
         "piazza del Popolo",
@@ -311,7 +311,7 @@
       "zone_id": "avigliana-via-4-novembre",
       "comune": "Avigliana",
       "target_street": "via 4 Novembre",
-      "listing_target": "via 4 Novembre 16",
+      "listing_target": "via 4 Novembre 21",
       "listing_url": "https://www.immobiliare.it/annunci/130632950/",
       "streets": [
         "via 4 Novembre",
