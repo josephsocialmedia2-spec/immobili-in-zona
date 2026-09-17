@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T22:29:06.666394+00:00",
+  "generated_at": "2026-09-17T06:23:31.313904+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -311,7 +311,7 @@
       "zone_id": "avigliana-via-4-novembre",
       "comune": "Avigliana",
       "target_street": "via 4 Novembre",
-      "listing_target": "via 4 Novembre 21",
+      "listing_target": "via 4 Novembre 16",
       "listing_url": "https://www.immobiliare.it/annunci/130632950/",
       "streets": [
         "via 4 Novembre",
@@ -1163,6 +1163,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/132264762/",
       "streets": [
         "via Avogadro"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-viale-enrico-fermi",
+      "comune": "Avigliana",
+      "target_street": "viale Enrico Fermi",
+      "listing_target": "viale Enrico Fermi 12",
+      "listing_url": "https://www.immobiliare.it/annunci/124659479/",
+      "streets": [
+        "viale Enrico Fermi"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
