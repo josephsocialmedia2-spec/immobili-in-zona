@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T20:37:05.729576+00:00",
+  "generated_at": "2026-09-17T23:20:01.482179+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -484,6 +484,21 @@
         "Via Fratelli Girotto",
         "Via Moncenisio",
         "Via Rivera"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-pinerolo",
+      "comune": "Avigliana",
+      "target_street": "via Pinerolo",
+      "listing_target": "via Pinerolo 45",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/avigliana-vista-lago",
+      "streets": [
+        "via Pinerolo",
+        "Strada Avigliana",
+        "Via Giaveno",
+        "Corso Laghi",
+        "Parcheggio lago piccolo"
       ],
       "osm_status": "OK"
     },

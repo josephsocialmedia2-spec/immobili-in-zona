@@ -30,9 +30,9 @@
       "numero": 3,
       "comune": "Avigliana",
       "score_comune": 48,
-      "righe_lavoro": 19,
-      "residenziale": 18,
-      "commerciale": 1,
+      "righe_lavoro": 21,
+      "residenziale": 19,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -42,8 +42,8 @@
       "comune": "Pianezza",
       "score_comune": 48,
       "righe_lavoro": 18,
-      "residenziale": 16,
-      "commerciale": 2,
+      "residenziale": 15,
+      "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -52,9 +52,9 @@
       "numero": 5,
       "comune": "Beinasco",
       "score_comune": 45,
-      "righe_lavoro": 31,
-      "residenziale": 22,
-      "commerciale": 9,
+      "righe_lavoro": 27,
+      "residenziale": 19,
+      "commerciale": 8,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -83,17 +83,6 @@
     {
       "funzionario": "FUNZIONARIO 8",
       "numero": 8,
-      "comune": "Buttigliera Alta",
-      "score_comune": 38,
-      "righe_lavoro": 1,
-      "residenziale": 1,
-      "commerciale": 0,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
       "comune": "Alpignano",
       "score_comune": 38,
       "righe_lavoro": 14,
@@ -103,13 +92,24 @@
       "pdf_da_verificare": 0
     },
     {
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
+      "comune": "Buttigliera Alta",
+      "score_comune": 38,
+      "righe_lavoro": 1,
+      "residenziale": 1,
+      "commerciale": 0,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
       "comune": "Rivalta di Torino",
       "score_comune": 38,
-      "righe_lavoro": 11,
+      "righe_lavoro": 10,
       "residenziale": 10,
-      "commerciale": 1,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }
