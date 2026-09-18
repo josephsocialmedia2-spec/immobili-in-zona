@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:38:25.700874+00:00",
+  "generated_at": "2026-09-18T17:32:54.533127+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -101,8 +101,8 @@
       "zone_id": "almese-via-braida",
       "comune": "Almese",
       "target_street": "via Braida",
-      "listing_target": "via Braida 18",
-      "listing_url": "https://www.immobiliare.it/annunci/131901566/",
+      "listing_target": "via Braida 18/9",
+      "listing_url": "https://www.immobiliare.it/annunci/132512014/",
       "streets": [
         "via Braida",
         "Via Bertolo",
@@ -626,7 +626,7 @@
       "zone_id": "buttigliera-alta-via-iv-novembre",
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
-      "listing_target": "via IV Novembre 15",
+      "listing_target": "Via IV Novembre 5",
       "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
         "Via IV Novembre",
@@ -746,8 +746,8 @@
       "zone_id": "caprie-via-caprie",
       "comune": "Caprie",
       "target_street": "via Caprie",
-      "listing_target": "via Caprie 5",
-      "listing_url": "https://www.immobiliare.it/annunci/128454554/",
+      "listing_target": "via Caprie 18",
+      "listing_url": "https://www.immobiliare.it/annunci/132466488/",
       "streets": [
         "via Caprie",
         "Canalone",
