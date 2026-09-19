@@ -6,7 +6,9 @@ nello state per audit ma non entrano nei KPI di mercato finché non esiste evide
 che il record rappresenti un singolo immobile.
 """
 import json, re
+from datetime import datetime, timezone
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 import market_intelligence as mi
 
 CATEGORY_PATTERNS=[
@@ -79,6 +81,9 @@ def main():
     mi.write_csv(mi.INTEL/'kpi_comuni.csv',kc,list(kc[0]) if kc else ['COMUNE']);mi.write_csv(mi.INTEL/'kpi_tipologie.csv',kt,list(kt[0]) if kt else ['COMUNE','TIPOLOGIA']);mi.write_csv(mi.INTEL/'kpi_vie.csv',kv,list(kv[0]) if kv else ['COMUNE','VIA']);mi.write_csv(mi.INTEL/'kpi_agenzie.csv',ka,list(ka[0]) if ka else ['AGENZIA']);mi.write_csv(mi.INTEL/'kpi_segnali.csv',ks,list(ks[0]) if ks else ['COMUNE']);mi.write_csv(mi.INTEL/'scarti_qualita.csv',discard,['ID','COMUNE','TITOLO','FONTE','URL','MOTIVO_SCARTO'])
     sf=['id','comune','via','strada','tipologia','titolo','fonte','agenzia','url','stato','attivo','venduto_confermato','prima_rilevazione','ultimo_avvistamento','giorni_mercato','prezzo','prezzo_precedente','mq','prezzo_mq','numero_ribassi','primo_ribasso','ultimo_ribasso','giorni_al_primo_ribasso','ribasso_totale_pct','cross_match','missed_checks','qualita_record','segnale_mercato'];mi.write_csv(mi.INTEL/'immobili_snapshot.csv',kept,sf)
     latest.write_text(json.dumps(kept,ensure_ascii=False,indent=2),encoding='utf-8');(mi.HISTORY/f'{mi.TODAY}.json').write_text(json.dumps(kept,ensure_ascii=False,indent=2),encoding='utf-8');mi.DASH.write_text(mi.dashboard(kept,kc,ka,kt,kv,events),encoding='utf-8')
+    completed=datetime.now(timezone.utc);completed_rome=completed.astimezone(ZoneInfo('Europe/Rome'))
+    status={'status':'MARKET_INTELLIGENCE_COMPLETED','market_intelligence_completed_at_utc':completed.isoformat(timespec='seconds'),'market_intelligence_completed_at_rome':completed_rome.isoformat(timespec='seconds'),'records_qualified':len(kept),'records_discarded':len(discard),'comuni':len(kc),'agenzie':len(ka),'new_events':len(new_events)}
+    (mi.INTEL/'market_intelligence_status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
     print(f'Market Intelligence v2: {len(kept)} schede immobile qualificate, {len(discard)} pagine categoria/scarti, {len(kc)} comuni, {len(ka)} agenzie, {len(new_events)} nuovi eventi.')
 
 if __name__=='__main__':main()
