@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: f1-seller-radar-continuous-dispatch
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   dispatch:
