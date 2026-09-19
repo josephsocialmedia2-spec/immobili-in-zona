@@ -1,7 +1,7 @@
 ﻿ID,COMUNE,TITOLO,FONTE,URL,MOTIVO_SCARTO
 8c2bf7566b731a977793,Almese,160 immobili in vendita a Almese - Trovit,Trovit,https://case.trovit.it/almese,EVIDENZA_INSUFFICIENTE
 1f6a089f092103b77b70,Almese,Case e appartamenti a Almese. Immobili in vendita a Almese - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/almese,EVIDENZA_INSUFFICIENTE
-9bd098c51c8133127d2c,Alpignano,26.995 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
+9bd098c51c8133127d2c,Alpignano,26.981 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
 b1401933cac7e2c369de,Avigliana,"8 immobili in vendita a Villaggio Primavera, Avigliana - Trovit",Trovit,https://case.trovit.it/avigliana-villaggio-primavera,EVIDENZA_INSUFFICIENTE
 26cf0943b957c20d714b,Bardonecchia,Bardonecchia - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=bardonecchia,PAGINA_CATEGORIA
 0e12d064bae5d860bc52,Borgone Susa,Case e appartamenti a Borgone Susa. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/borgone-susa,EVIDENZA_INSUFFICIENTE
@@ -47,7 +47,7 @@ c0878aeada2ed6008db8,Oulx,236 immobili in vendita a Oulx - Trovit,Trovit,https:/
 34a652fd73504a581aed,Pianezza,Case indipendenti e ville a schiera in vendita Pianezza - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/pianezza/,EVIDENZA_INSUFFICIENTE
 812d44942fb61458cf21,Reano,Case e appartamenti a Reano. Immobili in vendita a Reano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/reano,EVIDENZA_INSUFFICIENTE
 f073bf97e2a0894b0f8a,Reano,Case in vendita Reano - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/reano/,PAGINA_CATEGORIA
-180fd3b192de1a3ccffe,Reano,65 Rustici in vendita a Reano - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
+180fd3b192de1a3ccffe,Reano,65 Rustici in vendita a Reano - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
 75bea38c2e641daa5e3e,Rivoli,57 immobili villa collina in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/villa-collina-rivoli,EVIDENZA_INSUFFICIENTE
 033e4c5815c3ce197d27,Rivoli,Immobili in vendita a Rivoli | Gabetti,Mercato generale,https://www.gabetti.it/vendita/rivoli,PAGINA_CATEGORIA
 19e4d46c5e7c11ee620c,Rivoli,Case e appartamenti a Rivoli Torino. Immobili in vendita a Rivoli ...,Nestoria,https://www.nestoria.it/immobiliare/vendita/rivoli,EVIDENZA_INSUFFICIENTE
@@ -165,7 +165,7 @@ b83a93e112b01e1b7f5e,Sangano,Immobiliari all'Asta Sangano - Fallimenti.it,Agenzi
 92d6d23f534c64cede14,Sant'Antonino di Susa,Case in vendita da Privati a Sant'Antonino di Susa,Mercato residenziale,https://www.casadaprivato.it/annunci-vendita/immobili/torino-sant_antonino_di_susa,PAGINA_CATEGORIA
 b666b43cbafcfb222dbc,Susa,Case in vendita a Susa - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/susa/,PAGINA_CATEGORIA
 809816aaada9c3d25f77,Trana,10 locale commerciales in vendita a Trana - Trovit,Trovit,https://case.trovit.it/negozio-trana,EVIDENZA_INSUFFICIENTE
-426f07c8422da4b2c824,Vaie,La Dimora Immobiliare - Vendita immobili a Torino e provincia,Capannoni logistica,https://www.ladimoraimmobiliare.com/,EVIDENZA_INSUFFICIENTE
+426f07c8422da4b2c824,Vaie,La Dimora Immobiliare - Vendita immobili a Torino e provincia,Commerciale negozi/locali,https://www.ladimoraimmobiliare.com/,EVIDENZA_INSUFFICIENTE
 b8583273e21a96ab8aa0,Valgioie,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/valgioie.html,EVIDENZA_INSUFFICIENTE
 b96beaa4fa5bff9c9ce5,Venaus,13 immobili in vendita a Venaus - Trovit,Trovit,https://case.trovit.it/venaus,EVIDENZA_INSUFFICIENTE
 9eeaf41a9b3f008aac0a,Venaus,"Case in affitto a Ar Cenisio, Venaus - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-affitto/ar-cenisio-venaus,EVIDENZA_INSUFFICIENTE
@@ -242,7 +242,7 @@ a8a2785580f9631f5ee3,Moncenisio,23 risultati per: immobili in Vendita Moncenisio
 2539d7931fc725223cbe,Moncenisio,Case e appartamenti a Moncenisio. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 681bcf9e5313f1686d83,Moncenisio,Vendita Moncenisio - 225 case in vendita in Moncenisio de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/vendita-moncenisio,EVIDENZA_INSUFFICIENTE
 070a0e12796a0638bd91,Pianezza,18 Capannoni in affitto a Pianezza - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-pianezza,EVIDENZA_INSUFFICIENTE
-fcad2736a598bba01652,Rivoli,762 immobili bilocale in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/bilocale-rivoli,EVIDENZA_INSUFFICIENTE
+fcad2736a598bba01652,Rivoli,770 immobili bilocale in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/bilocale-rivoli,EVIDENZA_INSUFFICIENTE
 3dcd3d7f4f9089d4c889,Rosta,100 immobili villa in vendita a Rosta - Trovit,Trovit,https://case.trovit.it/villa-rosta,EVIDENZA_INSUFFICIENTE
 83b2f7bee1d73a12a4c5,Rosta,16 Capannoni in affitto a Rosta - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-rosta,EVIDENZA_INSUFFICIENTE
 e9ccb9df9a1a8e20e73b,Rosta,5 capannones in affitto a Rosta - Trovit,Trovit,https://case.trovit.it/affitto-capannone-rosta,EVIDENZA_INSUFFICIENTE
@@ -379,7 +379,7 @@ ea42bb881c27e7a7a38d,Meana di Susa,Case a Meana di Susa. Ville in vendita a Mean
 56e41c30d3424c007a16,Rubiana,"Appartamento in vendita, Rubiana con giardino condominiale, 77 mq ...",Wikicasa,https://www.wikicasa.it/annuncio/30727473,EVIDENZA_INSUFFICIENTE
 8a7d331fd7556ea19e02,Venaus,"Case in vendita a Ar Cenisio, Venaus - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/ar-cenisio-venaus,PAGINA_CATEGORIA
 ae27331f0b60e2e659cb,Bardonecchia,AREA CASA IMMOBILIARE | Bardonecchia,Mercato residenziale,https://bardonecchia.it/strutture/area-casa-immobiliare/,EVIDENZA_INSUFFICIENTE
-b95cb5aa6d52ce687838,Alpignano,207 appartamentos in vendita a Alpignano - Trovit,Trovit,https://case.trovit.it/appartamento-alpignano,EVIDENZA_INSUFFICIENTE
+b95cb5aa6d52ce687838,Alpignano,208 appartamentos in vendita a Alpignano - Trovit,Trovit,https://case.trovit.it/appartamento-alpignano,EVIDENZA_INSUFFICIENTE
 ca13b4641ffd0de6d0c9,Villarbasse,Ville in vendita a Villarbasse • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-ville/villarbasse/,EVIDENZA_INSUFFICIENTE
 e85edfa4844bd571a5e6,Grugliasco,Case indipendenti e ville a schiera in vendita Grugliasco - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/grugliasco/,EVIDENZA_INSUFFICIENTE
 fd52174c9e6bfab8b33a,Sant'Antonino di Susa,Agenzia immobiliare a Sant'Antonino di Susa,Mercato residenziale,https://www.fcimmobiliare.it/a-6069010-santantonino-di-susa/,EVIDENZA_INSUFFICIENTE
@@ -578,7 +578,7 @@ b4545029c47d884dd183,Fiano,"Capannone, affitto, Fiano Romano • Commerciali.it"
 4291c830b01c8dcc1b4e,Giaveno,"Giaveno, in arrivo un nuovo parcheggio e un supermercato (con distributore)",Capannoni logistica,https://www.lavalsusa.it/giaveno-in-arrivo-un-nuovo-parcheggio-e-un-supermercato-con-distributore/,EVIDENZA_INSUFFICIENTE
 287f0ba57f14be5c406d,Rivalta di Torino,Attività commerciali in affitto a Rivalta Di Torino,Capannoni logistica,https://www.ioaffitto.it/risultati/affitto_attivita_commerciale/torino/rivalta_di_torino.html,EVIDENZA_INSUFFICIENTE
 ee77a11935e880be8058,San Gillio,429 Case in vendita a San Gillio - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/casa-san-gillio,EVIDENZA_INSUFFICIENTE
-41248ef34a22aefff42f,Val della Torre,Immobiliare Camperi Sas,Commerciale negozi/locali,https://www.immobiliarecamperi.it/,EVIDENZA_INSUFFICIENTE
+41248ef34a22aefff42f,Val della Torre,Immobiliare Camperi Sas,Mercato residenziale,https://www.immobiliarecamperi.it/,EVIDENZA_INSUFFICIENTE
 6ee7ca93ae38e172fc77,Valgioie,Valgioie - 93 case in vendita in Valgioie de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/valgioie,EVIDENZA_INSUFFICIENTE
 a9911f13592eaaccff3b,Avigliana,Case in vendita a Avigliana - oikia.it,Mercato residenziale,https://www.oikia.it/vendita-case/avigliana/,PAGINA_CATEGORIA
 729aed58a61f81cdb9ff,Beinasco,Appartamenti in vendita Beinasco - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/beinasco/,EVIDENZA_INSUFFICIENTE
@@ -618,7 +618,7 @@ e8bc7ee03c08179f95f9,Valgioie,Case in vendita a Valgioie - Wikicasa,Wikicasa,htt
 f7fe5a1841ae70779eb4,Chiusa di San Michele,RUBRICHE - ValsusaOggi,Mercato residenziale,https://www.valsusaoggi.it/rubriche/,EVIDENZA_INSUFFICIENTE
 5a0e91cc18e12361e4b1,Druento,8 Capannoni in affitto a Druento - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-druento,EVIDENZA_INSUFFICIENTE
 9ea0f3bd2e803e454e8f,Avigliana,Case in vendita a Avigliana | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita-case/avigliana/,PAGINA_CATEGORIA
-93015ad8dc26a4e3b0e3,Borgone Susa,ALBO PRETORIO DIGITALE - Comune di Borgone Susa,Capannoni logistica,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Pubblicazioni.aspx?CE=brgnss854,EVIDENZA_INSUFFICIENTE
+93015ad8dc26a4e3b0e3,Borgone Susa,ALBO PRETORIO DIGITALE - Comune di Borgone Susa,Uffici e direzionale,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Pubblicazioni.aspx?CE=brgnss854,EVIDENZA_INSUFFICIENTE
 8fade07a3a717745d07d,Chiusa di San Michele,"VALSUSA, VENDESI TERATETTO A 89.000 € | ValsusaOggi",Mercato residenziale,https://www.valsusaoggi.it/valsusa-vendesi-teratetto-a-89-000-e/,EVIDENZA_INSUFFICIENTE
 3e2dbc85c379afc17c6c,Chiusa di San Michele,Case in vendita a Chiusa di San Michele | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita-case/chiusa-di-san-michele/,PAGINA_CATEGORIA
 097a2759bb30560f78e3,Rivoli,Appartamento in Locazione a Rivoli - rif. 9189,Tipologie residenziali,https://www.fiminter.com/i/9396604583--locazione-appartamento-rivoli.html,EVIDENZA_INSUFFICIENTE
@@ -627,7 +627,7 @@ e9df7d5c72d58e30f300,Rosta,Ville singole e a schiera in vendita da Privati a Ros
 1dae348775c46b7f98ef,San Gillio,9.845 appartamenti in affitto a San Gillio - Nestoria,Nestoria,https://www.nestoria.it/appartamenti/affitto/san-gillio,EVIDENZA_INSUFFICIENTE
 4120ec1daf3d792359f1,Villar Dora,Valutazione immobiliare casa indipendente a Villar Dora Bert-657e3442,Tipologie residenziali,https://www.caasa.it/piemonte/torino/villar-dora/vendita-657e3442-opinione.html,EVIDENZA_INSUFFICIENTE
 fdda30a741f81da6c183,Caselette,Case a Caselette. Immobili in affitto a Caselette - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/affitto/caselette,EVIDENZA_INSUFFICIENTE
-e3640278f69a261b7426,Rivalta di Torino,Belmonte Srl,Capannoni logistica,https://www.belmontesas.it/,EVIDENZA_INSUFFICIENTE
+e3640278f69a261b7426,Rivalta di Torino,Belmonte Srl,Uffici e direzionale,https://www.belmontesas.it/,EVIDENZA_INSUFFICIENTE
 19f736859ef290a37e2e,Sant'Antonino di Susa,Appartamento in affitto a Sant'Antonino di Susa Cod. MAISONETTA74,Uffici e direzionale,https://www.fcimmobiliare.it/i-672135-affitto-appartamento-santantonino-di-susa/,EVIDENZA_INSUFFICIENTE
 ba5f946e57a1f0d2e06c,Trana,Villarpasta - Pastificio Artigianale,Mercato residenziale,https://villarpasta.com/,EVIDENZA_INSUFFICIENTE
 4da57f281edd9550a308,Villarbasse,Villa Villarbasse - 44 case in vendita in Villarbasse de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/villa-villarbasse,EVIDENZA_INSUFFICIENTE
@@ -672,3 +672,9 @@ c830de8577a2974d5b54,Sant'Antonino di Susa,"VALSUSA, VENDESI VILLA CON GIARDINO 
 3250f90c0511a1909be9,Sant'Antonino di Susa,Negozio all'Asta a Sant'Antonino di Susa - Aste Florio,Capannoni logistica,https://asteflorio.it/aste/citta/sant-antonino-di-susa/tipo/negozio,EVIDENZA_INSUFFICIENTE
 222582f68593ffb1b03f,Val della Torre,ALBO PRETORIO DIGITALE - Comune di Val della Torre,Uffici e direzionale,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?ce=vldlltrr970,EVIDENZA_INSUFFICIENTE
 ced97e7aeeb726f0ce97,Beinasco,4 capannones in affitto a Beinasco - Trovit,Trovit,https://case.trovit.it/affitto-capannone-beinasco,EVIDENZA_INSUFFICIENTE
+9bb0b5842f3f4601c510,Coazze,Vendesi Baita Montagna - 222 case in vendita in Montagna de ... - nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/vendesi-baita-montagna,EVIDENZA_INSUFFICIENTE
+8a07aa620adbe21f9bdf,Rivoli,Immobili in Vendita | Agenzia Tecnorete di Rivoli,Tecnorete,https://rivoli2.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
+1068deb1c8619fa0e565,Rivoli,Immobili in Vendita | Agenzia Tecnorete di Rivoli,Tecnorete,https://rivoli4.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
+7b29a890e54abdf947f9,Rivoli,Appartamenti in Vendita | Agenzia Tecnorete di Rivoli,Tecnorete,https://rivoli3.tecnorete.it/appartamenti-in-vendita,EVIDENZA_INSUFFICIENTE
+81dd3c5dffaba744e5e2,Rivoli,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/agenzie/immobiliari+residenziali/torino/rivoli/to2h5.html,EVIDENZA_INSUFFICIENTE
+3da13889097839286620,Rivoli,Villa singola in vendita - Ville in vendita rif. 61133633 | Agenzia ...,Tecnorete,https://rivoli2.tecnorete.it/rivoli/ville-in-vendita-61133633,EVIDENZA_INSUFFICIENTE
