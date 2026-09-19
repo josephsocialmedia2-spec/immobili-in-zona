@@ -36,22 +36,75 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Verifica raccolta Seller Radar reale
+        id: refresh_guard
+        env:
+          F1_EVENT_NAME: ${{ github.event_name }}
+          F1_TRIGGER_RUN_ID: ${{ github.event.workflow_run.id }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          event = os.environ.get("F1_EVENT_NAME", "")
+          trigger_run = os.environ.get("F1_TRIGGER_RUN_ID", "")
+          proceed = event != "workflow_run"
+          reason = "explicit_build"
+
+          if event == "workflow_run":
+              path = Path("seller_radar_auto/data/radar_run_status.json")
+              if not path.exists():
+                  proceed = False
+                  reason = "missing_refresh_marker"
+              else:
+                  try:
+                      marker = json.loads(path.read_text(encoding="utf-8"))
+                  except Exception:
+                      marker = {}
+                  same_run = str(marker.get("radar_run_id", "")) == str(trigger_run)
+                  completed = marker.get("status") == "DATA_REFRESH_COMPLETED" and bool(marker.get("data_refresh_completed"))
+                  proceed = bool(same_run and completed)
+                  if not same_run:
+                      reason = "stale_or_skipped_run_marker"
+                  elif not completed:
+                      reason = "refresh_not_completed"
+                  else:
+                      reason = "verified_data_refresh"
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write("proceed=" + ("true" if proceed else "false") + "\n")
+              fh.write("reason=" + reason + "\n")
+          print("Market Hub guard:", "PROCEED" if proceed else "SKIP", reason)
+          PY
+
+      - name: Nessuna nuova raccolta da elaborare
+        if: steps.refresh_guard.outputs.proceed != 'true'
+        run: echo "Market Hub non rigenerato — motivo ${{ steps.refresh_guard.outputs.reason }}."
+
       - name: Verifica script
+        if: steps.refresh_guard.outputs.proceed == 'true'
         run: python -m py_compile seller_radar_auto/cross_repo_ingest.py seller_radar_auto/appointment_brief.py seller_radar_auto/apply_market_enrichment.py seller_radar_auto/market_intelligence.py seller_radar_auto/market_intelligence_v2.py seller_radar_auto/item_worker.py seller_radar_auto/search_market_fallback.py
 
       - name: Applica prezzi e inserzionisti verificati
+        if: steps.refresh_guard.outputs.proceed == 'true'
         run: python seller_radar_auto/apply_market_enrichment.py
 
       - name: Rigenera Market Intelligence e KPI filtrati
+        if: steps.refresh_guard.outputs.proceed == 'true'
         run: python seller_radar_auto/market_intelligence_v2.py
 
       - name: Collega repository F1
+        if: steps.refresh_guard.outputs.proceed == 'true'
         run: python seller_radar_auto/cross_repo_ingest.py
 
       - name: Genera Brief Appuntamento F1
+        if: steps.refresh_guard.outputs.proceed == 'true'
         run: python seller_radar_auto/appointment_brief.py
 
       - name: Salva quadro generale
+        if: steps.refresh_guard.outputs.proceed == 'true'
         shell: bash
         run: |
           set -euo pipefail
