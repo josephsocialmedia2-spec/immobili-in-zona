@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T18:23:18.236506+00:00",
+  "generated_at": "2026-09-19T20:45:43.568189+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -154,21 +154,6 @@
         "Via delle Industrie",
         "Via Drubiaglio",
         "Via Milanere"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-vicolo-ciandellera",
-      "comune": "Almese",
-      "target_street": "Vicolo Ciandellera",
-      "listing_target": "Vicolo Ciandellera 2",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/almese",
-      "streets": [
-        "Vicolo Ciandellera",
-        "Via Malatrait",
-        "Via Rocci",
-        "Vicolo Fucina",
-        "Piazza Martiri della Libertà"
       ],
       "osm_status": "OK"
     },
@@ -563,6 +548,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "avigliana-corso-laghi-avigliana-avigliana-corso-laghi-proponiamo-alloggio-libero-su",
+      "comune": "Avigliana",
+      "target_street": "Corso Laghi , Avigliana Avigliana - Corso Laghi proponiamo alloggio libero su",
+      "listing_target": "Corso Laghi , Avigliana Avigliana - Corso Laghi proponiamo alloggio libero su 3",
+      "listing_url": "https://www.wikicasa.it/vendita-appartamenti/avigliana/",
+      "streets": [
+        "Corso Laghi , Avigliana Avigliana - Corso Laghi proponiamo alloggio libero su",
+        "Piazza del Popolo",
+        "Via Alpi Cozie",
+        "Via Carnino",
+        "Via Cavalieri di Vittorio Veneto"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-via-partigiani-d-italia",
       "comune": "Avigliana",
       "target_street": "Via Partigiani D'Italia",
@@ -683,6 +683,36 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "buttigliera-alta-corso-superga",
+      "comune": "Buttigliera Alta",
+      "target_street": "Corso Superga",
+      "listing_target": "Corso Superga 8",
+      "listing_url": "https://www.idealista.it/immobile/35549687/",
+      "streets": [
+        "Corso Superga",
+        "Corso Laghi",
+        "Via Madonna dei Boschi",
+        "Via Ragazzi del '99",
+        "Via Reano"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-della-torre",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via della Torre",
+      "listing_target": "Via della Torre 59",
+      "listing_url": "https://www.idealista.it/immobile/36323286/",
+      "streets": [
+        "Via della Torre",
+        "Corso Torino",
+        "Corso Vandel",
+        "Strada Antica di Francia",
+        "Via Capoluogo"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "buttigliera-alta-via-del-cavallo-grigio-ferriera-gio",
       "comune": "Buttigliera Alta",
       "target_street": "via del Cavallo Grigio, Ferriera gio",
@@ -709,21 +739,6 @@
         "Corso Vandel",
         "Strada Antica di Francia",
         "Strada della Praia"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "buttigliera-alta-via-della-torre",
-      "comune": "Buttigliera Alta",
-      "target_street": "Via della Torre",
-      "listing_target": "Via della Torre 10/A",
-      "listing_url": "https://www.idealista.it/immobile/36323286/",
-      "streets": [
-        "Via della Torre",
-        "Corso Torino",
-        "Corso Vandel",
-        "Strada Antica di Francia",
-        "Via Capoluogo"
       ],
       "osm_status": "OK"
     },
@@ -1061,6 +1076,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/127739728/",
       "streets": [
         "via Ruffini"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "almese-localita-grangia-offre-una-superficie-totale-di",
+      "comune": "Almese",
+      "target_street": "località Grangia, offre una superficie totale di",
+      "listing_target": "località Grangia, offre una superficie totale di 300",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/almese",
+      "streets": [
+        "località Grangia, offre una superficie totale di"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
