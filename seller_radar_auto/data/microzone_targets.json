@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T11:03:10.480220+00:00",
+  "generated_at": "2026-09-19T14:45:35.065963+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -627,7 +627,7 @@
       "comune": "Buttigliera Alta",
       "target_street": "Via IV Novembre",
       "listing_target": "Via IV Novembre 5",
-      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html",
       "streets": [
         "Via IV Novembre",
         "Via Quattro Novembre",
@@ -638,17 +638,32 @@
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "buttigliera-alta-strada-del-closio",
+      "zone_id": "buttigliera-alta-corso-laghi",
       "comune": "Buttigliera Alta",
-      "target_street": "Strada del Closio",
-      "listing_target": "Strada del Closio 39",
+      "target_street": "Corso Laghi",
+      "listing_target": "corso Laghi 81",
       "listing_url": "https://www.wikicasa.it/vendita-case/buttigliera-alta/",
       "streets": [
-        "Strada del Closio",
-        "Via Bacchiasso",
-        "Via Cornaglio",
-        "Via Mario Greco",
-        "Via Salvador Allende"
+        "Corso Laghi",
+        "Corso Superga",
+        "Via Avigliana",
+        "Via Conti Caron",
+        "Via Monte Cuneo"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-della-torre-ferriera",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via della Torre - Ferriera",
+      "listing_target": "Via della Torre - Ferriera 4",
+      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "streets": [
+        "Via della Torre - Ferriera",
+        "Corso Torino",
+        "Corso Vandel",
+        "Strada Antica di Francia",
+        "Via Capoluogo"
       ],
       "osm_status": "OK"
     },
