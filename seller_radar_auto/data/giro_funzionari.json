@@ -6,28 +6,39 @@
     {
       "funzionario": "FUNZIONARIO 1",
       "numero": 1,
-      "comune": "Bruino",
-      "score_comune": 56,
-      "righe_lavoro": 11,
-      "residenziale": 10,
-      "commerciale": 1,
+      "comune": "Almese",
+      "score_comune": 58,
+      "righe_lavoro": 8,
+      "residenziale": 6,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 2",
       "numero": 2,
-      "comune": "Beinasco",
+      "comune": "Bruino",
       "score_comune": 56,
-      "righe_lavoro": 22,
-      "residenziale": 18,
-      "commerciale": 4,
+      "righe_lavoro": 13,
+      "residenziale": 10,
+      "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 3",
       "numero": 3,
+      "comune": "Beinasco",
+      "score_comune": 56,
+      "righe_lavoro": 23,
+      "residenziale": 18,
+      "commerciale": 5,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 4",
+      "numero": 4,
       "comune": "Avigliana",
       "score_comune": 48,
       "righe_lavoro": 15,
@@ -37,8 +48,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 4",
-      "numero": 4,
+      "funzionario": "FUNZIONARIO 5",
+      "numero": 5,
       "comune": "Pianezza",
       "score_comune": 48,
       "righe_lavoro": 19,
@@ -48,8 +59,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 5",
-      "numero": 5,
+      "funzionario": "FUNZIONARIO 6",
+      "numero": 6,
       "comune": "San Giorio di Susa",
       "score_comune": 43,
       "righe_lavoro": 23,
@@ -59,19 +70,19 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 6",
-      "numero": 6,
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Grugliasco",
       "score_comune": 43,
-      "righe_lavoro": 16,
-      "residenziale": 15,
+      "righe_lavoro": 17,
+      "residenziale": 16,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
+      "funzionario": "FUNZIONARIO 8",
+      "numero": 8,
       "comune": "Alpignano",
       "score_comune": 38,
       "righe_lavoro": 13,
@@ -81,8 +92,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 8",
-      "numero": 8,
+      "funzionario": "FUNZIONARIO 9",
+      "numero": 9,
       "comune": "Buttigliera Alta",
       "score_comune": 38,
       "righe_lavoro": 10,
@@ -92,23 +103,12 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 9",
-      "numero": 9,
-      "comune": "Rubiana",
-      "score_comune": 37,
-      "righe_lavoro": 5,
-      "residenziale": 4,
-      "commerciale": 1,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Trana",
+      "comune": "Villarbasse",
       "score_comune": 35,
-      "righe_lavoro": 12,
-      "residenziale": 12,
+      "righe_lavoro": 6,
+      "residenziale": 6,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
