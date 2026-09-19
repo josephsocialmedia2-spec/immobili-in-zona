@@ -119,6 +119,7 @@ def changes(prev,cur):
         if not o.get('attivo') and c.get('attivo'):out.append({**base,'evento':'RIENTRO_RIPUBBLICAZIONE','valore_precedente':o.get('stato',''),'valore_nuovo':c.get('stato','')})
         if o.get('agenzia') and c.get('agenzia') and o.get('agenzia')!=c.get('agenzia'):out.append({**base,'evento':'CAMBIO_AGENZIA','valore_precedente':o.get('agenzia'),'valore_nuovo':c.get('agenzia')})
         if not o.get('via') and c.get('via'):out.append({**base,'evento':'INDIRIZZO_TROVATO','valore_precedente':'','valore_nuovo':c.get('via')})
+        if not bool(o.get('venduto_confermato')) and bool(c.get('venduto_confermato')):out.append({**base,'evento':'VENDUTO_SEGNALATO','valore_precedente':'','valore_nuovo':'SEGNALATO_DALLA_FONTE','dettaglio':'Segnalazione rilevata dalla fonte; non equivale a verifica notarile'})
     return out
 
 def groups(rows,keys):
