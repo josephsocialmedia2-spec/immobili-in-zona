@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: f1-seller-radar-auto
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   gate:
@@ -230,6 +230,54 @@ jobs:
           F1_WA_MOUNTAIN: ${{ secrets.F1_WA_MOUNTAIN }}
           F1_WA_TORINO: ${{ secrets.F1_WA_TORINO }}
         run: python seller_radar_auto/whatsapp_notify.py
+
+      - name: Registra raccolta dati realmente completata
+        env:
+          F1_MERGE_RESULT: ${{ needs.merge.result }}
+          F1_WORKER_RESULT: ${{ needs.worker.result }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          root = Path("seller_radar_auto")
+          now = datetime.now(timezone.utc)
+          rome = now.astimezone(ZoneInfo("Europe/Rome"))
+
+          def digest(path):
+              p = Path(path)
+              if not p.exists():
+                  return ""
+              h = hashlib.sha256()
+              with p.open("rb") as fh:
+                  for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+                      h.update(chunk)
+              return h.hexdigest()
+
+          payload = {
+              "status": "DATA_REFRESH_COMPLETED",
+              "data_refresh_completed": True,
+              "data_refresh_completed_at_utc": now.isoformat(timespec="seconds"),
+              "data_refresh_completed_at_rome": rome.isoformat(timespec="seconds"),
+              "radar_run_id": os.environ.get("GITHUB_RUN_ID", ""),
+              "radar_run_number": os.environ.get("GITHUB_RUN_NUMBER", ""),
+              "source_sha": os.environ.get("GITHUB_SHA", ""),
+              "event_name": os.environ.get("GITHUB_EVENT_NAME", ""),
+              "merge_result": os.environ.get("F1_MERGE_RESULT", ""),
+              "worker_result": os.environ.get("F1_WORKER_RESULT", ""),
+              "state_sha256": digest(root / "data" / "state.json"),
+              "work_queue_sha256": digest(root / "data" / "work_queue.csv"),
+          }
+          out = root / "data" / "radar_run_status.json"
+          out.parent.mkdir(parents=True, exist_ok=True)
+          out.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+          print(json.dumps(payload, ensure_ascii=False))
+          PY
 
       - name: Persist public market data
         shell: bash
