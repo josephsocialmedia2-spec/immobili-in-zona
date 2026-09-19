@@ -1,0 +1,14 @@
+{
+  "status": "DATA_REFRESH_COMPLETED",
+  "data_refresh_completed": true,
+  "data_refresh_completed_at_utc": "2026-09-19T06:28:04+00:00",
+  "data_refresh_completed_at_rome": "2026-09-19T08:28:04+02:00",
+  "radar_run_id": "35425069076",
+  "radar_run_number": "251",
+  "source_sha": "162c94a8cb5f2a5c446f8297b00e2c3b95582ab2",
+  "event_name": "workflow_dispatch",
+  "merge_result": "success",
+  "worker_result": "success",
+  "state_sha256": "4f73553262f3ea569863c8deff1a0a222d442dffc5813c9ee1e4f49dc2658361",
+  "work_queue_sha256": "dc5ba781944f8a84e351b380fe6c5abe701d8597b1bda666492d776d2b0e3d39"
+}
