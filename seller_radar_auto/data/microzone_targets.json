@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T06:23:41.890584+00:00",
+  "generated_at": "2026-09-20T11:27:27.095999+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -619,6 +619,21 @@
         "Via Cuminie",
         "Via don Campagna",
         "Via Drubiaglio"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-strada-antica-giaveno-sant-ambrogio",
+      "comune": "Avigliana",
+      "target_street": "Strada Antica Giaveno Sant'Ambrogio",
+      "listing_target": "Strada Antica Giaveno Sant'Ambrogio 29",
+      "listing_url": "https://www.immobiliare.it/annunci/132393390/",
+      "streets": [
+        "Strada Antica Giaveno Sant'Ambrogio",
+        "Via Sacra di San Michele",
+        "Viale Belvedere",
+        "Viale dei Tigli",
+        "Viale delle Betulle"
       ],
       "osm_status": "OK"
     },
@@ -1247,6 +1262,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/124659479/",
       "streets": [
         "viale Enrico Fermi"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-via-g-portigliatti",
+      "comune": "Avigliana",
+      "target_street": "Via G. Portigliatti",
+      "listing_target": "Via G. Portigliatti 37",
+      "listing_url": "https://www.idealista.it/immobile/36006036/",
+      "streets": [
+        "Via G. Portigliatti"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
