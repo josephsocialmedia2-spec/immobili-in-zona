@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T01:19:11.132606+00:00",
+  "generated_at": "2026-09-20T06:23:41.890584+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -101,7 +101,7 @@
       "zone_id": "almese-via-braida",
       "comune": "Almese",
       "target_street": "via Braida",
-      "listing_target": "via Braida 18/9",
+      "listing_target": "Via Braida 18",
       "listing_url": "https://www.immobiliare.it/annunci/132512014/",
       "streets": [
         "via Braida",
@@ -604,6 +604,21 @@
         "Corso Torino",
         "Piazzale Cesare Valloire",
         "Via Antonio Gramsci"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-moncenisio",
+      "comune": "Avigliana",
+      "target_street": "via Moncenisio",
+      "listing_target": "via Moncenisio 62",
+      "listing_url": "https://www.immobiliare.it/annunci/132431232/",
+      "streets": [
+        "via Moncenisio",
+        "Borgata Malano",
+        "Via Cuminie",
+        "Via don Campagna",
+        "Via Drubiaglio"
       ],
       "osm_status": "OK"
     },
