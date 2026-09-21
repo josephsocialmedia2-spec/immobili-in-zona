@@ -1,7 +1,7 @@
 ﻿ID,COMUNE,TITOLO,FONTE,URL,MOTIVO_SCARTO
-8c2bf7566b731a977793,Almese,160 immobili in vendita a Almese - Trovit,Trovit,https://case.trovit.it/almese,EVIDENZA_INSUFFICIENTE
+8c2bf7566b731a977793,Almese,159 immobili in vendita a Almese - Trovit,Trovit,https://case.trovit.it/almese,EVIDENZA_INSUFFICIENTE
 1f6a089f092103b77b70,Almese,Case e appartamenti a Almese. Immobili in vendita a Almese - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/almese,EVIDENZA_INSUFFICIENTE
-9bd098c51c8133127d2c,Alpignano,26.981 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
+9bd098c51c8133127d2c,Alpignano,26.948 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
 b1401933cac7e2c369de,Avigliana,"8 immobili in vendita a Villaggio Primavera, Avigliana - Trovit",Trovit,https://case.trovit.it/avigliana-villaggio-primavera,EVIDENZA_INSUFFICIENTE
 26cf0943b957c20d714b,Bardonecchia,Bardonecchia - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=bardonecchia,PAGINA_CATEGORIA
 0e12d064bae5d860bc52,Borgone Susa,Case e appartamenti a Borgone Susa. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/borgone-susa,EVIDENZA_INSUFFICIENTE
@@ -47,8 +47,8 @@ c0878aeada2ed6008db8,Oulx,236 immobili in vendita a Oulx - Trovit,Trovit,https:/
 34a652fd73504a581aed,Pianezza,Case indipendenti e ville a schiera in vendita Pianezza - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/pianezza/,EVIDENZA_INSUFFICIENTE
 812d44942fb61458cf21,Reano,Case e appartamenti a Reano. Immobili in vendita a Reano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/reano,EVIDENZA_INSUFFICIENTE
 f073bf97e2a0894b0f8a,Reano,Case in vendita Reano - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/reano/,PAGINA_CATEGORIA
-180fd3b192de1a3ccffe,Reano,68 Rustici in vendita a Reano - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
-75bea38c2e641daa5e3e,Rivoli,57 immobili villa collina in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/villa-collina-rivoli,EVIDENZA_INSUFFICIENTE
+180fd3b192de1a3ccffe,Reano,68 Rustici in vendita a Reano - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
+75bea38c2e641daa5e3e,Rivoli,50 immobili villa collina in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/villa-collina-rivoli,EVIDENZA_INSUFFICIENTE
 033e4c5815c3ce197d27,Rivoli,Immobili in vendita a Rivoli | Gabetti,Mercato generale,https://www.gabetti.it/vendita/rivoli,PAGINA_CATEGORIA
 19e4d46c5e7c11ee620c,Rivoli,Case e appartamenti a Rivoli Torino. Immobili in vendita a Rivoli ...,Nestoria,https://www.nestoria.it/immobiliare/vendita/rivoli,EVIDENZA_INSUFFICIENTE
 6fdcf9be95ed00e1f4ff,Rubiana,128 immobili in vendita a Rubiana - Trovit,Trovit,https://case.trovit.it/rubiana,EVIDENZA_INSUFFICIENTE
@@ -124,12 +124,12 @@ be3b1fe329030a5a38cd,Bardonecchia,GLOBAL CASA | Bardonecchia,Mercato residenzial
 4e5460259409f11f90a8,Bardonecchia,Gruppo Immobiliare Bardonecchia - Immobili in affitto e in vendita,Agenzie,https://www.gbi.it/,EVIDENZA_INSUFFICIENTE
 a1ae0b656bea609a2d60,Bussoleno,30 immobili asta in vendita a Bussoleno - Trovit,Trovit,https://case.trovit.it/asta-bussoleno,EVIDENZA_INSUFFICIENTE
 73e2a3e3f1a26af8c6af,Caprie,Appartamenti in vendita Caprie - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/caprie/,EVIDENZA_INSUFFICIENTE
-ebede1e83ca6a4c912b5,Caselette,25.908 immobili in vendita a Caselette - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/caselette,EVIDENZA_INSUFFICIENTE
+ebede1e83ca6a4c912b5,Caselette,25.880 immobili in vendita a Caselette - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/caselette,EVIDENZA_INSUFFICIENTE
 88ad8357caddbdaec919,Chianocco,Appartamento in vendita a Chianocco - Vernetto Cod. VERNETTO,Mercato residenziale,https://www.fcimmobiliare.it/i-672130-vendita-appartamento-chianocco-vernetto/,EVIDENZA_INSUFFICIENTE
 29c8a75b223352be8c9b,Chiusa di San Michele,Casa Chiusa Di San Michele - 16 case in vendita in Chiusa Di San ...,Mercato residenziale,https://www.nuroa.it/vendita-immobili/casa-chiusa-di-san-michele,EVIDENZA_INSUFFICIENTE
 ad901b3c9ae5ee562a0f,Coazze,Case in vendita da Privati a Coazze - CasaDaPrivato.it,Mercato residenziale,https://www.casadaprivato.it/annunci-vendita/immobili/torino-coazze,PAGINA_CATEGORIA
 e02c71dbd5aedd7e0a04,Coazze,224 immobili in vendita a Coazze - Trovit,Trovit,https://case.trovit.it/coazze,EVIDENZA_INSUFFICIENTE
-94c1f9e47a4396769d1c,Coazze,Case e appartamenti a Coazze Torino. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/coazze_torino,EVIDENZA_INSUFFICIENTE
+94c1f9e47a4396769d1c,Coazze,10.596 immobili in vendita a Coazze Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/coazze_torino,EVIDENZA_INSUFFICIENTE
 7ec321fa5ec90ddaf0e9,Coazze,44 Rustici in vendita a Coazze - Mitula Case,Agenzie,https://immobiliare.mitula.it/rustico-coazze,EVIDENZA_INSUFFICIENTE
 dd1e48ed3885f904503f,Collegno,"COLLEGNO, VENDESI APPARTAMENTO A 98.000 € | TorinoCintura",Mercato generale,https://www.torinocintura.it/2026/08/25/collegno-vendesi-appartamento-a-98-000-e/,EVIDENZA_INSUFFICIENTE
 85b4d6b71351d6a020cd,Collegno,Vendita e Affitto Immobili a Collegno Torino| Agenzia Immobiliare ...,Capannoni logistica,https://www.immobiliareprimaveraenicolo.it/,EVIDENZA_INSUFFICIENTE
@@ -156,7 +156,7 @@ aaeb5773b4742c3460a9,Rivoli,Indipendente Rivoli - 182 case in vendita in Rivoli 
 a267cd813123c589dc32,Rivoli,Veronica & Case | Agenzia Immobiliare Rivoli - Provincia di Torino,Agenzie,http://www.veronicaecase.it/,EVIDENZA_INSUFFICIENTE
 0c20519a1c6274b5741d,Rivoli,RE/MAX Ingegno di Rivoli | RE/MAX Italia,Agenzie,https://www.remax.it/trova/agenti-agenzie/agenzia/ingegno,EVIDENZA_INSUFFICIENTE
 735bd59a64f1ad2c1daa,Rubiana,Appartamenti in vendita Rubiana - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/rubiana/,EVIDENZA_INSUFFICIENTE
-b3be6013ddf2f58de280,Rubiana,15.582 immobili in vendita a Rubiana Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rubiana_torino,EVIDENZA_INSUFFICIENTE
+b3be6013ddf2f58de280,Rubiana,15.585 immobili in vendita a Rubiana Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rubiana_torino,EVIDENZA_INSUFFICIENTE
 a4753df33436db25c24f,Rubiana,"Case in vendita a Rubiana, Valli Susa, Sangone",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/rubiana-valli-susa-sangone,PAGINA_CATEGORIA
 6f5adda86c5a68315da4,San Didero,ALBO PRETORIO DIGITALE - Comune di San Didero,Capannoni logistica,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?CE=snddr1352,EVIDENZA_INSUFFICIENTE
 232cae954c909a2aff6e,San Giorio,ValsusaOggi,Mercato residenziale,https://www.valsusaoggi.it/,EVIDENZA_INSUFFICIENTE
@@ -242,7 +242,7 @@ a8a2785580f9631f5ee3,Moncenisio,23 risultati per: immobili in Vendita Moncenisio
 2539d7931fc725223cbe,Moncenisio,Case e appartamenti a Moncenisio. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 681bcf9e5313f1686d83,Moncenisio,Vendita Moncenisio - 225 case in vendita in Moncenisio de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/vendita-moncenisio,EVIDENZA_INSUFFICIENTE
 070a0e12796a0638bd91,Pianezza,18 Capannoni in affitto a Pianezza - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-pianezza,EVIDENZA_INSUFFICIENTE
-fcad2736a598bba01652,Rivoli,770 immobili bilocale in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/bilocale-rivoli,EVIDENZA_INSUFFICIENTE
+fcad2736a598bba01652,Rivoli,775 immobili bilocale in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/bilocale-rivoli,EVIDENZA_INSUFFICIENTE
 3dcd3d7f4f9089d4c889,Rosta,100 immobili villa in vendita a Rosta - Trovit,Trovit,https://case.trovit.it/villa-rosta,EVIDENZA_INSUFFICIENTE
 83b2f7bee1d73a12a4c5,Rosta,16 Capannoni in affitto a Rosta - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-rosta,EVIDENZA_INSUFFICIENTE
 e9ccb9df9a1a8e20e73b,Rosta,5 capannones in affitto a Rosta - Trovit,Trovit,https://case.trovit.it/affitto-capannone-rosta,EVIDENZA_INSUFFICIENTE
@@ -297,7 +297,7 @@ e6449bf2fb46ee9bc909,Sant'Ambrogio di Torino,Appartamenti in vendita Sant'Ambrog
 60de63e4211012eba58f,Villarbasse,Case indipendenti e ville a schiera in vendita Villarbasse - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/villarbasse/,EVIDENZA_INSUFFICIENTE
 5c9ab32f87ae7dc3c7e4,Avigliana,8 locale commerciales in affitto a Avigliana - Trovit,Trovit,https://case.trovit.it/affitto-negozio-avigliana,EVIDENZA_INSUFFICIENTE
 65ed479cc502ac6809c4,Borgone Susa,Case indipendenti e ville a schiera in vendita Borgone Susa - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/borgone-susa/,EVIDENZA_INSUFFICIENTE
-6f18420dfde2f82d259c,Collegno,Case in vendita a Collegno • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/collegno/,PAGINA_CATEGORIA
+6f18420dfde2f82d259c,Collegno,Case in vendita a Collegno - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/collegno/,PAGINA_CATEGORIA
 dd75942b662419d15c20,Meana di Susa,Case indipendenti e ville a schiera in vendita Meana di Susa - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/meana-di-susa/,EVIDENZA_INSUFFICIENTE
 6860892aaec86613bc14,Rosta,"Prestigiosa villa in vendita Rosta, Piemonte - 132054500",Mercato residenziale,https://www.luxuryestate.com/it/p132054500-villa-for-sale-rosta,EVIDENZA_INSUFFICIENTE
 8595a6e8cf61db653c09,Susa,14 casas in vendita a Susa - Trovit,Trovit,https://case.trovit.it/casa-susa,EVIDENZA_INSUFFICIENTE
@@ -357,7 +357,7 @@ a2ea639bde273f4a916f,Bardonecchia,Appartamenti in vendita Bardonecchia - Subito.
 6c28ff970b7d19042ca6,Giaveno,"Case in vendita a Selvaggio, Giaveno",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/selvaggio-giaveno,PAGINA_CATEGORIA
 a4d34c03050efc0fa713,Pianezza,3 casas privato in vendita a Pianezza - Trovit,Trovit,https://case.trovit.it/casa-privato-pianezza,EVIDENZA_INSUFFICIENTE
 f8fd607db7d577a25947,Villarbasse,Case a Villarbasse. Ville in vendita a Villarbasse - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/villarbasse,EVIDENZA_INSUFFICIENTE
-216bebf4b49109b68896,Almese,Case e appartamenti a Rivera Almese. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rivera_almese,EVIDENZA_INSUFFICIENTE
+216bebf4b49109b68896,Almese,23.144 immobili in vendita a Rivera Almese - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rivera_almese,EVIDENZA_INSUFFICIENTE
 b6676f68314504d2601c,Caprie,Villa in vendita a Caprie - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-ville/caprie/,EVIDENZA_INSUFFICIENTE
 4798d84d5dcdd12afba5,Sant'Ambrogio di Torino,15.948 immobili in vendita a San Pietro Sant'Ambrogio di Torino,Nestoria,https://www.nestoria.it/immobiliare/vendita/san-pietro_santambrogio-di-torino,EVIDENZA_INSUFFICIENTE
 0c1ea7dbcfc691249f16,Exilles,"Case in vendita a Exilles, Valli Susa, Sangone",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/exilles-valli-susa-sangone,PAGINA_CATEGORIA
@@ -423,10 +423,10 @@ bdf8a6d53da108e07f36,Grugliasco,Affitto Capannone industriale Grugliasco. Capann
 a4e936a437e2c57c657f,Rivalta di Torino,Vendita all'asta A4355753 - NEGOZIO - Aste Giudiziarie Inlinea S.p.A.,Capannoni logistica,https://www.astegiudiziarie.it/vendita-asta-negozio-rivalta-di-torino-via-trieste-7-10040-tetti-francesi-to-italia-l2330425-p1312229,EVIDENZA_INSUFFICIENTE
 15b71043fe1267a1995a,Robassomero,Case in vendita Robassomero - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/robassomero/,PAGINA_CATEGORIA
 a1fe863166c4b10b6ed1,Robassomero,3 Uffici in vendita a Robassomero - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/ufficio-robassomero,EVIDENZA_INSUFFICIENTE
-0d102203e1c3304c75d6,San Gillio,Case e appartamenti a San Gillio. Immobili in vendita a San ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/san-gillio,EVIDENZA_INSUFFICIENTE
+0d102203e1c3304c75d6,San Gillio,Case e appartamenti a San Gillio. Immobili in vendita a San Gillio ...,Nestoria,https://www.nestoria.it/immobiliare/vendita/san-gillio,EVIDENZA_INSUFFICIENTE
 fe7b7da2149cf2c773e3,San Gillio,Appartamenti in vendita San Gillio - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/san-gillio/,EVIDENZA_INSUFFICIENTE
 a6974727e82e0cd589f6,San Gillio,Case in vendita San Gillio - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/san-gillio/,PAGINA_CATEGORIA
-6c795ccfb1276a814d90,San Gillio,28 Capannoni in vendita a San Gillio - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/capannone-san-gillio,EVIDENZA_INSUFFICIENTE
+6c795ccfb1276a814d90,San Gillio,28 Capannoni in vendita a San Gillio - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/capannone-san-gillio,EVIDENZA_INSUFFICIENTE
 35818cb098d34aa613cc,San Gillio,"Immobiliare CASEINPIEMONTE, CASAPIEMONTE OVEST SRL, CASAPIEMONTE",Capannoni logistica,https://caseinpiemonte.it/,EVIDENZA_INSUFFICIENTE
 b2d21e027e754544c918,Vaie,Case e appartamenti a Vaie Torino. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/vaie_torino,EVIDENZA_INSUFFICIENTE
 3d86907b55db2f325963,Varisella,Case in vendita Varisella - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/varisella/,PAGINA_CATEGORIA
@@ -613,7 +613,6 @@ f25e10c12bd4045bb195,Rivoli,Rivoli - Vendita case Piemonte - Subito.it,Subito pr
 fc6ad5b8d39a20341449,Rivoli,7 capannones in affitto a Rivoli - Trovit,Trovit,https://case.trovit.it/affitto-capannone-rivoli,EVIDENZA_INSUFFICIENTE
 055077b6601e307bb103,Rivoli,"Celesia Alexia Rivoli. Agenzia immobiliare di Rivoli, Torino.",Mercato residenziale,https://www.pcase.it/agenzie-immobiliari/celesia-alexia_rivoli_ag1682/,EVIDENZA_INSUFFICIENTE
 e8bc7ee03c08179f95f9,Valgioie,Case in vendita a Valgioie - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/valgioie/,PAGINA_CATEGORIA
-870ffeeedb5b82405810,Beinasco,Case in vendita a Beinasco - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/beinasco/,PAGINA_CATEGORIA
 f7fe5a1841ae70779eb4,Chiusa di San Michele,RUBRICHE - ValsusaOggi,Mercato residenziale,https://www.valsusaoggi.it/rubriche/,EVIDENZA_INSUFFICIENTE
 5a0e91cc18e12361e4b1,Druento,8 Capannoni in affitto a Druento - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-capannone-druento,EVIDENZA_INSUFFICIENTE
 9ea0f3bd2e803e454e8f,Avigliana,Case in vendita a Avigliana | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita-case/avigliana/,PAGINA_CATEGORIA
@@ -645,7 +644,7 @@ ff68a107f468e39fbf8a,Druento,Villa Druento - 28 case in vendita in Druento de Nu
 10f0ed58f8e987b44a62,Grugliasco,"Capannone Industriale in Affitto, 805 mq (Vinovo)",Capannoni logistica,https://www.tuttoannunci.org/torino/case-immobili-commerciali/capannone-industriale-in-affitto-805-mq-vinovo-torino--tipdan-idi90-ida4924887-idc205.aspx,EVIDENZA_INSUFFICIENTE
 1584257a4eb26206802f,Valgioie,14.629 immobili in vendita a Valgioie - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/valgioie,EVIDENZA_INSUFFICIENTE
 167cf2bd1aea0f5c1b9e,Druento,30 capannones in affitto a Druento - Trovit,Trovit,https://case.trovit.it/affitto-capannone-druento,EVIDENZA_INSUFFICIENTE
-5cae333c369ff891d2f2,Pianezza,27.900 immobili in vendita a Pianezza Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/pianezza,EVIDENZA_INSUFFICIENTE
+5cae333c369ff891d2f2,Pianezza,27.865 immobili in vendita a Pianezza Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/pianezza,EVIDENZA_INSUFFICIENTE
 5f87a43cc45adc2b8e27,Pianezza,113 immobili villa in vendita a Pianezza - Trovit,Trovit,https://case.trovit.it/villa-pianezza,EVIDENZA_INSUFFICIENTE
 51e322b66b0027c24046,Val della Torre,20.585 immobili in vendita a Val della Torre - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/val-della-torre,EVIDENZA_INSUFFICIENTE
 f2e29447cb93a5a3fce9,Val della Torre,Case a Val della Torre. Ville in vendita a Val della Torre - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/val-della-torre,EVIDENZA_INSUFFICIENTE
@@ -710,3 +709,63 @@ be48e2d137439e2c1086,Sant'Antonino di Susa,Case indipendenti e ville a schiera i
 1ee95537b41db6747d1c,Villar Dora,106 immobili in vendita a Villar Dora - Trovit,Trovit,https://case.trovit.it/villar-dora,EVIDENZA_INSUFFICIENTE
 aa4f7a080321d774196a,Villar Dora,Case a Villar Dora. Ville in vendita a Villar Dora - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/villar-dora,EVIDENZA_INSUFFICIENTE
 2db02e2a6eda51b9088c,Villar Dora,Trilocale in vendita - Appartamenti in vendita rif. 60877722 | Agenzia ...,Tecnorete,https://almese1.tecnorete.it/villar-dora/appartamenti-in-vendita-60877722,EVIDENZA_INSUFFICIENTE
+4d1062517fcdf8771f75,Caselette,Ville in vendita a Caselette - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-ville/caselette/,EVIDENZA_INSUFFICIENTE
+7830beb33ab435bf1570,Caselette,"Appartamento in vendita, Caselette, In ottime condizioni con terrazzo ...",Wikicasa,https://www.wikicasa.it/annuncio/30859929,EVIDENZA_INSUFFICIENTE
+498231f907cb5ab8162c,Caselette,213 immobili in vendita a Torino intorno 35.000 - Trovit,Trovit,https://case.trovit.it/torino-35000-euro,EVIDENZA_INSUFFICIENTE
+7722b2c0401b265792d3,Chiusa di San Michele,25 casas in vendita a Chiusa di San Michele - Trovit,Trovit,https://case.trovit.it/casa-chiusa-san-michele,EVIDENZA_INSUFFICIENTE
+bfc5f019fa79d2494380,Chiusa di San Michele,10 Bedrooms Semi-detached house for sale in Chiusa Di San Michele ...,Gate-away,https://www.gate-away.com/properties/piedmont/turin/chiusa-di-san-michele/id/761356,EVIDENZA_INSUFFICIENTE
+f7f32ad467514dca2051,Chiusa di San Michele,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/chiusa-di-san-michele.html,EVIDENZA_INSUFFICIENTE
+d466f4ef8bc360b6facf,Chiusa di San Michele,Case in vendita a Chiusa Di San Michele : vicino alla metropolitana,Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/chiusa-di-san-michele/vicino-alla-metropolitana.html,PAGINA_CATEGORIA
+a1502fe2b1bba056d640,Collegno,"Appartamento in vendita, Collegno con terrazzo e giardino condominiale ...",Wikicasa,https://www.wikicasa.it/annuncio/30852258,EVIDENZA_INSUFFICIENTE
+1dcf5fef3f42e0113db8,Collegno,Ville in vendita a Collegno - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-ville/collegno/,EVIDENZA_INSUFFICIENTE
+5b478d49a6f32f7a6af2,Collegno,Immobili in Vendita | Agenzia Tecnorete di Collegno,Tecnorete,https://collegno3.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
+7c0c84a1d0e08bcdb7c7,Collegno,Immobili in Vendita | Agenzia Tecnorete di Collegno,Tecnorete,https://collegno1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
+5a07a97937ca9e627d21,Collegno,Appartamenti in Vendita | Agenzia Tecnorete di Collegno,Tecnorete,https://collegno2.tecnorete.it/appartamenti-in-vendita/,EVIDENZA_INSUFFICIENTE
+dbaaac8f86f33a345fae,Collegno,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/agenzie/immobiliari+residenziali/torino/collegno/to2i5.html,EVIDENZA_INSUFFICIENTE
+b7f0772b084a0a8dec8f,Collegno,Bilocale in vendita - Appartamenti in vendita rif. 61237378 | Agenzia ...,Tecnorete,https://collegno1.tecnorete.it/collegno/appartamenti-in-vendita-61237378,EVIDENZA_INSUFFICIENTE
+3cb940762e68be616731,Condove,Case con giardino in vendita a Rubiana • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/rubiana/con-giardino/zone/,EVIDENZA_INSUFFICIENTE
+99ea1205710db5befbea,Condove,9.379 immobili in vendita a Mocchie - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/mocchie,EVIDENZA_INSUFFICIENTE
+a7cdcfa66bba10ec888a,Condove,Case a Mocchie. Ville in vendita a Mocchie - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/mocchie,EVIDENZA_INSUFFICIENTE
+99db0f2662a7e38ff3de,Condove,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/vendita/ville/torino/condove/61255521.html,EVIDENZA_INSUFFICIENTE
+de190c8bd19f3a21dc4a,Druento,"Appartamento in vendita, Druento con posto auto e giardino condominiale ...",Wikicasa,https://www.wikicasa.it/annuncio/30849516,EVIDENZA_INSUFFICIENTE
+42886c1f13b4e4e21182,Druento,"Appartamento in vendita, Druento con posto auto e giardino condominiale ...",Wikicasa,https://www.wikicasa.it/annuncio/30854985,EVIDENZA_INSUFFICIENTE
+fdaf83d73a0fe39e6b71,Druento,"Appartamento in vendita, Druento con balcone e box, 100 mq • Wikicasa",Wikicasa,https://www.wikicasa.it/annuncio/30841983,EVIDENZA_INSUFFICIENTE
+bb24e338c6aeea1d07c3,Druento,Case a Bertesseno. Ville in vendita a Bertesseno - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/bertesseno,EVIDENZA_INSUFFICIENTE
+f0baa198f3fd098e5a7a,Druento,25.366 immobili in vendita a Grange Marsaglia - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/grange-marsaglia,EVIDENZA_INSUFFICIENTE
+7a84a48656186c1cc88a,Druento,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/agenzie/immobiliari+residenziali/torino/druento/tohg2.html,EVIDENZA_INSUFFICIENTE
+4460eddfce69e6cfa6a1,Fiano,Appartamenti in vendita a Fiano Romano - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-appartamenti/fiano-romano/,EVIDENZA_INSUFFICIENTE
+2ec0cbcd1d4a6d4c87a4,Fiano,"Appartamento in vendita, Fiano Romano con balcone e posto auto, 75 mq ...",Wikicasa,https://www.wikicasa.it/annuncio/30839187,EVIDENZA_INSUFFICIENTE
+9b9ac4d08432af54d9fb,Fiano,30 appartamentos roma palmiro togliatti in vendita a Viale,Trovit,https://case.trovit.it/appartamento-roma-viale-palmiro-togliatti,EVIDENZA_INSUFFICIENTE
+bda5d247176371e93dfc,Fiano,28.054 immobili in vendita a Fiano di Pescaglia - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/fiano-di-pescaglia,EVIDENZA_INSUFFICIENTE
+e78d1df9738d738a98f0,Fiano,6 Bedrooms Villa for sale in Pescaglia [788614] | Gate-away®,Gate-away,https://www.gate-away.com/properties/tuscany/lucca/pescaglia/id/788614,EVIDENZA_INSUFFICIENTE
+c62a0531c56cb76b9cd7,Fiano,Immobili in Vendita | Agenzia Tecnorete di Fiano,Tecnorete,https://fiano1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
+23f246b562535f29b5f0,Fiano,Case in vendita a Fiano : ultimo piano - tecnorete.it,Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/fiano/ultimo-piano.html,PAGINA_CATEGORIA
+9eb838570cc158a7cc56,Fiano,Ville in Vendita | Agenzia Tecnorete di Fiano,Tecnorete,https://fiano1.tecnorete.it/ville-in-vendita,EVIDENZA_INSUFFICIENTE
+0aad3655f6a2dce60910,Rivoli,Terreni edificabili in vendita a Rivoli - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-terreni-edificabili/rivoli/,EVIDENZA_INSUFFICIENTE
+6b24fe925575c0a1d73b,Rivoli,"Appartamenti in vendita a Cenisia, Torino - Wikicasa",Wikicasa,https://www.wikicasa.it/vendita-appartamenti/torino/zona-cenisia/,EVIDENZA_INSUFFICIENTE
+fec90f9e128db2fd364d,Rivoli,Appartamenti in vendita a San Donato - Campidoglio - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-appartamenti/torino/zona-san-donato-campidoglio-valdocco/,EVIDENZA_INSUFFICIENTE
+4e1851658e40ac3cf5e0,Rivoli,286 immobili villa bifamiliare in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/villa-bifamiliare-rivoli,EVIDENZA_INSUFFICIENTE
+be5af67238fef7259fcb,Rivoli,278 casas indipendente in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/casa-indipendente-rivoli,EVIDENZA_INSUFFICIENTE
+d525009745129f7a1e7a,Rivoli,9 rusticos in vendita a Rivoli Veronese - Trovit,Trovit,https://case.trovit.it/rustico-rivoli-veronese,EVIDENZA_INSUFFICIENTE
+bd1976e917bb4cfd12a6,Rivoli,2 Bedrooms Historic apartment for sale in Rivoli [688077] | Gate-away®,Gate-away,https://www.gate-away.com/properties/piedmont/turin/rivoli/id/688077,EVIDENZA_INSUFFICIENTE
+6b05a4a5387e07bcaca6,Rivoli,Bilocali in vendita a Rivoli,Tecnorete,https://www.tecnorete.it/annunci/appartamenti/piemonte/torino/rivoli/bilocali-in-vendita.html,EVIDENZA_INSUFFICIENTE
+9ec04a46c74a4d6c0f31,Robassomero,Locali commerciali in affitto in Piemonte - Wikicasa,Wikicasa,https://www.wikicasa.it/affitto-commerciale/regione-piemonte/,EVIDENZA_INSUFFICIENTE
+84b4edfcea0b88ae5dbb,San Didero,Case in vendita a San Didero - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/san-didero/,PAGINA_CATEGORIA
+1f74ab289aa60ba75fb7,San Didero,Ville in vendita a San Didero - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-ville/san-didero/,EVIDENZA_INSUFFICIENTE
+8631f3f64a44799e4093,San Didero,12 risultati: casa in vendita a San Didero - Trovit,Trovit,https://case.trovit.it/casa-san-didero,EVIDENZA_INSUFFICIENTE
+b20e6e9be89031644bba,San Didero,Case in vendita a San Didero : di prestigio - tecnorete.it,Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/san-didero/di-prestigio.html,PAGINA_CATEGORIA
+f1893ef8cafdde87aa5e,San Didero,"Casa semindipendente in vendita a San Didero - Torino. € 49.000, 130 Mq ...",Tecnorete,https://www.tecnorete.it/vendita/rustici-cascine-case/torino/san-didero/61140800.html,EVIDENZA_INSUFFICIENTE
+8a7d2b9d56e537339574,San Gillio,Case in vendita a San Gillio - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/san-gillio/,PAGINA_CATEGORIA
+dbc0a18abb6e8fed82f4,San Gillio,Nuove costruzioni in vendita a San Gillio - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-nuove-costruzioni/san-gillio/,EVIDENZA_INSUFFICIENTE
+9ef1ec4e9beb704317e5,San Gillio,41 appartamentos in vendita a San Gillio - Trovit,Trovit,https://case.trovit.it/appartamento-san-gillio,EVIDENZA_INSUFFICIENTE
+4896f9ec02542241485a,San Gillio,Case a San Gillio. Ville in vendita a San Gillio - Nestoria,Nestoria,https://www.nestoria.it/case/vendita/san-gillio,EVIDENZA_INSUFFICIENTE
+71f34ba8f413077e487c,San Gillio,Case in vendita a San Gillio : vicino alla metropolitana,Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/san-gillio/vicino-alla-metropolitana.html,PAGINA_CATEGORIA
+12e5e128122b7580f4bb,San Gillio,Quadrilocale in vendita - Appartamenti in vendita rif. 61200777 ...,Tecnorete,https://druento1.tecnorete.it/san-gillio/appartamenti-in-vendita-61200777,EVIDENZA_INSUFFICIENTE
+156a8939e02ed9b0cc29,San Gillio,Quadrilocale in vendita - Appartamenti in vendita rif. 61210357 ...,Tecnorete,https://druento1.tecnorete.it/san-gillio/appartamenti-in-vendita-61210357,EVIDENZA_INSUFFICIENTE
+74c8cd5c38769df1ab9f,Trana,"Case in vendita a Cit Turin, Torino - Wikicasa",Wikicasa,https://www.wikicasa.it/vendita-case/torino/zona-cit-turin/,PAGINA_CATEGORIA
+5b5cd0525f27af3ccc4e,Trana,"Appartamenti in vendita a Cit Turin, Torino - Wikicasa",Wikicasa,https://www.wikicasa.it/vendita-appartamenti/torino/zona-cit-turin/,EVIDENZA_INSUFFICIENTE
+13a79d79805b7e4f6f60,Trana,30 immobili villa in affitto a Trana - Trovit,Trovit,https://case.trovit.it/affitto-villa-trana,EVIDENZA_INSUFFICIENTE
+2ea42b7e4758a53a9541,Trana,Case a Trana. Ville in affitto a Trana - Nestoria,Nestoria,https://www.nestoria.it/case/affitto/trana,EVIDENZA_INSUFFICIENTE
+160ac16fe7a79a53ce19,Trana,Trilocale in vendita - Appartamenti in vendita rif. 60935962 | Agenzia ...,Tecnorete,https://sangano1.tecnorete.it/trana/appartamenti-in-vendita-60935962,EVIDENZA_INSUFFICIENTE
+c391b3bdf7c136ecda88,Trana,Case in vendita a Trana : piano intermedio - tecnorete.it,Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/trana/piano-intermedio.html,PAGINA_CATEGORIA
+1211da73f1d57081065c,Trana,"5 locali in vendita a Trana - Torino. € 139.000, 150 Mq - tecnorete.it",Tecnorete,https://www.tecnorete.it/vendita/appartamenti/torino/trana/61109944.html,EVIDENZA_INSUFFICIENTE
