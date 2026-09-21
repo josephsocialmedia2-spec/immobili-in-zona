@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T06:32:05.577138+00:00",
+  "generated_at": "2026-09-21T12:54:20.633416+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -325,11 +325,11 @@
     {
       "zone_id": "avigliana-via-felice-goffi",
       "comune": "Avigliana",
-      "target_street": "Via Felice Goffi",
-      "listing_target": "Via Felice Goffi 6",
-      "listing_url": "https://www.idealista.it/immobile/36626365/",
+      "target_street": "via Felice Goffi",
+      "listing_target": "Via Felice Goffi 0",
+      "listing_url": "https://www.immobiliare.it/annunci/131899550/",
       "streets": [
-        "Via Felice Goffi",
+        "via Felice Goffi",
         "Via Almese",
         "Via Moncenisio",
         "Via Grangia",
@@ -634,6 +634,21 @@
         "Viale Belvedere",
         "Viale dei Tigli",
         "Viale delle Betulle"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-paolo-borsellino",
+      "comune": "Avigliana",
+      "target_street": "via Paolo Borsellino",
+      "listing_target": "via Paolo Borsellino 18",
+      "listing_url": "https://www.immobiliare.it/annunci/120483604/",
+      "streets": [
+        "via Paolo Borsellino",
+        "Via generale Carlo Alberto Dalla Chiesa",
+        "Corso Torino",
+        "Via Francesca e Giovanni Falcone",
+        "Corso Europa"
       ],
       "osm_status": "OK"
     },
@@ -1286,7 +1301,7 @@
       "comune": "Avigliana",
       "target_street": "Via G. Portigliatti",
       "listing_target": "Via G. Portigliatti 37",
-      "listing_url": "https://www.idealista.it/immobile/36006036/",
+      "listing_url": "https://www.idealista.it/immobile/35293827/",
       "streets": [
         "Via G. Portigliatti"
       ],
