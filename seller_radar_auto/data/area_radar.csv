@@ -201,7 +201,6 @@ ba7ca81bf5879fb17efd,Bruzolo,NON_DETERMINATO,"Via Camillo Benso... Piemonte, Tor
 27883b3a518cd1d67d0e,Bussoleno,NON_DETERMINATO,via Bussoleno,VAI_IN_ZONA,Via Bussoleno 16,,PRONTO,https://www.immobiliare.it/annunci/132018520/
 27883b3a518cd1d67d0e,Bussoleno,NON_DETERMINATO,via Bussoleno,VAI_IN_ZONA,via bussoleno 26,,PRONTO,https://www.immobiliare.it/annunci/132018520/
 bb3abf7bc9c5e1f29d84,Caprie,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 12,,PRONTO,https://www.immobiliare.it/annunci/132000372/
-bb3abf7bc9c5e1f29d84,Caprie,NON_DETERMINATO,via Roma,VAI_IN_ZONA,Via Roma 250,,PRONTO,https://www.immobiliare.it/annunci/132000372/
 c7f47eaabb71eaeacc0e,Caprie,NON_DETERMINATO,via Roma,VAI_IN_ZONA,via Roma 12,,PRONTO,https://www.trovacasa.it/annunci/to-tc-95641-72900561
 c7f47eaabb71eaeacc0e,Caprie,NON_DETERMINATO,via Roma,VAI_IN_ZONA,Via Roma 250,,PRONTO,https://www.trovacasa.it/annunci/to-tc-95641-72900561
 041bc8b84e1a74c0717c,Caprie,NON_DETERMINATO,"Borgata Peroldrado, proponiamo una soluzione indipendente risalente al",VAI_IN_ZONA,"Borgata Peroldrado, proponiamo una soluzione indipendente risalente al 1940",,PRONTO,https://www.immobiliare.it/annunci/131999318/
@@ -253,6 +252,7 @@ ca01a4c62ab0780ba610,Bardonecchia,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,via 
 ca01a4c62ab0780ba610,Bardonecchia,NON_DETERMINATO,via Montenero,VAI_IN_ZONA,Via Montenero 16,,PRONTO,https://www.immobiliare.it/annunci/131109262/
 d7ee33d6b4b9ab54f7f7,Caprie,NON_DETERMINATO,via Peroldrado,VAI_IN_ZONA,via Peroldrado 22,,PRONTO,https://www.immobiliare.it/annunci/132084518/
 caf593979784073235a7,Alpignano,NON_DETERMINATO,via dei Ronchi,VAI_IN_ZONA,via dei Ronchi 45,,PRONTO,https://www.immobiliare.it/annunci/127650474/
+caf593979784073235a7,Alpignano,NON_DETERMINATO,via dei Ronchi,VAI_IN_ZONA,Via dei Ronchi 51/A6,,PRONTO,https://www.immobiliare.it/annunci/127650474/
 eed9c6a6ba5260e9edab,Alpignano,NON_DETERMINATO,"Via dei Ronchi, si propone in locazione un capannone di circa",VAI_IN_ZONA,"Via dei Ronchi, si propone in locazione un capannone di circa 300",,PRONTO,https://www.nuroa.it/affitto-case/alpignano
 0f40cd33c71b810b02e2,Avigliana,NON_DETERMINATO,via Aldo Moro,VAI_IN_ZONA,via Aldo Moro 14,,PRONTO,https://www.immobiliare.it/annunci/126423911/
 17c9b431014ef6e0a297,Bardonecchia,NON_DETERMINATO,Via Montello,VAI_IN_ZONA,Via Montello 9,,PRONTO,https://www.casa.it/immobili/54501771/
@@ -306,7 +306,7 @@ feae333010e39e1d57fc,Alpignano,NON_DETERMINATO,Via Alpignano,VAI_IN_ZONA,Via Alp
 06c03c81f2b1b0d10724,Moncenisio,NON_DETERMINATO,via Moncenisio,VAI_IN_ZONA,via Moncenisio 12,,PRONTO,https://www.immobiliare.it/annunci/132188518/
 06c03c81f2b1b0d10724,Moncenisio,NON_DETERMINATO,via Moncenisio,VAI_IN_ZONA,via Moncenisio 10,,PRONTO,https://www.immobiliare.it/annunci/132188518/
 2a8434676ada393addec,Borgone Susa,NON_DETERMINATO,via Condove,VAI_IN_ZONA,via Condove 86,,PRONTO,https://www.immobiliare.it/annunci/126581511/
-4e1204e82daafde31e4e,Bruzolo,NON_DETERMINATO,località dove Mappa aggiornato più di un mese fa,VAI_IN_ZONA,località dove Mappa aggiornato più di un mese fa 198,,PRONTO,https://www.nuroa.it/vendita-immobili/vendita-bruzolo
+4e1204e82daafde31e4e,Bruzolo,NON_DETERMINATO,"Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di",VAI_IN_ZONA,"Via Camillo Benso... Piemonte, Torino Visualizza foto Appartamento in vendita di 48",,PRONTO,https://www.nuroa.it/vendita-immobili/vendita-bruzolo
 dfb212ee276ada4413ac,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 93,,PRONTO,https://www.immobiliare.it/annunci/132183836/
 dfb212ee276ada4413ac,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,Via Rubiana 51,,PRONTO,https://www.immobiliare.it/annunci/132183836/
 dfb212ee276ada4413ac,Almese,NON_DETERMINATO,via Rubiana,VAI_IN_ZONA,via Rubiana 100,,PRONTO,https://www.immobiliare.it/annunci/132183836/
@@ -409,8 +409,8 @@ c031c1c079c91b64927b,Bruino,NON_DETERMINATO,Via leonardo da vinci,VAI_IN_ZONA,vi
 5701f187ad04c1db766d,Bruino,INDIZIO_AGENZIA,via Don Bosco,VAI_IN_ZONA,Via Don Bosco 2/31,,PRONTO,https://www.immobiliare.it/annunci/124662523/
 7bdd34a1439d4a539ced,Bruino,NON_DETERMINATO,via Don Giovanni Bosco,VAI_IN_ZONA,via Don Giovanni Bosco 2,,PRONTO,https://www.immobiliare.it/annunci/125748689/
 dd55b46282b67136f66c,Bruino,NON_DETERMINATO,via piossasco,VAI_IN_ZONA,via piossasco 123,,PRONTO,https://www.immobiliare.it/annunci/128786104/
-dd55b46282b67136f66c,Bruino,NON_DETERMINATO,via piossasco,VAI_IN_ZONA,Via Piossasco 113,,PRONTO,https://www.immobiliare.it/annunci/128786104/
 dd55b46282b67136f66c,Bruino,NON_DETERMINATO,via piossasco,VAI_IN_ZONA,Via Piossasco 290,,PRONTO,https://www.immobiliare.it/annunci/128786104/
+dd55b46282b67136f66c,Bruino,NON_DETERMINATO,via piossasco,VAI_IN_ZONA,Via Piossasco 74,,PRONTO,https://www.immobiliare.it/annunci/128786104/
 8f3c54f277cb8e0b9144,Bruino,INDIZIO_AGENZIA,via VOLVERA,VAI_IN_ZONA,via VOLVERA 37,,PRONTO,https://www.immobiliare.it/annunci/126709191/
 cf35260248541150964b,Givoletto,NON_DETERMINATO,via Alpignano,VAI_IN_ZONA,via Alpignano 44,,PRONTO,https://www.immobiliare.it/annunci/122846016/
 cf35260248541150964b,Givoletto,NON_DETERMINATO,via Alpignano,VAI_IN_ZONA,Via Alpignano 8,,PRONTO,https://www.immobiliare.it/annunci/122846016/
@@ -489,7 +489,6 @@ ea3809aa24d883a5509b,Avigliana,NON_DETERMINATO,Via Partigiani D'Italia,VAI_IN_ZO
 733c26c43bc5467690cc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 3,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/avigliana.html
 733c26c43bc5467690cc,Avigliana,INDIZIO_AGENZIA,Corso Laghi,VAI_IN_ZONA,Corso Laghi 165,,PRONTO,https://www.tecnorete.it/annunci/immobili/piemonte/torino/avigliana.html
 2c8bf6f149320d6c60f4,Beinasco,NON_DETERMINATO,Strada Torino,VAI_IN_ZONA,Strada Torino 90,,PRONTO,https://www.casa.it/immobili/54336798/
-2c8bf6f149320d6c60f4,Beinasco,NON_DETERMINATO,Strada Torino,VAI_IN_ZONA,Strada Torino 122,,PRONTO,https://www.casa.it/immobili/54336798/
 655d0fabb25e58018cd2,Beinasco,NON_DETERMINATO,via Danilo Dolci,VAI_IN_ZONA,via Danilo Dolci 7,,PRONTO,https://www.immobiliare.it/annunci/132332730/
 67da772f547f1e2e6708,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 46,,PRONTO,https://www.immobiliare.it/annunci/115022795/
 67da772f547f1e2e6708,Borgone Susa,NON_DETERMINATO,via Augusto Abegg,VAI_IN_ZONA,via Augusto Abegg 68,,PRONTO,https://www.immobiliare.it/annunci/115022795/
@@ -608,6 +607,7 @@ af0483889a9502ac65ed,Alpignano,NON_DETERMINATO,Piazza Caduti,VAI_IN_ZONA,Piazza 
 77ecd6adcce4a67fdf1a,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 41,,PRONTO,https://www.nuroa.it/vendita-immobili/garage-beinasco
 77ecd6adcce4a67fdf1a,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,via San Giacomo 12,,PRONTO,https://www.nuroa.it/vendita-immobili/garage-beinasco
 77ecd6adcce4a67fdf1a,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 9,,PRONTO,https://www.nuroa.it/vendita-immobili/garage-beinasco
+77ecd6adcce4a67fdf1a,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,via San Giacomo 31,,PRONTO,https://www.nuroa.it/vendita-immobili/garage-beinasco
 ddca8a3143383a190012,Beinasco,NON_DETERMINATO,via 2 Giugno,VAI_IN_ZONA,via 2 Giugno 7,,PRONTO,https://www.immobiliare.it/annunci/132433308/
 4ae9dee3c4de4a6df972,Alpignano,NON_DETERMINATO,via Francesco baracca,VAI_IN_ZONA,via Francesco baracca 21,,PRONTO,https://www.immobiliare.it/annunci/132602984/
 5ab7f8b6c6cfb657d65f,Beinasco,NON_DETERMINATO,via Aosta,VAI_IN_ZONA,via Aosta 22,,PRONTO,https://www.immobiliare.it/annunci/127961230/
@@ -622,7 +622,6 @@ e097f7c6f03f85b8ca56,Borgone Susa,NON_DETERMINATO,Via Bruno Mosconi,VAI_IN_ZONA,
 e097f7c6f03f85b8ca56,Borgone Susa,NON_DETERMINATO,Via Bruno Mosconi,VAI_IN_ZONA,via Bruno Mosconi 2,,PRONTO,https://www.idealista.it/immobile/34107846/
 e097f7c6f03f85b8ca56,Borgone Susa,NON_DETERMINATO,Via Bruno Mosconi,VAI_IN_ZONA,via Bruno Mosconi 24,,PRONTO,https://www.idealista.it/immobile/34107846/
 3e30e25132303efc1d4b,Avigliana,NON_DETERMINATO,via Moncenisio,VAI_IN_ZONA,via Moncenisio 0,,PRONTO,https://www.immobiliare.it/annunci/132431232/
-3e30e25132303efc1d4b,Avigliana,NON_DETERMINATO,via Moncenisio,VAI_IN_ZONA,via Moncenisio 62,,PRONTO,https://www.immobiliare.it/annunci/132431232/
 1688ad7c437130d70bfe,Avigliana,NON_DETERMINATO,Via G. Portigliatti,VAI_IN_ZONA,Via G. Portigliatti 37,,PRONTO,https://www.idealista.it/immobile/36006036/
 b2635999fb25f8305cb2,Avigliana,NON_DETERMINATO,Strada Antica Giaveno Sant'Ambrogio,VAI_IN_ZONA,Strada Antica Giaveno Sant'Ambrogio 29,,PRONTO,https://www.immobiliare.it/annunci/132393390/
 85b641fde63dc6750a82,Bruino,INDIZIO_AGENZIA,Via Monte Bianco,VAI_IN_ZONA,Via Monte Bianco 60/A,,PRONTO,https://www.tecnocasa.it/vendita/capannone/torino/bruino/61272017.html
@@ -631,5 +630,9 @@ d18e12473e5aec636f00,Beinasco,NON_DETERMINATO,Via Aldo Moro,VAI_IN_ZONA,via Aldo
 29918ee825f418649910,Beinasco,NON_DETERMINATO,Via Don Bosco,VAI_IN_ZONA,Via Don Bosco 79,,PRONTO,https://www.idealista.it/immobile/36216136/
 ca8501f271ef01107ba7,Borgone Susa,NON_DETERMINATO,via Dei Gravè,VAI_IN_ZONA,via Dei Gravè 4,,PRONTO,https://www.idealista.it/immobile/33269620/
 b2f35f9ab41ee6284c4b,Borgone Susa,NON_DETERMINATO,via XX Settembre,VAI_IN_ZONA,via XX Settembre 8,,PRONTO,https://www.idealista.it/immobile/31486371/
+6125d33fdb6000316a42,Buttigliera Alta,NON_DETERMINATO,corso Torino,VAI_IN_ZONA,corso Torino 91,,PRONTO,https://www.immobiliare.it/annunci/116078663/
+6125d33fdb6000316a42,Buttigliera Alta,NON_DETERMINATO,corso Torino,VAI_IN_ZONA,Corso Torino 8,,PRONTO,https://www.immobiliare.it/annunci/116078663/
 e29668c885d820aaa35b,Alpignano,NON_DETERMINATO,via Fornace,VAI_IN_ZONA,via Fornace 38,,PRONTO,https://www.immobiliare.it/annunci/123716459/
 6dac7ef65c97ea7950ef,Beinasco,NON_DETERMINATO,via Giacomo Leopardi,VAI_IN_ZONA,via Giacomo Leopardi 20,,PRONTO,https://www.immobiliare.it/annunci/129017122/
+3428b441860ed5958184,Bruino,NON_DETERMINATO,via Bruino,VAI_IN_ZONA,via Bruino 3,,PRONTO,https://www.immobiliare.it/annunci/132384128/
+3428b441860ed5958184,Bruino,NON_DETERMINATO,via Bruino,VAI_IN_ZONA,Via Bruino 30,,PRONTO,https://www.immobiliare.it/annunci/132384128/

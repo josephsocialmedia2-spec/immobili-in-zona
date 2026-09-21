@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T01:33:08.480767+00:00",
+  "generated_at": "2026-09-21T06:32:05.577138+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -611,7 +611,7 @@
       "zone_id": "avigliana-via-moncenisio",
       "comune": "Avigliana",
       "target_street": "via Moncenisio",
-      "listing_target": "via Moncenisio 62",
+      "listing_target": "via Moncenisio 0",
       "listing_url": "https://www.immobiliare.it/annunci/132431232/",
       "streets": [
         "via Moncenisio",
@@ -769,6 +769,21 @@
         "Corso Vandel",
         "Strada Antica di Francia",
         "Strada della Praia"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-corso-torino",
+      "comune": "Buttigliera Alta",
+      "target_street": "corso Torino",
+      "listing_target": "Corso Torino 8",
+      "listing_url": "https://www.immobiliare.it/annunci/116078663/",
+      "streets": [
+        "corso Torino",
+        "Corso Susa",
+        "Strada della Praia",
+        "Strada Statale 25 del Moncenisio",
+        "Via Almese"
       ],
       "osm_status": "OK"
     },

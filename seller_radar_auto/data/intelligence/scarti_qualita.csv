@@ -47,7 +47,7 @@ c0878aeada2ed6008db8,Oulx,236 immobili in vendita a Oulx - Trovit,Trovit,https:/
 34a652fd73504a581aed,Pianezza,Case indipendenti e ville a schiera in vendita Pianezza - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/ville-singole-e-a-schiera/torino/pianezza/,EVIDENZA_INSUFFICIENTE
 812d44942fb61458cf21,Reano,Case e appartamenti a Reano. Immobili in vendita a Reano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/reano,EVIDENZA_INSUFFICIENTE
 f073bf97e2a0894b0f8a,Reano,Case in vendita Reano - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/reano/,PAGINA_CATEGORIA
-180fd3b192de1a3ccffe,Reano,68 Rustici in vendita a Reano - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
+180fd3b192de1a3ccffe,Reano,68 Rustici in vendita a Reano - Mitula Case,Uffici e direzionale,https://immobiliare.mitula.it/rustico-reano,EVIDENZA_INSUFFICIENTE
 75bea38c2e641daa5e3e,Rivoli,50 immobili villa collina in vendita a Rivoli - Trovit,Trovit,https://case.trovit.it/villa-collina-rivoli,EVIDENZA_INSUFFICIENTE
 033e4c5815c3ce197d27,Rivoli,Immobili in vendita a Rivoli | Gabetti,Mercato generale,https://www.gabetti.it/vendita/rivoli,PAGINA_CATEGORIA
 19e4d46c5e7c11ee620c,Rivoli,Case e appartamenti a Rivoli Torino. Immobili in vendita a Rivoli ...,Nestoria,https://www.nestoria.it/immobiliare/vendita/rivoli,EVIDENZA_INSUFFICIENTE
@@ -86,7 +86,7 @@ fb8e03d8101b8a9cea31,Bruzolo,"Casa indipendente in vendita, Bruzolo, Ristruttura
 7cda5f3339f0283e1b6b,Collegno,"63 immobili in vendita a Leumann, Collegno - Trovit",Trovit,https://case.trovit.it/leumann,EVIDENZA_INSUFFICIENTE
 46a26260a54e88462f74,Condove,Casa singola in vendita a Condove Cod. BELLAFUGERA,Uffici e direzionale,https://www.fcimmobiliare.it/i-672094-vendita-casa-singola-condove/,EVIDENZA_INSUFFICIENTE
 a1de59aa4dc36eee7c23,Giaveno,585 immobili in vendita a Giaveno - Trovit,Trovit,https://case.trovit.it/giaveno,EVIDENZA_INSUFFICIENTE
-3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Mercato residenziale,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
+3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Tipologie residenziali,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
 dcca0694688746bd4182,Mompantero,Villa singola in vendita a Mompantero - Urbiano Cod. SUSA143,Mercato generale,https://www.fcimmobiliare.it/i-672129-vendita-villa-singola-mompantero-urbiano/,EVIDENZA_INSUFFICIENTE
 889e6d621b6e64a5d38c,Rivoli,Rivoli - Vendita case - Subito.it,Subito privati,https://www.subito.it/annunci-italia/vendita/immobili/?q=rivoli,EVIDENZA_INSUFFICIENTE
 041892b6563d1bcfafa2,Rosta,"Case in vendita a Rosta, Torino Ovest",Mercato generale,https://caseinvenditainaffitto.it/case-in-vendita/rosta-torino-ovest,PAGINA_CATEGORIA
@@ -165,7 +165,7 @@ b83a93e112b01e1b7f5e,Sangano,Immobiliari all'Asta Sangano - Fallimenti.it,Agenzi
 92d6d23f534c64cede14,Sant'Antonino di Susa,Case in vendita da Privati a Sant'Antonino di Susa,Mercato residenziale,https://www.casadaprivato.it/annunci-vendita/immobili/torino-sant_antonino_di_susa,PAGINA_CATEGORIA
 b666b43cbafcfb222dbc,Susa,Case in vendita a Susa - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/susa/,PAGINA_CATEGORIA
 809816aaada9c3d25f77,Trana,10 locale commerciales in vendita a Trana - Trovit,Trovit,https://case.trovit.it/negozio-trana,EVIDENZA_INSUFFICIENTE
-426f07c8422da4b2c824,Vaie,La Dimora Immobiliare - Vendita immobili a Torino e provincia,Uffici e direzionale,https://www.ladimoraimmobiliare.com/,EVIDENZA_INSUFFICIENTE
+426f07c8422da4b2c824,Vaie,La Dimora Immobiliare - Vendita immobili a Torino e provincia,Commerciale negozi/locali,https://www.ladimoraimmobiliare.com/,EVIDENZA_INSUFFICIENTE
 b8583273e21a96ab8aa0,Valgioie,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/valgioie.html,EVIDENZA_INSUFFICIENTE
 b96beaa4fa5bff9c9ce5,Venaus,13 immobili in vendita a Venaus - Trovit,Trovit,https://case.trovit.it/venaus,EVIDENZA_INSUFFICIENTE
 9eeaf41a9b3f008aac0a,Venaus,"Case in affitto a Ar Cenisio, Venaus - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-affitto/ar-cenisio-venaus,EVIDENZA_INSUFFICIENTE
@@ -409,7 +409,7 @@ da701beeaf2f56a92f75,Druento,Case in vendita a Druento - Wikicasa,Wikicasa,https
 11c52b7823258f25e718,Druento,6 locale commerciales in affitto a Druento - Trovit,Trovit,https://case.trovit.it/affitto-negozio-druento,EVIDENZA_INSUFFICIENTE
 a67b02614f5b76cbe5af,Druento,Appartamenti e case in affitto a Druento - altroaffitto.it,Uffici e direzionale,https://www.altroaffitto.it/affitti/Druento?page=1,EVIDENZA_INSUFFICIENTE
 e981cabe10a9264f9b45,Druento,54 Capannoni in vendita a Druento - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/capannone-druento,EVIDENZA_INSUFFICIENTE
-515058568ac419ee7f6d,Druento,Druento - 284 appartamenti in affito in Druento de Nuroa.it,Capannoni logistica,https://www.nuroa.it/affitto-case/druento,EVIDENZA_INSUFFICIENTE
+515058568ac419ee7f6d,Druento,Druento - 285 appartamenti in affito in Druento de Nuroa.it,Uffici e direzionale,https://www.nuroa.it/affitto-case/druento,EVIDENZA_INSUFFICIENTE
 765261bf62596aececa4,Fiano,Più di dieci case indipendenti in vendita a Fiano. - Caasa,Mercato residenziale,https://www.caasa.it/torino/fiano/casa-indipendente/in-vendita.html,EVIDENZA_INSUFFICIENTE
 57c7bc72348e9ac0b1cf,Fiano,Cerca case - Masci Immobili - FCM Immobili srl - Fiano Romano,Mercato residenziale,https://www.masciimmobili.it/web/immobili.asp?language=ita,EVIDENZA_INSUFFICIENTE
 f15f6325680910f5cbfe,Fiano,Immobili in affitto - Masci Immobili - FCM Immobili srl - Fiano Romano,Uffici e direzionale,https://www.masciimmobili.it/web/immobili.asp?tipo_contratto=A&language=ita&pagref=1913,EVIDENZA_INSUFFICIENTE
@@ -474,7 +474,7 @@ d861163669366c2de870,Fiano,LOGISTICA IN PROGETTAZIONE in Affitto - Fiano Romano 
 3cfead12bac6b4bcf568,Rivalta di Torino,"Case in vendita a Pasta, Rivalta di Torino",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/pasta-rivalta-di-torino,PAGINA_CATEGORIA
 099b7fce764ab1a0a685,Rivoli,"111 Locali commerciali in affitto a Cascine Vica, Rivoli - Mitula Case",Commerciale negozi/locali,https://immobiliare.mitula.it/affitto-locale-commerciale-rivoli-cascine-vica,EVIDENZA_INSUFFICIENTE
 c47d3090d8f891b05a0e,Alpignano,8 capannones in vendita a Alpignano - Trovit,Trovit,https://case.trovit.it/capannone-alpignano,EVIDENZA_INSUFFICIENTE
-6a94dc6a1e064311bd30,Grugliasco,Più di dieci capannoni in vendita a Grugliasco. - Caasa,Commerciale negozi/locali,https://www.caasa.it/torino/grugliasco/capannone/in-vendita.html,EVIDENZA_INSUFFICIENTE
+6a94dc6a1e064311bd30,Grugliasco,Più di dieci capannoni in vendita a Grugliasco. - Caasa,Capannoni logistica,https://www.caasa.it/torino/grugliasco/capannone/in-vendita.html,EVIDENZA_INSUFFICIENTE
 cfb43fff6c05d781d959,Rivalta di Torino,200 appartamentos in vendita a Rivalta di Torino - Trovit,Trovit,https://case.trovit.it/appartamento-rivalta-torino,EVIDENZA_INSUFFICIENTE
 e55c28919fdd043bdeac,Rivoli,Gesim Immobili - Immobili in vendita e affitto a Rivoli,Mercato residenziale,https://www.gesimimmobili.it/,EVIDENZA_INSUFFICIENTE
 2cc810f9cdca3b4837be,Coazze,Coazze - 296 case in vendita in Coazze de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/coazze,EVIDENZA_INSUFFICIENTE
@@ -769,3 +769,4 @@ dbc0a18abb6e8fed82f4,San Gillio,Nuove costruzioni in vendita a San Gillio - Wiki
 160ac16fe7a79a53ce19,Trana,Trilocale in vendita - Appartamenti in vendita rif. 60935962 | Agenzia ...,Tecnorete,https://sangano1.tecnorete.it/trana/appartamenti-in-vendita-60935962,EVIDENZA_INSUFFICIENTE
 c391b3bdf7c136ecda88,Trana,Case in vendita a Trana : piano intermedio - tecnorete.it,Tecnorete,https://www.tecnorete.it/annunci/immobili/piemonte/torino/trana/piano-intermedio.html,PAGINA_CATEGORIA
 1211da73f1d57081065c,Trana,"5 locali in vendita a Trana - Torino. € 139.000, 150 Mq - tecnorete.it",Tecnorete,https://www.tecnorete.it/vendita/appartamenti/torino/trana/61109944.html,EVIDENZA_INSUFFICIENTE
+2da63eb85202e995da15,Caselette,Caselette - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=caselette,PAGINA_CATEGORIA
