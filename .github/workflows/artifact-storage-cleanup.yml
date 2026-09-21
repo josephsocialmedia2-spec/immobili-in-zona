@@ -11,9 +11,14 @@ permissions:
   contents: read
   actions: write
 
+concurrency:
+  group: artifact-storage-cleanup
+  cancel-in-progress: true
+
 jobs:
   cleanup:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Delete stale Actions artifacts safely
         env:
@@ -23,6 +28,7 @@ jobs:
         run: |
           python - <<'PY'
           import json, os, urllib.request
+          from concurrent.futures import ThreadPoolExecutor, as_completed
           from datetime import datetime, timezone, timedelta
 
           token=os.environ['GH_TOKEN']
@@ -43,8 +49,7 @@ jobs:
           page=1
           while True:
               raw,_=api(f'https://api.github.com/repos/{repo}/actions/artifacts?per_page=100&page={page}')
-              obj=json.loads(raw)
-              batch=obj.get('artifacts',[])
+              batch=json.loads(raw).get('artifacts',[])
               artifacts.extend(batch)
               if len(batch)<100: break
               page+=1
@@ -52,30 +57,42 @@ jobs:
           artifacts.sort(key=lambda a:a.get('created_at',''),reverse=True)
           cutoff=datetime.now(timezone.utc)-timedelta(hours=keep_hours)
           newest_pages_id=next((a['id'] for a in artifacts if a.get('name')=='github-pages' and not a.get('expired')),None)
-          deleted=0
-          freed=0
-          kept=0
 
+          keep=[]
+          delete=[]
           for a in artifacts:
               created=datetime.fromisoformat(a['created_at'].replace('Z','+00:00'))
-              safe_keep=(a['id']==newest_pages_id) or (created>=cutoff and not a.get('expired',False))
-              if safe_keep:
-                  kept+=1
-                  continue
+              if a['id']==newest_pages_id or (created>=cutoff and not a.get('expired',False)):
+                  keep.append(a)
+              else:
+                  delete.append(a)
+
+          def remove(a):
               try:
                   _,status=api(f"https://api.github.com/repos/{repo}/actions/artifacts/{a['id']}",'DELETE')
-                  if status==204:
+                  return a,status==204,None
+              except Exception as e:
+                  return a,False,str(e)
+
+          deleted=0; freed=0; errors=0
+          with ThreadPoolExecutor(max_workers=8) as pool:
+              futures=[pool.submit(remove,a) for a in delete]
+              for fut in as_completed(futures):
+                  a,ok,err=fut.result()
+                  if ok:
                       deleted+=1
                       freed+=int(a.get('size_in_bytes') or 0)
-              except Exception as e:
-                  print('DELETE_ERROR',a.get('id'),a.get('name'),e)
-                  kept+=1
+                  else:
+                      errors+=1
+                      print('DELETE_ERROR',a.get('id'),a.get('name'),err)
 
           print(json.dumps({
               'repository':repo,
               'artifact_total_before':len(artifacts),
+              'delete_candidates':len(delete),
               'deleted':deleted,
-              'kept':kept,
+              'delete_errors':errors,
+              'kept':len(keep),
               'freed_bytes':freed,
               'freed_mb':round(freed/1024/1024,2),
               'keep_hours':keep_hours
