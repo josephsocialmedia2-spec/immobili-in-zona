@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T08:01:37.940272+00:00",
+  "generated_at": "2026-09-22T13:46:58.675954+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -1361,6 +1361,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/117726703/",
       "streets": [
         "vicolo Volpellato"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "caprie-via-monte-bianco",
+      "comune": "Caprie",
+      "target_street": "Via Monte Bianco",
+      "listing_target": "Via Monte Bianco 60/A",
+      "listing_url": "https://www.tecnocasa.it/vendita/appartamenti/torino/caprie/61255661.html",
+      "streets": [
+        "Via Monte Bianco"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
