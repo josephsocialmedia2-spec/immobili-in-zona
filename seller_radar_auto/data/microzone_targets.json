@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:06:42.818848+00:00",
+  "generated_at": "2026-09-22T02:04:27.272869+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -698,17 +698,17 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "buttigliera-alta-via-della-torre-ferriera",
+      "zone_id": "buttigliera-alta-corso-superga",
       "comune": "Buttigliera Alta",
-      "target_street": "Via della Torre - Ferriera",
-      "listing_target": "Via della Torre - Ferriera 4",
-      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "target_street": "Corso Superga",
+      "listing_target": "Corso Superga 8",
+      "listing_url": "https://www.idealista.it/immobile/35549687/",
       "streets": [
-        "Via della Torre - Ferriera",
-        "Corso Torino",
-        "Corso Vandel",
-        "Strada Antica di Francia",
-        "Via Capoluogo"
+        "Corso Superga",
+        "Corso Laghi",
+        "Via Madonna dei Boschi",
+        "Via Ragazzi del '99",
+        "Via Reano"
       ],
       "osm_status": "OK"
     },
@@ -724,21 +724,6 @@
         "Corso Superga",
         "Via Monte Cuneo",
         "Via Rivoli"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "buttigliera-alta-corso-superga",
-      "comune": "Buttigliera Alta",
-      "target_street": "Corso Superga",
-      "listing_target": "Corso Superga 8",
-      "listing_url": "https://www.idealista.it/immobile/35549687/",
-      "streets": [
-        "Corso Superga",
-        "Corso Laghi",
-        "Via Madonna dei Boschi",
-        "Via Ragazzi del '99",
-        "Via Reano"
       ],
       "osm_status": "OK"
     },

@@ -1,9 +1,9 @@
 ﻿COMUNE,IMMOBILI_QUALIFICATI,ASTE,PRIVATI,AGENZIE,RIBASSI_SEGNALATI,STORICO_USCITE
 Almese,36,0,10,5,0,0
-Alpignano,73,1,8,14,0,1
+Alpignano,74,1,8,14,0,1
 Avigliana,85,6,8,13,0,0
 Bardonecchia,42,0,0,5,0,1
-Beinasco,82,6,1,22,0,0
+Beinasco,83,6,1,22,0,0
 Borgone Susa,61,0,5,5,0,1
 Bruino,44,0,9,11,0,0
 Bruzolo,18,0,7,5,0,0
@@ -15,12 +15,12 @@ Chianocco,14,3,0,5,0,0
 Chiomonte,13,1,4,0,0,0
 Chiusa di San Michele,30,2,1,5,0,0
 Coazze,52,0,6,24,0,2
-Collegno,133,0,11,24,0,0
+Collegno,134,0,11,24,0,0
 Condove,53,11,8,21,0,0
 Druento,62,1,2,17,0,0
 Exilles,13,0,0,0,0,0
 Ferriera di Buttigliera Alta,8,0,0,1,0,0
-Fiano,65,3,6,5,0,0
+Fiano,66,3,6,6,0,0
 Giaglione,5,0,0,0,0,0
 Giaveno,75,2,5,5,0,0
 Givoletto,30,0,4,6,0,0
@@ -36,10 +36,10 @@ Oulx,29,2,0,1,0,0
 Pianezza,87,6,9,5,0,0
 Reano,23,9,3,3,0,0
 Rivalta di Torino,24,2,0,7,0,0
-Rivoli,168,8,10,28,0,1
+Rivoli,169,8,10,28,0,1
 Robassomero,25,3,1,14,0,0
-Rosta,66,1,2,5,0,1
-Rubiana,31,11,6,0,0,0
+Rosta,69,1,3,6,0,1
+Rubiana,33,12,6,0,0,0
 Salbertrand,10,0,0,1,0,0
 San Didero,29,1,4,3,0,0
 San Gillio,30,0,1,13,0,0
@@ -58,4 +58,4 @@ Varisella,1,0,0,0,0,0
 Venaus,8,5,0,0,0,0
 Villar Dora,34,1,3,10,0,0
 Villar Focchiardo,42,5,4,5,0,0
-Villarbasse,36,12,6,11,0,0
+Villarbasse,37,12,6,11,0,0
