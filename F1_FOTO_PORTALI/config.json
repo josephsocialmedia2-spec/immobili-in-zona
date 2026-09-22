@@ -1,0 +1,31 @@
+{
+  "attesa_iniziale_secondi": 45,
+  "intervallo_screenshot_secondi": 5,
+  "percentuale_scorrimento": 0.82,
+  "attesa_caricamento_pagina_secondi": 8,
+  "tentativi_connessione_chrome": 30,
+  "pausa_connessione_chrome_secondi": 2,
+  "max_pagine_per_portale": 0,
+  "salva_screenshot_prima_di_scorrere": true,
+  "porta_chrome_in_primo_piano": true,
+  "prova_chiusura_popup_cookie": true,
+  "apri_portale_se_manca": true,
+  "attesa_tra_portali_secondi": 3,
+  "portali": [
+    {
+      "nome": "IMMOBILIARE",
+      "domini": ["immobiliare.it"],
+      "url_apertura": "https://www.immobiliare.it/"
+    },
+    {
+      "nome": "CASA_IT",
+      "domini": ["casa.it"],
+      "url_apertura": "https://www.casa.it/"
+    },
+    {
+      "nome": "IDEALISTA",
+      "domini": ["idealista.it"],
+      "url_apertura": "https://www.idealista.it/"
+    }
+  ]
+}

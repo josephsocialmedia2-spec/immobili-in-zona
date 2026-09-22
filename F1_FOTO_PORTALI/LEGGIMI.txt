@@ -1,0 +1,53 @@
+F1 FOTO PORTALI - ISTRUZIONI
+========================================
+
+FUNZIONE
+Il programma fotografa L'INTERO SCHERMO DEL COMPUTER, non soltanto la pagina
+web. Processa in sequenza:
+
+1. IMMOBILIARE.IT
+2. CASA.IT
+3. IDEALISTA.IT
+
+Per ciascun portale:
+- attende 45 secondi per permetterti di impostare zona e filtri;
+- salva uno screenshot completo del desktop;
+- scorre la pagina;
+- ripete foto e scorrimento ogni 5 secondi;
+- quando arriva in fondo, cerca la pagina successiva;
+- quando non trova più pagine crea FINITO_<PORTALE>.txt;
+- passa automaticamente al portale successivo.
+
+PRIMA INSTALLAZIONE
+1. Estrai tutti i file in una cartella sul Desktop.
+2. Esegui INSTALLA_COMPONENTI.bat una sola volta.
+
+AVVIO CONSIGLIATO
+1. Esegui APRI_IMMOBILIARE.bat.
+2. Esegui APRI_CASA_IT.bat.
+3. Esegui APRI_IDEALISTA.bat.
+4. Esegui AVVIA_FOTO_3_PORTALI.bat.
+
+AVVIO RAPIDO
+Puoi anche eseguire AVVIA_TUTTO.bat. Apre i tre portali e avvia il programma.
+
+IMPORTANTE
+- Durante gli screenshot non coprire Chrome con altre finestre.
+- Lascia Chrome massimizzato.
+- Nei 45 secondi iniziali imposta la ricerca del portale indicato.
+- Se compare un CAPTCHA o un blocco del sito, risolvilo manualmente.
+- Il programma prova a chiudere automaticamente i popup dei cookie.
+- Le foto sono salvate nella cartella FOTO_PORTALI.
+- Il file indice_screenshot.csv contiene portale, pagina, URL e nome foto.
+
+ARRESTO
+Esegui FERMA_PROGRAMMA.bat. Il programma terminerà in sicurezza.
+
+IMPOSTAZIONI
+Nel file config.json puoi modificare:
+- attesa_iniziale_secondi: 45
+- intervallo_screenshot_secondi: 5
+- max_pagine_per_portale: 0 significa nessun limite
+
+Il programma deve essere usato nel rispetto delle condizioni dei portali e
+soltanto su contenuti che sei autorizzato a consultare e archiviare.
