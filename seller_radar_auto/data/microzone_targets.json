@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T09:44:54.019648+00:00",
+  "generated_at": "2026-09-23T15:21:14.436470+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -124,6 +124,21 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-fontana",
+      "comune": "Almese",
+      "target_street": "via Fontana",
+      "listing_target": "via Fontana 19",
+      "listing_url": "https://www.nuroa.it/affitto-case/almese",
+      "streets": [
+        "via Fontana",
+        "Via Moncurto",
+        "Via Tetti San Mauro",
+        "Via Rivera",
+        "Strada della Torre"
       ],
       "osm_status": "OK"
     },
@@ -296,7 +311,7 @@
       "zone_id": "avigliana-piazza-del-popolo",
       "comune": "Avigliana",
       "target_street": "piazza del Popolo",
-      "listing_target": "piazza del popolo 100",
+      "listing_target": "piazza del Popolo 4",
       "listing_url": "https://www.immobiliare.it/annunci/127408283/",
       "streets": [
         "piazza del Popolo",
