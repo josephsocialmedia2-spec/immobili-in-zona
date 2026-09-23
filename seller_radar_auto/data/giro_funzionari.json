@@ -30,8 +30,8 @@
       "numero": 3,
       "comune": "Pianezza",
       "score_comune": 48,
-      "righe_lavoro": 15,
-      "residenziale": 12,
+      "righe_lavoro": 16,
+      "residenziale": 13,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -39,10 +39,10 @@
     {
       "funzionario": "FUNZIONARIO 4",
       "numero": 4,
-      "comune": "Grugliasco",
-      "score_comune": 43,
-      "righe_lavoro": 22,
-      "residenziale": 18,
+      "comune": "Rosta",
+      "score_comune": 45,
+      "righe_lavoro": 16,
+      "residenziale": 12,
       "commerciale": 4,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -50,6 +50,17 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
+      "comune": "Grugliasco",
+      "score_comune": 43,
+      "righe_lavoro": 22,
+      "residenziale": 19,
+      "commerciale": 3,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 6",
+      "numero": 6,
       "comune": "Villar Focchiardo",
       "score_comune": 40,
       "righe_lavoro": 7,
@@ -59,8 +70,8 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 6",
-      "numero": 6,
+      "funzionario": "FUNZIONARIO 7",
+      "numero": 7,
       "comune": "Alpignano",
       "score_comune": 38,
       "righe_lavoro": 19,
@@ -70,46 +81,35 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 7",
-      "numero": 7,
-      "comune": "Rosta",
-      "score_comune": 38,
-      "righe_lavoro": 15,
-      "residenziale": 12,
-      "commerciale": 3,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
       "funzionario": "FUNZIONARIO 8",
       "numero": 8,
-      "comune": "Villarbasse",
-      "score_comune": 38,
-      "righe_lavoro": 8,
-      "residenziale": 8,
-      "commerciale": 0,
+      "comune": "Vaie",
+      "score_comune": 35,
+      "righe_lavoro": 7,
+      "residenziale": 6,
+      "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Beinasco",
+      "comune": "Chianocco",
       "score_comune": 35,
-      "righe_lavoro": 21,
-      "residenziale": 17,
-      "commerciale": 4,
+      "righe_lavoro": 5,
+      "residenziale": 5,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
     {
       "funzionario": "FUNZIONARIO 10",
       "numero": 10,
-      "comune": "Vaie",
-      "score_comune": 35,
-      "righe_lavoro": 7,
-      "residenziale": 6,
-      "commerciale": 1,
+      "comune": "Beinasco",
+      "score_comune": 30,
+      "righe_lavoro": 21,
+      "residenziale": 18,
+      "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }
