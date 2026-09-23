@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:34:54.502126+00:00",
+  "generated_at": "2026-09-23T04:27:28.778119+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -184,6 +184,36 @@
         "Via Altinetti",
         "Via Avigliana",
         "Via dei Caduti"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-rivette",
+      "comune": "Almese",
+      "target_street": "Via Rivette",
+      "listing_target": "Via Rivette 1",
+      "listing_url": "https://www.idealista.it/immobile/36856466/",
+      "streets": [
+        "Via Rivette",
+        "Via Avigliana",
+        "Via Circonvallazione",
+        "Via dell'Ajgro",
+        "Via Romana"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-mollar",
+      "comune": "Almese",
+      "target_street": "Via Mollar",
+      "listing_target": "Via Mollar 28",
+      "listing_url": "https://www.idealista.it/immobile/34892659/",
+      "streets": [
+        "Via Mollar",
+        "Via Braida",
+        "Via Madonna della Neve",
+        "Via Sonetto",
+        "Via Muande"
       ],
       "osm_status": "OK"
     },
