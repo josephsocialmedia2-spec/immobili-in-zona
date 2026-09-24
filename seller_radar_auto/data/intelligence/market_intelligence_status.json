@@ -1,10 +1,10 @@
 {
   "status": "MARKET_INTELLIGENCE_COMPLETED",
-  "market_intelligence_completed_at_utc": "2026-09-24T18:53:36+00:00",
-  "market_intelligence_completed_at_rome": "2026-09-24T20:53:36+02:00",
-  "records_qualified": 2360,
-  "records_discarded": 807,
+  "market_intelligence_completed_at_utc": "2026-09-24T22:38:12+00:00",
+  "market_intelligence_completed_at_rome": "2026-09-25T00:38:12+02:00",
+  "records_qualified": 2381,
+  "records_discarded": 810,
   "comuni": 60,
   "agenzie": 86,
-  "new_events": 77
+  "new_events": 86
 }

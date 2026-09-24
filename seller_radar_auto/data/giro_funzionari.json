@@ -41,8 +41,8 @@
       "numero": 4,
       "comune": "Avigliana",
       "score_comune": 46,
-      "righe_lavoro": 20,
-      "residenziale": 18,
+      "righe_lavoro": 19,
+      "residenziale": 17,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -52,8 +52,8 @@
       "numero": 5,
       "comune": "Beinasco",
       "score_comune": 45,
-      "righe_lavoro": 27,
-      "residenziale": 24,
+      "righe_lavoro": 28,
+      "residenziale": 25,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -85,8 +85,8 @@
       "numero": 8,
       "comune": "Grugliasco",
       "score_comune": 43,
-      "righe_lavoro": 20,
-      "residenziale": 16,
+      "righe_lavoro": 32,
+      "residenziale": 28,
       "commerciale": 4,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -96,8 +96,8 @@
       "numero": 9,
       "comune": "Villar Focchiardo",
       "score_comune": 40,
-      "righe_lavoro": 6,
-      "residenziale": 5,
+      "righe_lavoro": 5,
+      "residenziale": 4,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
