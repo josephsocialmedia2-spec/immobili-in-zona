@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T22:41:12.566880+00:00",
+  "generated_at": "2026-09-24T01:48:43.660013+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -100,11 +100,11 @@
     {
       "zone_id": "almese-via-braida",
       "comune": "Almese",
-      "target_street": "via Braida",
+      "target_street": "Via Braida",
       "listing_target": "Via Braida 18",
-      "listing_url": "https://www.immobiliare.it/annunci/132512014/",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/casa-almese",
       "streets": [
-        "via Braida",
+        "Via Braida",
         "Via Bertolo",
         "Via della Roccia",
         "Via Mollar",
@@ -656,7 +656,7 @@
       "zone_id": "avigliana-via-moncenisio",
       "comune": "Avigliana",
       "target_street": "via Moncenisio",
-      "listing_target": "via Moncenisio 0",
+      "listing_target": "via Moncenisio 196",
       "listing_url": "https://www.immobiliare.it/annunci/132431232/",
       "streets": [
         "via Moncenisio",

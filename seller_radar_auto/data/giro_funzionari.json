@@ -30,8 +30,8 @@
       "numero": 3,
       "comune": "Pianezza",
       "score_comune": 48,
-      "righe_lavoro": 16,
-      "residenziale": 13,
+      "righe_lavoro": 15,
+      "residenziale": 12,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -63,8 +63,8 @@
       "numero": 6,
       "comune": "Grugliasco",
       "score_comune": 43,
-      "righe_lavoro": 21,
-      "residenziale": 19,
+      "righe_lavoro": 22,
+      "residenziale": 20,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -74,8 +74,8 @@
       "numero": 7,
       "comune": "Villar Focchiardo",
       "score_comune": 40,
-      "righe_lavoro": 6,
-      "residenziale": 5,
+      "righe_lavoro": 5,
+      "residenziale": 4,
       "commerciale": 1,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -96,8 +96,8 @@
       "numero": 9,
       "comune": "Beinasco",
       "score_comune": 30,
-      "righe_lavoro": 22,
-      "residenziale": 19,
+      "righe_lavoro": 19,
+      "residenziale": 16,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
