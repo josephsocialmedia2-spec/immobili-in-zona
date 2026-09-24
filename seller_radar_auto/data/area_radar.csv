@@ -151,7 +151,8 @@ ca0da030b717e3360d8b,Collegno,NON_DETERMINATO,via Avigliana,VAI_IN_ZONA,via Avig
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 60,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 2,,PRONTO,https://www.immobiliare.it/annunci/125737541/
 39754a2e99a55c635568,Susa,NON_DETERMINATO,via Susa,VAI_IN_ZONA,Via Susa 50,,PRONTO,https://www.immobiliare.it/annunci/125737541/
-2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Fontana,VAI_IN_ZONA,via Fontana 19,,PRONTO,https://www.nuroa.it/affitto-case/almese
+2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Almese,VAI_IN_ZONA,via Almese  35,,PRONTO,https://www.nuroa.it/affitto-case/almese
+2812ed64093f464b6c85,Almese,NON_DETERMINATO,via Almese,VAI_IN_ZONA,via almese 23,,PRONTO,https://www.nuroa.it/affitto-case/almese
 de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,Via Collegno 23,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
 de9d98620acb3e21826c,Alpignano,NON_DETERMINATO,Via Collegno,VAI_IN_ZONA,via Collegno 84,,PRONTO,https://www.casadaprivato.it/annunci-vendita/immobili/torino-alpignano
 1b81c26fe60f41754e8a,Alpignano,NON_DETERMINATO,Via dei Ronchi,VAI_IN_ZONA,Via dei Ronchi 51/A6,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-vendita-alpignano
@@ -497,6 +498,7 @@ fc9b091d31bee128d2b2,Caprie,NON_DETERMINATO,via Pietra Rotonda,VAI_IN_ZONA,via P
 88d07963707c01858779,Beinasco,NON_DETERMINATO,Via Aosta,VAI_IN_ZONA,Via Aosta 16/A,,PRONTO,https://asteflorio.it/aste/capannone-a-beinasco-to-beinasco-2
 88d07963707c01858779,Beinasco,NON_DETERMINATO,Via Aosta,VAI_IN_ZONA,Via Aosta 16,,PRONTO,https://asteflorio.it/aste/capannone-a-beinasco-to-beinasco-2
 3ba45506fa42f0be6383,Beinasco,INDIZIO_AGENZIA,via Enrico De Nicola,VAI_IN_ZONA,via Enrico De Nicola 10,,PRONTO,https://www.immobiliare.it/annunci/130016970/
+3ba45506fa42f0be6383,Beinasco,INDIZIO_AGENZIA,via Enrico De Nicola,VAI_IN_ZONA,Via Enrico De Nicola 5,,PRONTO,https://www.immobiliare.it/annunci/130016970/
 1d95b1f5952adc668bd4,Bruino,NON_DETERMINATO,Via G. Marconi,VAI_IN_ZONA,Via G. Marconi 101,,PRONTO,https://www.nuroa.it/vendita-immobili/capannone-bruino
 a00251fe32d5e2e6f836,Avigliana,NON_DETERMINATO,via Micheletta,VAI_IN_ZONA,via Micheletta 23,,PRONTO,https://www.immobiliare.it/annunci/132324314/
 87b352441eb8e008f43b,Avigliana,NON_DETERMINATO,Via Micheletta,VAI_IN_ZONA,Via Micheletta 23,,PRONTO,https://www.idealista.it/immobile/36760841/
@@ -619,7 +621,6 @@ e097f7c6f03f85b8ca56,Borgone Susa,NON_DETERMINATO,Via Bruno Mosconi,VAI_IN_ZONA,
 e097f7c6f03f85b8ca56,Borgone Susa,NON_DETERMINATO,Via Bruno Mosconi,VAI_IN_ZONA,via Bruno Mosconi 2,,PRONTO,https://www.idealista.it/immobile/34107846/
 e097f7c6f03f85b8ca56,Borgone Susa,NON_DETERMINATO,Via Bruno Mosconi,VAI_IN_ZONA,via Bruno Mosconi 24,,PRONTO,https://www.idealista.it/immobile/34107846/
 3e30e25132303efc1d4b,Avigliana,NON_DETERMINATO,via Moncenisio,VAI_IN_ZONA,via Moncenisio 0,,PRONTO,https://www.immobiliare.it/annunci/132431232/
-3e30e25132303efc1d4b,Avigliana,NON_DETERMINATO,via Moncenisio,VAI_IN_ZONA,via Moncenisio 196,,PRONTO,https://www.immobiliare.it/annunci/132431232/
 1688ad7c437130d70bfe,Avigliana,NON_DETERMINATO,Via G. Portigliatti,VAI_IN_ZONA,Via G. Portigliatti 37,,PRONTO,https://www.idealista.it/immobile/36006036/
 b2635999fb25f8305cb2,Avigliana,NON_DETERMINATO,Strada Antica Giaveno Sant'Ambrogio,VAI_IN_ZONA,Strada Antica Giaveno Sant'Ambrogio 29,,PRONTO,https://www.immobiliare.it/annunci/132393390/
 85b641fde63dc6750a82,Bruino,INDIZIO_AGENZIA,Via Monte Bianco,VAI_IN_ZONA,Via Monte Bianco 60/A,,PRONTO,https://www.tecnocasa.it/vendita/capannone/torino/bruino/61272017.html
@@ -633,6 +634,7 @@ b2f35f9ab41ee6284c4b,Borgone Susa,NON_DETERMINATO,via XX Settembre,VAI_IN_ZONA,v
 6ac27deac1be18475d33,Pianezza,NON_DETERMINATO,Via Pianezza,VAI_IN_ZONA,Via Pianezza 56,,PRONTO,https://www.idealista.it/immobile/35567494/
 e29668c885d820aaa35b,Alpignano,NON_DETERMINATO,via Fornace,VAI_IN_ZONA,via Fornace 38,,PRONTO,https://www.immobiliare.it/annunci/123716459/
 6dac7ef65c97ea7950ef,Beinasco,NON_DETERMINATO,via Giacomo Leopardi,VAI_IN_ZONA,via Giacomo Leopardi 20,,PRONTO,https://www.immobiliare.it/annunci/129017122/
+6dac7ef65c97ea7950ef,Beinasco,NON_DETERMINATO,via Giacomo Leopardi,VAI_IN_ZONA,via Giacomo Leopardi 7,,PRONTO,https://www.immobiliare.it/annunci/129017122/
 3428b441860ed5958184,Bruino,NON_DETERMINATO,via Bruino,VAI_IN_ZONA,via Bruino 3,,PRONTO,https://www.immobiliare.it/annunci/132384128/
 3428b441860ed5958184,Bruino,NON_DETERMINATO,via Bruino,VAI_IN_ZONA,Via Bruino 30,,PRONTO,https://www.immobiliare.it/annunci/132384128/
 9f48ea660a7870988ac5,Alpignano,NON_DETERMINATO,Via Francesco Baracca,VAI_IN_ZONA,Via Francesco Baracca 21,,PRONTO,https://www.idealista.it/immobile/36876267/
@@ -641,7 +643,6 @@ e29668c885d820aaa35b,Alpignano,NON_DETERMINATO,via Fornace,VAI_IN_ZONA,via Forna
 13529b719964264285ed,Avigliana,NON_DETERMINATO,via Felice Goffi,VAI_IN_ZONA,via Felice Goffi 6,,PRONTO,https://www.immobiliare.it/annunci/131899550/
 13529b719964264285ed,Avigliana,NON_DETERMINATO,via Felice Goffi,VAI_IN_ZONA,Via Felice Goffi 0,,PRONTO,https://www.immobiliare.it/annunci/131899550/
 5d75d593749b5b7528fb,Avigliana,NON_DETERMINATO,via Paolo Borsellino,VAI_IN_ZONA,via Paolo Borsellino 18,,PRONTO,https://www.immobiliare.it/annunci/120483604/
-5d75d593749b5b7528fb,Avigliana,NON_DETERMINATO,via Paolo Borsellino,VAI_IN_ZONA,VIA PAOLO BORSELLINO 3,,PRONTO,https://www.immobiliare.it/annunci/120483604/
 d84ba75077becf27b410,Borgone Susa,NON_DETERMINATO,"Via A.... Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",VAI_IN_ZONA,"Via A.... Piemonte, Torino Visualizza foto Villetta indipendente in vendita di 120",,PRONTO,https://www.nuroa.it/vendita-immobili/vendita-borgone-susa
 9a4e61ab71c4abccc003,Alpignano,NON_DETERMINATO,via Lanzo,VAI_IN_ZONA,via Lanzo 8,,PRONTO,https://www.immobiliare.it/annunci/128603296/
 c178c36428f136f01848,Beinasco,NON_DETERMINATO,via enrico de nicola,VAI_IN_ZONA,via enrico de nicola 5,,PRONTO,https://www.immobiliare.it/annunci/132625832/
@@ -662,3 +663,23 @@ e322dfb3743a7ebac14c,Beinasco,NON_DETERMINATO,via Marconi,VAI_IN_ZONA,via Marcon
 0ebf3b4f3309b982dc92,Bruino,NON_DETERMINATO,via Torino,VAI_IN_ZONA,via torino 78,,PRONTO,https://www.immobiliare.it/annunci/132708702/
 c8432378b6951756225a,Almese,NON_DETERMINATO,Via Braida,VAI_IN_ZONA,Via Braida 18,,PRONTO,https://www.nuroa.it/vendita-immobili/casa-almese
 2db10d071149e2f6b716,Borgone Susa,NON_DETERMINATO,"Via A.... Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",VAI_IN_ZONA,"Via A.... Piemonte, Torino Visualizza foto Villetta indipendente in vendita di 120",,PRONTO,https://www.nuroa.it/vendita-immobili/borgone-susa
+ce2d83c213c78ec32b86,Almese,NON_DETERMINATO,Via Roma,VAI_IN_ZONA,Via Roma 29,,PRONTO,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese
+ce2d83c213c78ec32b86,Almese,NON_DETERMINATO,Via Roma,VAI_IN_ZONA,Via Roma 80,,PRONTO,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese
+5fc317369e889d599c3b,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 41,,PRONTO,https://www.nuroa.it/affitto-case/garage-beinasco
+5fc317369e889d599c3b,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 26,,PRONTO,https://www.nuroa.it/affitto-case/garage-beinasco
+5fc317369e889d599c3b,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 10,,PRONTO,https://www.nuroa.it/affitto-case/garage-beinasco
+5fc317369e889d599c3b,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,via San Giacomo 12,,PRONTO,https://www.nuroa.it/affitto-case/garage-beinasco
+5fc317369e889d599c3b,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 9,,PRONTO,https://www.nuroa.it/affitto-case/garage-beinasco
+d34333187cb5348114b6,Beinasco,NON_DETERMINATO,Via Monginevro,VAI_IN_ZONA,Via Monginevro 13,,PRONTO,https://www.idealista.it/immobile/36909330/
+3c17f0be947707a77103,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 26,,PRONTO,https://www.idealista.it/immobile/36893351/
+3c17f0be947707a77103,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,via San Giacomo 12,,PRONTO,https://www.idealista.it/immobile/36893351/
+3c17f0be947707a77103,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 10,,PRONTO,https://www.idealista.it/immobile/36893351/
+1f1db4ab2410ea0c7ccd,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 10,,PRONTO,https://www.idealista.it/immobile/36921070/
+1f1db4ab2410ea0c7ccd,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,Via San Giacomo 26,,PRONTO,https://www.idealista.it/immobile/36921070/
+1f1db4ab2410ea0c7ccd,Beinasco,NON_DETERMINATO,Via San Giacomo,VAI_IN_ZONA,via San Giacomo 12,,PRONTO,https://www.idealista.it/immobile/36921070/
+ec8c5b06cdcbb8953959,Beinasco,NON_DETERMINATO,Via San Giovanni,VAI_IN_ZONA,Via San Giovanni 2,,PRONTO,https://www.idealista.it/immobile/36899890/
+ec8c5b06cdcbb8953959,Beinasco,NON_DETERMINATO,Via San Giovanni,VAI_IN_ZONA,via San Giovanni 6,,PRONTO,https://www.idealista.it/immobile/36899890/
+e64746fce35499125690,Beinasco,NON_DETERMINATO,Via Gaetano Donizetti,VAI_IN_ZONA,Via Gaetano Donizetti 10,,PRONTO,https://www.idealista.it/immobile/36904855/
+e64746fce35499125690,Beinasco,NON_DETERMINATO,Via Gaetano Donizetti,VAI_IN_ZONA,via Gaetano Donizetti 6,,PRONTO,https://www.idealista.it/immobile/36904855/
+ed75b0c72713ab7f9ba8,Beinasco,NON_DETERMINATO,Via Monginevro,VAI_IN_ZONA,Via Monginevro 13,,PRONTO,https://www.wikicasa.it/annuncio/30892179
+23ee1154047057cf0f7f,Beinasco,NON_DETERMINATO,Corso Vigevano,VAI_IN_ZONA,Corso Vigevano 8,,PRONTO,https://www.wikicasa.it/annuncio/30893046

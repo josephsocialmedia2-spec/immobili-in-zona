@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T07:57:39.636530+00:00",
+  "generated_at": "2026-09-24T13:57:07.715394+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -70,11 +70,11 @@
     {
       "zone_id": "almese-via-roma",
       "comune": "Almese",
-      "target_street": "via Roma",
-      "listing_target": "via Roma 29",
-      "listing_url": "https://www.immobiliare.it/annunci/132169640/",
+      "target_street": "Via Roma",
+      "listing_target": "Via Roma 80",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/locale-commerciale-almese",
       "streets": [
-        "via Roma",
+        "Via Roma",
         "Piazza Martiri della Libertà",
         "Piazza Pra Maccari",
         "Via Cerrone",
@@ -124,21 +124,6 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-fontana",
-      "comune": "Almese",
-      "target_street": "via Fontana",
-      "listing_target": "via Fontana 19",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
-      "streets": [
-        "via Fontana",
-        "Via Moncurto",
-        "Via Tetti San Mauro",
-        "Via Rivera",
-        "Strada della Torre"
       ],
       "osm_status": "OK"
     },
@@ -656,7 +641,7 @@
       "zone_id": "avigliana-via-moncenisio",
       "comune": "Avigliana",
       "target_street": "via Moncenisio",
-      "listing_target": "via Moncenisio 196",
+      "listing_target": "via Moncenisio 0",
       "listing_url": "https://www.immobiliare.it/annunci/132431232/",
       "streets": [
         "via Moncenisio",
@@ -686,7 +671,7 @@
       "zone_id": "avigliana-via-paolo-borsellino",
       "comune": "Avigliana",
       "target_street": "via Paolo Borsellino",
-      "listing_target": "VIA PAOLO BORSELLINO 3",
+      "listing_target": "via Paolo Borsellino 18",
       "listing_url": "https://www.immobiliare.it/annunci/120483604/",
       "streets": [
         "via Paolo Borsellino",
