@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T01:48:43.660013+00:00",
+  "generated_at": "2026-09-24T07:57:39.636530+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -743,17 +743,17 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "buttigliera-alta-corso-superga",
+      "zone_id": "buttigliera-alta-via-della-torre-ferriera",
       "comune": "Buttigliera Alta",
-      "target_street": "Corso Superga",
-      "listing_target": "Corso Superga 8",
-      "listing_url": "https://www.idealista.it/immobile/35549687/",
+      "target_street": "Via della Torre - Ferriera",
+      "listing_target": "Via della Torre - Ferriera 4",
+      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
       "streets": [
-        "Corso Superga",
-        "Corso Laghi",
-        "Via Madonna dei Boschi",
-        "Via Ragazzi del '99",
-        "Via Reano"
+        "Via della Torre - Ferriera",
+        "Corso Torino",
+        "Corso Vandel",
+        "Strada Antica di Francia",
+        "Via Capoluogo"
       ],
       "osm_status": "OK"
     },
@@ -773,6 +773,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "buttigliera-alta-corso-superga",
+      "comune": "Buttigliera Alta",
+      "target_street": "Corso Superga",
+      "listing_target": "Corso Superga 8",
+      "listing_url": "https://www.idealista.it/immobile/35549687/",
+      "streets": [
+        "Corso Superga",
+        "Corso Laghi",
+        "Via Madonna dei Boschi",
+        "Via Ragazzi del '99",
+        "Via Reano"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "buttigliera-alta-via-della-torre",
       "comune": "Buttigliera Alta",
       "target_street": "Via della Torre",
@@ -784,21 +799,6 @@
         "Corso Vandel",
         "Strada Antica di Francia",
         "Via Capoluogo"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "buttigliera-alta-via-del-cavallo-grigio-ferriera-gio",
-      "comune": "Buttigliera Alta",
-      "target_street": "via del Cavallo Grigio, Ferriera gio",
-      "listing_target": "via del Cavallo Grigio, Ferriera gio 3",
-      "listing_url": "https://www.caasa.it/torino/buttigliera-alta-zona-ferriera/casa-indipendente/in-vendita.html",
-      "streets": [
-        "via del Cavallo Grigio, Ferriera gio",
-        "Corso Torino",
-        "Corso Vandel",
-        "Piazza Ragazzi di Piazza Tienanmen",
-        "Strada Antica di Francia"
       ],
       "osm_status": "OK"
     },
@@ -968,13 +968,13 @@
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "caselette-via-roma-piemonte-torino-visualizza-foto-villetta-indipendente-in-vendita-di",
+      "zone_id": "caselette-via-roma-piemonte-torino-visualizza-foto-appartamento-in-vendita-di",
       "comune": "Caselette",
-      "target_street": "Via Roma Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",
-      "listing_target": "Via Roma Piemonte, Torino Visualizza foto Villetta indipendente in vendita di 96",
+      "target_street": "Via Roma Piemonte, Torino Visualizza foto Appartamento in vendita di",
+      "listing_target": "Via Roma Piemonte, Torino Visualizza foto Appartamento in vendita di 80",
       "listing_url": "https://www.nuroa.it/vendita-immobili/vendita-caselette",
       "streets": [
-        "Via Roma Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",
+        "Via Roma Piemonte, Torino Visualizza foto Appartamento in vendita di",
         "Via al Musinè",
         "Via Almese",
         "Via Alpignano",
