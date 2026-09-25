@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T13:59:12.517736+00:00",
+  "generated_at": "2026-09-25T22:38:31.520345+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -295,11 +295,11 @@
     {
       "zone_id": "avigliana-piazza-del-popolo",
       "comune": "Avigliana",
-      "target_street": "piazza del Popolo",
-      "listing_target": "piazza del Popolo 4",
-      "listing_url": "https://www.immobiliare.it/annunci/127408283/",
+      "target_street": "Piazza del Popolo",
+      "listing_target": "piazza del popolo 100",
+      "listing_url": "https://www.lagendanews.com/montefiore-immobiliare-trilocale-piazza-del-popolo-4-centro-avigliana/",
       "streets": [
-        "piazza del Popolo",
+        "Piazza del Popolo",
         "Corso Laghi",
         "Via Cavalieri di Vittorio Veneto",
         "Via della Repubblica",
@@ -814,6 +814,21 @@
         "Strada della Praia",
         "Strada Statale 25 del Moncenisio",
         "Via Almese"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "buttigliera-alta-via-rivoli",
+      "comune": "Buttigliera Alta",
+      "target_street": "Via Rivoli",
+      "listing_target": "Via Rivoli 42",
+      "listing_url": "https://www.dove.it/vendita-case/buttigliera-alta",
+      "streets": [
+        "Via Rivoli",
+        "Corso Superga",
+        "Via al Castello",
+        "Via della Pace",
+        "Via Reano"
       ],
       "osm_status": "OK"
     },
