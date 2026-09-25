@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T01:46:45.513503+00:00",
+  "generated_at": "2026-09-25T13:59:12.517736+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -641,7 +641,7 @@
       "zone_id": "avigliana-via-moncenisio",
       "comune": "Avigliana",
       "target_street": "via Moncenisio",
-      "listing_target": "via Moncenisio 196",
+      "listing_target": "via Moncenisio 0",
       "listing_url": "https://www.immobiliare.it/annunci/132431232/",
       "streets": [
         "via Moncenisio",

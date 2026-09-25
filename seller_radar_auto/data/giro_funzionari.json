@@ -50,11 +50,11 @@
     {
       "funzionario": "FUNZIONARIO 5",
       "numero": 5,
-      "comune": "Sant'Antonino di Susa",
+      "comune": "Beinasco",
       "score_comune": 45,
-      "righe_lavoro": 22,
-      "residenziale": 20,
-      "commerciale": 2,
+      "righe_lavoro": 29,
+      "residenziale": 24,
+      "commerciale": 5,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -74,8 +74,8 @@
       "numero": 7,
       "comune": "Grugliasco",
       "score_comune": 43,
-      "righe_lavoro": 33,
-      "residenziale": 28,
+      "righe_lavoro": 31,
+      "residenziale": 26,
       "commerciale": 5,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -94,11 +94,11 @@
     {
       "funzionario": "FUNZIONARIO 9",
       "numero": 9,
-      "comune": "Beinasco",
+      "comune": "Rivalta di Torino",
       "score_comune": 40,
-      "righe_lavoro": 28,
-      "residenziale": 24,
-      "commerciale": 4,
+      "righe_lavoro": 5,
+      "residenziale": 3,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -107,8 +107,8 @@
       "numero": 10,
       "comune": "Alpignano",
       "score_comune": 38,
-      "righe_lavoro": 16,
-      "residenziale": 14,
+      "righe_lavoro": 18,
+      "residenziale": 16,
       "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
