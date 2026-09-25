@@ -1,61 +1,61 @@
 ﻿COMUNE,STOCK_ATTIVO,NUOVI_30G,USCITE_OSSERVATE_30G,RIBASSI_30G,PREZZO_MEDIO,PREZZO_MEDIANO,PREZZO_MQ_MEDIO,PREZZO_MQ_MEDIANO,PERMANENZA_MEDIANA_GG,GIORNI_MEDI_PRIMO_RIBASSO,RIBASSO_MEDIO_PCT,TURNOVER_OSSERVATO_30G_PCT,TIPOLOGIA_PIU_OFFERTA,TIPOLOGIA_ROTAZIONE_RAPIDA_PROXY,VENDUTI_CONFERMATI,ULTIMO_AGGIORNAMENTO
-Almese,10,30,29,2,117000.0,95000.0,253.89,158.33,23.5,4.0,2.02,290.0,appartamento,commerciale,0,2026-09-25T00:38+02:00
-Alpignano,19,77,60,6,232857.14,189000.0,866.66,866.66,14.0,9.0,22.89,315.8,appartamento,appartamento,1,2026-09-25T00:38+02:00
-Avigliana,19,84,67,5,176222.22,175000.0,2444.44,2444.44,10.0,7.2,22.0,352.6,appartamento,altro,0,2026-09-25T00:38+02:00
-Bardonecchia,17,39,23,1,137500.0,129000.0,,,23.0,0.0,97.19,135.3,appartamento,appartamento,1,2026-09-25T00:38+02:00
-Beinasco,37,99,62,7,174895.83,125000.0,1533.22,1633.33,4.0,1.86,28.24,167.6,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Borgone Susa,19,64,46,2,94954.55,87000.0,825.86,642.86,27.0,0.0,0.0,242.1,appartamento,appartamento,1,2026-09-25T00:38+02:00
-Bruino,19,49,30,6,195000.0,182000.0,2332.8,2326.66,13.0,3.67,14.18,157.9,appartamento,casa indipendente,0,2026-09-25T00:38+02:00
-Bruzolo,2,15,15,2,57500.0,57500.0,,,23.0,9.5,25.0,750.0,appartamento,altro,0,2026-09-25T00:38+02:00
-Bussoleno,6,17,11,1,215600.0,185000.0,4700.0,4700.0,21.0,6.0,0.0,183.3,appartamento,commerciale,0,2026-09-25T00:38+02:00
-Buttigliera Alta,6,27,26,2,32750.0,18500.0,147.06,147.06,18.5,9.5,80.92,433.3,appartamento,commerciale,0,2026-09-25T00:38+02:00
-Caprie,1,20,19,0,,,,,28.0,,,1900.0,appartamento,altro,1,2026-09-25T00:38+02:00
-Caselette,8,35,31,2,,,,,8.0,9.5,76.56,387.5,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Chianocco,5,17,13,0,118000.0,118000.0,936.51,936.51,1.0,,,260.0,casa indipendente,commerciale,0,2026-09-25T00:38+02:00
-Chiomonte,7,13,6,0,,,,,22.0,,,85.7,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Chiusa di San Michele,13,29,17,0,158000.0,158000.0,1053.33,1053.33,28.0,,,130.8,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Coazze,10,56,47,0,59000.0,59000.0,842.86,842.86,14.0,,,470.0,casa indipendente,altro,2,2026-09-25T00:38+02:00
-Collegno,16,135,121,0,,,,,8.0,,,756.2,commerciale,altro,0,2026-09-25T00:38+02:00
-Condove,11,54,45,0,,,,,12.0,,,409.1,casa indipendente,altro,0,2026-09-25T00:38+02:00
-Druento,14,66,52,0,471000.0,471000.0,1996.92,1996.92,8.0,,,371.4,villa,appartamento,0,2026-09-25T00:38+02:00
-Exilles,8,13,5,0,,,,,23.0,,,62.5,appartamento,altro,0,2026-09-25T00:38+02:00
-Ferriera di Buttigliera Alta,3,8,5,0,,,,,19.0,,,166.7,appartamento,villa,0,2026-09-25T00:38+02:00
-Fiano,17,68,51,1,,,,,9.0,4.0,7.14,300.0,appartamento,altro,0,2026-09-25T00:38+02:00
-Giaglione,1,5,4,0,,,,,28.0,,,400.0,rustico/casale,altro,0,2026-09-25T00:38+02:00
-Giaveno,15,75,61,0,,,,,20.0,,,406.7,appartamento,altro,0,2026-09-25T00:38+02:00
-Givoletto,11,33,22,0,357666.67,359000.0,1334.3,1334.3,13.0,,,200.0,villa,casa indipendente,0,2026-09-25T00:38+02:00
-Gravere,4,5,4,0,,,,,26.5,,,100.0,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Grugliasco,29,124,95,1,158166.67,157500.0,1719.44,1719.44,4.0,1.0,16.27,327.6,appartamento,altro,0,2026-09-25T00:38+02:00
-La Cassa,14,46,32,0,,,,,16.0,,,228.6,appartamento,villa,0,2026-09-25T00:38+02:00
-Mattie,5,6,3,0,40000.0,40000.0,,,28.0,,,60.0,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Meana di Susa,2,15,14,0,45000.0,45000.0,319.15,319.15,31.0,,,700.0,casa indipendente,casa indipendente,0,2026-09-25T00:38+02:00
-Mompantero,2,3,1,0,,,,,21.0,,,50.0,appartamento,villa,0,2026-09-25T00:38+02:00
-Moncenisio,8,18,10,0,,,,,20.5,,,125.0,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Novalesa,1,2,1,0,,,,,21.0,,,100.0,casa indipendente,villa,0,2026-09-25T00:38+02:00
-Oulx,16,27,12,0,158000.0,158000.0,,,22.0,,,75.0,appartamento,altro,0,2026-09-25T00:38+02:00
-Pianezza,21,81,67,0,228333.33,175000.0,1322.65,1536.36,8.0,,,319.0,appartamento,altro,0,2026-09-25T00:38+02:00
-Reano,6,27,21,0,340594.0,340594.0,851.49,851.49,0.5,,,350.0,villa,casa indipendente,0,2026-09-25T00:38+02:00
-Rivalta di Torino,2,24,22,0,,,,,10.0,,,1100.0,villa,commerciale,0,2026-09-25T00:38+02:00
-Rivoli,21,174,156,0,460000.0,460000.0,1840.0,1840.0,6.0,,,742.9,appartamento,altro,1,2026-09-25T00:38+02:00
-Robassomero,8,27,19,0,,,,,7.5,,,237.5,villa,casa indipendente,0,2026-09-25T00:38+02:00
-Rosta,16,72,58,1,234862.5,234862.5,185.95,185.95,13.5,24.0,4.55,362.5,appartamento,appartamento,1,2026-09-25T00:38+02:00
-Rubiana,11,37,27,0,,,,,3.0,,,245.5,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Salbertrand,8,10,2,0,,,,,20.5,,,25.0,appartamento,appartamento,0,2026-09-25T00:38+02:00
-San Didero,3,28,25,0,,,,,23.0,,,833.3,villa,altro,0,2026-09-25T00:38+02:00
-San Gillio,0,30,30,0,,,,,,,,3000.0,,altro,0,2026-09-25T00:38+02:00
-San Giorio,2,1,0,0,34500.0,34500.0,,,30.0,,,0.0,villa,,0,2026-09-25T00:38+02:00
-San Giorio di Susa,15,38,23,0,,,,,27.0,,,153.3,appartamento,altro,0,2026-09-25T00:38+02:00
-San Valeriano,9,18,9,0,87000.0,87000.0,,,22.0,,,100.0,appartamento,appartamento,1,2026-09-25T00:38+02:00
-Sangano,3,8,5,0,429000.0,429000.0,2357.14,2357.14,18.0,,,166.7,villa,appartamento,0,2026-09-25T00:38+02:00
-Sant'Ambrogio di Torino,10,17,7,0,194996.67,225000.0,1166.9,1125.0,22.5,,,70.0,villa,appartamento,0,2026-09-25T00:38+02:00
-Sant'Antonino di Susa,16,51,37,0,35228.5,35228.5,351.03,351.03,27.0,,,231.2,appartamento,villa,0,2026-09-25T00:38+02:00
-Susa,9,26,17,0,67500.0,67500.0,153.06,153.06,23.0,,,188.9,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Trana,11,37,35,0,118500.0,110000.0,865.83,862.5,33.0,,,318.2,appartamento,altro,0,2026-09-25T00:38+02:00
-Vaie,6,11,7,0,28500.0,28500.0,,,28.0,,,116.7,villa,casa indipendente,0,2026-09-25T00:38+02:00
-Val della Torre,3,42,39,0,,,,,3.0,,,1300.0,villa,rustico/casale,0,2026-09-25T00:38+02:00
-Valgioie,8,12,4,0,,,,,15.5,,,50.0,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Varisella,2,4,2,0,,,,,8.0,,,100.0,rustico/casale,rustico/casale,0,2026-09-25T00:38+02:00
-Venaus,2,6,5,0,44043.0,44043.0,,,20.5,,,250.0,appartamento,appartamento,0,2026-09-25T00:38+02:00
-Villar Dora,14,39,26,0,,,,,7.0,,,185.7,villa,villa,0,2026-09-25T00:38+02:00
-Villar Focchiardo,4,39,35,0,15570.0,15570.0,,,14.0,,,875.0,appartamento,altro,0,2026-09-25T00:38+02:00
-Villarbasse,12,44,32,0,,,,,2.0,,,266.7,villa,appartamento,0,2026-09-25T00:38+02:00
+Almese,10,30,29,2,117000.0,95000.0,253.89,158.33,23.5,4.0,2.02,290.0,appartamento,commerciale,0,2026-09-25T03:46+02:00
+Alpignano,16,78,64,6,248333.33,243500.0,1400.0,1400.0,7.0,9.0,22.89,400.0,appartamento,appartamento,1,2026-09-25T03:46+02:00
+Avigliana,18,85,69,5,160888.89,129000.0,1812.22,1812.22,9.5,7.2,22.0,383.3,appartamento,altro,0,2026-09-25T03:46+02:00
+Bardonecchia,17,39,23,1,137500.0,129000.0,,,23.0,0.0,97.19,135.3,appartamento,appartamento,1,2026-09-25T03:46+02:00
+Beinasco,20,100,80,7,185708.33,97000.0,1367.03,1127.89,10.5,1.86,28.24,400.0,appartamento,altro,0,2026-09-25T03:46+02:00
+Borgone Susa,23,64,43,2,115633.33,87000.0,840.85,677.99,27.0,0.0,0.0,187.0,appartamento,appartamento,1,2026-09-25T03:46+02:00
+Bruino,18,49,31,6,195000.0,195000.0,1610.41,320.0,13.0,3.67,14.18,172.2,appartamento,casa indipendente,0,2026-09-25T03:46+02:00
+Bruzolo,3,15,14,2,121666.67,69000.0,,,23.0,9.5,25.0,466.7,appartamento,altro,0,2026-09-25T03:46+02:00
+Bussoleno,6,17,11,1,215600.0,185000.0,4700.0,4700.0,21.5,6.0,0.0,183.3,appartamento,commerciale,0,2026-09-25T03:46+02:00
+Buttigliera Alta,6,27,26,2,32750.0,18500.0,147.06,147.06,18.5,9.5,80.92,433.3,appartamento,commerciale,0,2026-09-25T03:46+02:00
+Caprie,1,20,19,0,,,,,28.0,,,1900.0,appartamento,altro,1,2026-09-25T03:46+02:00
+Caselette,8,35,31,2,,,,,8.0,9.5,76.56,387.5,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Chianocco,5,17,13,0,118000.0,118000.0,936.51,936.51,1.0,,,260.0,casa indipendente,commerciale,0,2026-09-25T03:46+02:00
+Chiomonte,7,13,6,0,,,,,22.0,,,85.7,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Chiusa di San Michele,13,29,17,0,158000.0,158000.0,1053.33,1053.33,28.0,,,130.8,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Coazze,10,56,47,0,59000.0,59000.0,842.86,842.86,14.5,,,470.0,appartamento,altro,2,2026-09-25T03:46+02:00
+Collegno,16,135,121,0,,,,,11.0,,,756.2,appartamento,altro,0,2026-09-25T03:46+02:00
+Condove,11,54,45,0,,,,,12.0,,,409.1,casa indipendente,altro,0,2026-09-25T03:46+02:00
+Druento,13,66,53,0,471000.0,471000.0,1996.92,1996.92,8.0,,,407.7,villa,appartamento,0,2026-09-25T03:46+02:00
+Exilles,8,13,5,0,,,,,23.0,,,62.5,appartamento,altro,0,2026-09-25T03:46+02:00
+Ferriera di Buttigliera Alta,3,8,5,0,,,,,19.0,,,166.7,appartamento,villa,0,2026-09-25T03:46+02:00
+Fiano,18,68,50,1,,,,,8.5,4.0,7.14,277.8,appartamento,altro,0,2026-09-25T03:46+02:00
+Giaglione,1,5,4,0,,,,,28.0,,,400.0,rustico/casale,altro,0,2026-09-25T03:46+02:00
+Giaveno,15,75,61,0,,,,,21.0,,,406.7,appartamento,altro,0,2026-09-25T03:46+02:00
+Givoletto,12,34,22,0,357666.67,359000.0,1334.3,1334.3,11.5,,,183.3,villa,casa indipendente,0,2026-09-25T03:46+02:00
+Gravere,4,5,4,0,,,,,26.5,,,100.0,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Grugliasco,29,124,95,1,158166.67,157500.0,1719.44,1719.44,8.0,1.0,16.27,327.6,appartamento,altro,0,2026-09-25T03:46+02:00
+La Cassa,14,46,32,0,,,,,16.0,,,228.6,appartamento,villa,0,2026-09-25T03:46+02:00
+Mattie,5,6,3,0,40000.0,40000.0,,,28.0,,,60.0,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Meana di Susa,2,15,14,0,45000.0,45000.0,319.15,319.15,31.0,,,700.0,casa indipendente,casa indipendente,0,2026-09-25T03:46+02:00
+Mompantero,2,3,1,0,,,,,21.0,,,50.0,appartamento,villa,0,2026-09-25T03:46+02:00
+Moncenisio,8,18,10,0,,,,,21.0,,,125.0,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Novalesa,1,2,1,0,,,,,21.0,,,100.0,casa indipendente,villa,0,2026-09-25T03:46+02:00
+Oulx,16,27,12,0,158000.0,158000.0,,,22.0,,,75.0,appartamento,altro,0,2026-09-25T03:46+02:00
+Pianezza,16,81,72,0,258000.0,258000.0,1215.79,1215.79,12.5,,,450.0,appartamento,altro,0,2026-09-25T03:46+02:00
+Reano,6,27,21,0,340594.0,340594.0,851.49,851.49,0.5,,,350.0,villa,casa indipendente,0,2026-09-25T03:46+02:00
+Rivalta di Torino,6,27,21,0,209000.0,209000.0,1593.76,1593.76,2.5,,,350.0,appartamento,commerciale,0,2026-09-25T03:46+02:00
+Rivoli,22,176,157,0,460000.0,460000.0,1840.0,1840.0,9.0,,,713.6,appartamento,altro,1,2026-09-25T03:46+02:00
+Robassomero,8,27,19,0,,,,,7.5,,,237.5,villa,casa indipendente,0,2026-09-25T03:46+02:00
+Rosta,14,72,60,1,234862.5,234862.5,185.95,185.95,13.5,24.0,4.55,428.6,appartamento,appartamento,1,2026-09-25T03:46+02:00
+Rubiana,11,37,27,0,,,,,3.0,,,245.5,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Salbertrand,8,10,2,0,,,,,20.5,,,25.0,appartamento,appartamento,0,2026-09-25T03:46+02:00
+San Didero,3,28,25,0,,,,,28.0,,,833.3,villa,altro,0,2026-09-25T03:46+02:00
+San Gillio,0,30,30,0,,,,,,,,3000.0,,altro,0,2026-09-25T03:46+02:00
+San Giorio,2,1,0,0,34500.0,34500.0,,,30.0,,,0.0,villa,,0,2026-09-25T03:46+02:00
+San Giorio di Susa,14,38,24,0,,,,,27.0,,,171.4,appartamento,altro,0,2026-09-25T03:46+02:00
+San Valeriano,9,18,9,0,87000.0,87000.0,,,22.0,,,100.0,appartamento,appartamento,1,2026-09-25T03:46+02:00
+Sangano,3,8,5,0,429000.0,429000.0,2357.14,2357.14,18.0,,,166.7,villa,appartamento,0,2026-09-25T03:46+02:00
+Sant'Ambrogio di Torino,10,17,7,0,194996.67,225000.0,1166.9,1125.0,23.0,,,70.0,villa,appartamento,0,2026-09-25T03:46+02:00
+Sant'Antonino di Susa,14,51,39,0,35625.0,35625.0,80.06,80.06,27.0,,,278.6,appartamento,villa,0,2026-09-25T03:46+02:00
+Susa,9,26,17,0,67500.0,67500.0,153.06,153.06,23.0,,,188.9,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Trana,11,37,35,0,118500.0,110000.0,865.83,862.5,33.0,,,318.2,appartamento,altro,0,2026-09-25T03:46+02:00
+Vaie,6,11,7,0,28500.0,28500.0,,,28.0,,,116.7,villa,casa indipendente,0,2026-09-25T03:46+02:00
+Val della Torre,11,42,31,0,,,,,20.0,,,281.8,villa,rustico/casale,0,2026-09-25T03:46+02:00
+Valgioie,9,13,4,0,20000.0,20000.0,,,23.0,,,44.4,casa indipendente,appartamento,0,2026-09-25T03:46+02:00
+Varisella,2,4,2,0,,,,,8.5,,,100.0,rustico/casale,rustico/casale,0,2026-09-25T03:46+02:00
+Venaus,2,6,5,0,44043.0,44043.0,,,20.5,,,250.0,appartamento,appartamento,0,2026-09-25T03:46+02:00
+Villar Dora,14,39,26,0,,,,,7.0,,,185.7,villa,villa,0,2026-09-25T03:46+02:00
+Villar Focchiardo,5,39,34,0,15570.0,15570.0,,,14.0,,,680.0,appartamento,altro,0,2026-09-25T03:46+02:00
+Villarbasse,12,44,32,0,,,,,2.0,,,266.7,villa,appartamento,0,2026-09-25T03:46+02:00

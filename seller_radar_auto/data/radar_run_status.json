@@ -1,14 +1,14 @@
 {
   "status": "DATA_REFRESH_COMPLETED",
   "data_refresh_completed": true,
-  "data_refresh_completed_at_utc": "2026-09-24T22:38:52+00:00",
-  "data_refresh_completed_at_rome": "2026-09-25T00:38:52+02:00",
-  "radar_run_id": "36065481355",
-  "radar_run_number": "288",
-  "source_sha": "4c22565288a128a56bd635dd08c600cfbe9cd73a",
+  "data_refresh_completed_at_utc": "2026-09-25T01:47:25+00:00",
+  "data_refresh_completed_at_rome": "2026-09-25T03:47:25+02:00",
+  "radar_run_id": "36081125867",
+  "radar_run_number": "290",
+  "source_sha": "8d88685951773180794f90daa89a44b8708c6ed3",
   "event_name": "workflow_dispatch",
   "merge_result": "success",
   "worker_result": "success",
-  "state_sha256": "a281553d791e37efd9c054af0c5e195a8160fd292a782ce9b876920633ee2c01",
-  "work_queue_sha256": "810eee068055a1862c26414d776dd304a187ca9cd67e53d4e707ea338541a8b3"
+  "state_sha256": "8bcb035d23e8f87360c91d3881ad4861e98c8f4a5232d71ec8445b9ccad00938",
+  "work_queue_sha256": "e029a15948bcfbe93a41fabbc3c2b7b6503bef27c1fa197aec0e66dc7125dc77"
 }

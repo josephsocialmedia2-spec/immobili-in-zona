@@ -1,10 +1,10 @@
 ﻿COMUNE,IMMOBILI_QUALIFICATI,ASTE,PRIVATI,AGENZIE,RIBASSI_SEGNALATI,STORICO_USCITE
 Almese,40,0,11,5,0,0
-Alpignano,79,1,9,14,0,1
-Avigliana,87,6,8,14,0,0
+Alpignano,80,1,9,15,0,1
+Avigliana,88,6,8,14,0,0
 Bardonecchia,42,0,0,5,0,1
-Beinasco,99,6,1,27,0,0
-Borgone Susa,65,0,5,5,0,1
+Beinasco,100,6,1,27,0,0
+Borgone Susa,66,0,5,6,0,1
 Bruino,49,0,9,11,0,0
 Bruzolo,18,0,7,5,0,0
 Bussoleno,18,0,1,4,0,0
@@ -23,7 +23,7 @@ Ferriera di Buttigliera Alta,8,0,0,1,0,0
 Fiano,68,3,6,6,0,0
 Giaglione,5,0,0,0,0,0
 Giaveno,76,2,5,6,0,0
-Givoletto,33,0,4,6,0,0
+Givoletto,34,0,4,6,0,0
 Gravere,8,0,0,0,0,0
 Grugliasco,125,2,3,26,0,0
 La Cassa,46,11,2,4,0,0
@@ -35,8 +35,8 @@ Novalesa,2,0,1,2,0,0
 Oulx,29,2,0,1,0,0
 Pianezza,93,6,9,5,0,0
 Reano,28,12,4,3,0,0
-Rivalta di Torino,24,2,0,7,0,0
-Rivoli,177,8,12,29,0,1
+Rivalta di Torino,27,2,0,10,0,0
+Rivoli,179,8,12,29,0,1
 Robassomero,27,3,1,14,0,0
 Rosta,76,1,4,8,0,1
 Rubiana,38,13,7,0,0,0
@@ -53,7 +53,7 @@ Susa,26,1,2,1,0,0
 Trana,48,0,8,18,0,0
 Vaie,13,1,2,1,0,0
 Val della Torre,44,1,4,3,0,0
-Valgioie,13,0,1,2,0,0
+Valgioie,14,0,1,2,0,0
 Varisella,4,0,0,0,0,0
 Venaus,8,5,0,0,0,0
 Villar Dora,40,1,4,11,0,0
