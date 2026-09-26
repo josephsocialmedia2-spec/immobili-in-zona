@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T11:34:28.185656+00:00",
+  "generated_at": "2026-09-26T15:29:16.340147+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -86,7 +86,7 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "via almese 23",
+      "listing_target": "Via Almese 73",
       "listing_url": "https://www.immobiliare.it/annunci/119303727/",
       "streets": [
         "via Almese",
@@ -214,6 +214,36 @@
         "Via Madonna della Neve",
         "Via Sonetto",
         "Via Muande"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-almese-immobili-in-vendita-a-via-nestoria",
+      "comune": "Almese",
+      "target_street": "Via Almese. Immobili in vendita a Via ... - Nestoria",
+      "listing_target": "Via Almese. Immobili in vendita a Via ... - Nestoria 12",
+      "listing_url": "https://www.nestoria.it/immobiliare/vendita/via-almese",
+      "streets": [
+        "Via Almese. Immobili in vendita a Via ... - Nestoria",
+        "Via Circonvallazione",
+        "Via Avigliana",
+        "Via della Michela",
+        "Via Dante Alighieri"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-almese-nestoria",
+      "comune": "Almese",
+      "target_street": "Via Almese - Nestoria",
+      "listing_target": "Via Almese - Nestoria 12",
+      "listing_url": "https://www.nestoria.it/appartamenti/vendita/via-almese",
+      "streets": [
+        "Via Almese - Nestoria",
+        "Via Circonvallazione",
+        "Via Avigliana",
+        "Via della Michela",
+        "Via Dante Alighieri"
       ],
       "osm_status": "OK"
     },
@@ -953,21 +983,6 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "caselette-via-caselette",
-      "comune": "Caselette",
-      "target_street": "via Caselette",
-      "listing_target": "via Caselette 7",
-      "listing_url": "https://www.immobiliare.it/annunci/124199825/",
-      "streets": [
-        "via Caselette",
-        "Via Alpignano",
-        "Via Guglielmo Marconi",
-        "Corso Susa",
-        "Via Alessandro Volta"
-      ],
-      "osm_status": "OK_GEOCODE_FALLBACK"
-    },
-    {
       "zone_id": "caselette-via-roma-piemonte-torino-visualizza-foto-appartamento-in-vendita-di",
       "comune": "Caselette",
       "target_street": "Via Roma Piemonte, Torino Visualizza foto Appartamento in vendita di",
@@ -981,6 +996,21 @@
         "Via Val della Torre"
       ],
       "osm_status": "OK"
+    },
+    {
+      "zone_id": "caselette-via-caselette",
+      "comune": "Caselette",
+      "target_street": "via Caselette",
+      "listing_target": "via Caselette 7",
+      "listing_url": "https://www.immobiliare.it/annunci/124199825/",
+      "streets": [
+        "via Caselette",
+        "Via Alpignano",
+        "Via Guglielmo Marconi",
+        "Corso Susa",
+        "Via Alessandro Volta"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
       "zone_id": "caselette-via-roma",
