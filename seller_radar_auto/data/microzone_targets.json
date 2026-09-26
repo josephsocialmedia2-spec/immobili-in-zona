@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T01:04:29.094962+00:00",
+  "generated_at": "2026-09-26T11:34:28.185656+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -158,6 +158,21 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "almese-via-rivette",
+      "comune": "Almese",
+      "target_street": "Via Rivette",
+      "listing_target": "Via Rivette 1",
+      "listing_url": "https://www.idealista.it/immobile/36856466/",
+      "streets": [
+        "Via Rivette",
+        "Via Avigliana",
+        "Via Circonvallazione",
+        "Via dell'Ajgro",
+        "Via Romana"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "almese-via-milanere",
       "comune": "Almese",
       "target_street": "via Milanere",
@@ -184,21 +199,6 @@
         "Via Altinetti",
         "Via Avigliana",
         "Via dei Caduti"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-rivette",
-      "comune": "Almese",
-      "target_street": "Via Rivette",
-      "listing_target": "Via Rivette 1",
-      "listing_url": "https://www.idealista.it/immobile/36856466/",
-      "streets": [
-        "Via Rivette",
-        "Via Avigliana",
-        "Via Circonvallazione",
-        "Via dell'Ajgro",
-        "Via Romana"
       ],
       "osm_status": "OK"
     },
