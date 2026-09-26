@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T22:38:31.520345+00:00",
+  "generated_at": "2026-09-26T01:04:29.094962+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -41,7 +41,7 @@
       "zone_id": "almese-via-avigliana",
       "comune": "Almese",
       "target_street": "VIA AVIGLIANA",
-      "listing_target": "VIA AVIGLIANA 98",
+      "listing_target": "Via Avigliana 35",
       "listing_url": "https://immobiliare.mitula.it/almese",
       "streets": [
         "VIA AVIGLIANA",
@@ -86,8 +86,8 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "Via Almese 64",
-      "listing_url": "https://www.immobiliare.it/annunci/125159231/",
+      "listing_target": "via almese 23",
+      "listing_url": "https://www.immobiliare.it/annunci/119303727/",
       "streets": [
         "via Almese",
         "Via Circonvallazione",
@@ -235,11 +235,11 @@
     {
       "zone_id": "avigliana-corso-laghi",
       "comune": "Avigliana",
-      "target_street": "Corso Laghi",
-      "listing_target": "Corso Laghi 165",
-      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/avigliana.html",
+      "target_street": "corso Laghi",
+      "listing_target": "corso Laghi 165",
+      "listing_url": "https://www.immobiliare.it/annunci/132840718/",
       "streets": [
-        "Corso Laghi",
+        "corso Laghi",
         "Piazza del Popolo",
         "Via Alpi Cozie",
         "Via Carnino",
