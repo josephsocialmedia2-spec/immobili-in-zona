@@ -19,8 +19,8 @@
       "numero": 2,
       "comune": "Rivoli",
       "score_comune": 63,
-      "righe_lavoro": 35,
-      "residenziale": 29,
+      "righe_lavoro": 32,
+      "residenziale": 26,
       "commerciale": 6,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -72,10 +72,10 @@
     {
       "funzionario": "FUNZIONARIO 7",
       "numero": 7,
-      "comune": "Buttigliera Alta",
-      "score_comune": 48,
-      "righe_lavoro": 2,
-      "residenziale": 2,
+      "comune": "La Cassa",
+      "score_comune": 47,
+      "righe_lavoro": 18,
+      "residenziale": 18,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -85,9 +85,9 @@
       "numero": 8,
       "comune": "Rosta",
       "score_comune": 41,
-      "righe_lavoro": 18,
+      "righe_lavoro": 16,
       "residenziale": 14,
-      "commerciale": 4,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -107,8 +107,8 @@
       "numero": 10,
       "comune": "Alpignano",
       "score_comune": 38,
-      "righe_lavoro": 19,
-      "residenziale": 15,
+      "righe_lavoro": 18,
+      "residenziale": 14,
       "commerciale": 4,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0

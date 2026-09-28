@@ -1,7 +1,6 @@
 ﻿ID,COMUNE,TITOLO,FONTE,URL,MOTIVO_SCARTO
 8c2bf7566b731a977793,Almese,159 immobili in vendita a Almese - Trovit,Trovit,https://case.trovit.it/almese,EVIDENZA_INSUFFICIENTE
 1f6a089f092103b77b70,Almese,Case e appartamenti a Almese. Immobili in vendita a Almese - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/almese,EVIDENZA_INSUFFICIENTE
-9bd098c51c8133127d2c,Alpignano,26.909 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
 b1401933cac7e2c369de,Avigliana,"11 immobili in vendita a Villaggio Primavera, Avigliana - Trovit",Trovit,https://case.trovit.it/avigliana-villaggio-primavera,EVIDENZA_INSUFFICIENTE
 26cf0943b957c20d714b,Bardonecchia,Bardonecchia - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=bardonecchia,PAGINA_CATEGORIA
 0e12d064bae5d860bc52,Borgone Susa,Case e appartamenti a Borgone Susa. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/borgone-susa,EVIDENZA_INSUFFICIENTE
@@ -25,7 +24,7 @@ d364c8e882bb12849ed6,Chianocco,Case in vendita Chianocco - Immobili - Subito.it,
 81f71c98d2297e125f38,Chiusa di San Michele,Case in vendita Chiusa di San Michele - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/chiusa-di-san-michele/,PAGINA_CATEGORIA
 0539cd5cdf49fef7b4ec,Chiusa di San Michele,Appartamento in vendita a Chiusa di San Michele (Torino) - rif. Chiusa 2,Mercato generale,https://www.denhouseimmobiliare.it/web/immobile_dettaglio.asp?cod_annuncio=371446&language=ita,EVIDENZA_INSUFFICIENTE
 5f5f9e6cc112357bba42,Chiusa di San Michele,Porzione di casa in vendita a Chiusa di San Michele Cod. 34221003-1955,Mercato residenziale,https://www.fcimmobiliare.it/i-671934-vendita-cascinacasale-chiusa-di-san-michele/,EVIDENZA_INSUFFICIENTE
-5fc55514401c879f86c1,Coazze,66 immobili villa in vendita a Coazze - Trovit,Trovit,https://case.trovit.it/villa-coazze,EVIDENZA_INSUFFICIENTE
+5fc55514401c879f86c1,Coazze,64 immobili villa in vendita a Coazze - Trovit,Trovit,https://case.trovit.it/villa-coazze,EVIDENZA_INSUFFICIENTE
 7af666f251eb1ae977a9,Coazze,Case in vendita Coazze - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/coazze/,PAGINA_CATEGORIA
 9b93ebd08af5840b06a9,Coazze,"30 immobili in vendita a Forno, Coazze - Trovit",Trovit,https://case.trovit.it/forno-coazze,EVIDENZA_INSUFFICIENTE
 6d0da11f6f37738e7b11,Collegno,23 Immobili in vendita gramsci a Collegno - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/gramsci-collegno,EVIDENZA_INSUFFICIENTE
@@ -156,7 +155,7 @@ aaeb5773b4742c3460a9,Rivoli,Indipendente Rivoli - 182 case in vendita in Rivoli 
 a267cd813123c589dc32,Rivoli,Veronica & Case | Agenzia Immobiliare Rivoli - Provincia di Torino,Agenzie,http://www.veronicaecase.it/,EVIDENZA_INSUFFICIENTE
 0c20519a1c6274b5741d,Rivoli,RE/MAX Ingegno di Rivoli | RE/MAX Italia,Agenzie,https://www.remax.it/trova/agenti-agenzie/agenzia/ingegno,EVIDENZA_INSUFFICIENTE
 735bd59a64f1ad2c1daa,Rubiana,Appartamenti in vendita Rubiana - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/rubiana/,EVIDENZA_INSUFFICIENTE
-b3be6013ddf2f58de280,Rubiana,15.529 immobili in vendita a Rubiana Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rubiana_torino,EVIDENZA_INSUFFICIENTE
+b3be6013ddf2f58de280,Rubiana,15.520 immobili in vendita a Rubiana Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rubiana_torino,EVIDENZA_INSUFFICIENTE
 a4753df33436db25c24f,Rubiana,"Case in vendita a Rubiana, Valli Susa, Sangone",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/rubiana-valli-susa-sangone,PAGINA_CATEGORIA
 6f5adda86c5a68315da4,San Didero,ALBO PRETORIO DIGITALE - Comune di San Didero,Capannoni logistica,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?CE=snddr1352,EVIDENZA_INSUFFICIENTE
 232cae954c909a2aff6e,San Giorio,ValsusaOggi,Mercato residenziale,https://www.valsusaoggi.it/,EVIDENZA_INSUFFICIENTE
@@ -213,7 +212,7 @@ a86c054e354e742c7bb6,Chiomonte,Case in vendita Chiomonte - Immobili - Subito.it,
 0f86b06f142f981d690b,Condove,"20 locale commerciales circolo in affitto a Bar, Condove - Trovit",Trovit,https://case.trovit.it/affitto-negozio-circolo-bar,EVIDENZA_INSUFFICIENTE
 d6a1bcb20bff78ace39c,Giaveno,Immobili in Vendita | Agenzia Tecnorete di Giaveno,Tecnorete,https://giaveno1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
 cac5db4f6e2b21ae5ab7,Giaveno,Locale Commerciale Giaveno - 62 locali comerciali in vendita in Giaveno ...,Commerciale negozi/locali,https://www.nuroa.it/vendita-immobili/locale-commerciale-giaveno,EVIDENZA_INSUFFICIENTE
-3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 149 locali comerciali in affito in ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
+3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 149 locali comerciali in affito in ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
 2aab1ddaa700fe828f10,Moncenisio,Appartamenti a Moncenisio. Appartamenti in vendita a Moncenisio - Nestoria,Nestoria,https://www.nestoria.it/appartamenti/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 3a19993ebbd5ad61f09c,Moncenisio,Il Colle del Moncenisio: cosa vedere e fare • Visit Val di Susa,Capannoni logistica,https://visitvaldisusa.it/moncenisio-la-porta-delle-alpi/,EVIDENZA_INSUFFICIENTE
 dd57f1a588eac0425281,Oulx,Case in vendita a Oulx • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/oulx/,PAGINA_CATEGORIA
@@ -394,7 +393,7 @@ c62b5c94f9e164a061e1,Novalesa,Cambio proprietà impianto fotovoltaico a Novalesa
 1c32eb102c25332bef8a,Collegno,132 locale commerciales in vendita a Collegno - Trovit,Trovit,https://case.trovit.it/negozio-collegno,EVIDENZA_INSUFFICIENTE
 241018f9f96acadaa63f,Susa,Agenzia immobiliare a Susa,Mercato residenziale,https://www.vendofacileimmobiliare.it/a-8123010-vendofacile/,EVIDENZA_INSUFFICIENTE
 c61e9f58de594e33f1d6,Caprie,"1.000 offerte di lavoro: Caprie, Piemonte, 6 settembre 2026 | Indeed",Uffici e direzionale,"https://it.indeed.com/l-caprie,-piemonte-offerte-lavoro.html?vjk=9b039fc88b031ed5",EVIDENZA_INSUFFICIENTE
-129cb42b60cf75963a82,Beinasco,27.693 immobili in vendita a Beinasco - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/beinasco,EVIDENZA_INSUFFICIENTE
+129cb42b60cf75963a82,Beinasco,27.543 immobili in vendita a Beinasco - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/beinasco,EVIDENZA_INSUFFICIENTE
 4f91c08b59c6430fcd9f,Beinasco,Appartamento in vendita a Beinasco (Torino) - rif. Toti 14 Borgaretto,Mercato residenziale,https://www.ecoimmobiliareservizi.it/web/immobile_dettaglio.asp?cod_annuncio=335460&language=ita,EVIDENZA_INSUFFICIENTE
 a94144bc43312d130f51,Beinasco,30 ufficios in affitto a Beinasco - Trovit,Trovit,https://case.trovit.it/affitto-uffici-beinasco,EVIDENZA_INSUFFICIENTE
 d7f2f2596b1488b1a523,Bruino,Case e appartamenti a Bruino. Immobili in vendita a Bruino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/bruino,EVIDENZA_INSUFFICIENTE
@@ -402,7 +401,7 @@ fe57dfa90d2f7186008a,Bruino,Case a Bruino. Immobili in affitto a Bruino - Nestor
 e774f7b66c1c80462fe1,Bruino,PDF Istituto Comprensivo BRUINO,PDF Albo Pretorio edilizia,https://www.icbruino.edu.it/wp-content/uploads/2025/12/del_n.-1_2024-del-C.d-I.-del-10-12-2024-revisione-criteri-iscrizioni.pdf,EVIDENZA_INSUFFICIENTE
 4ddcc7392d80f918f328,Buttigliera Alta,Tecnocasa - INDUSTRIALE PROVINCIA TORINO OVEST sas,Subito privati,https://impresapiu.subito.it/shops/46868-tecnocasa-industriale-provincia-torino-ovest-sas,EVIDENZA_INSUFFICIENTE
 4480010df09c694bc6da,Chiusa di San Michele,Appartamenti in vendita Chiusa di San Michele - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/chiusa-di-san-michele/,EVIDENZA_INSUFFICIENTE
-1f949185a9acca62724e,Condove,Locale Commerciale Condove - 11 locali comerciali in affito in Condove ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
+1f949185a9acca62724e,Condove,Locale Commerciale Condove - 11 locali comerciali in affito in Condove ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
 b583fcc5a28d734ea3fe,Druento,Case in vendita a Druento - oikia.it,Mercato residenziale,https://www.oikia.it/vendita-case/druento/,PAGINA_CATEGORIA
 0eca3ec41b65f8d0e4e9,Druento,Case a Druento in vendita e affitto - RisorseImmobiliari.it,Mercato residenziale,https://www.risorseimmobiliari.it/immobili.asp?url_firstparam=Torino%2Fcase_Druento.html&url_search=case_Druento,EVIDENZA_INSUFFICIENTE
 da701beeaf2f56a92f75,Druento,Case in vendita a Druento - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/druento/,PAGINA_CATEGORIA
@@ -412,7 +411,7 @@ e981cabe10a9264f9b45,Druento,54 Capannoni in vendita a Druento - Mitula Case,Cap
 515058568ac419ee7f6d,Druento,Druento - 284 appartamenti in affito in Druento de Nuroa.it,Uffici e direzionale,https://www.nuroa.it/affitto-case/druento,EVIDENZA_INSUFFICIENTE
 765261bf62596aececa4,Fiano,Più di dieci case indipendenti in vendita a Fiano. - Caasa,Mercato residenziale,https://www.caasa.it/torino/fiano/casa-indipendente/in-vendita.html,EVIDENZA_INSUFFICIENTE
 57c7bc72348e9ac0b1cf,Fiano,Cerca case - Masci Immobili - FCM Immobili srl - Fiano Romano,Mercato residenziale,https://www.masciimmobili.it/web/immobili.asp?language=ita,EVIDENZA_INSUFFICIENTE
-f15f6325680910f5cbfe,Fiano,Immobili in affitto - Masci Immobili - FCM Immobili srl - Fiano Romano,Uffici e direzionale,https://www.masciimmobili.it/web/immobili.asp?tipo_contratto=A&language=ita&pagref=1913,EVIDENZA_INSUFFICIENTE
+f15f6325680910f5cbfe,Fiano,Immobili in affitto - Masci Immobili - FCM Immobili srl - Fiano Romano,Capannoni logistica,https://www.masciimmobili.it/web/immobili.asp?tipo_contratto=A&language=ita&pagref=1913,EVIDENZA_INSUFFICIENTE
 d94c70d97064914a446e,Fiano,Cerca case a Fiano Romano - Masci Immobili - FCM Immobili srl - Fiano ...,Mercato residenziale,https://www.masciimmobili.it/web/immobili.asp?link=1&cod_regione=7&cod_provincia=79&cod_comune=6008&language=ita,EVIDENZA_INSUFFICIENTE
 50ac76850b7501b5e737,Givoletto,25.276 immobili in vendita a Givoletto - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/givoletto,EVIDENZA_INSUFFICIENTE
 a93d54cce7fee6407217,Givoletto,Case in vendita Givoletto - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/givoletto/,PAGINA_CATEGORIA
@@ -476,7 +475,7 @@ c47d3090d8f891b05a0e,Alpignano,8 capannones in vendita a Alpignano - Trovit,Trov
 6a94dc6a1e064311bd30,Grugliasco,Più di dieci capannoni in vendita a Grugliasco. - Caasa,Capannoni logistica,https://www.caasa.it/torino/grugliasco/capannone/in-vendita.html,EVIDENZA_INSUFFICIENTE
 cfb43fff6c05d781d959,Rivalta di Torino,200 appartamentos in vendita a Rivalta di Torino - Trovit,Trovit,https://case.trovit.it/appartamento-rivalta-torino,EVIDENZA_INSUFFICIENTE
 e55c28919fdd043bdeac,Rivoli,Gesim Immobili - Immobili in vendita e affitto a Rivoli,Mercato residenziale,https://www.gesimimmobili.it/,EVIDENZA_INSUFFICIENTE
-2cc810f9cdca3b4837be,Coazze,Coazze - 307 case in vendita in Coazze de Nuroa.it,Tipologie residenziali,https://www.nuroa.it/vendita-immobili/coazze,EVIDENZA_INSUFFICIENTE
+2cc810f9cdca3b4837be,Coazze,Coazze - 307 case in vendita in Coazze de Nuroa.it,Mercato residenziale,https://www.nuroa.it/vendita-immobili/coazze,EVIDENZA_INSUFFICIENTE
 186ebe6a51791d36b31d,Fiano,Fiano romano - Vendita appartamenti Lazio - Subito.it,Subito privati,https://www.subito.it/annunci-lazio/vendita/appartamenti/?q=fiano+romano,EVIDENZA_INSUFFICIENTE
 70dffd9c48ef4356bba5,Rivalta di Torino,Case in vendita Rivalta di Torino - Immobili - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/torino/rivalta-di-torino/,PAGINA_CATEGORIA
 64d5199745f1bede403e,Rivoli,Locale Commerciale Rivoli - 378 locali comerciali in affito in Rivoli ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-rivoli,EVIDENZA_INSUFFICIENTE
@@ -522,7 +521,7 @@ b21867b1589d7239b65d,Villar Focchiardo,303 Immobili in vendita a Villar Focchiar
 54a1826ae0db4af1018a,Pianezza,Negozi in vendita a Pianezza - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-negozi/pianezza/,EVIDENZA_INSUFFICIENTE
 e5e6cca620bde845d9da,Rosta,"Rif.ROSTA.VILLA.380 Indipendente, Villa in vendita a Rosta",Mercato residenziale,https://www.caseitaliagroup.com/ita/scheda-immobile/4213-Indipendente-Villa-in-vendita-a-Rosta,EVIDENZA_INSUFFICIENTE
 d3100b03944b4c6f2b28,Rubiana,Decine di case indipendenti in vendita a Rubiana. - caasa.it,Mercato residenziale,https://www.caasa.it/torino/rubiana/casa-indipendente/in-vendita.html,EVIDENZA_INSUFFICIENTE
-2de55fcdfee1079ced7f,San Giorio di Susa,39 immobili in vendita a San Giorio di Susa - Trovit,Trovit,https://case.trovit.it/san-giorio-susa,EVIDENZA_INSUFFICIENTE
+2de55fcdfee1079ced7f,San Giorio di Susa,40 immobili in vendita a San Giorio di Susa - Trovit,Trovit,https://case.trovit.it/san-giorio-susa,EVIDENZA_INSUFFICIENTE
 336efe14e7a1b805934d,Val della Torre,22 rusticos in vendita a Val della Torre - Trovit,Trovit,https://case.trovit.it/rustico-val-torre,EVIDENZA_INSUFFICIENTE
 2e1e37fc7e08faa8a66d,Chianocco,Case Indipendenti in vendita a Chianocco | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita/residenziale/case-indipendenti/chianocco/,EVIDENZA_INSUFFICIENTE
 b51189dd2d42762002c5,Collegno,Commercio in sede fissa - Comune di Collegno,Uffici e direzionale,https://www.comune.collegno.to.it/servizio/commercio-in-sede-fissa/,EVIDENZA_INSUFFICIENTE
@@ -531,7 +530,7 @@ f3cc1c1957abb70a7333,Rivalta di Torino,Case all'asta a Rivalta di Torino | Biloc
 8adfc373b042e6a20eb4,Fiano,Ville singole e a schiera in vendita da Privati a Fiano Romano,Mercato residenziale,https://www.casadaprivato.it/annunci-vendita/ville-singole-e-a-schiera/roma-fiano_romano,EVIDENZA_INSUFFICIENTE
 acca2c0ddd9d6579e16e,Villar Focchiardo,Case in vendita a Villar Focchiardo | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita-case/villar-focchiardo/,PAGINA_CATEGORIA
 bbe63b4b5539b384aeac,Almese,2 locale commerciales in affitto a Almese - Trovit,Trovit,https://case.trovit.it/affitto-negozio-almese,EVIDENZA_INSUFFICIENTE
-01927466f010bf5f99bc,Beinasco,63 immobili villa in vendita a Beinasco - Trovit,Trovit,https://case.trovit.it/beinasco-villa,EVIDENZA_INSUFFICIENTE
+01927466f010bf5f99bc,Beinasco,61 immobili villa in vendita a Beinasco - Trovit,Trovit,https://case.trovit.it/beinasco-villa,EVIDENZA_INSUFFICIENTE
 78fe27f894d9269e0a8b,Grugliasco,"Cerco casa, portale dedicato alle ricerca di appartamenti in vendita e ...",Tecnorete,https://www.tecnorete.it/agenzie/immobiliari+residenziali/torino/grugliasco/to2i0.html,EVIDENZA_INSUFFICIENTE
 3a1577a94e569c8cdbb9,Grugliasco,Trilocale in vendita - Appartamenti in vendita rif. 61235767 | Agenzia ...,Tecnorete,https://grugliasco2.tecnorete.it/grugliasco/appartamenti-in-vendita-61235767,EVIDENZA_INSUFFICIENTE
 5d25f49da0b0797ada52,Alpignano,78 casas in vendita a Alpignano - Trovit,Trovit,https://case.trovit.it/casa-alpignano,EVIDENZA_INSUFFICIENTE
@@ -830,3 +829,5 @@ facf739d55dc7ed7c7e0,Pianezza,3 capannones in affitto a Pianezza - Trovit,Trovit
 18d7a0630e83c788f7dc,Caselette,1.942 Immobili in vendita a Caselette - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/caselette,EVIDENZA_INSUFFICIENTE
 519a5777dfcd33fc4a2f,La Cassa,251 Case in vendita a La Cassa - Mitula Case,Tipologie residenziali,https://immobiliare.mitula.it/casa-cassa,EVIDENZA_INSUFFICIENTE
 cd86d4aa2f15fa96fc90,Robassomero,Robassomero privato vende appartamento 90 mq - Vendita Appartamento da ...,Mercato residenziale,https://www.clickcase.it/robassomero-privato-vende-appartamento-90-mq-robassomero-419915.html,EVIDENZA_INSUFFICIENTE
+b52f9636e4a08188b4ba,Fiano,Case in vendita a Fiano | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita-case/fiano/,PAGINA_CATEGORIA
+d6fc0bd9c0144fbee712,Valgioie,"Case in vendita a Centro, Valgioie - Case in Vendita e in Affitto",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/centro-valgioie,PAGINA_CATEGORIA

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T00:22:25.252085+00:00",
+  "generated_at": "2026-09-28T05:00:01.133100+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -266,8 +266,8 @@
       "zone_id": "avigliana-via-monte-cuneo",
       "comune": "Avigliana",
       "target_street": "via Monte Cuneo",
-      "listing_target": "via Monte Cuneo 6",
-      "listing_url": "https://www.immobiliare.it/annunci/113651037/",
+      "listing_target": "via Monte Cuneo 36",
+      "listing_url": "https://www.immobiliare.it/annunci/127832646/",
       "streets": [
         "via Monte Cuneo",
         "Via Ceresole",
@@ -296,7 +296,7 @@
       "zone_id": "avigliana-via-sacra-san-michele",
       "comune": "Avigliana",
       "target_street": "via Sacra San Michele",
-      "listing_target": "via Sacra San Michele 17",
+      "listing_target": "Via Sacra San Michele 27",
       "listing_url": "https://www.immobiliare.it/annunci/131895478/",
       "streets": [
         "via Sacra San Michele",
@@ -1327,7 +1327,7 @@
       "zone_id": "avigliana-via-laghi-di-avigliana",
       "comune": "Avigliana",
       "target_street": "Via Laghi di Avigliana",
-      "listing_target": "Via Laghi di Avigliana  140",
+      "listing_target": "Via Laghi Di Avigliana 12",
       "listing_url": "https://www.nuroa.it/affitto-case/locale-commerciale-avigliana",
       "streets": [
         "Via Laghi di Avigliana"
