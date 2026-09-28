@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T12:06:36.779347+00:00",
+  "generated_at": "2026-09-28T19:58:19.544381+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -244,21 +244,6 @@
         "Via Avigliana",
         "Via della Michela",
         "Via Dante Alighieri"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-sonetto-almese-ottimo-stato-posto-auto-con-terrazza-riscaldamento-autonomo",
-      "comune": "Almese",
-      "target_street": "via Sonetto Almese. Ottimo stato, posto auto, con terrazza, riscaldamento autonomo",
-      "listing_target": "via Sonetto Almese. Ottimo stato, posto auto, con terrazza, riscaldamento autonomo 1000",
-      "listing_url": "https://www.immobiliare.it/annunci/132879506/",
-      "streets": [
-        "via Sonetto Almese. Ottimo stato, posto auto, con terrazza, riscaldamento autonomo",
-        "Borgata Morando",
-        "Via Braida",
-        "Via Bunino",
-        "Via Madonna della Neve"
       ],
       "osm_status": "OK"
     },
@@ -686,7 +671,7 @@
       "zone_id": "avigliana-via-moncenisio",
       "comune": "Avigliana",
       "target_street": "via Moncenisio",
-      "listing_target": "via Moncenisio 4",
+      "listing_target": "via Moncenisio 0",
       "listing_url": "https://www.immobiliare.it/annunci/132431232/",
       "streets": [
         "via Moncenisio",
