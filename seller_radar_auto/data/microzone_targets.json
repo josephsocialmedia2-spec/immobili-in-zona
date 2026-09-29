@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T07:12:39.188418+00:00",
+  "generated_at": "2026-09-29T14:25:31.222017+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -124,6 +124,21 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-drubiaglio",
+      "comune": "Almese",
+      "target_street": "Via Drubiaglio",
+      "listing_target": "Via Drubiaglio 6",
+      "listing_url": "https://www.nuroa.it/affitto-case/almese",
+      "streets": [
+        "Via Drubiaglio",
+        "Via delle Industrie",
+        "Via don Marco Cravotto",
+        "Via Milanere",
+        "Via Rivera"
       ],
       "osm_status": "OK"
     },
