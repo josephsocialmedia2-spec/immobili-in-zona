@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T00:49:50.090567+00:00",
+  "generated_at": "2026-09-29T07:12:39.188418+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -146,8 +146,8 @@
       "zone_id": "almese-via-rivera",
       "comune": "Almese",
       "target_street": "via Rivera",
-      "listing_target": "via Rivera 66",
-      "listing_url": "https://www.immobiliare.it/annunci/132203708/",
+      "listing_target": "via Rivera 114",
+      "listing_url": "https://www.immobiliare.it/annunci/105566019/",
       "streets": [
         "via Rivera",
         "Via Caselette",
@@ -760,11 +760,11 @@
     {
       "zone_id": "buttigliera-alta-corso-laghi",
       "comune": "Buttigliera Alta",
-      "target_street": "Corso Laghi",
-      "listing_target": "corso Laghi 81",
-      "listing_url": "https://www.wikicasa.it/vendita-case/buttigliera-alta/",
+      "target_street": "corso Laghi",
+      "listing_target": "corso laghi 81",
+      "listing_url": "https://www.immobiliare.it/annunci/129834162/",
       "streets": [
-        "Corso Laghi",
+        "corso Laghi",
         "Corso Superga",
         "Via Avigliana",
         "Via Conti Caron",
@@ -1463,6 +1463,18 @@
       "listing_url": "https://www.tecnocasa.it/vendita/appartamenti/torino/caprie/61255661.html",
       "streets": [
         "Via Monte Bianco"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "caprie-borgata-sala",
+      "comune": "Caprie",
+      "target_street": "Borgata sala",
+      "listing_target": "Borgata sala 17",
+      "listing_url": "https://www.immobiliare.it/annunci/132852798/",
+      "streets": [
+        "Borgata sala"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
