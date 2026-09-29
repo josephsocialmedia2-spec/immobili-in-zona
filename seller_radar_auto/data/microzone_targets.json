@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T19:58:19.544381+00:00",
+  "generated_at": "2026-09-29T00:49:50.090567+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -40,11 +40,11 @@
     {
       "zone_id": "almese-via-avigliana",
       "comune": "Almese",
-      "target_street": "VIA AVIGLIANA",
-      "listing_target": "Via Avigliana 35",
-      "listing_url": "https://immobiliare.mitula.it/almese",
+      "target_street": "Via Avigliana",
+      "listing_target": "VIA AVIGLIANA 98",
+      "listing_url": "https://www.idealista.it/immobile/35185746/",
       "streets": [
-        "VIA AVIGLIANA",
+        "Via Avigliana",
         "Piazza Martiri della Libertà",
         "Via Dante Alighieri",
         "Via dell'Ajgro",
