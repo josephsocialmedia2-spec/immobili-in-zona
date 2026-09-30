@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T17:19:05.229492+00:00",
+  "generated_at": "2026-09-30T21:54:53.591379+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -71,7 +71,7 @@
       "zone_id": "almese-via-roma",
       "comune": "Almese",
       "target_street": "Via Roma",
-      "listing_target": "Via Roma 80",
+      "listing_target": "Via Roma 29",
       "listing_url": "https://www.nuroa.it/vendita-immobili/locale-commerciale-almese",
       "streets": [
         "Via Roma",
@@ -86,8 +86,8 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "Via Almese 73",
-      "listing_url": "https://www.immobiliare.it/annunci/93624084/",
+      "listing_target": "via Almese 10",
+      "listing_url": "https://www.immobiliare.it/annunci/112973905/",
       "streets": [
         "via Almese",
         "Via Circonvallazione",
@@ -206,7 +206,7 @@
       "zone_id": "almese-via-granaglie",
       "comune": "Almese",
       "target_street": "via Granaglie",
-      "listing_target": "via Granaglie 43",
+      "listing_target": "via Granaglie 35",
       "listing_url": "https://www.immobiliare.it/annunci/132358596/",
       "streets": [
         "via Granaglie",
