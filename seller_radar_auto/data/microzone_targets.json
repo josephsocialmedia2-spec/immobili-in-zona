@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T19:49:10.103747+00:00",
+  "generated_at": "2026-09-30T00:07:31.639439+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -87,7 +87,7 @@
       "comune": "Almese",
       "target_street": "via Almese",
       "listing_target": "Via Almese 73",
-      "listing_url": "https://www.immobiliare.it/annunci/119303727/",
+      "listing_url": "https://www.immobiliare.it/annunci/128297350/",
       "streets": [
         "via Almese",
         "Via Circonvallazione",
@@ -296,7 +296,7 @@
       "zone_id": "avigliana-via-sacra-san-michele",
       "comune": "Avigliana",
       "target_street": "via Sacra San Michele",
-      "listing_target": "via Sacra San Michele 17",
+      "listing_target": "Via Sacra San Michele 27",
       "listing_url": "https://www.immobiliare.it/annunci/131895478/",
       "streets": [
         "via Sacra San Michele",
@@ -610,11 +610,11 @@
     {
       "zone_id": "avigliana-corso-torino",
       "comune": "Avigliana",
-      "target_street": "corso Torino",
-      "listing_target": "corso Torino 35",
-      "listing_url": "https://www.immobiliare.it/annunci/132260558/",
+      "target_street": "Corso Torino",
+      "listing_target": "Corso Torino 54",
+      "listing_url": "https://asteflorio.it/aste/capannone-a-avigliana-to-avigliana",
       "streets": [
-        "corso Torino",
+        "Corso Torino",
         "Corso Dora",
         "Corso Europa",
         "Strada Statale 25 del Moncenisio",
