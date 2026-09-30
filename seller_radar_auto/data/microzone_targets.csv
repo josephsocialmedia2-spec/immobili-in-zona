@@ -19,11 +19,11 @@ almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobil
 almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,2,VICINA,Piazza Pra Maccari,0,INCROCIA,OK
 almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,3,VICINA,Via Cerrone,0,INCROCIA,OK
 almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,4,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/128297350/,0,TARGET,via Almese,0,CENTRO,OK
-almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/128297350/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/128297350/,2,VICINA,Via Avigliana,225,VICINA,OK
-almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/128297350/,3,VICINA,Via della Michela,235,VICINA,OK
-almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/128297350/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
+almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,0,TARGET,via Almese,0,CENTRO,OK
+almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
+almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,2,VICINA,Via Avigliana,225,VICINA,OK
+almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,3,VICINA,Via della Michela,235,VICINA,OK
+almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,0,TARGET,Via Braida,0,CENTRO,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,1,VICINA,Via Bertolo,0,INCROCIA,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,2,VICINA,Via della Roccia,0,INCROCIA,OK
@@ -79,6 +79,16 @@ almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12
 almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12,https://www.nestoria.it/appartamenti/vendita/via-almese,2,VICINA,Via Avigliana,225,VICINA,OK
 almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12,https://www.nestoria.it/appartamenti/vendita/via-almese,3,VICINA,Via della Michela,235,VICINA,OK
 almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12,https://www.nestoria.it/appartamenti/vendita/via-almese,4,VICINA,Via Dante Alighieri,309,VICINA,OK
+almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,0,TARGET,Via Sonetto s.n.c villa,0,CENTRO,OK
+almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,1,VICINA,Borgata Morando,0,INCROCIA,OK
+almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,2,VICINA,Via Braida,0,INCROCIA,OK
+almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,3,VICINA,Via Bunino,0,INCROCIA,OK
+almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,4,VICINA,Via Madonna della Neve,0,INCROCIA,OK
+almese-via-goletto,Almese,Via Goletto,Via Goletto 24,https://www.idealista.it/immobile/36120406/,0,TARGET,Via Goletto,0,CENTRO,OK
+almese-via-goletto,Almese,Via Goletto,Via Goletto 24,https://www.idealista.it/immobile/36120406/,1,VICINA,Via Morsino,0,INCROCIA,OK
+almese-via-goletto,Almese,Via Goletto,Via Goletto 24,https://www.idealista.it/immobile/36120406/,2,VICINA,Via Garavello,140,VICINA,OK
+almese-via-goletto,Almese,Via Goletto,Via Goletto 24,https://www.idealista.it/immobile/36120406/,3,VICINA,Via Caselette,159,VICINA,OK
+almese-via-goletto,Almese,Via Goletto,Via Goletto 24,https://www.idealista.it/immobile/36120406/,4,VICINA,Piazza Comba,174,VICINA,OK
 avigliana-via-monte-cuneo,Avigliana,via Monte Cuneo,via Monte Cuneo 36,https://www.immobiliare.it/annunci/127832646/,0,TARGET,via Monte Cuneo,0,CENTRO,OK
 avigliana-via-monte-cuneo,Avigliana,via Monte Cuneo,via Monte Cuneo 36,https://www.immobiliare.it/annunci/127832646/,1,VICINA,Via Ceresole,0,INCROCIA,OK
 avigliana-via-monte-cuneo,Avigliana,via Monte Cuneo,via Monte Cuneo 36,https://www.immobiliare.it/annunci/127832646/,2,VICINA,Via Chiattera,0,INCROCIA,OK
@@ -94,11 +104,11 @@ avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,Via Sacra San Mi
 avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,Via Sacra San Michele 27,https://www.immobiliare.it/annunci/131895478/,2,VICINA,Viale Belvedere,297,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,Via Sacra San Michele 27,https://www.immobiliare.it/annunci/131895478/,3,VICINA,Viale dei Tigli,309,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-sacra-san-michele,Avigliana,via Sacra San Michele,Via Sacra San Michele 27,https://www.immobiliare.it/annunci/131895478/,4,VICINA,Via Tetti Colombo,325,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,0,TARGET,viale roma,0,CENTRO,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,1,VICINA,Corso Laghi,0,INCROCIA,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,2,VICINA,Via maestra Maria Gallo,0,INCROCIA,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,3,VICINA,Via Osvaldo Negarville,0,INCROCIA,OK
-avigliana-viale-roma,Avigliana,viale roma,viale roma 8,https://www.immobiliare.it/annunci/131481726/,4,VICINA,Via Tresserve,0,INCROCIA,OK
+avigliana-viale-roma,Avigliana,viale roma,viale roma 37,https://www.immobiliare.it/annunci/133030482/,0,TARGET,viale roma,0,CENTRO,OK
+avigliana-viale-roma,Avigliana,viale roma,viale roma 37,https://www.immobiliare.it/annunci/133030482/,1,VICINA,Corso Laghi,0,INCROCIA,OK
+avigliana-viale-roma,Avigliana,viale roma,viale roma 37,https://www.immobiliare.it/annunci/133030482/,2,VICINA,Via maestra Maria Gallo,0,INCROCIA,OK
+avigliana-viale-roma,Avigliana,viale roma,viale roma 37,https://www.immobiliare.it/annunci/133030482/,3,VICINA,Via Osvaldo Negarville,0,INCROCIA,OK
+avigliana-viale-roma,Avigliana,viale roma,viale roma 37,https://www.immobiliare.it/annunci/133030482/,4,VICINA,Via Tresserve,0,INCROCIA,OK
 avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,0,TARGET,via Ailliaud Augusto,0,CENTRO,OK_GEOCODE_FALLBACK
 avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,1,VICINA,Via Augusto Ailliaud,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-ailliaud-augusto,Avigliana,via Ailliaud Augusto,via Ailliaud Augusto 8,https://www.immobiliare.it/annunci/129887012/,2,VICINA,Viale Roma (int),70,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
@@ -234,11 +244,11 @@ avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLI
 avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,2,VICINA,Corso Torino,75,VICINA,OK
 avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,3,VICINA,Via Francesca e Giovanni Falcone,88,VICINA,OK
 avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,4,VICINA,Corso Europa,95,VICINA,OK
-avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101,https://www.immobiliare.it/annunci/129730974/,0,TARGET,via Grignetto,0,CENTRO,OK
-avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101,https://www.immobiliare.it/annunci/129730974/,1,VICINA,Via Armando Cantore,0,INCROCIA,OK
-avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101,https://www.immobiliare.it/annunci/129730974/,2,VICINA,Via Bertassi,0,INCROCIA,OK
-avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101,https://www.immobiliare.it/annunci/129730974/,3,VICINA,Via Lino Maritano,0,INCROCIA,OK
-avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101,https://www.immobiliare.it/annunci/129730974/,4,VICINA,Via Monginevro,0,INCROCIA,OK
+avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,0,TARGET,via Grignetto,0,CENTRO,OK
+avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,1,VICINA,Via Armando Cantore,0,INCROCIA,OK
+avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,2,VICINA,Via Bertassi,0,INCROCIA,OK
+avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,3,VICINA,Via Lino Maritano,0,INCROCIA,OK
+avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,4,VICINA,Via Monginevro,0,INCROCIA,OK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,0,TARGET,via Allende,0,CENTRO,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,1,VICINA,Via Salvador Allende,35,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:07:31.639439+00:00",
+  "generated_at": "2026-09-30T05:16:52.056354+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -86,7 +86,7 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "Via Almese 73",
+      "listing_target": "Via Almese 40",
       "listing_url": "https://www.immobiliare.it/annunci/128297350/",
       "streets": [
         "via Almese",
@@ -263,6 +263,36 @@
       "osm_status": "OK"
     },
     {
+      "zone_id": "almese-via-sonetto-s-n-c-villa",
+      "comune": "Almese",
+      "target_street": "Via Sonetto s.n.c villa",
+      "listing_target": "Via Sonetto s.n.c villa 1",
+      "listing_url": "https://www.idealista.it/immobile/36950221/",
+      "streets": [
+        "Via Sonetto s.n.c villa",
+        "Borgata Morando",
+        "Via Braida",
+        "Via Bunino",
+        "Via Madonna della Neve"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-goletto",
+      "comune": "Almese",
+      "target_street": "Via Goletto",
+      "listing_target": "Via Goletto 24",
+      "listing_url": "https://www.idealista.it/immobile/36120406/",
+      "streets": [
+        "Via Goletto",
+        "Via Morsino",
+        "Via Garavello",
+        "Via Caselette",
+        "Piazza Comba"
+      ],
+      "osm_status": "OK"
+    },
+    {
       "zone_id": "avigliana-via-monte-cuneo",
       "comune": "Avigliana",
       "target_street": "via Monte Cuneo",
@@ -311,8 +341,8 @@
       "zone_id": "avigliana-viale-roma",
       "comune": "Avigliana",
       "target_street": "viale roma",
-      "listing_target": "viale roma 8",
-      "listing_url": "https://www.immobiliare.it/annunci/131481726/",
+      "listing_target": "viale roma 37",
+      "listing_url": "https://www.immobiliare.it/annunci/133030482/",
       "streets": [
         "viale roma",
         "Corso Laghi",
@@ -731,7 +761,7 @@
       "zone_id": "avigliana-via-grignetto",
       "comune": "Avigliana",
       "target_street": "via Grignetto",
-      "listing_target": "Via Grignetto 101",
+      "listing_target": "Via Grignetto 101/B",
       "listing_url": "https://www.immobiliare.it/annunci/129730974/",
       "streets": [
         "via Grignetto",
