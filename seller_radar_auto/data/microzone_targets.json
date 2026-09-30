@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T05:16:52.056354+00:00",
+  "generated_at": "2026-09-30T17:19:05.229492+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -86,8 +86,8 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "Via Almese 40",
-      "listing_url": "https://www.immobiliare.it/annunci/128297350/",
+      "listing_target": "Via Almese 73",
+      "listing_url": "https://www.immobiliare.it/annunci/93624084/",
       "streets": [
         "via Almese",
         "Via Circonvallazione",
@@ -769,6 +769,21 @@
         "Via Bertassi",
         "Via Lino Maritano",
         "Via Monginevro"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-dei-testa",
+      "comune": "Avigliana",
+      "target_street": "via dei Testa",
+      "listing_target": "via dei Testa 23D",
+      "listing_url": "https://www.immobiliare.it/annunci/132057622/",
+      "streets": [
+        "via dei Testa",
+        "Corso Dora",
+        "Corso Europa",
+        "Corso Torino",
+        "Via Carlo Collodi"
       ],
       "osm_status": "OK"
     },

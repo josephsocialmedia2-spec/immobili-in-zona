@@ -19,11 +19,11 @@ almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobil
 almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,2,VICINA,Piazza Pra Maccari,0,INCROCIA,OK
 almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,3,VICINA,Via Cerrone,0,INCROCIA,OK
 almese-via-roma,Almese,Via Roma,Via Roma 80,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,4,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,0,TARGET,via Almese,0,CENTRO,OK
-almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,2,VICINA,Via Avigliana,225,VICINA,OK
-almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,3,VICINA,Via della Michela,235,VICINA,OK
-almese-via-almese,Almese,via Almese,Via Almese 40,https://www.immobiliare.it/annunci/128297350/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
+almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/93624084/,0,TARGET,via Almese,0,CENTRO,OK
+almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/93624084/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
+almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/93624084/,2,VICINA,Via Avigliana,225,VICINA,OK
+almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/93624084/,3,VICINA,Via della Michela,235,VICINA,OK
+almese-via-almese,Almese,via Almese,Via Almese 73,https://www.immobiliare.it/annunci/93624084/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,0,TARGET,Via Braida,0,CENTRO,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,1,VICINA,Via Bertolo,0,INCROCIA,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,2,VICINA,Via della Roccia,0,INCROCIA,OK
@@ -249,6 +249,11 @@ avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.
 avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,2,VICINA,Via Bertassi,0,INCROCIA,OK
 avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,3,VICINA,Via Lino Maritano,0,INCROCIA,OK
 avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/129730974/,4,VICINA,Via Monginevro,0,INCROCIA,OK
+avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,0,TARGET,via dei Testa,0,CENTRO,OK
+avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,1,VICINA,Corso Dora,0,INCROCIA,OK
+avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,2,VICINA,Corso Europa,0,INCROCIA,OK
+avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,3,VICINA,Corso Torino,0,INCROCIA,OK
+avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,4,VICINA,Via Carlo Collodi,0,INCROCIA,OK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,0,TARGET,via Allende,0,CENTRO,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,1,VICINA,Via Salvador Allende,35,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
