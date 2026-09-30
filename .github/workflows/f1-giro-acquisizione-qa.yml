@@ -10,6 +10,7 @@ on:
       - "seller_radar_auto/refresh_dashboard.py"
       - "seller_radar_auto/validate_giro_acquisizione.py"
       - "seller_radar_auto/municipalities.csv"
+      - "seller_radar_auto/f1_microzone_config.json"
       - "seller_radar_auto/data/state.json"
       - "seller_radar_auto/data/work_queue.csv"
       - ".github/workflows/f1-giro-acquisizione-qa.yml"
@@ -21,6 +22,7 @@ on:
       - "seller_radar_auto/refresh_dashboard.py"
       - "seller_radar_auto/validate_giro_acquisizione.py"
       - "seller_radar_auto/municipalities.csv"
+      - "seller_radar_auto/f1_microzone_config.json"
       - "seller_radar_auto/data/state.json"
       - "seller_radar_auto/data/work_queue.csv"
       - ".github/workflows/f1-giro-acquisizione-qa.yml"
@@ -31,7 +33,7 @@ permissions:
 jobs:
   giro-integrity:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
 
@@ -44,7 +46,7 @@ jobs:
             seller_radar_auto/refresh_dashboard.py \
             seller_radar_auto/validate_giro_acquisizione.py
 
-      - name: Verifica matrix discovery MASTER
+      - name: Verifica matrix discovery Villar Dora
         shell: bash
         run: |
           MATRIX=$(python seller_radar_auto/build_municipality_matrix.py)
@@ -53,12 +55,16 @@ jobs:
           from pathlib import Path
           matrix = json.loads(sys.argv[1])["comune"]
           with Path("seller_radar_auto/municipalities.csv").open(encoding="utf-8-sig", newline="") as f:
-              catalog = [r["comune"].strip() for r in csv.DictReader(f) if r.get("comune", "").strip()]
-          expected = {c.casefold() for c in catalog}
-          assert matrix and matrix[0].casefold() == "susa"
-          assert {c.casefold() for c in matrix} == expected
-          assert len(matrix) == len(expected)
-          print(f"PASS MATRIX MASTER | comuni={len(matrix)} centro={matrix[0]}")
+              rows = list(csv.DictReader(f))
+          enabled = [r for r in rows if r.get("enabled") == "1"]
+          expected = [r["comune"].strip() for r in enabled]
+          assert matrix and matrix[0].casefold() == "villar dora", matrix[:1]
+          assert matrix == expected, {"matrix": matrix, "expected": expected}
+          centers=[r for r in enabled if r.get('side')=='CENTRO']
+          assert len(centers)==1 and centers[0]['comune']=='Villar Dora', centers
+          assert all(r.get('side') in {'CENTRO','SINISTRA','DESTRA'} for r in enabled)
+          assert "Sant'Ambrogio di Torino" in expected
+          print(f"PASS MATRIX VILLAR DORA | comuni={len(matrix)} centro={matrix[0]}")
           PY
 
       - name: Sanitizer qualità senza filtro geografico
@@ -98,10 +104,10 @@ jobs:
         shell: bash
         run: |
           python seller_radar_auto/refresh_dashboard.py
-          grep -q "SELLER MASTER TOTALI" seller_radar_auto/dashboard.html
+          grep -q "F1 SELLER RADAR · MASTER COMPLETO" seller_radar_auto/dashboard.html
           grep -q "NEL TERRITORIO ATTIVO" seller_radar_auto/dashboard.html
           grep -q "FERMATE PRONTE" seller_radar_auto/dashboard.html
           grep -q "INDIRIZZO DA VERIFICARE" seller_radar_auto/dashboard.html
           grep -q "BACKLOG FUORI TERRITORIO" seller_radar_auto/dashboard.html
-          grep -q "MASTER completo + filtro operativo Susa 20 km" seller_radar_auto/dashboard.html
-          echo "PASS DASHBOARD GIRO"
+          grep -q "TERRITORI OPERATIVI" seller_radar_auto/dashboard.html
+          echo "PASS DASHBOARD GIRO VILLAR DORA"

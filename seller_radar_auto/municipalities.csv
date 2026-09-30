@@ -1,61 +1,61 @@
-enabled,comune
-1,Villar Dora
-1,Chianocco
-1,Bruzolo
-1,San Didero
-1,San Giorio di Susa
-1,Borgone Susa
-1,Villar Focchiardo
-1,Condove
-1,Caprie
-1,Sant'Antonino di Susa
-1,Vaie
-1,Chiusa di San Michele
-0,Sant'Ambrogio di Torino
-1,Rubiana
-1,Valgioie
-1,Coazze
-1,Giaveno
-1,Almese
-1,Avigliana
-1,Val della Torre
-1,Givoletto
-1,La Cassa
-1,Varisella
-1,Fiano
-1,Robassomero
-1,San Gillio
-1,Druento
-1,Caselette
-1,Pianezza
-1,Alpignano
-1,Buttigliera Alta
-1,Rosta
-1,Reano
-1,Villarbasse
-1,Trana
-1,Rivoli
-1,Collegno
-1,Grugliasco
-1,Rivalta di Torino
-1,Bruino
-1,Beinasco
-0,Susa
-0,Mompantero
-0,Meana di Susa
-0,Gravere
-0,Giaglione
-0,Venaus
-0,Mattie
-0,Chiomonte
-0,Novalesa
-0,Bussoleno
-0,Moncenisio
-0,Exilles
-0,Salbertrand
-0,San Valeriano
-0,Ferriera di Buttigliera Alta
-0,Sangano
-0,Oulx
-0,Bardonecchia
-0,Novaretto
+enabled,comune,side,radial_rank
+1,Villar Dora,CENTRO,0
+1,Chianocco,SINISTRA,1
+1,Bruzolo,SINISTRA,2
+1,San Didero,SINISTRA,3
+1,San Giorio di Susa,SINISTRA,4
+1,Borgone Susa,SINISTRA,5
+1,Villar Focchiardo,SINISTRA,6
+1,Condove,SINISTRA,7
+1,Caprie,SINISTRA,8
+1,Sant'Antonino di Susa,SINISTRA,9
+1,Vaie,SINISTRA,10
+1,Chiusa di San Michele,SINISTRA,11
+1,Sant'Ambrogio di Torino,SINISTRA,12
+1,Rubiana,SINISTRA,13
+1,Valgioie,SINISTRA,14
+1,Coazze,SINISTRA,15
+1,Giaveno,SINISTRA,16
+1,Almese,DESTRA,17
+1,Avigliana,DESTRA,18
+1,Val della Torre,DESTRA,19
+1,Givoletto,DESTRA,20
+1,La Cassa,DESTRA,21
+1,Varisella,DESTRA,22
+1,Fiano,DESTRA,23
+1,Robassomero,DESTRA,24
+1,San Gillio,DESTRA,25
+1,Druento,DESTRA,26
+1,Caselette,DESTRA,27
+1,Pianezza,DESTRA,28
+1,Alpignano,DESTRA,29
+1,Buttigliera Alta,DESTRA,30
+1,Rosta,DESTRA,31
+1,Reano,DESTRA,32
+1,Villarbasse,DESTRA,33
+1,Trana,DESTRA,34
+1,Rivoli,DESTRA,35
+1,Collegno,DESTRA,36
+1,Grugliasco,DESTRA,37
+1,Rivalta di Torino,DESTRA,38
+1,Bruino,DESTRA,39
+1,Beinasco,DESTRA,40
+0,Susa,FUORI_LISTA,999
+0,Mompantero,FUORI_LISTA,999
+0,Meana di Susa,FUORI_LISTA,999
+0,Gravere,FUORI_LISTA,999
+0,Giaglione,FUORI_LISTA,999
+0,Venaus,FUORI_LISTA,999
+0,Mattie,FUORI_LISTA,999
+0,Chiomonte,FUORI_LISTA,999
+0,Novalesa,FUORI_LISTA,999
+0,Bussoleno,FUORI_LISTA,999
+0,Moncenisio,FUORI_LISTA,999
+0,Exilles,FUORI_LISTA,999
+0,Salbertrand,FUORI_LISTA,999
+0,San Valeriano,FUORI_LISTA,999
+0,Ferriera di Buttigliera Alta,FUORI_LISTA,999
+0,Sangano,FUORI_LISTA,999
+0,Oulx,FUORI_LISTA,999
+0,Bardonecchia,FUORI_LISTA,999
+0,Novaretto,FUORI_LISTA,999
