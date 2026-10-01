@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T09:07:19.748665+00:00",
+  "generated_at": "2026-10-01T16:44:07.730613+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -86,7 +86,7 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "Via Almese 61",
+      "listing_target": "VIA ALMESE 73",
       "listing_url": "https://www.immobiliare.it/annunci/112973905/",
       "streets": [
         "via Almese",
@@ -128,17 +128,17 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "almese-via-drubiaglio",
+      "zone_id": "almese-via-rocci",
       "comune": "Almese",
-      "target_street": "Via Drubiaglio",
-      "listing_target": "Via Drubiaglio 6",
+      "target_street": "Via rocci",
+      "listing_target": "via Rocci 6",
       "listing_url": "https://www.nuroa.it/affitto-case/almese",
       "streets": [
-        "Via Drubiaglio",
-        "Via delle Industrie",
-        "Via don Marco Cravotto",
-        "Via Milanere",
-        "Via Rivera"
+        "Via rocci",
+        "Piazza Martiri della Libertà",
+        "Via Malatrait",
+        "Via Medico Ball",
+        "Via San Sebastiano"
       ],
       "osm_status": "OK"
     },
@@ -747,7 +747,7 @@
       "comune": "Avigliana",
       "target_street": "via Grignetto",
       "listing_target": "Via Grignetto 101/B",
-      "listing_url": "https://www.immobiliare.it/annunci/129730974/",
+      "listing_url": "https://www.immobiliare.it/annunci/133107618/",
       "streets": [
         "via Grignetto",
         "Via Armando Cantore",
