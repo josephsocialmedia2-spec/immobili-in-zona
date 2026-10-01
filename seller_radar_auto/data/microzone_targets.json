@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T21:54:53.591379+00:00",
+  "generated_at": "2026-10-01T01:43:48.351117+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -86,7 +86,7 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "via Almese 10",
+      "listing_target": "VIA ALMESE 73",
       "listing_url": "https://www.immobiliare.it/annunci/112973905/",
       "streets": [
         "via Almese",
@@ -206,7 +206,7 @@
       "zone_id": "almese-via-granaglie",
       "comune": "Almese",
       "target_street": "via Granaglie",
-      "listing_target": "via Granaglie 35",
+      "listing_target": "via Granaglie 43",
       "listing_url": "https://www.immobiliare.it/annunci/132358596/",
       "streets": [
         "via Granaglie",
@@ -326,7 +326,7 @@
       "zone_id": "avigliana-via-sacra-san-michele",
       "comune": "Avigliana",
       "target_street": "via Sacra San Michele",
-      "listing_target": "Via Sacra San Michele 27",
+      "listing_target": "via Sacra San Michele 17",
       "listing_url": "https://www.immobiliare.it/annunci/131895478/",
       "streets": [
         "via Sacra San Michele",
@@ -1266,11 +1266,11 @@
     {
       "zone_id": "almese-via-ruffini",
       "comune": "Almese",
-      "target_street": "via Ruffini",
-      "listing_target": "via Ruffini 13",
-      "listing_url": "https://www.immobiliare.it/annunci/127739728/",
+      "target_street": "Via Ruffini",
+      "listing_target": "Via Ruffini 13",
+      "listing_url": "https://www.casa.it/immobili/53618939/",
       "streets": [
-        "via Ruffini"
+        "Via Ruffini"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"

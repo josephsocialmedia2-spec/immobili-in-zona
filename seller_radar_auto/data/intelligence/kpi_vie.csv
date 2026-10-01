@@ -5,20 +5,20 @@ Almese,VIA AVIGLIANA,1,0,,,38.0,0,1
 Almese,Via Almese,1,0,,,15.0,0,1
 Almese,Via Almese - Nestoria,1,0,,,0.0,0,1
 Almese,Via Almese. Immobili in vendita a Via ... - Nestoria,1,0,,,0.0,0,1
-Almese,Via Avigliana,1,0,,,0.0,0,1
+Almese,Via Avigliana,1,1,179000.0,813.64,2.0,0,0
 Almese,Via Braida,1,0,,,0.0,0,1
 Almese,Via Drubiaglio,1,0,,,32.0,7,1
-Almese,Via Goletto,1,1,349000.0,1836.84,0.0,0,0
-Almese,Via Mollar,1,1,,,7.0,0,0
+Almese,Via Goletto,1,0,,,0.0,0,1
+Almese,Via Mollar,1,0,,,7.0,0,1
 Almese,Via Rivette,2,0,,,7.5,0,2
 Almese,Via Roma,3,1,140000.0,,0.0,0,2
 Almese,Via Rubiana,2,0,,,16.0,0,2
-Almese,Via Ruffini,1,1,,,20.0,0,0
-Almese,Via Sonetto s.n.c villa,1,1,1250000.0,59523.81,0.0,0,0
+Almese,Via Ruffini,2,1,,,10.0,0,1
+Almese,Via Sonetto s.n.c villa,1,0,,,0.0,0,1
 Almese,borgata franchino - Mompellato,1,0,,,35.0,0,1
 Almese,frazione Tuberghengo,1,0,,,6.0,0,1
 Almese,piazza Martiri della Libertà,1,0,,,0.0,0,1
-Almese,via Almese,5,3,52490.0,,0.0,0,2
+Almese,via Almese,5,3,435000.0,,0.0,0,2
 Almese,via Almese Alpignano. Buono stato,1,0,,,24.0,0,1
 Almese,via Almese. Buono stato,1,1,,,2.0,0,0
 Almese,via Almese. Collegno. Ottimo stato,1,1,,,26.0,0,0
@@ -32,9 +32,9 @@ Almese,via Rivera,4,0,,,4.0,0,4
 Almese,via Roma,2,0,,,12.5,0,2
 Almese,via Rubiana,2,0,,,18.5,2,2
 Almese,via Ruffini,1,1,125000.0,83.33,14.0,0,0
-Almese,via Sonetto Almese. Ottimo stato,1,1,,,3.0,0,0
+Almese,via Sonetto Almese. Ottimo stato,1,1,,,4.0,0,0
 Almese,via alma bertolo,1,1,,,40.0,0,0
-Alpignano,Piazza Caduti,2,1,39000.0,,20.5,0,1
+Alpignano,Piazza Caduti,1,0,,,1.0,0,1
 Alpignano,"Piazza dei Caduti, proponiamo muri negozio di circa",1,1,35000.0,1000.0,22.0,0,0
 Alpignano,Strada Campagnola,1,0,,,1.0,0,1
 Alpignano,"Strada Campagnola, proponiamo in locazione capannone industriale di circa",1,0,,,24.0,1,1
@@ -60,7 +60,7 @@ Alpignano,"Via Valdellatorre, 10091 Alpignano TO, Italia",1,0,,,12.0,1,1
 Alpignano,Via Valle,1,0,,,0.0,0,1
 Alpignano,Via Veneto,1,0,,,1.0,0,1
 Alpignano,Via Villa,1,0,,,3.0,0,1
-Alpignano,Via dei Ronchi,1,0,,,29.0,10,1
+Alpignano,Via dei Ronchi,2,1,,,14.5,10,1
 Alpignano,"Via dei Ronchi, si propone in locazione un capannone di circa",3,1,,,3.0,4,2
 Alpignano,corso Torino,1,0,,,4.0,0,1
 Alpignano,piazza dei Caduti,2,2,69000.0,,7.0,0,0
@@ -75,7 +75,7 @@ Alpignano,via Campagnola Alpignano. Ottimo stato,1,0,,,24.0,0,1
 Alpignano,via Caselette Alpignano. Ottimo stato,1,0,,,0.0,0,1
 Alpignano,via Colgiansesco Alpignano. Ottimo stato,1,0,,,7.0,0,1
 Alpignano,via Collegno Alpignano. Posto auto,1,0,,,26.0,0,1
-Alpignano,via Fornace,1,1,,,9.0,0,0
+Alpignano,via Fornace,1,0,,,9.0,0,1
 Alpignano,via Francesco baracca,1,0,,,2.0,0,1
 Alpignano,via Fratelli Revelli,1,1,,,0.0,0,0
 Alpignano,via G. Matteotti,1,1,,,0.0,0,0
@@ -83,18 +83,19 @@ Alpignano,via Germano Sommeiller,1,0,,,14.0,1,1
 Alpignano,via Giacomo Matteotti,1,0,,,17.0,0,1
 Alpignano,via Gioachino Rossini,1,0,,,5.0,0,1
 Alpignano,via Giuseppe Bellagarda,1,0,,,0.0,0,1
-Alpignano,via Giuseppe Mazzini,1,1,,,10.0,0,0
+Alpignano,via Giuseppe Mazzini,1,1,,,11.0,0,0
 Alpignano,via Lanzo,2,1,184000.0,,18.0,0,1
 Alpignano,via Migliarone. Alpignano. Nuovo,1,0,,,0.0,0,1
 Alpignano,via Pianezza,1,1,350000.0,397.73,20.0,0,0
 Alpignano,via Pianezza. Buono,2,0,,,4.0,0,2
 Alpignano,via Pianezza. Buono stato,1,1,,,4.0,0,0
 Alpignano,via Provana Alpignano. Buono stato,1,0,,,9.0,0,1
+Alpignano,via Riccardo Arnò,1,1,248000.0,1653.33,0.0,0,0
 Alpignano,via Roma,1,0,,,4.0,0,1
 Alpignano,via SAN MAURIZIO. Buono,1,0,,,3.0,0,1
 Alpignano,via Sant'ambrogio,1,1,,,7.0,0,0
 Alpignano,via Scrivia,1,0,,,2.0,0,1
-Alpignano,via Torelle,1,0,,,4.0,0,1
+Alpignano,via Torelle,1,1,285000.0,,22.0,0,0
 Alpignano,via Trana Alpignano. Buono stato,1,0,,,7.0,0,1
 Alpignano,via Val della Torre,1,1,,,2.0,0,0
 Alpignano,"via Valdellatorre, a soli",1,1,,,17.0,0,0
@@ -102,10 +103,10 @@ Alpignano,via Veneto,1,0,,,5.0,0,1
 Alpignano,via Villa,1,1,298000.0,2980.0,12.0,0,0
 Alpignano,via colgiansesco,1,0,,,0.0,0,1
 Alpignano,via colgiansesco. Ottimo,1,1,,,0.0,0,0
-Alpignano,via dei Ronchi,1,1,,,26.0,0,0
+Alpignano,via dei Ronchi,1,1,,,27.0,0,0
 Alpignano,via dei Ronchi Alpignano. Nuova,1,0,,,27.0,0,1
 Alpignano,via della Costa,1,1,,,0.0,0,0
-Avigliana,Corso Laghi,6,1,85000.0,,3.5,5,5
+Avigliana,Corso Laghi,6,1,20000.0,,3.5,6,5
 Avigliana,"Corso Laghi , Avigliana Avigliana - Corso Laghi proponiamo alloggio libero su",1,0,,,13.0,0,1
 Avigliana,Corso Torino,1,0,,,0.0,0,1
 Avigliana,Piazza del Popolo,1,0,,,0.0,0,1
@@ -133,45 +134,45 @@ Avigliana,piazza del popolo,1,0,,,9.0,0,1
 Avigliana,via 4 Novembre,1,0,,,26.0,14,1
 Avigliana,via Ailliaud Augusto,1,0,,,31.0,0,1
 Avigliana,via Aldo Carnino,1,0,,,10.0,0,1
-Avigliana,via Aldo Moro,1,1,150000.0,,26.0,0,0
+Avigliana,via Aldo Moro,1,1,150000.0,,27.0,0,0
 Avigliana,via Alliaud,1,0,,,6.0,0,1
-Avigliana,via Avigliana,7,1,440000.0,,1.0,0,6
+Avigliana,via Avigliana,7,0,,,1.0,0,7
 Avigliana,via Avogadro,1,0,,,0.0,0,1
 Avigliana,via Bacchiasso,1,0,,,3.0,0,1
 Avigliana,via Chiattera,1,1,65000.0,,29.0,0,0
 Avigliana,via Don Luigi Balbiano,2,0,,,2.0,0,2
 Avigliana,via Drubiaglio,1,0,,,3.0,0,1
 Avigliana,via Felice Goffi,1,0,,,4.0,0,1
-Avigliana,via Francesca e Giovanni,1,1,,,1.0,0,0
+Avigliana,via Francesca e Giovanni,1,0,,,1.0,0,1
 Avigliana,via Generale C. Alberto,1,1,,,0.0,0,0
 Avigliana,via Generale C. Alberto dalla Chiesa,1,0,,,19.0,0,1
 Avigliana,via Giacomo Matteotti,1,0,,,0.0,0,1
-Avigliana,via Grignetto,1,1,349000.0,,2.0,0,0
-Avigliana,via Grignetto Avigliana. Buono stato,1,1,,,1.0,0,0
+Avigliana,via Grignetto,1,0,,,1.0,0,1
+Avigliana,via Grignetto Avigliana. Buono stato,1,0,,,0.0,0,1
 Avigliana,via IV novembre. Avigliana. Buono stato,1,0,,,7.0,0,1
 Avigliana,via IV novembre. Ottimo,1,0,,,26.0,0,1
-Avigliana,via Micheletta,1,1,,,18.0,0,0
-Avigliana,via Moncenisio,1,0,,,9.0,0,1
+Avigliana,via Micheletta,1,0,,,17.0,0,1
+Avigliana,via Moncenisio,1,1,295000.0,1180.0,10.0,0,0
 Avigliana,via Monte Cuneo,3,1,489000.0,978.0,2.0,0,2
 Avigliana,via Monte Pirchiriano,1,0,,,2.0,0,1
 Avigliana,via Orsiera,1,0,,,17.0,0,1
 Avigliana,via Oscar Borgesa,1,0,,,25.0,0,1
 Avigliana,via Paolo Borsellino,1,0,,,4.0,0,1
 Avigliana,via Pinerolo,1,0,,,15.0,0,1
-Avigliana,via Pontetto,1,0,,,12.0,0,1
+Avigliana,via Pontetto,1,1,,,22.0,0,0
 Avigliana,via Sacra San Michele,1,1,,,34.0,0,0
 Avigliana,via Sant'Agostino Avigliana. Ottimo,1,0,,,4.0,0,1
 Avigliana,via Sant'Agostino Avigliana. Ottimo stato,1,0,,,2.0,0,1
 Avigliana,via Tetti Colombo,2,0,,,2.5,0,2
 Avigliana,via Umberto I,1,0,,,3.0,0,1
 Avigliana,via dei Testa,1,1,,,0.0,0,0
-Avigliana,via dei Testa. Ottimo,1,1,175000.0,,15.0,0,0
+Avigliana,via dei Testa. Ottimo,1,1,175000.0,,16.0,0,0
 Avigliana,via villar dora,1,1,210000.0,,34.0,0,0
 Avigliana,viale Enrico Fermi,1,0,,,2.0,0,1
 Avigliana,viale Roma. Ottimo,1,0,,,8.0,0,1
 Avigliana,viale Roma. Ottimo stato,1,0,,,25.0,0,1
 Avigliana,viale dei Tigli Avigliana. Buono stato,1,0,,,2.0,0,1
-Avigliana,viale roma,2,1,,,0.0,0,1
+Avigliana,viale roma,2,0,,,0.0,0,2
 Bardonecchia,Borgata Horres-Garnier. Bardonecchia. Buono,1,1,,,33.0,0,0
 Bardonecchia,Piazza Europa,1,1,,,33.0,0,0
 Bardonecchia,Via Bardonecchia,1,1,8000.0,,27.0,2,0
@@ -192,8 +193,8 @@ Bardonecchia,via G. F. Medail,1,0,,,0.0,0,1
 Bardonecchia,via Genova,1,1,69000.0,,34.0,0,0
 Bardonecchia,via Giuseppe Francesco,1,0,,,0.0,0,1
 Bardonecchia,via La Rho,1,0,,,4.0,0,1
-Bardonecchia,via Luigi Einaudi,1,1,320000.0,,23.0,0,0
-Bardonecchia,via Medail,2,1,,,13.0,0,1
+Bardonecchia,via Luigi Einaudi,1,1,320000.0,,24.0,0,0
+Bardonecchia,via Medail,2,1,,,13.5,0,1
 Bardonecchia,via Melezet,1,1,,,26.0,0,0
 Bardonecchia,via Montello,1,1,125000.0,,34.0,0,0
 Bardonecchia,via Montenero,1,1,160000.0,,27.0,0,0
@@ -224,7 +225,7 @@ Beinasco,Via Monginevro,2,0,,,0.0,0,2
 Beinasco,Via Monte Bianco,4,0,,,0.0,0,4
 Beinasco,Via Nenni,1,0,,,0.0,0,1
 Beinasco,Via Principe Amedeo,1,0,,,4.0,0,1
-Beinasco,Via San Giacomo,6,1,92000.0,,4.0,0,5
+Beinasco,Via San Giacomo,6,1,110000.0,,4.0,0,5
 Beinasco,Via San Giovanni,1,0,,,0.0,0,1
 Beinasco,Via Torino,2,0,,,5.0,0,2
 Beinasco,Via Vittorio Amedeo II,2,0,,,0.0,0,2
@@ -234,30 +235,30 @@ Beinasco,"località nel comune di Beinasco, è disponibile un appartamento di",1
 Beinasco,piazza Kennedy,1,0,,,0.0,0,1
 Beinasco,piazza Kennedy. Buono stato,1,0,,,0.0,0,1
 Beinasco,via 2 Giugno,1,0,,,2.0,0,1
-Beinasco,via Aosta,3,1,470000.0,940.0,7.0,1,2
-Beinasco,via Beinasco,3,0,,,8.0,0,3
+Beinasco,via Aosta,3,1,470000.0,,7.0,1,2
+Beinasco,via Beinasco,4,3,95000.0,,5.5,1,1
 Beinasco,via Bernardo Rondò,1,0,,,3.0,0,1
 Beinasco,via Danilo Dolci,1,0,,,1.0,0,1
-Beinasco,via Dante Alighieri,1,0,,,19.0,0,1
+Beinasco,via Dante Alighieri,1,1,78000.0,,21.0,0,0
 Beinasco,via Don Minzoni,1,0,,,1.0,0,1
-Beinasco,via Enrico De Nicola,1,1,89000.0,,18.0,0,0
+Beinasco,via Enrico De Nicola,1,1,89000.0,,19.0,0,0
 Beinasco,via Gaetano Donizetti,1,1,99000.0,,22.0,0,0
-Beinasco,via Giacomo Leopardi,1,1,720000.0,2790.7,9.0,0,0
+Beinasco,via Giacomo Leopardi,1,1,720000.0,2790.7,10.0,0,0
 Beinasco,via Gioacchino Rossini,1,0,,,0.0,0,1
 Beinasco,via Giovanni Amendola,1,0,,,8.0,0,1
 Beinasco,via Gorizia,1,0,,,2.0,0,1
 Beinasco,via Guglielmo Marconi,1,0,,,4.0,0,1
-Beinasco,"via II Giugno, Borgaretto",1,0,,,7.0,0,1
+Beinasco,"via II Giugno, Borgaretto",1,1,,,13.0,0,0
 Beinasco,via Marconi,1,0,,,3.0,0,1
 Beinasco,via Maria Teresa,1,0,,,3.0,0,1
 Beinasco,via Mirafiori,1,0,,,13.0,0,1
 Beinasco,via Mirafiori. Beinasco. Buono stato,1,0,,,0.0,0,1
 Beinasco,via Monginevro,1,0,,,5.0,0,1
 Beinasco,via Nenni,1,1,169000.0,,22.0,0,0
-Beinasco,via Pietro Mascagni,1,1,94000.0,,0.0,0,0
+Beinasco,via Pietro Mascagni,1,1,94000.0,,1.0,0,0
 Beinasco,via Principe Amedeo,3,1,,,4.0,1,2
 Beinasco,via Rivalta,1,0,,,4.0,0,1
-Beinasco,via Rivoli,1,1,,,0.0,0,0
+Beinasco,via Rivoli,1,0,,,0.0,0,1
 Beinasco,via San Felice,2,1,125000.0,954.2,11.5,0,1
 Beinasco,via San Felice Beinasco,1,0,,,4.0,0,1
 Beinasco,"via San Felice, zona industriale, proponiamo in vendita capannone di",1,0,,,8.0,3,1
@@ -273,11 +274,10 @@ Beinasco,via manzoni,1,1,,,0.0,0,0
 Beinasco,viale Generale Perotti,1,0,,,0.0,0,1
 Beinasco,viale Papa Giovanni Xxiii,1,0,,,0.0,0,1
 Beinasco,vicolo Antonio Trucchi,1,1,,,22.0,0,0
-Borgone Susa,"Frazione Chiampano a Borgone Susa , a sol... Mappa aggiornato",1,1,30000.0,,9.0,7,0
 Borgone Susa,Piazza Montabone s.n.c,1,0,,,1.0,0,1
 Borgone Susa,Strada Provinciale del Monginevro,1,1,199500.0,,21.0,0,0
 Borgone Susa,Via A. Abegg,6,0,,,13.0,0,6
-Borgone Susa,"Via A.... Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",1,0,,,4.0,10,1
+Borgone Susa,"Via A.... Piemonte, Torino Visualizza foto Villetta indipendente in vendita di",2,1,87000.0,,6.5,17,1
 Borgone Susa,Via Bobba Guido,1,0,,,15.0,0,1
 Borgone Susa,Via Bruno Mosconi,3,0,,,17.0,0,3
 Borgone Susa,Via Condove,1,0,,,22.0,0,1
@@ -291,21 +291,21 @@ Borgone Susa,Via dei Gravè,1,0,,,13.0,0,1
 Borgone Susa,frazione Chiampano Borgone Susa,1,0,,,10.0,0,1
 Borgone Susa,piazza Montabone,2,1,,,13.5,0,1
 Borgone Susa,via 4 Novembre,1,0,,,0.0,0,1
-Borgone Susa,via A. Abegg,3,2,114500.0,,29.0,0,1
+Borgone Susa,via A. Abegg,3,2,117000.0,,29.0,0,1
 Borgone Susa,via Abegg,1,1,,,34.0,0,0
 Borgone Susa,via Augusto Abegg,8,4,350000.0,2405.03,14.5,0,4
 Borgone Susa,via Augusto Abegg ... L'appartamento è stato ristrutturato circa,1,0,,,28.0,0,1
 Borgone Susa,via Augusto Abegg Borgone Susa. Ottimo,1,0,,,32.0,0,1
 Borgone Susa,via Augusto Abegg. Da,1,0,,,30.0,0,1
 Borgone Susa,via Bruno Mosconi,1,0,,,0.0,0,1
-Borgone Susa,via Condove,2,2,259000.0,,29.5,0,0
+Borgone Susa,via Condove,2,1,259000.0,,29.5,0,1
 Borgone Susa,via Dei Gravè,1,0,,,0.0,0,1
 Borgone Susa,via Felice Falco,1,0,,,23.0,0,1
 Borgone Susa,via Guglielmo,1,0,,,0.0,0,1
-Borgone Susa,via Guido Bobba,2,1,30000.0,,12.5,0,1
+Borgone Susa,via Guido Bobba,2,0,,,12.0,0,2
 Borgone Susa,via Moncenisio,1,0,,,23.0,0,1
 Borgone Susa,via Montenero,3,2,186000.0,,30.0,0,1
-Borgone Susa,via Ponte Dora,2,1,108000.0,1800.0,17.0,0,1
+Borgone Susa,via Ponte Dora,2,1,18108000.0,,17.0,0,1
 Borgone Susa,via Roma,1,0,,,7.0,0,1
 Borgone Susa,via Tarro Boiro,2,2,45000.0,642.86,34.0,0,0
 Borgone Susa,via Tenente Mario,1,0,,,0.0,0,1
@@ -315,30 +315,33 @@ Borgone Susa,via dei Grave',1,0,,,0.0,0,1
 Borgone Susa,via dei Gravè,1,0,,,32.0,0,1
 Borgone Susa,via gravè,1,0,,,6.0,0,1
 Bruino,"Piazza Municipio, proponiamo in locazione locale commerciale di",1,0,,,11.0,0,1
-Bruino,Via Bruino,1,0,,,0.0,0,1
+Bruino,Via Bruino,2,1,345000.0,3833.33,0.0,0,1
 Bruino,"Via Bruino Emilia-Romagna, Modena Visualizza foto Appartamento in affitto di",1,0,,,21.0,10,1
 Bruino,Via Don Bosco,1,0,,,0.0,0,1
-Bruino,Via G. Marconi,2,1,270000.0,540.0,9.0,2,1
+Bruino,Via G. Marconi,2,1,270000.0,540.0,9.5,2,1
 Bruino,"Via Giaveno - Via Volvera ,precisamente in Via G. Marconi a circa",1,0,,,0.0,0,1
 Bruino,"Via Giaveno - Via Volvera, precisamente in Via G. Marconi a circa",1,1,270000.0,,22.0,0,0
-Bruino,"Via Giaveno - Via Volvera,precisamente in Via G. Marconi a circa",2,2,159500.0,188.24,14.0,7,0
+Bruino,"Via Giaveno - Via Volvera,precisamente in Via G. Marconi a circa",2,2,159500.0,188.24,14.5,7,0
 Bruino,Via Marconi57,1,0,,,4.0,0,1
 Bruino,Via Monte Bianco,1,0,,,0.0,0,1
-Bruino,Via Orbassano,1,1,,,4.0,0,0
+Bruino,Via Orbassano,1,1,,,5.0,0,0
 Bruino,Via Piossasco,1,0,,,0.0,0,1
+Bruino,Via Rocciamelone,1,1,169000.0,1373.98,0.0,0,0
+Bruino,Via San Rocco,1,1,,,0.0,0,0
 Bruino,Via dei Ciclamini VILLA BIFAMILIARE INDIPENDENTE SU,1,1,,,22.0,0,0
 Bruino,Viale dei Tigli a Bruino,1,0,,,0.0,0,1
-Bruino,via Avigliana,1,1,,,2.0,0,0
+Bruino,via Avigliana,1,1,,,3.0,0,0
 Bruino,via Bruino,1,0,,,3.0,0,1
 Bruino,via Bruino Comune del,1,0,,,9.0,0,1
 Bruino,via Don Bosco,1,1,225000.0,,22.0,0,0
 Bruino,via Don Giovanni Bosco,1,1,,,22.0,0,0
 Bruino,via Ferdinando Magellano,1,0,,,0.0,0,1
+Bruino,via Galileo Ferraris,1,1,,,0.0,0,0
 Bruino,via Giambattista Tiepolo,1,0,,,4.0,0,1
 Bruino,via Giovanni Bosco. Buono,1,0,,,3.0,0,1
 Bruino,via Monteverdi. Piano,1,0,,,4.0,0,1
-Bruino,via Pinerolo-Susa,1,0,,,0.0,0,1
-Bruino,via Piossasco,1,1,,,2.0,0,0
+Bruino,via Pinerolo-Susa,1,1,,,1.0,0,0
+Bruino,via Piossasco,1,1,3479399.0,,3.0,0,0
 Bruino,via Rocciamelone,1,1,,,22.0,0,0
 Bruino,via Rocciamelone Bruino. Nuova,1,0,,,4.0,0,1
 Bruino,via Torino,4,2,170000.0,3484.85,9.5,0,2
@@ -346,7 +349,7 @@ Bruino,via VOLVERA,1,0,,,2.0,1,1
 Bruino,via Verdi,1,1,,,12.0,0,0
 Bruino,via Volvera,1,0,,,4.0,0,1
 Bruino,via dei Ciclamini,1,0,,,4.0,0,1
-Bruino,via piossasco,1,1,169000.0,177.89,22.0,0,0
+Bruino,via piossasco,2,2,169000.0,177.89,11.0,0,0
 Bruino,via sangano,1,0,,,4.0,0,1
 Bruino,via torino,1,1,195000.0,,6.0,0,0
 Bruino,via vittorio alfieri,1,1,259000.0,,22.0,0,0
@@ -354,16 +357,16 @@ Bruino,viale Marconi,1,0,,,14.0,0,1
 Bruzolo,Piazza del Moro,1,0,,,22.0,0,1
 Bruzolo,Via Bologna,2,0,,,2.0,0,2
 Bruzolo,Via Cassanera,4,1,285000.0,,13.0,8,3
-Bruzolo,"Via Silvio Borgis, Bruzolo",1,1,250000.0,,16.0,0,0
+Bruzolo,"Via Silvio Borgis, Bruzolo",1,1,250000.0,,17.0,0,0
 Bruzolo,Via dei Mille,1,0,,,6.0,0,1
-Bruzolo,località dove Mappa aggiornato più di un mese fa,1,1,165000.0,,25.0,4,0
-Bruzolo,via Carlo Emanuele I,1,1,,,1.0,0,0
-Bruzolo,via F. Marconcini Bruzolo. Nuova,1,1,285000.0,1357.14,4.0,0,0
+Bruzolo,località dove Mappa aggiornato più di un mese fa,1,1,23000.0,,25.0,4,0
+Bruzolo,via Carlo Emanuele I,1,1,,,2.0,0,0
+Bruzolo,via F. Marconcini Bruzolo. Nuova,1,1,285000.0,1357.14,5.0,0,0
 Bruzolo,via carlo emanuele I,1,1,,,0.0,0,0
 Bussoleno,Borgata coldimosso Susa. Da,1,0,,,4.0,0,1
 Bussoleno,Strada Monginevro,3,1,185000.0,,0.0,0,2
 Bussoleno,Via San Lorenzo,1,0,,,9.0,0,1
-Bussoleno,"Via Traforo, Bussoleno",1,1,130000.0,,26.0,0,0
+Bussoleno,"Via Traforo, Bussoleno",1,1,130000.0,,27.0,0,0
 Bussoleno,Via della Bocciofila,3,0,,,2.0,1,3
 Bussoleno,"Viale Lungo Dora, Bussoleno",1,0,,,0.0,0,1
 Bussoleno,"strada principale, si trova un negozio di",1,0,,,3.0,0,1
@@ -380,11 +383,11 @@ Buttigliera Alta,Via IV Novembre,1,1,,,38.0,0,0
 Buttigliera Alta,Via Mario Greco,1,0,,,15.0,0,1
 Buttigliera Alta,Via Monte Bianco,1,0,,,0.0,0,1
 Buttigliera Alta,Via Reano,3,1,,,5.0,0,2
-Buttigliera Alta,Via Rivoli,2,2,159000.0,1127.66,10.5,0,0
+Buttigliera Alta,Via Rivoli,2,2,159000.0,1127.66,11.5,0,0
 Buttigliera Alta,Via Rocciamelone,1,1,,,0.0,0,0
 Buttigliera Alta,Via dei Comuni,2,1,79000.0,,11.5,2,1
-Buttigliera Alta,Via della Torre,2,1,225000.0,375.0,15.5,0,1
-Buttigliera Alta,Via della Torre - Ferriera,1,1,15000.0,147.06,38.0,2,0
+Buttigliera Alta,Via della Torre,2,1,225000.0,375.0,16.0,0,1
+Buttigliera Alta,Via della Torre - Ferriera,1,1,15000.0,,38.0,2,0
 Buttigliera Alta,corso Laghi,1,0,,,31.0,0,1
 Buttigliera Alta,corso Superga,1,0,,,0.0,0,1
 Buttigliera Alta,corso Torino,1,0,,,4.0,0,1
@@ -415,11 +418,11 @@ Caselette,Via Val della Torre,1,0,,,0.0,0,1
 Caselette,corso Susa,3,1,,,24.0,2,2
 Caselette,corso Susa Caselette. Nuova,1,0,,,4.0,0,1
 Caselette,via Alpignano,1,0,,,3.0,0,1
-Caselette,via Caselette,2,1,,,4.5,0,1
+Caselette,via Caselette,2,1,,,5.0,0,1
 Caselette,via Castello,1,1,,,14.0,0,0
 Caselette,via Ciriè,1,1,,,2.0,0,0
-Caselette,via Druento San Gillio. Nuova,2,1,,,16.5,0,1
-Caselette,via Pianezza. Buono,1,1,,,4.0,0,0
+Caselette,via Druento San Gillio. Nuova,2,1,,,17.0,0,1
+Caselette,via Pianezza. Buono,1,1,,,5.0,0,0
 Caselette,via Roma,4,2,,,4.0,0,2
 Caselette,via San Giovanni Bosco Caselette. Buono,1,0,,,33.0,0,1
 Caselette,via San Giovanni Bosco Caselette. Ottimo,1,0,,,4.0,0,1
@@ -436,7 +439,7 @@ Chiomonte,via III Reggimento Alpini,4,2,,,12.5,0,2
 Chiomonte,via Soubeyrand,1,1,,,33.0,0,0
 Chiomonte,via Villa Ferraro,1,1,,,28.0,0,0
 Chiomonte,via levis Chiomonte. Buono stato,1,1,,,26.0,0,0
-Chiusa di San Michele,Borgata Basinatto,2,2,,,16.5,0,0
+Chiusa di San Michele,Borgata Basinatto,2,2,210000.0,,16.5,0,0
 Chiusa di San Michele,Via Barella,2,0,,,0.0,0,2
 Chiusa di San Michele,Via Ex Combattenti,1,0,,,0.0,0,1
 Chiusa di San Michele,Via Pragallo,1,0,,,0.0,0,1
@@ -445,17 +448,17 @@ Chiusa di San Michele,Via Susa a Chiusa di San Michele,1,0,,,5.0,0,1
 Chiusa di San Michele,Via Torino,1,0,,,0.0,0,1
 Chiusa di San Michele,Vicolo Amprimo,1,0,,,0.0,0,1
 Chiusa di San Michele,via E. L,1,1,,,29.0,0,0
-Chiusa di San Michele,via E. L. Barella,1,1,,,1.0,0,0
+Chiusa di San Michele,via E. L. Barella,1,1,,,2.0,0,0
 Chiusa di San Michele,via Ex,2,1,,,32.5,0,1
 Chiusa di San Michele,via Generale,1,1,,,34.0,0,0
 Chiusa di San Michele,via Roma,1,1,,,34.0,0,0
-Chiusa di San Michele,via Susa,5,4,,,33.0,0,1
+Chiusa di San Michele,via Susa,5,4,30000.0,,33.0,0,1
 Chiusa di San Michele,via Torino,2,2,158000.0,1053.33,33.5,0,0
 Chiusa di San Michele,vicolo G. Pietro Riva,1,0,,,20.0,0,1
 Chiusa di San Michele,vicolo Nuovo,1,0,,,18.0,0,1
 Coazze,Borgata Brando,1,0,,,2.0,0,1
-Coazze,Borgata Bue,1,1,,,28.0,0,0
-Coazze,Borgata Combacalda,3,0,,,4.0,0,3
+Coazze,Borgata Bue,1,1,,,29.0,0,0
+Coazze,Borgata Combacalda,3,1,,,4.0,0,2
 Coazze,Borgata Freinetto,1,0,,,8.0,0,1
 Coazze,Borgata Galleana,1,0,,,9.0,0,1
 Coazze,Borgata Galleana. Buono stato,1,0,,,4.0,0,1
@@ -463,24 +466,28 @@ Coazze,Borgata Pantera,1,0,,,2.0,0,1
 Coazze,Borgata Ruadamonte Coazze. Da,1,0,,,4.0,0,1
 Coazze,Borgata prialli,1,1,,,29.0,0,0
 Coazze,Borgata trucetto,1,0,,,4.0,0,1
+Coazze,Strada Comunale da Villarbasse,1,1,,,0.0,0,0
+Coazze,Via A. Amprino,1,1,37501.0,528.18,0.0,0,0
+Coazze,Via A. Amprino a Coazze,1,1,,,0.0,0,0
 Coazze,Via Freinetto,2,0,,,0.0,0,2
 Coazze,Via Giulio Cesare Gennai,1,0,,,3.0,0,1
+Coazze,Via Matteotti,2,2,45000.0,750.0,0.0,0,0
 Coazze,Viale Italia,1,0,,,25.0,0,1
 Coazze,via Armando Amprino,1,1,,,1.0,0,0
-Coazze,via Camillo Benso di Cavour,1,1,,,4.0,0,0
+Coazze,via Camillo Benso di Cavour,1,1,,,5.0,0,0
 Coazze,via Coazze,3,1,270000.0,,4.0,0,2
 Coazze,via Coazze. Ottimo stato,1,0,,,8.0,0,1
-Coazze,via Freinetto,2,1,,,20.0,0,1
-Coazze,via Giaveno,3,2,,,15.0,0,1
+Coazze,via Freinetto,2,1,,,20.5,0,1
+Coazze,via Giaveno,3,1,,,15.0,0,2
 Coazze,via Matteotti,1,1,45000.0,750.0,1.0,0,0
 Coazze,via Montenero,1,0,,,0.0,0,1
 Coazze,via Sangonetto. Buono stato,1,0,,,4.0,0,1
 Coazze,via coazze,1,0,,,0.0,0,1
-Coazze,via dei Molè,2,2,49000.0,1400.0,8.0,0,0
+Coazze,via dei Molè,2,1,49000.0,1400.0,7.5,0,1
 Coazze,via dei Molè. Buono stato,1,0,,,4.0,0,1
 Coazze,via freinetto,1,0,,,12.0,0,1
 Coazze,via matteotti,1,1,,,29.0,0,0
-Coazze,via selvaggio Coazze. Ottimo stato,1,1,,,16.0,0,0
+Coazze,via selvaggio Coazze. Ottimo stato,1,1,,,17.0,0,0
 Coazze,via sertorio,1,1,,,24.0,0,0
 Coazze,viale Italia,1,0,,,4.0,0,1
 Collegno,Corso Francia,2,0,,,0.0,0,2
@@ -492,7 +499,7 @@ Collegno,Via A. Manzoni,2,0,,,0.0,0,2
 Collegno,Via Alessandro Manzoni,1,0,,,0.0,0,1
 Collegno,Via Alessandro Manzoni a Collegno,1,0,,,0.0,0,1
 Collegno,Via Alfredo Catalani,1,0,,,0.0,0,1
-Collegno,Via Almese appartamento,1,1,115000.0,1769.23,2.0,0,0
+Collegno,Via Almese appartamento,1,0,,,1.0,0,1
 Collegno,Via Antico Filatoio,1,0,,,0.0,0,1
 Collegno,Via Damiano Chiesa s.n.c,1,0,,,0.0,0,1
 Collegno,Via Don Giovanni Bosco,1,0,,,0.0,0,1
@@ -519,11 +526,12 @@ Collegno,Via Vandalino,1,0,,,0.0,0,1
 Collegno,Via Venaria,1,0,,,0.0,0,1
 Collegno,Via Vittorio Sassi,1,0,,,0.0,0,1
 Collegno,Via della Croce,1,0,,,0.0,0,1
+Collegno,Viale Antonio Gramsci,1,1,39000.0,195.0,0.0,0,0
 Collegno,Viale Antonio Gramsci a Collegno,1,0,,,6.0,0,1
 Collegno,corso Antony,1,0,,,5.0,0,1
-Collegno,corso Francia,3,1,,,6.0,0,2
+Collegno,corso Francia,3,0,,,6.0,0,3
 Collegno,corso Francia. Buono stato,2,0,,,9.0,0,2
-Collegno,corso John Fitzgerald,2,1,,,14.5,0,1
+Collegno,corso John Fitzgerald,2,1,,,15.0,0,1
 Collegno,corso palmiro togliatti,1,0,,,9.0,0,1
 Collegno,piazza 4 Novembre. Ottimo,1,0,,,0.0,0,1
 Collegno,piazza IV Novembre,1,0,,,0.0,0,1
@@ -544,7 +552,7 @@ Collegno,via Edmondo De Amicis. Buono,1,0,,,1.0,0,1
 Collegno,via Fabbrichetta,2,0,,,0.0,0,2
 Collegno,via Fabio Filzi,1,0,,,8.0,0,1
 Collegno,via Gioacchino Rossini,1,0,,,8.0,0,1
-Collegno,via Giorgio La Pira,3,2,,,25.0,0,1
+Collegno,via Giorgio La Pira,3,0,,,24.0,0,3
 Collegno,via Giorgio la Pira. Collegno. Nuovo,1,0,,,4.0,0,1
 Collegno,via Giuseppe di Vittorio. Collegno. Da,1,0,,,4.0,0,1
 Collegno,via Leonardo da Vinci,1,0,,,14.0,0,1
@@ -560,14 +568,14 @@ Collegno,via Pintor Giaime,1,0,,,1.0,0,1
 Collegno,via Podgora,3,1,,,7.0,0,2
 Collegno,via Primo Levi,1,1,,,12.0,0,0
 Collegno,via Sacra San Michele,1,0,,,17.0,0,1
-Collegno,via Sergio Allegri. Ottimo,1,1,,,4.0,0,0
+Collegno,via Sergio Allegri. Ottimo,1,1,,,5.0,0,0
 Collegno,via Serpera,1,0,,,13.0,0,1
 Collegno,via Sestriere,1,0,,,0.0,0,1
 Collegno,via Susa,1,0,,,2.0,0,1
 Collegno,via TORINO. Buono stato,1,0,,,0.0,0,1
 Collegno,via Teresio Pochettino,2,0,,,6.5,0,2
 Collegno,via Torino,1,0,,,2.0,0,1
-Collegno,via Torquato Tasso,1,1,,,10.0,0,0
+Collegno,via Torquato Tasso,1,1,,,11.0,0,0
 Collegno,via Trieste,1,0,,,1.0,0,1
 Collegno,via Villa Cristina,1,0,,,4.0,0,1
 Collegno,via Vincenzo Gioberti,1,1,,,34.0,0,0
@@ -581,12 +589,12 @@ Collegno,via renzo cattaneo. Collegno. Buono stato,1,0,,,4.0,0,1
 Collegno,via vittorio veneto,1,1,,,21.0,0,0
 Collegno,viale XXIV Maggio,1,0,,,2.0,0,1
 Condove,Borgata Alotti Condove. Buono stato,1,1,,,34.0,0,0
-Condove,Borgata Bellafugera Condove. Buono,1,1,,,24.0,0,0
+Condove,Borgata Bellafugera Condove. Buono,1,1,,,25.0,0,0
 Condove,Borgata Belle Fugera Condove. Da,1,1,,,34.0,0,0
 Condove,Borgata Bert,1,0,,,16.0,0,1
 Condove,Borgata Borlera,2,1,,,9.5,0,1
 Condove,Borgata Colombo,1,0,,,18.0,0,1
-Condove,Borgata Combe,1,1,,,16.0,0,0
+Condove,Borgata Combe,1,1,,,17.0,0,0
 Condove,Borgata Pratobotrile,1,0,,,0.0,0,1
 Condove,Borgata Pratobottrile,1,0,,,2.0,0,1
 Condove,Strada Comunale Condove - Mocchie,3,1,,,4.0,0,2
@@ -597,14 +605,14 @@ Condove,Via LEOPARDI,1,0,,,0.0,0,1
 Condove,Via Moncenisio,1,0,,,6.0,0,1
 Condove,Via Roma a Condove,1,1,,,19.0,0,0
 Condove,Via delle Mura,1,0,,,0.0,0,1
-Condove,via Baratta,1,1,,,25.0,0,0
+Condove,via Baratta,1,1,,,26.0,0,0
 Condove,via Bergera,1,0,,,1.0,0,1
 Condove,via Condove,1,0,,,4.0,0,1
-Condove,via Conte Verde,1,1,,,16.0,0,0
+Condove,via Conte Verde,1,1,,,17.0,0,0
 Condove,via Francesco Re,1,1,,,18.0,0,0
 Condove,via G. Matteotti,6,0,,,1.5,0,6
-Condove,via Generale Armando Pezzana,1,1,,,3.0,0,0
-Condove,via Giacomo Matteotti,1,0,,,4.0,0,1
+Condove,via Generale Armando Pezzana,1,1,,,4.0,0,0
+Condove,via Giacomo Matteotti,1,1,,,24.0,0,0
 Condove,via Leopardi,2,0,,,0.0,0,2
 Condove,via Superga,1,0,,,15.0,0,1
 Condove,via delle Mura,1,0,,,4.0,0,1
@@ -631,11 +639,11 @@ Druento,via Druento San Gillio. Nuova,1,0,,,11.0,0,1
 Druento,via Druento viale Aldo Moro Pianezza. Nuovo,1,0,,,2.0,0,1
 Druento,via Druento. Buono stato,1,0,,,0.0,0,1
 Druento,via Garibaldi,1,0,,,3.0,0,1
-Druento,via Giosuè Carducci,2,2,,,13.0,0,0
+Druento,via Giosuè Carducci,2,2,,,13.5,0,0
 Druento,via Italia,1,0,,,0.0,0,1
 Druento,via Madonna,1,1,,,22.0,0,0
-Druento,via San Giovanni Bosco,1,1,,,10.0,0,0
-Druento,via Torino,1,1,,,15.0,0,0
+Druento,via San Giovanni Bosco,1,1,,,11.0,0,0
+Druento,via Torino,1,1,,,16.0,0,0
 Druento,via Torino Druento,1,0,,,0.0,0,1
 Druento,via Torino Druento. Da ristrutturare,1,1,,,1.0,0,0
 Druento,via Vittorio Alfieri Druento. Da,1,1,,,18.0,0,0
@@ -690,7 +698,7 @@ Fiano,via Tiberina,1,0,,,0.0,0,1
 Fiano,via Tiberina. Buono,1,0,,,1.0,0,1
 Fiano,via Treves,1,0,,,17.0,0,1
 Fiano,via Umberto Terracini,1,0,,,1.0,0,1
-Fiano,via Venezia,4,1,,,3.0,0,3
+Fiano,via Venezia,4,1,,,3.5,0,3
 Fiano,via carlo alberto dalla,1,1,,,22.0,0,0
 Fiano,via del Laghetto,1,1,,,22.0,0,0
 Fiano,via del Sassone,1,0,,,3.0,0,1
@@ -699,7 +707,7 @@ Fiano,via delle Baiocchelle,1,0,,,0.0,0,1
 Fiano,via delle Cascate,1,0,,,8.0,0,1
 Fiano,via di Valle Conca,1,0,,,0.0,0,1
 Fiano,via ottavio borla,1,1,,,18.0,0,0
-Fiano,via torino,1,1,,,15.0,0,0
+Fiano,via torino,1,0,,,14.0,0,1
 Giaglione,Frazione Rastella,1,1,,,34.0,0,0
 Giaglione,Frazione San Giovanni a Giaglione,1,0,,,0.0,0,1
 Giaglione,frazione San Giuseppe,1,0,,,0.0,0,1
@@ -710,8 +718,8 @@ Giaveno,Borgata Piancera Giaveno. Ottimo stato,1,0,,,0.0,0,1
 Giaveno,Borgata Pogolotti,1,0,,,0.0,0,1
 Giaveno,Borgata Prafieul Giaveno. Buono stato,1,0,,,0.0,0,1
 Giaveno,Borgata Provonda Giaveno. Ottimo,1,0,,,0.0,0,1
-Giaveno,Borgata San Filippo,2,0,,,4.5,0,2
-Giaveno,Borgata San Filippo Giaveno. Da,1,1,,,26.0,0,0
+Giaveno,Borgata San Filippo,2,1,,,18.0,0,1
+Giaveno,Borgata San Filippo Giaveno. Da,1,1,,,27.0,0,0
 Giaveno,Borgata Sarà,1,0,,,4.0,0,1
 Giaveno,Borgata Selvaggio Sopra,1,1,,,23.0,0,0
 Giaveno,Borgata Selvaggio Sotto,1,0,,,6.0,0,1
@@ -720,12 +728,12 @@ Giaveno,Borgata Ughettera,1,0,,,0.0,0,1
 Giaveno,Borgata Verna,1,0,,,0.0,0,1
 Giaveno,Borgata barolà,1,0,,,4.0,0,1
 Giaveno,Borgata cordria,1,0,,,14.0,0,1
-Giaveno,Borgata selvaggio sopra,1,1,,,26.0,0,0
+Giaveno,Borgata selvaggio sopra,1,1,,,27.0,0,0
 Giaveno,Borgata verna,1,0,,,5.0,0,1
 Giaveno,Strada della Chioma,1,0,,,7.0,0,1
 Giaveno,Via Alpe Colombino,1,0,,,19.0,0,1
 Giaveno,Via Bovero Monsignor,1,0,,,0.0,0,1
-Giaveno,Via Coazze,1,0,,,11.0,0,1
+Giaveno,Via Coazze,1,1,,,17.0,0,0
 Giaveno,Via Colpastore,1,0,,,7.0,0,1
 Giaveno,Via Giaveno,1,0,,,0.0,0,1
 Giaveno,Via Giaveno s.n.c,1,0,,,0.0,0,1
@@ -752,9 +760,9 @@ Giaveno,via Garnier Valletti,1,1,,,34.0,0,0
 Giaveno,via Martiri della Libertà,1,0,,,0.0,0,1
 Giaveno,via Maurizio Guglielmino,1,0,,,25.0,0,1
 Giaveno,via Pinerolo,1,0,,,0.0,0,1
-Giaveno,via Pontepietra Giaveno. Ottimo,1,0,,,23.0,0,1
-Giaveno,via Ruata Sangone,2,1,,,3.5,0,1
-Giaveno,via Sacra di San Michele,2,1,,,8.5,0,1
+Giaveno,via Pontepietra Giaveno. Ottimo,1,1,,,29.0,0,0
+Giaveno,via Ruata Sangone,2,0,,,3.0,0,2
+Giaveno,via Sacra di San Michele,2,1,,,9.0,0,1
 Giaveno,via San Luigi,1,1,,,34.0,0,0
 Giaveno,via Umberto I. Ottimo,1,0,,,4.0,0,1
 Giaveno,via Villanova,1,0,,,14.0,0,1
@@ -764,25 +772,25 @@ Giaveno,via dei rododendri,1,1,,,2.0,0,0
 Giaveno,via genolino,1,1,,,34.0,0,0
 Giaveno,via martiri della libertà,1,0,,,16.0,0,1
 Giaveno,via san michele,1,0,,,7.0,0,1
-Giaveno,via selvaggio,2,2,,,9.0,0,0
+Giaveno,via selvaggio,2,2,,,9.5,0,0
 Giaveno,via teresa marchini,1,0,,,0.0,0,1
 Giaveno,via vietta,1,0,,,11.0,0,1
 Giaveno,viale Regina Elena,1,0,,,4.0,0,1
 Givoletto,Via A. Avogadro,1,0,,,5.0,0,1
 Givoletto,Via Alpignano,2,0,,,9.0,0,2
 Givoletto,Via Ciriè,3,0,,,0.0,0,3
-Givoletto,Via Druento,2,2,,,4.0,0,0
+Givoletto,Via Druento,2,2,,,4.5,0,0
 Givoletto,Via Givoletto,1,0,,,0.0,0,1
 Givoletto,Via Monviso,1,0,,,0.0,0,1
 Givoletto,Via Santa Maria s.n.c,1,0,,,0.0,0,1
 Givoletto,via Alpignano,1,1,265000.0,1558.82,22.0,0,0
 Givoletto,via Avigliana,1,0,,,8.0,0,1
-Givoletto,via Borgo Nuovo,1,1,,,4.0,0,0
+Givoletto,via Borgo Nuovo,1,1,,,5.0,0,0
 Givoletto,via Brione,1,0,,,5.0,0,1
 Givoletto,via Capitan De Poi Givoletto. Da,1,1,,,22.0,0,0
 Givoletto,via Don Rolle,1,1,,,19.0,0,0
-Givoletto,via Druento Givoletto. Buono stato,1,1,,,5.0,0,0
-Givoletto,via Forvilla,1,1,,,3.0,0,0
+Givoletto,via Druento Givoletto. Buono stato,1,1,,,6.0,0,0
+Givoletto,via Forvilla,1,1,,,4.0,0,0
 Givoletto,via Givoletto,2,1,,,3.5,0,1
 Givoletto,via La Grange Givoletto. Buono stato,1,0,,,6.0,0,1
 Givoletto,via Lanzo Givoletto. Posto auto,1,0,,,16.0,0,1
@@ -805,19 +813,19 @@ Grugliasco,Piazza Vittorio Allais,1,0,,,0.0,0,1
 Grugliasco,Strada Antica di Grugliasco,1,0,,,25.0,0,1
 Grugliasco,Strada Antica di Rivoli,1,0,,,6.0,0,1
 Grugliasco,Strada Del Portone,1,0,,,2.0,0,1
-Grugliasco,Strada del Gerbido,1,1,,,5.0,0,0
+Grugliasco,Strada del Gerbido,1,1,,,6.0,0,0
 Grugliasco,Strada della Pronda,2,1,205000.0,2050.0,8.5,0,1
 Grugliasco,Via Barbera del Valles,1,0,,,0.0,0,1
 Grugliasco,Via Bongiovanni,3,0,,,0.0,0,3
 Grugliasco,Via C.Girardi,1,0,,,1.0,0,1
 Grugliasco,Via Crea,1,0,,,0.0,0,1
 Grugliasco,Via Cristoforo Colombo,1,1,239000.0,2343.14,0.0,0,0
-Grugliasco,Via Don Mario Caustico,1,1,100000.0,1538.46,2.0,0,0
+Grugliasco,Via Don Mario Caustico,1,1,100000.0,1538.46,3.0,0,0
 Grugliasco,Via E. Montanaro,2,0,,,0.0,0,2
 Grugliasco,Via Enrico Toti a Grugliasco,1,0,,,0.0,0,1
 Grugliasco,Via Giotto,1,0,,,1.0,0,1
 Grugliasco,Via Lamarmora,1,0,,,20.0,0,1
-Grugliasco,Via Latina,2,1,,,3.0,0,1
+Grugliasco,Via Latina,2,1,,,3.5,0,1
 Grugliasco,Via Marco Polo,1,0,,,0.0,0,1
 Grugliasco,Via Michelangelo Buonarroti,2,0,,,4.0,0,2
 Grugliasco,Via Michiardi,1,1,459000.0,2403.14,0.0,0,0
@@ -827,7 +835,7 @@ Grugliasco,Via Nino Bixio a Vinovo,1,0,,,0.0,0,1
 Grugliasco,Via Primo Levi,1,0,,,4.0,0,1
 Grugliasco,Via Rieti,2,0,,,2.0,0,2
 Grugliasco,Via San Firmino,1,0,,,3.0,0,1
-Grugliasco,Via San Gregorio Magno,2,1,,,2.5,0,1
+Grugliasco,Via San Gregorio Magno,2,1,,,3.0,0,1
 Grugliasco,Via Severino Doppi,3,0,,,0.0,0,3
 Grugliasco,Via Stampalia,1,0,,,1.0,0,1
 Grugliasco,Via Vincenzo Foppa,1,1,,,0.0,0,0
@@ -848,7 +856,7 @@ Grugliasco,via Bongiovanni,1,0,,,4.0,0,1
 Grugliasco,via Cavalieri di Vittorio,1,0,,,4.0,0,1
 Grugliasco,via Cavour,1,0,,,19.0,0,1
 Grugliasco,via Crea,1,0,,,16.0,0,1
-Grugliasco,via Cristoforo Colombo,1,1,,,0.0,0,0
+Grugliasco,via Cristoforo Colombo,1,1,,,1.0,0,0
 Grugliasco,via Don Caustico,1,0,,,6.0,0,1
 Grugliasco,via Don Mario Caustico,2,0,,,6.5,0,2
 Grugliasco,via E. Montanaro,1,0,,,22.0,0,1
@@ -862,36 +870,36 @@ Grugliasco,via Giovanni Tobanelli,1,1,,,34.0,0,0
 Grugliasco,via Giuseppe Di,1,0,,,4.0,0,1
 Grugliasco,via Giuseppe di,1,0,,,0.0,0,1
 Grugliasco,via Gorizia,1,0,,,6.0,0,1
-Grugliasco,via Guglielmo d'Amico,2,2,,,27.0,0,0
+Grugliasco,via Guglielmo d'Amico,2,1,,,26.5,0,1
 Grugliasco,via Latina,1,0,,,0.0,0,1
-Grugliasco,via Latina. Ottimo stato,1,1,,,10.0,0,0
+Grugliasco,via Latina. Ottimo stato,1,0,,,9.0,0,1
 Grugliasco,via Leonardo da Vinci,1,0,,,12.0,0,1
 Grugliasco,via Milano,1,1,,,33.0,0,0
 Grugliasco,via Moncalieri,2,0,,,1.0,0,2
 Grugliasco,via Nazario Sauro,1,0,,,0.0,0,1
 Grugliasco,via Odoardo Santorelli,1,0,,,21.0,0,1
 Grugliasco,via Panealbo,1,0,,,28.0,0,1
-Grugliasco,via Rieti,1,1,,,28.0,0,0
-Grugliasco,via Rivalta,1,0,,,0.0,0,1
+Grugliasco,via Rieti,1,1,,,29.0,0,0
+Grugliasco,via Rivalta,1,1,,,8.0,0,0
 Grugliasco,via Rovereto,1,0,,,0.0,0,1
 Grugliasco,via Severino Doppi,2,1,,,23.0,0,1
-Grugliasco,via Silvio Allason,1,0,,,9.0,0,1
+Grugliasco,via Silvio Allason,1,1,,,34.0,0,0
 Grugliasco,via Stampalia. Da,1,1,,,28.0,0,0
-Grugliasco,via Tripoli,2,1,120000.0,,22.5,0,1
+Grugliasco,via Tripoli,2,0,,,22.0,0,2
 Grugliasco,via alessandro la marmora,1,0,,,16.0,0,1
-Grugliasco,via dell'Indipendenza,1,1,,,16.0,0,0
+Grugliasco,via dell'Indipendenza,1,1,,,17.0,0,0
 Grugliasco,via enrico montanaro,1,0,,,23.0,0,1
 Grugliasco,via giacosa. Nuovo,1,0,,,1.0,0,1
 Grugliasco,via giotto,1,0,,,0.0,0,1
 Grugliasco,via michelangelo,1,0,,,20.0,0,1
 Grugliasco,via primo levi,1,1,,,33.0,0,0
-Grugliasco,via stampalia,1,1,,,4.0,0,0
+Grugliasco,via stampalia,1,1,,,5.0,0,0
 Grugliasco,via ughetto. Ottimo stato,1,1,,,26.0,0,0
 Grugliasco,viale Fabrizio De Andrè,1,1,,,34.0,0,0
 Grugliasco,viale a gramsci,1,0,,,0.0,0,1
 La Cassa,VIA DELLE QUERCE,1,0,,,0.0,0,1
 La Cassa,Via A. Diaz,1,0,,,0.0,0,1
-La Cassa,Via Cambarlèt,2,1,,,2.0,0,1
+La Cassa,Via Cambarlèt,2,0,,,1.5,0,2
 La Cassa,Via Costabella s.n.c,1,0,,,0.0,0,1
 La Cassa,Via Edgardo Sogno,2,1,,,6.0,0,1
 La Cassa,Via Giuseppe Bonino,1,0,,,19.0,0,1
@@ -900,24 +908,24 @@ La Cassa,Via Lanzo,1,0,,,3.0,0,1
 La Cassa,Via Mattodera,1,0,,,3.0,0,1
 La Cassa,Via Regione Mattodera,1,0,,,19.0,0,1
 La Cassa,Via delle Querce,1,0,,,8.0,0,1
-La Cassa,piazza Michele Galetto,1,1,,,22.0,0,0
+La Cassa,piazza Michele Galetto,2,2,,,11.0,0,0
 La Cassa,via Armando Diaz,2,0,,,9.5,0,2
 La Cassa,via Avigliana,1,0,,,0.0,0,1
 La Cassa,via Baratonia,3,0,,,6.0,0,3
 La Cassa,via Giuseppe Bonino,3,0,,,15.0,0,3
 La Cassa,via Givoletto,1,0,,,9.0,0,1
-La Cassa,via Italia,2,2,250000.0,,7.5,0,0
+La Cassa,via Italia,2,1,250000.0,,7.5,0,1
 La Cassa,via La Cassa,2,0,,,0.5,0,2
 La Cassa,via La Cassa San Gillio. Buono stato,1,0,,,0.0,0,1
 La Cassa,via Lanzo,1,1,,,1.0,0,0
-La Cassa,via Torino,4,2,,,8.5,0,2
+La Cassa,via Torino,4,2,83000.0,976.47,8.5,0,2
 La Cassa,via Vittorio Veneto,2,1,,,20.0,0,1
 La Cassa,via delle Querce,2,0,,,3.0,0,2
 La Cassa,via italia,1,0,,,7.0,0,1
 La Cassa,via la Cassa,1,0,,,1.0,0,1
-La Cassa,via tORINO,2,2,,,21.0,0,0
+La Cassa,via tORINO,2,2,,,22.0,0,0
 La Cassa,via tORINO. Buono stato,1,0,,,13.0,0,1
-La Cassa,via via delle Querce,5,1,,,7.0,0,4
+La Cassa,via via delle Querce,6,2,,,6.5,0,4
 Mattie,via Bellando,1,1,,,29.0,0,0
 Mattie,via Grandi Tanze,1,1,,,34.0,0,0
 Mattie,via Mattie,2,0,,,2.0,0,2
@@ -939,25 +947,25 @@ Meana di Susa,via Mattie,1,0,,,0.0,0,1
 Meana di Susa,via armona. Da,1,1,,,34.0,0,0
 Mompantero,Frazione San Giuseppe,1,0,,,2.0,0,1
 Moncenisio,Via Moncenisio,6,1,,,0.5,0,5
-Moncenisio,Via Passo del Moncenisio,2,1,,,13.5,0,1
+Moncenisio,Via Passo del Moncenisio,2,1,,,14.0,0,1
 Moncenisio,via Moncenisio,7,5,,,27.0,0,2
 Moncenisio,via moncenisio. Buono stato,1,1,,,26.0,0,0
 Novalesa,Via Novalesa. Ville in vendita a Via Novalesa,1,0,,,9.0,0,1
 Oulx,Borgata Amazas,1,0,,,0.0,0,1
 Oulx,Piazza Federico Mistral,1,0,,,0.0,0,1
 Oulx,Piazza Mistral,1,1,158000.0,,33.0,0,0
-Oulx,Via Roma,2,1,,,12.0,0,1
-Oulx,corso Frejus,1,1,,,25.0,0,0
+Oulx,Via Roma,2,1,,,12.5,0,1
+Oulx,corso Frejus,1,1,,,26.0,0,0
 Oulx,corso Ortigara,1,0,,,8.0,0,1
 Oulx,corso Torino,1,1,,,26.0,0,0
 Oulx,piazza Europa,1,1,,,29.0,0,0
 Oulx,piazza Federico Mistral,1,0,,,3.0,0,1
-Oulx,via 25 Aprile,1,1,,,23.0,0,0
+Oulx,via 25 Aprile,1,1,,,24.0,0,0
 Oulx,via Bardonecchia,1,0,,,9.0,0,1
 Oulx,via Chateau,1,0,,,9.0,0,1
 Oulx,via Cotolivier,1,1,,,34.0,0,0
 Oulx,via Des Ambrois,1,1,,,27.0,0,0
-Oulx,via Frejus,1,1,,,25.0,0,0
+Oulx,via Frejus,1,1,,,26.0,0,0
 Oulx,via Monginevro,1,0,,,0.0,0,1
 Oulx,via Papa Giovanni XXIII,1,0,,,8.0,0,1
 Oulx,via Riccardo Ghiotti,1,1,,,34.0,0,0
@@ -1002,6 +1010,7 @@ Pianezza,via Don Virginio Meloni,4,0,,,3.5,0,4
 Pianezza,via Giacomo Matteotti,1,1,245000.0,2425.74,2.0,0,0
 Pianezza,via Giacomo Matteotti Pianezza. Nuovo,1,1,,,2.0,0,0
 Pianezza,via Giorgio La Pira. Ottimo,1,0,,,0.0,0,1
+Pianezza,via Guglielmo Marconi,1,1,,,0.0,0,0
 Pianezza,via La Cassa. Pianezza. Ottimo stato,1,1,,,40.0,0,0
 Pianezza,via Magellano. Buono,1,0,,,6.0,0,1
 Pianezza,via Maria Bricca,1,1,,,19.0,0,0
@@ -1009,7 +1018,7 @@ Pianezza,via Mario Lisa,1,0,,,28.0,0,1
 Pianezza,via Massimo D'Azeglio,1,0,,,8.0,0,1
 Pianezza,via Pianezza,6,3,,,0.0,0,3
 Pianezza,via Pianezza. Nuovo,2,1,,,1.0,0,1
-Pianezza,via Rosta,1,1,,,9.0,0,0
+Pianezza,via Rosta,1,1,,,10.0,0,0
 Pianezza,via Rubiana,1,1,,,29.0,0,0
 Pianezza,via San Bernardo,1,0,,,9.0,0,1
 Pianezza,via San Gabriele,4,1,,,4.0,0,3
@@ -1020,21 +1029,22 @@ Pianezza,via Sandro Pertini,1,0,,,3.0,0,1
 Pianezza,via Torino,2,0,,,10.0,0,2
 Pianezza,via Torino. Buono stato,1,0,,,4.0,0,1
 Pianezza,via Vercelli,1,0,,,0.0,0,1
-Pianezza,via dei Prati,1,0,,,23.0,0,1
+Pianezza,via dei Prati,1,1,,,24.0,0,0
 Pianezza,via druento Pianezza. Buono stato,1,1,,,34.0,0,0
 Pianezza,via gentileschi,1,0,,,0.0,0,1
 Pianezza,via jotty,1,0,,,2.0,0,1
 Pianezza,via rocciamelone Pianezza. Buono stato,1,0,,,3.0,0,1
-Pianezza,viale Aldo Moro,1,1,319000.0,,18.0,1,0
+Pianezza,viale Aldo Moro,1,1,319000.0,,19.0,1,0
 Reano,Via Maria Vittoria,1,0,,,0.0,0,1
 Reano,Via Reano,1,0,,,0.0,0,1
 Reano,Via Roma s.n.c,1,0,,,2.0,0,1
 Reano,Via Tetto,3,1,119000.0,1416.67,1.0,0,2
 Reano,Via Valgrana,4,0,,,0.0,0,4
 Reano,via Maria Vittoria,3,2,,,7.0,0,1
-Reano,via Monginevro. Rivoli. Nuovo,1,0,,,27.0,0,1
+Reano,via Monginevro. Rivoli. Nuovo,1,1,395000.0,,29.0,0,0
 Reano,via Principe della Cisterna,2,0,,,2.0,0,2
 Reano,via Reano,2,1,,,2.0,0,1
+Reano,via Tetto,1,1,,,0.0,0,0
 Reano,via Valgrana,2,0,,,4.0,0,2
 Reano,via roma Reano. Buono stato,1,1,,,4.0,0,0
 Reano,via valgrana Reano,6,1,,,2.5,0,5
@@ -1044,25 +1054,25 @@ Rivalta di Torino,Via Bellini,2,0,,,5.5,0,2
 Rivalta di Torino,Via Carignano,1,0,,,0.0,0,1
 Rivalta di Torino,Via Enrico Mattei a Rivalta di,1,0,,,0.0,0,1
 Rivalta di Torino,Via Giacomo Puccini,1,0,,,2.0,0,1
-Rivalta di Torino,Via Giaveno,1,1,,,18.0,0,0
+Rivalta di Torino,Via Giaveno,1,0,,,18.0,0,1
 Rivalta di Torino,Via Luigi Einaudi,1,0,,,0.0,0,1
 Rivalta di Torino,Via Mattei,1,0,,,2.0,0,1
 Rivalta di Torino,Via Piossasco,2,0,,,0.5,0,2
-Rivalta di Torino,Via San Vittore,1,1,,,10.0,0,0
+Rivalta di Torino,Via San Vittore,1,1,,,11.0,0,0
 Rivalta di Torino,Via Sibilla Aleramo,2,0,,,0.0,0,2
 Rivalta di Torino,Via Trento,1,0,,,0.0,0,1
 Rivalta di Torino,Via Trieste,2,0,,,0.0,0,2
 Rivalta di Torino,Via della Vallá,1,0,,,0.0,0,1
 Rivalta di Torino,Via gioberti,1,0,,,0.0,0,1
 Rivalta di Torino,via Carignano,1,0,,,0.0,0,1
-Rivalta di Torino,via Cesare Benevello Rivalta di Torino,1,1,,,0.0,0,0
+Rivalta di Torino,via Cesare Benevello Rivalta di Torino,1,0,,,0.0,0,1
 Rivalta di Torino,via Colle del,1,0,,,7.0,0,1
 Rivalta di Torino,via Giaveno,1,0,,,1.0,0,1
 Rivalta di Torino,via Giovanni da,1,0,,,21.0,0,1
 Rivalta di Torino,via Montegrappa,1,0,,,0.0,0,1
 Rivalta di Torino,via Roma,1,0,,,0.0,0,1
 Rivalta di Torino,via Sibilla Aleramo,1,0,,,0.0,0,1
-Rivalta di Torino,via Tetti Pereno Rivalta di Torino. Nuova,1,1,,,0.0,0,0
+Rivalta di Torino,via Tetti Pereno Rivalta di Torino. Nuova,1,0,,,0.0,0,1
 Rivalta di Torino,via Umberto I Rivalta di Torino. Da,1,0,,,0.0,0,1
 Rivalta di Torino,via della Vallà,1,0,,,21.0,0,1
 Rivoli,Corso Francia,2,0,,,0.5,0,2
@@ -1080,14 +1090,14 @@ Rivoli,Via Capra,1,0,,,8.0,0,1
 Rivoli,Via Cristalliera,1,0,,,0.0,0,1
 Rivoli,Via Cuorgnè,1,0,,,1.0,0,1
 Rivoli,Via Felisio,1,0,,,0.0,0,1
-Rivoli,Via Fratelli Piol,3,3,,,3.0,0,0
+Rivoli,Via Fratelli Piol,3,3,,,4.0,0,0
 Rivoli,Via Frejus,1,0,,,0.0,0,1
 Rivoli,Via G. Giolitti s.n.c,1,0,,,0.0,0,1
 Rivoli,Via G. Salvemini,1,0,,,0.0,0,1
 Rivoli,Via Monte Grappa,1,0,,,1.0,0,1
 Rivoli,Via Orbassano a Rivoli,1,0,,,1.0,0,1
 Rivoli,Via Orbassano s.n.c,1,0,,,1.0,0,1
-Rivoli,Via Pavia,2,0,,,3.0,0,2
+Rivoli,Via Pavia,2,1,,,3.5,0,1
 Rivoli,Via Pavia a Rivoli,1,0,,,0.0,0,1
 Rivoli,Via Pietrino Belli,1,0,,,5.0,0,1
 Rivoli,Via Po,1,0,,,0.0,0,1
@@ -1121,7 +1131,7 @@ Rivoli,via Alberto da Rivoli Rivoli. Buono stato,1,0,,,1.0,0,1
 Rivoli,via Alessandro Manzoni,1,0,,,0.0,0,1
 Rivoli,via Alpi Carniche,1,0,,,8.0,0,1
 Rivoli,via Alpignano,1,0,,,0.0,0,1
-Rivoli,via Aosta,1,0,,,33.0,0,1
+Rivoli,via Aosta,1,1,,,34.0,0,0
 Rivoli,via Arona,1,0,,,0.0,0,1
 Rivoli,via Assisi,1,0,,,6.0,0,1
 Rivoli,via Avigliana,1,0,,,0.0,0,1
@@ -1143,7 +1153,7 @@ Rivoli,via Cuneo,1,1,,,17.0,0,0
 Rivoli,via Cuorgnè,1,0,,,0.0,0,1
 Rivoli,via Felisio,1,0,,,25.0,0,1
 Rivoli,via Fratelli Macario,3,0,,,4.0,0,3
-Rivoli,via Fratelli Piol,5,2,,,0.0,0,3
+Rivoli,via Fratelli Piol,5,1,,,0.0,0,4
 Rivoli,via Fratelli Rosselli,1,0,,,9.0,0,1
 Rivoli,via G. Mazzini,1,0,,,0.0,0,1
 Rivoli,via Garessio,1,0,,,13.0,0,1
@@ -1153,8 +1163,8 @@ Rivoli,via Giovanni Battista,1,0,,,0.0,0,1
 Rivoli,via Giovanni Battista Rossano,1,0,,,0.0,0,1
 Rivoli,via Giuseppe Giacosa,1,1,,,0.0,0,0
 Rivoli,via Grado,1,0,,,1.0,0,1
-Rivoli,via L. Gatti,1,1,,,28.0,0,0
-Rivoli,via Leumann Napoleone. Rivoli. Ottimo stato,1,1,,,28.0,0,0
+Rivoli,via L. Gatti,1,1,,,29.0,0,0
+Rivoli,via Leumann Napoleone. Rivoli. Ottimo stato,1,0,,,27.0,0,1
 Rivoli,via Monte Rosa,2,0,,,6.0,0,2
 Rivoli,via Orbassano Rivoli. Buono stato,1,1,460000.0,,12.0,0,0
 Rivoli,via Orbetello,1,0,,,4.0,0,1
@@ -1176,7 +1186,7 @@ Rivoli,via Stresa,2,0,,,8.0,0,2
 Rivoli,via Tevere,1,0,,,16.0,0,1
 Rivoli,via Unità d'Italia,1,0,,,5.0,0,1
 Rivoli,via al Castello,2,1,,,0.0,0,1
-Rivoli,via alpi graie,1,1,,,16.0,0,0
+Rivoli,via alpi graie,1,1,,,17.0,0,0
 Rivoli,via capra,1,0,,,0.0,0,1
 Rivoli,via della Vittoria Rivoli. Nuova,1,0,,,0.0,0,1
 Rivoli,via fenestrelle. Buono,1,1,,,11.0,0,0
@@ -1201,7 +1211,7 @@ Rivoli,vicolo Castagnevizza,1,0,,,1.0,0,1
 Robassomero,Strada del bruco,1,0,,,6.0,0,1
 Robassomero,Via Anna Frank,1,0,,,0.0,0,1
 Robassomero,Via Giovanni Giolitti,3,1,,,4.0,0,2
-Robassomero,Via Giovanni Losa,1,1,,,16.0,0,0
+Robassomero,Via Giovanni Losa,1,1,,,17.0,0,0
 Robassomero,Via Robassomero,1,0,,,0.0,0,1
 Robassomero,corso Alcide De Gasperi,1,1,,,0.0,0,0
 Robassomero,via Diani,1,0,,,0.0,0,1
@@ -1211,7 +1221,7 @@ Robassomero,via Giovanni Losa Robassomero. Ottimo,1,0,,,4.0,0,1
 Robassomero,via Giuseppe Di,1,1,,,22.0,0,0
 Robassomero,via Robassomero,3,1,,,5.0,0,2
 Robassomero,via San Pietro,3,0,,,4.0,0,3
-Robassomero,via Torino,1,1,,,3.0,0,0
+Robassomero,via Torino,1,1,,,4.0,0,0
 Robassomero,via anna frank,1,0,,,4.0,0,1
 Robassomero,via canonico maffei,2,0,,,11.0,0,2
 Robassomero,via fiano,1,0,,,4.0,0,1
@@ -1220,20 +1230,20 @@ Rosta,Corso Susa,1,0,,,0.0,0,1
 Rosta,Strada Bucet,4,1,,,4.0,0,3
 Rosta,Strada Camporosso,1,0,,,0.0,0,1
 Rosta,Strada Ponata,1,0,,,4.0,0,1
-Rosta,Strada dei Campi,1,1,,,4.0,0,0
+Rosta,Strada dei Campi,1,1,,,5.0,0,0
 Rosta,Strada del Verné,1,0,,,2.0,0,1
 Rosta,Strada del closio,1,0,,,6.0,0,1
 Rosta,Strada della Risera,1,0,,,1.0,0,1
 Rosta,Via Józef Wybicki,1,0,,,0.0,0,1
 Rosta,Via Józef Wybicki s.n.c,1,0,,,0.0,0,1
-Rosta,Via Leonardo Da Vinci,1,1,230000.0,2277.23,0.0,0,0
+Rosta,Via Leonardo Da Vinci,1,0,,,0.0,0,1
 Rosta,Via Margrot,1,0,,,3.0,0,1
 Rosta,Via Piave,2,0,,,10.0,0,2
 Rosta,Via Roberto Vittorangeli,1,0,,,0.0,0,1
 Rosta,Via Rosta,1,0,,,0.0,0,1
-Rosta,Via Scrivia,1,1,,,0.0,0,0
-Rosta,Via Silvio Pellico,1,1,149000.0,1655.56,0.0,0,0
-Rosta,Via Stazione,2,2,,,4.0,0,0
+Rosta,Via Scrivia,1,0,,,0.0,0,1
+Rosta,Via Silvio Pellico,1,0,,,0.0,0,1
+Rosta,Via Stazione,2,1,,,4.0,0,1
 Rosta,Viale Risorgimento,1,0,,,0.0,0,1
 Rosta,Viale Risorgimento s.n.c,1,0,,,0.0,0,1
 Rosta,corso Moncenisio,7,1,,,2.0,0,6
@@ -1259,7 +1269,7 @@ Rosta,via Rosta Quinto di Treviso. Ottimo stato,1,0,,,2.0,0,1
 Rosta,via Sant'Antonio di Ranverso,2,0,,,1.0,0,2
 Rosta,via Stazione,3,0,,,0.0,0,3
 Rosta,via corbiglia,1,1,,,34.0,0,0
-Rosta,via gabriele d'annunzio,1,1,,,2.0,0,0
+Rosta,via gabriele d'annunzio,1,1,,,3.0,0,0
 Rosta,via rosta,1,0,,,20.0,0,1
 Rosta,via stazione,2,2,,,15.0,0,0
 Rosta,viale Parigi Riano. Buono stato,1,0,,,0.0,0,1
@@ -1275,11 +1285,11 @@ Rubiana,Borgata ferro raimondo,2,0,,,5.5,0,2
 Rubiana,Via Roma,3,0,,,0.0,0,3
 Rubiana,Via Rubiana,3,0,,,0.0,0,3
 Rubiana,borgata franchino,1,0,,,4.0,0,1
-Rubiana,borgata roggero,1,1,,,6.0,0,0
-Rubiana,strada del Boschetto,1,1,,,16.0,0,0
+Rubiana,borgata roggero,1,1,,,7.0,0,0
+Rubiana,strada del Boschetto,1,0,,,15.0,0,1
 Rubiana,via Dosso di Rubiana,1,0,,,4.0,0,1
 Rubiana,via Europa,1,0,,,4.0,0,1
-Rubiana,via Roma,9,2,,,3.0,0,7
+Rubiana,via Roma,9,2,32400.0,341.05,3.0,0,7
 Rubiana,via Rubiana,2,1,,,2.0,0,1
 Salbertrand,Via Salbertrand,2,2,,,24.0,0,0
 Salbertrand,frazione San Romano Salbertrand. Buono,1,0,,,3.0,0,1
@@ -1298,7 +1308,8 @@ San Didero,strada della Triglia,1,0,,,14.0,0,1
 San Didero,via A. Abegg,2,1,,,17.0,0,1
 San Didero,via A.Abegg,1,1,,,34.0,0,0
 San Didero,via Augusto Abegg,2,1,,,17.0,0,1
-San Didero,via Braida,2,1,,,30.5,0,1
+San Didero,via Braida,2,2,,,31.5,0,0
+San Didero,via Braida San Didero. Ottimo stato,1,1,,,0.0,0,0
 San Didero,via Braida. Nuovo,1,1,,,28.0,0,0
 San Didero,via Frassinere,1,0,,,2.0,0,1
 San Didero,via Maometto,2,2,,,12.5,0,0
@@ -1309,17 +1320,18 @@ San Gillio,Via Val della Torre,2,0,,,3.5,0,2
 San Gillio,Via dei Campi Sportivi,1,0,,,0.0,0,1
 San Gillio,strada pianezza,1,0,,,0.0,0,1
 San Gillio,via Pietro Micca. San Gillio. Buono stato,1,0,,,0.0,0,1
-San Gillio,via Silvio Pellico,1,0,,,0.0,0,1
+San Gillio,via Silvio Pellico,1,1,,,16.0,0,0
 San Gillio,via Val della Torre,1,0,,,0.0,0,1
 San Gillio,via vignati,1,0,,,0.0,0,1
 San Giorio,borgata Malpasso,1,1,,,33.0,0,0
 San Giorio di Susa,Borgata Adrit,1,0,,,0.0,0,1
+San Giorio di Susa,Frazione Martinetti,1,1,,,0.0,0,0
 San Giorio di Susa,Frazione Viglietti,1,0,,,0.0,0,1
 San Giorio di Susa,Via Carlo Carli,1,0,,,17.0,0,1
 San Giorio di Susa,Via Carlo Carli s.n.c,1,0,,,2.0,0,1
 San Giorio di Susa,Via Combattenti,1,0,,,15.0,0,1
 San Giorio di Susa,Via Susa,4,0,,,3.0,0,4
-San Giorio di Susa,frazione Città San Giorio di Susa. Buono,2,2,31500.0,630.0,17.0,0,0
+San Giorio di Susa,frazione Città San Giorio di Susa. Buono,2,2,31500.0,630.0,17.5,0,0
 San Giorio di Susa,frazione Martinetti,2,0,,,13.0,0,2
 San Giorio di Susa,frazione viglietti,1,1,19000.0,413.04,0.0,0,0
 San Giorio di Susa,via Carlo,2,0,,,16.0,0,2
@@ -1331,7 +1343,7 @@ San Giorio di Susa,via Don Cesare Martinetti,2,1,,,16.5,0,1
 San Giorio di Susa,via Francesco,1,0,,,23.0,0,1
 San Giorio di Susa,via Martinetti,1,1,,,1.0,0,0
 San Giorio di Susa,via Susa,5,4,,,23.0,0,1
-San Giorio di Susa,via Walter Fontan,1,1,,,28.0,0,0
+San Giorio di Susa,via Walter Fontan,1,1,,,29.0,0,0
 San Giorio di Susa,via carlo carli,1,0,,,22.0,0,1
 San Giorio di Susa,via susa,1,1,,,33.0,0,0
 San Valeriano,via Montenero,1,0,,,0.0,0,1
@@ -1343,14 +1355,14 @@ San Valeriano,via ponte dora,1,0,,,0.0,0,1
 San Valeriano,"via principale del paese e vicina al centro, appartamento al piano terra di",1,1,87000.0,,28.0,0,0
 Sangano,Via Gino,1,0,,,0.0,0,1
 Sangano,piazza Marco Matta,1,0,,,0.0,0,1
-Sangano,via Cuminalunga,1,1,,,25.0,0,0
+Sangano,via Cuminalunga,1,1,,,26.0,0,0
 Sangano,via Merlino,1,1,,,24.0,0,0
 Sangano,via Venezia,1,0,,,4.0,0,1
 Sant'Ambrogio di Torino,Strada Antica di Francia,1,1,225000.0,1562.5,29.0,0,0
 Sant'Ambrogio di Torino,Via Falconero,1,0,,,1.0,0,1
 Sant'Ambrogio di Torino,Via Umberto I,3,0,,,1.0,0,3
 Sant'Ambrogio di Torino,Via Umberto I s.n.c,1,0,,,0.0,0,1
-Sant'Ambrogio di Torino,via Giaveno Sant'Ambrogio di Torino. Da,2,2,,,27.0,0,0
+Sant'Ambrogio di Torino,via Giaveno Sant'Ambrogio di Torino. Da,2,2,,,27.5,0,0
 Sant'Ambrogio di Torino,via Pautassi Sant'Ambrogio di Torino,1,1,,,29.0,0,0
 Sant'Ambrogio di Torino,via Umberto I,1,0,,,0.0,0,1
 Sant'Ambrogio di Torino,via ex internati,1,1,,,29.0,0,0
@@ -1369,13 +1381,13 @@ Sant'Antonino di Susa,Via Vaie,1,0,,,2.0,0,1
 Sant'Antonino di Susa,Viale IV Novembre,2,0,,,7.5,0,2
 Sant'Antonino di Susa,corso Stati Uniti,1,0,,,4.0,0,1
 Sant'Antonino di Susa,via Abegg,1,1,,,0.0,0,0
-Sant'Antonino di Susa,via Assietta,1,1,,,34.0,0,0
+Sant'Antonino di Susa,via Assietta,1,0,,,33.0,0,1
 Sant'Antonino di Susa,via Augusto Abegg,1,0,,,3.0,0,1
 Sant'Antonino di Susa,via Celso,1,0,,,12.0,0,1
 Sant'Antonino di Susa,via Giuseppe,1,1,34832.0,622.0,34.0,0,0
 Sant'Antonino di Susa,via Maisonetta,2,1,,,17.5,0,1
 Sant'Antonino di Susa,via Maisonetta. Sant'Antonino di Susa,1,0,,,11.0,0,1
-Sant'Antonino di Susa,via Mario,3,2,,,27.0,0,1
+Sant'Antonino di Susa,via Mario,3,3,,,28.0,0,0
 Sant'Antonino di Susa,via Mario Celso,1,0,,,2.0,0,1
 Sant'Antonino di Susa,via Medagli,8,5,229000.0,,22.0,0,3
 Sant'Antonino di Susa,via Moncenisio,3,1,,,6.0,0,2
@@ -1388,7 +1400,7 @@ Sant'Antonino di Susa,via Vaie,1,0,,,20.0,0,1
 Sant'Antonino di Susa,via Vaie. Sant'Antonino di Susa. Ottimo stato,1,0,,,5.0,0,1
 Sant'Antonino di Susa,via Vignassa,2,1,,,16.5,0,1
 Sant'Antonino di Susa,via Vignassa. Sant'Antonino di Susa. Buono,1,1,,,1.0,0,0
-Sant'Antonino di Susa,via abegg,1,0,,,24.0,0,1
+Sant'Antonino di Susa,via abegg,1,1,,,26.0,0,0
 Sant'Antonino di Susa,via aurelia,1,0,,,30.0,0,1
 Sant'Antonino di Susa,via medagli,1,1,,,34.0,0,0
 Sant'Antonino di Susa,via moncenisio Sant'Antonino di Susa,1,0,,,1.0,0,1
@@ -1409,7 +1421,7 @@ Susa,via dei Sei Martiri,1,1,,,34.0,0,0
 Susa,via dei sei martiri. Buono,1,0,,,0.0,0,1
 Trana,Borgata Colombè Inferiore,2,0,,,1.5,0,2
 Trana,Borgata Cordero,1,1,,,39.0,0,0
-Trana,Borgata San Giovanni,1,1,,,2.0,0,0
+Trana,Borgata San Giovanni,1,1,,,3.0,0,0
 Trana,Borgata Udritto,1,1,120000.0,,39.0,0,0
 Trana,Piazza della libertà s.n.c,1,0,,,0.0,0,1
 Trana,Strada Avigliana,2,1,,,24.0,0,1
@@ -1470,7 +1482,7 @@ Val della Torre,via Val della Torre,5,2,,,2.0,0,3
 Val della Torre,via mulino,1,0,,,0.0,0,1
 Valgioie,Borgata Bussone,2,1,43000.0,796.3,0.0,0,1
 Valgioie,Borgata Chiapero,2,2,,,34.0,0,0
-Valgioie,Borgata Chiappero,4,2,20000.0,,6.5,0,2
+Valgioie,Borgata Chiappero,4,2,20000.0,,7.0,0,2
 Valgioie,Borgata Chiodrero,1,1,20000.0,200.0,0.0,0,0
 Valgioie,Borgata Combravino,1,1,,,11.0,0,0
 Valgioie,Borgata Modoprato. Ottimo,1,0,,,4.0,0,1
@@ -1498,7 +1510,7 @@ Villar Dora,via Al Cerrone,1,0,,,14.0,0,1
 Villar Dora,via Almese,1,0,,,0.0,0,1
 Villar Dora,via Borgionera,1,0,,,10.0,0,1
 Villar Dora,via Borgionera Villar Dora. Ottimo stato,1,0,,,6.0,0,1
-Villar Dora,via Celle,3,0,,,11.0,0,3
+Villar Dora,via Celle,3,1,,,11.0,0,2
 Villar Dora,via Celle s.n.c,1,0,,,0.0,0,1
 Villar Dora,via Cuminie,1,0,,,14.0,0,1
 Villar Dora,via San Vincenzo,1,0,,,14.0,0,1
@@ -1522,7 +1534,7 @@ Villar Focchiardo,Via Roma s.n.c,1,0,,,0.0,0,1
 Villar Focchiardo,via Chiapinetto,1,0,,,0.0,0,1
 Villar Focchiardo,via Chiesali,5,1,,,15.0,0,4
 Villar Focchiardo,via Chiesali Villar Focchiardo. Posto,1,0,,,2.0,0,1
-Villar Focchiardo,via Copotti,1,1,,,34.0,0,0
+Villar Focchiardo,via Copotti,1,0,,,33.0,0,1
 Villar Focchiardo,via Dante,1,0,,,6.0,0,1
 Villar Focchiardo,via Pelissero,1,0,,,0.0,0,1
 Villar Focchiardo,via Villar Focchiardo,4,1,,,9.0,0,3
@@ -1545,9 +1557,9 @@ Villarbasse,via Primo Sole,1,0,,,4.0,0,1
 Villarbasse,via Rivoli,3,1,,,4.0,0,2
 Villarbasse,via Rivoli. Villarbasse. Ottimo stato,1,0,,,0.0,0,1
 Villarbasse,via Rocciamelone,1,1,,,8.0,0,0
-Villarbasse,via San Rocco,2,1,,,12.0,0,1
-Villarbasse,via Villarbasse,4,2,,,16.5,0,2
+Villarbasse,via San Rocco,2,1,,,12.5,0,1
+Villarbasse,via Villarbasse,4,1,,,16.5,0,3
 Villarbasse,via Villarbasse Roma. Buono stato,1,0,,,6.0,0,1
 Villarbasse,via casotto,1,0,,,0.0,0,1
-Villarbasse,via delle Ginestre,1,1,,,2.0,0,0
+Villarbasse,via delle Ginestre,1,1,,,3.0,0,0
 Villarbasse,vicolo Cristoforo Colombo,1,0,,,0.0,0,1
