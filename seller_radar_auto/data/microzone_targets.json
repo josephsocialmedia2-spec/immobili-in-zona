@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T01:43:48.351117+00:00",
+  "generated_at": "2026-10-01T09:07:19.748665+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -86,7 +86,7 @@
       "zone_id": "almese-via-almese",
       "comune": "Almese",
       "target_street": "via Almese",
-      "listing_target": "VIA ALMESE 73",
+      "listing_target": "Via Almese 61",
       "listing_url": "https://www.immobiliare.it/annunci/112973905/",
       "streets": [
         "via Almese",
@@ -326,7 +326,7 @@
       "zone_id": "avigliana-via-sacra-san-michele",
       "comune": "Avigliana",
       "target_street": "via Sacra San Michele",
-      "listing_target": "via Sacra San Michele 17",
+      "listing_target": "Via Sacra San Michele 27",
       "listing_url": "https://www.immobiliare.it/annunci/131895478/",
       "streets": [
         "via Sacra San Michele",
@@ -649,21 +649,6 @@
         "Corso Europa",
         "Strada Statale 25 del Moncenisio",
         "Via Antonio Gramsci"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "avigliana-corso-laghi-avigliana-avigliana-corso-laghi-proponiamo-alloggio-libero-su",
-      "comune": "Avigliana",
-      "target_street": "Corso Laghi , Avigliana Avigliana - Corso Laghi proponiamo alloggio libero su",
-      "listing_target": "Corso Laghi , Avigliana Avigliana - Corso Laghi proponiamo alloggio libero su 3",
-      "listing_url": "https://www.wikicasa.it/vendita-appartamenti/avigliana/",
-      "streets": [
-        "Corso Laghi , Avigliana Avigliana - Corso Laghi proponiamo alloggio libero su",
-        "Piazza del Popolo",
-        "Via Alpi Cozie",
-        "Via Carnino",
-        "Via Cavalieri di Vittorio Veneto"
       ],
       "osm_status": "OK"
     },
@@ -1355,6 +1340,18 @@
       "listing_url": "https://www.immobiliare.it/annunci/119041139/",
       "streets": [
         "via Generale C. Alberto dalla Chiesa"
+      ],
+      "osm_status": "TARGET_NON_RISOLTA",
+      "reason": "POSIZIONE/VIA DA VERIFICARE"
+    },
+    {
+      "zone_id": "avigliana-localita-grangia-offre-una-superficie-totale-di",
+      "comune": "Avigliana",
+      "target_street": "località Grangia, offre una superficie totale di",
+      "listing_target": "località Grangia, offre una superficie totale di 300",
+      "listing_url": "https://www.wikicasa.it/vendita-appartamenti/avigliana/",
+      "streets": [
+        "località Grangia, offre una superficie totale di"
       ],
       "osm_status": "TARGET_NON_RISOLTA",
       "reason": "POSIZIONE/VIA DA VERIFICARE"
