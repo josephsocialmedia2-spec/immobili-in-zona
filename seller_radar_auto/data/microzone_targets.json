@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T16:08:07.187727+00:00",
+  "generated_at": "2026-10-02T21:05:12.728483+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -70,11 +70,11 @@
     {
       "zone_id": "almese-via-roma",
       "comune": "Almese",
-      "target_street": "Via Roma",
-      "listing_target": "Via Roma 29",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/locale-commerciale-almese",
+      "target_street": "via Roma",
+      "listing_target": "via Roma 29",
+      "listing_url": "https://www.immobiliare.it/annunci/132169640/",
       "streets": [
-        "Via Roma",
+        "via Roma",
         "Piazza Martiri della Libertà",
         "Piazza Pra Maccari",
         "Via Cerrone",
@@ -1306,7 +1306,7 @@
       "zone_id": "avigliana-via-generale-c-alberto-dalla-chiesa",
       "comune": "Avigliana",
       "target_street": "via Generale C. Alberto dalla Chiesa",
-      "listing_target": "via Generale C. Alberto dalla Chiesa 7",
+      "listing_target": "Via Generale C. Alberto dalla Chiesa 4",
       "listing_url": "https://www.immobiliare.it/annunci/119041139/",
       "streets": [
         "via Generale C. Alberto dalla Chiesa"
@@ -1354,7 +1354,7 @@
       "zone_id": "avigliana-via-laghi-di-avigliana",
       "comune": "Avigliana",
       "target_street": "Via Laghi di Avigliana",
-      "listing_target": "Via Laghi Di Avigliana 12",
+      "listing_target": "VIA LAGHI DI AVIGLIANA 4",
       "listing_url": "https://www.nuroa.it/affitto-case/locale-commerciale-avigliana",
       "streets": [
         "Via Laghi di Avigliana"
