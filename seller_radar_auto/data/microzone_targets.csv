@@ -19,11 +19,11 @@ almese-via-roma,Almese,Via Roma,Via Roma 29,https://www.nuroa.it/vendita-immobil
 almese-via-roma,Almese,Via Roma,Via Roma 29,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,2,VICINA,Piazza Pra Maccari,0,INCROCIA,OK
 almese-via-roma,Almese,Via Roma,Via Roma 29,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,3,VICINA,Via Cerrone,0,INCROCIA,OK
 almese-via-roma,Almese,Via Roma,Via Roma 29,https://www.nuroa.it/vendita-immobili/locale-commerciale-almese,4,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,via Almese,VIA ALMESE 73,https://www.immobiliare.it/annunci/112973905/,0,TARGET,via Almese,0,CENTRO,OK
-almese-via-almese,Almese,via Almese,VIA ALMESE 73,https://www.immobiliare.it/annunci/112973905/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-almese,Almese,via Almese,VIA ALMESE 73,https://www.immobiliare.it/annunci/112973905/,2,VICINA,Via Avigliana,225,VICINA,OK
-almese-via-almese,Almese,via Almese,VIA ALMESE 73,https://www.immobiliare.it/annunci/112973905/,3,VICINA,Via della Michela,235,VICINA,OK
-almese-via-almese,Almese,via Almese,VIA ALMESE 73,https://www.immobiliare.it/annunci/112973905/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
+almese-via-almese,Almese,Via Almese,via Almese 10,https://www.casa.it/immobili/54860024/,0,TARGET,Via Almese,0,CENTRO,OK
+almese-via-almese,Almese,Via Almese,via Almese 10,https://www.casa.it/immobili/54860024/,1,VICINA,Via Circonvallazione,0,INCROCIA,OK
+almese-via-almese,Almese,Via Almese,via Almese 10,https://www.casa.it/immobili/54860024/,2,VICINA,Via Avigliana,225,VICINA,OK
+almese-via-almese,Almese,Via Almese,via Almese 10,https://www.casa.it/immobili/54860024/,3,VICINA,Via della Michela,235,VICINA,OK
+almese-via-almese,Almese,Via Almese,via Almese 10,https://www.casa.it/immobili/54860024/,4,VICINA,Via Dante Alighieri,309,VICINA,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,0,TARGET,Via Braida,0,CENTRO,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,1,VICINA,Via Bertolo,0,INCROCIA,OK
 almese-via-braida,Almese,Via Braida,Via Braida 18,https://www.nuroa.it/vendita-immobili/casa-almese,2,VICINA,Via della Roccia,0,INCROCIA,OK
@@ -254,31 +254,26 @@ buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https:/
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,3,VICINA,Via Bacchiasso,176,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,4,VICINA,Strada del Closio,180,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,0,TARGET,Via IV Novembre,0,CENTRO,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,1,VICINA,Via Quattro Novembre,2,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,2,VICINA,Vicolo Palermo,15,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,3,VICINA,Via Avigliana,16,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
-buttigliera-alta-via-iv-novembre,Buttigliera Alta,Via IV Novembre,Via IV Novembre 5,https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html,4,VICINA,Piazza del Popolo,25,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
+buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 14,https://www.dove.it/vendita-case/buttigliera-alta,0,TARGET,Via Rivoli,0,CENTRO,OK
+buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 14,https://www.dove.it/vendita-case/buttigliera-alta,1,VICINA,Corso Superga,0,INCROCIA,OK
+buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 14,https://www.dove.it/vendita-case/buttigliera-alta,2,VICINA,Via al Castello,0,INCROCIA,OK
+buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 14,https://www.dove.it/vendita-case/buttigliera-alta,3,VICINA,Via della Pace,0,INCROCIA,OK
+buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 14,https://www.dove.it/vendita-case/buttigliera-alta,4,VICINA,Via Reano,0,INCROCIA,OK
 buttigliera-alta-corso-laghi,Buttigliera Alta,corso Laghi,corso laghi 81,https://www.immobiliare.it/annunci/129834162/,0,TARGET,corso Laghi,0,CENTRO,OK
 buttigliera-alta-corso-laghi,Buttigliera Alta,corso Laghi,corso laghi 81,https://www.immobiliare.it/annunci/129834162/,1,VICINA,Corso Superga,0,INCROCIA,OK
 buttigliera-alta-corso-laghi,Buttigliera Alta,corso Laghi,corso laghi 81,https://www.immobiliare.it/annunci/129834162/,2,VICINA,Via Avigliana,0,INCROCIA,OK
 buttigliera-alta-corso-laghi,Buttigliera Alta,corso Laghi,corso laghi 81,https://www.immobiliare.it/annunci/129834162/,3,VICINA,Via Conti Caron,0,INCROCIA,OK
 buttigliera-alta-corso-laghi,Buttigliera Alta,corso Laghi,corso laghi 81,https://www.immobiliare.it/annunci/129834162/,4,VICINA,Via Monte Cuneo,0,INCROCIA,OK
-buttigliera-alta-via-della-torre-ferriera,Buttigliera Alta,Via della Torre - Ferriera,Via della Torre - Ferriera 4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,0,TARGET,Via della Torre - Ferriera,0,CENTRO,OK
-buttigliera-alta-via-della-torre-ferriera,Buttigliera Alta,Via della Torre - Ferriera,Via della Torre - Ferriera 4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,1,VICINA,Corso Torino,0,INCROCIA,OK
-buttigliera-alta-via-della-torre-ferriera,Buttigliera Alta,Via della Torre - Ferriera,Via della Torre - Ferriera 4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,2,VICINA,Corso Vandel,0,INCROCIA,OK
-buttigliera-alta-via-della-torre-ferriera,Buttigliera Alta,Via della Torre - Ferriera,Via della Torre - Ferriera 4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,3,VICINA,Strada Antica di Francia,0,INCROCIA,OK
-buttigliera-alta-via-della-torre-ferriera,Buttigliera Alta,Via della Torre - Ferriera,Via della Torre - Ferriera 4,https://buttiglieraalta1.tecnorete.it/immobili-in-vendita,4,VICINA,Via Capoluogo,0,INCROCIA,OK
-buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,0,TARGET,via Reano,0,CENTRO,OK
-buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,1,VICINA,Corso Laghi,0,INCROCIA,OK
-buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,2,VICINA,Corso Superga,0,INCROCIA,OK
-buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,3,VICINA,Via Monte Cuneo,0,INCROCIA,OK
-buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,4,VICINA,Via Rivoli,0,INCROCIA,OK
 buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 8,https://www.idealista.it/immobile/35549687/,0,TARGET,Corso Superga,0,CENTRO,OK
 buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 8,https://www.idealista.it/immobile/35549687/,1,VICINA,Corso Laghi,0,INCROCIA,OK
 buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 8,https://www.idealista.it/immobile/35549687/,2,VICINA,Via Madonna dei Boschi,0,INCROCIA,OK
 buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 8,https://www.idealista.it/immobile/35549687/,3,VICINA,Via Ragazzi del '99,0,INCROCIA,OK
 buttigliera-alta-corso-superga,Buttigliera Alta,Corso Superga,Corso Superga 8,https://www.idealista.it/immobile/35549687/,4,VICINA,Via Reano,0,INCROCIA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,0,TARGET,via Reano,0,CENTRO,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,1,VICINA,Corso Laghi,0,INCROCIA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,2,VICINA,Corso Superga,0,INCROCIA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,3,VICINA,Via Monte Cuneo,0,INCROCIA,OK
+buttigliera-alta-via-reano,Buttigliera Alta,via Reano,via Reano 23,https://www.oikia.it/vendita-case/buttigliera_alta/,4,VICINA,Via Rivoli,0,INCROCIA,OK
 buttigliera-alta-via-della-torre,Buttigliera Alta,Via della Torre,Via della Torre 59,https://www.idealista.it/immobile/36323286/,0,TARGET,Via della Torre,0,CENTRO,OK
 buttigliera-alta-via-della-torre,Buttigliera Alta,Via della Torre,Via della Torre 59,https://www.idealista.it/immobile/36323286/,1,VICINA,Corso Torino,0,INCROCIA,OK
 buttigliera-alta-via-della-torre,Buttigliera Alta,Via della Torre,Via della Torre 59,https://www.idealista.it/immobile/36323286/,2,VICINA,Corso Vandel,0,INCROCIA,OK
@@ -294,11 +289,6 @@ buttigliera-alta-corso-torino,Buttigliera Alta,corso Torino,Corso Torino 8,https
 buttigliera-alta-corso-torino,Buttigliera Alta,corso Torino,Corso Torino 8,https://www.immobiliare.it/annunci/116078663/,2,VICINA,Strada della Praia,0,INCROCIA,OK
 buttigliera-alta-corso-torino,Buttigliera Alta,corso Torino,Corso Torino 8,https://www.immobiliare.it/annunci/116078663/,3,VICINA,Strada Statale 25 del Moncenisio,0,INCROCIA,OK
 buttigliera-alta-corso-torino,Buttigliera Alta,corso Torino,Corso Torino 8,https://www.immobiliare.it/annunci/116078663/,4,VICINA,Via Almese,0,INCROCIA,OK
-buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 42,https://www.dove.it/vendita-case/buttigliera-alta,0,TARGET,Via Rivoli,0,CENTRO,OK
-buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 42,https://www.dove.it/vendita-case/buttigliera-alta,1,VICINA,Corso Superga,0,INCROCIA,OK
-buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 42,https://www.dove.it/vendita-case/buttigliera-alta,2,VICINA,Via al Castello,0,INCROCIA,OK
-buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 42,https://www.dove.it/vendita-case/buttigliera-alta,3,VICINA,Via della Pace,0,INCROCIA,OK
-buttigliera-alta-via-rivoli,Buttigliera Alta,Via Rivoli,Via Rivoli 42,https://www.dove.it/vendita-case/buttigliera-alta,4,VICINA,Via Reano,0,INCROCIA,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,0,TARGET,via Roma,0,CENTRO,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,1,VICINA,Via Conte Verde,0,INCROCIA,OK
 caprie-via-roma,Caprie,via Roma,Via Roma 250,https://www.trovacasa.it/annunci/to-tc-95641-72900561,2,VICINA,Via Lino Maffiodo,0,INCROCIA,OK

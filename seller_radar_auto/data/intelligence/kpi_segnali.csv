@@ -1,28 +1,28 @@
 ﻿COMUNE,IMMOBILI_QUALIFICATI,ASTE,PRIVATI,AGENZIE,RIBASSI_SEGNALATI,STORICO_USCITE
-Almese,54,0,12,7,0,0
+Almese,55,1,12,7,0,0
 Alpignano,96,1,12,16,0,1
 Avigliana,101,7,12,16,0,0
 Bardonecchia,42,0,0,5,0,1
-Beinasco,116,6,2,29,0,0
+Beinasco,117,6,2,29,0,0
 Borgone Susa,71,0,6,5,0,1
-Bruino,75,0,10,24,0,0
+Bruino,74,0,10,23,0,0
 Bruzolo,22,0,8,6,0,0
 Bussoleno,18,0,1,4,0,0
 Buttigliera Alta,38,0,4,7,0,0
 Caprie,24,0,2,7,0,1
-Caselette,50,18,3,12,0,0
+Caselette,51,18,3,12,0,0
 Chianocco,23,4,4,6,0,0
 Chiomonte,13,1,4,0,0,0
 Chiusa di San Michele,38,2,1,7,0,0
 Coazze,72,3,7,29,0,3
-Collegno,159,1,11,30,0,0
-Condove,59,13,9,23,0,0
+Collegno,160,1,11,30,0,0
+Condove,61,13,9,24,0,0
 Druento,75,1,2,18,0,0
 Exilles,13,0,0,0,0,0
 Ferriera di Buttigliera Alta,8,0,0,1,0,0
 Fiano,73,3,11,6,1,0
 Giaglione,5,0,0,0,0,0
-Giaveno,94,4,6,9,0,0
+Giaveno,104,4,6,19,0,0
 Givoletto,42,0,6,8,0,0
 Gravere,8,0,0,0,0,0
 Grugliasco,139,4,3,27,0,1
@@ -37,9 +37,9 @@ Pianezza,115,8,10,6,0,1
 Reano,38,14,6,5,0,0
 Rivalta di Torino,37,5,2,10,0,0
 Rivoli,203,8,16,31,0,1
-Robassomero,33,4,2,15,0,0
+Robassomero,34,4,2,15,0,0
 Rosta,94,1,8,15,0,1
-Rubiana,48,19,8,0,0,0
+Rubiana,49,19,8,0,0,0
 Salbertrand,10,0,0,1,0,0
 San Didero,34,1,6,3,0,0
 San Gillio,34,0,1,15,0,0
@@ -48,13 +48,13 @@ San Giorio di Susa,52,0,3,4,0,0
 San Valeriano,18,11,2,1,0,1
 Sangano,8,0,1,4,0,0
 Sant'Ambrogio di Torino,17,1,4,0,0,0
-Sant'Antonino di Susa,74,5,9,2,0,0
+Sant'Antonino di Susa,75,5,9,2,0,0
 Susa,26,1,2,1,0,0
 Trana,53,1,9,20,0,0
 Vaie,13,1,2,1,0,0
 Val della Torre,52,2,6,4,0,0
 Valgioie,16,0,2,2,0,0
-Varisella,5,1,0,0,0,0
+Varisella,6,1,0,0,0,0
 Venaus,8,5,0,0,0,0
 Villar Dora,46,1,4,12,0,0
 Villar Focchiardo,45,5,4,5,0,0

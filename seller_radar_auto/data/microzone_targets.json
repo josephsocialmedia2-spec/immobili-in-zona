@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T22:12:54.578147+00:00",
+  "generated_at": "2026-10-02T01:59:43.705835+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -85,11 +85,11 @@
     {
       "zone_id": "almese-via-almese",
       "comune": "Almese",
-      "target_street": "via Almese",
-      "listing_target": "VIA ALMESE 73",
-      "listing_url": "https://www.immobiliare.it/annunci/112973905/",
+      "target_street": "Via Almese",
+      "listing_target": "via Almese 10",
+      "listing_url": "https://www.casa.it/immobili/54860024/",
       "streets": [
-        "via Almese",
+        "Via Almese",
         "Via Circonvallazione",
         "Via Avigliana",
         "Via della Michela",
@@ -788,19 +788,19 @@
       "osm_status": "OK_GEOCODE_FALLBACK"
     },
     {
-      "zone_id": "buttigliera-alta-via-iv-novembre",
+      "zone_id": "buttigliera-alta-via-rivoli",
       "comune": "Buttigliera Alta",
-      "target_street": "Via IV Novembre",
-      "listing_target": "Via IV Novembre 5",
-      "listing_url": "https://www.tecnorete.it/annunci/immobili/piemonte/torino/buttigliera-alta.html",
+      "target_street": "Via Rivoli",
+      "listing_target": "Via Rivoli 14",
+      "listing_url": "https://www.dove.it/vendita-case/buttigliera-alta",
       "streets": [
-        "Via IV Novembre",
-        "Via Quattro Novembre",
-        "Vicolo Palermo",
-        "Via Avigliana",
-        "Piazza del Popolo"
+        "Via Rivoli",
+        "Corso Superga",
+        "Via al Castello",
+        "Via della Pace",
+        "Via Reano"
       ],
-      "osm_status": "OK_GEOCODE_FALLBACK"
+      "osm_status": "OK"
     },
     {
       "zone_id": "buttigliera-alta-corso-laghi",
@@ -818,17 +818,17 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "buttigliera-alta-via-della-torre-ferriera",
+      "zone_id": "buttigliera-alta-corso-superga",
       "comune": "Buttigliera Alta",
-      "target_street": "Via della Torre - Ferriera",
-      "listing_target": "Via della Torre - Ferriera 4",
-      "listing_url": "https://buttiglieraalta1.tecnorete.it/immobili-in-vendita",
+      "target_street": "Corso Superga",
+      "listing_target": "Corso Superga 8",
+      "listing_url": "https://www.idealista.it/immobile/35549687/",
       "streets": [
-        "Via della Torre - Ferriera",
-        "Corso Torino",
-        "Corso Vandel",
-        "Strada Antica di Francia",
-        "Via Capoluogo"
+        "Corso Superga",
+        "Corso Laghi",
+        "Via Madonna dei Boschi",
+        "Via Ragazzi del '99",
+        "Via Reano"
       ],
       "osm_status": "OK"
     },
@@ -844,21 +844,6 @@
         "Corso Superga",
         "Via Monte Cuneo",
         "Via Rivoli"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "buttigliera-alta-corso-superga",
-      "comune": "Buttigliera Alta",
-      "target_street": "Corso Superga",
-      "listing_target": "Corso Superga 8",
-      "listing_url": "https://www.idealista.it/immobile/35549687/",
-      "streets": [
-        "Corso Superga",
-        "Corso Laghi",
-        "Via Madonna dei Boschi",
-        "Via Ragazzi del '99",
-        "Via Reano"
       ],
       "osm_status": "OK"
     },
@@ -904,21 +889,6 @@
         "Strada della Praia",
         "Strada Statale 25 del Moncenisio",
         "Via Almese"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "buttigliera-alta-via-rivoli",
-      "comune": "Buttigliera Alta",
-      "target_street": "Via Rivoli",
-      "listing_target": "Via Rivoli 42",
-      "listing_url": "https://www.dove.it/vendita-case/buttigliera-alta",
-      "streets": [
-        "Via Rivoli",
-        "Corso Superga",
-        "Via al Castello",
-        "Via della Pace",
-        "Via Reano"
       ],
       "osm_status": "OK"
     },
