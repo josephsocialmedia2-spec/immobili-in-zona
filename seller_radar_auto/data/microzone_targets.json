@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T06:44:47.930821+00:00",
+  "generated_at": "2026-10-03T12:52:26.046779+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -55,11 +55,11 @@
     {
       "zone_id": "almese-via-roma",
       "comune": "Almese",
-      "target_street": "via Roma",
-      "listing_target": "via Roma 29",
-      "listing_url": "https://www.immobiliare.it/annunci/132169640/",
+      "target_street": "Via Roma",
+      "listing_target": "Via Roma 80",
+      "listing_url": "https://www.nuroa.it/vendita-immobili/locale-commerciale-almese",
       "streets": [
-        "via Roma",
+        "Via Roma",
         "Piazza Martiri della Libertà",
         "Piazza Pra Maccari",
         "Via Cerrone",
