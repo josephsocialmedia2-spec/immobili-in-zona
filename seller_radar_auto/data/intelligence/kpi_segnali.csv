@@ -1,11 +1,11 @@
 ﻿COMUNE,IMMOBILI_QUALIFICATI,ASTE,PRIVATI,AGENZIE,RIBASSI_SEGNALATI,STORICO_USCITE
-Almese,55,1,12,8,0,0
+Almese,55,1,12,9,0,0
 Alpignano,98,1,12,16,0,1
-Avigliana,102,7,12,17,0,0
+Avigliana,104,7,12,17,0,0
 Bardonecchia,42,0,0,5,0,1
 Beinasco,119,6,2,28,0,0
 Borgone Susa,71,0,6,5,0,1
-Bruino,75,0,10,23,0,0
+Bruino,76,0,10,23,0,0
 Bruzolo,22,0,8,6,0,0
 Bussoleno,18,0,1,4,0,0
 Buttigliera Alta,39,0,4,8,0,0
@@ -15,7 +15,7 @@ Chianocco,23,4,4,6,0,0
 Chiomonte,13,1,4,0,0,0
 Chiusa di San Michele,39,2,1,7,0,0
 Coazze,74,3,7,29,0,3
-Collegno,161,1,11,30,0,0
+Collegno,162,1,11,30,0,0
 Condove,61,13,9,24,0,0
 Druento,77,1,2,18,0,0
 Exilles,13,0,0,0,0,0
@@ -25,7 +25,7 @@ Giaglione,5,0,0,0,0,0
 Giaveno,105,4,6,19,0,0
 Givoletto,42,0,6,8,0,0
 Gravere,8,0,0,0,0,0
-Grugliasco,145,4,3,33,0,1
+Grugliasco,146,4,3,33,0,1
 La Cassa,58,15,6,6,0,0
 Mattie,9,0,0,0,0,0
 Meana di Susa,17,0,3,0,0,0
@@ -33,13 +33,13 @@ Mompantero,6,1,0,0,0,0
 Moncenisio,18,4,0,2,0,1
 Novalesa,2,0,1,2,0,0
 Oulx,29,2,0,1,0,0
-Pianezza,116,8,10,6,0,1
+Pianezza,117,9,10,6,0,1
 Reano,38,14,6,5,0,0
-Rivalta di Torino,38,5,2,11,0,0
-Rivoli,203,8,16,31,0,1
+Rivalta di Torino,39,5,2,11,0,0
+Rivoli,204,8,16,31,0,1
 Robassomero,35,4,2,16,0,0
 Rosta,98,1,8,15,0,1
-Rubiana,50,19,8,0,0,0
+Rubiana,51,19,8,0,0,0
 Salbertrand,10,0,0,1,0,0
 San Didero,34,1,6,3,0,0
 San Gillio,34,0,1,15,0,0
@@ -56,6 +56,6 @@ Val della Torre,54,2,6,5,0,0
 Valgioie,17,0,2,2,0,0
 Varisella,6,1,0,0,0,0
 Venaus,8,5,0,0,0,0
-Villar Dora,46,1,4,12,0,0
+Villar Dora,47,2,4,12,0,0
 Villar Focchiardo,45,5,4,5,0,0
 Villarbasse,53,15,10,13,0,0

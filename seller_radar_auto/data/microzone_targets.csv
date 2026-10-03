@@ -1,14 +1,9 @@
 ﻿ZONE_ID,COMUNE,VIA_ANNUNCIO,RIFERIMENTO_ANNUNCIO,ANNUNCIO_URL,RANK,TIPO_VIA,VIA_DA_LAVORARE,DISTANZA_M,RELAZIONE,OSM_STATUS
-almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,0,TARGET,via Rubiana,0,CENTRO,OK
-almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,1,VICINA,Borgata Malatrait II,0,INCROCIA,OK
-almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,2,VICINA,Via Circonvallazione,0,INCROCIA,OK
-almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,3,VICINA,Via Combal,0,INCROCIA,OK
-almese-via-rubiana,Almese,via Rubiana,via Rubiana 100,https://www.immobiliare.it/annunci/132183836/,4,VICINA,Via dei Copertili,0,INCROCIA,OK
-almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,0,TARGET,Via Avigliana,0,CENTRO,OK
-almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,1,VICINA,Piazza Martiri della Libertà,0,INCROCIA,OK
-almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,2,VICINA,Via Dante Alighieri,0,INCROCIA,OK
-almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,3,VICINA,Via dell'Ajgro,0,INCROCIA,OK
-almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,4,VICINA,Via della Michela,0,INCROCIA,OK
+almese-via-rubiana,Almese,Via Rubiana,Via Rubiana 71,https://www.wikicasa.it/vendita-case/almese/,0,TARGET,Via Rubiana,0,CENTRO,OK
+almese-via-rubiana,Almese,Via Rubiana,Via Rubiana 71,https://www.wikicasa.it/vendita-case/almese/,1,VICINA,Borgata Malatrait II,0,INCROCIA,OK
+almese-via-rubiana,Almese,Via Rubiana,Via Rubiana 71,https://www.wikicasa.it/vendita-case/almese/,2,VICINA,Via Circonvallazione,0,INCROCIA,OK
+almese-via-rubiana,Almese,Via Rubiana,Via Rubiana 71,https://www.wikicasa.it/vendita-case/almese/,3,VICINA,Via Combal,0,INCROCIA,OK
+almese-via-rubiana,Almese,Via Rubiana,Via Rubiana 71,https://www.wikicasa.it/vendita-case/almese/,4,VICINA,Via dei Copertili,0,INCROCIA,OK
 almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,0,TARGET,via Montecapretto,0,CENTRO,OK
 almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,1,VICINA,Via Bertolo,0,INCROCIA,OK
 almese-via-montecapretto,Almese,via Montecapretto,via Montecapretto 24,https://www.immobiliare.it/annunci/108146029/,2,VICINA,Via Sonetto,0,INCROCIA,OK
@@ -79,6 +74,11 @@ almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12
 almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12,https://www.nestoria.it/appartamenti/vendita/via-almese,2,VICINA,Via Avigliana,225,VICINA,OK
 almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12,https://www.nestoria.it/appartamenti/vendita/via-almese,3,VICINA,Via della Michela,235,VICINA,OK
 almese-via-almese-nestoria,Almese,Via Almese - Nestoria,Via Almese - Nestoria 12,https://www.nestoria.it/appartamenti/vendita/via-almese,4,VICINA,Via Dante Alighieri,309,VICINA,OK
+almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,0,TARGET,Via Avigliana,0,CENTRO,OK
+almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,1,VICINA,Piazza Martiri della Libertà,0,INCROCIA,OK
+almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,2,VICINA,Via Dante Alighieri,0,INCROCIA,OK
+almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,3,VICINA,Via dell'Ajgro,0,INCROCIA,OK
+almese-via-avigliana,Almese,Via Avigliana,Via Avigliana 35,https://www.idealista.it/immobile/35185746/,4,VICINA,Via della Michela,0,INCROCIA,OK
 almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,0,TARGET,Via Sonetto s.n.c villa,0,CENTRO,OK
 almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,1,VICINA,Borgata Morando,0,INCROCIA,OK
 almese-via-sonetto-s-n-c-villa,Almese,Via Sonetto s.n.c villa,Via Sonetto s.n.c villa 1,https://www.idealista.it/immobile/36950221/,2,VICINA,Via Braida,0,INCROCIA,OK
@@ -184,11 +184,6 @@ avigliana-via-drubiaglio,Avigliana,Via Drubiaglio,Via Drubiaglio 8,https://www.i
 avigliana-via-drubiaglio,Avigliana,Via Drubiaglio,Via Drubiaglio 8,https://www.idealista.it/immobile/36719669/,2,VICINA,Via Fratelli Girotto,0,INCROCIA,OK
 avigliana-via-drubiaglio,Avigliana,Via Drubiaglio,Via Drubiaglio 8,https://www.idealista.it/immobile/36719669/,3,VICINA,Via Moncenisio,0,INCROCIA,OK
 avigliana-via-drubiaglio,Avigliana,Via Drubiaglio,Via Drubiaglio 8,https://www.idealista.it/immobile/36719669/,4,VICINA,Via Rivera,0,INCROCIA,OK
-avigliana-via-pinerolo,Avigliana,via Pinerolo,via Pinerolo 45,https://www.nuroa.it/vendita-immobili/avigliana-vista-lago,0,TARGET,via Pinerolo,0,CENTRO,OK
-avigliana-via-pinerolo,Avigliana,via Pinerolo,via Pinerolo 45,https://www.nuroa.it/vendita-immobili/avigliana-vista-lago,1,VICINA,Strada Avigliana,0,INCROCIA,OK
-avigliana-via-pinerolo,Avigliana,via Pinerolo,via Pinerolo 45,https://www.nuroa.it/vendita-immobili/avigliana-vista-lago,2,VICINA,Via Giaveno,23,VICINA,OK
-avigliana-via-pinerolo,Avigliana,via Pinerolo,via Pinerolo 45,https://www.nuroa.it/vendita-immobili/avigliana-vista-lago,3,VICINA,Corso Laghi,27,VICINA,OK
-avigliana-via-pinerolo,Avigliana,via Pinerolo,via Pinerolo 45,https://www.nuroa.it/vendita-immobili/avigliana-vista-lago,4,VICINA,Parcheggio lago piccolo,39,VICINA,OK
 avigliana-via-umberto-i,Avigliana,via Umberto I,via Umberto I 42,https://www.immobiliare.it/annunci/132071842/,0,TARGET,via Umberto I,0,CENTRO,OK_GEOCODE_FALLBACK
 avigliana-via-umberto-i,Avigliana,via Umberto I,via Umberto I 42,https://www.immobiliare.it/annunci/132071842/,1,VICINA,Via Umberto Primo,1,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 avigliana-via-umberto-i,Avigliana,via Umberto I,via Umberto I 42,https://www.immobiliare.it/annunci/132071842/,2,VICINA,Via Giuseppe Mazzini,36,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
@@ -234,11 +229,11 @@ avigliana-strada-antica-giaveno-sant-ambrogio,Avigliana,Strada Antica Giaveno Sa
 avigliana-strada-antica-giaveno-sant-ambrogio,Avigliana,Strada Antica Giaveno Sant'Ambrogio,Strada Antica Giaveno Sant'Ambrogio 29,https://www.immobiliare.it/annunci/132393390/,2,VICINA,Viale Belvedere,23,VICINA,OK
 avigliana-strada-antica-giaveno-sant-ambrogio,Avigliana,Strada Antica Giaveno Sant'Ambrogio,Strada Antica Giaveno Sant'Ambrogio 29,https://www.immobiliare.it/annunci/132393390/,3,VICINA,Viale dei Tigli,34,VICINA,OK
 avigliana-strada-antica-giaveno-sant-ambrogio,Avigliana,Strada Antica Giaveno Sant'Ambrogio,Strada Antica Giaveno Sant'Ambrogio 29,https://www.immobiliare.it/annunci/132393390/,4,VICINA,Viale delle Betulle,84,VICINA,OK
-avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,0,TARGET,via Paolo Borsellino,0,CENTRO,OK
-avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,1,VICINA,Via generale Carlo Alberto Dalla Chiesa,14,VICINA,OK
-avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,2,VICINA,Corso Torino,75,VICINA,OK
-avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,3,VICINA,Via Francesca e Giovanni Falcone,88,VICINA,OK
-avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,VIA PAOLO BORSELLINO 3,https://www.immobiliare.it/annunci/120483604/,4,VICINA,Corso Europa,95,VICINA,OK
+avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,Via Paolo Borsellino 54,https://www.immobiliare.it/annunci/128618628/,0,TARGET,via Paolo Borsellino,0,CENTRO,OK
+avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,Via Paolo Borsellino 54,https://www.immobiliare.it/annunci/128618628/,1,VICINA,Via generale Carlo Alberto Dalla Chiesa,14,VICINA,OK
+avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,Via Paolo Borsellino 54,https://www.immobiliare.it/annunci/128618628/,2,VICINA,Corso Torino,75,VICINA,OK
+avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,Via Paolo Borsellino 54,https://www.immobiliare.it/annunci/128618628/,3,VICINA,Via Francesca e Giovanni Falcone,88,VICINA,OK
+avigliana-via-paolo-borsellino,Avigliana,via Paolo Borsellino,Via Paolo Borsellino 54,https://www.immobiliare.it/annunci/128618628/,4,VICINA,Corso Europa,95,VICINA,OK
 avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/133107618/,0,TARGET,via Grignetto,0,CENTRO,OK
 avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/133107618/,1,VICINA,Via Armando Cantore,0,INCROCIA,OK
 avigliana-via-grignetto,Avigliana,via Grignetto,Via Grignetto 101/B,https://www.immobiliare.it/annunci/133107618/,2,VICINA,Via Bertassi,0,INCROCIA,OK
@@ -249,6 +244,11 @@ avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.im
 avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,2,VICINA,Corso Europa,0,INCROCIA,OK
 avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,3,VICINA,Corso Torino,0,INCROCIA,OK
 avigliana-via-dei-testa,Avigliana,via dei Testa,via dei Testa 23D,https://www.immobiliare.it/annunci/132057622/,4,VICINA,Via Carlo Collodi,0,INCROCIA,OK
+avigliana-via-fratelli-cervi,Avigliana,via Fratelli Cervi,via FRATELLI CERVI 7,https://www.immobiliare.it/annunci/129580082/,0,TARGET,via Fratelli Cervi,0,CENTRO,OK
+avigliana-via-fratelli-cervi,Avigliana,via Fratelli Cervi,via FRATELLI CERVI 7,https://www.immobiliare.it/annunci/129580082/,1,VICINA,Corso Laghi,0,INCROCIA,OK
+avigliana-via-fratelli-cervi,Avigliana,via Fratelli Cervi,via FRATELLI CERVI 7,https://www.immobiliare.it/annunci/129580082/,2,VICINA,Via Aldo Moro,0,INCROCIA,OK
+avigliana-via-fratelli-cervi,Avigliana,via Fratelli Cervi,via FRATELLI CERVI 7,https://www.immobiliare.it/annunci/129580082/,3,VICINA,Via Bonaudo,0,INCROCIA,OK
+avigliana-via-fratelli-cervi,Avigliana,via Fratelli Cervi,via FRATELLI CERVI 7,https://www.immobiliare.it/annunci/129580082/,4,VICINA,Via Carlo Carli,0,INCROCIA,OK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,0,TARGET,via Allende,0,CENTRO,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,1,VICINA,Via Salvador Allende,35,VICINA_GEOCODE,OK_GEOCODE_FALLBACK
 buttigliera-alta-via-allende,Buttigliera Alta,via Allende,via Allende 13,https://www.immobiliare.it/annunci/131629064/,2,VICINA,Corso Laghi,151,VICINA_GEOCODE,OK_GEOCODE_FALLBACK

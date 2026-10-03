@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T00:48:39.580335+00:00",
+  "generated_at": "2026-10-03T06:44:47.930821+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -25,30 +25,15 @@
     {
       "zone_id": "almese-via-rubiana",
       "comune": "Almese",
-      "target_street": "via Rubiana",
-      "listing_target": "via Rubiana 100",
-      "listing_url": "https://www.immobiliare.it/annunci/132183836/",
+      "target_street": "Via Rubiana",
+      "listing_target": "Via Rubiana 71",
+      "listing_url": "https://www.wikicasa.it/vendita-case/almese/",
       "streets": [
-        "via Rubiana",
+        "Via Rubiana",
         "Borgata Malatrait II",
         "Via Circonvallazione",
         "Via Combal",
         "Via dei Copertili"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-avigliana",
-      "comune": "Almese",
-      "target_street": "Via Avigliana",
-      "listing_target": "Via Avigliana 35",
-      "listing_url": "https://www.idealista.it/immobile/35185746/",
-      "streets": [
-        "Via Avigliana",
-        "Piazza Martiri della Libertà",
-        "Via Dante Alighieri",
-        "Via dell'Ajgro",
-        "Via della Michela"
       ],
       "osm_status": "OK"
     },
@@ -259,6 +244,21 @@
         "Via Avigliana",
         "Via della Michela",
         "Via Dante Alighieri"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "almese-via-avigliana",
+      "comune": "Almese",
+      "target_street": "Via Avigliana",
+      "listing_target": "Via Avigliana 35",
+      "listing_url": "https://www.idealista.it/immobile/35185746/",
+      "streets": [
+        "Via Avigliana",
+        "Piazza Martiri della Libertà",
+        "Via Dante Alighieri",
+        "Via dell'Ajgro",
+        "Via della Michela"
       ],
       "osm_status": "OK"
     },
@@ -578,21 +578,6 @@
       "osm_status": "OK"
     },
     {
-      "zone_id": "avigliana-via-pinerolo",
-      "comune": "Avigliana",
-      "target_street": "via Pinerolo",
-      "listing_target": "via Pinerolo 45",
-      "listing_url": "https://www.nuroa.it/vendita-immobili/avigliana-vista-lago",
-      "streets": [
-        "via Pinerolo",
-        "Strada Avigliana",
-        "Via Giaveno",
-        "Corso Laghi",
-        "Parcheggio lago piccolo"
-      ],
-      "osm_status": "OK"
-    },
-    {
       "zone_id": "avigliana-via-umberto-i",
       "comune": "Avigliana",
       "target_street": "via Umberto I",
@@ -731,8 +716,8 @@
       "zone_id": "avigliana-via-paolo-borsellino",
       "comune": "Avigliana",
       "target_street": "via Paolo Borsellino",
-      "listing_target": "VIA PAOLO BORSELLINO 3",
-      "listing_url": "https://www.immobiliare.it/annunci/120483604/",
+      "listing_target": "Via Paolo Borsellino 54",
+      "listing_url": "https://www.immobiliare.it/annunci/128618628/",
       "streets": [
         "via Paolo Borsellino",
         "Via generale Carlo Alberto Dalla Chiesa",
@@ -769,6 +754,21 @@
         "Corso Europa",
         "Corso Torino",
         "Via Carlo Collodi"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-fratelli-cervi",
+      "comune": "Avigliana",
+      "target_street": "via Fratelli Cervi",
+      "listing_target": "via FRATELLI CERVI 7",
+      "listing_url": "https://www.immobiliare.it/annunci/129580082/",
+      "streets": [
+        "via Fratelli Cervi",
+        "Corso Laghi",
+        "Via Aldo Moro",
+        "Via Bonaudo",
+        "Via Carlo Carli"
       ],
       "osm_status": "OK"
     },
@@ -1306,7 +1306,7 @@
       "zone_id": "avigliana-via-generale-c-alberto-dalla-chiesa",
       "comune": "Avigliana",
       "target_street": "via Generale C. Alberto dalla Chiesa",
-      "listing_target": "Via Generale C. Alberto dalla Chiesa 4",
+      "listing_target": "via Generale C. Alberto dalla Chiesa 7",
       "listing_url": "https://www.immobiliare.it/annunci/119041139/",
       "streets": [
         "via Generale C. Alberto dalla Chiesa"
