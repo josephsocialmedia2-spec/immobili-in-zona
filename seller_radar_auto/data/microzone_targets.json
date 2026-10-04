@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T23:21:21.295147+00:00",
+  "generated_at": "2026-10-04T10:02:42.221748+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -146,8 +146,8 @@
       "zone_id": "almese-via-rivera",
       "comune": "Almese",
       "target_street": "via Rivera",
-      "listing_target": "via Rivera 114",
-      "listing_url": "https://www.immobiliare.it/annunci/105566019/",
+      "listing_target": "via Rivera 66",
+      "listing_url": "https://www.immobiliare.it/annunci/133211478/",
       "streets": [
         "via Rivera",
         "Via Caselette",
@@ -769,6 +769,66 @@
         "Via Aldo Moro",
         "Via Bonaudo",
         "Via Carlo Carli"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-don-balbiano",
+      "comune": "Avigliana",
+      "target_street": "Via Don Balbiano",
+      "listing_target": "Via Don Balbiano 27",
+      "listing_url": "https://www.idealista.it/immobile/22452040/",
+      "streets": [
+        "Via Don Balbiano",
+        "Corso Laghi",
+        "Via Antica di Francia",
+        "Via Cavalieri di Vittorio Veneto",
+        "Via Nicol"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-viale-dei-tigli",
+      "comune": "Avigliana",
+      "target_street": "Viale dei Tigli",
+      "listing_target": "Viale dei Tigli 28",
+      "listing_url": "https://www.idealista.it/immobile/37030889/",
+      "streets": [
+        "Viale dei Tigli",
+        "Viale Belvedere",
+        "Viale delle Betulle",
+        "Strada antica Giaveno-Sant'Ambrogio",
+        "Via Sacra di San Michele"
+      ],
+      "osm_status": "OK"
+    },
+    {
+      "zone_id": "avigliana-via-garibaldi",
+      "comune": "Avigliana",
+      "target_street": "Via Garibaldi",
+      "listing_target": "Via Garibaldi 25",
+      "listing_url": "https://www.idealista.it/immobile/36981629/",
+      "streets": [
+        "Via Garibaldi",
+        "Via Giuseppe Garibaldi",
+        "Vicolo Paglierino",
+        "Piazzale delle Buone Volontà",
+        "Via Giuseppe Mazzini"
+      ],
+      "osm_status": "OK_GEOCODE_FALLBACK"
+    },
+    {
+      "zone_id": "avigliana-piazza-del-popolo-avigliana-idealista-foto-modificata-con-ia-foto-modificata-con-ia",
+      "comune": "Avigliana",
+      "target_street": "Piazza del Popolo, Avigliana - idealista Foto modificata con IA Foto modificata con IA",
+      "listing_target": "Piazza del Popolo, Avigliana - idealista Foto modificata con IA Foto modificata con IA 1/12",
+      "listing_url": "https://www.idealista.it/immobile/36759851/",
+      "streets": [
+        "Piazza del Popolo, Avigliana - idealista Foto modificata con IA Foto modificata con IA",
+        "Corso Laghi",
+        "Via Cavalieri di Vittorio Veneto",
+        "Via della Repubblica",
+        "Via Martiri della Libertà"
       ],
       "osm_status": "OK"
     },

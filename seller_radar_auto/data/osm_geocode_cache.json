@@ -152,5 +152,10 @@
   "via monte bianco caprie": null,
   "via delle chiuse avigliana": null,
   "borgata sala caprie": null,
-  "localita grangia offre una superficie totale di avigliana": null
+  "localita grangia offre una superficie totale di avigliana": null,
+  "via garibaldi avigliana": {
+    "lat": 45.0781246,
+    "lon": 7.3968575,
+    "display_name": "Via Giuseppe Garibaldi, Nota, Grangia, Avigliana, Torino, Piemonte, 10051, Italia"
+  }
 }
