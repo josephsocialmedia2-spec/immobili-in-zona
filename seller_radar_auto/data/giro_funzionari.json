@@ -8,9 +8,9 @@
       "numero": 1,
       "comune": "Pianezza",
       "score_comune": 78,
-      "righe_lavoro": 26,
-      "residenziale": 24,
-      "commerciale": 2,
+      "righe_lavoro": 34,
+      "residenziale": 31,
+      "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -28,17 +28,6 @@
     {
       "funzionario": "FUNZIONARIO 3",
       "numero": 3,
-      "comune": "Avigliana",
-      "score_comune": 58,
-      "righe_lavoro": 28,
-      "residenziale": 22,
-      "commerciale": 6,
-      "cantieri_imprese": 0,
-      "pdf_da_verificare": 0
-    },
-    {
-      "funzionario": "FUNZIONARIO 4",
-      "numero": 4,
       "comune": "Borgone Susa",
       "score_comune": 56,
       "righe_lavoro": 20,
@@ -48,12 +37,23 @@
       "pdf_da_verificare": 0
     },
     {
-      "funzionario": "FUNZIONARIO 5",
-      "numero": 5,
+      "funzionario": "FUNZIONARIO 4",
+      "numero": 4,
       "comune": "Beinasco",
       "score_comune": 56,
-      "righe_lavoro": 25,
+      "righe_lavoro": 24,
       "residenziale": 18,
+      "commerciale": 6,
+      "cantieri_imprese": 0,
+      "pdf_da_verificare": 0
+    },
+    {
+      "funzionario": "FUNZIONARIO 5",
+      "numero": 5,
+      "comune": "Avigliana",
+      "score_comune": 56,
+      "righe_lavoro": 29,
+      "residenziale": 22,
       "commerciale": 7,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -85,8 +85,8 @@
       "numero": 8,
       "comune": "Alpignano",
       "score_comune": 48,
-      "righe_lavoro": 24,
-      "residenziale": 20,
+      "righe_lavoro": 25,
+      "residenziale": 21,
       "commerciale": 4,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -97,8 +97,8 @@
       "comune": "Grugliasco",
       "score_comune": 43,
       "righe_lavoro": 43,
-      "residenziale": 38,
-      "commerciale": 5,
+      "residenziale": 39,
+      "commerciale": 4,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -107,8 +107,8 @@
       "numero": 10,
       "comune": "Rosta",
       "score_comune": 41,
-      "righe_lavoro": 18,
-      "residenziale": 15,
+      "righe_lavoro": 17,
+      "residenziale": 14,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0

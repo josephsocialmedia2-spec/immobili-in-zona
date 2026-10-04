@@ -87,7 +87,7 @@ fb8e03d8101b8a9cea31,Bruzolo,"Casa indipendente in vendita, Bruzolo, Ristruttura
 7cda5f3339f0283e1b6b,Collegno,"63 immobili in vendita a Leumann, Collegno - Trovit",Trovit,https://case.trovit.it/leumann,EVIDENZA_INSUFFICIENTE
 46a26260a54e88462f74,Condove,Casa singola in vendita a Condove Cod. BELLAFUGERA,Mercato residenziale,https://www.fcimmobiliare.it/i-672094-vendita-casa-singola-condove/,EVIDENZA_INSUFFICIENTE
 a1de59aa4dc36eee7c23,Giaveno,585 immobili in vendita a Giaveno - Trovit,Trovit,https://case.trovit.it/giaveno,EVIDENZA_INSUFFICIENTE
-3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Mercato residenziale,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
+3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Tipologie residenziali,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
 dcca0694688746bd4182,Mompantero,Villa singola in vendita a Mompantero - Urbiano Cod. SUSA143,Mercato generale,https://www.fcimmobiliare.it/i-672129-vendita-villa-singola-mompantero-urbiano/,EVIDENZA_INSUFFICIENTE
 889e6d621b6e64a5d38c,Rivoli,Rivoli - Vendita case - Subito.it,Subito privati,https://www.subito.it/annunci-italia/vendita/immobili/?q=rivoli,EVIDENZA_INSUFFICIENTE
 041892b6563d1bcfafa2,Rosta,"Case in vendita a Rosta, Torino Ovest",Mercato generale,https://caseinvenditainaffitto.it/case-in-vendita/rosta-torino-ovest,PAGINA_CATEGORIA
@@ -157,7 +157,7 @@ aaeb5773b4742c3460a9,Rivoli,Indipendente Rivoli - 182 case in vendita in Rivoli 
 a267cd813123c589dc32,Rivoli,Veronica & Case | Agenzia Immobiliare Rivoli - Provincia di Torino,Agenzie,http://www.veronicaecase.it/,EVIDENZA_INSUFFICIENTE
 0c20519a1c6274b5741d,Rivoli,RE/MAX Ingegno di Rivoli | RE/MAX Italia,Agenzie,https://www.remax.it/trova/agenti-agenzie/agenzia/ingegno,EVIDENZA_INSUFFICIENTE
 735bd59a64f1ad2c1daa,Rubiana,Appartamenti in vendita Rubiana - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/rubiana/,EVIDENZA_INSUFFICIENTE
-b3be6013ddf2f58de280,Rubiana,15.313 immobili in vendita a Rubiana Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rubiana_torino,EVIDENZA_INSUFFICIENTE
+b3be6013ddf2f58de280,Rubiana,15.289 immobili in vendita a Rubiana Torino - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rubiana_torino,EVIDENZA_INSUFFICIENTE
 a4753df33436db25c24f,Rubiana,"Case in vendita a Rubiana, Valli Susa, Sangone",Mercato residenziale,https://caseinvenditainaffitto.it/case-in-vendita/rubiana-valli-susa-sangone,PAGINA_CATEGORIA
 6f5adda86c5a68315da4,San Didero,ALBO PRETORIO DIGITALE - Comune di San Didero,Capannoni logistica,https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?CE=snddr1352,EVIDENZA_INSUFFICIENTE
 232cae954c909a2aff6e,San Giorio,ValsusaOggi,Mercato residenziale,https://www.valsusaoggi.it/,EVIDENZA_INSUFFICIENTE
@@ -214,7 +214,7 @@ a86c054e354e742c7bb6,Chiomonte,Case in vendita Chiomonte - Immobili - Subito.it,
 0f86b06f142f981d690b,Condove,"20 locale commerciales circolo in affitto a Bar, Condove - Trovit",Trovit,https://case.trovit.it/affitto-negozio-circolo-bar,EVIDENZA_INSUFFICIENTE
 d6a1bcb20bff78ace39c,Giaveno,Immobili in Vendita | Agenzia Tecnorete di Giaveno,Tecnorete,https://giaveno1.tecnorete.it/immobili-in-vendita,PAGINA_CATEGORIA
 cac5db4f6e2b21ae5ab7,Giaveno,Locale Commerciale Giaveno - 58 locali comerciali in vendita in Giaveno ...,Commerciale negozi/locali,https://www.nuroa.it/vendita-immobili/locale-commerciale-giaveno,EVIDENZA_INSUFFICIENTE
-3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 142 locali comerciali in affito in ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
+3eee0fc4c251cb380f03,Grugliasco,Locale Commerciale Grugliasco - 132 locali comerciali in affito in ...,Commerciale negozi/locali,https://www.nuroa.it/affitto-case/locale-commerciale-grugliasco,EVIDENZA_INSUFFICIENTE
 2aab1ddaa700fe828f10,Moncenisio,Appartamenti a Moncenisio. Appartamenti in vendita a Moncenisio - Nestoria,Nestoria,https://www.nestoria.it/appartamenti/vendita/moncenisio,EVIDENZA_INSUFFICIENTE
 3a19993ebbd5ad61f09c,Moncenisio,Il Colle del Moncenisio: cosa vedere e fare • Visit Val di Susa,Capannoni logistica,https://visitvaldisusa.it/moncenisio-la-porta-delle-alpi/,EVIDENZA_INSUFFICIENTE
 dd57f1a588eac0425281,Oulx,Case in vendita a Oulx • Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/oulx/,PAGINA_CATEGORIA
@@ -403,7 +403,7 @@ fe57dfa90d2f7186008a,Bruino,Case a Bruino. Immobili in affitto a Bruino - Nestor
 e774f7b66c1c80462fe1,Bruino,PDF Istituto Comprensivo BRUINO,PDF Albo Pretorio edilizia,https://www.icbruino.edu.it/wp-content/uploads/2025/12/del_n.-1_2024-del-C.d-I.-del-10-12-2024-revisione-criteri-iscrizioni.pdf,EVIDENZA_INSUFFICIENTE
 4ddcc7392d80f918f328,Buttigliera Alta,Tecnocasa - INDUSTRIALE PROVINCIA TORINO OVEST sas,Subito privati,https://impresapiu.subito.it/shops/46868-tecnocasa-industriale-provincia-torino-ovest-sas,EVIDENZA_INSUFFICIENTE
 4480010df09c694bc6da,Chiusa di San Michele,Appartamenti in vendita Chiusa di San Michele - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/chiusa-di-san-michele/,EVIDENZA_INSUFFICIENTE
-1f949185a9acca62724e,Condove,Locale Commerciale Condove - 10 locali comerciali in affito in Condove ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
+1f949185a9acca62724e,Condove,Locale Commerciale Condove - 10 locali comerciali in affito in Condove ...,Uffici e direzionale,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
 b583fcc5a28d734ea3fe,Druento,Case in vendita a Druento - oikia.it,Mercato residenziale,https://www.oikia.it/vendita-case/druento/,PAGINA_CATEGORIA
 0eca3ec41b65f8d0e4e9,Druento,Case a Druento in vendita e affitto - RisorseImmobiliari.it,Mercato residenziale,https://www.risorseimmobiliari.it/immobili.asp?url_firstparam=Torino%2Fcase_Druento.html&url_search=case_Druento,EVIDENZA_INSUFFICIENTE
 da701beeaf2f56a92f75,Druento,Case in vendita a Druento - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/druento/,PAGINA_CATEGORIA
@@ -516,7 +516,7 @@ f81cd8d09164c46b5a9f,Condove,"Terratetto in Vendita, 4 Locali, 87 mq (Condove) -
 969b360e63cf8ab370f9,Rivalta di Torino,Ville Indipendenti in vendita a Rivalta Di Torino - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/villa-indipendente-rivalta-torino,EVIDENZA_INSUFFICIENTE
 f8b4e257e712478bd2d3,Rivalta di Torino,Eurocasa Immobiliare | Rivalta di Torino,Tipologie residenziali,https://www.eurocasaimmobili.com/,EVIDENZA_INSUFFICIENTE
 ae28edaa182f60f65ecd,Villar Dora,Valutazione casa indipendente a Villar Dora Morando-65eb9ffd,Mercato residenziale,https://www.caasa.it/piemonte/torino/villar-dora/vendita-65eb9ffd-opinione.html,EVIDENZA_INSUFFICIENTE
-b21867b1589d7239b65d,Villar Focchiardo,295 Immobili in vendita a Villar Focchiardo - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/villar-focchiardo,EVIDENZA_INSUFFICIENTE
+b21867b1589d7239b65d,Villar Focchiardo,294 Immobili in vendita a Villar Focchiardo - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/villar-focchiardo,EVIDENZA_INSUFFICIENTE
 537c5fe7673f1f275482,Beinasco,Locale commerciale in vendita a Beinasco (TO) - rif:Cod.rif3286394,Commerciale negozi/locali,https://www.grimaldifranchising.it/vendita/negozio/to/beinasco/19645,EVIDENZA_INSUFFICIENTE
 05e93dbc15324a2996cf,Bruzolo,Case e appartamenti a Bruzolo. Immobili in vendita a Bruzolo - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/bruzolo,EVIDENZA_INSUFFICIENTE
 0457881a3c341d690107,Fiano,Case in vendita a Fiano Romano - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/fiano-romano/,PAGINA_CATEGORIA
@@ -585,7 +585,6 @@ a9911f13592eaaccff3b,Avigliana,Case in vendita a Avigliana - oikia.it,Mercato re
 4068980f15647e4925c3,Fiano,Case in vendita a Fiano Romano | Bilocale.it,Mercato residenziale,https://www.bilocale.it/vendita-case/fiano-romano/,PAGINA_CATEGORIA
 1effb546ed7ef521ba02,Fiano,Case in Vendita Fiano Romano - CaseRoma.it,Mercato residenziale,https://www.caseroma.it/annunci-vendita/immobili/roma-fiano_romano,PAGINA_CATEGORIA
 9d5a670a23baf97d4a98,Giaveno,31 Locali commerciali in affitto a Giaveno - Mitula Case,Capannoni logistica,https://immobiliare.mitula.it/affitto-locale-commerciale-giaveno,EVIDENZA_INSUFFICIENTE
-0fc58ce8d9ed1e4dfbc1,Pianezza,Immobili commerciali affitto vendita - Annunci per impresa.,Capannoni logistica,https://immobilimpresa.net/,EVIDENZA_INSUFFICIENTE
 78731360733b3c0db350,Rosta,Case e appartamenti a Rosta Torino. Immobili in vendita a ... - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/rosta_torino,EVIDENZA_INSUFFICIENTE
 10a421287760bfc105d1,Sant'Antonino di Susa,Case indipendenti in vendita a Sant'Antonino Di Susa - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case-indipendenti/sant-antonino-di-susa/,EVIDENZA_INSUFFICIENTE
 385748e954b33ab6d97b,Sant'Antonino di Susa,Case in vendita a Sant'Antonino Di Susa - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/sant-antonino-di-susa/,PAGINA_CATEGORIA

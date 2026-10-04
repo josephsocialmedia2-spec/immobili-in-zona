@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T19:55:04.756089+00:00",
+  "generated_at": "2026-10-04T23:30:31.994203+00:00",
   "main_towns": [
     "Villar Dora",
     "Almese",
@@ -109,21 +109,6 @@
         "Via Goletto",
         "Via Gublera",
         "Via Miosa"
-      ],
-      "osm_status": "OK"
-    },
-    {
-      "zone_id": "almese-via-rocci",
-      "comune": "Almese",
-      "target_street": "Via rocci",
-      "listing_target": "via Rocci 6",
-      "listing_url": "https://www.nuroa.it/affitto-case/almese",
-      "streets": [
-        "Via rocci",
-        "Piazza Martiri della Libertà",
-        "Via Malatrait",
-        "Via Medico Ball",
-        "Via San Sebastiano"
       ],
       "osm_status": "OK"
     },
@@ -311,8 +296,8 @@
       "zone_id": "avigliana-corso-laghi",
       "comune": "Avigliana",
       "target_street": "corso Laghi",
-      "listing_target": "Corso Laghi 115",
-      "listing_url": "https://www.immobiliare.it/annunci/132840718/",
+      "listing_target": "corso Laghi 165",
+      "listing_url": "https://www.immobiliare.it/annunci/132381194/",
       "streets": [
         "corso Laghi",
         "Piazza del Popolo",
@@ -1414,7 +1399,7 @@
       "zone_id": "avigliana-via-laghi-di-avigliana",
       "comune": "Avigliana",
       "target_street": "Via Laghi di Avigliana",
-      "listing_target": "Via Laghi di Avigliana 104",
+      "listing_target": "Via Laghi di Avigliana  140",
       "listing_url": "https://www.nuroa.it/affitto-case/locale-commerciale-avigliana",
       "streets": [
         "Via Laghi di Avigliana"
