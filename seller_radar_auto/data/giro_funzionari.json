@@ -8,8 +8,8 @@
       "numero": 1,
       "comune": "Pianezza",
       "score_comune": 78,
-      "righe_lavoro": 34,
-      "residenziale": 31,
+      "righe_lavoro": 31,
+      "residenziale": 28,
       "commerciale": 3,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -30,8 +30,8 @@
       "numero": 3,
       "comune": "Borgone Susa",
       "score_comune": 56,
-      "righe_lavoro": 20,
-      "residenziale": 20,
+      "righe_lavoro": 18,
+      "residenziale": 18,
       "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
@@ -74,9 +74,9 @@
       "numero": 7,
       "comune": "Buttigliera Alta",
       "score_comune": 48,
-      "righe_lavoro": 3,
-      "residenziale": 2,
-      "commerciale": 1,
+      "righe_lavoro": 10,
+      "residenziale": 10,
+      "commerciale": 0,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     },
@@ -107,9 +107,9 @@
       "numero": 10,
       "comune": "Rosta",
       "score_comune": 41,
-      "righe_lavoro": 17,
-      "residenziale": 14,
-      "commerciale": 3,
+      "righe_lavoro": 14,
+      "residenziale": 12,
+      "commerciale": 2,
       "cantieri_imprese": 0,
       "pdf_da_verificare": 0
     }

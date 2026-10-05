@@ -1,7 +1,7 @@
 ﻿ID,COMUNE,TITOLO,FONTE,URL,MOTIVO_SCARTO
 8c2bf7566b731a977793,Almese,159 immobili in vendita a Almese - Trovit,Trovit,https://case.trovit.it/almese,EVIDENZA_INSUFFICIENTE
 1f6a089f092103b77b70,Almese,Case e appartamenti a Almese. Immobili in vendita a Almese - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/almese,EVIDENZA_INSUFFICIENTE
-2bcdb0fc06c342a547fe,Almese,447 Immobili in vendita a Almese - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/almese,EVIDENZA_INSUFFICIENTE
+2bcdb0fc06c342a547fe,Almese,443 Immobili in vendita a Almese - Mitula Case,Mercato residenziale,https://immobiliare.mitula.it/almese,EVIDENZA_INSUFFICIENTE
 9bd098c51c8133127d2c,Alpignano,26.611 immobili in vendita a Alpignano - Nestoria,Nestoria,https://www.nestoria.it/immobiliare/vendita/alpignano,EVIDENZA_INSUFFICIENTE
 b1401933cac7e2c369de,Avigliana,"11 immobili in vendita a Villaggio Primavera, Avigliana - Trovit",Trovit,https://case.trovit.it/avigliana-villaggio-primavera,EVIDENZA_INSUFFICIENTE
 26cf0943b957c20d714b,Bardonecchia,Bardonecchia - Vendita case Piemonte - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/immobili/?q=bardonecchia,PAGINA_CATEGORIA
@@ -85,9 +85,9 @@ e28163f4853d4f9313e1,Bardonecchia,Case e appartamenti a Bardonecchia. Immobili i
 fb8e03d8101b8a9cea31,Bruzolo,"Casa indipendente in vendita, Bruzolo, Ristrutturato con box, 190 mq ...",Wikicasa,https://www.wikicasa.it/annuncio/30661366,EVIDENZA_INSUFFICIENTE
 369c8faa870279f34cf4,Coazze,110 casas in vendita a Coazze - Trovit,Trovit,https://case.trovit.it/casa-coazze,EVIDENZA_INSUFFICIENTE
 7cda5f3339f0283e1b6b,Collegno,"63 immobili in vendita a Leumann, Collegno - Trovit",Trovit,https://case.trovit.it/leumann,EVIDENZA_INSUFFICIENTE
-46a26260a54e88462f74,Condove,Casa singola in vendita a Condove Cod. BELLAFUGERA,Mercato residenziale,https://www.fcimmobiliare.it/i-672094-vendita-casa-singola-condove/,EVIDENZA_INSUFFICIENTE
+46a26260a54e88462f74,Condove,Casa singola in vendita a Condove Cod. BELLAFUGERA,Uffici e direzionale,https://www.fcimmobiliare.it/i-672094-vendita-casa-singola-condove/,EVIDENZA_INSUFFICIENTE
 a1de59aa4dc36eee7c23,Giaveno,585 immobili in vendita a Giaveno - Trovit,Trovit,https://case.trovit.it/giaveno,EVIDENZA_INSUFFICIENTE
-3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Tipologie residenziali,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
+3d481b8732ec62135ccb,Giaveno,Immobiliare Giavenese,Mercato residenziale,https://www.immobiliaregiavenese.it/,EVIDENZA_INSUFFICIENTE
 dcca0694688746bd4182,Mompantero,Villa singola in vendita a Mompantero - Urbiano Cod. SUSA143,Mercato generale,https://www.fcimmobiliare.it/i-672129-vendita-villa-singola-mompantero-urbiano/,EVIDENZA_INSUFFICIENTE
 889e6d621b6e64a5d38c,Rivoli,Rivoli - Vendita case - Subito.it,Subito privati,https://www.subito.it/annunci-italia/vendita/immobili/?q=rivoli,EVIDENZA_INSUFFICIENTE
 041892b6563d1bcfafa2,Rosta,"Case in vendita a Rosta, Torino Ovest",Mercato generale,https://caseinvenditainaffitto.it/case-in-vendita/rosta-torino-ovest,PAGINA_CATEGORIA
@@ -403,7 +403,7 @@ fe57dfa90d2f7186008a,Bruino,Case a Bruino. Immobili in affitto a Bruino - Nestor
 e774f7b66c1c80462fe1,Bruino,PDF Istituto Comprensivo BRUINO,PDF Albo Pretorio edilizia,https://www.icbruino.edu.it/wp-content/uploads/2025/12/del_n.-1_2024-del-C.d-I.-del-10-12-2024-revisione-criteri-iscrizioni.pdf,EVIDENZA_INSUFFICIENTE
 4ddcc7392d80f918f328,Buttigliera Alta,Tecnocasa - INDUSTRIALE PROVINCIA TORINO OVEST sas,Subito privati,https://impresapiu.subito.it/shops/46868-tecnocasa-industriale-provincia-torino-ovest-sas,EVIDENZA_INSUFFICIENTE
 4480010df09c694bc6da,Chiusa di San Michele,Appartamenti in vendita Chiusa di San Michele - Subito.it,Subito privati,https://www.subito.it/annunci-piemonte/vendita/appartamenti/torino/chiusa-di-san-michele/,EVIDENZA_INSUFFICIENTE
-1f949185a9acca62724e,Condove,Locale Commerciale Condove - 10 locali comerciali in affito in Condove ...,Uffici e direzionale,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
+1f949185a9acca62724e,Condove,Locale Commerciale Condove - 10 locali comerciali in affito in Condove ...,Capannoni logistica,https://www.nuroa.it/affitto-case/locale-commerciale-condove,EVIDENZA_INSUFFICIENTE
 b583fcc5a28d734ea3fe,Druento,Case in vendita a Druento - oikia.it,Mercato residenziale,https://www.oikia.it/vendita-case/druento/,PAGINA_CATEGORIA
 0eca3ec41b65f8d0e4e9,Druento,Case a Druento in vendita e affitto - RisorseImmobiliari.it,Mercato residenziale,https://www.risorseimmobiliari.it/immobili.asp?url_firstparam=Torino%2Fcase_Druento.html&url_search=case_Druento,EVIDENZA_INSUFFICIENTE
 da701beeaf2f56a92f75,Druento,Case in vendita a Druento - Wikicasa,Wikicasa,https://www.wikicasa.it/vendita-case/druento/,PAGINA_CATEGORIA
@@ -925,3 +925,4 @@ c8a19009076207e843c9,Rivoli,Case in vendita da Privati a Rivoli - CasaDaPrivato.
 316edae9c57f096a2f0a,Sant'Antonino di Susa,Villa singola in vendita a Sant'Antonino di Susa Cod. XXVAPRILE,Mercato residenziale,https://www.fcimmobiliare.it/i-672105-vendita-villa-singola-santantonino-di-susa/,EVIDENZA_INSUFFICIENTE
 bec2e649497c8640d5f2,Villar Dora,Quotazione appartamenti a Villar Dora - mercato-immobiliare.info,Mercato residenziale,https://www.mercato-immobiliare.info/piemonte/torino/villar-dora/quotazione-appartamento.html,EVIDENZA_INSUFFICIENTE
 22ee28f4c66f4e775097,Almese,3 locale commerciales in vendita a Almese - Trovit,Trovit,https://case.trovit.it/negozio-almese,EVIDENZA_INSUFFICIENTE
+6e4e92f093b7a0b47988,Rivalta di Torino,Vendita all'asta A4359459 - DEPOSITO - Aste Giudiziarie Inlinea S.p.A.,Capannoni logistica,https://www.astegiudiziarie.it/vendita-asta-deposito-rivalta-di-torino-via-sibilla-aleramo-3-10040-rivalta-di-torino-to-italia-l2340747-p1318764,EVIDENZA_INSUFFICIENTE
