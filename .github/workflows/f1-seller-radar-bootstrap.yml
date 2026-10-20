@@ -22,6 +22,14 @@ jobs:
         run: python seller_radar_auto/build_operational_territory.py
       - name: Build discovery matrix including borgate
         run: python seller_radar_auto/build_discovery_matrix.py
+
+      - name: Persist territory cache
+        run: |
+          git config user.name "actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add seller_radar_auto/data/municipalities_operational.csv seller_radar_auto/data/municipality_geocodes.json seller_radar_auto/data/discovery_matrix.json
+          git diff --cached --quiet || git commit -m "territorio: cache perimetro 20 km"
+          git push
       - name: Agency inventory discovery
         run: python seller_radar_auto/agency_inventory_discovery.py
       - name: Portals private social discovery
