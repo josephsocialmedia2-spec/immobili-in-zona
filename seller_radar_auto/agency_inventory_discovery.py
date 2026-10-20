@@ -116,7 +116,7 @@ with OUT.open("w",encoding="utf-8-sig",newline="") as f:
 old=[]; old_fields=[]
 if QUEUE.exists():
     with QUEUE.open(encoding="utf-8-sig",newline="") as f:
-        old=list(csv.DictReader(f)); old_fields=list(f.fieldnames or [])
+        reader=csv.DictReader(f); old=list(reader); old_fields=list(reader.fieldnames or [])
 byurl={norm_url(r.get("URL","")):r for r in old if r.get("URL")}
 for x in rows:
     key=norm_url(x["URL"])
