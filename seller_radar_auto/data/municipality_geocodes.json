@@ -1,0 +1,337 @@
+{
+  "Sant'Ambrogio di Torino": {
+    "lat": 45.099445,
+    "lon": 7.362315,
+    "display_name": "Sant'Ambrogio di Torino, Torino, Piemonte, 10057, Italia"
+  },
+  "Villar Dora": {
+    "lat": 45.114646,
+    "lon": 7.383515,
+    "display_name": "Villar Dora, Torino, Piemonte, Italia"
+  },
+  "Chianocco": {
+    "lat": 45.1486267,
+    "lon": 7.1681539,
+    "display_name": "Chianocco, Torino, Piemonte, Italia"
+  },
+  "Bruzolo": {
+    "lat": 45.1422257,
+    "lon": 7.195648,
+    "display_name": "Bruzolo, Torino, Piemonte, Italia"
+  },
+  "San Didero": {
+    "lat": 45.1353087,
+    "lon": 7.2129198,
+    "display_name": "San Didero, Torino, Piemonte, Italia"
+  },
+  "San Giorio di Susa": {
+    "lat": 45.1279823,
+    "lon": 7.1779846,
+    "display_name": "San Giorio di Susa, Torino, Piemonte, Italia"
+  },
+  "Borgone Susa": {
+    "lat": 45.1230132,
+    "lon": 7.2409317,
+    "display_name": "Borgone Susa, Torino, Piemonte, Italia"
+  },
+  "Villar Focchiardo": {
+    "lat": 45.1113887,
+    "lon": 7.2247248,
+    "display_name": "Villar Focchiardo, Torino, Piemonte, Italia"
+  },
+  "Condove": {
+    "lat": 45.1174186,
+    "lon": 7.3094552,
+    "display_name": "Condove, Torino, Piemonte, 10055, Italia"
+  },
+  "Caprie": {
+    "lat": 45.118845,
+    "lon": 7.331914,
+    "display_name": "Caprie, Torino, Piemonte, Italia"
+  },
+  "Sant'Antonino di Susa": {
+    "lat": 45.1070733,
+    "lon": 7.2735862,
+    "display_name": "Sant'Antonino di Susa, Torino, Piemonte, Italia"
+  },
+  "Vaie": {
+    "lat": 45.095798,
+    "lon": 7.2935019,
+    "display_name": "Vaie, Torino, Piemonte, Italia"
+  },
+  "Chiusa di San Michele": {
+    "lat": 45.1039129,
+    "lon": 7.326972,
+    "display_name": "Chiusa di San Michele, Torino, Piemonte, Italia"
+  },
+  "Rubiana": {
+    "lat": 45.1379458,
+    "lon": 7.3848302,
+    "display_name": "Rubiana, Unione Montana Alpi Graie, Torino, Piemonte, Italia"
+  },
+  "Valgioie": {
+    "lat": 45.0762363,
+    "lon": 7.3408936,
+    "display_name": "Valgioie, Torino, Piemonte, Italia"
+  },
+  "Coazze": {
+    "lat": 45.0521938,
+    "lon": 7.2979015,
+    "display_name": "Coazze, Torino, Piemonte, Italia"
+  },
+  "Giaveno": {
+    "lat": 45.0420053,
+    "lon": 7.3519942,
+    "display_name": "Giaveno, Torino, Piemonte, 10094, Italia"
+  },
+  "Almese": {
+    "lat": 45.1168763,
+    "lon": 7.39455,
+    "display_name": "Almese, Torino, Piemonte, Italia"
+  },
+  "Avigliana": {
+    "lat": 45.0779435,
+    "lon": 7.3983904,
+    "display_name": "Avigliana, Torino, Piemonte, 10051, Italia"
+  },
+  "Val della Torre": {
+    "lat": 45.155147,
+    "lon": 7.445015,
+    "display_name": "Val della Torre, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "Givoletto": {
+    "lat": 45.162248,
+    "lon": 7.496416,
+    "display_name": "Givoletto, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "La Cassa": {
+    "lat": 45.1802806,
+    "lon": 7.5162134,
+    "display_name": "La Cassa, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "Varisella": {
+    "lat": 45.2102551,
+    "lon": 7.4889765,
+    "display_name": "Varisella, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "Fiano": {
+    "lat": 45.2171271,
+    "lon": 7.5210323,
+    "display_name": "Fiano, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "Robassomero": {
+    "lat": 45.200049,
+    "lon": 7.568917,
+    "display_name": "Robassomero, Torino, Piemonte, Italia"
+  },
+  "San Gillio": {
+    "lat": 45.142748,
+    "lon": 7.535817,
+    "display_name": "San Gillio, Torino, Piemonte, Italia"
+  },
+  "Druento": {
+    "lat": 45.1344531,
+    "lon": 7.5764559,
+    "display_name": "Druento, Torino, Piemonte, Italia"
+  },
+  "Caselette": {
+    "lat": 45.104746,
+    "lon": 7.480817,
+    "display_name": "Caselette, Torino, Piemonte, Italia"
+  },
+  "Pianezza": {
+    "lat": 45.105847,
+    "lon": 7.543418,
+    "display_name": "Pianezza, Torino, Piemonte, 10044, Italia"
+  },
+  "Alpignano": {
+    "lat": 45.0957237,
+    "lon": 7.5254027,
+    "display_name": "Alpignano, Torino, Piemonte, 10091, Italia"
+  },
+  "Buttigliera Alta": {
+    "lat": 45.068804,
+    "lon": 7.434488,
+    "display_name": "Buttigliera Alta, Torino, Piemonte, Italia"
+  },
+  "Rosta": {
+    "lat": 45.0734762,
+    "lon": 7.4676599,
+    "display_name": "Rosta, Torino, Piemonte, Italia"
+  },
+  "Reano": {
+    "lat": 45.0520303,
+    "lon": 7.4304703,
+    "display_name": "Reano, Torino, Piemonte, Italia"
+  },
+  "Villarbasse": {
+    "lat": 45.045145,
+    "lon": 7.468418,
+    "display_name": "Villarbasse, Torino, Piemonte, 10040, Italia"
+  },
+  "Trana": {
+    "lat": 45.039044,
+    "lon": 7.421817,
+    "display_name": "Trana, Torino, Piemonte, Italia"
+  },
+  "Rivoli": {
+    "lat": 45.0697151,
+    "lon": 7.5176764,
+    "display_name": "Rivoli, Torino, Piemonte, 10098, Italia"
+  },
+  "Collegno": {
+    "lat": 45.0775473,
+    "lon": 7.5724262,
+    "display_name": "Collegno, Torino, Piemonte, Italia"
+  },
+  "Grugliasco": {
+    "lat": 45.068046,
+    "lon": 7.57762,
+    "display_name": "Grugliasco, Torino, Piemonte, Italia"
+  },
+  "Rivalta di Torino": {
+    "lat": 45.034045,
+    "lon": 7.518419,
+    "display_name": "Rivalta di Torino, Torino, Piemonte, Italia"
+  },
+  "Bruino": {
+    "lat": 45.021066,
+    "lon": 7.4694735,
+    "display_name": "Bruino, Torino, Piemonte, Italia"
+  },
+  "Beinasco": {
+    "lat": 45.022097,
+    "lon": 7.5793974,
+    "display_name": "Beinasco, Torino, Piemonte, 10092, Italia"
+  },
+  "Susa": {
+    "lat": 45.1383808,
+    "lon": 7.0493387,
+    "display_name": "Susa, Torino, Piemonte, Italia"
+  },
+  "Mompantero": {
+    "lat": 45.1420677,
+    "lon": 7.0644111,
+    "display_name": "Mompantero, Torino, Piemonte, Italia"
+  },
+  "Meana di Susa": {
+    "lat": 45.0975732,
+    "lon": 7.0662212,
+    "display_name": "Meana di Susa, Torino, Piemonte, Italia"
+  },
+  "Gravere": {
+    "lat": 45.1061354,
+    "lon": 7.0274329,
+    "display_name": "Gravere, Torino, Piemonte, Italia"
+  },
+  "Giaglione": {
+    "lat": 45.1402386,
+    "lon": 7.0147562,
+    "display_name": "Giaglione, Torino, Piemonte, Italia"
+  },
+  "Venaus": {
+    "lat": 45.1549096,
+    "lon": 7.0125697,
+    "display_name": "Venaus, Torino, Piemonte, Italia"
+  },
+  "Mattie": {
+    "lat": 45.1180569,
+    "lon": 7.1150875,
+    "display_name": "Mattie, Torino, Piemonte, Italia"
+  },
+  "Chiomonte": {
+    "lat": 45.119542,
+    "lon": 6.985306,
+    "display_name": "Chiomonte, Torino, Piemonte, Italia"
+  },
+  "Novalesa": {
+    "lat": 45.1896401,
+    "lon": 7.0154982,
+    "display_name": "Novalesa, Torino, Piemonte, Italia"
+  },
+  "Bussoleno": {
+    "lat": 45.1392706,
+    "lon": 7.1477166,
+    "display_name": "Bussoleno, Torino, Piemonte, 10053, Italia"
+  },
+  "Moncenisio": {
+    "lat": 45.2052852,
+    "lon": 6.9824996,
+    "display_name": "Moncenisio, Torino, Piemonte, Italia"
+  },
+  "Exilles": {
+    "lat": 45.0973834,
+    "lon": 6.9290646,
+    "display_name": "Exilles, Torino, Piemonte, Italia"
+  },
+  "Salbertrand": {
+    "lat": 45.07204,
+    "lon": 6.883205,
+    "display_name": "Salbertrand, Torino, Piemonte, Italia"
+  },
+  "San Valeriano": {
+    "lat": 45.1152963,
+    "lon": 7.2674054,
+    "display_name": "San Valeriano, Borgone Susa, Torino, Piemonte, 10055, Italia"
+  },
+  "Ferriera di Buttigliera Alta": {
+    "lat": 45.0823153,
+    "lon": 7.4301174,
+    "display_name": "Ferriera, Buttigliera Alta, Torino, Piemonte, 10051, Italia"
+  },
+  "Sangano": {
+    "lat": 45.0265611,
+    "lon": 7.4465516,
+    "display_name": "Sangano, Torino, Piemonte, Italia"
+  },
+  "Oulx": {
+    "lat": 45.0330519,
+    "lon": 6.83251,
+    "display_name": "Oulx, Torino, Piemonte, 10056, Italia"
+  },
+  "Bardonecchia": {
+    "lat": 45.078339,
+    "lon": 6.703205,
+    "display_name": "Bardonecchia, Torino, Piemonte, 10052, Italia"
+  },
+  "Novaretto": {
+    "lat": 45.1183612,
+    "lon": 7.3536496,
+    "display_name": "Novaretto, Caprie, Torino, Piemonte, 10057, Italia"
+  },
+  "Cumiana": {
+    "lat": 44.979742,
+    "lon": 7.376717,
+    "display_name": "Cumiana, Torino, Piemonte, Italia"
+  },
+  "Piossasco": {
+    "lat": 44.990896,
+    "lon": 7.4629349,
+    "display_name": "Piossasco, Torino, Piemonte, 10045, Italia"
+  },
+  "Orbassano": {
+    "lat": 45.0072629,
+    "lon": 7.5369192,
+    "display_name": "Orbassano, Torino, Piemonte, 10043, Italia"
+  },
+  "Venaria Reale": {
+    "lat": 45.1348114,
+    "lon": 7.6268658,
+    "display_name": "Venaria Reale, Torino, Piemonte, 10078, Italia"
+  },
+  "Vallo Torinese": {
+    "lat": 45.2247447,
+    "lon": 7.4955659,
+    "display_name": "Vallo Torinese, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  },
+  "Viù": {
+    "lat": 45.2391603,
+    "lon": 7.3758398,
+    "display_name": "Viù, Unione Montana Alpi Graie, Torino, Piemonte, Italia"
+  },
+  "Coassolo Torinese": {
+    "lat": 45.2975828,
+    "lon": 7.4604581,
+    "display_name": "Coassolo Torinese, Unione Montana di Comuni delle Valli di Lanzo, Ceronda e Casternone, Torino, Piemonte, Italia"
+  }
+}

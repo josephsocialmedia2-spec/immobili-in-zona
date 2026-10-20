@@ -1,0 +1,1079 @@
+{
+  "targets": [
+    {
+      "tipo": "COMUNE",
+      "comune": "Villar Dora",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Chianocco",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Bruzolo",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "San Didero",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "San Giorio di Susa",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Borgone Susa",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Villar Focchiardo",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Condove",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Caprie",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Sant'Antonino di Susa",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Vaie",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Chiusa di San Michele",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Rubiana",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Valgioie",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Coazze",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Giaveno",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Almese",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Avigliana",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Val della Torre",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Givoletto",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "La Cassa",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Varisella",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Fiano",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Robassomero",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "San Gillio",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Druento",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Caselette",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Pianezza",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Alpignano",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Buttigliera Alta",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Rosta",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Reano",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Villarbasse",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Trana",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Rivoli",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Collegno",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Grugliasco",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Rivalta di Torino",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Bruino",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Beinasco",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Mattie",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Bussoleno",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "San Valeriano",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Ferriera di Buttigliera Alta",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Sangano",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Novaretto",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Cumiana",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Piossasco",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Orbassano",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Vallo Torinese",
+      "localita": ""
+    },
+    {
+      "tipo": "COMUNE",
+      "comune": "Viù",
+      "localita": ""
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "San Pietro"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Bertassi"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Cascina Bertini"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Cascina Dosio"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Cascina Gariglio"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Cascina Pogolotti"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Cascina Verdina"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Borgo di Sopra"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Borgo di Mezzo"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Savellera"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Falconero"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "Viandotta"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Sant'Ambrogio di Torino",
+      "localita": "La Braida"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Battagliotti"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Bertassi"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Cascina Del Conte"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Case Nuove"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Chiattera"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Davì"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Drubiaglio"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Grangia"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Mortera"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Olivero"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Avigliana",
+      "localita": "Sada"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Avigliana",
+      "localita": "Bacchiasso"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Avigliana",
+      "localita": "Girba"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Avigliana",
+      "localita": "Grignetto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Avigliana",
+      "localita": "San Bartolomeo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Avigliana",
+      "localita": "Tetti Colombo"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Avigliana",
+      "localita": "Case Dino"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Avigliana",
+      "localita": "Case Felisio"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Avigliana",
+      "localita": "Case Garello"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Avigliana",
+      "localita": "Case Mer"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Avigliana",
+      "localita": "Case Periale"
+    },
+    {
+      "tipo": "LOCALITA",
+      "comune": "Avigliana",
+      "localita": "Case Santo Stefano"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Andruini"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Baratta"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Bert"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Borgione"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Borgionera"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Bosio"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Colombo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Maltrot"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Calliero"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Cordonatto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Giorda"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Merlo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Molino"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Montecomposto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Morando"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Richetto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Suppo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Torre del Colle"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Villar Dora",
+      "localita": "Vindrola"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Chiusa di San Michele",
+      "localita": "Basinatto"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Chiusa di San Michele",
+      "localita": "Pracchio"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Chiusa di San Michele",
+      "localita": "Bennale"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Chiusa di San Michele",
+      "localita": "Molè"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Caprie",
+      "localita": "Novaretto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Caprie",
+      "localita": "Chiodo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Case Comba"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Pertusetto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Casale Giuliani"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Case Buia"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Case Budrola"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Case Meini"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Peroldrado"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Campambiardo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Casale Cevrè"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Camparnaldo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Trucetto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Case Inferiori"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Comba e Celle"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Case Calcinera"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Piagnolo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Caprie",
+      "localita": "Sala"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Vaie",
+      "localita": "Folatone"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Vaie",
+      "localita": "Mura"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Vaie",
+      "localita": "Molè"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Sant'Antonino di Susa",
+      "localita": "Cresto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Buttigliera Alta",
+      "localita": "Ferriera"
+    },
+    {
+      "tipo": "BORGO",
+      "comune": "Buttigliera Alta",
+      "localita": "Sant'Antonio di Ranverso"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Almese",
+      "localita": "Rivera"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Almese",
+      "localita": "Milanere"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Almese",
+      "localita": "Malatrait"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Bertolo"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Bollè"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Braida"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Crivella"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Falca"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Gamba di Bosco"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Giorda"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Grange"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Magnetto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Michela"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Miosa"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Morsino"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Panzone"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Soffietti"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Sonetto"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Tetti Dora"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Tetti Montabone"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Tetti San Mauro"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Almese",
+      "localita": "Vighetto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Caselette",
+      "localita": "Grange di Caselette"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Caselette",
+      "localita": "Grangiotto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Val della Torre",
+      "localita": "Montelera"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Val della Torre",
+      "localita": "Brione"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Rubiana",
+      "localita": "Favella"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Rubiana",
+      "localita": "Mompellato"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Condove",
+      "localita": "Fucine"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Condove",
+      "localita": "Fiori"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Condove",
+      "localita": "Rivi"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Condove",
+      "localita": "Molaretto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Airassa"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Alotti"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Bella Fugera"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Bigliasco"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Campo Rossetto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Combe"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Conte Verde"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Cordole"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Crosatto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Frassinere"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Gagnor"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Grange"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "Grangetta"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Condove",
+      "localita": "La Rocca"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Alpe Colombino"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Buffa"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Chiarmetta"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Colpastore"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Dalmassi"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Maddalena"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Mollar dei Franchi"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Pontepietra"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Provonda"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Ruata Sangone"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Sala"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Selvaggio"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Giaveno",
+      "localita": "Villa"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Belvedere"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Biellese"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Colombé"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Cordero"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Durando"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Galletto"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Moranda"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "Pianca"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "San Bernardino"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Trana",
+      "localita": "San Giovanni"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Valgioie",
+      "localita": "Ruata Gioana"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Valgioie",
+      "localita": "Tortorello"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Valgioie",
+      "localita": "Combravino"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Valgioie",
+      "localita": "Colle Braida"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Valgioie",
+      "localita": "Bussone"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Valgioie",
+      "localita": "Molino"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Reano",
+      "localita": "Fiori"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Reano",
+      "localita": "Rivata"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Reano",
+      "localita": "Rapiana"
+    },
+    {
+      "tipo": "BORGATA",
+      "comune": "Reano",
+      "localita": "Fontana"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Rosta",
+      "localita": "Corso Moncenisio"
+    },
+    {
+      "tipo": "FRAZIONE",
+      "comune": "Rosta",
+      "localita": "Ponata"
+    }
+  ]
+}
