@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F1 Seller Radar</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#0b0e0c;color:#fff}.wrap{max-width:1200px;margin:auto;padding:20px}
+h1{margin:0 0 8px}.sub{color:#9cb0a1}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+.card{background:#121814;border:1px solid #273329;border-radius:12px;padding:12px}.n{font-size:28px;color:#39f28a;font-weight:800}
+table{width:100%;border-collapse:collapse;background:#111612}th,td{padding:9px;border-bottom:1px solid #253026;text-align:left;font-size:12px}th{color:#39f28a}
+a{color:#39f28a}@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.scroll{overflow:auto}}
+</style></head><body><div class="wrap">
+<h1>F1 SELLER RADAR</h1><div class="sub" id="center">Recovery build</div>
+<div class="stats">
+<div class="card"><div>MASTER</div><div class="n" id="master">—</div></div>
+<div class="card"><div>TERRITORIO</div><div class="n" id="territory">—</div></div>
+<div class="card"><div>FERMATE</div><div class="n" id="ready">—</div></div>
+<div class="card"><div>DA VERIFICARE</div><div class="n" id="verify">—</div></div>
+</div>
+<div class="scroll"><table><thead><tr><th>Comune</th><th>Indirizzo</th><th>Score</th><th>Stato</th><th>Fonte</th><th>Link</th></tr></thead><tbody id="rows"></tbody></table></div>
+</div>
+<script>
+function parseCSV(t){let r=[],row=[],c='',q=false;for(let i=0;i<t.length;i++){let ch=t[i];if(ch=='"'){if(q&&t[i+1]=='"'){c+='"';i++}else q=!q}else if(ch==','&&!q){row.push(c);c=''}else if((ch=='\n'||ch=='\r')&&!q){if(ch=='\r'&&t[i+1]=='\n')i++;row.push(c);if(row.some(x=>x))r.push(row);row=[];c=''}else c+=ch}if(c||row.length){row.push(c);r.push(row)}let h=r.shift()||[];return r.map(a=>Object.fromEntries(h.map((k,i)=>[k.replace(/^\ufeff/,'').trim(),a[i]||''])))} 
+Promise.all([
+ fetch('data/giro_riepilogo.json').then(r=>r.ok?r.json():{}),
+ fetch('data/giro_acquisizione_oggi.csv').then(r=>r.ok?r.text():'')
+]).then(([s,t])=>{
+ document.getElementById('master').textContent=s.seller_master_totali??0;
+ document.getElementById('territory').textContent=s.nel_territorio_attivo??0;
+ document.getElementById('ready').textContent=s.fermate_pronte??0;
+ document.getElementById('verify').textContent=s.indirizzo_da_verificare??0;
+ document.getElementById('center').textContent=(s.centro_operativo||'')+' · '+(s.raggio_operativo||'');
+ const data=parseCSV(t).slice(0,500);
+ document.getElementById('rows').innerHTML=data.map(x=>`<tr><td>${x.COMUNE||''}</td><td>${x.DOVE_ANDRE||''}</td><td>${x.SCORE||''}</td><td>${x.STATO_GIRO||''}</td><td>${x.FONTE||''}</td><td>${x.URL?`<a target="_blank" href="${x.URL}">APRI</a>`:''}</td></tr>`).join('');
+}).catch(console.error)
+</script></body></html>
