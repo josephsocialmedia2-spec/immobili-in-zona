@@ -1,0 +1,12 @@
+{
+  "seller_master_totali": 0,
+  "seller_attivi_master": 0,
+  "storico_non_attivo": 0,
+  "nel_territorio_attivo": 0,
+  "fermate_pronte": 0,
+  "indirizzo_da_verificare": 0,
+  "backlog_fuori_territorio": 0,
+  "territori_operativi_configurati": 41,
+  "centro_operativo": "Sant'Ambrogio di Torino",
+  "raggio_operativo": "20 km"
+}
