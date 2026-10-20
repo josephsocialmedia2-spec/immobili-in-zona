@@ -1,4 +1,164 @@
-enabled,comune,tipo,localita
-1,Almese,BORGATA,Borgata Malatrait II
-1,Almese,BORGATA,Borgata Grange
-1,Almese,BORGATA,Borgata Morando
+enabled,comune,tipo,localita,source_url
+1,Sant'Ambrogio di Torino,FRAZIONE,San Pietro,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Sant'Ambrogio di Torino,FRAZIONE,Bertassi,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Sant'Ambrogio di Torino,LOCALITA,Cascina Bertini,https://it.wikipedia.org/wiki/Sant%27Ambrogio_di_Torino
+1,Sant'Ambrogio di Torino,LOCALITA,Cascina Dosio,https://it.wikipedia.org/wiki/Sant%27Ambrogio_di_Torino
+1,Sant'Ambrogio di Torino,LOCALITA,Cascina Gariglio,https://it.wikipedia.org/wiki/Sant%27Ambrogio_di_Torino
+1,Sant'Ambrogio di Torino,LOCALITA,Cascina Pogolotti,https://it.wikipedia.org/wiki/Sant%27Ambrogio_di_Torino
+1,Sant'Ambrogio di Torino,LOCALITA,Cascina Verdina,https://it.wikipedia.org/wiki/Sant%27Ambrogio_di_Torino
+1,Sant'Ambrogio di Torino,BORGO,Borgo di Sopra,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Sant'Ambrogio di Torino,BORGO,Borgo di Mezzo,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Sant'Ambrogio di Torino,BORGO,Savellera,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Sant'Ambrogio di Torino,BORGO,Falconero,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Sant'Ambrogio di Torino,BORGO,Viandotta,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Sant'Ambrogio di Torino,BORGO,La Braida,https://www.comune.santambrogioditorino.to.it/Ilcomuneinbreve
+1,Avigliana,FRAZIONE,Battagliotti,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Bertassi,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Cascina Del Conte,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Case Nuove,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Chiattera,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Davì,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Drubiaglio,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Grangia,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Mortera,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Olivero,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,FRAZIONE,Sada,https://www.comune.avigliana.to.it/it-it/vivere-il-comune/scheda
+1,Avigliana,BORGATA,Bacchiasso,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,BORGATA,Girba,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,BORGATA,Grignetto,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,BORGATA,San Bartolomeo,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,BORGATA,Tetti Colombo,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,LOCALITA,Case Dino,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,LOCALITA,Case Felisio,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,LOCALITA,Case Garello,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,LOCALITA,Case Mer,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,LOCALITA,Case Periale,https://it.wikipedia.org/wiki/Avigliana
+1,Avigliana,LOCALITA,Case Santo Stefano,https://it.wikipedia.org/wiki/Avigliana
+1,Villar Dora,BORGATA,Andruini,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Baratta,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Bert,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Borgione,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Borgionera,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Bosio,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Colombo,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Maltrot,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Calliero,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Cordonatto,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Giorda,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Merlo,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Molino,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Montecomposto,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Morando,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Richetto,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Suppo,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Torre del Colle,https://it.wikipedia.org/wiki/Villar_Dora
+1,Villar Dora,BORGATA,Vindrola,https://it.wikipedia.org/wiki/Villar_Dora
+1,Chiusa di San Michele,BORGATA,Basinatto,https://www.comune.chiusadisanmichele.to.it/it-it/vivere-il-comune/scheda
+1,Chiusa di San Michele,BORGO,Pracchio,https://www.comune.chiusadisanmichele.to.it/it-it/vivere-il-comune/scheda
+1,Chiusa di San Michele,BORGATA,Bennale,https://www.comune.chiusadisanmichele.to.it/it-it/vivere-il-comune/scheda
+1,Chiusa di San Michele,BORGATA,Molè,https://www.comune.chiusadisanmichele.to.it/it-it/vivere-il-comune/scheda
+1,Caprie,FRAZIONE,Novaretto,https://www.comune.caprie.to.it/
+1,Caprie,FRAZIONE,Chiodo,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Case Comba,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Pertusetto,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Casale Giuliani,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Case Buia,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Case Budrola,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Case Meini,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Peroldrado,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Campambiardo,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Casale Cevrè,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Camparnaldo,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Trucetto,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Case Inferiori,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Comba e Celle,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Case Calcinera,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Piagnolo,https://www.comune.caprie.to.it/
+1,Caprie,BORGATA,Sala,https://www.comune.caprie.to.it/
+1,Vaie,BORGATA,Folatone,https://www.comune.vaie.to.it/it-it/vivere-il-comune/scheda
+1,Vaie,BORGATA,Mura,https://www.comune.vaie.to.it/it-it/vivere-il-comune/scheda
+1,Vaie,BORGATA,Molè,https://www.comune.vaie.to.it/it-it/vivere-il-comune/scheda
+1,Sant'Antonino di Susa,FRAZIONE,Cresto,https://comune.santantoninodisusa.to.it/it-it/vivere-il-comune/itinerari
+1,Buttigliera Alta,FRAZIONE,Ferriera,https://www.comune.buttiglieraalta.to.it/it-it/vivere-il-comune/territorio
+1,Buttigliera Alta,BORGO,Sant'Antonio di Ranverso,https://www.comune.buttiglieraalta.to.it/it-it/vivere-il-comune/territorio
+1,Almese,FRAZIONE,Rivera,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,FRAZIONE,Milanere,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,FRAZIONE,Malatrait,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Bertolo,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Bollè,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Braida,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Crivella,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Falca,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Gamba di Bosco,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Giorda,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Grange,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Magnetto,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Michela,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Miosa,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Morsino,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Panzone,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Soffietti,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Sonetto,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Tetti Dora,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Tetti Montabone,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Tetti San Mauro,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Almese,BORGATA,Vighetto,https://comune.almese.to.it/vivere-il-comune/territorio/il-comune-in-breve/
+1,Caselette,FRAZIONE,Grange di Caselette,https://www.comune.caselette.to.it/it-it/vivere-il-comune/scheda
+1,Caselette,FRAZIONE,Grangiotto,https://www.comune.caselette.to.it/it-it/vivere-il-comune/scheda
+1,Val della Torre,FRAZIONE,Montelera,https://www.comune.valdellatorre.to.it/it-it/vivere-il-comune/scheda
+1,Val della Torre,FRAZIONE,Brione,https://www.comune.valdellatorre.to.it/it-it/vivere-il-comune/scheda
+1,Rubiana,FRAZIONE,Favella,https://comune.rubiana.to.it/Guidaalpaese?IDDettaglio=43228
+1,Rubiana,FRAZIONE,Mompellato,https://comune.rubiana.to.it/Guidaalpaese?IDDettaglio=43228
+1,Condove,BORGATA,Fucine,https://www.comune.condove.to.it/it-it/vivere-il-comune/storia
+1,Condove,BORGATA,Fiori,https://www.comune.condove.to.it/it-it/vivere-il-comune/storia
+1,Condove,BORGATA,Rivi,https://www.comune.condove.to.it/it-it/vivere-il-comune/storia
+1,Condove,BORGATA,Molaretto,https://www.comune.condove.to.it/it-it/vivere-il-comune/storia
+1,Condove,FRAZIONE,Airassa,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Alotti,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Bella Fugera,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Bigliasco,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Campo Rossetto,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Combe,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Conte Verde,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Cordole,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Crosatto,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Frassinere,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Gagnor,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Grange,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,Grangetta,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Condove,FRAZIONE,La Rocca,https://www.comune.condove.to.it/it-it/vivere-il-comune/galleria-immagini/le-frazioni-di-condove-parte-i
+1,Giaveno,FRAZIONE,Alpe Colombino,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Buffa,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Chiarmetta,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Colpastore,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Dalmassi,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Maddalena,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Mollar dei Franchi,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Pontepietra,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Provonda,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Ruata Sangone,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Sala,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Selvaggio,https://en.wikipedia.org/wiki/Giaveno
+1,Giaveno,FRAZIONE,Villa,https://en.wikipedia.org/wiki/Giaveno
+1,Trana,FRAZIONE,Belvedere,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,Biellese,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,Colombé,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,Cordero,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,Durando,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,Galletto,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,Moranda,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,Pianca,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,San Bernardino,https://en.wikipedia.org/wiki/Trana
+1,Trana,FRAZIONE,San Giovanni,https://en.wikipedia.org/wiki/Trana
+1,Valgioie,BORGATA,Ruata Gioana,https://www.tuttitalia.it/piemonte/94-valgioie/
+1,Valgioie,BORGATA,Tortorello,https://www.tuttitalia.it/piemonte/94-valgioie/
+1,Valgioie,BORGATA,Combravino,https://www.italiamappata.it/piemonte/1120-valgioie/mappa
+1,Valgioie,BORGATA,Colle Braida,https://www.tuttitalia.it/piemonte/94-valgioie/
+1,Valgioie,BORGATA,Bussone,https://www.italiamappata.it/piemonte/1120-valgioie/mappa
+1,Valgioie,BORGATA,Molino,https://www.tuttitalia.it/piemonte/94-valgioie/
+1,Reano,BORGATA,Fiori,https://fr.wikipedia.org/wiki/Reano
+1,Reano,BORGATA,Rivata,https://fr.wikipedia.org/wiki/Reano
+1,Reano,BORGATA,Rapiana,https://fr.wikipedia.org/wiki/Reano
+1,Reano,BORGATA,Fontana,https://fr.wikipedia.org/wiki/Reano
+1,Rosta,FRAZIONE,Corso Moncenisio,https://www.comuniinrete.it/piemonte/torino/rosta/frazioni/
+1,Rosta,FRAZIONE,Ponata,https://www.comuniinrete.it/piemonte/torino/rosta/frazioni/
