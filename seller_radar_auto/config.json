@@ -7,20 +7,26 @@
   "preserve_master": true,
   "localities_enabled": true,
   "discovery": {
-    "max_queries_per_run": 80,
+    "max_queries_per_run": 700,
     "max_results_per_query": 20,
-    "request_delay_seconds": 1.5,
-    "sources": [
-      "agenzie immobiliari",
+    "request_delay_seconds": 0.35,
+    "query_modes": [
+      "AGENCIES",
+      "PORTALS",
+      "PRIVATE",
+      "CLASSIFIED_SOCIAL"
+    ],
+    "portal_domains": [
       "immobiliare.it",
       "idealista.it",
       "casa.it",
       "wikicasa.it",
+      "trovacasa.it"
+    ],
+    "classified_domains": [
       "subito.it",
       "bakeca.it",
-      "trovacasa.it",
-      "facebook marketplace",
-      "privato vende casa"
+      "facebook.com"
     ]
   }
 }
