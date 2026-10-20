@@ -1,0 +1,42 @@
+name: F1 Seller Radar BOOTSTRAP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "seller_radar_auto/bootstrap.trigger"
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build operational territory 20 km
+        run: python seller_radar_auto/build_operational_territory.py
+      - name: Build discovery matrix including borgate
+        run: python seller_radar_auto/build_discovery_matrix.py
+      - name: Agency inventory discovery
+        run: python seller_radar_auto/agency_inventory_discovery.py
+      - name: Portals private social discovery
+        run: python seller_radar_auto/radar_discovery.py
+      - name: Canonical dedupe
+        run: python seller_radar_auto/deduplicate_master.py
+      - name: Prepare acquisition route
+        run: python seller_radar_auto/prepare_acquisition_route.py
+      - name: Validate
+        run: python seller_radar_auto/validate_giro_acquisizione.py
+      - name: Commit bootstrap data
+        run: |
+          git config user.name "actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add seller_radar_auto/data
+          git diff --cached --quiet || git commit -m "seller radar: bootstrap mercato 20 km"
+          git pull --rebase origin main
+          git push
