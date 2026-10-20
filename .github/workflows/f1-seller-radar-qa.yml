@@ -1,0 +1,26 @@
+name: F1 Seller Radar QA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build discovery matrix
+        run: python seller_radar_auto/build_discovery_matrix.py
+      - name: Prepare acquisition route
+        run: python seller_radar_auto/prepare_acquisition_route.py
+      - name: Validate master preservation
+        run: python seller_radar_auto/validate_giro_acquisizione.py
+      - name: Tests
+        run: python -m pytest -q seller_radar_auto/tests/test_core.py
