@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 DATA=ROOT/"data"
 QUEUE=DATA/"work_queue.csv"
-MUNICIPALITIES=ROOT/"municipalities.csv"
+MUNICIPALITIES=(ROOT/"data"/"municipalities_operational.csv") if (ROOT/"data"/"municipalities_operational.csv").exists() else (ROOT/"municipalities.csv")
 CONFIG=json.loads((ROOT/"config.json").read_text(encoding="utf-8"))
 OUT=DATA/"giro_acquisizione.csv"
 OUT_TODAY=DATA/"giro_acquisizione_oggi.csv"
