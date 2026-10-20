@@ -3,7 +3,7 @@ import csv, json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-MUNICIPALITIES = ROOT / "municipalities.csv"
+MUNICIPALITIES = (ROOT / "data" / "municipalities_operational.csv") if (ROOT / "data" / "municipalities_operational.csv").exists() else (ROOT / "municipalities.csv")
 LOCALITIES = ROOT / "territory_localities.csv"
 
 def yes(v):
