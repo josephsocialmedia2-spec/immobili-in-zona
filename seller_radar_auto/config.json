@@ -1,0 +1,26 @@
+{
+  "center": {
+    "name": "Sant'Ambrogio di Torino",
+    "radius_km": 20
+  },
+  "operator_count": 10,
+  "preserve_master": true,
+  "localities_enabled": true,
+  "discovery": {
+    "max_queries_per_run": 80,
+    "max_results_per_query": 20,
+    "request_delay_seconds": 1.5,
+    "sources": [
+      "agenzie immobiliari",
+      "immobiliare.it",
+      "idealista.it",
+      "casa.it",
+      "wikicasa.it",
+      "subito.it",
+      "bakeca.it",
+      "trovacasa.it",
+      "facebook marketplace",
+      "privato vende casa"
+    ]
+  }
+}
