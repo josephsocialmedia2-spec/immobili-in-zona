@@ -1,0 +1,61 @@
+/* Shared Case in Pubblicità 24/7 presentation, independent of application logic. */
+html:root{color-scheme:light;--bg:#f7f9f8;--bg2:#edf3ef;--background:#f7f9f8;--panel:#fff;--panel2:#f0f5f2;--card:#fff;--card2:#f0f5f2;--surface:#fff;--surface2:#f0f5f2;--text:#243c3c;--ink:#243c3c;--muted:#647870;--edge:#dce7e0;--border:#dce7e0;--line:#dce7e0;--sky:#08754f;--mint:#14885e;--accent:#14885e;--primary:#08754f;--blue:#08754f;--cyan:#08754f;--green:#14885e;--amber:#855f0c;--red:#aa3043;--font:Arial,Helvetica,sans-serif}
+body.case247-unified{margin:0!important;background:#f7f9f8!important;color:#243c3c!important;font-family:Arial,Helvetica,sans-serif!important;font-size:15px;line-height:1.6}
+body.case247-unified *{box-sizing:border-box}
+body.case247-unified :where(main,.app,.wrap,.container,.shell,.workspace){color:#243c3c}
+body.case247-unified :where(h1,h2,h3,h4,h5,p,li,label,summary,dt,dd,th,td,small,strong,b,legend){color:inherit;text-shadow:none!important}
+body.case247-unified :where(h1,h2,h3){letter-spacing:-.025em;line-height:1.2}
+body.case247-unified h1{font-size:clamp(27px,4vw,42px)}
+body.case247-unified :where(.muted,.sub,.subtitle,.eyebrow,.kicker,.hint,.help,.note,.text-muted){color:#647870!important}
+body.case247-unified :where(main,.app,.wrap){max-width:1200px;margin-left:auto;margin-right:auto}
+body.case247-unified :where(.hero,.heroInner,.heroCopy,.sectionSoft,.blueBand,.block,.callout,.notice,.case-hub,.case-hub-card,.case247-review-hub,.panel,.panel2,.card,.tile,.stat,.kpi,.box,.sheet,.pageitem,.sectorPanel,.section-card,.step,.feature,.benefit,.rmpExperience,.jdRemarketingBanner,.rmp-remarketing-banner,.docs-accordion,.docs-document,.docs-progress){background:#fff!important;color:#243c3c!important;border-color:#dce7e0!important;text-shadow:none!important;box-shadow:0 5px 22px #173a2909!important;border-radius:18px!important}
+body.case247-unified :where(.panelhead,.sectorPanel>.panelhead,.toolbar,.filters,.topbar,.pageheader,.siteFooter,footer){background:#fff!important;color:#243c3c!important;border-color:#dce7e0!important}
+body.case247-unified :where(.hero,.section,.block){margin-top:20px;margin-bottom:20px}
+body.case247-unified :where(.hero p,.panel p,.card p,.block p,.notice p,.case-hub p,.case-hub small,.case247-review-hub p,.docs-document p,.docs-note){color:#526b60!important}
+body.case247-unified :where(.hero h1,.hero h2,.hero h3,.card h2,.card h3,.panel h2,.panel h3,.block h2,.block h3,.case-hub h2,.case247-review-hub h2,.docs-document h3){color:#243c3c!important;filter:none!important}
+body.case247-unified :where(input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea){background:#fff!important;color:#243c3c!important;border:1px solid #cadbd0!important;border-radius:8px!important;box-shadow:none!important;min-height:42px;font:inherit;max-width:100%}
+body.case247-unified :where(input,textarea)::placeholder{color:#718579!important;opacity:1}
+body.case247-unified :where(button,.btn,.button,a.cta,.ctaButton,.buttonPrimary){background:#fff!important;color:#08754f!important;border:1px solid #cadbd0!important;border-radius:9px!important;box-shadow:none!important;text-shadow:none!important;font-family:inherit;min-height:40px}
+body.case247-unified :where(.btn.primary,.btn-primary,.button.primary,.buttonPrimary,.cta-primary,button[type=submit],button.active,button[aria-pressed=true],button[aria-selected=true]){background:#08754f!important;color:#fff!important;border-color:#08754f!important}
+body.case247-unified :where(.btn.primary,.btn-primary,.buttonPrimary,button[type=submit],button.active,button[aria-pressed=true],button[aria-selected=true]) *{color:inherit!important}
+body.case247-unified :where(a){color:#08754f}
+body.case247-unified :where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #14885e!important;outline-offset:3px}
+body.case247-unified :where(.badge,.pill,.tag,.chip){background:#edf6f0!important;color:#176448!important;border-color:#d2e5d8!important}
+body.case247-unified :where(table){background:#fff!important;color:#243c3c!important;border-color:#dce7e0!important}
+body.case247-unified :where(tr,td,th){border-color:#dce7e0!important}
+body.case247-unified :where(.sidebar,.side,.sidepanel,.detail,.modal,.modalContent,.modal-content,dialog){background:#fff!important;color:#243c3c!important;border-color:#dce7e0!important}
+body.case247-unified :where(.siteHeader){display:none!important}
+/* This header is shared by every page, including the catalogue itself. */
+#case247-site-header{background:#fff!important;color:#243c3c!important;border-top:4px solid #14885e;border-bottom:1px solid #e3ebe6;font:15px/1.5 Arial,Helvetica,sans-serif;position:relative;z-index:40}
+#case247-site-header .case247-header-inner{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 28px}
+#case247-site-header .case247-brand{color:#243c3c!important;font-size:20px;font-weight:700;letter-spacing:-.6px;text-decoration:none!important}
+#case247-site-header .case247-brand em{color:#14885e;font-style:normal}
+#case247-site-header .case247-partner{display:block;color:#647870;font-size:12px;font-weight:400;letter-spacing:0;margin-top:3px}
+#case247-site-header .case247-toplinks{display:flex;gap:18px;flex-wrap:wrap}
+#case247-site-header a{color:#08754f!important;text-decoration:none!important}
+#case247-site-header .case247-menu{display:flex;gap:22px;flex-wrap:wrap;max-width:1200px;margin:auto;padding:12px 28px;border-top:1px solid #eef2ef}
+#case247-site-header .case247-menu a{padding:6px 0;font-size:14px}
+#case247-site-header .case247-menu a:hover{box-shadow:0 2px #14885e}
+#case247-site-header a:focus-visible{outline:3px solid #14885e;outline-offset:4px}
+body.case247-unified #case247-site-header+header{position:relative!important;top:auto!important}
+.case247-property-section{max-width:1200px;margin:32px auto!important;padding:26px 28px!important;background:transparent!important;color:#243c3c!important;font:15px/1.6 Arial,sans-serif}
+.case247-property-section .case247-property-title{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:20px}
+.case247-property-section h2{color:#243c3c!important;font-size:28px;margin:0!important}
+.case247-property-section p{color:#647870!important;margin:5px 0!important}
+.case247-property-section a{color:#08754f!important;text-decoration:none}
+.case247-property-section .case247-property-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.case247-property-section article{background:#fff!important;color:#243c3c!important;border-radius:20px;overflow:hidden;box-shadow:0 5px 22px #173a2910}
+.case247-property-section .case247-photo{display:block;height:240px;background:#e0e8e1;overflow:hidden}
+.case247-property-section img{width:100%;height:100%;object-fit:cover;display:block;border-radius:0!important}
+.case247-property-section .case247-property-info{padding:18px 20px}
+.case247-property-section .case247-price{font-size:24px;font-weight:700;color:#243c3c!important}
+.case247-property-section h3{font-size:18px!important;color:#243c3c!important;margin:8px 0 14px!important;min-height:45px;font-weight:500}
+.case247-property-section .case247-property-source{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #edf0ed;padding-top:12px;font-size:12px}
+.case247-property-section .case247-property-source span{color:#647870!important}
+.case247-property-section .case247-property-source a{font-weight:700}
+@media(max-width:700px){#case247-site-header .case247-header-inner{padding:18px 16px;align-items:flex-start;flex-wrap:wrap;gap:12px}#case247-site-header .case247-brand{font-size:18px}#case247-site-header .case247-menu{padding:10px 16px;gap:10px 18px}#case247-site-header .case247-menu a{font-size:13px}#case247-site-header .case247-toplinks{font-size:12px}.case247-property-section{padding:22px 16px!important}.case247-property-section .case247-property-grid{grid-template-columns:1fr}.case247-property-section .case247-photo{height:230px}body.case247-unified :where(.sectorColumns,.two,.twoCol,.two-col,.heroInner){grid-template-columns:1fr!important}body.case247-unified :where(main,.app,.wrap){max-width:100%}}
+@media print{#case247-site-header,.case247-property-section{display:none!important}body.case247-unified{background:#fff!important;color:#111!important}}
+
+body.case247-unified #case-preview>header{display:none!important}
+
+body.case247-unified :where(h1,h2,h3) :where(span,em,strong){color:#08754f!important;text-shadow:none!important}body.case247-unified .jdRemarketingBanner :where(small,.eyebrow,.kicker,span){color:#176448!important}
