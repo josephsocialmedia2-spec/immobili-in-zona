@@ -59,3 +59,5 @@ body.case247-unified #case247-site-header+header{position:relative!important;top
 body.case247-unified #case-preview>header{display:none!important}
 
 body.case247-unified :where(h1,h2,h3) :where(span,em,strong){color:#08754f!important;text-shadow:none!important}body.case247-unified .jdRemarketingBanner :where(small,.eyebrow,.kicker,span){color:#176448!important}
+
+body.commerciale.case247-unified>#case247-site-header+nav{display:none!important}body.commerciale.case247-unified .hero{padding:32px!important}body.commerciale.case247-unified .block{padding:28px!important}#case247-site-header .case247-menu{justify-content:flex-start!important;align-items:center!important;background:#fff!important;border-radius:0!important}#case247-site-header .case247-header-inner{width:auto!important}body.case247-unified .jdRemarketingBanner [class*="kicker"],body.case247-unified .jdRemarketingBanner [class*="eyebrow"]{color:#176448!important}
