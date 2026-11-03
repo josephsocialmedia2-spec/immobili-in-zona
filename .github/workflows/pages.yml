@@ -1,6 +1,11 @@
 name: Deploy F1 Seller Radar Pages
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
